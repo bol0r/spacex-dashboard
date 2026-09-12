@@ -29,6 +29,8 @@ export const KATEGORIE = Object.keys(LADOWACZE) as Kategoria[];
 export function zbudujBaze(
   wpisy: ReadonlyArray<readonly [Kategoria, Encja[]]>,
   nakladka: Nakladka = {},
+  /** Czy budujemy wersję kanoniczną (polską) — wtedy nakładki nie ma i nie brakuje. */
+  kanoniczny = true,
 ): BazaWiedzy {
   const przychodzace: IndeksRelacji['przychodzace'] = {};
   const linkiWTresci: IndeksRelacji['linkiWTresci'] = {};
@@ -44,7 +46,7 @@ export function zbudujBaze(
       linkiWTresci[e.id] = linki;
       encje[e.id] = {
         ...e, kategoria, wychodzace: e.powiazane, przychodzace: [],
-        linkiWTresci: linki, przetlumaczona: tlumaczenie !== undefined,
+        linkiWTresci: linki, przetlumaczona: kanoniczny || tlumaczenie !== undefined,
       };
       kolejnosc.push(e.id);
       for (const w of e.os) osGlobalna.push({ ...w, encjaId: e.id });
@@ -89,7 +91,7 @@ export function zaladujBaze(jezyk: Jezyk = 'pl'): Promise<BazaWiedzy> {
   const nowe = Promise.all([
     Promise.all(KATEGORIE.map(async (k) => [k, await LADOWACZE[k]()] as const)),
     NAKLADKI[jezyk](),
-  ]).then(([wpisy, nakladka]) => zbudujBaze(wpisy, nakladka));
+  ]).then(([wpisy, nakladka]) => zbudujBaze(wpisy, nakladka, jezyk === 'pl'));
 
   pamiec.set(jezyk, nowe);
   return nowe;

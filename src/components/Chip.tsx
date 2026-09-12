@@ -14,6 +14,11 @@ export function Chip({ id, etykieta }: { id: string; etykieta: string }) {
   // się to na sekundę — wtedy pokazujemy zwykły tekst, a nie martwy przycisk.
   if (cel === undefined) return <>{etykieta}</>;
 
+  // Zapis [[id]] bez etykiety wyświetlałby identyfikator z myślnikami. Nazwa
+  // encji jest zawsze lepsza niż slug, nawet jeśli odmiana nie zawsze pasuje —
+  // poprawną formę autor podaje jawnie jako [[id|forma]].
+  const tekst = etykieta === id ? cel.nazwa : etykieta;
+
   return (
     <button
       type="button"
@@ -23,7 +28,7 @@ export function Chip({ id, etykieta }: { id: string; etykieta: string }) {
                  after:absolute after:inset-x-0 after:-inset-y-[11px] after:content-['']"
       style={{ background: 'var(--mat-chip)' }}
     >
-      {etykieta}
+      {tekst}
     </button>
   );
 }

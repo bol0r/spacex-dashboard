@@ -7,6 +7,7 @@ import { useT } from '../i18n';
 import { usePulapkaFokusu } from '../lib/fokus';
 import { SPREZYNA, useGestZamkniecia } from '../lib/gest';
 import { PasekFaktow } from './PasekFaktow';
+import { GrafikaEncji, maGrafike } from './grafiki';
 import { Tresc } from './Tresc';
 import { Ciekawostka } from './Ciekawostka';
 import { MiniOs } from './MiniOs';
@@ -154,6 +155,14 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
           <div className="mt-5">
             <PasekFaktow fakty={encja.fakty} />
           </div>
+
+          {/* Diagram idzie między liczbami a tekstem: jest podsumowaniem faktów
+              i wprowadzeniem do opisu, nie ilustracją doklejoną na końcu. */}
+          {maGrafike(encja.id) && (
+            <div className="mt-6">
+              <GrafikaEncji id={encja.id} />
+            </div>
+          )}
 
           <div className="mt-6">
             <Tresc akapity={encja.tresc} />
