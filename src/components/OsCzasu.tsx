@@ -122,18 +122,22 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
       className="material col-span-2 overflow-hidden rounded-kafel py-4 lg:col-span-4"
       aria-label={t.osCzasu}
     >
-      <div className="flex items-baseline justify-between gap-3 px-4">
-        <h2 className="text-naglowek text-tekst">{t.osCzasu}</h2>
-        <span className="liczby min-w-0 truncate text-podpis text-tekst-2">
+      {/* Trzy elementy w jednym rzędzie łamały tytuł na dwie linie na 390 px,
+          więc licznik z podpowiedzią schodzi pod nagłówek. */}
+      <div className="px-4">
+        <div className="flex items-baseline justify-between gap-3">
+          <h2 className="shrink-0 text-naglowek text-tekst">{t.osCzasu}</h2>
+          <button
+            type="button"
+            onClick={() => ustawWidok('os-czasu')}
+            className="dotyk -my-2 min-h-[44px] shrink-0 px-1 text-przypis text-blekit"
+          >
+            {t.pelnaOsCzasu}
+          </button>
+        </div>
+        <span className="liczby block text-podpis text-tekst-2">
           {t.wydarzenia(znaczniki.length)}, {t.przesunWPoziomie}
         </span>
-        <button
-          type="button"
-          onClick={() => ustawWidok('os-czasu')}
-          className="dotyk -my-2 min-h-[44px] shrink-0 px-1 text-przypis text-blekit"
-        >
-          {t.pelnaOsCzasu}
-        </button>
       </div>
 
       <div ref={przewijak} className="przewin-poziomo mt-3" style={{ touchAction: 'pan-x' }}>
