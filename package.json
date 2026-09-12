@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "waliduj": "tsx skrypty/waliduj.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "przeglad": "tsx skrypty/przeglad.ts",
+    "sprawdz": "npm run build && npm test && npm run waliduj && npm run przeglad"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",

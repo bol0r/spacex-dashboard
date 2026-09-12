@@ -36,7 +36,7 @@ export const pojecia: Encja[] = [
       { id: 'merlin', powod: 'zdolność do ponownego odpalenia w locie jest jej warunkiem technicznym' },
       { id: 'starlink', powod: 'konstelacja tej wielkości była nieopłacalna bez tańszego kilograma na orbicie' },
     ],
-    zrodla: [Z.wikiStartyFalcon, Z.spaceSetny],
+    zrodla: [Z.wikiStartyFalcon, Z.spaceSetny, Z.sfnRekord],
     zaktualizowano: '2026-09-12',
   },
 

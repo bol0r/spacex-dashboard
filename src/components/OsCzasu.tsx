@@ -169,7 +169,11 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
                 type="button"
                 onClick={() => otworz(z.encjaId)}
                 aria-label={`${z.tytul}, ${dataKrotko(z.data)} — ${encja.nazwa}`}
-                className="absolute flex w-11 -translate-x-1/2 flex-col items-center"
+                // Znacznik w najniższym pasie ma tylko 20 px wysokości, a pole dotyku
+                // musi mieć 44. Rozszerzamy je pseudoelementem wokół kropki —
+                // rysunek zostaje bez zmian, palec dostaje pełny kwadrat.
+                className="absolute flex w-11 -translate-x-1/2 flex-col items-center
+                           after:absolute after:inset-x-0 after:-top-[10px] after:h-11 after:content-['']"
                 style={{ left: z.x, bottom: 27, height: 20 + z.pas * 20 }}
               >
                 <span

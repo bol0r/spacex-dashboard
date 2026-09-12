@@ -13,6 +13,12 @@
 import type { Encja } from '../types';
 
 export interface TlumaczenieEncji {
+  /**
+   * Nazwa przetłumaczona. Podajemy ją tylko tam, gdzie nazwa jest opisem,
+   * nie nazwą własną: „Niska orbita okołoziemska" wymaga tłumaczenia,
+   * „Starship" i „Raptor" nie.
+   */
+  nazwa?: string;
   krotki: string;
   tresc: string[];
   /** Etykiety faktów, w kolejności z encji. */
@@ -66,6 +72,7 @@ export function zastosuj(encja: Encja, tlumaczenie: TlumaczenieEncji | undefined
 
   return {
     ...encja,
+    ...(tlumaczenie.nazwa !== undefined ? { nazwa: tlumaczenie.nazwa } : {}),
     krotki: tlumaczenie.krotki,
     tresc: tlumaczenie.tresc,
     fakty: encja.fakty.map((f, i) => ({

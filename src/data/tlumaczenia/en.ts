@@ -115,6 +115,7 @@ export const en: Nakladka = {
   },
 
   'reuzywalnosc': {
+    nazwa: 'Reusability',
     krotki: 'The principle that a rocket comes back and flies again — the difference between taking a flight and burning the aeroplane after one.',
     tresc: [
       'For the first fifty years of spaceflight a rocket was a single-use object. Every launch meant destroying hardware worth tens of millions of dollars. Reusability inverts that assumption: the booster returns to Earth in a state that allows it to be refuelled and sent up again.',
@@ -146,6 +147,7 @@ export const en: Nakladka = {
   },
 
   'pelnoprzeplywowe-spalanie-stopniowe': {
+    nazwa: 'Full-flow staged combustion',
     krotki: 'The hardest rocket engine architecture there is: all the fuel and all the oxidiser pass through turbines, and nothing escapes unburnt.',
     tresc: [
       'A rocket engine has to drive the pumps that force propellant into the chamber somehow. In the simplest arrangement — the gas generator used by [[merlin|Merlin]] — a small portion of fuel burns separately, spins a turbine and escapes overboard. That is simple and cheap, but the portion is lost for good.',
@@ -176,6 +178,7 @@ export const en: Nakladka = {
   },
 
   'leo': {
+    nazwa: 'Low Earth orbit',
     krotki: 'An orbit with a period under 128 minutes, reaching about 2,000 km — where nearly all human presence in space sits.',
     tresc: [
       'The formal definition is drier than expected: an orbit with a period of 128 minutes or less, meaning at least 11.25 revolutions a day, at an eccentricity below 0.25. In practice that means a ceiling around 2,000 kilometres, although most objects circle below 800.',
