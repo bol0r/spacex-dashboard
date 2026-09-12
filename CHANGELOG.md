@@ -5,6 +5,41 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.0 — 12 września 2026
+
+**Faza 4: wyszukiwarka, tryb osi czasu, losowanie, ulubione i historia.**
+
+- **Wyszukiwarka** na Fuse.js, w pełni offline. Wejście przyciskiem w nagłówku,
+  pociągnięciem w dół na samej górze ekranu albo skrótem `⌘K` / `Ctrl+K`.
+  Nawigacja strzałkami i Enterem, wyniki grupowane po typie, trafienia
+  podświetlone w nazwie.
+- **Pełna oś czasu** — pionowa, od najnowszych, z filtrem po firmie i licznikiem
+  wydarzeń; kamienie milowe wyróżnione.
+- **Pokaż mi coś** — losowa ciekawostka na pełnym ekranie, bez powtarzania
+  poprzedniego wyniku.
+- **Ulubione i historia** — serduszko w arkuszu, dwadzieścia ostatnich odwiedzin,
+  oba w `localStorage`, oba jako poziome listy na ekranie głównym.
+- **Przełącznik drgnięć** w stopce, zgodnie z wymogiem, żeby haptykę dało się
+  wyłączyć.
+- Trzy nakładki dzielą jedną powłokę — ten sam sposób wejścia, wyjścia, obsługi
+  Escape i pułapki fokusu.
+
+**Polska odmiana w wyszukiwarce**
+
+Domyślna konfiguracja Fuse nie wystarczyła. Indeksujemy wersje bez znaków
+diakrytycznych, bo „reuzywalnosc" ma znaleźć „Reużywalność". Do tego obcinamy
+jedną i dwie końcowe litery pytania: wpisane „raptora" jest dłuższe niż „Raptor"
+w bazie, a Fuse szuka wzorca wewnątrz tekstu, więc bez tego nie znajdowało nic.
+Trafienie w nazwie bije trafienie w synonimach — bez tej reguły „starshipa"
+wyrzucało najpierw Super Heavy, którego synonim to „dolny stopień Starshipa".
+
+**Poprawki**
+
+- Samodzielne odnośniki do źródeł — w losowaniu, pod ciekawostką i w sekcji
+  „Skąd to wiem" — miały 16 px wysokości; dostały pełne pole dotyku.
+- Licznik wydarzeń w trybie osi czasu stał w przewijanym rzędzie filtrów
+  i uciekał poza krawędź na wąskim ekranie.
+
 ## 0.3.3 — 12 września 2026
 
 **Słownik, credits i numer wersji.**

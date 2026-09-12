@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.3.3** · **by Dead Net & Claude**
+**Wersja 0.4.0** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -46,7 +46,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
 | 3 | Treść — 84 z 180+ encji | w toku |
-| 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | nierozpoczęte |
+| 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA, wydajność, pomiar dostępności, dopieszczenie | nierozpoczęte |
 
 Poza planem, na życzenie: przeprojektowany ekran główny z paskiem sekcji,
@@ -58,6 +58,7 @@ Encje: 84 · Wydarzenia: 160 · Źródła w katalogu: 66 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 4,38 (cel ≥ 6)
 Tłumaczenia EN: interfejs w całości, treść 6 / 84 encji
+Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 ```
 
 ## Uruchomienie
@@ -117,6 +118,11 @@ src/
     PasekSekcji.tsx   przyklejony pasek nawigacji z licznikami
     StosArkuszy.tsx   do czterech widocznych kart, okruszki od piątej
     Arkusz.tsx        jedna karta stosu w kolejności z briefu
+    Nakladka.tsx      wspólna powłoka trzech nakładek pełnoekranowych
+    Wyszukiwarka.tsx  Fuse.js, grupowanie po typie, strzałki i Enter
+    TrybOsiCzasu.tsx  pionowa oś z filtrem po firmie
+    LosoweOdkrycie.tsx losowa ciekawostka na pełnym ekranie
+    ListaPozioma.tsx  ulubione i historia jako pigułki
     grafiki/          cztery diagramy SVG i rejestr przypisań
   data/
     types.ts          kontrakt encji (sekcja A) i typy pochodne (sekcja B)
@@ -128,6 +134,7 @@ src/
   lib/
     validate.ts       trzynaście reguł walidatora
     linkify.ts        parser [[id]] i [[id|etykieta]]
+    szukaj.ts         indeks Fuse, ogonki i obcięcie polskiej końcówki
     gest.ts           gest zamykania arkusza na zdarzeniach wskaźnika
     fokus.ts          pułapka fokusu i wykrywanie szerokiego ekranu
     format.ts         daty po polsku, odmiana rzeczowników po liczbie
@@ -262,6 +269,45 @@ Dwie zasady rysowania: skala albo jest prawdziwa, albo jest opisana jako
 nieliniowa wprost na obrazku; przesunięcie etykiety jest dozwolone, przesunięcie
 punktu danych nie.
 
+## Wyszukiwarka
+
+Fuse.js, `threshold` 0,35, klucze `nazwa`, `aka` i `krotki`, w pełni offline.
+Polska odmiana wymagała dwóch rzeczy ponad domyślną konfigurację:
+
+1. **Indeksowanie wersji bez znaków diakrytycznych** — „reuzywalnosc" ma znaleźć
+   „Reużywalność". Pytanie normalizujemy tak samo.
+2. **Obcięcie jednej i dwóch końcowych liter pytania.** Wpisane „raptora" jest
+   dłuższe niż „Raptor" w bazie, a Fuse szuka wzorca wewnątrz tekstu, więc
+   dłuższy wzorzec nie ma gdzie się zmieścić i bez tego nie znajdowało nic.
+   Pełny stemmer byłby przesadą; ogonki plus dwie litery łapią wszystkie
+   przypadki, jakie spotykamy w tych nazwach.
+
+Trafienie w nazwie bije trafienie w synonimach. Bez tego „starshipa" wyrzucało
+najpierw Super Heavy, którego synonim to „dolny stopień Starshipa" — dopasowanie
+dosłowne, ale nie to, którego szukał użytkownik.
+
+Wejście: przycisk w nagłówku, pociągnięcie w dół na samej górze ekranu, `⌘K`
+albo `Ctrl+K`. Nawigacja strzałkami i Enterem, wyniki grupowane po typie,
+trafienia podświetlone w nazwie.
+
+## Pozostałe tryby
+
+**Pełna oś czasu** — pionowa, od najnowszych, rok jako kolumna z licznikiem,
+filtr po firmie (wszystko / SpaceX / Tesla / reszta), kamienie milowe wyróżnione.
+Kompaktowa oś na ekranie głównym pokazuje kształt, ta pokazuje treść.
+
+**Pokaż mi coś** — losowa ciekawostka na pełnym ekranie. Przycisk losowania stoi
+tuż pod tekstem, a przejście do encji wymaga osobnego gestu: łatwiej jest losować
+dalej niż wyjść, i taki jest zamysł. Losowanie nie powtarza poprzedniego wyniku.
+
+**Ulubione i historia** — serduszko w arkuszu odkłada encję na ekran główny,
+historia trzyma dwadzieścia ostatnich odwiedzin. Oba w `localStorage`, oba jako
+poziome listy pigułek: kolejność ma tu znaczenie, rozmiar nie.
+
+Trzy nakładki dzielą jedną powłokę (`Nakladka.tsx`) — ten sam sposób wejścia,
+wyjścia, obsługi Escape i pułapki fokusu. Różnicowanie ich tylko po to, żeby były
+różne, byłoby kosztem dla użytkownika.
+
 ## System wizualny
 
 **Pięć kolorów i nic poza nimi.**
@@ -348,13 +394,11 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    To najpoważniejsza słabość jakościowa bazy.
 3. **Gęstość linkowania.** Średnia 4,38 wobec celu 6; 72 encje są poniżej celu.
    Domknięcie wymaga przepisania akapitów, nie doklejania linków.
-4. **Faza 4** — wyszukiwarka (Fuse.js, `threshold` 0,35), tryb osi czasu z
-   filtrem po firmie, „Pokaż mi coś", ulubione i historia.
-5. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
+4. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
    wszystkich kategorii na ekranie głównym, wirtualizacja list powyżej 60
    elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
    i haptyki na prawdziwym telefonie.
-6. **Tłumaczenie treści** — 78 encji bez wersji angielskiej.
+5. **Tłumaczenie treści** — 78 encji bez wersji angielskiej.
 
 ## Android
 

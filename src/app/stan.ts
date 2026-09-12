@@ -14,6 +14,29 @@ export const WIDOCZNE_POZIOMY = 4;
 const MAKS_HISTORII = 20;
 const KLUCZ_HISTORII = 'strefa-wiedzy:historia';
 const KLUCZ_JEZYKA = 'strefa-wiedzy:jezyk';
+const KLUCZ_ULUBIONYCH = 'strefa-wiedzy:ulubione';
+
+/** Nakładki pełnoekranowe wykluczają się wzajemnie, więc trzymamy jedno pole. */
+export type Widok = null | 'szukanie' | 'os-czasu' | 'losowanie';
+
+function wczytajUlubione(): string[] {
+  try {
+    const surowe = window.localStorage.getItem(KLUCZ_ULUBIONYCH);
+    if (surowe === null) return [];
+    const dane: unknown = JSON.parse(surowe);
+    return Array.isArray(dane) ? dane.filter((x): x is string => typeof x === 'string') : [];
+  } catch {
+    return [];
+  }
+}
+
+function zapiszUlubione(ulubione: readonly string[]): void {
+  try {
+    window.localStorage.setItem(KLUCZ_ULUBIONYCH, JSON.stringify(ulubione));
+  } catch {
+    // brak pamięci nie może przerwać pracy z aplikacją
+  }
+}
 
 /** Wybór użytkownika ma pierwszeństwo, potem język przeglądarki, na końcu polski. */
 function wczytajJezyk(): Jezyk {
@@ -48,9 +71,14 @@ function zapiszHistorie(historia: string[]): void {
 interface Stan {
   stos: string[];
   historia: string[];
+  ulubione: string[];
   haptyka: boolean;
   jezyk: Jezyk;
+  widok: Widok;
   ustawJezyk: (j: Jezyk) => void;
+  ustawWidok: (w: Widok) => void;
+  przelaczUlubione: (id: string) => void;
+  czysciHistorie: () => void;
   otworz: (id: string) => void;
   zamknij: () => void;
   zamknijDo: (glebokosc: number) => void;
@@ -61,8 +89,31 @@ interface Stan {
 export const useStan = create<Stan>((set, get) => ({
   stos: [],
   historia: wczytajHistorie(),
+  ulubione: wczytajUlubione(),
   haptyka: haptykaWlaczona(),
   jezyk: wczytajJezyk(),
+  widok: null,
+
+  ustawWidok: (w) => {
+    if (get().widok === w) return;
+    drgnij();
+    // Nakładka i stos arkuszy nie mogą być otwarte razem — arkusz jest zawsze
+    // na wierzchu, więc wejście w nakładkę zamyka stos.
+    set({ widok: w, ...(w !== null ? { stos: [] } : {}) });
+  },
+
+  przelaczUlubione: (id) => {
+    const { ulubione } = get();
+    const nowe = ulubione.includes(id) ? ulubione.filter((u) => u !== id) : [id, ...ulubione];
+    drgnij();
+    zapiszUlubione(nowe);
+    set({ ulubione: nowe });
+  },
+
+  czysciHistorie: () => {
+    zapiszHistorie([]);
+    set({ historia: [] });
+  },
 
   ustawJezyk: (j) => {
     if (get().jezyk === j) return;
@@ -79,7 +130,7 @@ export const useStan = create<Stan>((set, get) => ({
     drgnij();
     const nowaHistoria = [id, ...historia.filter((h) => h !== id)].slice(0, MAKS_HISTORII);
     zapiszHistorie(nowaHistoria);
-    set({ stos: [...stos, id], historia: nowaHistoria });
+    set({ stos: [...stos, id], historia: nowaHistoria, widok: null });
   },
 
   zamknij: () => {

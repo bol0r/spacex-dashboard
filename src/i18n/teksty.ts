@@ -46,6 +46,30 @@ interface Slownik {
   autorzy: string;
   wersja: string;
   liczbaEncji: (n: number) => string;
+
+  szukaj: string;
+  szukajPodpowiedz: string;
+  szukajPusto: string;
+  szukajBrakWynikow: (pytanie: string) => string;
+  szukajWynikow: (n: number) => string;
+  zamknij: string;
+  pokazMiCos: string;
+  losujPonownie: string;
+  pelnaOsCzasu: string;
+  filtrWszystko: string;
+  filtrSpacex: string;
+  filtrTesla: string;
+  filtrReszta: string;
+  ulubione: string;
+  ulubioneDodaj: string;
+  ulubioneUsun: string;
+  ulubionePusto: string;
+  historia: string;
+  historiaWyczysc: string;
+  haptykaEtykieta: string;
+  wlaczone: string;
+  wylaczone: string;
+  kamienMilowy: string;
 }
 
 /** Polska odmiana: 1 / 2–4 / 5+. */
@@ -115,6 +139,30 @@ const PL: Slownik = {
   autorzy: 'Dead Net & Claude',
   wersja: 'wersja',
   liczbaEncji: (n) => `${n} ${pl3(n, ['encja', 'encje', 'encji'])}`,
+
+  szukaj: 'Szukaj',
+  szukajPodpowiedz: 'Nazwa, skrót albo pojęcie',
+  szukajPusto: 'Wpisz co najmniej dwie litery. Szuka po nazwach, skrótach i jednym zdaniu opisu.',
+  szukajBrakWynikow: (pytanie) => `Nic nie znaleziono dla „${pytanie}”.`,
+  szukajWynikow: (n) => `${n} ${pl3(n, ['wynik', 'wyniki', 'wyników'])}`,
+  zamknij: 'Zamknij',
+  pokazMiCos: 'Pokaż mi coś',
+  losujPonownie: 'Losuj dalej',
+  pelnaOsCzasu: 'Pełna oś czasu',
+  filtrWszystko: 'Wszystko',
+  filtrSpacex: 'SpaceX',
+  filtrTesla: 'Tesla',
+  filtrReszta: 'Reszta',
+  ulubione: 'Ulubione',
+  ulubioneDodaj: 'Dodaj do ulubionych',
+  ulubioneUsun: 'Usuń z ulubionych',
+  ulubionePusto: 'Serduszko w arkuszu odkłada encję tutaj.',
+  historia: 'Historia',
+  historiaWyczysc: 'Wyczyść',
+  haptykaEtykieta: 'Drgnięcia',
+  wlaczone: 'włączone',
+  wylaczone: 'wyłączone',
+  kamienMilowy: 'kamień milowy',
 };
 
 const EN: Slownik = {
@@ -175,6 +223,30 @@ const EN: Slownik = {
   autorzy: 'Dead Net & Claude',
   wersja: 'version',
   liczbaEncji: (n) => `${n} ${n === 1 ? 'entry' : 'entries'}`,
+
+  szukaj: 'Search',
+  szukajPodpowiedz: 'Name, abbreviation or term',
+  szukajPusto: 'Type at least two letters. Searches names, abbreviations and the one-line summary.',
+  szukajBrakWynikow: (pytanie) => `Nothing found for “${pytanie}”.`,
+  szukajWynikow: (n) => `${n} ${n === 1 ? 'result' : 'results'}`,
+  zamknij: 'Close',
+  pokazMiCos: 'Show me something',
+  losujPonownie: 'Draw again',
+  pelnaOsCzasu: 'Full timeline',
+  filtrWszystko: 'Everything',
+  filtrSpacex: 'SpaceX',
+  filtrTesla: 'Tesla',
+  filtrReszta: 'The rest',
+  ulubione: 'Favourites',
+  ulubioneDodaj: 'Add to favourites',
+  ulubioneUsun: 'Remove from favourites',
+  ulubionePusto: 'The heart in a sheet puts an entry here.',
+  historia: 'History',
+  historiaWyczysc: 'Clear',
+  haptykaEtykieta: 'Haptics',
+  wlaczone: 'on',
+  wylaczone: 'off',
+  kamienMilowy: 'milestone',
 };
 
 export const SLOWNIKI: Record<Jezyk, Slownik> = { pl: PL, en: EN };

@@ -7,6 +7,9 @@ import { useT } from '../i18n';
 import { useSzerokiEkran } from '../lib/fokus';
 import { EkranGlowny } from '../components/EkranGlowny';
 import { StosArkuszy } from '../components/StosArkuszy';
+import { Wyszukiwarka } from '../components/Wyszukiwarka';
+import { TrybOsiCzasu } from '../components/TrybOsiCzasu';
+import { LosoweOdkrycie } from '../components/LosoweOdkrycie';
 
 export function App() {
   const [baza, ustawBaze] = useState<BazaWiedzy | null>(null);
@@ -16,6 +19,19 @@ export function App() {
   const glebokosc = useStan((s) => s.stos.length);
   const szeroki = useSzerokiEkran();
   const panelOtwarty = szeroki && glebokosc > 0;
+  const ustawWidok = useStan((s) => s.ustawWidok);
+
+  // ⌘K i Ctrl+K otwierają wyszukiwarkę z każdego miejsca aplikacji.
+  useEffect(() => {
+    const obsluga = (e: KeyboardEvent) => {
+      if (e.key.toLowerCase() === 'k' && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        ustawWidok('szukanie');
+      }
+    };
+    window.addEventListener('keydown', obsluga);
+    return () => window.removeEventListener('keydown', obsluga);
+  }, [ustawWidok]);
 
   useEffect(() => {
     let aktywny = true;
@@ -38,6 +54,9 @@ export function App() {
         <EkranGlowny baza={baza} onOtworz={otworz} />
       </div>
       <StosArkuszy />
+      <Wyszukiwarka />
+      <TrybOsiCzasu />
+      <LosoweOdkrycie />
     </DostawcaBazy>
   );
 }

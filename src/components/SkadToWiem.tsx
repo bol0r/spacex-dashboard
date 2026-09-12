@@ -25,7 +25,7 @@ export function SkadToWiem({ encja }: { encja: Encja }) {
               href={z.url}
               target="_blank"
               rel="noreferrer"
-              className="max-w-[58ch] text-podtytul text-blekit"
+              className="dotyk flex min-h-[44px] max-w-[58ch] items-center text-podtytul text-blekit"
             >
               {z.tytul}
             </a>

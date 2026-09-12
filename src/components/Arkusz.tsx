@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { X } from 'lucide-react';
+import { Heart, X } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { useBaza } from '../app/kontekst';
+import { useStan } from '../app/stan';
 import { useT } from '../i18n';
 import { usePulapkaFokusu } from '../lib/fokus';
 import { SPREZYNA, useGestZamkniecia } from '../lib/gest';
@@ -31,6 +32,8 @@ interface Props {
 export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
   const baza = useBaza();
   const t = useT();
+  const ulubione = useStan((s) => s.ulubione);
+  const przelaczUlubione = useStan((s) => s.przelaczUlubione);
   const encja = baza.encje[id];
   const karta = useRef<HTMLDivElement>(null);
   const przewijak = useRef<HTMLDivElement>(null);
@@ -139,15 +142,35 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
                 {!encja.przetlumaczona && <span>{t.tylkoPoPolsku}</span>}
               </p>
             </div>
-            <button
-              type="button"
-              onClick={onZamknij}
-              aria-label={t.zamknijArkusz}
-              className="dotyk -mr-2 -mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-pigulka text-tekst-2"
-              style={{ background: 'var(--mat-kafel-mocny)' }}
-            >
-              <X size={18} strokeWidth={2} aria-hidden="true" />
-            </button>
+            <div className="-mr-2 -mt-1 flex shrink-0 items-center gap-1">
+              <button
+                type="button"
+                onClick={() => przelaczUlubione(encja.id)}
+                aria-label={ulubione.includes(encja.id) ? t.ulubioneUsun : t.ulubioneDodaj}
+                aria-pressed={ulubione.includes(encja.id)}
+                className="dotyk flex h-11 w-11 items-center justify-center rounded-pigulka"
+                style={{ background: 'var(--mat-kafel-mocny)' }}
+              >
+                {/* Serduszko wypełnione znaczy „odłożone" — kolor zostaje błękitny,
+                    bo to stan, a nie liczba na żywo ani kamień milowy. */}
+                <Heart
+                  size={17}
+                  strokeWidth={2}
+                  aria-hidden="true"
+                  className={ulubione.includes(encja.id) ? 'text-blekit' : 'text-tekst-2'}
+                  fill={ulubione.includes(encja.id) ? 'currentColor' : 'none'}
+                />
+              </button>
+              <button
+                type="button"
+                onClick={onZamknij}
+                aria-label={t.zamknijArkusz}
+                className="dotyk flex h-11 w-11 items-center justify-center rounded-pigulka text-tekst-2"
+                style={{ background: 'var(--mat-kafel-mocny)' }}
+              >
+                <X size={18} strokeWidth={2} aria-hidden="true" />
+              </button>
+            </div>
           </header>
 
           <p className="mt-3 max-w-[58ch] text-tresc text-tekst">{encja.krotki}</p>

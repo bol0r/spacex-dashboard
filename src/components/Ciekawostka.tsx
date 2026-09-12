@@ -24,7 +24,7 @@ export function Ciekawostka({ ciekawostki }: { ciekawostki: readonly TypCiekawos
             href={c.zrodlo.url}
             target="_blank"
             rel="noreferrer"
-            className="mt-2 inline-block text-podpis text-blekit"
+            className="dotyk mt-2 inline-flex min-h-[44px] items-center text-podpis text-blekit"
           >
             {c.zrodlo.wydawca}
           </a>

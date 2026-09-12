@@ -1,6 +1,8 @@
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
+import { Search, Shuffle } from 'lucide-react';
 import type { BazaWiedzy } from '../data/types';
 import { BOHATER, rozmiarKafla, ulozSekcje } from '../app/uklad';
+import { useStan } from '../app/stan';
 import { useT } from '../i18n';
 import { Kafel } from './Kafel';
 import { KafelBohater } from './KafelBohater';
@@ -8,34 +10,67 @@ import { KartaDnia } from './KartaDnia';
 import { OsCzasu } from './OsCzasu';
 import { PasekSekcji } from './PasekSekcji';
 import { PrzelacznikJezyka } from './PrzelacznikJezyka';
+import { ListaPozioma } from './ListaPozioma';
 import { Stopka } from './Stopka';
 
-/**
- * Ekran główny. Na górze to, co dzieje się teraz i co warto przeczytać dziś;
- * pod tym przesuwalna oś czasu, a dalej sekcje. Pasek nawigacji jest przyklejony,
- * żeby przy stu osiemdziesięciu encjach dało się skakać po bazie bez przewijania
- * jej całej.
- */
+/** Odległość, po której pociągnięcie w dół na samej górze odsłania wyszukiwarkę. */
+const PROG_POCIAGNIECIA = 64;
+
 export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (id: string) => void }) {
   const t = useT();
+  const ustawWidok = useStan((s) => s.ustawWidok);
+  const ulubione = useStan((s) => s.ulubione);
+  const historia = useStan((s) => s.historia);
+  const czysciHistorie = useStan((s) => s.czysciHistorie);
+
   const bohater = baza.encje[BOHATER];
   const sekcje = useMemo(() => ulozSekcje(baza), [baza]);
-  const doPaska = useMemo(
-    () => sekcje.map((s) => ({ id: s.id, liczba: s.encje.length })),
-    [sekcje],
-  );
+  const doPaska = useMemo(() => sekcje.map((s) => ({ id: s.id, liczba: s.encje.length })), [sekcje]);
+
+  // Pociągnięcie w dół na górze strony, jak w iOS. Uzbraja się tylko przy
+  // scrollY równym zeru, żeby nie kolidowało ze zwykłym przewijaniem.
+  const start = useRef<number | null>(null);
+  const gestSzukania = {
+    onPointerDown: (e: React.PointerEvent) => {
+      start.current = window.scrollY <= 0 ? e.clientY : null;
+    },
+    onPointerMove: (e: React.PointerEvent) => {
+      if (start.current === null) return;
+      if (e.clientY - start.current > PROG_POCIAGNIECIA) {
+        start.current = null;
+        ustawWidok('szukanie');
+      }
+    },
+    onPointerUp: () => { start.current = null; },
+    onPointerCancel: () => { start.current = null; },
+  };
 
   return (
-    <main className="mx-auto w-full max-w-[560px] px-4 pb-[calc(env(safe-area-inset-bottom,0px)+40px)]
-                     pl-[max(1rem,env(safe-area-inset-left,0px))] pr-[max(1rem,env(safe-area-inset-right,0px))]
-                     lg:max-w-[1000px]">
-      <header className="flex items-start justify-between gap-4 pb-5 pt-[calc(env(safe-area-inset-top,0px)+16px)]">
+    <main
+      {...gestSzukania}
+      className="mx-auto w-full max-w-[560px] px-4 pb-[calc(env(safe-area-inset-bottom,0px)+96px)]
+                 pl-[max(1rem,env(safe-area-inset-left,0px))] pr-[max(1rem,env(safe-area-inset-right,0px))]
+                 lg:max-w-[1000px]"
+    >
+      <header className="flex items-start justify-between gap-3 pb-5 pt-[calc(env(safe-area-inset-top,0px)+16px)]">
         <div className="min-w-0">
           <h1 className="text-duzy-tytul text-tekst">{t.tytul}</h1>
           <p className="max-w-[46ch] text-podtytul text-tekst-2">{t.podtytul}</p>
           <p className="mt-2 text-podpis text-tekst-2">{t.zastrzezenieKrotko}</p>
         </div>
-        <PrzelacznikJezyka />
+
+        <div className="flex shrink-0 items-center gap-2">
+          <button
+            type="button"
+            onClick={() => ustawWidok('szukanie')}
+            aria-label={t.szukaj}
+            className="dotyk flex h-11 w-11 items-center justify-center rounded-pigulka text-tekst-2"
+            style={{ background: 'var(--mat-kafel)' }}
+          >
+            <Search size={18} strokeWidth={2} aria-hidden="true" />
+          </button>
+          <PrzelacznikJezyka />
+        </div>
       </header>
 
       <PasekSekcji sekcje={doPaska} />
@@ -45,12 +80,16 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
         <KartaDnia baza={baza} />
         <OsCzasu baza={baza} />
 
+        <ListaPozioma tytul={t.ulubione} identyfikatory={ulubione} baza={baza} />
+        <ListaPozioma
+          tytul={t.historia}
+          identyfikatory={historia}
+          baza={baza}
+          akcja={{ etykieta: t.historiaWyczysc, onKlik: czysciHistorie }}
+        />
+
         {sekcje.map((sekcja) => (
-          <section
-            key={sekcja.id}
-            id={sekcja.id}
-            className="col-span-2 mt-5 scroll-mt-[104px] lg:col-span-4"
-          >
+          <section key={sekcja.id} id={sekcja.id} className="col-span-2 mt-5 scroll-mt-[104px] lg:col-span-4">
             <div className="mb-3 flex items-baseline justify-between gap-3">
               <h2 className="text-tytul-2 text-tekst">{t.sekcje[sekcja.id]}</h2>
               <span className="liczby shrink-0 text-przypis text-tekst-2">{sekcja.encje.length}</span>
@@ -60,9 +99,7 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
               {sekcja.encje.map((id) => {
                 const encja = baza.encje[id];
                 if (encja === undefined) return null;
-                return (
-                  <Kafel key={id} encja={encja} rozmiar={rozmiarKafla(encja)} onOtworz={onOtworz} />
-                );
+                return <Kafel key={id} encja={encja} rozmiar={rozmiarKafla(encja)} onOtworz={onOtworz} />;
               })}
             </div>
           </section>
@@ -70,6 +107,24 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
 
         <Stopka baza={baza} />
       </div>
+
+      {/* Losowanie pływa nad treścią, bo jest zaproszeniem, nie pozycją w spisie. */}
+      <button
+        type="button"
+        onClick={() => ustawWidok('losowanie')}
+        className="dotyk fixed bottom-[calc(env(safe-area-inset-bottom,0px)+20px)] left-1/2
+                   z-40 flex min-h-[48px] -translate-x-1/2 items-center gap-2 rounded-pigulka px-5
+                   text-podtytul text-tekst"
+        style={{
+          background: 'var(--mat-arkusz)',
+          backdropFilter: 'blur(24px) saturate(1.6)',
+          WebkitBackdropFilter: 'blur(24px) saturate(1.6)',
+          border: '0.5px solid var(--wlos)',
+        }}
+      >
+        <Shuffle size={16} strokeWidth={2} aria-hidden="true" />
+        {t.pokazMiCos}
+      </button>
     </main>
   );
 }
