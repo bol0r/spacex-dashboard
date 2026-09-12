@@ -1,10 +1,16 @@
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+
+// Numer wersji trzymamy w jednym miejscu — w package.json — i wstrzykujemy do
+// kodu przy budowaniu. Kopiowanie go do stałej w źródłach kończy się rozjazdem.
+const { version } = JSON.parse(readFileSync('./package.json', 'utf8')) as { version: string };
 
 // Ścieżki względne, żeby build działał także z file:// (wymóg z briefu).
 export default defineConfig({
   base: './',
   plugins: [react()],
+  define: { __WERSJA__: JSON.stringify(version) },
   build: {
     target: 'es2022',
     rollupOptions: {

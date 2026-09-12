@@ -43,6 +43,9 @@ interface Slownik {
   tylkoPoPolsku: string;
   jezyk: string;
   wczytywanie: string;
+  autorzy: string;
+  wersja: string;
+  liczbaEncji: (n: number) => string;
 }
 
 /** Polska odmiana: 1 / 2–4 / 5+. */
@@ -109,6 +112,9 @@ const PL: Slownik = {
   tylkoPoPolsku: 'Tekst na razie tylko po polsku',
   jezyk: 'Język',
   wczytywanie: 'Wczytywanie bazy…',
+  autorzy: 'Dead Net & Claude',
+  wersja: 'wersja',
+  liczbaEncji: (n) => `${n} ${pl3(n, ['encja', 'encje', 'encji'])}`,
 };
 
 const EN: Slownik = {
@@ -166,6 +172,9 @@ const EN: Slownik = {
   tylkoPoPolsku: 'Text currently available in Polish only',
   jezyk: 'Language',
   wczytywanie: 'Loading…',
+  autorzy: 'Dead Net & Claude',
+  wersja: 'version',
+  liczbaEncji: (n) => `${n} ${n === 1 ? 'entry' : 'entries'}`,
 };
 
 export const SLOWNIKI: Record<Jezyk, Slownik> = { pl: PL, en: EN };

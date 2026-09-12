@@ -68,7 +68,7 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
           </section>
         ))}
 
-        <Stopka />
+        <Stopka baza={baza} />
       </div>
     </main>
   );

@@ -276,4 +276,69 @@ export const Z = {
     url: 'https://www.sec.gov/newsroom/press-releases/2018-226',
     wydawca: 'U.S. Securities and Exchange Commission', dostep: D,
   },
+  wikiFalcon9: {
+    tytul: 'Falcon 9',
+    url: 'https://en.wikipedia.org/wiki/Falcon_9',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiLadowania: {
+    tytul: 'Falcon 9 first-stage landing tests',
+    url: 'https://en.wikipedia.org/wiki/Falcon_9_first-stage_landing_tests',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiDeltaV: {
+    tytul: 'Delta-v',
+    url: 'https://en.wikipedia.org/wiki/Delta-v',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiApsis: {
+    tytul: 'Apsis',
+    url: 'https://en.wikipedia.org/wiki/Apsis',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiGto: {
+    tytul: 'Geostationary transfer orbit',
+    url: 'https://en.wikipedia.org/wiki/Geostationary_transfer_orbit',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiGeo: {
+    tytul: 'Geostationary orbit',
+    url: 'https://en.wikipedia.org/wiki/Geostationary_orbit',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiSso: {
+    tytul: 'Sun-synchronous orbit',
+    url: 'https://en.wikipedia.org/wiki/Sun-synchronous_orbit',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiItar: {
+    tytul: 'International Traffic in Arms Regulations',
+    url: 'https://en.wikipedia.org/wiki/International_Traffic_in_Arms_Regulations',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiKessler: {
+    tytul: 'Kessler syndrome',
+    url: 'https://en.wikipedia.org/wiki/Kessler_syndrome',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiAutogeniczne: {
+    tytul: 'Autogenous pressurization',
+    url: 'https://en.wikipedia.org/wiki/Autogenous_pressurization',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wordoriginsRud: {
+    tytul: 'rapid unplanned/unscheduled disassembly (RUD)',
+    url: 'https://www.wordorigins.org/big-list-entries/rapid-unplanned-disassembly-rud',
+    wydawca: 'Wordorigins.org', dostep: D,
+  },
+  spaceStageZero: {
+    tytul: 'Elon Musk unveils SpaceX launch and catch tower for Starship Mars rocket',
+    url: 'https://www.space.com/spacex-starship-launch-tower-elon-musk-video',
+    wydawca: 'Space.com', dostep: D,
+  },
+  nasaScrub: {
+    tytul: 'Apollo Saturn V launch hold / recycle and scrub turnaround constraints',
+    url: 'https://www.nasa.gov/history/afj/launchwindow/scrub.html',
+    wydawca: 'NASA', dostep: D,
+  },
 } as const satisfies Record<string, Zrodlo>;

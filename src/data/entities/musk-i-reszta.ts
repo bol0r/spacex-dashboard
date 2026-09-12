@@ -39,6 +39,7 @@ export const muskIReszta: Encja[] = [
       { id: 'starship', powod: 'jej największy zakład o przyszłość' },
       { id: 'starlink', powod: 'jej główne źródło przychodów' },
       { id: 'starbase', powod: 'jej siedziba i kosmodrom od 2024 roku' },
+      { id: 'itar', powod: 'przepisy, które rozstrzygają, kto może pracować przy jej rakietach' },
     ],
     status: 'aktywne',
     zrodla: [Z.wikiSpaceX, Z.wikiIpo, Z.wikiBarki],

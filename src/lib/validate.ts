@@ -22,11 +22,12 @@ const DATA_ISO = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 const WZORCE_ZMIENNE = [
   /liczba/i, /łącznie/i, /lacznie/i, /wycen/i, /subskry/i, /abonen/i,
   /satelit/i, /zatrudni/i, /przychod/i, /kapitaliz/i, /dostarcz/i,
-  /skuteczno/i, /rekord lot/i, /kwota/i, /zysk/i,
+  /skuteczno/i, /rekord lot/i, /kwota/i, /\bzysk/i,
 ];
 
 /** Wartości, które są datą, a nie licznikiem — data nie potrzebuje `stanNa`. */
-const WYGLADA_NA_DATE = /\b(?:stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia)\b|\b\d{1,2}\.\d{2}\.\d{4}\b|\b(?:19|20)\d{2}\b\s*$/i;
+const WYGLADA_NA_DATE =
+  /\b(?:stycze[nń]|stycznia|lut[yego]*|luty|lutego|marz?e?c|marca|kwiecie[nń]|kwietnia|maj|maja|czerwiec|czerwca|lipiec|lipca|sierpie[nń]|sierpnia|wrzesie[nń]|września|październik|października|listopad|listopada|grudzie[nń]|grudnia)\b|\b\d{1,2}\.\d{2}\.\d{4}\b|\b(?:19|20)\d{2}\b/i;
 
 function blad(
   kod: KodBledu, waga: WagaBledu, encjaId: string, szczegol: string,
