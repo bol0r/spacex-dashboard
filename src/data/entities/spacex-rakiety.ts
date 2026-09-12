@@ -1,0 +1,271 @@
+import type { Encja } from '../types';
+import { Z } from '../zrodla';
+
+export const rakiety: Encja[] = [
+  {
+    id: 'starship',
+    typ: 'rakieta',
+    nazwa: 'Starship',
+    aka: ['Ship', 'statek Starship', 'BFR', 'Starship HLS'],
+    krotki: 'Najwyższa i najmocniejsza rakieta, jaka kiedykolwiek wystartowała — projektowana tak, by w całości wracała na Ziemię.',
+    tresc: [
+      'Starship to dwa elementy: dolny stopień [[super-heavy|Super Heavy]] i górny, który nazywa się tak samo jak cały system — stąd stały bałagan terminologiczny. Razem mierzą 121,3 metra wysokości przy 9 metrach średnicy i ruszają z ziemi z ciągiem 73,5 MN. Dla porównania: to ponad dwukrotność Saturna V. Napęd stanowi wyłącznie [[raptor|Raptor]].',
+      'Kadłub jest ze stali nierdzewnej. Pierwsze prototypy budowano z gatunku 301, potem przeszedł on w 304L, a obecne egzemplarze korzystają z firmowego stopu oznaczanego 30X. To decyzja, która w 2018 roku wyglądała na krok wstecz — cała branża szła w kompozyty węglowe — i która okazała się jedną z najważniejszych w całym programie.',
+      'Program idzie przez loty testowe, nie przez symulacje. Pierwszy lot w kwietniu 2023 roku skończył się rozpadem rakiety po czterech minutach. Lot 5 w październiku 2024 przyniósł pierwsze w historii złapanie członu nośnego przez ramiona wieży startowej. Loty 7, 8 i 9 to seria utrat górnego stopnia. Lot 10 i 11 przyniosły kontrolowane wodowania z celnością liczoną w metrach. Lot 12 w maju 2026 był debiutem konstrukcji Block 3.',
+      'Lot 13 z 24 lipca 2026 roku był pierwszym po wejściu [[spacex|SpaceX]] na giełdę i pierwszym, w którym Starship wypuścił prawdziwe satelity [[starlink|Starlink]] generacji V3. Statek przetrwał wejście w atmosferę i spoczął nienaruszony w Oceanie Indyjskim, co dało pierwsze zdjęcia całej osłony termicznej po locie. Lot 14, planowany na 18 września 2026, ma być pierwszą próbą wejścia na pełną orbitę wokół Ziemi.',
+      'Wariant załogowy Starship HLS ma posadzić astronautów na Księżycu w ramach programu Artemis. Test dokowania planowany jest na 2027 rok, lądowanie z ludźmi na pokładzie na 2028 — obie daty przesuwały się już wielokrotnie i należy je czytać jako intencję, nie jako termin.',
+    ],
+    fakty: [
+      { etykieta: 'Wysokość', wartosc: '121,3 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Średnica', wartosc: '9 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki', wartosc: '33 Raptory w dolnym stopniu, 6 w górnym', pewnosc: 'potwierdzone' },
+      { etykieta: 'Masa paliwa', wartosc: 'ok. 4 600 t', pewnosc: 'szacunkowe' },
+      { etykieta: 'Liczba lotów testowych', wartosc: '13', stanNa: '2026-09-12', pewnosc: 'potwierdzone' },
+      { etykieta: 'Materiał kadłuba', wartosc: 'stal nierdzewna — 301, potem 304L, obecnie stop 30X', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek na LEO (Block 1)', wartosc: '15 t', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Decyzja o stali zamiast włókna węglowego była w dużej mierze arytmetyką. Musk podał, że kompozyt kosztuje około 135 dolarów za kilogram, a nawet 35 procent materiału idzie do kosza przy cięciu — stal kosztuje około 3 dolarów. Do tego kompozyt traci własności powyżej mniej więcej 150 stopni Celsjusza, a stal pracuje jeszcze przy 800. Najdroższa rakieta świata jest zrobiona z materiału, z którego robi się zbiorniki na mleko.',
+        zrodlo: Z.spaceStal,
+      },
+    ],
+    os: [
+      { data: '2023-04-20', tytul: 'Lot 1', opis: 'Rakieta rozpada się cztery minuty po starcie, ale stanowisko przetrwało.', waga: 3 },
+      { data: '2024-10-13', tytul: 'Lot 5 — pierwsze złapanie', opis: 'Super Heavy wraca prosto w ramiona wieży startowej.', waga: 3 },
+      { data: '2026-05-22', tytul: 'Lot 12 — debiut Block 3', opis: 'Pierwszy lot nowej konstrukcji, z ładunkiem makiet Starlinków.', waga: 2 },
+      { data: '2026-07-24', tytul: 'Lot 13', opis: 'Pierwsze prawdziwe satelity Starlink V3 i nienaruszony statek po wodowaniu.', waga: 3 },
+      { data: '2026-09-18', tytul: 'Lot 14 — planowany', opis: 'Zapowiadana pierwsza próba wejścia na orbitę okołoziemską.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'super-heavy', powod: 'jego dolny stopień — bez niego Starship nie opuszcza atmosfery' },
+      { id: 'raptor', powod: 'jedyny silnik, jaki go napędza' },
+      { id: 'starbase', powod: 'tam powstaje i stamtąd startuje' },
+      { id: 'starlink', powod: 'ma przejąć wynoszenie satelitów generacji V3' },
+      { id: 'reuzywalnosc', powod: 'pierwsza konstrukcja pomyślana jako wielorazowa w całości, nie w połowie' },
+      { id: 'spacex', powod: 'główny program firmy po Falconie 9' },
+    ],
+    status: 'w rozwoju',
+    zrodla: [Z.wikiStarship, Z.wikiStartyStarship, Z.cnbcLot13, Z.slsLot14],
+    zaktualizowano: '2026-09-12',
+  },
+
+  {
+    id: 'super-heavy',
+    typ: 'rakieta',
+    nazwa: 'Super Heavy',
+    aka: ['Booster', 'B14', 'dolny stopień Starshipa'],
+    krotki: 'Dolny stopień Starshipa: 33 silniki, 3 400 ton paliwa i powrót prosto w ramiona wieży, bez nóg lądowniczych.',
+    tresc: [
+      'Super Heavy jest największym członem nośnym, jaki kiedykolwiek poleciał. Na jego dnie siedzą trzydzieści trzy silniki [[raptor|Raptor]], z czego trzynaście środkowych ma zawieszenie kardanowe i steruje kierunkiem lotu. Zbiorniki mieszczą około 3 400 ton ciekłego metanu i tlenu — ponad dwie trzecie masy startowej całego [[starship|Starshipa]].',
+      'Najbardziej nietypowy jest sposób powrotu. Zamiast lądować na własnych nogach, jak robi to [[falcon-9|Falcon 9]], Super Heavy wraca nad stanowisko i zawisa między dwoma ruchomymi ramionami wieży, które chwytają go za dwa czopy pod siatkami aerodynamicznymi. Ramiona ochrzczono „chopsticks", a całą wieżę — Mechazillą. Powód jest czysto rachunkowy: nogi lądownicze ważą tyle, ile mógłby ważyć ładunek.',
+      'Pierwsze złapanie udało się przy piątym locie testowym, 13 października 2024 roku, za pierwszym podejściem. Kolejne przyszły przy locie 7 i 8. Przy locie 6 manewr przerwano automatycznie, bo wieża odniosła uszkodzenia w chwili startu, a booster skierowano na wodowanie — zabezpieczenie zadziałało bez udziału człowieka.',
+      'Loty 12 i 13, na konstrukcji Block 3, kończyły się utratą członu przy hamowaniu nad zatoką: przy locie 12 odpaliło dwadzieścia z trzydziestu trzech silników, przy locie 13 — dziesięć z trzynastu przewidzianych. Program celowo nie próbował wtedy łapania, bo priorytetem był ładunek [[starlink|Starlink]] w górnym stopniu.',
+    ],
+    fakty: [
+      { etykieta: 'Silniki', wartosc: '33 × Raptor', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN', pewnosc: 'potwierdzone' },
+      { etykieta: 'Masa paliwa', wartosc: 'ok. 3 400 t', pewnosc: 'szacunkowe' },
+      { etykieta: 'Średnica', wartosc: '9 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwsze złapanie przez wieżę', wartosc: '13 października 2024, lot 5', pewnosc: 'potwierdzone' },
+      { etykieta: 'Sposób odzysku', wartosc: 'chwyt przez ramiona wieży, bez nóg lądowniczych', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Egzemplarz B14 złapano po locie 7 w styczniu 2025 roku, a cztery miesiące później wysłano go w kosmos jeszcze raz przy locie 9. To pierwszy Super Heavy, który poleciał dwukrotnie — i pierwszy dowód, że chwyt przez wieżę daje człon zdatny do lotu, a nie eksponat.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2024-10-13', tytul: 'Pierwsze złapanie', opis: 'Wieża chwyta wracający człon za pierwszym podejściem, przy locie 5.', waga: 3 },
+      { data: '2025-05-27', tytul: 'Pierwszy powtórny lot', opis: 'Booster B14 startuje po raz drugi, przy locie 9.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship', powod: 'stanowi jego dolny stopień' },
+      { id: 'raptor', powod: 'napędzany przez 33 sztuki, z czego 13 sterowanych kardanowo' },
+      { id: 'starbase', powod: 'wieża, która go łapie, stoi właśnie tam' },
+      { id: 'reuzywalnosc', powod: 'chwyt przez wieżę to najdalej posunięta wersja tej idei' },
+    ],
+    status: 'w rozwoju',
+    zrodla: [Z.wikiStarship, Z.wikiStartyStarship],
+    zaktualizowano: '2026-09-12',
+  },
+
+  {
+    id: 'falcon-9',
+    typ: 'rakieta',
+    nazwa: 'Falcon 9',
+    aka: ['F9', 'Falcon 9 Block 5', 'Falcon 9 Full Thrust'],
+    krotki: 'Rakieta, która zamieniła pierwszy stopień w sprzęt wielokrotnego użytku i przejęła większość światowego rynku startów.',
+    tresc: [
+      'Falcon 9 jest rakietą dwustopniową na naftę i ciekły tlen. Dziewięć silników [[merlin|Merlin]] w pierwszym stopniu, jeden w wersji próżniowej w drugim. Debiutowała w czerwcu 2010 roku w wersji v1.0 i od tego czasu przeszła przez v1.1, Full Thrust i wreszcie Block 5 z maja 2018 — wariant, w którym lata do dziś.',
+      'Cała jej wartość bierze się z jednej rzeczy: pierwszy stopień wraca. Po odłączeniu wykonuje hamowanie wsteczne, wchodzi w atmosferę silnikami do przodu i siada pionowo — na betonowym stanowisku albo na barce dronowej stojącej na oceanie. Pierwsze lądowanie na lądzie udało się 21 grudnia 2015 roku po wyniesieniu satelitów Orbcomm, pierwsze na barce 8 kwietnia 2016 przy misji zaopatrzeniowej CRS-8.',
+      'Skala jest dziś trudna do objęcia. Rodzina Falcon 9 wykonała 699 startów przy 696 pełnych sukcesach, a pierwsze stopnie wróciły 657 razy na 670 prób — czyli z sprawnością ponad 98 procent. Dla samego wariantu Block 5 współczynnik wynosi 99,06 procent. Rekordowy egzemplarz boostera przeszedł 37 lotów.',
+      'Falcon 9 jest też rakietą, która wynosi [[starlink|Starlink]] i wozi ludzi w kapsule [[crew-dragon|Crew Dragon]]. W 2026 roku około trzech czwartych jej startów to misje własnej konstelacji — [[spacex|SpaceX]] jest dziś swoim największym klientem. To właśnie ta rakieta, a nie [[starship|Starship]], utrzymuje firmę.',
+    ],
+    fakty: [
+      { etykieta: 'Liczba startów (rodzina)', wartosc: '699', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pełne sukcesy', wartosc: '696', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Lądowania boosterów', wartosc: '657 na 670 prób (98,06%)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skuteczność wariantu Block 5', wartosc: '632 na 638 prób (99,06%)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord lotów jednego boostera', wartosc: '37 (egzemplarz B1067)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki', wartosc: '9 × Merlin 1D w I stopniu, 1 × Merlin 1D Vacuum w II', pewnosc: 'potwierdzone' },
+      { etykieta: 'Debiut', wartosc: 'czerwiec 2010 (v1.0), Block 5 od maja 2018', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Rekordzistą w liczbie lotów nie jest wcale żaden booster, tylko połówka osłony ładunku o numerze SN155 — przeszła czterdzieści startów. Element, który przez dekady traktowano jak opakowanie do wyrzucenia po otwarciu, okazał się najbardziej wysłużoną częścią całego systemu.',
+        zrodlo: Z.wikiStartyFalcon,
+      },
+      {
+        tekst: 'Setny start Falcona 9 w samym tylko roku 2026 odbył się 25 sierpnia. Rakieta osiągnęła w niecałe osiem miesięcy tempo, którego przez większość ery kosmicznej nie wyrabiały całe państwa w rok.',
+        zrodlo: Z.spaceSetny,
+      },
+    ],
+    os: [
+      { data: '2010-06', tytul: 'Pierwszy lot', opis: 'Wersja v1.0 startuje z Przylądka Canaveral.', waga: 2 },
+      { data: '2015-12-21', tytul: 'Pierwsze lądowanie na lądzie', opis: 'Po wyniesieniu satelitów Orbcomm pierwszy stopień siada pionowo na Landing Zone 1.', waga: 3 },
+      { data: '2016-04-08', tytul: 'Pierwsze lądowanie na barce', opis: 'Booster misji CRS-8 siada na pływającej platformie 300 km od brzegu Florydy.', waga: 3 },
+      { data: '2018-05', tytul: 'Block 5', opis: 'Ostateczna wersja konstrukcji, pomyślana pod szybkie ponowne loty.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'merlin', powod: 'napędzany przez dziewięć sztuk w pierwszym stopniu' },
+      { id: 'reuzywalnosc', powod: 'pierwsza rakieta orbitalna, która uczyniła z niej rutynę' },
+      { id: 'starlink', powod: 'wynosi konstelację — to dziś większość jej lotów' },
+      { id: 'crew-dragon', powod: 'wynosi kapsułę z astronautami' },
+      { id: 'falcon-heavy', powod: 'jego wersja potrójna, zbudowana z trzech takich członów' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiStartyFalcon, Z.snewsOrbcomm, Z.spaceBarkaCrs8, Z.spaceSetny],
+    zaktualizowano: '2026-09-12',
+  },
+
+  {
+    id: 'falcon-heavy',
+    typ: 'rakieta',
+    nazwa: 'Falcon Heavy',
+    aka: ['FH'],
+    krotki: 'Trzy pierwsze stopnie Falcona 9 połączone w jedną rakietę — 27 silników startujących równocześnie.',
+    tresc: [
+      'Pomysł jest prosty do opisania i trudny do wykonania: weź trzy pierwsze stopnie [[falcon-9|Falcona 9]], zepnij je obok siebie i odpal jednocześnie. Daje to dwadzieścia siedem silników [[merlin|Merlin]] pracujących naraz i 22,82 MN ciągu przy starcie, przy wysokości 70 metrów.',
+      'W wersji w pełni zużywalnej Falcon Heavy wynosi 63 800 kg na niską orbitę, 26 700 kg na orbitę transferową do geostacjonarnej i 16 800 kg na trajektorię ku Marsowi. Boczne człony wracają i lądują, co obniża cenę startu do około 97 milionów dolarów — wobec 150 milionów za wariant, z którego nic nie wraca.',
+      'Pierwszy lot odbył się 6 lutego 2018 roku. Zamiast balastu z betonu, jak robi to cała branża, [[elon-musk|Musk]] umieścił na szczycie własny samochód — Teslę Roadster pierwszej generacji — z manekinem w skafandrze za kierownicą. Manekin dostał imię Starman.',
+      'Falcon Heavy lata rzadko: trzynaście startów przez ponad osiem lat. Powód jest nudny i mówi wszystko o tym, jak zmienił się rynek — [[falcon-9|Falcon 9]] w wariancie zużywalnym zabiera wystarczająco dużo, żeby większość klientów nie potrzebowała rakiety cięższej.',
+    ],
+    fakty: [
+      { etykieta: 'Wysokość', wartosc: '70 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki przy starcie', wartosc: '27 × Merlin 1D', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ciąg przy starcie', wartosc: '22,82 MN', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek na LEO', wartosc: '63 800 kg w wersji zużywalnej', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek na GTO', wartosc: '26 700 kg w wersji zużywalnej', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba startów', wartosc: '13', stanNa: '2026-08-30', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cena startu', wartosc: '97 mln USD (z odzyskiem), 150 mln USD (bez)', stanNa: '2022', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Na desce rozdzielczej Roadstera widnieje napis „DON’T PANIC" — ukłon w stronę „Autostopem przez Galaktykę". W samochodzie jechał też model Hot Wheels tego samego auta z miniaturowym Starmanem w środku oraz dysk Arch z nazwiskami pracowników. Obserwacje teleskopowe skorygowały pierwsze szacunki: Roadster nie dolatuje do pasa planetoid, a jego orbita nieznacznie wykracza poza orbitę Marsa w punkcie najdalszym.',
+        zrodlo: Z.wikiFalconHeavy,
+      },
+    ],
+    os: [
+      { data: '2018-02-06', tytul: 'Lot demonstracyjny', opis: 'Pierwszy start; ładunkiem jest Roadster Muska ze Starmanem za kierownicą.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'falcon-9', powod: 'zbudowany z trzech jego pierwszych stopni' },
+      { id: 'merlin', powod: 'napędzany przez 27 sztuk przy starcie' },
+      { id: 'tesla', powod: 'ładunkiem lotu demonstracyjnego był Roadster tej marki' },
+      { id: 'elon-musk', powod: 'na pierwszy lot oddał własny samochód zamiast balastu' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-12',
+  },
+
+  {
+    id: 'crew-dragon',
+    typ: 'statek',
+    nazwa: 'Crew Dragon',
+    aka: ['Dragon 2', 'Smok załogowy', 'Endeavour', 'Resilience'],
+    krotki: 'Kapsuła, która w 2020 roku przywróciła Stanom Zjednoczonym zdolność wysyłania ludzi w kosmos z własnego terytorium.',
+    tresc: [
+      'Crew Dragon zabiera czterech astronautów w locie normalnym i do siedmiu w ewakuacji. Mierzy 4,5 metra bez modułu serwisowego i 8,1 metra z nim, przy średnicy 4 metrów. Do manewrów orbitalnych służy szesnaście silniczków Draco, a osiem mocnych SuperDraco stanowi system ratunkowy — w razie awarii rakiety odrzucają kapsułę na bok w ułamku sekundy.',
+      'Dokowanie odbywa się automatycznie, ze złączem zgodnym ze standardem IDSS, z możliwością przejęcia sterowania przez załogę. Kapsuła jest wielorazowa; pierwotnie certyfikowano ją na pięć lotów, a od 2024 roku trwają prace nad podniesieniem limitu do piętnastu.',
+      'Lot Demo-2 wystartował 30 maja 2020 roku o 15:22 czasu wschodniego z Kennedy Space Center. Na pokładzie byli Robert Behnken i Douglas Hurley — pierwsi astronauci wysłani z terytorium USA od zakończenia programu wahadłowców w 2011 roku. Misja trwała niemal 64 dni i zakończyła się wodowaniem na Atlantyku 2 sierpnia.',
+      'Od tamtej pory kapsuła wykonała ciąg lotów, które przesunęły granicę tego, co uchodzi za lot komercyjny: Inspiration4 z wyłącznie cywilną załogą na wysokości 585 km, Ax-1 jako pierwszy w pełni prywatny lot na stację, Polaris Dawn z orbitą sięgającą 1 400 km i pierwszym komercyjnym spacerem kosmicznym, wreszcie Fram2 — pierwszy załogowy lot po orbicie biegunowej. Wszystkie wynosi [[falcon-9|Falcon 9]].',
+    ],
+    fakty: [
+      { etykieta: 'Załoga', wartosc: '4 osoby, do 7 w ewakuacji', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wysokość', wartosc: '4,5 m (kapsuła), 8,1 m z modułem serwisowym', pewnosc: 'potwierdzone' },
+      { etykieta: 'Średnica', wartosc: '4 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'System ratunkowy', wartosc: '8 × SuperDraco, 71 kN każdy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniczki manewrowe', wartosc: '16 × Draco, 400 N każdy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Certyfikacja lotów kapsuły', wartosc: 'pierwotnie 5, docelowo do 15', stanNa: '2024-03', pewnosc: 'szacunkowe' },
+      { etykieta: 'Pierwszy lot załogowy', wartosc: 'Demo-2, 30 maja 2020', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Polaris Dawn wyniósł załogę na 1 400 kilometrów — najwyżej, jak człowiek znalazł się od czasu zakończenia programu Apollo. Rekordu nie pobiła agencja kosmiczna ani państwo, tylko misja opłacona prywatnie.',
+        zrodlo: Z.wikiDragon2,
+      },
+    ],
+    os: [
+      { data: '2020-05-30', tytul: 'Demo-2', opis: 'Behnken i Hurley startują z LC-39A; pierwszy lot załogowy z USA od 2011 roku.', waga: 3 },
+      { data: '2021-09', tytul: 'Inspiration4', opis: 'Pierwsza orbitalna misja z załogą złożoną wyłącznie z cywilów.', waga: 3 },
+      { data: '2024-09', tytul: 'Polaris Dawn', opis: 'Orbita do 1 400 km i pierwszy komercyjny spacer kosmiczny.', waga: 3 },
+      { data: '2025-04', tytul: 'Fram2', opis: 'Pierwszy załogowy lot po orbicie biegunowej.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'falcon-9', powod: 'jedyna rakieta, która ją wynosi' },
+      { id: 'spacex', powod: 'jej program przywrócił firmie status przewoźnika załogowego' },
+      { id: 'leo', powod: 'operuje wyłącznie na niskiej orbicie okołoziemskiej' },
+      { id: 'reuzywalnosc', powod: 'kapsuła wraca i leci ponownie, w odróżnieniu od kapsuł z epoki Apollo' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiDragon2, Z.nasaDemo2],
+    zaktualizowano: '2026-09-12',
+  },
+
+  {
+    id: 'starlink',
+    typ: 'produkt',
+    nazwa: 'Starlink',
+    aka: ['konstelacja Starlink', 'Direct to Cell', 'Starlink V3'],
+    krotki: 'Konstelacja ponad dziesięciu tysięcy satelitów, która dostarcza internet tam, gdzie nie dochodzi żaden kabel.',
+    tresc: [
+      'Starlink to sieć satelitów na niskiej orbicie okołoziemskiej — na tyle nisko, że opóźnienie sygnału jest porównywalne z łączem naziemnym, i na tyle licznych, że nad każdym punktem Ziemi zawsze jest któryś. Pierwsza operacyjna partia sześćdziesięciu sztuk poleciała 24 maja 2019 roku na [[falcon-9|Falconie 9]].',
+      'W czerwcu 2026 roku na orbicie było około 10 413 satelitów, z czego 10 397 działających, a z usługi korzystało 12 milionów abonentów w mniej więcej 160 krajach i terytoriach. Tempo przyrostu jest wymowne: w marcu 2026 abonentów było 10,3 miliona.',
+      'Konstelacja przeszła przez kolejne generacje sprzętu: v0.9 testowe, potem v1.0, v1.5 z laserowymi łączami międzysatelitarnymi, v2 mini, wreszcie V3 — pierwsze egzemplarze tej ostatniej wypuścił [[starship|Starship]] podczas lotu 13 w lipcu 2026 roku. Osobną gałęzią jest Starshield, wariant rządowy z szyfrowaną łącznością.',
+      'Usługa Direct to Cell pozwala łączyć się ze zwykłym telefonem bez żadnej dodatkowej anteny — SMS-y ruszyły z T-Mobile w styczniu 2024 roku. Dla [[spacex|SpaceX]] Starlink jest dziś głównym źródłem pieniędzy: 11,4 miliarda dolarów przychodu i 4,4 miliarda zysku operacyjnego w 2025 roku, po pierwszym rentownym roku 2024.',
+    ],
+    fakty: [
+      { etykieta: 'Satelity na orbicie', wartosc: 'ok. 10 413, w tym 10 397 czynnych', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba abonentów', wartosc: '12 mln', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zasięg', wartosc: 'ok. 160 krajów i terytoriów', stanNa: '2026-06', pewnosc: 'szacunkowe' },
+      { etykieta: 'Pierwszy start operacyjny', wartosc: '24 maja 2019, 60 satelitów', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przychód', wartosc: '11,4 mld USD', stanNa: '2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zysk operacyjny', wartosc: '4,4 mld USD', stanNa: '2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Generacje', wartosc: 'v0.9, v1.0, v1.5, v2 mini, V3', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Pierwszy zysk netto w całej historii konstelacji wyniósł 72,7 miliona dolarów i pojawił się dopiero w 2024 roku — piątym roku działania usługi. Rok później ta sama konstelacja zarobiła na czysto ponad cztery miliardy.',
+        zrodlo: Z.wikiStarlink,
+      },
+    ],
+    os: [
+      { data: '2019-05-24', tytul: 'Pierwszy start operacyjny', opis: 'Falcon 9 wynosi sześćdziesiąt pierwszych satelitów.', waga: 3 },
+      { data: '2024-01', tytul: 'Direct to Cell', opis: 'Ruszają SMS-y wysyłane ze zwykłego telefonu przez satelitę, we współpracy z T-Mobile.', waga: 2 },
+      { data: '2026-07-24', tytul: 'Pierwsze satelity V3', opis: 'Starship wypuszcza pierwsze egzemplarze nowej generacji podczas lotu 13.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'falcon-9', powod: 'wyniósł zdecydowaną większość konstelacji' },
+      { id: 'starship', powod: 'ma przejąć wynoszenie cięższej generacji V3' },
+      { id: 'spacex', powod: 'główne źródło przychodów firmy' },
+      { id: 'leo', powod: 'cała konstelacja pracuje na niskiej orbicie okołoziemskiej' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiStarlink, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-12',
+  },
+];

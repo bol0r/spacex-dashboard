@@ -1,0 +1,91 @@
+/* Tokeny projektu. Pięć kolorów z design planu + materiały budowane
+   przezroczystą bielą i rozmyciem. Cienia nie ma w ogóle. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+
+  /* --- Paleta: dokładnie pięć wartości ---------------------------------- */
+  --tlo: #000000;       /* baza OLED */
+  --tekst: #F5F7FA;     /* biel ściągnięta w chłód, 18:1 na czerni */
+  --tekst-2: #9BA1A6;   /* drugi plan, 8,1:1 — pełnoprawny tekst, nie wyszarzenie */
+  --blekit: #4DA6FF;    /* WYŁĄCZNIE: nawigacja, stany, to co klikalne */
+  --plomien: #FF8A3D;   /* WYŁĄCZNIE: liczby żywe i kamienie milowe wagi 3 */
+
+  /* --- Materiały: przezroczystość + rozmycie, nie jaśniejsza szarość ----- */
+  --mat-kafel: rgba(255, 255, 255, 0.06);
+  --mat-kafel-mocny: rgba(255, 255, 255, 0.09);
+  --mat-arkusz: rgba(255, 255, 255, 0.10);
+  --mat-chip: rgba(77, 166, 255, 0.14);
+  --mat-plomien: rgba(255, 138, 61, 0.12);
+  --wlos: rgba(255, 255, 255, 0.12);   /* jedyna dozwolona linia */
+  --blur-kafel: 20px;
+  --blur-arkusz: 30px;
+
+  /* --- Ruch: sprężyny, nie krzywe czasowe ------------------------------- */
+  --sprezyna-sztywnosc: 380;
+  --sprezyna-tlumienie: 34;
+}
+
+html, body, #root { height: 100%; background: var(--tlo); }
+
+body {
+  margin: 0;
+  color: var(--tekst);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior-y: none;
+}
+
+/* Cyfry w kolumnie muszą się wyrównywać — wyłącznie tam, gdzie naprawdę trzeba. */
+.liczby {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1, 'ss01' 1;
+}
+
+/* Focus widoczny i zawsze w błękicie — kolor stanu ma jedną pracę. */
+:focus-visible {
+  outline: 2px solid var(--blekit);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+/* Materiał kafla. Rozmycie zamiast cienia, włos zamiast obwódki. */
+.material {
+  background: var(--mat-kafel);
+  backdrop-filter: blur(var(--blur-kafel)) saturate(1.4);
+  -webkit-backdrop-filter: blur(var(--blur-kafel)) saturate(1.4);
+  border: 0.5px solid var(--wlos);
+}
+
+/* Wciśnięcie: scale 0.97 z natychmiastowym odbiciem. */
+.dotyk {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: transform 120ms cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.dotyk:active { transform: scale(0.97); }
+
+/* Pasek faktów i inne listy poziome — bez widocznego paska przewijania. */
+.przewin-poziomo {
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.przewin-poziomo::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  /* Zostaje wyłącznie zmiana przezroczystości. */
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-property: opacity !important;
+    transition-duration: 120ms !important;
+  }
+  .dotyk:active { transform: none; }
+}
