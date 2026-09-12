@@ -13,7 +13,7 @@ export const rakiety: Encja[] = [
       'Kadłub jest ze stali nierdzewnej. Pierwsze prototypy budowano z gatunku 301, potem przeszedł on w 304L, a obecne egzemplarze korzystają z firmowego stopu oznaczanego 30X. To decyzja, która w 2018 roku wyglądała na krok wstecz — cała branża szła w kompozyty węglowe — i która okazała się jedną z najważniejszych w całym programie.',
       'Program idzie przez loty testowe, nie przez symulacje. Pierwszy lot w kwietniu 2023 roku skończył się rozpadem rakiety po czterech minutach. Lot 5 w październiku 2024 przyniósł pierwsze w historii złapanie członu nośnego przez ramiona wieży startowej. Loty 7, 8 i 9 to seria utrat górnego stopnia. Lot 10 i 11 przyniosły kontrolowane wodowania z celnością liczoną w metrach. Lot 12 w maju 2026 był debiutem konstrukcji Block 3.',
       'Lot 13 z 24 lipca 2026 roku był pierwszym po wejściu [[spacex|SpaceX]] na giełdę i pierwszym, w którym Starship wypuścił prawdziwe satelity [[starlink|Starlink]] generacji V3. Statek przetrwał wejście w atmosferę i spoczął nienaruszony w Oceanie Indyjskim, co dało pierwsze zdjęcia całej osłony termicznej po locie. Lot 14, planowany na 18 września 2026, ma być pierwszą próbą wejścia na pełną orbitę wokół Ziemi.',
-      'Wariant załogowy Starship HLS ma posadzić astronautów na Księżycu w ramach programu Artemis. Test dokowania planowany jest na 2027 rok, lądowanie z ludźmi na pokładzie na 2028 — obie daty przesuwały się już wielokrotnie i należy je czytać jako intencję, nie jako termin.',
+      'Wariant załogowy [[hls-artemis|Starship HLS]] ma posadzić astronautów na Księżycu w ramach programu Artemis. Test dokowania planowany jest na 2027 rok, lądowanie z ludźmi na pokładzie na 2028 — obie daty przesuwały się już wielokrotnie i należy je czytać jako intencję, nie jako termin.',
     ],
     fakty: [
       { etykieta: 'Wysokość', wartosc: '121,3 m', pewnosc: 'potwierdzone' },
@@ -100,7 +100,7 @@ export const rakiety: Encja[] = [
     krotki: 'Rakieta, która zamieniła pierwszy stopień w sprzęt wielokrotnego użytku i przejęła większość światowego rynku startów.',
     tresc: [
       'Falcon 9 jest rakietą dwustopniową na naftę i ciekły tlen. Dziewięć silników [[merlin|Merlin]] w pierwszym stopniu, jeden w wersji próżniowej w drugim. Debiutowała w czerwcu 2010 roku w wersji v1.0 i od tego czasu przeszła przez v1.1, Full Thrust i wreszcie Block 5 z maja 2018 — wariant, w którym lata do dziś.',
-      'Cała jej wartość bierze się z jednej rzeczy: pierwszy stopień wraca. Po odłączeniu wykonuje hamowanie wsteczne, wchodzi w atmosferę silnikami do przodu i siada pionowo — na betonowym stanowisku albo na barce dronowej stojącej na oceanie. Pierwsze lądowanie na lądzie udało się 21 grudnia 2015 roku po wyniesieniu satelitów Orbcomm, pierwsze na barce 8 kwietnia 2016 przy misji zaopatrzeniowej CRS-8.',
+      'Cała jej wartość bierze się z jednej rzeczy: pierwszy stopień wraca. Po odłączeniu wykonuje hamowanie wsteczne, wchodzi w atmosferę silnikami do przodu i siada pionowo — na betonowym stanowisku albo na barce dronowej stojącej na oceanie. [[pierwsze-ladowanie|Pierwsze lądowanie na lądzie]] udało się 21 grudnia 2015 roku po wyniesieniu satelitów Orbcomm, [[pierwsze-ladowanie-na-barce|pierwsze na barce]] 8 kwietnia 2016 przy misji zaopatrzeniowej CRS-8. Odzyskane człony schodzą dziś głównie na [[barki-dronowe|barki dronowe]].',
       'Skala jest dziś trudna do objęcia. Rodzina Falcon 9 wykonała 699 startów przy 696 pełnych sukcesach, a pierwsze stopnie wróciły 657 razy na 670 prób — czyli z sprawnością ponad 98 procent. Dla samego wariantu Block 5 współczynnik wynosi 99,06 procent. Rekordowy egzemplarz boostera przeszedł 37 lotów.',
       'Falcon 9 jest też rakietą, która wynosi [[starlink|Starlink]] i wozi ludzi w kapsule [[crew-dragon|Crew Dragon]]. W 2026 roku około trzech czwartych jej startów to misje własnej konstelacji — [[spacex|SpaceX]] jest dziś swoim największym klientem. To właśnie ta rakieta, a nie [[starship|Starship]], utrzymuje firmę.',
     ],
@@ -150,7 +150,7 @@ export const rakiety: Encja[] = [
     tresc: [
       'Pomysł jest prosty do opisania i trudny do wykonania: weź trzy pierwsze stopnie [[falcon-9|Falcona 9]], zepnij je obok siebie i odpal jednocześnie. Daje to dwadzieścia siedem silników [[merlin|Merlin]] pracujących naraz i 22,82 MN ciągu przy starcie, przy wysokości 70 metrów.',
       'W wersji w pełni zużywalnej Falcon Heavy wynosi 63 800 kg na niską orbitę, 26 700 kg na orbitę transferową do geostacjonarnej i 16 800 kg na trajektorię ku Marsowi. Boczne człony wracają i lądują, co obniża cenę startu do około 97 milionów dolarów — wobec 150 milionów za wariant, z którego nic nie wraca.',
-      'Pierwszy lot odbył się 6 lutego 2018 roku. Zamiast balastu z betonu, jak robi to cała branża, [[elon-musk|Musk]] umieścił na szczycie własny samochód — Teslę Roadster pierwszej generacji — z manekinem w skafandrze za kierownicą. Manekin dostał imię Starman.',
+      '[[falcon-heavy-demo|Pierwszy lot]] odbył się 6 lutego 2018 roku. Zamiast balastu z betonu, jak robi to cała branża, [[elon-musk|Musk]] umieścił na szczycie własny samochód — Teslę Roadster pierwszej generacji — z manekinem w skafandrze za kierownicą. Manekin dostał imię Starman.',
       'Falcon Heavy lata rzadko: trzynaście startów przez ponad osiem lat. Powód jest nudny i mówi wszystko o tym, jak zmienił się rynek — [[falcon-9|Falcon 9]] w wariancie zużywalnym zabiera wystarczająco dużo, żeby większość klientów nie potrzebowała rakiety cięższej.',
     ],
     fakty: [
@@ -191,8 +191,8 @@ export const rakiety: Encja[] = [
     tresc: [
       'Crew Dragon zabiera czterech astronautów w locie normalnym i do siedmiu w ewakuacji. Mierzy 4,5 metra bez modułu serwisowego i 8,1 metra z nim, przy średnicy 4 metrów. Do manewrów orbitalnych służy szesnaście silniczków Draco, a osiem mocnych SuperDraco stanowi system ratunkowy — w razie awarii rakiety odrzucają kapsułę na bok w ułamku sekundy.',
       'Dokowanie odbywa się automatycznie, ze złączem zgodnym ze standardem IDSS, z możliwością przejęcia sterowania przez załogę. Kapsuła jest wielorazowa; pierwotnie certyfikowano ją na pięć lotów, a od 2024 roku trwają prace nad podniesieniem limitu do piętnastu.',
-      'Lot Demo-2 wystartował 30 maja 2020 roku o 15:22 czasu wschodniego z Kennedy Space Center. Na pokładzie byli Robert Behnken i Douglas Hurley — pierwsi astronauci wysłani z terytorium USA od zakończenia programu wahadłowców w 2011 roku. Misja trwała niemal 64 dni i zakończyła się wodowaniem na Atlantyku 2 sierpnia.',
-      'Od tamtej pory kapsuła wykonała ciąg lotów, które przesunęły granicę tego, co uchodzi za lot komercyjny: Inspiration4 z wyłącznie cywilną załogą na wysokości 585 km, Ax-1 jako pierwszy w pełni prywatny lot na stację, Polaris Dawn z orbitą sięgającą 1 400 km i pierwszym komercyjnym spacerem kosmicznym, wreszcie Fram2 — pierwszy załogowy lot po orbicie biegunowej. Wszystkie wynosi [[falcon-9|Falcon 9]].',
+      'Lot [[demo-2|Demo-2]] wystartował 30 maja 2020 roku o 15:22 czasu wschodniego z Kennedy Space Center. Na pokładzie byli Robert Behnken i Douglas Hurley — pierwsi astronauci wysłani z terytorium USA od zakończenia programu wahadłowców w 2011 roku. Misja trwała niemal 64 dni i zakończyła się wodowaniem na Atlantyku 2 sierpnia.',
+      'Od tamtej pory kapsuła wykonała ciąg lotów, które przesunęły granicę tego, co uchodzi za lot komercyjny: [[inspiration4|Inspiration4]] z wyłącznie cywilną załogą na wysokości 585 km, [[ax-1|Ax-1]] jako pierwszy w pełni prywatny lot na stację, [[polaris-dawn|Polaris Dawn]] z orbitą sięgającą 1 400 km i pierwszym komercyjnym spacerem kosmicznym, wreszcie [[fram2|Fram2]] — pierwszy załogowy lot po orbicie biegunowej. Wszystkie wynosi [[falcon-9|Falcon 9]].',
     ],
     fakty: [
       { etykieta: 'Załoga', wartosc: '4 osoby, do 7 w ewakuacji', pewnosc: 'potwierdzone' },
@@ -267,6 +267,50 @@ export const rakiety: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.wikiStarlink, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-12',
+  },
+
+  {
+    id: 'falcon-1',
+    typ: 'rakieta',
+    nazwa: 'Falcon 1',
+    aka: ['F1'],
+    krotki: 'Pierwsza rakieta SpaceX i pierwsza prywatna konstrukcja na paliwo ciekłe, która dotarła na orbitę.',
+    tresc: [
+      'Falcon 1 mierzył 21 metrów przy 1,7 metra średnicy — obok dzisiejszego [[falcon-9|Falcona 9]] wygląda jak makieta. W pierwszym stopniu pracował jeden silnik [[merlin|Merlin]] (wersja 1A na dwóch pierwszych lotach, potem 1C), w drugim ciśnieniowy [[kestrel|Kestrel]]. Na niską orbitę wynosił około 670 kg.',
+      'Cena startu wynosiła 7 milionów dolarów, a cały program rozwojowy kosztował 90–100 milionów. To były liczby, przy których ówczesny rynek nie miał czym odpowiedzieć — i zarazem liczby, które nie pozostawiały marginesu na porażkę.',
+      'Poleciał pięć razy. Pierwsze trzy loty skończyły się utratą rakiety i niemal wykończyły [[spacex|SpaceX]]. Czwarty, 28 września 2008 roku, dotarł na orbitę. [[falcon-1-lot-5|Piąty]] wyniósł malezyjskiego satelitę RazakSAT i był pierwszym komercyjnym startem firmy.',
+      'Po nim program zamknięto. Nie z powodu awarii, ale dlatego, że rynek małych rakiet okazał się ciasny, a Falcon 9 na tych samych silnikach [[merlin|Merlin]] wynosił kilkadziesiąt razy więcej. Falcon 1 zostawił po sobie dwie rzeczy: działający silnik i firmę, która przeżyła.',
+    ],
+    fakty: [
+      { etykieta: 'Wysokość', wartosc: '21 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Średnica', wartosc: '1,7 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek na LEO', wartosc: 'ok. 670 kg na wysokość 185 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki', wartosc: '1 × Merlin w I stopniu, 1 × Kestrel w II', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cena startu', wartosc: '7 mln USD', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt programu', wartosc: '90–100 mln USD', pewnosc: 'szacunkowe' },
+      { etykieta: 'Bilans lotów', wartosc: '5 startów, 2 udane', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Czwarta rakieta powstała w sześć tygodni z tego, co było pod ręką. W trakcie transportu samolotem C-17 kadłub częściowo się zapadł, bo ciśnienie przy ponownym napełnianiu przekroczyło założenia zespołu. Naprawiono go na miejscu — i to właśnie ten egzemplarz doleciał na orbitę.',
+        zrodlo: Z.wikiFalcon1,
+      },
+    ],
+    os: [
+      { data: '2006-03-24', tytul: 'Pierwszy start', opis: 'Awaria silnika po 33 sekundach lotu.', waga: 2 },
+      { data: '2008-09-28', tytul: 'Pierwsza orbita', opis: 'Czwarty lot czyni Falcona 1 pierwszą prywatną rakietą na paliwo ciekłe na orbicie.', waga: 3 },
+      { data: '2009-07-14', tytul: 'Pierwszy komercyjny start', opis: 'Piąty i ostatni lot wynosi malezyjskiego satelitę RazakSAT.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'falcon-1-lot-4', powod: 'jego czwarty lot uratował firmę' },
+      { id: 'merlin', powod: 'napędzany przez jedną sztukę w pierwszym stopniu' },
+      { id: 'kestrel', powod: 'napędzany przez ten silnik w drugim stopniu' },
+      { id: 'falcon-9', powod: 'następca, który przejął silniki i zamknął ten program' },
+      { id: 'spacex', powod: 'pierwsza rakieta firmy i warunek jej przetrwania' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiFalcon1, Z.snewsFalcon1],
     zaktualizowano: '2026-09-12',
   },
 ];

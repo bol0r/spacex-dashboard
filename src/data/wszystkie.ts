@@ -7,6 +7,7 @@
 import type { Encja, Kategoria } from './types';
 import { rakiety } from './entities/spacex-rakiety';
 import { silniki } from './entities/spacex-silniki';
+import { misje } from './entities/spacex-misje';
 import { miejsca } from './entities/spacex-miejsca';
 import { ludzie } from './entities/spacex-ludzie';
 import { muskIReszta } from './entities/musk-i-reszta';
@@ -16,7 +17,7 @@ import { pojecia } from './entities/pojecia';
 export const WEDLUG_KATEGORII: Record<Kategoria, Encja[]> = {
   'spacex-rakiety': rakiety,
   'spacex-silniki': silniki,
-  'spacex-misje': [],
+  'spacex-misje': misje,
   'spacex-miejsca': miejsca,
   'spacex-ludzie': ludzie,
   'tesla': teslaEncje,

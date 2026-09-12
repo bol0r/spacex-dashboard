@@ -31,6 +31,12 @@ for (const n of bledy) console.log(`  BŁĄD  [${n.kod}] ${n.encjaId}: ${n.szcze
 for (const n of ostrzezenia) console.log(`  OSTRZ [${n.kod}] ${n.encjaId}: ${n.szczegol}`);
 if (slepe.length > 0) console.log(`  UWAGA  ślepe zaułki (<4 relacje łącznie): ${slepe.join(', ')}`);
 
+const najubozsze = [...baza.kolejnosc]
+  .map((id) => ({ id, ile: baza.indeks.linkiWTresci[id]?.length ?? 0 }))
+  .sort((a, b) => a.ile - b.ile)
+  .slice(0, 8);
+console.log(`  UWAGA  najmniej linków w treści: ${najubozsze.map((n) => `${n.id} (${n.ile})`).join(', ')}`);
+
 const niezgodnosci = sprawdzNakladke(WSZYSTKIE, en);
 const przetlumaczone = WSZYSTKIE.filter((e) => en[e.id] !== undefined).length;
 

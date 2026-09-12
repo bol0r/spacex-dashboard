@@ -42,4 +42,42 @@ export const miejsca: Encja[] = [
     zrodla: [Z.wikiStarbase, Z.wikiSpaceX],
     zaktualizowano: '2026-09-12',
   },
+
+  {
+    id: 'barki-dronowe',
+    typ: 'miejsce',
+    nazwa: 'Barki dronowe',
+    aka: ['droneship', 'ASDS', 'Of Course I Still Love You', 'Just Read the Instructions', 'A Shortfall of Gravitas'],
+    krotki: 'Bezzałogowe platformy, na których lądują pierwsze stopnie wracające z lotów zbyt szybkich, by wrócić nad brzeg.',
+    tresc: [
+      'Nie każdy lot pozwala odzyskać człon nośny na lądzie. Jeśli rakieta leci wysoko i szybko — na orbitę transferową albo z ciężkim ładunkiem — booster nie ma już paliwa, żeby zawrócić nad wybrzeże. Wtedy [[falcon-9|Falcon 9]] ląduje na pływającej platformie ustawionej setki kilometrów w oceanie.',
+      'Platforma jest barką z własnym napędem i systemem utrzymywania pozycji, obsługiwaną bez załogi na pokładzie w chwili lądowania. [[pierwsze-ladowanie-na-barce|Pierwsze udane przyziemienie na wodzie]] odbyło się 8 kwietnia 2016 roku, podczas misji zaopatrzeniowej CRS-8, na jednostce „Of Course I Still Love You" trzysta kilometrów od brzegu Florydy. Ten sam egzemplarz boostera poleciał rok później w misji [[ses-10|SES-10]].',
+      'Barki są dziś rutyną i właśnie dlatego są ciekawe: to one, a nie betonowe stanowiska, wykonują większość lądowań, które czynią [[reuzywalnosc|reużywalność]] opłacalną. Bez nich odzysk ograniczałby się do najlżejszych misji.',
+    ],
+    fakty: [
+      { etykieta: 'Kiedy się ich używa', wartosc: 'gdy booster nie ma paliwa na powrót nad brzeg', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwsze udane lądowanie', wartosc: '8 kwietnia 2016, misja CRS-8', pewnosc: 'potwierdzone' },
+      { etykieta: 'Odległość od brzegu', wartosc: 'ok. 300 km przy CRS-8', pewnosc: 'potwierdzone' },
+      { etykieta: 'Obsada w chwili lądowania', wartosc: 'bezzałogowa', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Nazwy barek to imiona statków z cyklu Kultura Iaina M. Banksa: „Just Read the Instructions", „Of Course I Still Love You" i „A Shortfall of Gravitas". Pierwsze dwa pochodzą z „Gracza"; Musk ogłosił je jako pośmiertny ukłon w stronę pisarza. W powieściach to nazwy własne świadomych okrętów — w rzeczywistości noszą je bezzałogowe barki, które same utrzymują pozycję na oceanie.',
+        zrodlo: Z.spaceBarki,
+      },
+    ],
+    os: [
+      { data: '2016-04-08', tytul: 'Pierwsze lądowanie na wodzie', opis: 'Booster misji CRS-8 siada na „Of Course I Still Love You".', waga: 3 },
+      { data: '2018-02-12', tytul: 'Trzecia barka', opis: 'Musk ogłasza „A Shortfall of Gravitas".', waga: 1 },
+    ],
+    powiazane: [
+      { id: 'pierwsze-ladowanie-na-barce', powod: 'miejsce pierwszego udanego przyziemienia na wodzie' },
+      { id: 'falcon-9', powod: 'lądują na nich jego pierwsze stopnie' },
+      { id: 'reuzywalnosc', powod: 'umożliwiają odzysk także z lotów, z których nie da się wrócić nad brzeg' },
+      { id: 'spacex', powod: 'część jej flotylli odzyskowej' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiBarki, Z.spaceBarki],
+    zaktualizowano: '2026-09-12',
+  },
 ];

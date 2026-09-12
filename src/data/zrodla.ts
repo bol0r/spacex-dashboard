@@ -146,4 +146,79 @@ export const Z = {
     url: 'https://en.wikipedia.org/wiki/Low_Earth_orbit',
     wydawca: 'Wikipedia', dostep: D,
   },
+  wikiFalcon1: {
+    tytul: 'Falcon 1',
+    url: 'https://en.wikipedia.org/wiki/Falcon_1',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  snewsFalcon1: {
+    tytul: 'SpaceX Successfully Launches Falcon 1 to Orbit',
+    url: 'https://spacenews.com/spacex-successfully-launches-falcon-1-to-orbit/',
+    wydawca: 'SpaceNews', dostep: D,
+  },
+  nsfFalcon1: {
+    tytul: "SpaceX's Falcon I launch success on fourth attempt",
+    url: 'https://www.nasaspaceflight.com/2008/09/live-space-xs-falcon-i-to-make-fourth-attempt-for-success/',
+    wydawca: 'NASASpaceflight', dostep: D,
+  },
+  spaceFalcon1: {
+    tytul: 'SpaceX Successfully Launches Falcon 1 Rocket Into Orbit',
+    url: 'https://www.space.com/5905-spacex-successfully-launches-falcon-1-rocket-orbit.html',
+    wydawca: 'Space.com', dostep: D,
+  },
+  wikiCrs7: {
+    tytul: 'SpaceX CRS-7',
+    url: 'https://en.wikipedia.org/wiki/SpaceX_CRS-7',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiAmos6: {
+    tytul: 'Amos-6',
+    url: 'https://en.wikipedia.org/wiki/Amos-6',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiCots: {
+    tytul: 'Commercial Orbital Transportation Services',
+    url: 'https://en.wikipedia.org/wiki/Commercial_Orbital_Transportation_Services',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiSes10: {
+    tytul: 'SES-10',
+    url: 'https://en.wikipedia.org/wiki/SES-10',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiInspiration4: {
+    tytul: 'Inspiration4',
+    url: 'https://en.wikipedia.org/wiki/Inspiration4',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiPolarisDawn: {
+    tytul: 'Polaris Dawn',
+    url: 'https://en.wikipedia.org/wiki/Polaris_Dawn',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiAx1: {
+    tytul: 'Axiom Mission 1',
+    url: 'https://en.wikipedia.org/wiki/Axiom_Mission_1',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiFram2: {
+    tytul: 'Fram2',
+    url: 'https://en.wikipedia.org/wiki/Fram2',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  oigHls: {
+    tytul: "NASA's Management of the Human Landing System Contracts (IG-26-004)",
+    url: 'https://oig.nasa.gov/wp-content/uploads/2026/03/final-report-ig-26-004-nasas-management-of-the-human-landing-system-contracts.pdf',
+    wydawca: 'NASA Office of Inspector General', dostep: D,
+  },
+  nprHls: {
+    tytul: 'SpaceX Wins $2.9 Billion Contract For Next Lunar Lander',
+    url: 'https://www.npr.org/2021/04/17/988416951/spacex-wins-2-9-billion-contract-for-next-lunar-lander',
+    wydawca: 'NPR', dostep: D,
+  },
+  nasaNextstep: {
+    tytul: 'NextSTEP-2 H: Human Landing System',
+    url: 'https://www.nasa.gov/humans-in-space/nextstep-h-human-landing-system/',
+    wydawca: 'NASA', dostep: D,
+  },
 } as const satisfies Record<string, Zrodlo>;

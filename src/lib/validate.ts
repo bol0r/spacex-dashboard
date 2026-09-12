@@ -11,12 +11,22 @@ import { wyciagnijLinki } from './linkify';
 
 const DATA_ISO = /^\d{4}(-\d{2}(-\d{2})?)?$/;
 
-/** Etykiety faktów, których wartość rośnie w czasie — wymagają `stanNa`. */
+/**
+ * Etykiety faktów, których wartość rośnie w czasie — wymagają `stanNa`.
+ *
+ * Lista była pierwotnie szersza i łapała „Pierwsze udane lądowanie" albo
+ * „Poprzedni rekord nachylenia", czyli fakty jednorazowe z datą w wartości.
+ * Ostrzeżenie, które w większości przypadków jest fałszywe, przestaje cokolwiek
+ * znaczyć, więc wzorce zawężono do etykiet naprawdę zliczających.
+ */
 const WZORCE_ZMIENNE = [
-  /liczb/i, /łącznie/i, /lacznie/i, /wycen/i, /rekord/i, /subskry/i,
-  /abonen/i, /start[oó]w/i, /lot[oó]w/i, /lądowa/i, /ladowa/i,
+  /liczba/i, /łącznie/i, /lacznie/i, /wycen/i, /subskry/i, /abonen/i,
   /satelit/i, /zatrudni/i, /przychod/i, /kapitaliz/i, /dostarcz/i,
+  /skuteczno/i, /rekord lot/i, /kwota/i, /zysk/i,
 ];
+
+/** Wartości, które są datą, a nie licznikiem — data nie potrzebuje `stanNa`. */
+const WYGLADA_NA_DATE = /\b(?:stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia)\b|\b\d{1,2}\.\d{2}\.\d{4}\b|\b(?:19|20)\d{2}\b\s*$/i;
 
 function blad(
   kod: KodBledu, waga: WagaBledu, encjaId: string, szczegol: string,
@@ -93,7 +103,9 @@ export function walidujBaze(encje: readonly Encja[]): WynikWalidacji {
     }
 
     for (const f of e.fakty) {
-      const zmienny = WZORCE_ZMIENNE.some((w) => w.test(f.etykieta)) && /\d/.test(f.wartosc);
+      const zmienny = WZORCE_ZMIENNE.some((w) => w.test(f.etykieta))
+        && /\d/.test(f.wartosc)
+        && !WYGLADA_NA_DATE.test(f.wartosc);
       if (zmienny && f.stanNa === undefined) {
         // Heurystyka bywa nadgorliwa, więc to ostrzeżenie, nie blokada builda.
         naruszenia.push(blad('BRAK_STAN_NA', 'ostrzezenie', e.id,

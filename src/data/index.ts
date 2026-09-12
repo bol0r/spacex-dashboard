@@ -15,7 +15,7 @@ import { zastosuj, type Nakladka } from './tlumaczenia/nakladka';
 const LADOWACZE: Record<Kategoria, () => Promise<Encja[]>> = {
   'spacex-rakiety': () => import('./entities/spacex-rakiety').then((m) => m.rakiety),
   'spacex-silniki': () => import('./entities/spacex-silniki').then((m) => m.silniki),
-  'spacex-misje': () => Promise.resolve([]),
+  'spacex-misje': () => import('./entities/spacex-misje').then((m) => m.misje),
   'spacex-miejsca': () => import('./entities/spacex-miejsca').then((m) => m.miejsca),
   'spacex-ludzie': () => import('./entities/spacex-ludzie').then((m) => m.ludzie),
   'tesla': () => import('./entities/tesla').then((m) => m.teslaEncje),

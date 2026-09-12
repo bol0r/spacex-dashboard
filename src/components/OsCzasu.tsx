@@ -4,14 +4,23 @@ import { useStan } from '../app/stan';
 import { dataKrotko } from '../lib/format';
 import { useT } from '../i18n';
 
-const PX_NA_ROK = 46;
-const MIN_ODSTEP = 13;  // px między znacznikami w jednym pasie
+const PX_NA_ROK = 46;     // rok, w którym coś się działo
+const PX_ROK_PUSTY = 9;   // rok bez żadnego wydarzenia — zwinięty
+const MIN_ODSTEP = 13;    // px między znacznikami w jednym pasie
 const PASY = 4;
 
 interface Znacznik extends Wydarzenie {
   encjaId: string;
   x: number;
   pas: number;
+}
+
+interface Rok {
+  rok: number;
+  x: number;
+  szerokosc: number;
+  pusty: boolean;
+  zEtykieta: boolean;
 }
 
 /** Rok z częścią dziesiętną, żeby wydarzenia w tym samym roku nie siedziały na sobie. */
@@ -39,17 +48,55 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
     const pierwszy = posortowane[0];
     const ostatni = posortowane[posortowane.length - 1];
     if (pierwszy === undefined || ostatni === undefined) {
-      return { znaczniki: [] as Znacznik[], lata: [] as number[], szerokosc: 0 };
+      return { znaczniki: [] as Znacznik[], lata: [] as Rok[], szerokosc: 0 };
     }
 
     const od = Math.floor(rokUlamkowy(pierwszy.data));
     const doR = Math.ceil(rokUlamkowy(ostatni.data));
 
+    // Skala jest świadomie nieliniowa. Baza sięga 1967 roku jednym wydarzeniem,
+    // a potem nie ma nic aż do lat dziewięćdziesiątych — przy równym podziale
+    // połowa przewijania to pustka. Lata bez wydarzeń zwijamy do wąskiego pasa
+    // i oznaczamy przerywaną linią, żeby skrót był widoczny, a nie ukryty.
+    const zajete = new Set(posortowane.map((w) => Math.floor(rokUlamkowy(w.data))));
+
+    const lata: Rok[] = [];
+    let kursor = 0;
+    for (let rok = od; rok <= doR; rok++) {
+      const pusty = !zajete.has(rok);
+      const szerokoscRoku = pusty ? PX_ROK_PUSTY : PX_NA_ROK;
+      lata.push({ rok, x: kursor, szerokosc: szerokoscRoku, pusty, zEtykieta: false });
+      kursor += szerokoscRoku;
+    }
+
+    // Etykiety: reguła „co pięć lat" zostawiłaby całą wczesną część osi bez
+    // opisu, bo tam prawie każdy rok jest zwinięty. Opisujemy więc pierwszy
+    // i ostatni rok oraz każdy kolejny, który odjechał od poprzedniej etykiety.
+    let ostatniaEtykieta = -Infinity;
+    for (const l of lata) {
+      if (l.pusty) continue;
+      const pierwszyLubOstatni = l.rok === od || l.rok === doR;
+      if (pierwszyLubOstatni || (l.rok % 5 === 0 && l.x - ostatniaEtykieta >= 70)
+          || l.x - ostatniaEtykieta >= 150) {
+        l.zEtykieta = true;
+        ostatniaEtykieta = l.x;
+      }
+    }
+
+    const wgRoku = new Map(lata.map((l) => [l.rok, l]));
+    const pozycja = (iso: string): number => {
+      const ulamek = rokUlamkowy(iso);
+      const rok = Math.floor(ulamek);
+      const wpis = wgRoku.get(rok);
+      if (wpis === undefined) return 0;
+      return wpis.x + (ulamek - rok) * wpis.szerokosc;
+    };
+
     // Przydział pasów: znacznik schodzi niżej, gdy poprzedni w jego pasie
     // jest zbyt blisko. Dzięki temu skupiska rozwarstwiają się, a nie nakładają.
     const ostatniW: number[] = Array.from({ length: PASY }, () => -Infinity);
     const wynik: Znacznik[] = posortowane.map((w) => {
-      const x = (rokUlamkowy(w.data) - od) * PX_NA_ROK;
+      const x = pozycja(w.data);
       let pas = 0;
       for (let i = 0; i < PASY; i++) {
         const poprzedni = ostatniW[i];
@@ -60,11 +107,7 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
       return { ...w, x, pas };
     });
 
-    return {
-      znaczniki: wynik,
-      lata: Array.from({ length: doR - od + 1 }, (_, i) => od + i),
-      szerokosc: (doR - od) * PX_NA_ROK,
-    };
+    return { znaczniki: wynik, lata, szerokosc: kursor };
   }, [baza]);
 
   // Wchodzimy na prawym końcu — tam, gdzie dzieje się teraz.
@@ -87,19 +130,29 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
 
       <div ref={przewijak} className="przewin-poziomo mt-3" style={{ touchAction: 'pan-x' }}>
         <div className="relative h-[124px]" style={{ width: szerokosc + 64, marginInline: 32 }}>
-          {/* Skala lat. Etykieta co pięć lat, kreska co rok. */}
+          {/* Skala lat. Pełna kreska w latach z wydarzeniami, przerywana tam, gdzie czas zwinięto. */}
           <div className="absolute inset-x-0 bottom-[26px] h-px bg-[color:var(--wlos)]" />
-          {lata.map((rok) => {
-            const x = (rok - (lata[0] ?? rok)) * PX_NA_ROK;
-            const pelna = rok % 5 === 0;
+          {lata.map((l) => {
+            const zEtykieta = l.zEtykieta;
             return (
-              <div key={rok} className="absolute bottom-0" style={{ left: x }}>
-                <div
-                  className={`absolute bottom-[18px] w-px ${pelna ? 'h-2 bg-tekst-2' : 'h-1 bg-[color:var(--wlos)]'}`}
-                />
-                {pelna && (
+              <div key={l.rok} className="absolute bottom-0" style={{ left: l.x }}>
+                {l.pusty ? (
+                  <div
+                    className="absolute bottom-[26px] h-[3px]"
+                    style={{
+                      width: l.szerokosc,
+                      backgroundImage:
+                        'repeating-linear-gradient(90deg, var(--wlos) 0 2px, transparent 2px 5px)',
+                    }}
+                  />
+                ) : (
+                  <div
+                    className={`absolute bottom-[18px] w-px ${zEtykieta ? 'h-2 bg-tekst-2' : 'h-1 bg-[color:var(--wlos)]'}`}
+                  />
+                )}
+                {zEtykieta && (
                   <span className="liczby absolute bottom-0 left-0 -translate-x-1/2 text-podpis text-tekst-2">
-                    {rok}
+                    {l.rok}
                   </span>
                 )}
               </div>

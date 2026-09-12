@@ -93,4 +93,41 @@ export const silniki: Encja[] = [
     zrodla: [Z.wikiMerlin, Z.wikiStartyFalcon],
     zaktualizowano: '2026-09-12',
   },
+
+  {
+    id: 'kestrel',
+    typ: 'silnik',
+    nazwa: 'Kestrel',
+    aka: ['silnik drugiego stopnia Falcona 1'],
+    krotki: 'Ciśnieniowy silnik drugiego stopnia Falcona 1 — bez turbopomp, bez generatora gazu, praktycznie bez części ruchomych.',
+    tresc: [
+      'Kestrel napędzał drugi stopień [[falcon-1|Falcona 1]] i był świadomie najprostszą rzeczą, jaką dało się zbudować. Zasilanie ciśnieniowe oznacza, że paliwo tłoczy do komory sprężony gaz, a nie pompa. Znikają turbopompy, znika generator gazu, znika większość tego, co w silniku rakietowym potrafi się zatrzeć.',
+      'Cena tej prostoty jest w osiągach: ciśnienie w komorze musi być niskie, bo zbiorniki nie wytrzymają więcej, a niskie ciśnienie to mniejsza sprawność. W drugim stopniu małej rakiety był to jednak dobry interes — pracuje w próżni, gdzie duża dysza nadrabia to, co gubi ciśnienie.',
+      'Nazwa trzyma się firmowego zwyczaju: kestrel to pustułka, czyli — jak [[merlin|merlin]] — niewielki sokół. Silnik nie miał lekkiego życia: przy [[falcon-1-lot-2|drugim locie]] zgasł przedwcześnie, bo paliwo zaczęło się przelewać w zbiorniku w rezonansie z konstrukcją. Podzielił los swojej rakiety i skończył razem z programem, nie doczekawszy żadnej wersji rozwojowej — [[spacex|SpaceX]] poszło w stronę turbopomp i już nigdy nie wróciło do zasilania ciśnieniowego.',
+    ],
+    fakty: [
+      { etykieta: 'Zastosowanie', wartosc: 'drugi stopień Falcona 1', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zasilanie', wartosc: 'ciśnieniowe, bez turbopomp', pewnosc: 'potwierdzone' },
+      { etykieta: 'Paliwo', wartosc: 'nafta lotnicza RP-1 i ciekły tlen', pewnosc: 'potwierdzone' },
+      { etykieta: 'Loty', wartosc: '5, wszystkie na Falconie 1', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Cała rodzina napędu SpaceX z tej epoki nosi imiona sokołów: rakieta to Falcon, silnik pierwszego stopnia Merlin, czyli drzemlik, a drugiego Kestrel, czyli pustułka. Nazwa rakiety wzięła się z „Star Wars", ale reszta to już konsekwentna ornitologia.',
+        zrodlo: Z.wikiMerlin,
+      },
+    ],
+    os: [
+      { data: '2006-03-24', tytul: 'Debiut', opis: 'Leci na pierwszym Falconie 1, ale nie dochodzi do pracy drugiego stopnia.', waga: 1 },
+      { data: '2009-07-14', tytul: 'Ostatni lot', opis: 'Wynosi RazakSAT i kończy karierę razem z Falconem 1.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'falcon-1', powod: 'napędzał jego drugi stopień' },
+      { id: 'merlin', powod: 'silnik pierwszego stopnia tej samej rakiety, znacznie bardziej złożony' },
+      { id: 'spacex', powod: 'jeden z dwóch pierwszych silników firmy' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiFalcon1, Z.wikiMerlin],
+    zaktualizowano: '2026-09-12',
+  },
 ];
