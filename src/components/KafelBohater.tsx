@@ -1,6 +1,6 @@
 import type { Encja } from '../data/types';
 import { SylwetkaStarship } from './Sylwetka';
-import { dataKrotko, dniDo, dni } from '../lib/format';
+import { dataKrotko, dniDo, dni, odmiana } from '../lib/format';
 
 /**
  * Jedyny mocny akcent w aplikacji: kafel Starshipa jako moduł telemetrii.
@@ -44,7 +44,10 @@ export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id:
         {loty !== undefined && (
           <span className="mt-4 flex flex-col border-t border-[color:var(--wlos)] pt-3">
             <span className="liczby text-podtytul text-tekst">
-              {loty.wartosc} lotów testowych
+              {loty.wartosc}{' '}
+              {odmiana(Number(loty.wartosc.replace(/\D/g, '')), [
+                'lot testowy', 'loty testowe', 'lotów testowych',
+              ])}
             </span>
             {loty.stanNa !== undefined && (
               <span className="liczby text-podpis text-tekst-2">stan na {dataKrotko(loty.stanNa)}</span>

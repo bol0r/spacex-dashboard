@@ -80,7 +80,7 @@ export type Kategoria =
 
 /** Sekcja ekranu głównego. Nie pokrywa się 1:1 z kategorią — to widok, nie plik. */
 export type Sekcja =
-  | 'spacex' | 'os-czasu' | 'ludzie' | 'tesla' | 'reszta-imperium' | 'slownik';
+  | 'spacex' | 'misje' | 'miejsca' | 'ludzie' | 'tesla' | 'reszta-imperium' | 'slownik';
 
 /** Encja po przejściu przez indeks: z domkniętymi relacjami i metadanymi. */
 export interface EncjaZIndeksem extends Encja {

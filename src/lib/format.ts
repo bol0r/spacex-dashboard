@@ -38,3 +38,17 @@ export function dniDo(iso: string, dzis: Date = new Date()): number {
 export function dni(n: number): string {
   return n === 1 ? 'dzień' : 'dni';
 }
+
+/**
+ * Odmiana rzeczownika po liczbie. Polski ma trzy formy i nie da się ich
+ * obejść konkatenacją, a „44 wydarzeń" w interfejsie po prostu zgrzyta.
+ * Kolejność form: 1 sztuka, 2–4 sztuki, 5 i więcej sztuk.
+ */
+export function odmiana(n: number, formy: readonly [string, string, string]): string {
+  const abs = Math.abs(n);
+  if (abs === 1) return formy[0];
+  const dziesiatki = abs % 100;
+  const jednosci = abs % 10;
+  if (jednosci >= 2 && jednosci <= 4 && (dziesiatki < 12 || dziesiatki > 14)) return formy[1];
+  return formy[2];
+}
