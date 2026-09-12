@@ -1,5 +1,6 @@
 import type { Encja } from '../data/types';
 import type { Rozmiar } from '../app/uklad';
+import { useT } from '../i18n';
 
 const KLASY_ROZMIARU: Record<Rozmiar, string> = {
   duzy: 'col-span-2 min-h-[232px]',
@@ -15,6 +16,7 @@ interface Props {
 }
 
 export function Kafel({ encja, rozmiar, onOtworz }: Props) {
+  const t = useT();
   // Status niesie informację tylko wtedy, gdy odstaje od normy. Powtórzone
   // „aktywne" na ośmiu kaflach z rzędu jest szumem, więc go nie pokazujemy.
   const status = encja.status !== undefined && encja.status !== 'aktywne' ? encja.status : null;
@@ -28,7 +30,7 @@ export function Kafel({ encja, rozmiar, onOtworz }: Props) {
         className={`${KLASY_ROZMIARU.pigulka} material dotyk flex items-center justify-between gap-3 rounded-kafel px-4 py-3 text-left`}
       >
         <span className="text-naglowek text-tekst">{encja.nazwa}</span>
-        <span className="shrink-0 text-podpis text-tekst-2">{encja.typ}</span>
+        <span className="shrink-0 text-podpis text-tekst-2">{t.typy[encja.typ]}</span>
       </button>
     );
   }
@@ -50,8 +52,8 @@ export function Kafel({ encja, rozmiar, onOtworz }: Props) {
         {zOpisem && <span className="line-clamp-3 text-podtytul text-tekst-2">{encja.krotki}</span>}
         {/* Typ i status idą razem na dole — dzięki temu nazwa ma całą szerokość i nie łamie się na dwie linie. */}
         <span className="flex items-baseline justify-between gap-2 text-podpis text-tekst-2">
-          <span>{encja.typ}</span>
-          {status !== null && <span className="shrink-0">{status}</span>}
+          <span>{t.typy[encja.typ]}</span>
+          {status !== null && <span className="shrink-0">{t.statusy[status]}</span>}
         </span>
       </span>
     </button>

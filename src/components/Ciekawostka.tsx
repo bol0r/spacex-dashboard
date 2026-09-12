@@ -1,4 +1,5 @@
 import type { Ciekawostka as TypCiekawostka } from '../data/types';
+import { useT } from '../i18n';
 
 /**
  * Nagroda za eksplorację, więc musi wyglądać jak inny obiekt niż reszta
@@ -7,6 +8,8 @@ import type { Ciekawostka as TypCiekawostka } from '../data/types';
  * bo wtedy zacząłby konkurować z liczbami na żywo.
  */
 export function Ciekawostka({ ciekawostki }: { ciekawostki: readonly TypCiekawostka[] }) {
+  const t = useT();
+
   return (
     <div className="-mx-5 flex flex-col gap-3">
       {ciekawostki.map((c) => (
@@ -15,7 +18,7 @@ export function Ciekawostka({ ciekawostki }: { ciekawostki: readonly TypCiekawos
           className="border-l-2 border-plomien py-3 pl-4 pr-5"
           style={{ background: 'var(--mat-kafel-mocny)' }}
         >
-          <figcaption className="text-podpis text-tekst-2">Ciekawostka</figcaption>
+          <figcaption className="text-podpis text-tekst-2">{t.ciekawostka}</figcaption>
           <p className="mt-1 max-w-[58ch] text-callout text-tekst">{c.tekst}</p>
           <a
             href={c.zrodlo.url}

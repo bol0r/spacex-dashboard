@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef } from 'react';
 import type { BazaWiedzy, Wydarzenie } from '../data/types';
 import { useStan } from '../app/stan';
-import { dataKrotko, odmiana } from '../lib/format';
+import { dataKrotko } from '../lib/format';
+import { useT } from '../i18n';
 
 const PX_NA_ROK = 46;
 const MIN_ODSTEP = 13;  // px między znacznikami w jednym pasie
@@ -30,6 +31,7 @@ function rokUlamkowy(iso: string): number {
  */
 export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
   const otworz = useStan((s) => s.otworz);
+  const t = useT();
   const przewijak = useRef<HTMLDivElement>(null);
 
   const { znaczniki, lata, szerokosc } = useMemo(() => {
@@ -74,12 +76,12 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
   return (
     <section
       className="material col-span-2 overflow-hidden rounded-kafel py-4 lg:col-span-4"
-      aria-label="Oś czasu — przesuwana w poziomie"
+      aria-label={t.osCzasu}
     >
       <div className="flex items-baseline justify-between px-4">
-        <h2 className="text-naglowek text-tekst">Oś czasu</h2>
+        <h2 className="text-naglowek text-tekst">{t.osCzasu}</h2>
         <span className="liczby text-podpis text-tekst-2">
-          {znaczniki.length} {odmiana(znaczniki.length, ['wydarzenie', 'wydarzenia', 'wydarzeń'])}, przesuń w poziomie
+          {t.wydarzenia(znaczniki.length)}, {t.przesunWPoziomie}
         </span>
       </div>
 

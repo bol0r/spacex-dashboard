@@ -67,6 +67,9 @@ export interface Encja {
 /* B. TYPY POCHODNE — warstwa budująca i walidator                            */
 /* ========================================================================== */
 
+/** Języki interfejsu i treści. Polski jest kanoniczny — tłumaczenia są nakładką. */
+export type Jezyk = 'pl' | 'en';
+
 /** Kategoria = jeden plik w src/data/entities/, jeden chunk ładowany leniwie. */
 export type Kategoria =
   | 'spacex-rakiety'
@@ -91,6 +94,8 @@ export interface EncjaZIndeksem extends Encja {
   przychodzace: Powiazanie[];
   /** Identyfikatory wyciągnięte z [[id]] w polu `tresc`. */
   linkiWTresci: string[];
+  /** Czy treść jest w wybranym języku, czy spadła na polski oryginał. */
+  przetlumaczona: boolean;
 }
 
 export interface IndeksRelacji {

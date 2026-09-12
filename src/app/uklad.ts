@@ -16,30 +16,19 @@ export const BOHATER = 'starship';
 
 export interface DefSekcji {
   id: Sekcja;
-  tytul: string;
   kategorie: Kategoria[];
 }
 
+/** Kolejność sekcji. Nazwy widoczne w interfejsie mieszkają w słowniku i18n. */
 export const SEKCJE: DefSekcji[] = [
-  { id: 'spacex', tytul: 'Rakiety i silniki', kategorie: ['spacex-rakiety', 'spacex-silniki'] },
-  { id: 'misje', tytul: 'Misje i przełomy', kategorie: ['spacex-misje'] },
-  { id: 'miejsca', tytul: 'Miejsca', kategorie: ['spacex-miejsca'] },
-  { id: 'ludzie', tytul: 'Ludzie', kategorie: ['spacex-ludzie'] },
-  { id: 'tesla', tytul: 'Tesla', kategorie: ['tesla'] },
-  { id: 'reszta-imperium', tytul: 'Reszta imperium', kategorie: ['musk-i-reszta'] },
-  { id: 'slownik', tytul: 'Słownik', kategorie: ['pojecia'] },
+  { id: 'spacex', kategorie: ['spacex-rakiety', 'spacex-silniki'] },
+  { id: 'misje', kategorie: ['spacex-misje'] },
+  { id: 'miejsca', kategorie: ['spacex-miejsca'] },
+  { id: 'ludzie', kategorie: ['spacex-ludzie'] },
+  { id: 'tesla', kategorie: ['tesla'] },
+  { id: 'reszta-imperium', kategorie: ['musk-i-reszta'] },
+  { id: 'slownik', kategorie: ['pojecia'] },
 ];
-
-/** Krótkie etykiety do paska nawigacji — w chipie nie ma miejsca na pełny tytuł. */
-export const ETYKIETY_SKROCONE: Record<Sekcja, string> = {
-  'spacex': 'Rakiety',
-  'misje': 'Misje',
-  'miejsca': 'Miejsca',
-  'ludzie': 'Ludzie',
-  'tesla': 'Tesla',
-  'reszta-imperium': 'Imperium',
-  'slownik': 'Słownik',
-};
 
 /** Wyjątki, gdy plik danych nie pokrywa się z sekcją w widoku. */
 const SEKCJA_WYMUSZONA: Partial<Record<string, Sekcja>> = {

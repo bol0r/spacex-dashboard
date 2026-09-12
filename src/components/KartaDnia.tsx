@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import type { BazaWiedzy } from '../data/types';
 import { kluczDnia, wybierz } from '../lib/losowanie';
 import { useStan } from '../app/stan';
+import { useT } from '../i18n';
 
 type Pozycja =
   | { rodzaj: 'ciekawostka'; encjaId: string; tekst: string; wydawca: string }
@@ -14,14 +15,19 @@ type Pozycja =
  */
 export function KartaDnia({ baza }: { baza: BazaWiedzy }) {
   const otworz = useStan((s) => s.otworz);
+  const t = useT();
   const klucz = kluczDnia();
 
   const pozycja = useMemo<Pozycja | undefined>(() => {
     const pula: Pozycja[] = [];
+    // W innym języku niż kanoniczny bierzemy tylko encje przetłumaczone — karta
+    // dnia jest wizytówką, więc nie może zaczynać od zdania w obcym języku.
+    const tylkoPrzetlumaczone = baza.kolejnosc.some((id) => baza.encje[id]?.przetlumaczona === true);
 
     for (const id of baza.kolejnosc) {
       const e = baza.encje[id];
       if (e === undefined) continue;
+      if (tylkoPrzetlumaczone && !e.przetlumaczona) continue;
       for (const c of e.ciekawostki) {
         pula.push({ rodzaj: 'ciekawostka', encjaId: id, tekst: c.tekst, wydawca: c.zrodlo.wydawca });
       }
@@ -48,7 +54,7 @@ export function KartaDnia({ baza }: { baza: BazaWiedzy }) {
     >
       <span className="flex w-full items-baseline justify-between gap-3">
         <span className="text-podpis text-tekst-2">
-          {pozycja.rodzaj === 'ciekawostka' ? 'Ciekawostka dnia' : 'Pojęcie dnia'}
+          {pozycja.rodzaj === 'ciekawostka' ? t.ciekawostkaDnia : t.pojecieDnia}
         </span>
         <span className="liczby shrink-0 text-podpis text-tekst-2">{klucz.split('-').reverse().join('.')}</span>
       </span>

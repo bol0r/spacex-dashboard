@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { X } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { useBaza } from '../app/kontekst';
+import { useT } from '../i18n';
 import { usePulapkaFokusu } from '../lib/fokus';
 import { SPREZYNA, useGestZamkniecia } from '../lib/gest';
 import { PasekFaktow } from './PasekFaktow';
@@ -28,6 +29,7 @@ interface Props {
  */
 export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
   const baza = useBaza();
+  const t = useT();
   const encja = baza.encje[id];
   const karta = useRef<HTMLDivElement>(null);
   const przewijak = useRef<HTMLDivElement>(null);
@@ -80,7 +82,7 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
         ref={karta}
         role="dialog"
         aria-modal={naWierzchu}
-        aria-label={`${encja.nazwa}, ${encja.typ}`}
+        aria-label={`${encja.nazwa}, ${t.typy[encja.typ]}`}
         aria-hidden={!naWierzchu}
         tabIndex={-1}
         {...gest.uchwyty}
@@ -130,15 +132,16 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
               <h2 className={naWierzchu ? 'text-duzy-tytul text-tekst' : 'text-tytul-2 text-tekst'}>
                 {encja.nazwa}
               </h2>
-              <p className="flex items-baseline gap-3 text-przypis text-tekst-2">
-                <span>{encja.typ}</span>
-                {encja.status !== undefined && <span>{encja.status}</span>}
+              <p className="flex flex-wrap items-baseline gap-x-3 text-przypis text-tekst-2">
+                <span>{t.typy[encja.typ]}</span>
+                {encja.status !== undefined && <span>{t.statusy[encja.status]}</span>}
+                {!encja.przetlumaczona && <span>{t.tylkoPoPolsku}</span>}
               </p>
             </div>
             <button
               type="button"
               onClick={onZamknij}
-              aria-label="Zamknij arkusz"
+              aria-label={t.zamknijArkusz}
               className="dotyk -mr-2 -mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-pigulka text-tekst-2"
               style={{ background: 'var(--mat-kafel-mocny)' }}
             >
@@ -161,12 +164,12 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
           </div>
 
           <section className="mt-7">
-            <h3 className="mb-3 text-naglowek text-tekst">Oś czasu</h3>
+            <h3 className="mb-3 text-naglowek text-tekst">{t.osCzasu}</h3>
             <MiniOs os={encja.os} />
           </section>
 
           <section className="mt-7">
-            <h3 className="mb-1 text-naglowek text-tekst">Prowadzi dalej</h3>
+            <h3 className="mb-1 text-naglowek text-tekst">{t.prowadziDalej}</h3>
             <ProwadziDalej encja={encja} />
           </section>
 

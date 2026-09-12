@@ -1,6 +1,7 @@
 import type { Encja } from '../data/types';
 import { SylwetkaStarship } from './Sylwetka';
-import { dataKrotko, dniDo, dni, odmiana } from '../lib/format';
+import { dataKrotko, dniDo } from '../lib/format';
+import { useT } from '../i18n';
 
 /**
  * Jedyny mocny akcent w aplikacji: kafel Starshipa jako moduł telemetrii.
@@ -8,6 +9,7 @@ import { dataKrotko, dniDo, dni, odmiana } from '../lib/format';
  * liczba lotów i data aktualności z paska faktów. Płomień tylko na liczbie.
  */
 export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id: string) => void }) {
+  const t = useT();
   const posortowane = [...encja.os].sort((a, b) => a.data.localeCompare(b.data));
   const nadchodzace = posortowane.find((w) => dniDo(w.data) > 0);
   const ostatni = [...posortowane].reverse().find((w) => dniDo(w.data) <= 0 && w.waga === 3);
@@ -27,7 +29,7 @@ export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id:
         <span className="flex items-baseline justify-between gap-2">
           <span className="text-tytul-2 text-tekst">{encja.nazwa}</span>
           {encja.status !== undefined && (
-            <span className="text-podpis text-tekst-2 shrink-0">{encja.status}</span>
+            <span className="shrink-0 text-podpis text-tekst-2">{t.statusy[encja.status]}</span>
           )}
         </span>
 
@@ -35,7 +37,7 @@ export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id:
           <span className="mt-3 flex flex-col">
             <span className="text-podpis text-tekst-2">{nadchodzace.tytul}</span>
             <span className="liczby text-plomien text-[38px] font-semibold leading-[42px] tracking-[-1px]">
-              za {zaIle} {dni(zaIle)}
+              {t.zaDni(zaIle)}
             </span>
             <span className="liczby text-przypis text-tekst-2">{dataKrotko(nadchodzace.data)}</span>
           </span>
@@ -44,20 +46,17 @@ export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id:
         {loty !== undefined && (
           <span className="mt-4 flex flex-col border-t border-[color:var(--wlos)] pt-3">
             <span className="liczby text-podtytul text-tekst">
-              {loty.wartosc}{' '}
-              {odmiana(Number(loty.wartosc.replace(/\D/g, '')), [
-                'lot testowy', 'loty testowe', 'lotów testowych',
-              ])}
+              {t.lotyTestowe(Number(loty.wartosc.replace(/\D/g, '')))}
             </span>
             {loty.stanNa !== undefined && (
-              <span className="liczby text-podpis text-tekst-2">stan na {dataKrotko(loty.stanNa)}</span>
+              <span className="liczby text-podpis text-tekst-2">{t.stanNa} {dataKrotko(loty.stanNa)}</span>
             )}
           </span>
         )}
 
         {ostatni !== undefined && (
           <span className="mt-3 flex flex-col">
-            <span className="text-podpis text-tekst-2">Ostatni kamień milowy</span>
+            <span className="text-podpis text-tekst-2">{t.ostatniKamien}</span>
             <span className="text-podtytul text-tekst">{ostatni.tytul}</span>
             <span className="liczby text-podpis text-tekst-2">{dataKrotko(ostatni.data)}</span>
           </span>

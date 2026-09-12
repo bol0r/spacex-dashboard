@@ -1,8 +1,10 @@
 import type { Encja } from '../data/types';
 import { dataKrotko } from '../lib/format';
+import { useT } from '../i18n';
 
 /** Źródła. Zwinięte, ale nigdy ukryte — sekcja jest w każdym arkuszu. */
 export function SkadToWiem({ encja }: { encja: Encja }) {
+  const t = useT();
   // Źródła ciekawostek liczą się tak samo jak główne; usuwamy powtórzenia po URL.
   const wszystkie = [...encja.zrodla, ...encja.ciekawostki.map((c) => c.zrodlo)];
   const unikalne = wszystkie.filter(
@@ -12,7 +14,7 @@ export function SkadToWiem({ encja }: { encja: Encja }) {
   return (
     <details className="-mx-5 border-t-[0.5px] border-[color:var(--wlos)] px-5 pt-3">
       <summary className="dotyk cursor-pointer list-none py-1 text-naglowek text-tekst marker:hidden">
-        Skąd to wiem
+        {t.skadToWiem}
         <span className="liczby ml-2 text-podpis text-tekst-2">{unikalne.length}</span>
       </summary>
 
@@ -28,14 +30,14 @@ export function SkadToWiem({ encja }: { encja: Encja }) {
               {z.tytul}
             </a>
             <span className="liczby text-podpis text-tekst-2">
-              {z.wydawca}, dostęp {dataKrotko(z.dostep)}
+              {z.wydawca}, {t.dostep} {dataKrotko(z.dostep)}
             </span>
           </li>
         ))}
       </ul>
 
       <p className="liczby pb-3 text-podpis text-tekst-2">
-        Encja zaktualizowana {dataKrotko(encja.zaktualizowano)}
+        {t.zaktualizowano} {dataKrotko(encja.zaktualizowano)}
       </p>
     </details>
   );

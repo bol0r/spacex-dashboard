@@ -1,11 +1,14 @@
 import { useMemo } from 'react';
 import type { BazaWiedzy } from '../data/types';
 import { BOHATER, rozmiarKafla, ulozSekcje } from '../app/uklad';
+import { useT } from '../i18n';
 import { Kafel } from './Kafel';
 import { KafelBohater } from './KafelBohater';
 import { KartaDnia } from './KartaDnia';
 import { OsCzasu } from './OsCzasu';
 import { PasekSekcji } from './PasekSekcji';
+import { PrzelacznikJezyka } from './PrzelacznikJezyka';
+import { Stopka } from './Stopka';
 
 /**
  * Ekran główny. Na górze to, co dzieje się teraz i co warto przeczytać dziś;
@@ -14,6 +17,7 @@ import { PasekSekcji } from './PasekSekcji';
  * jej całej.
  */
 export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (id: string) => void }) {
+  const t = useT();
   const bohater = baza.encje[BOHATER];
   const sekcje = useMemo(() => ulozSekcje(baza), [baza]);
   const doPaska = useMemo(
@@ -25,11 +29,13 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
     <main className="mx-auto w-full max-w-[560px] px-4 pb-[calc(env(safe-area-inset-bottom,0px)+40px)]
                      pl-[max(1rem,env(safe-area-inset-left,0px))] pr-[max(1rem,env(safe-area-inset-right,0px))]
                      lg:max-w-[1000px]">
-      <header className="pb-5 pt-[calc(env(safe-area-inset-top,0px)+16px)]">
-        <h1 className="text-duzy-tytul text-tekst">Strefa Wiedzy</h1>
-        <p className="max-w-[46ch] text-podtytul text-tekst-2">
-          SpaceX i reszta imperium Muska. Każde pojęcie w tekście jest klikalne.
-        </p>
+      <header className="flex items-start justify-between gap-4 pb-5 pt-[calc(env(safe-area-inset-top,0px)+16px)]">
+        <div className="min-w-0">
+          <h1 className="text-duzy-tytul text-tekst">{t.tytul}</h1>
+          <p className="max-w-[46ch] text-podtytul text-tekst-2">{t.podtytul}</p>
+          <p className="mt-2 text-podpis text-tekst-2">{t.zastrzezenieKrotko}</p>
+        </div>
+        <PrzelacznikJezyka />
       </header>
 
       <PasekSekcji sekcje={doPaska} />
@@ -46,10 +52,8 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
             className="col-span-2 mt-5 scroll-mt-[104px] lg:col-span-4"
           >
             <div className="mb-3 flex items-baseline justify-between gap-3">
-              <h2 className="text-tytul-2 text-tekst">{sekcja.tytul}</h2>
-              <span className="liczby shrink-0 text-przypis text-tekst-2">
-                {sekcja.encje.length}
-              </span>
+              <h2 className="text-tytul-2 text-tekst">{t.sekcje[sekcja.id]}</h2>
+              <span className="liczby shrink-0 text-przypis text-tekst-2">{sekcja.encje.length}</span>
             </div>
 
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
@@ -63,6 +67,8 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
             </div>
           </section>
         ))}
+
+        <Stopka />
       </div>
     </main>
   );

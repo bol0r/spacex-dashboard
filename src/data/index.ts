@@ -7,9 +7,10 @@
  */
 
 import type {
-  BazaWiedzy, Encja, EncjaZIndeksem, IndeksRelacji, Kategoria, Powiazanie, Wydarzenie,
+  BazaWiedzy, Encja, EncjaZIndeksem, IndeksRelacji, Jezyk, Kategoria, Powiazanie, Wydarzenie,
 } from './types';
 import { wyciagnijLinki } from '../lib/linkify';
+import { zastosuj, type Nakladka } from './tlumaczenia/nakladka';
 
 const LADOWACZE: Record<Kategoria, () => Promise<Encja[]>> = {
   'spacex-rakiety': () => import('./entities/spacex-rakiety').then((m) => m.rakiety),
@@ -25,7 +26,10 @@ const LADOWACZE: Record<Kategoria, () => Promise<Encja[]>> = {
 export const KATEGORIE = Object.keys(LADOWACZE) as Kategoria[];
 
 /** Buduje indeks z gotowej listy encji. Wydzielone, żeby testy nie musiały być asynchroniczne. */
-export function zbudujBaze(wpisy: ReadonlyArray<readonly [Kategoria, Encja[]]>): BazaWiedzy {
+export function zbudujBaze(
+  wpisy: ReadonlyArray<readonly [Kategoria, Encja[]]>,
+  nakladka: Nakladka = {},
+): BazaWiedzy {
   const przychodzace: IndeksRelacji['przychodzace'] = {};
   const linkiWTresci: IndeksRelacji['linkiWTresci'] = {};
   const encje: Record<string, EncjaZIndeksem> = {};
@@ -33,10 +37,15 @@ export function zbudujBaze(wpisy: ReadonlyArray<readonly [Kategoria, Encja[]]>):
   const osGlobalna: Array<Wydarzenie & { encjaId: string }> = [];
 
   for (const [kategoria, lista] of wpisy) {
-    for (const e of lista) {
+    for (const oryginal of lista) {
+      const tlumaczenie = nakladka[oryginal.id];
+      const e = zastosuj(oryginal, tlumaczenie);
       const linki = wyciagnijLinki(e.tresc);
       linkiWTresci[e.id] = linki;
-      encje[e.id] = { ...e, kategoria, wychodzace: e.powiazane, przychodzace: [], linkiWTresci: linki };
+      encje[e.id] = {
+        ...e, kategoria, wychodzace: e.powiazane, przychodzace: [],
+        linkiWTresci: linki, przetlumaczona: tlumaczenie !== undefined,
+      };
       kolejnosc.push(e.id);
       for (const w of e.os) osGlobalna.push({ ...w, encjaId: e.id });
     }
@@ -64,14 +73,26 @@ export function zbudujBaze(wpisy: ReadonlyArray<readonly [Kategoria, Encja[]]>):
   return { encje, kolejnosc, indeks: { przychodzace, linkiWTresci }, osGlobalna };
 }
 
-let pamiec: Promise<BazaWiedzy> | null = null;
+/** Nakładki tłumaczeniowe. Polski nie ma żadnej — jest wersją kanoniczną. */
+const NAKLADKI: Record<Jezyk, () => Promise<Nakladka>> = {
+  pl: () => Promise.resolve({}),
+  en: () => import('./tlumaczenia/en').then((m) => m.en),
+};
 
-/** Ładuje wszystkie kategorie równolegle i buduje bazę. Wynik jest zapamiętywany. */
-export function zaladujBaze(): Promise<BazaWiedzy> {
-  pamiec ??= Promise.all(
-    KATEGORIE.map(async (k) => [k, await LADOWACZE[k]()] as const),
-  ).then(zbudujBaze);
-  return pamiec;
+const pamiec = new Map<Jezyk, Promise<BazaWiedzy>>();
+
+/** Ładuje wszystkie kategorie równolegle i buduje bazę w danym języku. */
+export function zaladujBaze(jezyk: Jezyk = 'pl'): Promise<BazaWiedzy> {
+  const gotowe = pamiec.get(jezyk);
+  if (gotowe !== undefined) return gotowe;
+
+  const nowe = Promise.all([
+    Promise.all(KATEGORIE.map(async (k) => [k, await LADOWACZE[k]()] as const)),
+    NAKLADKI[jezyk](),
+  ]).then(([wpisy, nakladka]) => zbudujBaze(wpisy, nakladka));
+
+  pamiec.set(jezyk, nowe);
+  return nowe;
 }
 
 /** Powiązania do pokazania w sekcji „Prowadzi dalej": wychodzące plus zwroty bez duplikatów. */

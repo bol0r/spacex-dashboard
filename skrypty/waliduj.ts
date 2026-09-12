@@ -5,6 +5,8 @@ import { walidujBaze } from '../src/lib/validate';
 import { zbudujBaze } from '../src/data/index';
 import type { Kategoria } from '../src/data/types';
 import { LIMITY } from '../src/data/types';
+import { en } from '../src/data/tlumaczenia/en';
+import { sprawdzNakladke } from '../src/data/tlumaczenia/nakladka';
 
 const wynik = walidujBaze(WSZYSTKIE);
 const wpisy = Object.entries(WEDLUG_KATEGORII) as Array<[Kategoria, typeof WSZYSTKIE]>;
@@ -29,5 +31,16 @@ for (const n of bledy) console.log(`  BŁĄD  [${n.kod}] ${n.encjaId}: ${n.szcze
 for (const n of ostrzezenia) console.log(`  OSTRZ [${n.kod}] ${n.encjaId}: ${n.szczegol}`);
 if (slepe.length > 0) console.log(`  UWAGA  ślepe zaułki (<4 relacje łącznie): ${slepe.join(', ')}`);
 
-console.log(bledy.length === 0 ? '\nWynik: ZIELONO\n' : '\nWynik: CZERWONO\n');
-process.exit(bledy.length === 0 ? 0 : 1);
+const niezgodnosci = sprawdzNakladke(WSZYSTKIE, en);
+const przetlumaczone = WSZYSTKIE.filter((e) => en[e.id] !== undefined).length;
+
+console.log('\n=== TŁUMACZENIA (en) ===');
+console.log(`Przetłumaczone:        ${przetlumaczone} / ${WSZYSTKIE.length}`);
+console.log(`Niezgodności tablic:   ${niezgodnosci.length}`);
+for (const n of niezgodnosci) {
+  console.log(`  BŁĄD  ${n.encjaId}.${n.pole}: oczekiwano ${n.oczekiwano}, jest ${n.jest}`);
+}
+
+const wszystkieBledy = bledy.length + niezgodnosci.length;
+console.log(wszystkieBledy === 0 ? '\nWynik: ZIELONO\n' : '\nWynik: CZERWONO\n');
+process.exit(wszystkieBledy === 0 ? 0 : 1);

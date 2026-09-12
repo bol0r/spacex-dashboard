@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import type { Sekcja } from '../data/types';
-import { ETYKIETY_SKROCONE } from '../app/uklad';
+import { useT } from '../i18n';
 
 /**
  * Pasek nawigacji po sekcjach. Bez niego ekran główny jest ścianą kafli,
@@ -8,6 +8,7 @@ import { ETYKIETY_SKROCONE } from '../app/uklad';
  * Chip prowadzi do sekcji, a podświetlenie mówi, gdzie jesteśmy.
  */
 export function PasekSekcji({ sekcje }: { sekcje: ReadonlyArray<{ id: Sekcja; liczba: number }> }) {
+  const t = useT();
   const [aktywna, ustawAktywna] = useState<Sekcja | null>(sekcje[0]?.id ?? null);
   const pasek = useRef<HTMLDivElement>(null);
 
@@ -74,7 +75,7 @@ export function PasekSekcji({ sekcje }: { sekcje: ReadonlyArray<{ id: Sekcja; li
 
   return (
     <nav
-      aria-label="Sekcje"
+      aria-label={t.nawigacjaSekcje}
       className="sticky top-0 z-30 -mx-4 mb-4 border-b-[0.5px] border-[color:var(--wlos)]
                  px-4 pb-2 pt-[calc(env(safe-area-inset-top,0px)+8px)]"
       style={{
@@ -99,7 +100,7 @@ export function PasekSekcji({ sekcje }: { sekcje: ReadonlyArray<{ id: Sekcja; li
                           ${czynna ? 'text-tlo' : 'text-tekst-2'}`}
               style={{ background: czynna ? 'var(--blekit)' : 'var(--mat-kafel-mocny)' }}
             >
-              {ETYKIETY_SKROCONE[s.id]}
+              {t.sekcjeKrotko[s.id]}
               <span className="liczby text-podpis opacity-70">{s.liczba}</span>
             </button>
           );
