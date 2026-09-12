@@ -221,4 +221,59 @@ export const Z = {
     url: 'https://www.nasa.gov/humans-in-space/nextstep-h-human-landing-system/',
     wydawca: 'NASA', dostep: D,
   },
+  wikiRoadster: {
+    tytul: 'Tesla Roadster (first generation)',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Roadster_(first_generation)',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiModelS: {
+    tytul: 'Tesla Model S',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Model_S',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiModel3: {
+    tytul: 'Tesla Model 3',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Model_3',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiModelY: {
+    tytul: 'Tesla Model Y',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Model_Y',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiCybertruck: {
+    tytul: 'Tesla Cybertruck',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Cybertruck',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiAutopilot: {
+    tytul: 'Tesla Autopilot',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Autopilot',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiGigaNevada: {
+    tytul: 'Gigafactory Nevada',
+    url: 'https://en.wikipedia.org/wiki/Gigafactory_Nevada',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiOptimus: {
+    tytul: 'Optimus (robot)',
+    url: 'https://en.wikipedia.org/wiki/Optimus_(robot)',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiTeslaEnergy: {
+    tytul: 'Tesla Energy',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Energy',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  wikiDojo: {
+    tytul: 'Tesla Dojo',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Dojo',
+    wydawca: 'Wikipedia', dostep: D,
+  },
+  secMusk: {
+    tytul: 'Elon Musk Settles SEC Fraud Charges; Tesla Charged With and Resolves Securities Law Charge',
+    url: 'https://www.sec.gov/newsroom/press-releases/2018-226',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D,
+  },
 } as const satisfies Record<string, Zrodlo>;
