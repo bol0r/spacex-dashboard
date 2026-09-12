@@ -239,7 +239,8 @@ export const rakiety: Encja[] = [
       'Usługa Direct to Cell pozwala łączyć się ze zwykłym telefonem bez żadnej dodatkowej anteny — SMS-y ruszyły z T-Mobile w styczniu 2024 roku. Dla [[spacex|SpaceX]] Starlink jest dziś głównym źródłem pieniędzy: 11,4 miliarda dolarów przychodu i 4,4 miliarda zysku operacyjnego w 2025 roku, po pierwszym rentownym roku 2024.',
     ],
     fakty: [
-      { etykieta: 'Satelity na orbicie', wartosc: 'ok. 10 413, w tym 10 397 czynnych', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Satelity na orbicie', wartosc: 'ok. 10 413', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Z tego czynnych', wartosc: '10 397', stanNa: '2026-06', pewnosc: 'potwierdzone' },
       { etykieta: 'Liczba abonentów', wartosc: '12 mln', stanNa: '2026-06', pewnosc: 'potwierdzone' },
       { etykieta: 'Zasięg', wartosc: 'ok. 160 krajów i terytoriów', stanNa: '2026-06', pewnosc: 'szacunkowe' },
       { etykieta: 'Pierwszy start operacyjny', wartosc: '24 maja 2019, 60 satelitów', pewnosc: 'potwierdzone' },
