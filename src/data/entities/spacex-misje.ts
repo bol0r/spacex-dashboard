@@ -10,14 +10,15 @@ const falcon1: Encja[] = [
     aka: ['FalconSAT-2'],
     krotki: 'Pierwszy start SpaceX zakończył się awarią po 33 sekundach, a przyczyną była skorodowana nakrętka.',
     tresc: [
-      'Dwudziestego czwartego marca 2006 roku [[falcon-1|Falcon 1]] wystartował po raz pierwszy, z satelitą FalconSAT-2 dla agencji DARPA. Trzydzieści trzy sekundy później silnik [[merlin|Merlin]] przestał pracować i rakieta spadła.',
+      'Dwudziestego czwartego marca 2006 roku [[falcon-1|Falcon 1]] wystartował po raz pierwszy, z satelitą FalconSAT-2 dla agencji DARPA. W dwudziestej piątej sekundzie lotu pojawił się wyciek paliwa, wokół szczytu silnika [[merlin|Merlin]] wybuchł pożar i przepalił instalację pneumatyczną pierwszego stopnia. Gdy ciśnienie spadło poniżej wartości krytycznej, zawory zamknęły się same i w T+29 s silnik zgasł; lot trwał w sumie około czterdziestu jednej sekund.',
       'Przyczyna okazała się boleśnie prozaiczna: pękła nakrętka na przewodzie paliwowym. Nie z powodu złego dokręcenia, ale z powodu korozji wywołanej solną mgłą — stanowisko startowe leżało na atolu [[kwajalein|Kwajalein]] w środku Pacyfiku.',
       'Dla [[spacex|SpaceX]] była to lekcja o materiałach i o środowisku, w którym trzyma się rakietę przed startem. Firma miała jeszcze trzy szanse, choć wtedy jeszcze o tym nie wiedziała. W komunikatach zdarzenie nazwano [[anomalia|anomalią]] — słowem, które w tej branży obejmuje i przekłamany odczyt, i utratę rakiety. Rok później [[falcon-1-lot-2|drugi lot]] przeszedł całą fazę pracy pierwszego stopnia bez zarzutu.',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '24 marca 2006', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek', wartosc: 'FalconSAT-2 (DARPA)', pewnosc: 'potwierdzone' },
-      { etykieta: 'Czas lotu', wartosc: '33 s', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas lotu', wartosc: 'ok. 41 s do upadku', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przebieg awarii', wartosc: 'wyciek w T+25 s, pożar, wyłączenie silnika w T+29 s', pewnosc: 'potwierdzone' },
       { etykieta: 'Przyczyna', wartosc: 'pęknięcie skorodowanej nakrętki przewodu paliwowego', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -36,7 +37,7 @@ const falcon1: Encja[] = [
       { id: 'spacex', powod: 'pierwszy start firmy w jej historii' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
+    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX, Z.sfnFalcon1Lot1],
     zaktualizowano: '2026-09-12',
   },
 
@@ -594,7 +595,7 @@ const przelomy: Encja[] = [
       { id: 'elon-musk', powod: 'dołożył 55 mln USD do zbiórki misji' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiInspiration4, Z.wikiDragon2],
+    zrodla: [Z.wikiInspiration4, Z.wikiDragon2, Z.polarisDawn],
     zaktualizowano: '2026-09-12',
   },
 
@@ -654,7 +655,9 @@ const przelomy: Encja[] = [
     fakty: [
       { etykieta: 'Start', wartosc: '10 września 2024, 09:23 UTC', pewnosc: 'potwierdzone' },
       { etykieta: 'Załoga', wartosc: 'Isaacman, Poteet, Gillis, Menon', pewnosc: 'potwierdzone' },
-      { etykieta: 'Apogeum', wartosc: '1 400 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Apogeum', wartosc: '1 408,1 km — najwyżej, jak kiedykolwiek leciał załogowy Dragon', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wysokość spaceru', wartosc: 'do 740 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Okrążenia', wartosc: '75 w ciągu pięciu dni', pewnosc: 'potwierdzone' },
       { etykieta: 'Czas poza statkiem', wartosc: 'Isaacman 7 min 56 s, Gillis 7 min 15 s', pewnosc: 'potwierdzone' },
       { etykieta: 'Łączny czas operacji EVA', wartosc: 'ok. 26 min 40 s', pewnosc: 'potwierdzone' },
       { etykieta: 'Powrót', wartosc: 'Zatoka Meksykańska, 15 września 2024', pewnosc: 'potwierdzone' },
@@ -677,7 +680,7 @@ const przelomy: Encja[] = [
       { id: 'fram2', powod: 'następna prywatna misja, z inną pierwszą kategorią rekordu' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiPolarisDawn, Z.wikiDragon2],
+    zrodla: [Z.wikiPolarisDawn, Z.wikiDragon2, Z.polarisDawn],
     zaktualizowano: '2026-09-12',
   },
 

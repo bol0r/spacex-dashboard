@@ -835,7 +835,7 @@ const reszta: Encja[] = [
       { id: 'fsd', powod: 'korzysta z tej samej linii prac nad percepcją i sterowaniem' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k],
+    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k, Z.teslaPlan4],
     zaktualizowano: '2026-09-12',
   },
 
@@ -926,17 +926,19 @@ const partia7: Encja[] = [
     typ: 'wydarzenie',
     nazwa: 'Master Plan',
     aka: ['Secret Master Plan', 'Part Deux', 'Master Plan 3'],
-    krotki: 'Trzy dokumenty programowe Tesli z 2006, 2016 i 2023 roku — pierwszy wykonany co do punktu, kolejne znacznie mniej.',
+    krotki: 'Cztery dokumenty programowe Tesli, od 2006 do 2025 roku — pierwszy wykonany co do punktu, kolejne coraz mniej sprawdzalne.',
     tresc: [
       'Plan z 2006 roku był krótki i konkretny: zbudować drogi samochód sportowy, z zysku zrobić tańszy samochód rodzinny, z tego jeszcze tańszy, a po drodze oferować bezemisyjne wytwarzanie energii. [[tesla-roadster|Roadster]], [[model-s|Model S]] i [[model-3|Model 3]] to dokładnie te trzy szczeble. Ostatni punkt — naprawdę tani samochód dla wszystkich — nie doczekał się realizacji do dziś.',
       'Part Deux z 2016 roku rozszerzył zakres: elektryki we wszystkich segmentach rynku, [[solar-roof|dach solarny]] zintegrowany z magazynem energii, jazda autonomiczna dziesięciokrotnie bezpieczniejsza od człowieka i flota [[robotaxi|robotaksówek]], w której właściciel zarabia na stojącym samochodzie. Z tego dowieziono [[tesla-semi|Semi]] i [[powerwall|magazyny energii]]. Pełnej autonomii nie ma, [[solarcity|SolarCity]] wypadło co najwyżej połowicznie, a zapowiadanego autobusu nie zbudowano wcale.',
       'Master Plan 3 z 2023 roku nie jest już w zasadzie planem dla [[tesla|Tesli]], tylko dokumentem o tym, jak cała światowa gospodarka mogłaby przejść na energię odnawialną: przepływy energii, terawaty mocy, setki terawatogodzin magazynów.',
+      'Czwarty, ogłoszony 1 września 2025 roku, idzie w tę stronę jeszcze dalej. Nosi nazwę „zrównoważonej obfitości” i opiera się na trzech zasadach: wzrost jest nieskończony, innowacja usuwa ograniczenia, technologia rozwiązuje realne problemy. Konkretów jest w nim niewiele — wymienione są energia słoneczna z magazynami, jazda autonomiczna i [[optimus|Optimus]], ale bez liczb, terminów i punktów do odhaczenia.',
       'Porównanie trzech dokumentów mówi więcej niż każdy z osobna. Pierwszy dało się sprawdzić punkt po punkcie i w większości został wykonany. Trzeci opisuje świat, a nie firmę — i sprawdzić go w ten sposób już się nie da.',
     ],
     fakty: [
       { etykieta: 'Plan pierwszy', wartosc: '2006, cztery kroki od Roadstera do taniego auta', pewnosc: 'potwierdzone' },
       { etykieta: 'Part Deux', wartosc: '2016, pełna gama, dach solarny, autonomia, robotaksówki', pewnosc: 'potwierdzone' },
       { etykieta: 'Master Plan 3', wartosc: '2023, dokument o gospodarce światowej, nie o firmie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Master Plan Part IV', wartosc: '1 września 2025, „zrównoważona obfitość”, bez terminów', pewnosc: 'potwierdzone' },
       { etykieta: 'Niedowiezione z planu 1', wartosc: 'naprawdę tani samochód', pewnosc: 'potwierdzone' },
       { etykieta: 'Niedowiezione z Part Deux', wartosc: 'pełna autonomia, autobus, dach solarny w skali', pewnosc: 'potwierdzone' },
     ],
@@ -950,6 +952,7 @@ const partia7: Encja[] = [
       { data: '2006', tytul: 'Pierwszy Master Plan', opis: 'Cztery kroki od drogiego auta sportowego do taniego samochodu.', waga: 3 },
       { data: '2016', tytul: 'Part Deux', opis: 'Autonomia, robotaksówki, dach solarny i pełna gama modeli.', waga: 3 },
       { data: '2023', tytul: 'Master Plan 3', opis: 'Dokument o światowej gospodarce energetycznej.', waga: 2 },
+      { data: '2025-09-01', tytul: 'Master Plan Part IV', opis: 'Zrównoważona obfitość: trzy zasady i żadnych terminów.', waga: 2 },
     ],
     powiazane: [
       { id: 'tesla', powod: 'jej dokumenty programowe' },
@@ -959,7 +962,7 @@ const partia7: Encja[] = [
       { id: 'solarcity', powod: 'miała domknąć energetyczną część planu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.cleantechPlany, Z.wikiTesla],
+    zrodla: [Z.cleantechPlany, Z.wikiTesla, Z.teslaPlan4],
     zaktualizowano: '2026-09-13',
   },
 

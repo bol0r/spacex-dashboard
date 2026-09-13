@@ -712,4 +712,34 @@ export const Z = {
     url: 'https://www.cbsnews.com/news/tesla-autopilot-recall/',
     wydawca: 'CBS News', dostep: D2,
   },
+  polarisDawn: {
+    tytul: 'Polaris Dawn — opis misji i załogi',
+    url: 'https://polarisprogram.com/dawn/',
+    wydawca: 'Polaris Program', dostep: D2,
+  },
+  nasaIsaacman: {
+    tytul: 'NASA Welcomes 15th Administrator Jared Isaacman',
+    url: 'https://www.nasa.gov/news-release/nasa-welcomes-15th-administrator-jared-isaacman/',
+    wydawca: 'NASA', dostep: D2,
+  },
+  teslaPlan4: {
+    tytul: 'Master Plan Part IV',
+    url: 'https://www.tesla.com/master-plan-part-4',
+    wydawca: 'Tesla', dostep: D2,
+  },
+  spacexTerafab: {
+    tytul: 'Breaking Ground on Terafab in Texas',
+    url: 'https://www.spacex.com/updates/',
+    wydawca: 'SpaceX', dostep: D2,
+  },
+  tcTerafab: {
+    tytul: 'Tesla and SpaceX will invest 16.8B to start building Terafab chip factory in Texas',
+    url: 'https://techcrunch.com/2026/08/06/tesla-and-spacex-will-invest-16-8b-to-start-building-terafab-chip-factory-in-texas/',
+    wydawca: 'TechCrunch', dostep: D2,
+  },
+  sfnFalcon1Lot1: {
+    tytul: 'Fuel leak apparently doomed Falcon 1',
+    url: 'https://www.spaceflightnow.com/falcon/f1/060325leak.html',
+    wydawca: 'Spaceflight Now', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;

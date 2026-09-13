@@ -49,17 +49,21 @@ export const ludzie: Encja[] = [
     typ: 'osoba',
     nazwa: 'Jared Isaacman',
     aka: ['Isaacman'],
-    krotki: 'Przedsiębiorca, który kupił i poprowadził dwie prywatne misje orbitalne, a przy drugiej wyszedł na zewnątrz statku.',
+    krotki: 'Kupił i poprowadził dwie prywatne misje orbitalne, a w grudniu 2025 został piętnastym administratorem NASA.',
     tresc: [
       'Isaacman zbudował firmę płatniczą Shift4 Payments, a potem zrobił rzecz, której wcześniej nikt nie robił: kupił cały lot orbitalny i sam go poprowadził jako dowódca. Pierwszym była [[inspiration4|Inspiration4]] w 2021 roku, z załogą bez żadnego zawodowego astronauty na pokładzie.',
-      'Trzy lata później poleciał ponownie, tym razem w ramach [[polaris-dawn|Polaris Dawn]]. Ta misja sięgnęła 1 400 kilometrów — najdalej od Ziemi, jak człowiek znalazł się od czasu Apollo — i zakończyła się pierwszym komercyjnym spacerem kosmicznym. Isaacman wyszedł ze [[crew-dragon|Crew Dragona]] na siedem minut i pięćdziesiąt sześć sekund.',
+      'Trzy lata później poleciał ponownie, tym razem w ramach [[polaris-dawn|Polaris Dawn]]. Ta misja sięgnęła 1 408 kilometrów — najdalej od Ziemi, jak człowiek znalazł się od czasu Apollo — i zakończyła się pierwszym komercyjnym spacerem kosmicznym. Isaacman wyszedł ze [[crew-dragon|Crew Dragona]] na siedem minut i pięćdziesiąt sześć sekund.',
       'Obie misje miały wymiar zbiórkowy. Przy Inspiration4 on i jego żona przekazali 125 milionów dolarów na szpital St. Jude; łącznie misja zebrała ponad 243 miliony. To odwrócenie klasycznego schematu turystyki kosmicznej, w którym pieniądze płyną wyłącznie w jedną stronę. Obie misje wykonano [[falcon-9|Falconem 9]], a obie zakończyły się [[wodowanie|wodowaniem]]. Na spacerze kosmicznym towarzyszyła mu [[sarah-gillis|Sarah Gillis]], inżynierka SpaceX, która wyszła ze statku zaraz po nim.',
+      'Dalszy ciąg jest nietypowy nawet jak na tę branżę. W grudniu 2024 roku prezydent Donald Trump wskazał go na administratora NASA, w maju 2025 wycofał nominację na tle publicznego sporu z [[elon-musk|Muskiem]], a w listopadzie zgłosił go ponownie. Senat potwierdził wybór 17 grudnia 2025 roku stosunkiem 67 do 30; następnego dnia Isaacman został zaprzysiężony jako piętnasty szef agencji.',
+      'Jest to sytuacja bez precedensu: człowiek, który kupił dwa loty od prywatnej firmy, kieruje dziś urzędem, który tej samej firmie zleca [[hls-artemis|lądowanie na Księżycu]] i [[commercial-crew|wozi nią swoich astronautów]]. Za priorytet podał powrót ludzi na Księżyc i stałą obecność na jego powierzchni.',
     ],
     fakty: [
       { etykieta: 'Loty orbitalne', wartosc: '2 — Inspiration4 i Polaris Dawn', stanNa: '2026-09-12', pewnosc: 'potwierdzone' },
       { etykieta: 'Firma', wartosc: 'Shift4 Payments', pewnosc: 'potwierdzone' },
       { etykieta: 'Czas poza statkiem', wartosc: '7 min 56 s', pewnosc: 'potwierdzone' },
-      { etykieta: 'Najwyższa osiągnięta orbita', wartosc: '1 400 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Najwyższa osiągnięta orbita', wartosc: '1 408,1 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Administrator NASA', wartosc: 'zaprzysiężony 18 grudnia 2025, piętnasty w historii', pewnosc: 'potwierdzone' },
+      { etykieta: 'Głosowanie w Senacie', wartosc: '67 za, 30 przeciw, 17 grudnia 2025', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -70,6 +74,7 @@ export const ludzie: Encja[] = [
     os: [
       { data: '2021-09-16', tytul: 'Inspiration4', opis: 'Dowodzi pierwszą orbitalną misją bez zawodowego astronauty na pokładzie.', waga: 3 },
       { data: '2024-09-10', tytul: 'Polaris Dawn', opis: 'Drugi lot, rekord wysokości i pierwszy komercyjny spacer kosmiczny.', waga: 3 },
+      { data: '2025-12-18', tytul: 'Administrator NASA', opis: 'Zostaje piętnastym szefem agencji, dzień po potwierdzeniu przez Senat.', waga: 3 },
     ],
     powiazane: [
       { id: 'inspiration4', powod: 'kupił tę misję i był jej dowódcą' },
@@ -77,7 +82,7 @@ export const ludzie: Encja[] = [
       { id: 'crew-dragon', powod: 'oba jego loty odbyły się w tej kapsule' },
       { id: 'sarah-gillis', powod: 'wyszła ze statku razem z nim podczas Polaris Dawn' },
     ],
-    zrodla: [Z.wikiInspiration4, Z.wikiPolarisDawn],
+    zrodla: [Z.wikiInspiration4, Z.wikiPolarisDawn, Z.nasaIsaacman, Z.polarisDawn],
     zaktualizowano: '2026-09-12',
   },
 
@@ -113,7 +118,7 @@ export const ludzie: Encja[] = [
       { id: 'crew-dragon', powod: 'szkoliła załogi tej kapsuły, zanim sama nią poleciała' },
       { id: 'spacex', powod: 'jej pracodawca — poleciała jako inżynierka firmy, nie astronautka agencji' },
     ],
-    zrodla: [Z.wikiPolarisDawn, Z.wikiDragon2],
+    zrodla: [Z.wikiPolarisDawn, Z.wikiDragon2, Z.polarisDawn],
     zaktualizowano: '2026-09-12',
   },
 

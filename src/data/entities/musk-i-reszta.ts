@@ -754,6 +754,7 @@ export const muskIReszta: Encja[] = [
       'Po [[przejecie-twittera|przejęciu w październiku 2022]] serwis przeszedł przez redukcję zatrudnienia o osiemdziesiąt procent, a w lipcu 2023 zmienił nazwę na X. Nazwa nie jest przypadkowa: [[elon-musk|Musk]] używał jej już przy [[x-com|X.com]] w 1999 roku i najwyraźniej nigdy się z nią nie rozstał.',
       'Do kwietnia 2025 zainteresowanie inwestorów wyraźnie odżyło — bankom udało się refinansować zadłużenie po około 98 centów za dolara, co przy tak zadłużonej transakcji jest wynikiem dobrym.',
       'W marcu 2025 [[xai|xAI]] przejęło spółkę w transakcji wyłącznie akcyjnej, wyceniając ją na 33 miliardy dolarów, a razem z 12 miliardami długu na 45. To więcej niż 44 miliardy zapłacone przy zakupie w 2022 roku — choć trzeba pamiętać, że kupującym była tu firma tego samego właściciela.',
+      'Łańcuch własności poszedł jeszcze dalej. W lutym 2026 roku [[spacex|SpaceX]] przejęło xAI, a razem z nim platformę — serwis społecznościowy kupiony prywatnie w 2022 roku należy dziś do spółki rakietowej notowanej na giełdzie.',
       'Dziś platforma jest przede wszystkim kanałem dystrybucji dla [[grok|Groka]], wbudowanego w nią jako asystent.',
     ],
     fakty: [
@@ -1035,6 +1036,49 @@ export const muskIReszta: Encja[] = [
       { id: 'konstelacja', powod: 'zasięg tej sieci da się włączać i wyłączać nad wybranym obszarem' },
     ],
     zrodla: [Z.wikiStarlinkUkraina, Z.pbsStarlink],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'terafab',
+    typ: 'firma',
+    nazwa: 'Terafab',
+    aka: ['fabryka układów SpaceX i Tesli'],
+    krotki: 'Wspólna fabryka układów scalonych SpaceX i Tesli w Teksasie — pierwszy projekt, w którym obie firmy budują coś razem.',
+    tresc: [
+      'W 2026 roku [[spacex|SpaceX]] i [[tesla|Tesla]] ogłosiły, że zbudują razem fabrykę układów scalonych. Szóstego sierpnia podano lokalizację: hrabstwo Grimes w Teksasie, godzinę drogi na północny zachód od Houston. Nakład pierwszej fazy to 16,8 miliarda dolarów, a docelowa powierzchnia przekracza sto milionów stóp kwadratowych.',
+      'Uzasadnienie jest proste i podane wprost: obie firmy potrzebują więcej układów, niż jest w stanie dostarczyć światowa produkcja. Łączne zapotrzebowanie szacują na ponad terawat mocy obliczeniowej. Fabryka ma wytwarzać układy do [[optimus|Optimusa]] i samochodów bez kierowcy z usługi [[robotaxi|Robotaxi]], a także mocniejsze — do zapowiadanych centrów danych na orbicie. Skalę problemu pokazał [[colossus|Colossus]]: dwieście tysięcy kart graficznych kupionych na rynku i wciąż za mało.',
+      'Nietypowe jest to, że wszystko ma stać w jednym miejscu: logika, pamięć, pakowanie i testowanie. Zwykle są to osobne zakłady, często na różnych kontynentach. Deklarowanym powodem jest tempo — poprawki mają wracać do produkcji od razu, a nie po miesiącach. To ta sama logika, którą Tesla zastosowała przy [[gigacasting|odlewaniu wielkogabarytowym]] i przy budowie [[gigafactory-teksas|zakładu pod Austin]]: upraszczać fabrykę, nie produkt.',
+      'Zakład stanie nad zbiornikiem Gibbons Creek, który chłodził elektrownię węglową zamkniętą w 2018 roku; woda ma iść stamtąd, a nie z ujęć podziemnych. Zatrudnienie zapowiedziano na co najmniej trzy tysiące osób. Stan Teksas przyznał SpaceX grant 30 milionów dolarów ze swojego funduszu.',
+    ],
+    fakty: [
+      { etykieta: 'Ogłoszenie lokalizacji', wartosc: '6 sierpnia 2026, hrabstwo Grimes w Teksasie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Nakład pierwszej fazy', wartosc: '16,8 mld USD od SpaceX i Tesli', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powierzchnia docelowa', wartosc: 'ponad 100 mln stóp kwadratowych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zatrudnienie', wartosc: 'zapowiedziane co najmniej 3 000 osób', stanNa: '2026-08', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zapotrzebowanie obu firm', wartosc: 'ponad 1 TW mocy obliczeniowej', pewnosc: 'szacunkowe' },
+      { etykieta: 'Co ma produkować', wartosc: 'układy do robotów, aut bez kierowcy i orbitalnych centrów danych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Woda', wartosc: 'zbiornik Gibbons Creek, nie ujęcia podziemne', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Woda do chłodzenia ma pochodzić ze zbiornika, który przez lata chłodził elektrownię węglową — tę samą, którą zamknięto w 2018 roku. Fabryka układów do robotów i satelitów stanie więc dosłownie na infrastrukturze po spalaniu węgla.',
+        zrodlo: Z.tcTerafab,
+      },
+    ],
+    os: [
+      { data: '2026-08-06', tytul: 'Wybór lokalizacji', opis: 'SpaceX i Tesla podają hrabstwo Grimes i nakład 16,8 miliarda dolarów.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'spacex', powod: 'jeden z dwóch inwestorów; potrzebuje układów do centrów danych na orbicie' },
+      { id: 'tesla', powod: 'drugi inwestor; potrzebuje układów do robotów i aut bez kierowcy' },
+      { id: 'optimus', powod: 'jeden z dwóch produktów, pod które projektowane są te układy' },
+      { id: 'robotaxi', powod: 'drugi z nich — jazda bez kierowcy wymaga mocy obliczeniowej w samochodzie' },
+      { id: 'gigafactory-teksas', powod: 'poprzednia wielka inwestycja tej grupy w tym samym stanie' },
+      { id: 'colossus', powod: 'pokazał skalę zapotrzebowania, którego nie da się kupić na rynku' },
+    ],
+    status: 'w rozwoju',
+    zrodla: [Z.spacexTerafab, Z.tcTerafab],
     zaktualizowano: '2026-09-13',
   },
 ];

@@ -5,6 +5,41 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.6.1 — 13 września 2026
+
+**Niezależność źródeł, przejście trzecie — i cztery luki merytoryczne.**
+
+73 → 68 encji opartych na jednym wydawcy, 79 encji ze źródłem pierwotnym.
+Osiem nowych źródeł: strona programu Polaris, komunikat NASA o zaprzysiężeniu
+administratora, Master Plan Part IV od Tesli, komunikat SpaceX o Terafabie,
+TechCrunch, Spaceflight Now o pierwszym locie Falcona 1.
+
+Ważniejsze od liczb jest to, co wyszło przy weryfikacji.
+
+**Jared Isaacman jest od 18 grudnia 2025 roku administratorem NASA** — piętnastym
+w historii, po potwierdzeniu przez Senat stosunkiem 67 do 30. Encja opisywała go
+wyłącznie jako przedsiębiorcę, który kupił dwa loty. Doszły dwa akapity, trzy
+fakty i wydarzenie na osi, razem z tym, że nominacja była raz wycofana na tle
+publicznego sporu Trumpa z Muskiem.
+
+**Tesla ma cztery plany generalne, nie trzy.** Master Plan Part IV wyszedł
+1 września 2025 pod hasłem „zrównoważonej obfitości" — trzy zasady, żadnych
+liczb ani terminów.
+
+**Terafab** — wspólna fabryka układów scalonych SpaceX i Tesli w hrabstwie
+Grimes w Teksasie, ogłoszona 6 sierpnia 2026, nakład pierwszej fazy 16,8 miliarda
+dolarów — nie istniała w bazie wcale. Dostała własną encję, sto osiemdziesiątą
+pierwszą. To pierwszy projekt, w którym obie firmy budują coś razem.
+
+**Platforma X należy dziś do SpaceX.** Łańcuch był w bazie rozpisany po kawałku
+— xAI kupiło X w 2025, SpaceX kupiło xAI w 2026 — ale nigdzie nie zapisany
+w całości.
+
+Poza tym: pierwszy lot Falcona 1 trwał około czterdziestu jeden sekund, a nie
+trzydziestu trzech, a relacja z pierwszej ręki podaje przebieg awarii co do
+sekundy — wyciek w T+25, pożar, wyłączenie silnika w T+29. Apogeum Polaris Dawn
+to 1 408,1 km, nie okrągłe 1 400.
+
 ## 0.6.0 — 13 września 2026
 
 **Graf powiązań.**

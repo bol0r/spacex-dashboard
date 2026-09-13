@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.6.0** · **by Dead Net & Claude**
+**Wersja 0.6.1** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -48,7 +48,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 0 | Design plan, kontrakt danych, fazowanie | gotowe |
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
-| 3 | Treść — 180 z 180+ encji | gotowe |
+| 3 | Treść — 181 z 180+ encji | gotowe |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA i offline, skorowidz, wirtualizacja osi, pomiar Lighthouse | gotowe |
 
@@ -57,10 +57,10 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 180 · Wydarzenia: 319 · Źródła w katalogu: 144 · Diagramy: 4
+Encje: 181 · Wydarzenia: 322 · Źródła w katalogu: 152 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 6,01 (cel ≥ 6) ✓
-Tłumaczenia EN: interfejs w całości, treść 6 / 180 encji
+Średnio linków [[id]] w treści: 6,04 (cel ≥ 6) ✓
+Tłumaczenia EN: interfejs w całości, treść 6 / 181 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 
 Lighthouse (mobile, build produkcyjny, 13.09.2026):
@@ -509,6 +509,15 @@ których nie widać przy jednym. Przy tym przejściu wyszły między innymi:
   katalogi śledzenia liczą ich ponad 10 tysięcy.
 - **Przejęcie xAI przez SpaceX** z lutego 2026 było w bazie odnotowane przy xAI,
   ale nie przy SpaceX — a to zmienia opis tego, czym ta firma dziś jest.
+- **Jared Isaacman jest administratorem NASA** od 18 grudnia 2025. Encja opisywała
+  go wyłącznie jako przedsiębiorcę, który kupił dwa loty.
+- **Tesla ma cztery plany generalne**, nie trzy: Master Plan Part IV wyszedł
+  1 września 2025.
+- **Terafab**, wspólna fabryka układów SpaceX i Tesli ogłoszona w sierpniu 2026,
+  nie istniała w bazie wcale. Dostała własną encję.
+- **Pierwszy lot Falcona 1** trwał około czterdziestu jeden sekund, a nie
+  trzydziestu trzech; relacja z pierwszej ręki podaje też przebieg awarii
+  co do sekundy.
 
 ## Numeracja wersji
 
@@ -603,7 +612,7 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
    dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
    kwestią wyboru, nie długu.
-2. **Niezależność źródeł.** 73 ze 180 encji ma wszystkie źródła od jednego
+2. **Niezależność źródeł.** 68 ze 181 encji ma wszystkie źródła od jednego
    wydawcy — na starcie było ich 137. Metoda jest w rozdziale
    [Skąd biorą się źródła](#skąd-biorą-się-źródła). Zostaje głównie: pojedyncze
    loty Falcona 1 i Starshipa, wczesne misje przełomowe, biografie i część

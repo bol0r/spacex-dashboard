@@ -311,7 +311,7 @@ export const rakiety: Encja[] = [
       { id: 'spacex', powod: 'pierwsza rakieta firmy i warunek jej przetrwania' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.snewsFalcon1],
+    zrodla: [Z.wikiFalcon1, Z.snewsFalcon1, Z.sfnFalcon1Lot1],
     zaktualizowano: '2026-09-12',
   },
 
