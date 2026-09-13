@@ -17,6 +17,7 @@ const Wyszukiwarka = lazy(() => import('../components/Wyszukiwarka').then((m) =>
 const TrybOsiCzasu = lazy(() => import('../components/TrybOsiCzasu').then((m) => ({ default: m.TrybOsiCzasu })));
 const LosoweOdkrycie = lazy(() => import('../components/LosoweOdkrycie').then((m) => ({ default: m.LosoweOdkrycie })));
 const TrybFilmowy = lazy(() => import('../components/TrybFilmowy').then((m) => ({ default: m.TrybFilmowy })));
+const WidokGrafu = lazy(() => import('../components/WidokGrafu').then((m) => ({ default: m.WidokGrafu })));
 
 /**
  * Raz zamontowane warstwy zostają. Odmontowanie ich przy zamknięciu zabrałoby
@@ -43,6 +44,7 @@ export function App() {
   const osCzasu = useRazOtwarte(widok === 'os-czasu');
   const losowanie = useRazOtwarte(widok === 'losowanie');
   const film = useRazOtwarte(widok === 'film');
+  const graf = useRazOtwarte(widok === 'graf');
 
   // ⌘K i Ctrl+K otwierają wyszukiwarkę z każdego miejsca aplikacji.
   useEffect(() => {
@@ -101,6 +103,7 @@ export function App() {
         {osCzasu && <TrybOsiCzasu />}
         {losowanie && <LosoweOdkrycie />}
         {film && <TrybFilmowy />}
+        {graf && <WidokGrafu />}
       </Suspense>
     </DostawcaBazy>
   );

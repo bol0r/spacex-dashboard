@@ -1,5 +1,5 @@
 import { useMemo, useRef } from 'react';
-import { Clapperboard, Search, Shuffle } from 'lucide-react';
+import { Clapperboard, Search, Share2, Shuffle } from 'lucide-react';
 import type { BazaWiedzy } from '../data/types';
 import { BOHATER, rozmiarKafla, ulozSekcje } from '../app/uklad';
 import { useStan } from '../app/stan';
@@ -93,6 +93,22 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
           <span className="flex min-w-0 flex-col">
             <span className="text-naglowek text-blekit">{t.trybFilmowy}</span>
             <span className="text-przypis text-tekst-2">{t.trybFilmowyOpis}</span>
+          </span>
+        </button>
+
+        {/* Graf jest drugim wejściem „na całość" obok trybu filmowego: tam czas,
+            tu struktura. Oba prowadzą do tych samych encji, inną drogą. */}
+        <button
+          type="button"
+          onClick={() => ustawWidok('graf')}
+          className="dotyk col-span-2 flex items-center gap-3 rounded-kafel px-5 py-4 text-left
+                     lg:col-span-4"
+          style={{ background: 'var(--mat-kafel)', border: '0.5px solid var(--wlos)' }}
+        >
+          <Share2 size={22} strokeWidth={1.8} className="shrink-0 text-tekst-2" aria-hidden="true" />
+          <span className="flex min-w-0 flex-col">
+            <span className="text-naglowek text-tekst">{t.grafPowiazan}</span>
+            <span className="text-przypis text-tekst-2">{t.grafPowiazanOpis}</span>
           </span>
         </button>
 

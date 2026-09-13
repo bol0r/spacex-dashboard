@@ -71,6 +71,17 @@ interface Slownik {
   wylaczone: string;
   kamienMilowy: string;
 
+  grafPowiazan: string;
+  grafPowiazanOpis: string;
+  grafOpis: (wezly: number, krawedzie: number) => string;
+  grafDostepnosc: string;
+  grafPodpowiedz: string;
+  grafPolaczenia: (n: number) => string;
+  przyblizenie: string;
+  oddalenie: string;
+  dopasujWidok: string;
+  otworz: string;
+
   trybFilmowy: string;
   trybFilmowyOpis: string;
   odtwarzaj: string;
@@ -175,6 +186,17 @@ const PL: Slownik = {
   wylaczone: 'wyłączone',
   kamienMilowy: 'kamień milowy',
 
+  grafPowiazan: 'Graf powiązań',
+  grafPowiazanOpis: 'Cała sieć na jednym obrazku. Widać, co jest środkiem, a co brzegiem.',
+  grafOpis: (w, k) => `${w} haseł, ${k} połączeń. Przesuwaj i przybliżaj; dotknij węzła, żeby zobaczyć, z czym się łączy.`,
+  grafDostepnosc: 'Mapa powiązań między hasłami. Strzałki przenoszą wybór do sąsiedniego węzła, Enter otwiera hasło.',
+  grafPodpowiedz: 'Dotknij dowolnego węzła.',
+  grafPolaczenia: (n) => `${n} ${n === 1 ? 'połączenie' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 > 20) ? 'połączenia' : 'połączeń'}`,
+  przyblizenie: 'Przybliż',
+  oddalenie: 'Oddal',
+  dopasujWidok: 'Dopasuj widok',
+  otworz: 'Otwórz',
+
   trybFilmowy: 'Tryb filmowy',
   trybFilmowyOpis: 'Cała historia po kolei, sama się przewija. Dotknij, żeby wstrzymać.',
   odtwarzaj: 'Odtwarzaj',
@@ -269,6 +291,17 @@ const EN: Slownik = {
   wlaczone: 'on',
   wylaczone: 'off',
   kamienMilowy: 'milestone',
+
+  grafPowiazan: 'Link graph',
+  grafPowiazanOpis: 'The whole network in one picture. You can see what is the centre and what is the edge.',
+  grafOpis: (w, k) => `${w} entries, ${k} connections. Pan and zoom; tap a node to see what it connects to.`,
+  grafDostepnosc: 'Map of connections between entries. Arrow keys move the selection to a neighbouring node, Enter opens the entry.',
+  grafPodpowiedz: 'Tap any node.',
+  grafPolaczenia: (n) => `${n} ${n === 1 ? 'connection' : 'connections'}`,
+  przyblizenie: 'Zoom in',
+  oddalenie: 'Zoom out',
+  dopasujWidok: 'Fit to view',
+  otworz: 'Open',
 
   trybFilmowy: 'Cinema mode',
   trybFilmowyOpis: 'The whole story in order, scrolling by itself. Touch to pause.',

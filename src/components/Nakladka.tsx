@@ -12,13 +12,20 @@ import { SPREZYNA } from '../lib/gest';
  * różnicowanie ich tylko po to, żeby były różne, byłoby kosztem dla użytkownika.
  */
 export function Nakladka({
-  otwarta, tytul, naglowek, children,
+  otwarta, tytul, naglowek, children, bezPrzewijania = false, podArkuszami = false,
 }: {
   otwarta: boolean;
   tytul: string;
   /** Element pod tytułem — pole wyszukiwania albo filtry. */
   naglowek?: ReactNode;
   children: ReactNode;
+  /** Treść wypełnia całą wysokość i nie przewija się — dla widoku grafu. */
+  bezPrzewijania?: boolean;
+  /**
+   * Nakładka zostaje pod stosem arkuszy zamiast go przykrywać. Dotyczy tych
+   * widoków, do których po zamknięciu encji się wraca — dziś tylko grafu.
+   */
+  podArkuszami?: boolean;
 }) {
   const zamknij = useStan((s) => s.ustawWidok);
   const t = useT();
@@ -54,7 +61,7 @@ export function Nakladka({
           animate={bezRuchu ? { opacity: 1 } : { opacity: 1, y: 0 }}
           exit={bezRuchu ? { opacity: 0 } : { opacity: 0, y: 24 }}
           transition={bezRuchu ? { duration: 0.12 } : SPREZYNA}
-          className="fixed inset-0 z-[60] flex flex-col"
+          className={`fixed inset-0 flex flex-col ${podArkuszami ? 'z-40' : 'z-[60]'}`}
           style={{
             background: 'rgba(0,0,0,0.86)',
             backdropFilter: 'blur(30px) saturate(1.6)',
@@ -80,10 +87,14 @@ export function Nakladka({
             )}
           </header>
 
-          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4
-                          pb-[calc(env(safe-area-inset-bottom,0px)+28px)] pt-4">
-            <div className="mx-auto w-full max-w-[720px]">{children}</div>
-          </div>
+          {bezPrzewijania ? (
+            <div className="min-h-0 flex-1 overflow-hidden">{children}</div>
+          ) : (
+            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4
+                            pb-[calc(env(safe-area-inset-bottom,0px)+28px)] pt-4">
+              <div className="mx-auto w-full max-w-[720px]">{children}</div>
+            </div>
+          )}
         </motion.div>
       )}
     </AnimatePresence>

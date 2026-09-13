@@ -17,7 +17,7 @@ const KLUCZ_JEZYKA = 'strefa-wiedzy:jezyk';
 const KLUCZ_ULUBIONYCH = 'strefa-wiedzy:ulubione';
 
 /** Nakładki pełnoekranowe wykluczają się wzajemnie, więc trzymamy jedno pole. */
-export type Widok = null | 'szukanie' | 'os-czasu' | 'losowanie' | 'film';
+export type Widok = null | 'szukanie' | 'os-czasu' | 'losowanie' | 'film' | 'graf';
 
 function wczytajUlubione(): string[] {
   try {
@@ -130,10 +130,12 @@ export const useStan = create<Stan>((set, get) => ({
     drgnij();
     const nowaHistoria = [id, ...historia.filter((h) => h !== id)].slice(0, MAKS_HISTORII);
     zapiszHistorie(nowaHistoria);
-    // Tryb filmowy zostaje pod arkuszem i czeka w tym samym miejscu — wyjście
-    // z encji wraca do filmu zamiast zaczynać go od nowa. Pozostałe nakładki
-    // zamykamy, bo są punktami wejścia, nie stanem, do którego się wraca.
-    const zostawWidok = get().widok === 'film';
+    // Tryb filmowy i graf zostają pod arkuszem i czekają w tym samym miejscu —
+    // wyjście z encji wraca do filmu albo do grafu zamiast zaczynać od nowa.
+    // Oba są miejscami, z których się eksploruje, a nie jednorazowym wejściem.
+    // Pozostałe nakładki zamykamy, bo są punktami wejścia, nie stanem.
+    const widokTeraz = get().widok;
+    const zostawWidok = widokTeraz === 'film' || widokTeraz === 'graf';
     set({
       stos: [...stos, id],
       historia: nowaHistoria,
