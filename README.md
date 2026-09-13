@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.6.1** · **by Dead Net & Claude**
+**Wersja 0.6.2** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -57,9 +57,9 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 181 · Wydarzenia: 322 · Źródła w katalogu: 152 · Diagramy: 4
+Encje: 181 · Wydarzenia: 323 · Źródła w katalogu: 160 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 6,04 (cel ≥ 6) ✓
+Średnio linków [[id]] w treści: 6,08 (cel ≥ 6) ✓
 Tłumaczenia EN: interfejs w całości, treść 6 / 181 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 
@@ -518,6 +518,19 @@ których nie widać przy jednym. Przy tym przejściu wyszły między innymi:
 - **Pierwszy lot Falcona 1** trwał około czterdziestu jeden sekund, a nie
   trzydziestu trzech; relacja z pierwszej ręki podaje też przebieg awarii
   co do sekundy.
+- **Artemis III nie jest już misją lądowania.** NASA przebudowała program:
+  w 2027 roku ma być demonstracja na niskiej orbicie, a lądowanie ludzi
+  przesunięto na 2028 rok i na Artemis IV.
+- **Starliner wciąż nie przewiózł zmiany załogi.** Umowa zmieniona w listopadzie
+  2025: najbliższy lot bezzałogowy i towarowy, pewnych misji cztery zamiast sześciu.
+- **Produkcja Modelu S i Modelu X skończyła się 1 kwietnia 2026.** Obie encje
+  miały status „aktywne", a linie we Fremont przechodzą na Optimusa.
+- **Tesla i SpaceX nie są już powiązane wyłącznie osobowo** — encja o Tesli
+  twierdziła to wprost, a od 2026 roku obie firmy inwestują razem w Terafab.
+
+Wniosek na przyszłość: encje opisujące stan bieżący starzeją się szybciej niż
+encje historyczne, a walidator tego nie wykryje. Sprawdzanie ich przy okazji
+dokładania źródeł okazało się skuteczniejsze niż jakikolwiek automat.
 
 ## Numeracja wersji
 
@@ -612,7 +625,7 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
    dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
    kwestią wyboru, nie długu.
-2. **Niezależność źródeł.** 68 ze 181 encji ma wszystkie źródła od jednego
+2. **Niezależność źródeł.** 67 ze 181 encji ma wszystkie źródła od jednego
    wydawcy — na starcie było ich 137. Metoda jest w rozdziale
    [Skąd biorą się źródła](#skąd-biorą-się-źródła). Zostaje głównie: pojedyncze
    loty Falcona 1 i Starshipa, wczesne misje przełomowe, biografie i część

@@ -455,7 +455,9 @@ const przelomy: Encja[] = [
       { etykieta: 'Booster', wartosc: 'B1021, wcześniej misja CRS-8', pewnosc: 'potwierdzone' },
       { etykieta: 'Znaczenie', wartosc: 'pierwszy powtórny lot członu klasy orbitalnej', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek', wartosc: 'satelita telekomunikacyjny SES-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Drugie lądowanie tego członu', wartosc: 'barka dronowa', pewnosc: 'potwierdzone' },
+      { etykieta: 'Drugie lądowanie tego członu', wartosc: 'barka dronowa, ok. 340 mil na wschód od Przylądka', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przygotowanie do powtórnego lotu', wartosc: 'kilka miesięcy oględzin, wymiana części i próba ogniowa', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt osłony ładunku', wartosc: 'ok. 6 mln USD za sztukę', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -473,7 +475,7 @@ const przelomy: Encja[] = [
       { id: 'barki-dronowe', powod: 'ten sam booster wylądował na nich dwukrotnie' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiSes10, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiSes10, Z.wikiStartyFalcon, Z.sfnSes10],
     zaktualizowano: '2026-09-12',
   },
 

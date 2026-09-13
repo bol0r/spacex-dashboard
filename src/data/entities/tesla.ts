@@ -11,7 +11,9 @@ const firma: Encja[] = [
     krotki: 'Producent samochodów elektrycznych, którego Musk nie założył, ale sfinansował — i o którego założycielstwo poszła sprawa do sądu.',
     tresc: [
       'Tesla Motors została zarejestrowana 1 lipca 2003 roku przez Martina Eberharda i Marca Tarpenninga. [[elon-musk|Musk]] pojawił się dziewięć miesięcy później: w lutym 2004 poprowadził rundę A o wartości 7,5 miliona dolarów i objął stanowisko przewodniczącego rady. Dyrektorem generalnym został w październiku 2008 — a [[spor-o-zalozycieli|kto tę firmę założył]], rozstrzygnęła ostatecznie ugoda sądowa.', 'Linia modelowa rozwijała się od góry cennika w dół, zgodnie z planem przyjętym na starcie: najpierw drogi [[tesla-roadster|Roadster]] w 2008 roku, potem [[model-s|Model S]] w 2012, [[model-x|Model X]] w 2015, masowy [[model-3|Model 3]] w 2017, [[model-y|Model Y]] w 2020 i [[cybertruck|Cybertruck]] w 2023.',
-      'Produkcja rozłożyła się na fabryki nazywane [[gigafactory|gigafabrykami]] — w Nevadzie, Szanghaju od grudnia 2019, Berlinie od marca 2022 i Teksasie od kwietnia 2022. Osobną gałęzią jest magazynowanie energii: [[powerwall|Powerwall]] dla domów i [[megapack|Megapack]] dla sieci.', 'W 2025 roku Tesla dostarczyła 1,66 miliona pojazdów przy przychodzie 94,83 miliarda dolarów i zysku netto 3,79 miliarda. Firma wielokrotnie przekraczała [[pakiet-wynagrodzenia|bilion dolarów]] kapitalizacji. Jej związek ze [[spacex|SpaceX]] jest wyłącznie osobowy — łączy je ta sama osoba na szczycie, nie struktura właścicielska. Publicznie zetknęły się raz: gdy Roadster poleciał [[falcon-heavy-demo|na Falconie Heavy]].',
+      'Produkcja rozłożyła się na fabryki nazywane [[gigafactory|gigafabrykami]] — w Nevadzie, Szanghaju od grudnia 2019, Berlinie od marca 2022 i Teksasie od kwietnia 2022. Osobną gałęzią jest magazynowanie energii: [[powerwall|Powerwall]] dla domów i [[megapack|Megapack]] dla sieci.', 'W 2025 roku Tesla dostarczyła 1,66 miliona pojazdów przy przychodzie 94,83 miliarda dolarów i zysku netto 3,79 miliarda. Firma wielokrotnie przekraczała [[pakiet-wynagrodzenia|bilion dolarów]] kapitalizacji.',
+      'Związek ze [[spacex|SpaceX]] przez dwie dekady był wyłącznie osobowy — łączyła je ta sama osoba na szczycie, nie struktura właścicielska, a publicznie zetknęły się raz, gdy Roadster poleciał [[falcon-heavy-demo|na Falconie Heavy]]. To się zmieniło w 2026 roku: obie firmy weszły razem w [[terafab|Terafab]], wspólną fabrykę układów scalonych w Teksasie, z nakładem pierwszej fazy 16,8 miliarda dolarów.',
+      'Zmieniła się też sama linia modelowa. Produkcję [[model-s|Modelu S]] i [[model-x|Modelu X]] zakończono 1 kwietnia 2026 roku, a linie we Fremont przechodzą na [[optimus|Optimusa]]. Z samochodów zostały [[model-3|Model 3]], [[model-y|Model Y]], [[cybertruck|Cybertruck]] i [[tesla-semi|Semi]].',
     ],
     fakty: [
       { etykieta: 'Data rejestracji', wartosc: '1 lipca 2003', pewnosc: 'potwierdzone' },
@@ -44,7 +46,7 @@ const firma: Encja[] = [
       { id: 'gigafactory', powod: 'sieć fabryk, na której stoi cała jej produkcja' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiMusk, Z.secTesla10k],
+    zrodla: [Z.wikiTesla, Z.wikiMusk, Z.secTesla10k, Z.electrekKoniecSX],
     zaktualizowano: '2026-09-12',
   },
 
@@ -132,13 +134,15 @@ const samochody: Encja[] = [
     typ: 'produkt',
     nazwa: 'Model S',
     aka: ['Model S Plaid'],
-    krotki: 'Sedan, który udowodnił, że samochód elektryczny może być po prostu lepszym samochodem, a nie ustępstwem.',
+    krotki: 'Sedan, który udowodnił, że elektryk może być po prostu lepszym samochodem. Produkcję zakończono po czternastu latach.',
     tresc: [
       'Prototyp pokazano w marcu 2009 roku, produkcja seryjna ruszyła w czerwcu 2012. Zakładano cenę 50–70 tysięcy dolarów i zasięg 200 mil; pierwsze egzemplarze dawały 208–265 mil, a wersje po odświeżeniu z 2021 roku sięgają 370–405 mil. Akumulatory miały od 40 do 100 kWh.', 'W 2013 roku Model S dostał tytuł Car of the Year od Motor Trend — pierwszy raz przyznany samochodowi elektrycznemu. W 2015 był najlepiej sprzedającym się samochodem z wtyczką na świecie, z 50 366 egzemplarzami.',
       'Wersja Plaid ma trzy silniki o łącznej moce 760 kW, czyli 1 020 koni, i rozpędza się do setki w 1,98 sekundy. To liczba, której nie bije żaden samochód spalinowy produkowany seryjnie.', 'Dla [[tesla|Tesli]] ten model był warunkiem przetrwania. [[tesla-roadster|Roadster]] pokazał, że elektryk może być szybki; Model S pokazał, że może być samochodem, którym jeździ się codziennie — i to on utrzymywał firmę do czasu, gdy [[model-3|Model 3]] przeszedł [[pieklo-produkcyjne|piekło produkcyjne]]. To również pierwszy model, którego układy wspomagające jazdę trafiły później pod lupę [[nadzor-nhtsa|amerykańskiego urzędu]].',
+      'Produkcja skończyła się 1 kwietnia 2026 roku, po czternastu latach. Musk zapowiedział to w styczniu na zebraniu wynikowym, nazywając zakończenie „honorowym zwolnieniem ze służby”; w salonach zostało wtedy około sześciuset egzemplarzy obu modeli razem. Linie we Fremont, na których powstawały, przerabiane są na produkcję [[optimus|Optimusa]].',
     ],
     fakty: [
       { etykieta: 'Start produkcji', wartosc: 'czerwiec 2012', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koniec produkcji', wartosc: '1 kwietnia 2026, po czternastu latach', pewnosc: 'potwierdzone' },
       { etykieta: 'Zasięg', wartosc: '208–265 mil na start, 370–405 mil po 2021', pewnosc: 'potwierdzone' },
       { etykieta: 'Akumulator', wartosc: '40–100 kWh', pewnosc: 'potwierdzone' },
       { etykieta: 'Plaid — moc', wartosc: '760 kW (1 020 KM), trzy silniki', pewnosc: 'potwierdzone' },
@@ -161,8 +165,8 @@ const samochody: Encja[] = [
       { id: 'model-3', powod: 'następny szczebel — samochód dla rynku masowego' },
       { id: 'nadzor-nhtsa', powod: 'urząd publicznie skorygował jej przekaz o ocenie bezpieczeństwa' },
     ],
-    status: 'aktywne',
-    zrodla: [Z.wikiModelS, Z.wikiTesla, Z.secTesla10k],
+    status: 'historyczne',
+    zrodla: [Z.wikiModelS, Z.wikiTesla, Z.secTesla10k, Z.electrekKoniecSX],
     zaktualizowano: '2026-09-12',
   },
 
@@ -212,13 +216,16 @@ const samochody: Encja[] = [
     typ: 'produkt',
     nazwa: 'Model X',
     aka: ['drzwi skrzydłowe'],
-    krotki: 'SUV z drzwiami otwieranymi do góry — najbardziej skomplikowany i najmniej opłacalny samochód w linii Tesli.',
+    krotki: 'SUV z drzwiami otwieranymi do góry — najbardziej skomplikowany samochód w linii Tesli, wycofany w 2026 roku.',
     tresc: [
       'Model X wszedł na rynek we wrześniu 2015 roku jako trzeci samochód [[tesla|Tesli]], między [[model-s|Modelem S]] a masowym [[model-3|Modelem 3]]. Dzieli z Modelem S płytę i większość napędu, ale ma nadwozie SUV-a i drzwi tylne otwierane do góry, nazywane skrzydłowymi.', 'Te drzwi są najlepszym przykładem kosztu, jaki potrafi generować pomysł wyglądający dobrze na prezentacji. Wymagały czujników, siłowników i logiki omijania przeszkód, opóźniły wejście modelu na rynek i przez lata ciągnęły za sobą reklamacje.',
       '[[elon-musk|Musk]] przyznawał potem, że Model X był przeprojektowany i że firma włożyła w niego zbyt wiele nowych rozwiązań naraz. Doświadczenie z tego modelu wpłynęło wprost na podejście do [[model-y|Modelu Y]] — ten dostał zwykłe drzwi i został najlepiej sprzedającym się samochodem świata.',
+      'Produkcję zakończono 1 kwietnia 2026 roku, razem z [[model-s|Modelem S]]. Oba modele sprzedały się łącznie w ponad sześciuset dziesięciu tysiącach egzemplarzy — mniej, niż [[model-y|Model Y]] potrafi sprzedać w jednym roku. Ich linie produkcyjne przechodzą na [[optimus|Optimusa]].',
     ],
     fakty: [
       { etykieta: 'Wejście na rynek', wartosc: 'wrzesień 2015', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koniec produkcji', wartosc: '1 kwietnia 2026', pewnosc: 'potwierdzone' },
+      { etykieta: 'Łączna sprzedaż z Modelem S', wartosc: 'ponad 610 tys. egzemplarzy', pewnosc: 'potwierdzone' },
       { etykieta: 'Pozycja w linii', wartosc: 'trzeci model, po Modelu S', pewnosc: 'potwierdzone' },
       { etykieta: 'Wyróżnik', wartosc: 'tylne drzwi otwierane do góry', pewnosc: 'potwierdzone' },
       { etykieta: 'Podstawa techniczna', wartosc: 'płyta i napęd wspólne z Modelem S', pewnosc: 'potwierdzone' },
@@ -237,8 +244,8 @@ const samochody: Encja[] = [
       { id: 'model-y', powod: 'następny SUV firmy, świadomie prostszy w budowie' },
       { id: 'tesla', powod: 'jej trzeci samochód i najtrudniejszy w produkcji' },
     ],
-    status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiModelS, Z.secTesla10k],
+    status: 'historyczne',
+    zrodla: [Z.wikiTesla, Z.wikiModelS, Z.secTesla10k, Z.electrekKoniecSX],
     zaktualizowano: '2026-09-12',
   },
 
@@ -807,7 +814,7 @@ const reszta: Encja[] = [
     krotki: 'Humanoidalny robot Tesli: 173 cm wzrostu, 57 kg masy i pięć lat zapowiedzi produkcji, która wciąż nie ruszyła.',
     tresc: [
       'Optimusa ogłoszono na AI Day 19 sierpnia 2021 roku. Makieta stanęła na imprezie Cyber Rodeo w teksańskiej fabryce 7 kwietnia 2022, a [[elon-musk|Musk]] mówił wtedy o gotowości produkcyjnej w 2023. We wrześniu 2022 pokazano prototypy półfunkcjonalne: jeden chodził, drugi potrafił poruszać rękami.', 'Druga generacja z grudnia 2023 roku była szczuplejsza, miała lepsze dłonie o jedenastu stopniach swobody i demonstrowała taniec oraz gotowanie jajka w koszulce. W 2024 dłonie podniesiono do dwudziestu dwóch stopni swobody. Trzecia generacja ma korzystać z firmowych układów AI5 i AI6 — te same, na których oparto wznowione [[dojo|Dojo]].',
-      '[[robotaxi|Robot]] ma 173 centymetry wzrostu, waży 57 kilogramów i podnosi 20. Szacowana cena docelowa to około 30 tysięcy dolarów. Milion dostarczonych sztuk jest jednym z progów [[pakiet-wynagrodzenia|pakietu wynagrodzenia]] przyjętego przez akcjonariuszy w 2025 roku. W czerwcu 2024 Musk zapowiadał ograniczoną produkcję w 2025 i ponad tysiąc egzemplarzy dla zakładów [[tesla|Tesli]]; według stanu na kwiecień 2026 instalowane są linie we Fremont i w [[gigafactory-teksas|Teksasie]], ze skalowaniem od 2027 roku.', 'Na pokazie „We, Robot" w październiku 2024 roku roboty wchodziły w interakcje z publicznością. Krytycy wskazali, że działały głównie pod zdalnym sterowaniem, a firma nie powiedziała tego wprost.',
+      '[[robotaxi|Robot]] ma 173 centymetry wzrostu, waży 57 kilogramów i podnosi 20. Szacowana cena docelowa to około 30 tysięcy dolarów. Milion dostarczonych sztuk jest jednym z progów [[pakiet-wynagrodzenia|pakietu wynagrodzenia]] przyjętego przez akcjonariuszy w 2025 roku. W czerwcu 2024 Musk zapowiadał ograniczoną produkcję w 2025 i ponad tysiąc egzemplarzy dla zakładów [[tesla|Tesli]]; według stanu na kwiecień 2026 instalowane są linie we Fremont i w [[gigafactory-teksas|Teksasie]], ze skalowaniem od 2027 roku. We Fremont są to dokładnie te linie, na których do 1 kwietnia 2026 powstawały [[model-s|Model S]] i [[model-x|Model X]].', 'Na pokazie „We, Robot" w październiku 2024 roku roboty wchodziły w interakcje z publicznością. Krytycy wskazali, że działały głównie pod zdalnym sterowaniem, a firma nie powiedziała tego wprost.',
     ],
     fakty: [
       { etykieta: 'Ogłoszenie', wartosc: '19 sierpnia 2021, AI Day', pewnosc: 'potwierdzone' },
@@ -835,7 +842,7 @@ const reszta: Encja[] = [
       { id: 'fsd', powod: 'korzysta z tej samej linii prac nad percepcją i sterowaniem' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k, Z.teslaPlan4],
+    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k, Z.teslaPlan4, Z.electrekKoniecSX],
     zaktualizowano: '2026-09-12',
   },
 

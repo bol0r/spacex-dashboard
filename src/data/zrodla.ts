@@ -762,4 +762,14 @@ export const Z = {
     url: 'https://www.nasa.gov/blogs/commercialcrew/2025/11/24/nasa-boeing-modify-commercial-crew-contract/',
     wydawca: 'NASA', dostep: D2,
   },
+  sfnSes10: {
+    tytul: 'SpaceX flies rocket for second time in historic test of cost-cutting technology',
+    url: 'https://spaceflightnow.com/2017/03/31/spacex-flies-rocket-for-second-time-in-historic-test-of-cost-cutting-technology/',
+    wydawca: 'Spaceflight Now', dostep: D2,
+  },
+  electrekKoniecSX: {
+    tytul: 'Tesla confirms Model S and Model X production is over — only ~600 left',
+    url: 'https://electrek.co/2026/04/01/tesla-model-s-x-production-over-only-inventory-left/',
+    wydawca: 'Electrek', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;

@@ -5,6 +5,42 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.6.2 — 13 września 2026
+
+**Cztery kolejne luki. Wszystkie w encjach opisujących stan bieżący.**
+
+**Artemis III nie jest już misją lądowania.** NASA przebudowała program: w 2027
+roku ma się odbyć demonstracja na niskiej orbicie okołoziemskiej — trzy starty
+pod rząd, Orion i egzemplarze próbne lądowników SpaceX i Blue Origin, dwa
+spotkania i dwa dokowania. Do lądownika Blue Origin wejdzie dwoje astronautów,
+do Starshipa nikt. Pierwsze lądowanie ludzi przesunięto na 2028 rok i na
+Artemis IV. Encja opisywała Artemis III jako misję lądowania. Przy okazji doszedł
+kontekst, którego brakowało: Artemis II poleciała 1 kwietnia 2026 i wróciła po
+dziewięciu dniach — pierwszy załogowy lot w okolice Księżyca od czasów Apollo.
+
+**Starliner wciąż nie przewiózł ani jednej zmiany załogi.** Dwudziestego
+czwartego listopada 2025 NASA i Boeing zmieniły umowę: najbliższy lot jest
+bezzałogowy i towarowy, pewnych misji jest cztery zamiast sześciu, certyfikacja
+przesunięta na 2026. Encja o Commercial Crew argumentowała, że dwóch dostawców
+to była kluczowa decyzja — i nie mówiła, gdzie drugi z nich jest dziś.
+
+**Produkcja Modelu S i Modelu X skończyła się 1 kwietnia 2026**, po czternastu
+latach i ponad sześciuset dziesięciu tysiącach egzemplarzy łącznie. Obie encje
+miały status „aktywne". Linie we Fremont przechodzą na Optimusa — czyli te same,
+na których powstawały te samochody.
+
+**Tesla i SpaceX nie są już powiązane wyłącznie osobowo.** Encja o Tesli
+twierdziła to wprost: „związek ze SpaceX jest wyłącznie osobowy — łączy je ta
+sama osoba na szczycie, nie struktura właścicielska". Od sierpnia 2026 obie firmy
+inwestują razem w Terafab.
+
+Osiem nowych źródeł: cztery od NASA, Spaceflight Now o SES-10, Electrek
+o zakończeniu produkcji S i X. Encji z jednym wydawcą: 68 → 67.
+
+Wniosek, który zapisuję w README: encje opisujące stan bieżący starzeją się
+szybciej niż historyczne, a walidator tego nie wykryje. Sprawdzanie ich przy
+okazji dokładania źródeł okazało się skuteczniejsze niż jakikolwiek automat.
+
 ## 0.6.1 — 13 września 2026
 
 **Niezależność źródeł, przejście trzecie — i cztery luki merytoryczne.**
