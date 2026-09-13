@@ -12,7 +12,7 @@ export const miejsca: Encja[] = [
       'Miejsce, w którym powstaje i z którego startuje [[starship|Starship]], leży na płaskim skrawku wybrzeża przy granicy z Meksykiem. [[spacex|SpaceX]] zaczęło skupować tam ziemię w 2012 roku, a w sierpniu 2014 oficjalnie ogłosiło wybór lokalizacji pod kosmodrom — centrum kontroli w osadzie, stanowiska startowe dwie mile na wschód.',
       'Teren wybrano dlatego, że nie było tam praktycznie nikogo. [[elon-musk|Musk]] uzasadnił to bez owijania: mają mnóstwo ziemi i nikogo dookoła, więc jeśli coś wybuchnie, nie ma problemu. Przy programie, w którym kilka pierwszych rakiet faktycznie się rozpadło, było to założenie projektowe, nie żart.',
       'Historia tego miejsca jest krótka i pechowa. Osadę Kennedy Shores założono w 1967 roku i w tym samym roku zniszczył ją huragan Beulah. Do 2008 zostało w niej sześciu stałych mieszkańców. We wrześniu 2019 SpaceX zaproponowało pozostałym trzykrotność wartości rynkowej ich domów.',
-      'Na miejscu stoi dziś [[mechazilla|wieża łapiąca]], a cała naziemna część systemu bywa nazywana [[stage-zero|zerowym stopniem]]. Dwudziestego maja 2025 roku Starbase stało się formalnie miastem, po głosowaniu mieszkańców 3 maja. Liczy około pięciuset osób. Burmistrzem jest Bobby Peden, wiceprezes SpaceX — startował bez kontrkandydata, podobnie jak dwoje komisarzy, również związanych z firmą. Na 2026 rok zaplanowano przyłączenie kolejnych 7 133 akrów. Od 2024 roku to także oficjalna siedziba spółki.',
+      'Na miejscu stoi dziś [[mechazilla|wieża łapiąca]], a cała naziemna część systemu bywa nazywana [[stage-zero|zerowym stopniem]]. Dwudziestego maja 2025 roku Starbase stało się formalnie miastem, po głosowaniu mieszkańców 3 maja. Liczy około pięciuset osób. Burmistrzem jest Bobby Peden, wiceprezes SpaceX — startował bez kontrkandydata, podobnie jak dwoje komisarzy, również związanych z firmą. Na 2026 rok zaplanowano przyłączenie kolejnych 7 133 akrów. Od 2024 roku to także oficjalna siedziba spółki. To stąd startuje i tutaj wraca [[super-heavy|Super Heavy]] — jedyne miejsce na świecie, gdzie człon nośny łapie się w powietrzu.',
     ],
     fakty: [
       { etykieta: 'Status', wartosc: 'miasto od 20 maja 2025, po głosowaniu 3 maja', pewnosc: 'potwierdzone' },
@@ -52,7 +52,7 @@ export const miejsca: Encja[] = [
     tresc: [
       'Nie każdy lot pozwala odzyskać człon nośny na lądzie. Jeśli rakieta leci wysoko i szybko — na orbitę transferową albo z ciężkim ładunkiem — booster nie ma już paliwa, żeby zawrócić nad wybrzeże. Wtedy [[falcon-9|Falcon 9]] ląduje na pływającej platformie ustawionej setki kilometrów w oceanie.',
       'Platforma jest barką z własnym napędem i systemem utrzymywania pozycji, obsługiwaną bez załogi na pokładzie w chwili lądowania. [[pierwsze-ladowanie-na-barce|Pierwsze udane przyziemienie na wodzie]] odbyło się 8 kwietnia 2016 roku, podczas misji zaopatrzeniowej CRS-8, na jednostce „Of Course I Still Love You" trzysta kilometrów od brzegu Florydy. Ten sam egzemplarz boostera poleciał rok później w misji [[ses-10|SES-10]].',
-      'Barki są dziś rutyną i właśnie dlatego są ciekawe: to one, a nie betonowe stanowiska, wykonują większość lądowań, które czynią [[reuzywalnosc|reużywalność]] opłacalną. Bez nich odzysk ograniczałby się do najlżejszych misji.',
+      'Barki są dziś rutyną i właśnie dlatego są ciekawe: to one, a nie betonowe stanowiska, wykonują większość lądowań, które czynią [[reuzywalnosc|reużywalność]] opłacalną. Bez nich odzysk ograniczałby się do najlżejszych misji. Dla [[spacex|SpaceX]] jest to zresztą jedyna flota morska, jaką firma utrzymuje.',
     ],
     fakty: [
       { etykieta: 'Kiedy się ich używa', wartosc: 'gdy booster nie ma paliwa na powrót nad brzeg', pewnosc: 'potwierdzone' },
@@ -91,7 +91,7 @@ export const miejsca: Encja[] = [
       '[[spacex|SpaceX]] zaczynało w El Segundo, w budynku o powierzchni trzech tysięcy stóp kwadratowych — około dwustu osiemdziesięciu metrów — z kilkoma boksami i mniej niż tuzinem pracowników. Hawthorne było następnym krokiem i przez lata pełniło funkcję siedziby firmy.',
       'W hali mieści się produkcja [[falcon-9|Falcona 9]], biura i centrum kontroli lotów. To stąd prowadzone były między innymi misje załogowe [[crew-dragon|Crew Dragona]], łącznie z [[demo-2|Demo-2]].',
       'Budynek ma własną historię przemysłową: powstał jako zakład Northropa, który od 1966 roku wytwarzał w południowej Kalifornii sekcje kadłuba Boeinga 747. Ten szczegół powtarza się w licznych opisach zakładu, choć trudno go potwierdzić w źródle encyklopedycznym — dlatego jest tu oznaczony jako sporny.',
-      'W 2024 roku siedzibę firmy przeniesiono do [[starbase|Starbase]] w Teksasie. Hawthorne dalej obsługuje program Falcona i pozostaje głównym zakładem produkcyjnym rakiet, które latają najczęściej na świecie.',
+      'W 2024 roku siedzibę firmy przeniesiono do [[starbase|Starbase]] w Teksasie. Hawthorne dalej obsługuje program Falcona i pozostaje głównym zakładem produkcyjnym rakiet, które latają najczęściej na świecie. Podział ról jest przy tym czytelny: w Hawthorne się buduje, w [[mcgregor|McGregor]] sprawdza.',
     ],
     fakty: [
       { etykieta: 'Powierzchnia', wartosc: 'ok. 1 mln stóp kw. (ok. 93 tys. m²)', pewnosc: 'szacunkowe' },
@@ -131,7 +131,7 @@ export const miejsca: Encja[] = [
       'McGregor w Teksasie jest hamownią firmy. Zasada jest bezwyjątkowa: każdy silnik i każdy silniczek manewrowy wyprodukowany przez [[spacex|SpaceX]] musi tam przejść końcowe próby. Testuje się tu również całe pierwsze i drugie stopnie [[falcon-9|Falcona 9]] w ramach odbioru — to właśnie tu odbywa się [[statyczny-test-ogniowy|statyczny test ogniowy]] poprzedzający wysyłkę na stanowisko.',
       'Teren ma przeszłość zbrojeniową i rakietową: w czasie drugiej wojny światowej działała tu wytwórnia amunicji Bluebonnet, a później stanowiska badawcze firmy Beal Aerospace. SpaceX wydzierżawiło obiekt w 2003 roku i dokupiło sąsiednie grunty, rozrastając się z 256 do czterech tysięcy akrów do marca 2015.',
       'Liczba stanowisk badawczych rosła razem z produkcją — z siedmiu w październiku 2012 do dwunastu w marcu 2015. Firma określa McGregor jako najbardziej zaawansowaną i najbardziej obciążoną hamownię silników rakietowych na świecie; od uruchomienia wykonano tam ponad siedem tysięcy prób, a w typowy dzień roku 2024 odpalano około siedmiu silników. Same silniki — [[merlin|Merliny]] i Raptory — powstają gdzie indziej; McGregor jest miejscem, w którym się je sprawdza, a nie buduje.',
-      'To tu we wrześniu 2016 roku odbyło się pierwsze odpalenie [[raptor|Raptora]] — siedem lat przed jego pierwszym lotem. W lipcu 2021 ogłoszono budowę drugiej linii produkcyjnej tego silnika, o docelowej zdolności ośmiuset do tysiąca sztuk rocznie.',
+      'To tu we wrześniu 2016 roku odbyło się pierwsze odpalenie [[raptor|Raptora]] — siedem lat przed jego pierwszym lotem. W lipcu 2021 ogłoszono budowę drugiej linii produkcyjnej tego silnika, o docelowej zdolności ośmiuset do tysiąca sztuk rocznie. Silniki przyjeżdżają tu z [[hawthorne|Hawthorne]] i dopiero stąd trafiają na stanowiska startowe.',
     ],
     fakty: [
       { etykieta: 'Powierzchnia', wartosc: '4 000 akrów, z początkowych 256', stanNa: '2015-03', pewnosc: 'potwierdzone' },
@@ -173,7 +173,7 @@ export const miejsca: Encja[] = [
       'Kompleks zbudowano w latach 1964–1968 pod rakietę Saturn V. Poleciało z niego dwanaście Saturnów, w tym wszystkie załogowe misje Apollo poza Apollo 10 — także Apollo 8, pierwsza załogowa wyprawa wokół Księżyca, i Apollo 11. Ostatni Saturn V wyniósł stąd stację Skylab w maju 1973.',
       'W latach 1981–2011 stanowisko obsłużyło osiemdziesiąt dwa starty wahadłowców, od pierwszego lotu Columbii po ostatni lot Atlantisa. Potem stało nieużywane.',
       '[[spacex|SpaceX]] podpisało dwudziestoletnią dzierżawę na wyłączność 14 kwietnia 2014 roku. Firma dobudowała w 2015 halę montażu poziomego, w której [[falcon-9|Falcony]] składa się na leżąco przed wywiezieniem na stanowisko, a w 2018 ramię dostępu dla załogi, przypominające rękaw lotniskowy.',
-      'Pierwszy start SpaceX odbył się stąd 19 lutego 2017. Potem poleciały z tego miejsca [[falcon-heavy-demo|pierwszy Falcon Heavy]] i [[demo-2|Demo-2]] — czyli pierwszy od 2011 roku lot załogowy z terytorium Stanów, ze stanowiska, z którego startowało Apollo 11.',
+      'Pierwszy start SpaceX odbył się stąd 19 lutego 2017. Potem poleciały z tego miejsca [[falcon-heavy-demo|pierwszy Falcon Heavy]] i [[demo-2|Demo-2]] — czyli pierwszy od 2011 roku lot załogowy z terytorium Stanów, ze stanowiska, z którego startowało Apollo 11. To także jedyne stanowisko przystosowane do lotów [[crew-dragon|Crew Dragona]] przez większość jego historii — [[slc-40|SLC-40]] dołączyło do tej roli dopiero w 2024 roku.',
     ],
     fakty: [
       { etykieta: 'Budowa', wartosc: '1964–1968, pod rakietę Saturn V', pewnosc: 'potwierdzone' },
@@ -258,7 +258,7 @@ export const miejsca: Encja[] = [
       'Strefy leżą na terenie dawnego kompleksu startowego LC-13 na Przylądku Canaveral. Kompleks zburzono, a w jego miejsce wylano dwa okrągłe lądowiska o średnicy 282 stóp, czyli osiemdziesięciu sześciu metrów. [[spacex|SpaceX]] wydzierżawiło teren w lutym 2015 roku.',
       'Dwudziestego pierwszego grudnia 2015 roku [[pierwsze-ladowanie|booster B1019 usiadł na LZ-1]] — pierwsze w historii lądowanie pierwszego stopnia rakiety orbitalnej na lądzie. Przy startach [[falcon-heavy|Falcona Heavy]] używa się obu stref jednocześnie, bo oba człony boczne wracają równolegle.',
       'Bilans: LZ-1 zaliczyła pięćdziesiąt cztery lądowania, z czego pięćdziesiąt trzy udane, a LZ-2 dziewiętnaście udanych, według stanu na sierpień 2025.',
-      'Pierwszego sierpnia 2025 roku LZ-1 wycofano ze służby. LZ-2 pracuje dalej, a [[spacex|SpaceX]] buduje następne lądowiska przy [[lc-39a|LC-39A]] i [[slc-40|SLC-40]] — bliżej stanowisk startowych, co skraca drogę powrotną członu.',
+      'Pierwszego sierpnia 2025 roku LZ-1 wycofano ze służby. LZ-2 pracuje dalej, a [[spacex|SpaceX]] buduje następne lądowiska przy [[lc-39a|LC-39A]] i [[slc-40|SLC-40]] — bliżej stanowisk startowych, co skraca drogę powrotną członu. Większość powrotów obsługują jednak [[barki-dronowe|barki dronowe]], bo to one, a nie beton, przesądziły o opłacalności [[reuzywalnosc|odzysku]].',
     ],
     fakty: [
       { etykieta: 'Lokalizacja', wartosc: 'teren dawnego kompleksu LC-13, Przylądek Canaveral', pewnosc: 'potwierdzone' },
@@ -377,7 +377,7 @@ export const miejsca: Encja[] = [
       'Przy [[falcon-9|Falconie 9]] wracający człon ląduje na własnych [[nogi-ladownicze|nogach]]. Przy [[super-heavy|Super Heavy]] nóg nie ma w ogóle — zamiast nich jest wieża o wysokości 146 metrów z parą ruchomych ramion, nazwanych przez inżynierów pałeczkami. To one łapią człon w powietrzu.',
       'Ramiona wiszą na wózku prowadzonym linami z góry wieży; pionowo porusza je wciągarka u podstawy, poziomo siłowniki hydrauliczne. Człon nie wpada między nie swobodnie — zawisa na dwóch czopach tuż pod [[siatki-aerodynamiczne|siatkami aerodynamicznymi]], czyli w miejscu, które i tak przenosi obciążenia.',
       'Pierwszy chwyt odbył się 13 października 2024 roku przy [[starship-lot-5|locie 5]]. Booster B12 wystartował o 8:25 czasu wschodniego, oddzielił się po trzech minutach i czterdziestu sekundach, wrócił nad stanowisko i został przejęty przez ramiona. Udało się za pierwszym podejściem.',
-      'Potem było różnie. Przy locie 6 chwytu nie próbowano z powodu uszkodzeń wieży, loty 7 i 8 zakończyły się przejęciem członu, a od lotu 9 program przeszedł na kontrolowane wodowania nad zatoką — nowe wersje konstrukcji sprawdzano najpierw nad wodą. Chwytów jest więc na razie trzy.',
+      'Potem było różnie. Przy locie 6 chwytu nie próbowano z powodu uszkodzeń wieży, loty 7 i 8 zakończyły się przejęciem członu, a od lotu 9 program przeszedł na kontrolowane wodowania nad zatoką — nowe wersje konstrukcji sprawdzano najpierw nad wodą. Chwytów jest więc na razie trzy. Wieża jest przy tym tylko najbardziej widoczną częścią [[stage-zero|zerowego stopnia]] — reszty, czyli zbiorników, instalacji i stanowiska, nie widać na żadnym nagraniu ze startu.',
     ],
     fakty: [
       { etykieta: 'Wysokość wieży', wartosc: '146 metrów', pewnosc: 'potwierdzone' },
@@ -416,7 +416,7 @@ export const miejsca: Encja[] = [
     krotki: 'Stanowisko startowe w Vandenberg, z którego SpaceX lata na orbity biegunowe — dawniej dom rakiet Titan.',
     tresc: [
       'Kompleks SLC-4 składa się z dwóch stanowisk. Wschodnie, oznaczone literą E, obsługiwało rakiety Atlas-Agena w latach 1964–1967, a potem rodzinę Titan aż do 2005 roku. Ostatni Titan wystartował stąd 19 października 2005.',
-      'SpaceX zaczęło przebudowę na początku 2011 roku; trwała dwadzieścia cztery miesiące. Pierwszy [[falcon-9|Falcon 9]] poleciał stąd 29 września 2013 z kanadyjskim satelitą CASSIOPE — był to jednocześnie debiut wersji v1.1.',
+      '[[spacex|SpaceX]] zaczęło przebudowę na początku 2011 roku; trwała dwadzieścia cztery miesiące. Pierwszy [[falcon-9|Falcon 9]] poleciał stąd 29 września 2013 z kanadyjskim satelitą CASSIOPE — był to jednocześnie debiut wersji v1.1.',
       'Drugie stanowisko kompleksu, SLC-4W, wydzierżawiono w lutym 2015 roku i przerobiono na [[strefy-ladowania|strefę lądowania]] LZ-4. Pierwszy człon usiadł tam 8 października 2018 roku po misji SAOCOM 1A. Start i lądowanie dzieli więc kilkaset metrów.',
       'Cała aktywność SpaceX na zachodnim wybrzeżu przechodzi przez to stanowisko: loty [[transporter|Transportera]], satelity obserwacyjne i część [[starlink|Starlinka]] na [[orbita-biegunowa|orbitach biegunowych]].',
     ],

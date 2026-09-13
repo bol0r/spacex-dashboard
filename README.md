@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.5.2** · **by Dead Net & Claude**
+**Wersja 0.5.3** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -58,7 +58,7 @@ cztery diagramy SVG, credits i numer wersji.
 ```
 Encje: 180 · Wydarzenia: 319 · Źródła w katalogu: 144 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 4,88 (cel ≥ 6)
+Średnio linków [[id]] w treści: 6,01 (cel ≥ 6) ✓
 Tłumaczenia EN: interfejs w całości, treść 6 / 180 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 
@@ -554,10 +554,12 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    loty Falcona 1 i Starshipa, wczesne misje przełomowe, biografie i część
    słownika. Każda z tych grup wymaga osobnego źródła na encję — nie ma już
    dokumentu, który pokrywa kilkanaście naraz.
-3. **Gęstość linkowania.** Średnia 4,88 wobec celu 6; 144 encje są poniżej celu.
-   W tej partii przeszedłem przez trzydzieści kilka najsłabszych encji i wplotłem
-   linki w zdania zamiast doklejać je na końcu — stąd wzrost z 4,40. Domknięcie
-   do szóstki wymaga tej samej roboty na pozostałych stu czterdziestu.
+3. **Gęstość linkowania — cel osiągnięty, średnia 6,01.** Najpierw zamieniono
+   na chipy 37 nazw encji występujących w treści jako zwykły tekst, potem
+   dopisano 116 zdań niosących powiązania, które encje deklarowały w polu
+   `powiazane`, ale których nie było w tekście. Żadna encja nie ma już mniej
+   niż pięć linków. Pięćdziesiąt cztery encje wciąż są poniżej szóstki —
+   średnia jest celem z briefu, ale rozkład da się jeszcze wyrównać.
 4. **Weryfikacja na prawdziwym telefonie.** `prefers-reduced-motion` jest
    obsłużone i w CSS, i w każdym komponencie z animacją, a haptyka siedzi za
    `navigator.userActivation`. Jedno i drugie sprawdziłem w kodzie i w

@@ -9,7 +9,7 @@ export const pojecia: Encja[] = [
     aka: ['wielorazowość', 'odzysk pierwszego stopnia', 'ponowny lot'],
     krotki: 'Zasada, w której rakieta wraca i leci jeszcze raz — różnica między lotem samolotem a spaleniem samolotu po jednym locie.',
     tresc: [
-      'Przez pierwsze pięćdziesiąt lat lotów kosmicznych rakieta była przedmiotem jednorazowym. Każdy start oznaczał zniszczenie sprzętu wartego dziesiątki milionów dolarów. Reużywalność odwraca to założenie: człon nośny wraca na Ziemię w stanie pozwalającym go zatankować i wysłać ponownie.', 'Rozróżnia się dwa poziomy. Odnowa po locie oznacza, że sprzęt wraca, ale przed kolejnym startem przechodzi kosztowny przegląd — tak działał prom kosmiczny, którego przygotowanie do lotu bywało droższe niż budowa nowej rakiety jednorazowej. Szybki relot oznacza tankowanie i start, praktycznie bez rozbierania. [[falcon-9|Falcon 9]] w wariancie Block 5 zbliżył się do tego drugiego modelu.',
+      'Przez pierwsze pięćdziesiąt lat lotów kosmicznych rakieta była przedmiotem jednorazowym. Każdy start oznaczał zniszczenie sprzętu wartego dziesiątki milionów dolarów. Reużywalność odwraca to założenie: człon nośny wraca na Ziemię w stanie pozwalającym go zatankować i wysłać ponownie.', 'Rozróżnia się dwa poziomy. Odnowa po locie oznacza, że sprzęt wraca, ale przed kolejnym startem przechodzi kosztowny przegląd — tak działał prom kosmiczny, którego przygotowanie do lotu bywało droższe niż budowa nowej rakiety jednorazowej. Szybki relot oznacza tankowanie i start, praktycznie bez rozbierania. [[falcon-9|Falcon 9]] w wariancie [[warianty-falcona-9|Block 5]] zbliżył się do tego drugiego modelu.',
       'Liczby pokazują, że to przestało być eksperymentem. Pierwsze stopnie wróciły 657 razy na 670 prób, a dla samego wariantu Block 5 skuteczność wynosi 99,06 procent. Rekordowy egzemplarz przeszedł 37 lotów, a jedna połówka osłony ładunku — czterdzieści. Cena kilograma na orbicie spadła na tyle, że konstelacja licząca ponad dziesięć tysięcy satelitów, czyli [[starlink|Starlink]], stała się w ogóle wykonalna.', 'Kolejny krok idzie dalej: [[starship|Starship]] ma wracać w całości, oba stopnie, a [[super-heavy|Super Heavy]] ląduje wprost w ramionach wieży, żeby zaoszczędzić masę nóg lądowniczych. Warunkiem jest silnik, który znosi wielokrotne odpalenia — stąd metanowy [[raptor|Raptor]], który nie zostawia w komorze osadu węglowego.',
     ],
     fakty: [
@@ -122,7 +122,7 @@ export const pojecia: Encja[] = [
       'Delta-v to impuls na jednostkę masy statku potrzebny do wykonania manewru. Podaje się ją w jednostkach prędkości — metrach albo kilometrach na sekundę — choć nie jest zwykłą zmianą prędkości, a miarą wysiłku, jaki trzeba w manewr włożyć.',
       'Ta wielkość, nie odległość, rozstrzyga o tym, czy lot jest wykonalny. Powód jest w równaniu Ciołkowskiego: potrzebna ilość paliwa rośnie z delta-v wykładniczo. Dlatego można polecieć bardzo daleko z niewielkim budżetem, korzystając z asyst grawitacyjnych, i zarazem nie dać rady z pozornie skromnym manewrem blisko dużego ciała.',
       'Typowe budżety mówią wszystko o skali problemu. Z powierzchni Ziemi na [[leo|niską orbitę]] trzeba około 8,6 km/s. Z niskiej orbity na [[gto|orbitę transferową do geostacjonarnej]] kolejne 4,1 km/s. Manewry sumują się liniowo, co jako jedyne w tej dziedzinie upraszcza planowanie.',
-      'Z tego równania wynika też cała [[reuzywalnosc|reużywalność]]: każdy kilogram paliwa zabrany na powrót członu to kilogram nieodstawiony na orbitę. Lądowanie [[falcon-9|Falcona 9]] nie było problemem pomysłu, tylko problemem budżetu delta-v.',
+      'Z tego równania wynika też cała [[reuzywalnosc|reużywalność]]: każdy kilogram paliwa zabrany na powrót członu to kilogram nieodstawiony na orbitę. Lądowanie [[falcon-9|Falcona 9]] nie było problemem pomysłu, tylko problemem budżetu delta-v. Z tej samej zależności bierze się [[koszt-kilograma|cena kilograma na orbicie]] — nie z ceny rakiety, tylko z tego, ile jej trzeba na każdy kilogram ładunku.',
     ],
     fakty: [
       { etykieta: 'Jednostka', wartosc: 'm/s albo km/s', pewnosc: 'potwierdzone' },
@@ -160,7 +160,7 @@ export const pojecia: Encja[] = [
       'GTO to orbita eliptyczna, której [[perygeum-apogeum|perygeum]] leży kilkaset kilometrów nad Ziemią, a apogeum na 35 786 kilometrach, czyli na wysokości orbity geostacjonarnej. Obieg zajmuje około dziesięciu i pół godziny.',
       'Rakieta nie wynosi satelity wprost na orbitę docelową, bo bezpośrednie wejście pochłonęłoby ogromne ilości paliwa. Zamiast tego mocny i mało oszczędny stopień rakiety odstawia ładunek na GTO, a dalej satelita dociera sam, własnymi silniczkami o wysokiej sprawności.',
       'Manewr domykający, nazywany odpaleniem w apogeum, wykonuje się na samym szczycie elipsy — tam prędkość jest najmniejsza, więc zmiana orbity kosztuje najmniej [[delta-v|delta-v]]. Wykonuje go operator satelity, nie firma od rakiety.',
-      'Dla [[falcon-9|Falcona 9]] to właśnie te loty są najbardziej wymagające: przy ładunku na GTO booster nie ma już paliwa, żeby wrócić nad brzeg, i musi lądować na [[barki-dronowe|barce]].',
+      'Dla [[falcon-9|Falcona 9]] to właśnie te loty są najbardziej wymagające: przy ładunku na GTO booster nie ma już paliwa, żeby wrócić nad brzeg, i musi lądować na [[barki-dronowe|barce]]. Wobec [[leo|niskiej orbity]] jest to zupełnie inny rachunek energetyczny, a wobec [[sso|orbity heliosynchronicznej]] — inny kierunek startu.',
     ],
     fakty: [
       { etykieta: 'Apogeum', wartosc: '35 786 km nad powierzchnią', pewnosc: 'potwierdzone' },
@@ -198,7 +198,7 @@ export const pojecia: Encja[] = [
       'Satelita na orbicie heliosynchronicznej mija dany punkt powierzchni zawsze w tym samym lokalnym czasie słonecznym. Typowa wysokość to 600–800 kilometrów, nachylenie około 98 stopni — czyli lekko wstecznie względem obrotu Ziemi — a obieg trwa 96–100 minut.',
       'Sztuczka polega na wykorzystaniu tego, że Ziemia nie jest kulą. Spłaszczenie przy równiku zaburza orbity nachylone i powoduje obrót ich płaszczyzny. Dobierając nachylenie do wysokości, można sprawić, że płaszczyzna obraca się o mniej więcej jeden stopień na dobę na wschód — dokładnie tak, jak przesuwa się Ziemia wokół Słońca.',
       'Efektem jest stałe oświetlenie: za każdym przelotem kąt padania światła na powierzchnię jest niemal taki sam. To bezcenne dla satelitów obserwacyjnych, meteorologicznych i rozpoznawczych, bo pozwala porównywać zdjęcia tego samego miejsca z różnych dni.',
-      'Dla wysokości 800 kilometrów nachylenie wynosi około 98,7 stopnia. Na takie orbity wynosi ładunki między innymi [[falcon-9|Falcon 9]] ze stanowiska na zachodnim wybrzeżu; mieszczą się one jeszcze w granicach [[leo|niskiej orbity]], choć wysoko — a to znaczy, że [[deorbitacja|zejście z nich]] trwa dekady, nie miesiące, i że [[zespol-kesslera|zagęszczenie odłamków]] jest tam największe.',
+      'Dla wysokości 800 kilometrów nachylenie wynosi około 98,7 stopnia. Na takie orbity wynosi ładunki między innymi [[falcon-9|Falcon 9]] ze stanowiska na zachodnim wybrzeżu; mieszczą się one jeszcze w granicach [[leo|niskiej orbity]], choć wysoko — a to znaczy, że [[deorbitacja|zejście z nich]] trwa dekady, nie miesiące, i że [[zespol-kesslera|zagęszczenie odłamków]] jest tam największe. Orbity te tworzą [[konstelacja|układ]], w którym satelity obserwacyjne mijają ten sam punkt o tej samej porze; sama orbita jest przy tym niemal okrągła, więc [[perygeum-apogeum|perygeum i apogeum]] leżą praktycznie na tej samej wysokości.',
     ],
     fakty: [
       { etykieta: 'Typowa wysokość', wartosc: '600–800 km', pewnosc: 'potwierdzone' },
@@ -275,7 +275,7 @@ export const pojecia: Encja[] = [
       'Powrót pierwszego stopnia [[falcon-9|Falcona 9]] składa się z trzech osobnych odpaleń, każdego o innej roli. Hamowanie wsteczne, wykonywane na trzech z dziewięciu silników [[merlin|Merlin]] zaraz po rozdzieleniu stopni, ogranicza odjechanie członu w dół trasy i kieruje go w stronę strefy lądowania.',
       'Hamowanie przy wejściu w atmosferę, również na trzech silnikach, pracuje na wysokości mniej więcej 70–40 kilometrów. Jego zadaniem nie jest zatrzymanie członu, a kontrolowanie profilu opadania, gdy rakieta przechodzi od prędkości hipersonicznych do okołodźwiękowych — czyli [[wejscie-atmosferyczne|przez najgorętszą część drogi]].',
       'Hamowanie lądowania odpala się na jednym silniku, a w lotach o większej energii na trzech, i domyka pracę: z prędkości granicznej do zera dokładnie na powierzchni. Kierunek w tym czasie poprawiają [[siatki-aerodynamiczne|siatki aerodynamiczne]], a na końcu rozkładają się nogi lądownicze.',
-      'Przy [[pierwsze-ladowanie-na-barce|lądowaniu na barce]] hamowanie wsteczne jest krótsze albo pomijane — człon schodzi w dół trasy zamiast wracać nad stanowisko, bo oszczędność paliwa jest wtedy ważniejsza niż celność powrotu.',
+      'Przy [[pierwsze-ladowanie-na-barce|lądowaniu na barce]] hamowanie wsteczne jest krótsze albo pomijane — człon schodzi w dół trasy zamiast wracać nad stanowisko, bo oszczędność paliwa jest wtedy ważniejsza niż celność powrotu. Bez tych trzech odpaleń [[reuzywalnosc|reużywalność]] byłaby tylko rysunkiem.',
     ],
     fakty: [
       { etykieta: 'Hamowanie wsteczne', wartosc: '3 z 9 silników, zaraz po rozdzieleniu stopni', pewnosc: 'potwierdzone' },
@@ -349,7 +349,7 @@ export const pojecia: Encja[] = [
     tresc: [
       'Siatki aerodynamiczne to kratowe powierzchnie sterowe ustawione w układzie X wokół górnej części członu nośnego. Rozkładają się chwilę po rozdzieleniu stopni i pracują przez całe [[wejscie-atmosferyczne|wejście w atmosferę]].',
       'Ich zadanie jest proste do opisania i trudne do wykonania: kierować wektorem siły nośnej członu niezależnie od tego, co robią silniki. Bez nich [[hamowania|hamowania powrotne]] mogłyby wyhamować rakietę, ale nie postawiłyby jej w konkretnym punkcie.',
-      'To one przesądziły o celności lądowań. W [[falcon-9|Falconie 9]] pojawiły się na późniejszych lotach testowych i dopiero z nimi udało się [[pierwsze-ladowanie|pierwsze przyziemienie]]. [[super-heavy|Super Heavy]] korzysta z tej samej idei — i właśnie za czopy pod siatkami chwytają go ramiona wieży.',
+      'To one przesądziły o celności lądowań. W [[falcon-9|Falconie 9]] pojawiły się na późniejszych lotach testowych i dopiero z nimi udało się [[pierwsze-ladowanie|pierwsze przyziemienie]]. [[super-heavy|Super Heavy]] korzysta z tej samej idei — i właśnie za czopy pod siatkami chwytają go ramiona wieży. Bez nich [[reuzywalnosc|odzysk członu]] pozostawałby loterią, a nie procedurą.',
     ],
     fakty: [
       { etykieta: 'Układ', wartosc: 'cztery powierzchnie w konfiguracji X', pewnosc: 'potwierdzone' },
@@ -425,7 +425,7 @@ export const pojecia: Encja[] = [
       'Zbiornik rakiety trzeba utrzymywać pod ciśnieniem, bo w miarę opróżniania paliwo musi być czymś wypychane. Klasyczne rozwiązanie to hel z osobnych butli — ale to oznacza dodatkowe zbiorniki, instalację i zawory, czyli masę i punkty awarii.',
       'Autogeniczne wytwarzanie ciśnienia usuwa hel z równania. Część własnego paliwa i utleniacza odparowuje się i wpuszcza z powrotem do zbiorników jako gaz nośny. Nic obcego nie jedzie na pokładzie.',
       '[[starship|Starship]] korzysta właśnie z tego rozwiązania. Nie jest to detal: butle z helem stały za dwiema największymi awariami [[falcon-9|Falcona 9]] — [[crs-7|CRS-7]], gdzie pękł zastrzał mocujący butlę, i [[amos-6|AMOS-6]], gdzie zapadła się wykładnina butli i tlen zapalił się pod oplotem.',
-      'Usunięcie elementu, który dwa razy zniszczył rakietę, jest dobrym przykładem tego, jak wygląda postęp w tej dziedzinie: nie przez dodanie zabezpieczenia, a przez wyrzucenie części.',
+      'Usunięcie elementu, który dwa razy zniszczył rakietę, jest dobrym przykładem tego, jak wygląda postęp w tej dziedzinie: nie przez dodanie zabezpieczenia, a przez wyrzucenie części. Rozwiązanie to jest możliwe dlatego, że [[raptor|Raptor]] pracuje na metanie i tlenie, które da się odparować własnym ciepłem silnika.',
     ],
     fakty: [
       { etykieta: 'Zasada', wartosc: 'odparowane własne paliwo jako gaz nośny', pewnosc: 'potwierdzone' },
@@ -462,7 +462,7 @@ export const pojecia: Encja[] = [
     krotki: 'Wieża startowa Starshipa traktowana jako osobny stopień rakiety — równie trudny jak dwa pozostałe.',
     tresc: [
       '„Stage zero" to określenie, którym [[elon-musk|Musk]] opisuje cały naziemny układ startowy [[starship|Starshipa]]: wieżę, mocowanie startowe i ramiona chwytające. Jego teza jest taka, że ten element jest równie złożony i równie trudny jak pierwszy albo drugi stopień rakiety, i tak samo rozstrzyga o powodzeniu programu.',
-      'Nie jest to figura retoryczna. Ramiona wieży, nazywane „chopsticks", wykonują [[super-heavy|chwyt wracającego członu]], a cała konstrukcja odpowiada za tankowanie, podnoszenie i ustawianie pojazdu. Docelowo ma pozwalać startować, łapać i wysyłać ponownie w godzinach albo dniach, nie tygodniach.',
+      'Nie jest to figura retoryczna. Ramiona wieży, nazywane „[[mechazilla|chopsticks]]", wykonują [[super-heavy|chwyt wracającego członu]], a cała konstrukcja odpowiada za tankowanie, podnoszenie i ustawianie pojazdu. Docelowo ma pozwalać startować, łapać i wysyłać ponownie w godzinach albo dniach, nie tygodniach.',
       'Że to nie teoria, pokazał [[starship-lot-5|lot 5]], w którym chwyt udał się za pierwszym podejściem, i lot 6, w którym manewr przerwano automatycznie, bo wieża odniosła uszkodzenia w chwili startu. Stan stopnia zerowego rozstrzygał wtedy o losie członu wartego dziesiątki milionów dolarów.',
       'Cała konstrukcja stoi w [[starbase|Starbase]] i jest powodem, dla którego program jest tak silnie przywiązany do jednego miejsca na mapie.',
     ],
@@ -500,8 +500,8 @@ export const pojecia: Encja[] = [
     krotki: 'Odpalenie silników rakiety przywiązanej do stanowiska — najczęstsza próba przed startem i nie najbezpieczniejsza.',
     tresc: [
       'Statyczny test ogniowy polega na uruchomieniu silników rakiety zamocowanej na stanowisku, bez wypuszczania jej w powietrze. Sprawdza się w nim tankowanie, rozruch, pracę na ciągu i wyłączenie — czyli wszystko poza samym lotem.',
-      'Test bywa rutynowy, ale nie jest niegroźny. Właśnie podczas tankowania przed taką próbą [[amos-6|zniszczona została rakieta z satelitą AMOS-6]], razem z kosztownym ładunkiem i ze stanowiskiem SLC-40. Nie był to start ani nawet próba startu.',
-      'Pojedyncze silniki przechodzą osobne próby na hamowni — tak sprawdzano [[raptor|Raptora]] w McGregor w Teksasie, siedem lat przed jego pierwszym lotem. Dla całej rakiety próba jest ostatnim etapem przed [[wet-dress-rehearsal|generalną próbą tankowania]] i startem.',
+      'Test bywa rutynowy, ale nie jest niegroźny. Właśnie podczas tankowania przed taką próbą [[amos-6|zniszczona została rakieta z satelitą AMOS-6]], razem z kosztownym ładunkiem i ze stanowiskiem [[slc-40|SLC-40]]. Nie był to start ani nawet próba startu.',
+      'Pojedyncze silniki przechodzą osobne próby na hamowni — tak sprawdzano [[raptor|Raptora]] w [[mcgregor|McGregor]] w Teksasie, siedem lat przed jego pierwszym lotem. Dla całej rakiety próba jest ostatnim etapem przed [[wet-dress-rehearsal|generalną próbą tankowania]] i startem. Dla [[falcon-9|Falcona 9]] jest to dziś czynność tak rutynowa, że przy większości lotów pomija się ją zupełnie.',
     ],
     fakty: [
       { etykieta: 'Co się sprawdza', wartosc: 'tankowanie, rozruch, praca silników, wyłączenie', pewnosc: 'potwierdzone' },
@@ -537,7 +537,7 @@ export const pojecia: Encja[] = [
     tresc: [
       'Generalna próba tankowania to przejście całej procedury przedstartowej z rakietą napełnioną paliwem i utleniaczem, z odliczaniem prowadzonym do ostatnich sekund i zatrzymanym przed zapłonem. „Wet" odnosi się właśnie do obecności paliwa — próba „na sucho" obejmuje wyłącznie procedury.',
       'Sprawdza się w niej rzeczy, których nie da się sprawdzić inaczej: szczelność instalacji przy temperaturach kriogenicznych, zachowanie konstrukcji pod obciążeniem paliwem, pracę zespołu i łączność. Wiele problemów ujawnia się wyłącznie wtedy, gdy zbiorniki są pełne.',
-      'To etap położony między [[statyczny-test-ogniowy|statycznym testem ogniowym]] a startem, a w przypadku [[starship|Starshipa]] także miejsce, w którym sprawdza się [[autogeniczne-cisnienie|autogeniczne wytwarzanie ciśnienia]] w pełnych zbiornikach. Jeśli w jego trakcie coś nie zagra, odliczanie zostaje wstrzymane albo próbę [[scrub-i-nominal|odwołuje się]] — i to jest właśnie jej sens: znaleźć problem wtedy, gdy jego cena to jeden dzień, nie jedna rakieta.',
+      'To etap położony między [[statyczny-test-ogniowy|statycznym testem ogniowym]] a startem, a w przypadku [[starship|Starshipa]] także miejsce, w którym sprawdza się [[autogeniczne-cisnienie|autogeniczne wytwarzanie ciśnienia]] w pełnych zbiornikach. Jeśli w jego trakcie coś nie zagra, odliczanie zostaje wstrzymane albo próbę [[scrub-i-nominal|odwołuje się]] — i to jest właśnie jej sens: znaleźć problem wtedy, gdy jego cena to jeden dzień, nie jedna rakieta. Przed [[demo-2|Demo-2]] przeprowadzono ją w pełnej wersji, razem z załogą w kombinezonach.',
     ],
     fakty: [
       { etykieta: 'Zakres', wartosc: 'pełne odliczanie z zatankowaną rakietą, bez zapłonu', pewnosc: 'potwierdzone' },
@@ -573,7 +573,7 @@ export const pojecia: Encja[] = [
       '„Nominal" znaczy, że parametr mieści się w przewidzianym zakresie. Nie znaczy „dobrze" ani „świetnie" — znaczy „zgodnie z tym, co założono". Dlatego komentator transmisji powtarza to słowo przy każdym etapie lotu: potwierdza zgodność z modelem, nie wyraża zadowolenia.',
       '„Scrub" to odwołanie startu na dany dzień. Jest z definicji tymczasowe i zakłada, że zespół wróci i spróbuje ponownie — w odróżnieniu od wstrzymania odliczania, czyli „hold", które jest pauzą w ramach tego samego okna startowego.',
       'Samo słowo ma pochodzenie starsze niż NASA. Prawdopodobnie wzięło się z praktyki marynarki wojennej, gdzie loty wpisywano kredą na tablicy, a misję, która się nie odbywała, po prostu z tej tablicy ścierano.',
-      'Ten sam zwyczaj językowy obejmuje też [[anomalia|anomalię]] i [[rud|RUD]] — słowa, którymi branża opisuje awarie. Odwołanie zdarza się najczęściej przy [[wet-dress-rehearsal|generalnej próbie tankowania]] i przy [[statyczny-test-ogniowy|próbie ogniowej]], czyli dokładnie tam, gdzie ma się zdarzać. Cała ta warstwa nie jest przypadkiem: spokojne, techniczne nazewnictwo utrzymuje pracę zespołu w rejestrze procedur, a nie emocji.',
+      'Ten sam zwyczaj językowy obejmuje też [[anomalia|anomalię]] i [[rud|RUD]] — słowa, którymi branża opisuje awarie. Odwołanie zdarza się najczęściej przy [[wet-dress-rehearsal|generalnej próbie tankowania]] i przy [[statyczny-test-ogniowy|próbie ogniowej]], czyli dokładnie tam, gdzie ma się zdarzać. Cała ta warstwa nie jest przypadkiem: spokojne, techniczne nazewnictwo utrzymuje pracę zespołu w rejestrze procedur, a nie emocji. Ta sama warstwa językowa pozwala mówić o [[kadencja-startow|tempie startów]] jak o produkcji, a nie o wyczynie.',
     ],
     fakty: [
       { etykieta: 'Nominal', wartosc: 'parametr w przewidzianym zakresie', pewnosc: 'potwierdzone' },
@@ -720,7 +720,7 @@ export const pojecia: Encja[] = [
       'Kadencja to po prostu tempo: ile razy dana rakieta startuje w miesiącu albo w roku. Brzmi jak wskaźnik księgowy, ale jest jednym z najważniejszych parametrów w tej dziedzinie, bo decyduje o cenie, o dostępności terminów i o tym, jak szybko firma uczy się na własnych lotach.',
       'Skala, jaką osiągnął [[falcon-9|Falcon 9]], jest trudna do objęcia. Setny start tej rakiety w samym roku 2026 odbył się 25 sierpnia — czyli sto lotów w niecałe osiem miesięcy. Przez większość ery kosmicznej takiego tempa nie wyrabiały w ciągu roku całe państwa.',
       'Warunkiem takiej kadencji jest [[reuzywalnosc|reużywalność]]: rakieta zużywalna wymagałaby wyprodukowania stu nowych członów. Rekordowy egzemplarz przeszedł 37 lotów, a [[oslona-ladunku|połówka osłony ładunku]] czterdzieści.',
-      'Druga strona tego wskaźnika jest mniej wygodna: około trzech czwartych startów w 2026 roku to misje własnej konstelacji [[starlink|Starlink]]. Kadencja jest imponująca i w dużej mierze wewnętrzna.',
+      'Druga strona tego wskaźnika jest mniej wygodna: około trzech czwartych startów w 2026 roku to misje własnej konstelacji [[starlink|Starlink]]. Kadencja jest imponująca i w dużej mierze wewnętrzna. Przełożenie na [[koszt-kilograma|cenę kilograma na orbicie]] jest bezpośrednie: im częściej lata ta sama rakieta, tym mniej każdy lot dźwiga kosztów stałych.',
     ],
     fakty: [
       { etykieta: 'Setny start Falcona 9 w 2026', wartosc: '25 sierpnia 2026', pewnosc: 'potwierdzone' },
@@ -872,7 +872,7 @@ export const pojecia: Encja[] = [
       'Koncepcję opisali w czerwcu 1978 roku dwaj badacze NASA, Donald Kessler i Burton Cour-Palais, w pracy o częstości zderzeń sztucznych satelitów. Mechanizm jest prosty i nieprzyjemny: zderzenie przy prędkości orbitalnej rozbija obiekty na odłamki, odłamki uderzają w kolejne obiekty, a te dają następne odłamki.',
       'Kluczowe jest pojęcie gęstości krytycznej. Poniżej niej naturalny [[deorbitacja|rozpad orbit]] usuwa więcej odłamków, niż powstaje. W punkcie krytycznym panuje równowaga. Powyżej — produkcja odłamków wyprzedza ich usuwanie i proces sam się napędza, aż dany obszar orbity staje się nieużywalny.',
       'Najbardziej zagrożona jest [[leo|niska orbita]], a w niej okolice 785 kilometrów, gdzie zagęszczenie odłamków jest największe. Dwa zdarzenia pokazały, jak to wygląda w praktyce: chiński test antysatelitarny z 2007 roku, w którym zniszczono satelitę FY-1C na wysokości 865 km, oraz zderzenie satelitów Iridium i Kosmos w 2009 — pierwsze skatalogowane zderzenie dwóch satelitów.',
-      'Skala problemu w 2025 roku: ponad 11 800 satelitów na orbicie, około 23 000 odłamków większych niż 10 centymetrów i około 600 000 w przedziale od 1 do 10 centymetrów. To tło, na którym trzeba czytać [[konstelacja|konstelacje]] liczone w tysiącach sztuk, w tym [[starlink|Starlink]].',
+      'Skala problemu w 2025 roku: ponad 11 800 satelitów na orbicie, około 23 000 odłamków większych niż 10 centymetrów i około 600 000 w przedziale od 1 do 10 centymetrów. To tło, na którym trzeba czytać [[konstelacja|konstelacje]] liczone w tysiącach sztuk, w tym [[starlink|Starlink]]. Zagęszczenie rośnie najszybciej na [[sso|orbitach heliosynchronicznych]], gdzie tłoczą się [[smallsat|małe satelity obserwacyjne]].',
     ],
     fakty: [
       { etykieta: 'Autorzy i rok', wartosc: 'Donald Kessler i Burton Cour-Palais, czerwiec 1978', pewnosc: 'potwierdzone' },
@@ -914,7 +914,7 @@ export const pojecia: Encja[] = [
       'Impuls właściwy podaje się w sekundach i mierzy sprawność wykorzystania paliwa. Im wyższa wartość, tym więcej [[delta-v|delta-v]] da się wycisnąć z tej samej masy zabranej na pokład — a ponieważ zapotrzebowanie na paliwo rośnie z delta-v wykładniczo, każda sekunda impulsu przekłada się na wynik nieproporcjonalnie mocno.',
       'Porównanie w obrębie jednej firmy pokazuje, skąd biorą się różnice. [[merlin|Merlin 1D]] osiąga w próżni 311 sekund, a jego odmiana z dużą dyszą próżniową 348 — najwyższy wynik wśród amerykańskich silników węglowodorowych. [[raptor|Raptor]] daje 350 sekund przy zupełnie innym paliwie i [[pelnoprzeplywowe-spalanie-stopniowe|znacznie trudniejszym cyklu]].',
       'Wysokość pracy zmienia obraz: ten sam silnik ma inny impuls przy ziemi i w próżni, bo ciśnienie atmosferyczne działa przeciw strumieniowi spalin. Dlatego drugie stopnie dostają dysze o dużym rozszerzeniu, bezużyteczne na starcie, a wręcz szkodliwe.',
-      'Impuls nie jest jedyną liczbą, która się liczy. Silnik o wysokim impulsie i niskim ciągu nie oderwie rakiety od ziemi — [[kestrel|Kestrel]] pracował w próżni, gdzie ciąg miał mniejsze znaczenie, a [[merlin|Merlin]] musiał dźwignąć całość.',
+      'Impuls nie jest jedyną liczbą, która się liczy. Silnik o wysokim impulsie i niskim ciągu nie oderwie rakiety od ziemi — [[kestrel|Kestrel]] pracował w próżni, gdzie ciąg miał mniejsze znaczenie, a [[merlin|Merlin]] musiał dźwignąć całość. Na samą liczbę wpływa też [[metaloks-i-keroloks|rodzaj paliwa]]: metan daje więcej niż nafta, wodór jeszcze więcej, tylko trudniej go utrzymać w zbiorniku.',
     ],
     fakty: [
       { etykieta: 'Jednostka', wartosc: 'sekundy', pewnosc: 'potwierdzone' },
@@ -1064,7 +1064,7 @@ export const pojecia: Encja[] = [
       'W atmosferze samolot skręca powierzchniami sterowymi opartymi o powietrze. W próżni nie ma o co się oprzeć, a przy starcie powietrze jest zbyt rzadkie i zbyt szybkie, żeby dało się na nim polegać. Rakieta skręca więc inaczej: przechylając silniki na przegubach kardanowych i kierując strumień spalin lekko w bok.',
       'W [[super-heavy|Super Heavy]] takie zawieszenie ma trzynaście środkowych z trzydziestu trzech [[raptor|Raptorów]]. Pozostałe dwadzieścia stoi nieruchomo i tylko pcha.',
       'Dokładność tego układu rozstrzyga o [[hamowania|lądowaniu członu]]: rakieta schodząca ogonem w dół jest z natury niestabilna i utrzymuje pion wyłącznie ciągłą korektą kąta silnika. Uzupełniają go [[siatki-aerodynamiczne|siatki aerodynamiczne]], które działają tam, gdzie powietrze już coś daje.',
-      'To rozwiązanie ma też cenę: każdy przechylony silnik traci część ciągu na składową boczną, która nie pcha rakiety w górę. Dlatego przechyla się tylko tyle silników, ile trzeba.',
+      'To rozwiązanie ma też cenę: każdy przechylony silnik traci część ciągu na składową boczną, która nie pcha rakiety w górę. Dlatego przechyla się tylko tyle silników, ile trzeba. W [[falcon-9|Falconie 9]] odpowiada za to część z dziewięciu silników [[merlin|Merlin]] pierwszego stopnia.',
     ],
     fakty: [
       { etykieta: 'Zasada', wartosc: 'skręcanie przez przechylanie silników na przegubach', pewnosc: 'potwierdzone' },
@@ -1141,7 +1141,7 @@ export const pojecia: Encja[] = [
       'Z [[rownanie-ciolkowskiego|równania rakietowego]] wynika, że rakieta, która wynosi sama siebie na orbitę, zużywa na to prawie całe paliwo. Żeby polecieć dalej — na Księżyc albo na Marsa — musi zatankować już po wyjściu na orbitę. To jest cała idea tankowania orbitalnego.',
       'Problem nie leży w pomyśle, tylko w fizyce cieczy w stanie nieważkości. Paliwo nie opada na dno zbiornika, tylko unosi się w nim swobodnie, więc trzeba je najpierw czymś dociskać do wylotu. Do tego dochodzą straty przez odparowanie i szczelność połączenia przy temperaturach [[kriogenika|kriogenicznych]] — a [[metaloks-i-keroloks|metan i tlen]] są cieczą tylko głęboko poniżej zera.',
       'Dla [[hls-artemis|lądownika Artemis]] NASA szacuje, że jedna misja lądowania wymaga około ośmiu do dziesięciu startów [[starship|Starshipa]] — tankowców napełniających zbiornikowiec, z którego dopiero zatankuje lądownik. Biuro Inspektora Generalnego NASA wskazuje to jako główne ryzyko całego programu.',
-      'Przekazywanie paliwa w tej skali nie zostało jeszcze zademonstrowane. To jedna z niewielu rzeczy w tym programie, których nie da się obejść pracowitością — albo zadziała, albo harmonogram [[hls-artemis|powrotu na Księżyc]] przesunie się kolejny raz.',
+      'Przekazywanie paliwa w tej skali nie zostało jeszcze zademonstrowane. To jedna z niewielu rzeczy w tym programie, których nie da się obejść pracowitością — albo zadziała, albo harmonogram [[hls-artemis|powrotu na Księżyc]] przesunie się kolejny raz. W rachunku [[delta-v|delta-v]] chodzi o to, żeby statek ruszał w dalszą drogę z pełnymi zbiornikami, a nie z resztkami po wejściu na orbitę; pomaga przy tym [[autogeniczne-cisnienie|autogeniczne ciśnienie]], bo nie trzeba przetaczać jeszcze helu.',
     ],
     fakty: [
       { etykieta: 'Po co', wartosc: 'lot poza orbitę okołoziemską wymaga zatankowania po starcie', pewnosc: 'potwierdzone' },
@@ -1178,7 +1178,7 @@ export const pojecia: Encja[] = [
       'Dokowanie to samodzielne wejście statku w złącze stacji — pojazd zbliża się, wyrównuje i łączy własnym napędem. Cumowanie wygląda inaczej: statek zawisa nieruchomo w pobliżu, a ramię stacji sięga po niego, chwyta i dostawia do portu.',
       '[[dragon-1|Dragon 1]] był cumowany. Podczas [[cots-demo-2|lotu demonstracyjnego]] w maju 2012 roku chwyciło go ramię Canadarm2 i przyłączyło do portu — dlatego określenie „zadokował" jest przy tym locie nieścisłe, choć powszechne.',
       '[[crew-dragon|Dragon 2]] dokuje samodzielnie, ze złączem zgodnym ze standardem IDSS i z możliwością przejęcia sterowania przez załogę. To samo dotyczy jego wersji towarowej, [[cargo-dragon-2|Cargo Dragona]].',
-      'Różnica nie jest kosmetyczna. Cumowanie wymaga obecności załogi na stacji i operatora ramienia, dokowanie nie. Przy statku, który ma dowozić ludzi, samodzielne dokowanie jest warunkiem, a nie udogodnieniem — także dlatego, że kapsuła musi umieć odlecieć sama w razie ewakuacji.',
+      'Różnica nie jest kosmetyczna. Cumowanie wymaga obecności załogi na stacji i operatora ramienia, dokowanie nie. Przy statku, który ma dowozić ludzi, samodzielne dokowanie jest warunkiem, a nie udogodnieniem — także dlatego, że kapsuła musi umieć odlecieć sama w razie ewakuacji. Pierwszym lotem załogowym, który zadokował samodzielnie, było [[demo-2|Demo-2]]; tą samą drogą wróciła później czwórka z [[crew-9|Crew-9]].',
     ],
     fakty: [
       { etykieta: 'Dokowanie', wartosc: 'statek łączy się ze stacją własnym napędem', pewnosc: 'potwierdzone' },
@@ -1216,7 +1216,7 @@ export const pojecia: Encja[] = [
       'Rakieta nie startuje wtedy, kiedy jest gotowa, tylko wtedy, kiedy pozwala na to geometria. Żeby dogonić stację kosmiczną, trzeba wystartować w momencie, gdy jej płaszczyzna orbity przechodzi nad stanowiskiem — inaczej zmiana płaszczyzny pochłonęłaby [[delta-v|delta-v]], której rakieta nie ma.',
       'Okno bywa krótkie. Przy lotach na stację mierzy się je czasem w sekundach — to tak zwane okno chwilowe, w którym opóźnienie o minutę oznacza przełożenie startu o dobę.',
       'W trakcie odliczania zespół może je wstrzymać, żeby rozwiązać problem — to wstrzymanie mieści się jeszcze w oknie. Jeśli czas się skończy, start zostaje [[scrub-i-nominal|odwołany]] i próbuje się następnego dnia.',
-      'Przy [[polaris-dawn|lotach na nietypowe orbity]] i przy [[fram2|orbitach biegunowych]] warunki są jeszcze ciaśniejsze, bo dochodzą ograniczenia pogodowe w strefie wodowania — [[ax-1|misja Ax-1]] spędziła przez nie na stacji sześć dni więcej, niż planowano.',
+      'Przy [[polaris-dawn|lotach na nietypowe orbity]] i przy [[fram2|orbitach biegunowych]] warunki są jeszcze ciaśniejsze, bo dochodzą ograniczenia pogodowe w strefie wodowania — [[ax-1|misja Ax-1]] spędziła przez nie na stacji sześć dni więcej, niż planowano. Przy dzisiejszej [[kadencja-startow|kadencji startów]] przesunięcie jednego okna przesuwa kolejkę na tygodnie w przód.',
     ],
     fakty: [
       { etykieta: 'Czym jest', wartosc: 'przedział czasu, w którym start osiąga cel', pewnosc: 'potwierdzone' },
@@ -1293,7 +1293,7 @@ export const pojecia: Encja[] = [
       'Satelita na orbicie równikowej krąży wciąż nad tym samym pasem Ziemi. Na orbicie biegunowej przechodzi nad biegunami, a planeta obraca się pod nim — więc z każdym okrążeniem przelatuje nad innym południkiem i z czasem widzi całą powierzchnię.',
       'To dlatego korzystają z niej satelity obserwacyjne, meteorologiczne i rozpoznawcze. Szczególnym przypadkiem jest [[sso|orbita heliosynchroniczna]], na której do przechodzenia nad biegunami dochodzi jeszcze stała pora lokalna przelotu.',
       'Cena jest energetyczna. Startując na wschód, rakieta dostaje za darmo prędkość obrotu Ziemi — około 460 metrów na sekundę na równiku. Lecąc na północ albo południe, nie dostaje z tego nic i musi wypracować całą prędkość sama. Dlatego takie loty odbywają się z [[vandenberg|Vandenberg]], nie z Florydy.',
-      'Lotów załogowych po takiej orbicie przez sześćdziesiąt lat praktycznie nie było. Rekord nachylenia ustanowiła Wostok 6 w 1963 roku i przetrwał do 2025, kiedy [[fram2|misja Fram2]] weszła na orbitę o nachyleniu 90,01 stopnia.',
+      'Lotów załogowych po takiej orbicie przez sześćdziesiąt lat praktycznie nie było. Rekord nachylenia ustanowiła Wostok 6 w 1963 roku i przetrwał do 2025, kiedy [[fram2|misja Fram2]] weszła na orbitę o nachyleniu 90,01 stopnia. W rachunku [[delta-v|delta-v]] oznacza to po prostu, że ta sama masa kosztuje więcej niż przy locie na wschód. W Stanach lata się na nią wyłącznie ze stanowiska [[slc-4e|SLC-4E]], a większość ładunków to [[smallsat|małe satelity obserwacyjne]].',
     ],
     fakty: [
       { etykieta: 'Czym jest', wartosc: 'orbita przechodząca nad biegunami', pewnosc: 'potwierdzone' },
@@ -1331,7 +1331,7 @@ export const pojecia: Encja[] = [
       'Przez większość ery kosmicznej satelita był urządzeniem wielkości samochodu, budowanym latami przez państwo albo wielki koncern. Małe satelity odwracają ten model: ważą od kilku do kilkuset kilogramów, powstają z gotowych podzespołów i kosztują ułamek tamtej kwoty.',
       'Warunkiem ich istnienia jest sposób dostania się na orbitę. Osobna rakieta dla ładunku ważącego dziesięć kilogramów nie ma sensu ekonomicznego — dlatego lecą razem, [[transporter|lotami współdzielonymi]], po kilkadziesiąt albo ponad sto naraz.',
       'Typowym celem jest [[sso|orbita heliosynchroniczna]], bo większość tych satelitów obserwuje Ziemię i potrzebuje stałych warunków oświetlenia.',
-      'Ta klasa urządzeń jest bezpośrednią konsekwencją spadku [[koszt-kilograma|kosztu kilograma na orbicie]]. Jest też jednym z powodów, dla których [[zespol-kesslera|zagęszczenie niskiej orbity]] rośnie szybciej, niż zakładano dekadę temu.',
+      'Ta klasa urządzeń jest bezpośrednią konsekwencją spadku [[koszt-kilograma|kosztu kilograma na orbicie]]. Jest też jednym z powodów, dla których [[zespol-kesslera|zagęszczenie niskiej orbity]] rośnie szybciej, niż zakładano dekadę temu. Największą pojedynczą konstrukcją tej klasy jest [[starlink|Starlink]], choć akurat jego satelity są wynoszone własną rakietą, a nie w [[konstelacja|cudzych lotach]].',
     ],
     fakty: [
       { etykieta: 'Masa', wartosc: 'od kilku do kilkuset kilogramów', pewnosc: 'szacunkowe' },
@@ -1446,7 +1446,7 @@ export const pojecia: Encja[] = [
       'B1067 to oznaczenie konkretnego egzemplarza pierwszego stopnia [[falcon-9|Falcona 9]]. Nie jest to typ ani wersja, tylko jedna sztuka sprzętu, która wystartowała, wróciła i poleciała ponownie trzydzieści siedem razy.',
       'Dla porównania: prom kosmiczny Discovery, najbardziej wysłużony pojazd poprzedniej epoki, wykonał trzydzieści dziewięć lotów — przez dwadzieścia siedem lat służby i przy przygotowaniu do każdego lotu liczonym w miesiącach.',
       'Rekord jest tu jednak podwójny i ten drugi jest mniej znany: najbardziej wysłużonym elementem systemu nie jest ten człon, a [[oslona-ladunku|połówka osłony ładunku]] o numerze SN155 z czterdziestoma lotami. Człon nośny ustępuje kawałkowi opakowania.',
-      'Znaczenie tego egzemplarza polega na tym, że przesuwa dyskusję o [[reuzywalnosc|reużywalności]] z pytania „czy rakieta wróci" na pytanie „ile razy da się ją wysłać". Pierwsze rozstrzygnięto w 2015 roku, drugie rozstrzyga się do dziś.',
+      'Znaczenie tego egzemplarza polega na tym, że przesuwa dyskusję o [[reuzywalnosc|reużywalności]] z pytania „czy rakieta wróci" na pytanie „ile razy da się ją wysłać". Pierwsze rozstrzygnięto w 2015 roku, drugie rozstrzyga się do dziś. Bez takich przebiegów [[kadencja-startow|dzisiejsze tempo startów]] byłoby nieosiągalne: flota musiałaby rosnąć tak szybko, jak rośnie liczba lotów. Egzemplarz należy do wersji [[warianty-falcona-9|Block 5]], zaprojektowanej pod wielokrotne użycie, a większość powrotów wykonał na [[barki-dronowe|barkach dronowych]].',
     ],
     fakty: [
       { etykieta: 'Liczba lotów', wartosc: '37', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
@@ -1522,7 +1522,7 @@ export const pojecia: Encja[] = [
       'Z [[rownanie-ciolkowskiego|równania Ciołkowskiego]] wynika, że stosunek masy pełnej do pustej potrzebny do wejścia na [[leo|niską orbitę]] jest większy niż ten, jaki kiedykolwiek osiągnięto w pojedynczym stopniu. Rozwiązaniem jest pozbywanie się tego, co przestało być potrzebne.',
       'Pusty zbiornik i wygaszony silnik to już tylko masa, którą trzeba rozpędzać dalej. Wyrzucenie ich sprawia, że kolejny stopień startuje z lepszym stosunkiem mas — jakby był mniejszą rakietą wystrzeloną z dużej prędkości.',
       'Stopniowanie bywa szeregowe, gdy stopnie stoją jeden na drugim i odpalają po kolei, albo równoległe, gdy pracują jednocześnie i odpadają w locie — tak działał prom kosmiczny i tak działa [[falcon-heavy|Falcon Heavy]] z bocznymi członami. Rakiety orbitalne mają zwykle dwa albo trzy stopnie; startowały i pięciostopniowe, ale powyżej trzech masa i złożoność zjadają zysk.',
-      'Rakiet jednostopniowych, zdolnych wejść na orbitę bez odrzucania niczego, nie zbudowano dotąd nigdy. [[starship|Starship]] też jest dwustopniowy — jego nowością nie jest brak stopni, tylko zamiar odzyskania obu.',
+      'Rakiet jednostopniowych, zdolnych wejść na orbitę bez odrzucania niczego, nie zbudowano dotąd nigdy. [[starship|Starship]] też jest dwustopniowy — jego nowością nie jest brak stopni, tylko zamiar odzyskania obu. Miejscem, w którym to wszystko się rozstrzyga, jest [[interstage|przedział międzystopniowy]]; wzorcowym przykładem układu dwustopniowego z odzyskiwanym dolnym stopniem — [[falcon-9|Falcon 9]].',
     ],
     fakty: [
       { etykieta: 'Powód', wartosc: 'wymagany stosunek mas przekracza możliwy w jednym stopniu', pewnosc: 'potwierdzone' },
@@ -1560,7 +1560,7 @@ export const pojecia: Encja[] = [
       'Prędkość ucieczki zależy tylko od masy ciała niebieskiego i odległości od jego środka. Dla powierzchni Ziemi NASA podaje 11,186 kilometra na sekundę, czyli ponad czterdzieści tysięcy kilometrów na godzinę. Dla Księżyca jest to 2,38, dla Marsa 5,03, a dla Słońca 617,7 kilometra na sekundę.',
       'Nie należy jej mylić z prędkością orbitalną. Na tej samej wysokości prędkość ucieczki jest większa dokładnie pierwiastek z dwóch razy — około 1,414 raza. Dlatego wejście na [[leo|orbitę]] i opuszczenie Ziemi to dwa zupełnie różne zadania, mimo że różnica wydaje się niewielka.',
       'W dawnej terminologii prędkość orbitalną nazywano pierwszą prędkością kosmiczną, a ucieczki — drugą. Trzecia, potrzebna do opuszczenia Układu Słonecznego z orbity Ziemi, wynosi 42,1 kilometra na sekundę liczone względem Słońca.',
-      'Ta różnica jest powodem, dla którego [[tesla-roadster|Roadster]] wystrzelony przez [[falcon-heavy|Falcona Heavy]] krąży wokół Słońca, a nie leci w przestrzeń międzygwiezdną — miał dość prędkości, by uciec Ziemi, ale nie Słońcu.',
+      'Ta różnica jest powodem, dla którego [[tesla-roadster|Roadster]] wystrzelony przez [[falcon-heavy|Falcona Heavy]] krąży wokół Słońca, a nie leci w przestrzeń międzygwiezdną — miał dość prędkości, by uciec Ziemi, ale nie Słońcu. W praktyce jest to pozycja w rachunku [[delta-v|delta-v]], a to, ile paliwa za nią trzeba zapłacić, wylicza [[rownanie-ciolkowskiego|równanie Ciołkowskiego]].',
     ],
     fakty: [
       { etykieta: 'Ziemia', wartosc: '11,186 km/s (40 270 km/h)', pewnosc: 'potwierdzone' },
@@ -1598,8 +1598,8 @@ export const pojecia: Encja[] = [
     tresc: [
       'Stosunek ciągu do masy to ciąg podzielony przez ciężar. Jeśli wynosi mniej niż jeden, rakieta stoi na stanowisku i pali paliwo. Jeśli więcej — rusza, a nadwyżka ponad jedynkę odpowiada przyspieszeniu, jakie faktycznie zyskuje.',
       'Wartość rośnie w trakcie lotu, bo ciąg pozostaje z grubsza stały, a masa maleje z każdą sekundą pracy silników. Prom kosmiczny startował ze stosunkiem 1,3 i dochodził w locie do 3.',
-      'Osobno liczy się ten sam stosunek dla samego silnika, bez rakiety. Tu wartości są zupełnie innego rzędu: silnik F-1 z Saturna V miał 94,1, a [[merlin|Merlin 1D]] — od 184 do 199,5, zależnie od źródła. SpaceX w przewodniku dla klientów nie podaje liczby, ale pisze wprost, że jest to najwyższy stosunek ciągu do masy, jaki kiedykolwiek osiągnięto w silniku startowym.',
-      'Ta druga liczba tłumaczy, dlaczego [[falcon-9|Falcon 9]] ma dziewięć małych silników zamiast jednego dużego. Lekki silnik można powielić, a powielenie daje [[hamowania|możliwość hamowania]] i odporność na awarię pojedynczej jednostki.',
+      'Osobno liczy się ten sam stosunek dla samego silnika, bez rakiety. Tu wartości są zupełnie innego rzędu: silnik F-1 z Saturna V miał 94,1, a [[merlin|Merlin 1D]] — od 184 do 199,5, zależnie od źródła. [[spacex|SpaceX]] w przewodniku dla klientów nie podaje liczby, ale pisze wprost, że jest to najwyższy stosunek ciągu do masy, jaki kiedykolwiek osiągnięto w silniku startowym.',
+      'Ta druga liczba tłumaczy, dlaczego [[falcon-9|Falcon 9]] ma dziewięć małych silników zamiast jednego dużego. Lekki silnik można powielić, a powielenie daje [[hamowania|możliwość hamowania]] i odporność na awarię pojedynczej jednostki. Trzeba to czytać razem z [[impuls-wlasciwy|impulsem właściwym]], który mierzy oszczędność zamiast siły, i z [[rownanie-ciolkowskiego|równaniem Ciołkowskiego]], które mówi, ile prędkości z tego wyjdzie. Najdalej pomysł powielania lekkich silników zaszedł w [[super-heavy|Super Heavy]] — trzydzieści trzy sztuki naraz.',
     ],
     fakty: [
       { etykieta: 'Definicja', wartosc: 'ciąg podzielony przez ciężar; wielkość bezwymiarowa', pewnosc: 'potwierdzone' },
@@ -1637,7 +1637,7 @@ export const pojecia: Encja[] = [
       'Tlen, wodór i metan są w normalnych warunkach gazami. Żeby zmieściły się w zbiorniku rakiety, trzeba je skroplić, a to znaczy schłodzić głęboko poniżej zera. NASA podaje dla ciekłego wodoru około minus 424 stopni Fahrenheita, a dla ciekłego tlenu około minus 298 — w skali Celsjusza jest to mniej więcej minus 253 i minus 183 stopnie.',
       'Stąd bierze się cecha, która rządzi całym harmonogramem lotu: odparowywanie. Ciepło od instalacji pokładowych, od promieniowania słonecznego i z otoczenia nieustannie podgrzewa zbiorniki, a powstałe opary trzeba upuszczać. Zatankowana rakieta traci paliwo z każdą godziną postoju — dlatego [[okno-startowe|okno startowe]] bywa liczone w minutach, a [[scrub-i-nominal|przerwanie odliczania]] oznacza spuszczenie wszystkiego.',
       'Dla lotów dłuższych niż kilka dni problem staje się zaporowy. NASA podaje wprost, że paliwa kriogeniczne wykorzystywano dotąd wyłącznie w misjach krótszych niż tydzień, i testuje w Marshall Space Flight Center chłodzenie zbiorników dwustopniowym układem kriochłodziarek, żeby odparowywanie sprowadzić do zera.',
-      'Dla SpaceX ma to bezpośrednie znaczenie: [[tankowanie-orbitalne|tankowanie Starshipa na orbicie]] wymaga, żeby [[metaloks-i-keroloks|metan i tlen]] przetrwały w zbiornikach dłużej niż dotąd potrafiono. Kerozyna tego problemu nie ma — to płyn w temperaturze pokojowej i można ją trzymać w rakiecie miesiącami.',
+      'Dla [[spacex|SpaceX]] ma to bezpośrednie znaczenie: [[tankowanie-orbitalne|tankowanie Starshipa na orbicie]] wymaga, żeby [[metaloks-i-keroloks|metan i tlen]] przetrwały w zbiornikach dłużej niż dotąd potrafiono. Kerozyna tego problemu nie ma — to płyn w temperaturze pokojowej i można ją trzymać w rakiecie miesiącami.',
     ],
     fakty: [
       { etykieta: 'Ciekły wodór', wartosc: 'około minus 424 °F, czyli około minus 253 °C', pewnosc: 'potwierdzone' },

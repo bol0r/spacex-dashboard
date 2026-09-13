@@ -5,6 +5,31 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.5.3 — 13 września 2026
+
+**Gęstość linkowania: 4,88 → 6,01. Cel z briefu osiągnięty.**
+
+Trzy przejścia, każde innego rodzaju.
+
+Pierwsze było mechaniczne: skrypt `gestosc.ts` wskazał 39 miejsc, w których
+nazwa istniejącej encji stała w treści jako zwykły tekst. 37 z nich zamieniono
+na chipy, dwa odrzucono — nazwa miejsca nie powinna prowadzić do encji o ludziach.
+
+Drugie było najważniejsze. Encje deklarują powiązania w polu `powiazane`, każde
+z własnym uzasadnieniem, ale 116 z nich nie miało odpowiednika w tekście —
+relacja istniała w danych i nie istniała dla czytelnika. Każde takie powiązanie
+dostało zdanie w treści encji, pisane pod konkretny kontekst, nie z szablonu.
+
+Trzecie dodało 53 połączenia, których nie było ani w tekście, ani w powiązaniach,
+a które są prawdziwe: Kestrel chłodzony ablacyjnie zamiast regeneracyjnie,
+Model Y jako główny produkt Szanghaju i Berlina naraz, nazwa X wracająca po
+dwudziestu latach od X.com, zagęszczenie odłamków największe na orbitach
+heliosynchronicznych, gdzie tłoczą się małe satelity.
+
+Żadna encja nie ma już mniej niż pięć linków w treści — przed tą partią było ich
+dziesięć z trzema. Pięćdziesiąt cztery encje są wciąż poniżej szóstki; średnia
+jest celem z briefu, ale rozkład da się jeszcze wyrównać.
+
 ## 0.5.2 — 13 września 2026
 
 **Niezależność źródeł, przejście drugie: 88 → 73 encje oparte na jednym wydawcy.**

@@ -12,7 +12,7 @@ export const rakiety: Encja[] = [
       'Starship to dwa elementy: dolny stopień [[super-heavy|Super Heavy]] i górny, który nazywa się tak samo jak cały system — stąd stały bałagan terminologiczny. Razem mierzą 121,3 metra wysokości przy 9 metrach średnicy i ruszają z ziemi z ciągiem 73,5 MN. Dla porównania: to ponad dwukrotność Saturna V. Napęd stanowi wyłącznie [[raptor|Raptor]].',
       'Kadłub jest ze stali nierdzewnej. Pierwsze prototypy budowano z gatunku 301, potem przeszedł on w 304L, a obecne egzemplarze korzystają z firmowego stopu oznaczanego 30X. To decyzja, która w 2018 roku wyglądała na krok wstecz — cała branża szła w kompozyty węglowe — i która okazała się jedną z najważniejszych w całym programie.',
       'Program idzie przez loty testowe, nie przez symulacje. Pierwszy lot w kwietniu 2023 roku skończył się rozpadem rakiety po czterech minutach. Lot 5 w październiku 2024 przyniósł pierwsze w historii złapanie członu nośnego przez ramiona wieży startowej. Loty 7, 8 i 9 to seria utrat górnego stopnia. Lot 10 i 11 przyniosły kontrolowane wodowania z celnością liczoną w metrach. Lot 12 w maju 2026 był debiutem konstrukcji Block 3.',
-      'Lot 13 z 24 lipca 2026 roku był pierwszym po wejściu [[spacex|SpaceX]] na giełdę i pierwszym, w którym Starship wypuścił prawdziwe satelity [[starlink|Starlink]] generacji V3. Statek przetrwał wejście w atmosferę i spoczął nienaruszony w Oceanie Indyjskim, co dało pierwsze zdjęcia całej osłony termicznej po locie. Lot 14, planowany na 18 września 2026, ma być pierwszą próbą wejścia na pełną orbitę wokół Ziemi.',
+      'Lot 13 z 24 lipca 2026 roku był pierwszym po wejściu [[spacex|SpaceX]] na giełdę i pierwszym, w którym Starship wypuścił prawdziwe satelity [[starlink|Starlink]] generacji V3. Statek przetrwał [[wejscie-atmosferyczne|wejście w atmosferę]] i spoczął nienaruszony w Oceanie Indyjskim, co dało pierwsze zdjęcia całej osłony termicznej po locie. Lot 14, planowany na 18 września 2026, ma być pierwszą próbą wejścia na pełną orbitę wokół Ziemi.',
       'Wariant załogowy [[hls-artemis|Starship HLS]] ma posadzić astronautów na Księżycu w ramach programu Artemis. Test dokowania planowany jest na 2027 rok, lądowanie z ludźmi na pokładzie na 2028 — obie daty przesuwały się już wielokrotnie i należy je czytać jako intencję, nie jako termin.',
     ],
     fakty: [
@@ -58,8 +58,8 @@ export const rakiety: Encja[] = [
     aka: ['Booster', 'B14', 'dolny stopień Starshipa'],
     krotki: 'Dolny stopień Starshipa: 33 silniki, 3 400 ton paliwa i powrót prosto w ramiona wieży, bez nóg lądowniczych.',
     tresc: [
-      'Super Heavy jest największym członem nośnym, jaki kiedykolwiek poleciał. Na jego dnie siedzą trzydzieści trzy silniki [[raptor|Raptor]], z czego trzynaście środkowych ma zawieszenie kardanowe i steruje kierunkiem lotu. Zbiorniki mieszczą około 3 400 ton ciekłego metanu i tlenu — ponad dwie trzecie masy startowej całego [[starship|Starshipa]].',
-      'Najbardziej nietypowy jest sposób powrotu. Zamiast lądować na własnych nogach, jak robi to [[falcon-9|Falcon 9]], Super Heavy wraca nad stanowisko i zawisa między dwoma ruchomymi ramionami wieży, które chwytają go za dwa czopy pod siatkami aerodynamicznymi. Ramiona ochrzczono „chopsticks", a całą wieżę — Mechazillą. Powód jest czysto rachunkowy: nogi lądownicze ważą tyle, ile mógłby ważyć ładunek.',
+      'Super Heavy jest największym członem nośnym, jaki kiedykolwiek poleciał. Na jego dnie siedzą trzydzieści trzy silniki [[raptor|Raptor]], z czego trzynaście środkowych ma [[gimbal|zawieszenie kardanowe]] i steruje kierunkiem lotu. Zbiorniki mieszczą około 3 400 ton ciekłego metanu i tlenu — ponad dwie trzecie masy startowej całego [[starship|Starshipa]].',
+      'Najbardziej nietypowy jest sposób powrotu. Zamiast lądować na własnych nogach, jak robi to [[falcon-9|Falcon 9]], Super Heavy wraca nad stanowisko i zawisa między dwoma ruchomymi ramionami wieży, które chwytają go za dwa czopy pod siatkami aerodynamicznymi. Ramiona ochrzczono „[[mechazilla|chopsticks]]", a całą wieżę — Mechazillą. Powód jest czysto rachunkowy: nogi lądownicze ważą tyle, ile mógłby ważyć ładunek.',
       'Pierwsze złapanie udało się przy piątym locie testowym, 13 października 2024 roku, za pierwszym podejściem. Kolejne przyszły przy locie 7 i 8. Przy locie 6 manewr przerwano automatycznie, bo wieża odniosła uszkodzenia w chwili startu, a booster skierowano na wodowanie — zabezpieczenie zadziałało bez udziału człowieka.',
       'Loty 12 i 13, na konstrukcji Block 3, kończyły się utratą członu przy hamowaniu nad zatoką: przy locie 12 odpaliło dwadzieścia z trzydziestu trzech silników, przy locie 13 — dziesięć z trzynastu przewidzianych. Program celowo nie próbował wtedy łapania, bo priorytetem był ładunek [[starlink|Starlink]] w górnym stopniu.',
     ],
@@ -100,7 +100,7 @@ export const rakiety: Encja[] = [
     aka: ['F9', 'Falcon 9 Block 5', 'Falcon 9 Full Thrust'],
     krotki: 'Rakieta, która zamieniła pierwszy stopień w sprzęt wielokrotnego użytku i przejęła większość światowego rynku startów.',
     tresc: [
-      'Falcon 9 jest rakietą dwustopniową na naftę i ciekły tlen. Dziewięć silników [[merlin|Merlin]] w pierwszym stopniu, jeden w wersji próżniowej w drugim. Debiutowała w czerwcu 2010 roku w wersji v1.0 i od tego czasu przeszła przez v1.1, Full Thrust i wreszcie Block 5 z maja 2018 — wariant, w którym lata do dziś.',
+      'Falcon 9 jest rakietą dwustopniową na naftę i ciekły tlen. Dziewięć silników [[merlin|Merlin]] w pierwszym stopniu, jeden w wersji próżniowej w drugim. Debiutowała w czerwcu 2010 roku w wersji v1.0 i od tego czasu przeszła przez v1.1, [[warianty-falcona-9|Full Thrust]] i wreszcie Block 5 z maja 2018 — wariant, w którym lata do dziś.',
       'Cała jej wartość bierze się z jednej rzeczy: pierwszy stopień wraca. Po odłączeniu wykonuje hamowanie wsteczne, wchodzi w atmosferę silnikami do przodu i siada pionowo — na betonowym stanowisku albo na barce dronowej stojącej na oceanie. [[pierwsze-ladowanie|Pierwsze lądowanie na lądzie]] udało się 21 grudnia 2015 roku po wyniesieniu satelitów Orbcomm, [[pierwsze-ladowanie-na-barce|pierwsze na barce]] 8 kwietnia 2016 przy misji zaopatrzeniowej CRS-8. Odzyskane człony schodzą dziś głównie na [[barki-dronowe|barki dronowe]].',
       'Skala jest dziś trudna do objęcia. Rodzina Falcon 9 wykonała 699 startów przy 696 pełnych sukcesach, a pierwsze stopnie wróciły 657 razy na 670 prób — czyli z sprawnością ponad 98 procent. Dla samego wariantu Block 5 współczynnik wynosi 99,06 procent. Rekordowy egzemplarz boostera przeszedł 37 lotów.',
       'Falcon 9 jest też rakietą, która wynosi [[starlink|Starlink]] i wozi ludzi w kapsule [[crew-dragon|Crew Dragon]]. W 2026 roku około trzech czwartych jej startów to misje własnej konstelacji — [[spacex|SpaceX]] jest dziś swoim największym klientem. To właśnie ta rakieta, a nie [[starship|Starship]], utrzymuje firmę.',
@@ -151,8 +151,8 @@ export const rakiety: Encja[] = [
     tresc: [
       'Pomysł jest prosty do opisania i trudny do wykonania: weź trzy pierwsze stopnie [[falcon-9|Falcona 9]], zepnij je obok siebie i odpal jednocześnie. Daje to dwadzieścia siedem silników [[merlin|Merlin]] pracujących naraz i 22,82 MN ciągu przy starcie, przy wysokości 70 metrów.',
       'W wersji w pełni zużywalnej Falcon Heavy wynosi 63 800 kg na niską orbitę, 26 700 kg na orbitę transferową do geostacjonarnej i 16 800 kg na trajektorię ku Marsowi. Boczne człony wracają i lądują, co obniża cenę startu do około 97 milionów dolarów — wobec 150 milionów za wariant, z którego nic nie wraca.',
-      '[[falcon-heavy-demo|Pierwszy lot]] odbył się 6 lutego 2018 roku. Zamiast balastu z betonu, jak robi to cała branża, [[elon-musk|Musk]] umieścił na szczycie własny samochód — Teslę Roadster pierwszej generacji — z manekinem w skafandrze za kierownicą. Manekin dostał imię Starman.',
-      'Falcon Heavy lata rzadko: trzynaście startów przez ponad osiem lat. Powód jest nudny i mówi wszystko o tym, jak zmienił się rynek — [[falcon-9|Falcon 9]] w wariancie zużywalnym zabiera wystarczająco dużo, żeby większość klientów nie potrzebowała rakiety cięższej.',
+      '[[falcon-heavy-demo|Pierwszy lot]] odbył się 6 lutego 2018 roku. Zamiast balastu z betonu, jak robi to cała branża, [[elon-musk|Musk]] umieścił na szczycie własny samochód — Teslę [[tesla-roadster|Roadster pierwszej generacji]] — z manekinem w skafandrze za kierownicą. Manekin dostał imię Starman.',
+      'Falcon Heavy lata rzadko: trzynaście startów przez ponad osiem lat. Powód jest nudny i mówi wszystko o tym, jak zmienił się rynek — [[falcon-9|Falcon 9]] w wariancie zużywalnym zabiera wystarczająco dużo, żeby większość klientów nie potrzebowała rakiety cięższej. Najgłośniejszym ładunkiem tej rakiety pozostaje zresztą samochód [[tesla|Tesli]], a nie żaden satelita.',
     ],
     fakty: [
       { etykieta: 'Wysokość', wartosc: '70 m', pewnosc: 'potwierdzone' },
@@ -190,7 +190,7 @@ export const rakiety: Encja[] = [
     aka: ['Dragon 2', 'Smok załogowy', 'Endeavour', 'Resilience'],
     krotki: 'Kapsuła, która w 2020 roku przywróciła Stanom Zjednoczonym zdolność wysyłania ludzi w kosmos z własnego terytorium.',
     tresc: [
-      'Crew Dragon zabiera czterech astronautów w locie normalnym i do siedmiu w ewakuacji. Mierzy 4,5 metra bez modułu serwisowego i 8,1 metra z nim, przy średnicy 4 metrów. Do manewrów orbitalnych służy szesnaście silniczków Draco, a osiem mocnych SuperDraco stanowi system ratunkowy — w razie awarii rakiety odrzucają kapsułę na bok w ułamku sekundy.',
+      'Crew Dragon zabiera czterech astronautów w locie normalnym i do siedmiu w ewakuacji. Mierzy 4,5 metra bez modułu serwisowego i 8,1 metra z nim, przy średnicy 4 metrów. Do manewrów orbitalnych służy szesnaście silniczków Draco, a osiem mocnych [[draco-superdraco|SuperDraco]] stanowi system ratunkowy — w razie awarii rakiety odrzucają kapsułę na bok w ułamku sekundy.',
       'Dokowanie odbywa się automatycznie, ze złączem zgodnym ze standardem IDSS, z możliwością przejęcia sterowania przez załogę. Kapsuła jest wielorazowa; pierwotnie certyfikowano ją na pięć lotów, a od 2024 roku trwają prace nad podniesieniem limitu do piętnastu.',
       'Lot [[demo-2|Demo-2]] wystartował 30 maja 2020 roku o 15:22 czasu wschodniego z Kennedy Space Center. Na pokładzie byli Robert Behnken i Douglas Hurley — pierwsi astronauci wysłani z terytorium USA od zakończenia programu wahadłowców w 2011 roku. Misja trwała niemal 64 dni i zakończyła się wodowaniem na Atlantyku 2 sierpnia.',
       'Od tamtej pory kapsuła wykonała ciąg lotów, które przesunęły granicę tego, co uchodzi za lot komercyjny: [[inspiration4|Inspiration4]] z wyłącznie cywilną załogą na wysokości 585 km, [[ax-1|Ax-1]] jako pierwszy w pełni prywatny lot na stację, [[polaris-dawn|Polaris Dawn]] z orbitą sięgającą 1 400 km i pierwszym komercyjnym spacerem kosmicznym, wreszcie [[fram2|Fram2]] — pierwszy załogowy lot po orbicie biegunowej. Wszystkie wynosi [[falcon-9|Falcon 9]].',
@@ -281,7 +281,7 @@ export const rakiety: Encja[] = [
       'Falcon 1 mierzył 21 metrów przy 1,7 metra średnicy — obok dzisiejszego [[falcon-9|Falcona 9]] wygląda jak makieta. W pierwszym stopniu pracował jeden silnik [[merlin|Merlin]] (wersja 1A na dwóch pierwszych lotach, potem 1C), w drugim ciśnieniowy [[kestrel|Kestrel]]. Na niską orbitę wynosił około 670 kg.',
       'Cena startu wynosiła 7 milionów dolarów, a cały program rozwojowy kosztował 90–100 milionów. To były liczby, przy których ówczesny rynek nie miał czym odpowiedzieć — i zarazem liczby, które nie pozostawiały marginesu na porażkę.',
       'Poleciał pięć razy. Pierwsze trzy loty skończyły się utratą rakiety i niemal wykończyły [[spacex|SpaceX]]. Czwarty, 28 września 2008 roku, dotarł na orbitę. [[falcon-1-lot-5|Piąty]] wyniósł malezyjskiego satelitę RazakSAT i był pierwszym komercyjnym startem firmy.',
-      'Po nim program zamknięto. Nie z powodu awarii, ale dlatego, że rynek małych rakiet okazał się ciasny, a Falcon 9 na tych samych silnikach [[merlin|Merlin]] wynosił kilkadziesiąt razy więcej. Falcon 1 zostawił po sobie dwie rzeczy: działający silnik i firmę, która przeżyła.',
+      'Po nim program zamknięto. Nie z powodu awarii, ale dlatego, że rynek małych rakiet okazał się ciasny, a Falcon 9 na tych samych silnikach [[merlin|Merlin]] wynosił kilkadziesiąt razy więcej. Falcon 1 zostawił po sobie dwie rzeczy: działający silnik i firmę, która przeżyła. Momentem, który to przesądził, był [[falcon-1-lot-4|czwarty lot]] — pierwszy udany i zarazem ostatnia rakieta, na jaką firmę było wtedy stać.',
     ],
     fakty: [
       { etykieta: 'Wysokość', wartosc: '21 m', pewnosc: 'potwierdzone' },
@@ -325,7 +325,7 @@ export const rakiety: Encja[] = [
       'Dragon 1 był częściowo wielorazowym statkiem towarowym do zaopatrywania Międzynarodowej Stacji Kosmicznej. Poleciał po raz pierwszy 8 grudnia 2010 roku i stał się wtedy pierwszym statkiem zbudowanym i prowadzonym przez firmę prywatną, który udało się odzyskać z orbity.',
       'Do stacji nie dokował samodzielnie: dwudziestego piątego maja 2012 roku, podczas [[cots-demo-2|lotu demonstracyjnego]], chwyciło go ramię Canadarm2 i przyłączyło do portu cumowniczego. Różnica między [[dokowanie-i-cumowanie|dokowaniem a cumowaniem]] nie jest przy tym kosmetyczna; samodzielne dokowanie przyszło dopiero z [[crew-dragon|Dragonem 2]].',
       'Ładowność wynosiła 3 310 kilogramów w obie strony i to właśnie „w obie strony" było kluczowe. Po wycofaniu wahadłowców Dragon przez lata pozostawał jedynym statkiem zdolnym sprowadzić z orbity znaczącą ilość ładunku — próbki badawcze wracały na Ziemię [[wodowanie|wodowaniem]] w ciągu doby lub dwóch.',
-      'Wykonał dwadzieścia trzy misje w latach 2010–2020; ostatni start odbył się 7 marca 2020. Od misji CRS-11 w 2017 roku używano kapsuł odzyskanych, a niektóre poleciały trzy razy — [[reuzywalnosc|reużywalność]] objęła statki wcześniej niż górne stopnie rakiet.',
+      'Wykonał dwadzieścia trzy misje w latach 2010–2020; ostatni start odbył się 7 marca 2020. Od misji CRS-11 w 2017 roku używano kapsuł odzyskanych, a niektóre poleciały trzy razy — [[reuzywalnosc|reużywalność]] objęła statki wcześniej niż górne stopnie rakiet. Powstał w ramach programu [[cots|COTS]], a manewrował na silniczkach [[draco-superdraco|Draco]], które napędzają dziś także wersję załogową.',
     ],
     fakty: [
       { etykieta: 'Pierwszy lot', wartosc: '8 grudnia 2010', pewnosc: 'potwierdzone' },
@@ -368,7 +368,7 @@ export const rakiety: Encja[] = [
       '[[falcon-9|Falcon 9]] nie jest jedną konstrukcją, tylko czterema. Wersja v1.0 poleciała w czerwcu 2010 roku. W wrześniu 2013 zastąpiła ją v1.1 z mocniejszym [[merlin|Merlinem 1D]] i wydłużonymi zbiornikami.',
       'Wersja Full Thrust z grudnia 2015 podniosła ciąg na tyle, że zostawało paliwo na powrót członu — i to właśnie na jej pierwszym locie odbyło się [[pierwsze-ladowanie|pierwsze udane lądowanie]]. Nie był to zbieg okoliczności: odzysk był celem tej modernizacji.',
       'Block 5 z maja 2018 jest wersją ostateczną i to nią firma lata do dziś. Zaprojektowano ją pod szybkie ponowne loty, a skuteczność lądowań wynosi w niej 99,06 procent wobec 98,06 dla całej rodziny.',
-      'Kierunek zmian jest w tej rodzinie jednoznaczny: każda kolejna wersja przybliżała [[reuzywalnosc|reużywalność]], aż rekordowy egzemplarz doszedł do trzydziestu siedmiu lotów.',
+      'Kierunek zmian jest w tej rodzinie jednoznaczny: każda kolejna wersja przybliżała [[reuzywalnosc|reużywalność]], aż rekordowy egzemplarz doszedł do trzydziestu siedmiu lotów. Wersja Block 5 przyniosła też odzyskiwanie [[oslona-ladunku|osłony ładunku]], bez którego dzisiejsza [[kadencja-startow|kadencja startów]] byłaby nie do utrzymania.',
     ],
     fakty: [
       { etykieta: 'v1.0', wartosc: 'czerwiec 2010', pewnosc: 'potwierdzone' },
@@ -408,7 +408,7 @@ export const rakiety: Encja[] = [
     tresc: [
       'Starshield jest odmianą [[starlink|Starlinka]] przeznaczoną dla klientów rządowych, z szyfrowaną łącznością i optycznymi łączami międzysatelitarnymi. Technicznie opiera się na tej samej konstrukcji satelity i tej samej [[konstelacja|architekturze konstelacji]].',
       'Różnicą jest przeznaczenie i jawność. O Starlinku wiadomo, ile satelitów krąży, ilu jest abonentów i jaki jest przychód. O Starshieldzie wiadomo znacznie mniej, bo umowy z klientami rządowymi nie są publikowane w tym samym trybie.',
-      'Dla [[spacex|SpaceX]] to naturalne rozszerzenie: te same satelity, ta sama [[falcon-9|rakieta]], ten sam [[kadencja-startow|rytm startów]], inny odbiorca. Dla obrazu firmy ma to znaczenie, którego nie widać w liczbach — pokazuje, jak blisko cywilnej infrastruktury kosmicznej stoją dziś zastosowania wojskowe.',
+      'Dla [[spacex|SpaceX]] to naturalne rozszerzenie: te same satelity, ta sama [[falcon-9|rakieta]], ten sam [[kadencja-startow|rytm startów]], inny odbiorca. Dla obrazu firmy ma to znaczenie, którego nie widać w liczbach — pokazuje, jak blisko cywilnej infrastruktury kosmicznej stoją dziś zastosowania wojskowe. Osobny produkt jest tu zresztą wygodny również ze względu na [[itar|przepisy eksportowe]], które traktują technologie wojskowe inaczej niż cywilne.',
     ],
     fakty: [
       { etykieta: 'Czym jest', wartosc: 'rządowa odmiana Starlinka', pewnosc: 'potwierdzone' },
@@ -446,7 +446,7 @@ export const rakiety: Encja[] = [
       'Cargo Dragon jest wersją [[crew-dragon|Crew Dragona]] pozbawioną wszystkiego, co służy ludziom: foteli, pulpitu, układu podtrzymywania życia i ośmiu silników [[draco-superdraco|SuperDraco]] systemu ratunkowego. Usunięcie tych elementów zwalnia miejsce na ładunek i upraszcza obsługę.',
       'Pierwszy lot odbył się 6 grudnia 2020 roku w ramach misji CRS-21. Najważniejsza różnica wobec [[dragon-1|Dragona 1]] nie leży jednak w środku, tylko w sposobie przyłączania: ta wersja [[dokowanie-i-cumowanie|dokuje samodzielnie]], ze złączem zgodnym ze standardem IDSS, zamiast czekać, aż chwyci ją ramię stacji.',
       'Ładowność wynosi 3 307 kg w stronę stacji, 2 507 kg z powrotem na Ziemię i 800 kg ładunku przeznaczonego do zniszczenia przy powrocie.',
-      'Statek lata w ramach kontraktu CRS-2, przyznanego [[spacex|SpaceX]] w styczniu 2016 roku na sześć lotów. Według stanu na sierpień 2025 wykonał dziesięć misji, a jedenasta była w toku.',
+      'Statek lata w ramach kontraktu CRS-2, przyznanego [[spacex|SpaceX]] w styczniu 2016 roku na sześć lotów. Według stanu na sierpień 2025 wykonał dziesięć misji, a jedenasta była w toku. Cała ta linia statków wywodzi się z programu [[cots|COTS]], w którym NASA zapłaciła za samo zbudowanie zdolności, a nie za gotowy pojazd.',
     ],
     fakty: [
       { etykieta: 'Pierwszy lot', wartosc: '6 grudnia 2020, misja CRS-21', pewnosc: 'potwierdzone' },
@@ -487,7 +487,7 @@ export const rakiety: Encja[] = [
       'Klasyczna łączność satelitarna wymaga terminala z anteną kierunkową. Direct to Cell odwraca ten układ: satelita [[starlink|Starlinka]] zachowuje się jak maszt sieci komórkowej na orbicie, a telefon nie wie, że rozmawia z czymś, co przelatuje nad nim z prędkością ośmiu kilometrów na sekundę.',
       'Usługa ruszyła od SMS-ów we współpracy z operatorem T-Mobile w styczniu 2024 roku, z zapowiedzią rozszerzenia na głos i transmisję danych.',
       'Znaczenie tego rozwiązania jest największe tam, gdzie nie ma i nie będzie infrastruktury naziemnej: na morzu, na pustyniach, w górach i po katastrofach, które niszczą maszty. Ta sama właściwość przesądziła o roli [[starlink-w-ukrainie|Starlinka na Ukrainie]]. Nie zastępuje sieci komórkowej, tylko domyka jej dziury.',
-      'Technicznie wymaga to znacznie większych anten na satelicie, bo telefon nadaje słabym sygnałem w każdą stronę. To jeden z powodów, dla których generacja [[starlink|V3]] jest cięższa i potrzebuje [[starship|Starshipa]] zamiast [[falcon-9|Falcona 9]].',
+      'Technicznie wymaga to znacznie większych anten na satelicie, bo telefon nadaje słabym sygnałem w każdą stronę. To jeden z powodów, dla których generacja [[starlink|V3]] jest cięższa i potrzebuje [[starship|Starshipa]] zamiast [[falcon-9|Falcona 9]]. Ciągłość połączenia wymaga przy tym, żeby nad każdym punktem zawsze był jakiś satelita, czyli całej [[konstelacja|konstelacji]]; z wyższej orbity niż [[leo|niska okołoziemska]] zwykły telefon by się nie dodzwonił.',
     ],
     fakty: [
       { etykieta: 'Zasada', wartosc: 'satelita pełni rolę masztu sieci komórkowej', pewnosc: 'potwierdzone' },
@@ -525,7 +525,7 @@ export const rakiety: Encja[] = [
       'Pierwsze satelity [[starlink|Starlinka]] potrafiły tylko jedno: odebrać sygnał od użytkownika i przekazać go do stacji naziemnej w zasięgu. Nad oceanem, Antarktydą albo środkiem Azji takiej stacji nie ma, więc sieć tam nie działała.',
       'Łącza optyczne rozwiązują to bez budowania czegokolwiek na ziemi. Satelity przekazują dane między sobą wiązką lasera, tworząc siatkę w przestrzeni — sygnał wędruje z satelity na satelitę, aż dotrze nad miejsce, gdzie jest stacja.',
       'Rozwiązanie weszło wraz z generacją v1.5 i jest też wyposażeniem rządowego wariantu [[starshield|Starshield]]. W próżni wiązka lasera nie napotyka atmosfery, więc niesie więcej danych i z mniejszym opóźnieniem niż połączenie przez ziemię.',
-      'To ono sprawia, że [[konstelacja|konstelacja]] przestaje być zbiorem przekaźników, a staje się siecią. [[fram2|Lot Fram2]] po orbicie biegunowej i praca Starlinka na Antarktydzie są możliwe właśnie dzięki temu.',
+      'To ono sprawia, że [[konstelacja|konstelacja]] przestaje być zbiorem przekaźników, a staje się siecią. [[fram2|Lot Fram2]] po orbicie biegunowej i praca Starlinka na Antarktydzie są możliwe właśnie dzięki temu. Dzięki nim sygnał nie musi schodzić na ziemię przy każdym przeskoku, co ma znaczenie zwłaszcza na [[leo|niskiej orbicie]] i jest warunkiem działania [[direct-to-cell|łączności ze zwykłym telefonem]] poza zasięgiem stacji naziemnych.',
     ],
     fakty: [
       { etykieta: 'Zasada', wartosc: 'przekazywanie danych między satelitami wiązką lasera', pewnosc: 'potwierdzone' },

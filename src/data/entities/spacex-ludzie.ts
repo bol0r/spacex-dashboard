@@ -11,7 +11,7 @@ export const ludzie: Encja[] = [
     tresc: [
       'Shotwell skończyła Northwestern University: licencjat z inżynierii mechanicznej i magisterium z matematyki stosowanej. Na inżynierię trafiła po panelu Society of Women Engineers, na który poszła jeszcze w liceum — kosmos początkowo w ogóle jej nie interesował.',
       'Zanim trafiła do [[spacex|SpaceX]], przepracowała dekadę w Aerospace Corporation w El Segundo, od 1988 roku, przy wojskowych programach badawczo-rozwojowych — analiza termiczna, inżynieria systemów, zarządzanie projektami. W 1998 przeszła do niewielkiej firmy rakietowej Microcosm jako dyrektorka działu systemów kosmicznych i członkini komitetu wykonawczego.',
-      'Do SpaceX weszła we wrześniu 2002 roku, kilka miesięcy po założeniu firmy. Wprowadził ją Hans Koenigsmann, kolega z Microcosm. W grudniu 2008, po wynegocjowaniu kontraktu z NASA, została prezeską. Dziś odpowiada za bieżące operacje i wszystkie relacje handlowe — podczas gdy [[elon-musk|Musk]] zajmuje się inżynierią i kierunkiem.',
+      'Do SpaceX weszła we wrześniu 2002 roku, kilka miesięcy po założeniu firmy. Wprowadził ją [[hans-koenigsmann|Hans Koenigsmann]], kolega z Microcosm. W grudniu 2008, po wynegocjowaniu kontraktu z NASA, została prezeską. Dziś odpowiada za bieżące operacje i wszystkie relacje handlowe — podczas gdy [[elon-musk|Musk]] zajmuje się inżynierią i kierunkiem.',
       'To podział, który wyjaśnia, jak firma wytrzymała dwie dekady jednoczesnego prowadzenia [[falcon-9|Falcona 9]] jako produktu i [[starship|Starshipa]] jako eksperymentu. Jedno wymaga przewidywalności i terminów, drugie — gotowości na rozbicie rakiety.',
     ],
     fakty: [
@@ -53,7 +53,7 @@ export const ludzie: Encja[] = [
     tresc: [
       'Isaacman zbudował firmę płatniczą Shift4 Payments, a potem zrobił rzecz, której wcześniej nikt nie robił: kupił cały lot orbitalny i sam go poprowadził jako dowódca. Pierwszym była [[inspiration4|Inspiration4]] w 2021 roku, z załogą bez żadnego zawodowego astronauty na pokładzie.',
       'Trzy lata później poleciał ponownie, tym razem w ramach [[polaris-dawn|Polaris Dawn]]. Ta misja sięgnęła 1 400 kilometrów — najdalej od Ziemi, jak człowiek znalazł się od czasu Apollo — i zakończyła się pierwszym komercyjnym spacerem kosmicznym. Isaacman wyszedł ze [[crew-dragon|Crew Dragona]] na siedem minut i pięćdziesiąt sześć sekund.',
-      'Obie misje miały wymiar zbiórkowy. Przy Inspiration4 on i jego żona przekazali 125 milionów dolarów na szpital St. Jude; łącznie misja zebrała ponad 243 miliony. To odwrócenie klasycznego schematu turystyki kosmicznej, w którym pieniądze płyną wyłącznie w jedną stronę. Obie misje wykonano [[falcon-9|Falconem 9]], a obie zakończyły się [[wodowanie|wodowaniem]].',
+      'Obie misje miały wymiar zbiórkowy. Przy Inspiration4 on i jego żona przekazali 125 milionów dolarów na szpital St. Jude; łącznie misja zebrała ponad 243 miliony. To odwrócenie klasycznego schematu turystyki kosmicznej, w którym pieniądze płyną wyłącznie w jedną stronę. Obie misje wykonano [[falcon-9|Falconem 9]], a obie zakończyły się [[wodowanie|wodowaniem]]. Na spacerze kosmicznym towarzyszyła mu [[sarah-gillis|Sarah Gillis]], inżynierka SpaceX, która wyszła ze statku zaraz po nim.',
     ],
     fakty: [
       { etykieta: 'Loty orbitalne', wartosc: '2 — Inspiration4 i Polaris Dawn', stanNa: '2026-09-12', pewnosc: 'potwierdzone' },
@@ -90,7 +90,7 @@ export const ludzie: Encja[] = [
     tresc: [
       'Gillis pracuje w [[spacex|SpaceX]] jako inżynierka operacji kosmicznych i przez lata odpowiadała za szkolenie załóg lecących w [[crew-dragon|Crew Dragonie]] — w tym tych, które startowały przed nią. W 2024 roku znalazła się po drugiej stronie: poleciała jako specjalistka misji [[polaris-dawn|Polaris Dawn]].',
       'Podczas tej misji wyszła na zewnątrz statku na siedem minut i piętnaście sekund. Miała wtedy trzydzieści lat, co czyni ją najmłodszą osobą, która kiedykolwiek uczestniczyła w spacerze kosmicznym.',
-      'Jej rola mówi coś o tym, jak zmienił się zawód astronauty. Nie przeszła przez wojsko ani przez agencję kosmiczną — przeszła przez firmę, która buduje statki, i wsiadła do tego, który współtworzyła.',
+      'Jej rola mówi coś o tym, jak zmienił się zawód astronauty. Nie przeszła przez wojsko ani przez agencję kosmiczną — przeszła przez firmę, która buduje statki, i wsiadła do tego, który współtworzyła. Dowodził wtedy [[jared-isaacman|Jared Isaacman]], który wyszedł ze statku tuż przed nią. Poleciała [[falcon-9|Falconem 9]] i wróciła [[wodowanie|wodowaniem]] — drogą, którą sama przygotowywała dla innych.',
     ],
     fakty: [
       { etykieta: 'Stanowisko', wartosc: 'inżynierka operacji kosmicznych w SpaceX', pewnosc: 'potwierdzone' },
@@ -168,7 +168,7 @@ export const ludzie: Encja[] = [
       'Koenigsmann skończył lotnictwo na Politechnice Berlińskiej w 1989 roku, doktorat obronił w Bremie w 1995. Pracował w tamtejszym ośrodku technologii kosmicznych przy satelicie BremSat, potem przeniósł się do Kalifornii, do firmy Microcosm. [[elon-musk|Muska]] poznał na starcie rakiety na pustyni Mojave.',
       'Do [[spacex|SpaceX]] dołączył w 2002 roku jako czwarty pracownik techniczny. Zaczynał jako wiceprezes do spraw awioniki, a od trzeciego lotu [[falcon-1|Falcona 1]] pełnił funkcję głównego inżyniera startów. W 2011 roku awansował na wiceprezesa do spraw niezawodności lotów — czyli człowieka odpowiedzialnego za to, żeby misje kończyły się bezpiecznie.',
       'To on wprowadził do firmy [[gwynne-shotwell|Gwynne Shotwell]], swoją koleżankę z Microcosmu, która dwa tygodnie po pierwszym spotkaniu z Muskiem przyjęła w SpaceX pracę i dziś kieruje całą firmą.',
-      'Odejście z firmy ogłosił w styczniu 2021 roku. Zasiada w radzie nadzorczej OHB SE i doradza firmie rakietowej Stoke Space. Jego następcą został [[bill-gerstenmaier|Bill Gerstenmaier]].',
+      'Odejście z firmy ogłosił w styczniu 2021 roku. Zasiada w radzie nadzorczej OHB SE i doradza firmie rakietowej Stoke Space. Jego następcą został [[bill-gerstenmaier|Bill Gerstenmaier]]. W historii firmy należy do [[wczesna-ekipa|pierwszej ekipy]], która budowała Falcona 1 na atolu.',
     ],
     fakty: [
       { etykieta: 'W SpaceX od', wartosc: '2002, jako czwarty pracownik techniczny', pewnosc: 'potwierdzone' },
@@ -209,7 +209,7 @@ export const ludzie: Encja[] = [
       'Gerstenmaier zaczął pracę w NASA w 1977 roku, w ośrodku Lewisa w Ohio, tuż po studiach na Purdue. Od czerwca 2002 kierował programem Międzynarodowej Stacji Kosmicznej, a od 2005 do 10 lipca 2019 był zastępcą administratora do spraw eksploracji i operacji załogowych — stanowiska opisywanego jako najbardziej wpływowe w amerykańskich lotach załogowych.',
       'Dziesiątego lipca 2019 roku administrator NASA Jim Bridenstine ogłosił przeniesienie go na stanowisko doradcy specjalnego. W praktyce urzędniczej jest to degradacja stosowana po to, żeby skłonić kogoś do odejścia. Oficjalnego powodu nie podano.',
       'W lutym 2020 roku [[spacex|SpaceX]] zatrudniło go jako konsultanta [[hans-koenigsmann|Hansa Koenigsmanna]]. Gdy ten ogłosił odejście w lutym 2021, Gerstenmaier objął po nim stanowisko wiceprezesa do spraw budowy i niezawodności lotów.',
-      'Jego rola w [[cots|programie komercyjnym]] była kluczowa i szła wbrew wygodzie urzędu: przekonał NASA, żeby opóźnić ogłoszenie wyników i znaleźć dodatkowe pieniądze, byle utrzymać dwie konkurujące firmy zamiast jednej. Bez tego [[crew-dragon|Crew Dragon]] mógłby nigdy nie powstać.',
+      'Jego rola w [[cots|programie komercyjnym]] była kluczowa i szła wbrew wygodzie urzędu: przekonał NASA, żeby opóźnić ogłoszenie wyników i znaleźć dodatkowe pieniądze, byle utrzymać dwie konkurujące firmy zamiast jednej. Bez tego [[crew-dragon|Crew Dragon]] mógłby nigdy nie powstać. W SpaceX odpowiada za tę samą dziedzinę, którą nadzorował po stronie agencji: loty załogowe w ramach [[commercial-crew|Commercial Crew]], od certyfikacji po misje takie jak [[demo-2|Demo-2]].',
     ],
     fakty: [
       { etykieta: 'W NASA', wartosc: 'cztery dekady, od 1977 roku', pewnosc: 'potwierdzone' },
@@ -249,7 +249,7 @@ export const ludzie: Encja[] = [
       'Robert Behnken i Douglas Hurley polecieli [[demo-2|misją Demo-2]] 30 maja 2020 roku o 15:22 czasu wschodniego, ze stanowiska [[lc-39a|LC-39A]] w Kennedy Space Center. Byli pierwszymi astronautami wysłanymi z terytorium Stanów od zakończenia programu wahadłowców w 2011 roku.',
       'Formalnie był to lot testowy — ostatni etap certyfikacji [[crew-dragon|Crew Dragona]] przed lotami rutynowymi. Praktycznie oznaczał, że NASA przestaje być zdana wyłącznie na rosyjski Sojuz przy wysyłaniu ludzi na stację.',
       'Misja trwała niespełna sześćdziesiąt cztery dni i zakończyła się [[wodowanie|wodowaniem]] na Atlantyku 2 sierpnia 2020 roku. Pierwszy lot operacyjny tej serii, [[crew-1|Crew-1]], ruszył trzy miesiące później.',
-      'Warto zauważyć symetrię: Hurley był pilotem ostatniej misji wahadłowca w lipcu 2011 i dowódcą pierwszego lotu, który tę przerwę zamknął. Ta sama osoba zgasiła światło i ją zapaliła z powrotem.',
+      'Warto zauważyć symetrię: Hurley był pilotem ostatniej misji wahadłowca w lipcu 2011 i dowódcą pierwszego lotu, który tę przerwę zamknął. Ta sama osoba zgasiła światło i ją zapaliła z powrotem. Certyfikację ich lotu po stronie NASA prowadził [[bill-gerstenmaier|Bill Gerstenmaier]], który kilka miesięcy później przeszedł do SpaceX.',
     ],
     fakty: [
       { etykieta: 'Misja', wartosc: 'Demo-2, 30 maja – 2 sierpnia 2020', pewnosc: 'potwierdzone' },
@@ -327,10 +327,10 @@ export const ludzie: Encja[] = [
     aka: ['Jeffrey Brian Straubel', 'pierwszy dyrektor techniczny Tesli'],
     krotki: 'Piąty pracownik Tesli i jej dyrektor techniczny przez piętnaście lat — człowiek od baterii, nie od samochodów.',
     tresc: [
-      'Urodził się 20 grudnia 1975 roku w Des Moines w stanie Iowa. Skończył Stanford: licencjat z inżynierii systemów energetycznych, magisterium z energetyki. Do [[tesla|Tesli]] dołączył w maju 2004 roku jako piąty pracownik — dziesięć miesięcy po zarejestrowaniu spółki.',
+      'Urodził się 20 grudnia 1975 roku w Des Moines w stanie Iowa. Skończył [[pretoria|Stanford]]: licencjat z inżynierii systemów energetycznych, magisterium z energetyki. Do [[tesla|Tesli]] dołączył w maju 2004 roku jako piąty pracownik — dziesięć miesięcy po zarejestrowaniu spółki.',
       'Objął stanowisko dyrektora technicznego i był pierwszą osobą, która je zajmowała. Odpowiadał za konstrukcję ogniw i łańcuch dostaw, a potem przeprowadził firmę od pomysłu na [[gigafactory|gigafabrykę]] do rozkręcenia produkcji [[model-3|Modelu 3]].',
       'W lipcu 2019 roku oddał stanowisko i przeszedł do roli doradczej. W maju 2023 wrócił do firmy jako niezależny członek rady dyrektorów. Na mocy [[spor-o-zalozycieli|ugody z 2009 roku]] jest formalnie jednym z pięciu współzałożycieli Tesli, choć w chwili rejestracji spółki go tam nie było.',
-      'Równolegle prowadzi Redwood Materials, założone w 2017 roku przedsiębiorstwo odzyskujące lit, kobalt i nikiel ze zużytych akumulatorów litowo-jonowych i elektroniki. To domknięcie tego samego łańcucha, który budował w Tesli, tyle że od drugiej strony.',
+      'Równolegle prowadzi Redwood Materials, założone w 2017 roku przedsiębiorstwo odzyskujące lit, kobalt i nikiel ze zużytych akumulatorów litowo-jonowych i elektroniki. To domknięcie tego samego łańcucha, który budował w Tesli, tyle że od drugiej strony. Tytuł współzałożyciela dostał tą samą ugodą co [[martin-eberhard|Martin Eberhard]], choć w firmie znaleźli się w innych momentach i rozstali z nią w innych okolicznościach.',
     ],
     fakty: [
       { etykieta: 'Urodzony', wartosc: '20 grudnia 1975, Des Moines', pewnosc: 'potwierdzone' },
@@ -370,7 +370,7 @@ export const ludzie: Encja[] = [
       'Urodzony w 1960 roku w Kalifornii, inżynier komputerowy po Uniwersytecie Illinois. Zanim wszedł w samochody, zbudował z Markiem Tarpenningiem firmę NuvoMedia i czytnik Rocket eBook — pierwsze urządzenie do bezpiecznego pobierania książek przez internet. Gemstar kupił NuvoMedię w 2000 roku.',
       'W lipcu 2003 roku ta sama dwójka zarejestrowała [[tesla|Tesla Motors]] w Menlo Park. Eberhard był pierwszym dyrektorem generalnym i doprowadził firmę do [[tesla-roadster|Roadstera]] — samochodu, który miał udowodnić, że elektryk nie musi być powolny.',
       'W listopadzie 2007 roku Tesla ogłosiła jego przejście do rady doradczej. Według relacji prasowych to [[elon-musk|Musk]], wtedy przewodniczący rady, poprosił go o odejście, tłumacząc, że nie widzi dla niego roli w firmie.',
-      'W czerwcu 2009 roku Eberhard pozwał Muska o zniesławienie, pomówienie i naruszenie umowy. Pozew wycofał w sierpniu, a we wrześniu Tesla potwierdziła ugodę bez podania warunków. To ta ugoda ustaliła, że [[spor-o-zalozycieli|współzałożycieli jest pięcioro]].',
+      'W czerwcu 2009 roku Eberhard pozwał Muska o zniesławienie, pomówienie i naruszenie umowy. Pozew wycofał w sierpniu, a we wrześniu Tesla potwierdziła ugodę bez podania warunków. To ta ugoda ustaliła, że [[spor-o-zalozycieli|współzałożycieli jest pięcioro]]. Tą samą ugodą tytuł współzałożyciela dostał między innymi [[jb-straubel|JB Straubel]], który dołączył do firmy dziesięć miesięcy po jej rejestracji.',
     ],
     fakty: [
       { etykieta: 'Urodzony', wartosc: '1960, Kalifornia', pewnosc: 'potwierdzone' },
@@ -449,7 +449,7 @@ export const ludzie: Encja[] = [
       '[[elon-musk|Elon]] urodził się w Pretorii jako najstarsze z trojga dzieci Errola i Maye Musków. Ojciec, urodzony 25 maja 1946 roku, był inżynierem, przedsiębiorcą i lokalnym politykiem; matka, urodzona 19 kwietnia 1948, jest dietetyczką i modelką z pięćdziesięcioletnią karierą zawodową. Małżeństwo trwało od 1970 do 1979 roku.',
       'Rodzeństwo poszło w swoje strony, choć pierwsze pieniądze zrobili razem na [[zip2|Zip2]]. [[kimbal-musk|Kimbal]], urodzony 20 września 1972, zajął się jedzeniem i ogrodami przy szkołach. Tosca, urodzona 20 lipca 1974, jest producentką filmową i współzałożycielką serwisu Passionflix.',
       'Kanadyjskie obywatelstwo matki otworzyło Elonowi drogę do wyjazdu z RPA w 1989 roku — ten jeden dokument przesądził o tym, że jego firmy powstały w Ameryce, a nie gdzie indziej. Zanim to nastąpiło, całe dzieciństwo spędził w [[pretoria|Pretorii]]. Korzenie po stronie matki sięgają dziadka, Joshuy Haldemana, chiropraktyka, lotnika i działacza politycznego z Saskatchewan.',
-      'Haldeman przeprowadził rodzinę z Kanady do RPA w 1950 roku. Wikipedia podaje, że motywem było poparcie dla polityki apartheidu; Errol Musk mówił, że Haldemanowie przyjechali, bo sympatyzowali z rządem afrykanerskim. Dziadek zginął w 1974 roku w katastrofie lotniczej podczas ćwiczebnego lądowania.',
+      'Haldeman przeprowadził rodzinę z Kanady do RPA w 1950 roku. Wikipedia podaje, że motywem było poparcie dla polityki apartheidu; Errol Musk mówił, że Haldemanowie przyjechali, bo sympatyzowali z rządem afrykanerskim. Dziadek zginął w 1974 roku w katastrofie lotniczej podczas ćwiczebnego lądowania. Pieniądze ze sprzedaży pierwszej firmy obaj bracia włożyli w [[x-com|X.com]], a pod koniec 2001 roku założyli razem [[fundacja-muska|fundację]].',
     ],
     fakty: [
       { etykieta: 'Ojciec', wartosc: 'Errol Musk, ur. 25 maja 1946', pewnosc: 'potwierdzone' },
