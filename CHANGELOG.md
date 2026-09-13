@@ -5,6 +5,26 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.4 — 13 września 2026
+
+**Partia szósta — dwadzieścia encji. Lista pojęć z briefu domknięta.**
+
+- Pozostałe loty testowe Starshipa: 2, 3, 4, 6 i 8. Seria jest teraz kompletna
+  od pierwszego lotu po trzynasty.
+- Dziesięć haseł słownika: impuls właściwy, metaloks i keroloks, dławienie
+  ciągu, chłodzenie regeneracyjne, sterowanie wektorem ciągu, osłona termiczna,
+  tankowanie orbitalne, dokowanie i cumowanie, okno startowe, nogi lądownicze.
+- Cargo Dragon, Direct to Cell, łącza laserowe, Kwajalein, Gigafactory Teksas.
+
+Po tej partii **cała lista pojęć do słownika z sekcji 4 briefu jest zrobiona** —
+od orbit i delta-v po zespół Kesslera. Sekcja słownika liczy 34 hasła i jest
+najliczniejsza w bazie, co było zamierzone: to w hasła klika się wewnątrz tekstu.
+
+Kilka encji tej partii powstało po to, żeby domknąć wątki rozrzucone wcześniej
+po innych: chłodzenie regeneracyjne tłumaczy awarię trzeciego lotu Falcona 1,
+nogi lądownicze wyjaśniają, dlaczego Super Heavy ich nie ma, a dokowanie
+i cumowanie prostuje nieścisłość powtarzaną przy locie Dragona z 2012 roku.
+
 ## 0.4.3 — 13 września 2026
 
 **Tryb filmowy i ekran startowy.**

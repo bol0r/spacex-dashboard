@@ -289,4 +289,43 @@ export const miejsca: Encja[] = [
     zrodla: [Z.wikiStrefy, Z.snewsOrbcomm],
     zaktualizowano: '2026-09-13',
   },
+
+  {
+    id: 'kwajalein',
+    typ: 'miejsce',
+    nazwa: 'Kwajalein',
+    aka: ['Omelek', 'atol na Pacyfiku'],
+    krotki: 'Atol na środku Pacyfiku, z którego poleciały wszystkie Falcony 1 — wybrany za pustkę, która okazała się też problemem.',
+    tresc: [
+      'Wszystkie pięć startów [[falcon-1|Falcona 1]] odbyło się z atolu Kwajalein na Pacyfiku. Miejsce wybrano dlatego, że nie ma tam prawie nikogo — przy rakiecie, z której trzy pierwsze egzemplarze uległy zniszczeniu, była to decyzja praktyczna, nie estetyczna.',
+      'Pustka miała jednak swoją cenę. Stanowisko leży w morskiej mgle, a solna korozja zniszczyła nakrętkę przewodu paliwowego, przez co [[falcon-1-lot-1|pierwszy lot]] skończył się po trzydziestu trzech sekundach. Miejsce wybrane ze względu na bezpieczeństwo samo stało się przyczyną awarii.',
+      'Do tego doszła logistyka. Czwartą rakietę, tę, która [[falcon-1-lot-4|uratowała firmę]], transportowano samolotem C-17 i po drodze kadłub częściowo się zapadł, bo ciśnienie przy ponownym napełnianiu przekroczyło założenia zespołu. Naprawiono ją na miejscu.',
+      'Po zamknięciu programu [[falcon-1|Falcona 1]] [[spacex|SpaceX]] przeniosło się na stanowiska kontynentalne — [[slc-40|SLC-40]] i później [[lc-39a|LC-39A]] — gdzie rakietę można dowieźć ciężarówką.',
+    ],
+    fakty: [
+      { etykieta: 'Lokalizacja', wartosc: 'atol Kwajalein, Pacyfik', pewnosc: 'potwierdzone' },
+      { etykieta: 'Starty', wartosc: 'wszystkie pięć lotów Falcona 1', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powód wyboru', wartosc: 'brak ludzi w pobliżu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skutek uboczny', wartosc: 'korozja od morskiej mgły — przyczyna awarii pierwszego lotu', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Stanowisko wybrano za to, że nie ma tam nikogo, kogo mogłaby zranić eksplodująca rakieta. Pierwszą rakietę zniszczyło dokładnie to samo otoczenie: morska mgła skorodowała nakrętkę przewodu paliwowego i silnik zgasł po trzydziestu trzech sekundach.',
+        zrodlo: Z.wikiFalcon1,
+      },
+    ],
+    os: [
+      { data: '2006-03-24', tytul: 'Pierwszy start', opis: 'Falcon 1 startuje z atolu i ginie po 33 sekundach.', waga: 2 },
+      { data: '2009-07-14', tytul: 'Ostatni start', opis: 'Piąty lot Falcona 1 zamyka historię tego stanowiska.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'falcon-1', powod: 'wszystkie jego loty odbyły się stąd' },
+      { id: 'falcon-1-lot-1', powod: 'awaria wywołana korozją od morskiej mgły' },
+      { id: 'wczesna-ekipa', powod: 'to tu pracowała przy pierwszych startach firmy' },
+      { id: 'slc-40', powod: 'kontynentalne stanowisko, które przejęło tę rolę' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
+    zaktualizowano: '2026-09-13',
+  },
 ];

@@ -900,4 +900,382 @@ export const pojecia: Encja[] = [
     zrodla: [Z.wikiKessler, Z.wikiLeo],
     zaktualizowano: '2026-09-12',
   },
+
+  {
+    id: 'impuls-wlasciwy',
+    typ: 'pojecie',
+    nazwa: 'Impuls właściwy',
+    aka: ['Isp', 'specific impulse'],
+    krotki: 'Miara oszczędności silnika rakietowego — ile sekund utrzyma ciąg równy ciężarowi spalanego paliwa.',
+    tresc: [
+      'Impuls właściwy podaje się w sekundach i mierzy sprawność wykorzystania paliwa. Im wyższa wartość, tym więcej [[delta-v|delta-v]] da się wycisnąć z tej samej masy zabranej na pokład — a ponieważ zapotrzebowanie na paliwo rośnie z delta-v wykładniczo, każda sekunda impulsu przekłada się na wynik nieproporcjonalnie mocno.',
+      'Porównanie w obrębie jednej firmy pokazuje, skąd biorą się różnice. [[merlin|Merlin 1D]] osiąga w próżni 311 sekund, a jego odmiana z dużą dyszą próżniową 348 — najwyższy wynik wśród amerykańskich silników węglowodorowych. [[raptor|Raptor]] daje 350 sekund przy zupełnie innym paliwie i [[pelnoprzeplywowe-spalanie-stopniowe|znacznie trudniejszym cyklu]].',
+      'Wysokość pracy zmienia obraz: ten sam silnik ma inny impuls przy ziemi i w próżni, bo ciśnienie atmosferyczne działa przeciw strumieniowi spalin. Dlatego drugie stopnie dostają dysze o dużym rozszerzeniu, bezużyteczne na starcie, a wręcz szkodliwe.',
+      'Impuls nie jest jedyną liczbą, która się liczy. Silnik o wysokim impulsie i niskim ciągu nie oderwie rakiety od ziemi — [[kestrel|Kestrel]] pracował w próżni, gdzie ciąg miał mniejsze znaczenie, a [[merlin|Merlin]] musiał dźwignąć całość.',
+    ],
+    fakty: [
+      { etykieta: 'Jednostka', wartosc: 'sekundy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Merlin 1D w próżni', wartosc: '311 s', pewnosc: 'potwierdzone' },
+      { etykieta: 'Merlin 1D Vacuum', wartosc: '348 s — najwyżej wśród amerykańskich silników węglowodorowych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Raptor', wartosc: '350 s', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zależność', wartosc: 'ta sama konstrukcja ma inny impuls przy ziemi i w próżni', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Różnica między Merlinem 1D a jego wersją próżniową to 37 sekund impulsu — uzyskane wyłącznie przez powiększenie dyszy do rozszerzenia 165:1. Ta sama komora spalania, to samo paliwo, inny kształt wylotu i o dwanaście procent lepszy wynik.',
+        zrodlo: Z.wikiMerlin,
+      },
+    ],
+    os: [
+      { data: '2013-09', tytul: 'Merlin 1D wchodzi do służby', opis: 'Wersja o najwyższym impulsie wśród amerykańskich silników na węglowodory.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'delta-v', powod: 'to on rozstrzyga, ile delta-v da się wycisnąć z zabranego paliwa' },
+      { id: 'merlin', powod: 'jego wersja próżniowa trzyma rekord wśród silników węglowodorowych' },
+      { id: 'raptor', powod: 'osiąga podobny impuls przy zupełnie innym paliwie' },
+      { id: 'metaloks-i-keroloks', powod: 'wybór paliwa wpływa na tę wartość bezpośrednio' },
+    ],
+    zrodla: [Z.wikiMerlin, Z.wikiRaptor],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'metaloks-i-keroloks',
+    typ: 'pojecie',
+    nazwa: 'Metaloks i keroloks',
+    aka: ['metalox', 'kerolox', 'metan kontra nafta'],
+    krotki: 'Dwa paliwa rakietowe SpaceX: nafta w Falconach, metan w Starshipie — i cała różnica bierze się z Marsa.',
+    tresc: [
+      'Keroloks to nafta lotnicza RP-1 z ciekłym tlenem — paliwo [[merlin|Merlina]] i [[kestrel|Kestrela]], czyli wszystkich rakiet rodziny Falcon. Metaloks to ciekły metan z ciekłym tlenem, na którym pracuje [[raptor|Raptor]] w [[starship|Starshipie]].',
+      'Metan wybrano z powodu, który nie ma nic wspólnego z osiągami na Ziemi: da się go wyprodukować na Marsie z dwutlenku węgla z atmosfery i wody z gruntu, w reakcji Sabatiera. To jedyny scenariusz, w którym rakieta wraca stamtąd bez ciągnięcia paliwa powrotnego z Ziemi.',
+      'Jest też powód bliższy: metan spala się czyściej i nie zostawia w silniku osadu węglowego, co bezpośrednio pracuje na [[reuzywalnosc|reużywalność]]. Nafta zostawia sadzę, którą przy częstych relotach trzeba usuwać.',
+      'Cena wyboru jest w gęstości. Metan trzeba chłodzić głębiej i zajmuje więcej miejsca, więc zbiorniki są większe przy tej samej masie paliwa. Przy [[falcon-9|Falconie 9]], który nie leci na Marsa, ta wymiana nie miałaby sensu.',
+    ],
+    fakty: [
+      { etykieta: 'Keroloks', wartosc: 'nafta RP-1 i ciekły tlen — rodzina Falcon', pewnosc: 'potwierdzone' },
+      { etykieta: 'Metaloks', wartosc: 'ciekły metan i ciekły tlen — Starship', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powód wyboru metanu', wartosc: 'produkcja na Marsie w reakcji Sabatiera', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zysk praktyczny', wartosc: 'czystsze spalanie, brak osadu węglowego', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Paliwo Starshipa wybrano ze względu na Marsa, nie na Ziemię. Metan da się tam wytworzyć z atmosfery i wody gruntowej — a bez tego rakieta musiałaby zabrać paliwo powrotne ze sobą, co przy tych odległościach przekreśla cały pomysł.',
+        zrodlo: Z.wikiRaptor,
+      },
+    ],
+    os: [
+      { data: '2016-09-25', tytul: 'Pierwsze odpalenie Raptora', opis: 'Metaloks wchodzi do programu SpaceX.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'raptor', powod: 'pracuje na metaloksie' },
+      { id: 'merlin', powod: 'pracuje na keroloksie' },
+      { id: 'reuzywalnosc', powod: 'czystsze spalanie skraca przygotowanie do kolejnego lotu' },
+      { id: 'impuls-wlasciwy', powod: 'wybór paliwa wpływa na tę wartość bezpośrednio' },
+    ],
+    zrodla: [Z.wikiRaptor, Z.wikiMerlin],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'dlawienie',
+    typ: 'pojecie',
+    nazwa: 'Dławienie ciągu',
+    aka: ['throttling', 'regulacja ciągu'],
+    krotki: 'Zdolność silnika do pracy poniżej pełnej mocy — bez niej lądowanie rakiety byłoby niemożliwe.',
+    tresc: [
+      'Większość silników rakietowych albo pracuje, albo nie. Dławienie oznacza możliwość płynnego zejścia poniżej pełnego ciągu — i jest warunkiem, bez którego [[reuzywalnosc|odzysk członu]] nie miałby jak działać.',
+      'Powód jest arytmetyczny. Pusty człon [[falcon-9|Falcona 9]] waży kilkadziesiąt razy mniej niż zatankowany, a pojedynczy [[merlin|Merlin]] daje 845 kN ciągu. Na pełnej mocy jeden silnik nie wyhamowałby lądującego członu, tylko go przyspieszył w górę. Stąd [[hamowania|hamowanie lądowania]] wykonuje się na jednym silniku, mocno zdławionym.',
+      'Ta sama zdolność pozwala przechodzić przez obszar największych obciążeń aerodynamicznych w drodze w górę — rakieta przyciąga ciąg, żeby nie przekroczyć wytrzymałości konstrukcji, a potem znów go dodaje.',
+      '[[raptor|Raptor]] dziedziczy tę cechę i rozszerza: [[super-heavy|Super Heavy]] steruje powrotem, odpalając część z trzydziestu trzech silników, a nie wszystkie naraz.',
+    ],
+    fakty: [
+      { etykieta: 'Czym jest', wartosc: 'praca silnika poniżej pełnego ciągu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Po co', wartosc: 'lądowanie członu i przejście przez maksymalne obciążenia aerodynamiczne', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ciąg jednego Merlina', wartosc: '845 kN przy ziemi', pewnosc: 'potwierdzone' },
+      { etykieta: 'Hamowanie lądowania', wartosc: '1 silnik, mocno zdławiony', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Lądujący człon Falcona 9 jest tak lekki, że pojedynczy silnik na pełnej mocy nie wyhamowałby go, tylko podniósł z powrotem w górę. Cała sztuka lądowania polega na tym, żeby silnik pracował znacznie poniżej swoich możliwości.',
+        zrodlo: Z.wikiLadowania,
+      },
+    ],
+    os: [
+      { data: '2015-12-21', tytul: 'Pierwsze lądowanie', opis: 'Zdławiony silnik sprowadza człon do zera na betonie.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'hamowania', powod: 'hamowanie lądowania wymaga mocno zdławionego silnika' },
+      { id: 'merlin', powod: 'jego zdolność do dławienia umożliwia odzysk członu' },
+      { id: 'reuzywalnosc', powod: 'warunek techniczny całej idei' },
+      { id: 'super-heavy', powod: 'steruje powrotem, odpalając część silników zamiast wszystkich' },
+    ],
+    zrodla: [Z.wikiLadowania, Z.wikiMerlin],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'chlodzenie-regeneracyjne',
+    typ: 'pojecie',
+    nazwa: 'Chłodzenie regeneracyjne',
+    aka: ['regenerative cooling'],
+    krotki: 'Paliwo płynie kanałami w ściance komory, zanim trafi do spalania — chłodzi silnik i samo się przy tym podgrzewa.',
+    tresc: [
+      'Komora spalania silnika rakietowego pracuje w temperaturach, które stopiłyby każdy metal, z jakiego dałoby się ją zbudować. Chłodzenie regeneracyjne rozwiązuje to, przepuszczając paliwo kanałami w ściance, zanim trafi ono do wtrysku. Ścianka oddaje ciepło, paliwo je zabiera i wchodzi do komory już podgrzane — nic nie jest tracone.',
+      'Alternatywą jest chłodzenie ablacyjne: wykładzina, która spala się kontrolowanie i ubywa z każdą sekundą pracy. Tak działał [[merlin|Merlin 1A]] z dyszą z kompozytu węglowego. Silnik jednorazowy może tak pracować; silnik do wielokrotnego użytku nie.',
+      'Przejście na chłodzenie regeneracyjne w wersji 1C miało nieoczekiwany skutek uboczny. Po wyłączeniu silnik jeszcze przez moment dopala paliwo pozostałe w kanałach, a ten resztkowy ciąg przy [[falcon-1-lot-3|trzecim locie Falcona 1]] popchnął pierwszy stopień na drugi po rozdzieleniu. Poprawa konstrukcji stworzyła awarię, której wcześniejsza wersja mieć nie mogła.',
+      'W [[raptor|Raptorze 3]] rozwiązanie poszło dalej: kanały chłodzące schowano w samym korpusie, dzięki czemu silnik pozbył się większości zewnętrznego oprzyrządowania.',
+    ],
+    fakty: [
+      { etykieta: 'Zasada', wartosc: 'paliwo chłodzi ściankę komory przed wtryskiem', pewnosc: 'potwierdzone' },
+      { etykieta: 'Alternatywa', wartosc: 'chłodzenie ablacyjne — wykładzina ubywa z każdą sekundą', pewnosc: 'potwierdzone' },
+      { etykieta: 'Merlin 1A', wartosc: 'dysza ablacyjna z kompozytu węglowego', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skutek uboczny', wartosc: 'resztkowy ciąg po wyłączeniu — przyczyna awarii przy locie 3 Falcona 1', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Rozwiązanie, które umożliwiło wielokrotne użycie silnika, zniszczyło trzecią rakietę firmy. Po wyłączeniu Merlin 1C jeszcze chwilę dopalał paliwo w kanałach chłodzących, a ten resztkowy ciąg dogonił drugi stopień po rozdzieleniu.',
+        zrodlo: Z.wikiFalcon1,
+      },
+    ],
+    os: [
+      { data: '2008-08-03', tytul: 'Awaria przy locie 3', opis: 'Resztkowy ciąg chłodzonego regeneracyjnie silnika powoduje zderzenie stopni.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'merlin', powod: 'przeszedł z chłodzenia ablacyjnego na regeneracyjne w wersji 1C' },
+      { id: 'falcon-1-lot-3', powod: 'awaria wywołana skutkiem ubocznym tego rozwiązania' },
+      { id: 'raptor', powod: 'w wersji 3 kanały schowano w samym korpusie silnika' },
+      { id: 'reuzywalnosc', powod: 'warunek, bez którego silnik nie przetrwa wielu odpaleń' },
+    ],
+    zrodla: [Z.wikiFalcon1, Z.wikiMerlin],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'gimbal',
+    typ: 'pojecie',
+    nazwa: 'Sterowanie wektorem ciągu',
+    aka: ['gimbal', 'zawieszenie kardanowe'],
+    krotki: 'Rakieta skręca, przechylając silniki — nie ma sterów, ma zawieszone na przegubach dysze.',
+    tresc: [
+      'W atmosferze samolot skręca powierzchniami sterowymi opartymi o powietrze. W próżni nie ma o co się oprzeć, a przy starcie powietrze jest zbyt rzadkie i zbyt szybkie, żeby dało się na nim polegać. Rakieta skręca więc inaczej: przechylając silniki na przegubach kardanowych i kierując strumień spalin lekko w bok.',
+      'W [[super-heavy|Super Heavy]] takie zawieszenie ma trzynaście środkowych z trzydziestu trzech [[raptor|Raptorów]]. Pozostałe dwadzieścia stoi nieruchomo i tylko pcha.',
+      'Dokładność tego układu rozstrzyga o [[hamowania|lądowaniu członu]]: rakieta schodząca ogonem w dół jest z natury niestabilna i utrzymuje pion wyłącznie ciągłą korektą kąta silnika. Uzupełniają go [[siatki-aerodynamiczne|siatki aerodynamiczne]], które działają tam, gdzie powietrze już coś daje.',
+      'To rozwiązanie ma też cenę: każdy przechylony silnik traci część ciągu na składową boczną, która nie pcha rakiety w górę. Dlatego przechyla się tylko tyle silników, ile trzeba.',
+    ],
+    fakty: [
+      { etykieta: 'Zasada', wartosc: 'skręcanie przez przechylanie silników na przegubach', pewnosc: 'potwierdzone' },
+      { etykieta: 'Super Heavy', wartosc: '13 z 33 silników na zawieszeniu kardanowym', pewnosc: 'potwierdzone' },
+      { etykieta: 'Po co', wartosc: 'sterowanie w próżni i utrzymanie pionu przy lądowaniu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt', wartosc: 'przechylony silnik traci część ciągu na składową boczną', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Z trzydziestu trzech silników Super Heavy tylko trzynaście środkowych da się przechylać. Dwadzieścia zewnętrznych stoi nieruchomo — sterowanie największą rakietą w historii opiera się na mniej niż połowie jej silników.',
+        zrodlo: Z.wikiStarship,
+      },
+    ],
+    os: [
+      { data: '2015-12-21', tytul: 'Lądowanie na sterowaniu wektorem ciągu', opis: 'Człon utrzymuje pion do samego przyziemienia.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'super-heavy', powod: 'trzynaście jego silników ma zawieszenie kardanowe' },
+      { id: 'siatki-aerodynamiczne', powod: 'uzupełniają sterowanie tam, gdzie powietrze już działa' },
+      { id: 'hamowania', powod: 'utrzymanie pionu przy lądowaniu zależy wprost od tego układu' },
+      { id: 'raptor', powod: 'to jego dysze są przechylane' },
+    ],
+    zrodla: [Z.wikiStarship, Z.wikiLadowania],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'oslona-termiczna',
+    typ: 'technologia',
+    nazwa: 'Osłona termiczna',
+    aka: ['heat shield', 'płytki ceramiczne'],
+    krotki: 'Warstwa, która ma przetrwać wejście w atmosferę — i element rozstrzygający, czy Starship poleci ponownie za dni czy za miesiące.',
+    tresc: [
+      'Pojazd wracający z orbity musi przetrwać [[wejscie-atmosferyczne|wejście w atmosferę]], w którym sprężane przed nim powietrze rozgrzewa się do tysięcy stopni. [[falcon-9|Falcon 9]] nie ma osłony i radzi sobie [[hamowania|strumieniem spalin]], ale wraca z prędkości znacznie niższej niż orbitalna.',
+      '[[starship|Starship]] takiej możliwości nie ma — wraca z pełnej prędkości orbitalnej, więc potrzebuje osłony na całej dolnej powierzchni. Stanowią ją płytki ceramiczne, a pod nimi kadłub ze [[starship|stali nierdzewnej]], która wytrzymuje znacznie wyższe temperatury niż kompozyt czy aluminium.',
+      'To ten element, a nie silniki, rozstrzyga o szybkim relocie. Przy [[starship-lot-4|locie 4]] statek doleciał z nadpaloną klapą sterową, przy [[starship-lot-6|locie 6]] program celowo zmniejszył ochronę na części powierzchni, żeby sprawdzić granicę.',
+      'Dopiero [[starship-lot-13|lot 13]] w lipcu 2026 dał pierwsze zdjęcia kompletnej osłony po locie — statek wodował nienaruszony i dało się ją obejrzeć w całości. Do tego momentu program oceniał stan osłony wyłącznie z obrazu w trakcie lotu.',
+    ],
+    fakty: [
+      { etykieta: 'Zadanie', wartosc: 'przetrwanie wejścia w atmosferę z prędkości orbitalnej', pewnosc: 'potwierdzone' },
+      { etykieta: 'Budowa w Starshipie', wartosc: 'płytki ceramiczne na kadłubie ze stali nierdzewnej', pewnosc: 'potwierdzone' },
+      { etykieta: 'Falcon 9', wartosc: 'nie ma osłony — chroni go hamowanie silnikami', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwsze oględziny po locie', wartosc: 'lot 13, 24 lipca 2026', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Przez trzynaście lotów testowych program nie widział ani razu całej osłony termicznej po powrocie — statki albo ginęły, albo tonęły. Pierwsze takie zdjęcia przyniósł dopiero lot 13, i to one, a nie wypuszczone satelity, były jego najcenniejszym wynikiem.',
+        zrodlo: Z.cnbcLot13,
+      },
+    ],
+    os: [
+      { data: '2024-06-06', tytul: 'Nadpalona klapa przy locie 4', opis: 'Statek dolatuje z widocznym uszkodzeniem powierzchni sterowej.', waga: 2 },
+      { data: '2026-07-24', tytul: 'Pierwsze oględziny po locie', opis: 'Nienaruszony statek daje pierwsze zdjęcia kompletnej osłony.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'wejscie-atmosferyczne', powod: 'faza, dla której istnieje' },
+      { id: 'starship', powod: 'element rozstrzygający o jego szybkim relocie' },
+      { id: 'starship-lot-13', powod: 'pierwszy lot, po którym dało się ją obejrzeć w całości' },
+      { id: 'starship-lot-4', powod: 'lot, przy którym nadpaliła się klapa sterowa' },
+      { id: 'reuzywalnosc', powod: 'jej stan decyduje, czy pojazd leci znowu za dni czy za miesiące' },
+    ],
+    status: 'w rozwoju',
+    zrodla: [Z.cnbcLot13, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'tankowanie-orbitalne',
+    typ: 'pojecie',
+    nazwa: 'Tankowanie orbitalne',
+    aka: ['orbital refuelling', 'przekazywanie paliwa na orbicie'],
+    krotki: 'Przelewanie paliwa między statkami na orbicie — niezademonstrowane w skali, której wymaga lądowanie na Księżycu.',
+    tresc: [
+      'Rakieta, która wynosi sama siebie na orbitę, zużywa na to prawie całe paliwo. Żeby polecieć dalej — na Księżyc albo na Marsa — musi zatankować już po wyjściu na orbitę. To jest cała idea tankowania orbitalnego.',
+      'Problem nie leży w pomyśle, tylko w fizyce cieczy w stanie nieważkości. Paliwo nie opada na dno zbiornika, tylko unosi się w nim swobodnie, więc trzeba je najpierw czymś dociskać do wylotu. Do tego dochodzą straty przez odparowanie i szczelność połączenia przy temperaturach kriogenicznych.',
+      'Dla [[hls-artemis|lądownika Artemis]] NASA szacuje, że jedna misja lądowania wymaga około ośmiu do dziesięciu startów [[starship|Starshipa]] — tankowców napełniających zbiornikowiec, z którego dopiero zatankuje lądownik. Biuro Inspektora Generalnego NASA wskazuje to jako główne ryzyko całego programu.',
+      'Przekazywanie paliwa w tej skali nie zostało jeszcze zademonstrowane. To jedna z niewielu rzeczy w tym programie, których nie da się obejść pracowitością — albo zadziała, albo harmonogram [[hls-artemis|powrotu na Księżyc]] przesunie się kolejny raz.',
+    ],
+    fakty: [
+      { etykieta: 'Po co', wartosc: 'lot poza orbitę okołoziemską wymaga zatankowania po starcie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Główna trudność', wartosc: 'ciecz w nieważkości nie opada na dno zbiornika', pewnosc: 'potwierdzone' },
+      { etykieta: 'Starty na jedno lądowanie', wartosc: 'ok. 8–10 lotów Starshipa', stanNa: '2026-03', pewnosc: 'szacunkowe' },
+      { etykieta: 'Stan', wartosc: 'niezademonstrowane w wymaganej skali', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Żeby postawić ludzi na Księżycu, Starship musi wcześniej wystartować osiem do dziesięciu razy — wyłącznie po to, żeby przelać paliwo do innego Starshipa czekającego na orbicie. Lądowanie to ostatni lot z serii, nie pierwszy.',
+        zrodlo: Z.oigHls,
+      },
+    ],
+    os: [
+      { data: '2026-03', tytul: 'Raport Inspektora Generalnego', opis: 'NASA OIG wskazuje tankowanie orbitalne jako główne ryzyko programu Artemis.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'hls-artemis', powod: 'bez tego cały program lądowania nie działa' },
+      { id: 'starship', powod: 'to on ma pełnić rolę tankowca' },
+      { id: 'delta-v', powod: 'tankowanie na orbicie omija ograniczenie równania rakietowego' },
+      { id: 'autogeniczne-cisnienie', powod: 'ten sam problem utrzymania ciśnienia w zbiorniku, w trudniejszych warunkach' },
+    ],
+    zrodla: [Z.oigHls, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'dokowanie-i-cumowanie',
+    typ: 'pojecie',
+    nazwa: 'Dokowanie i cumowanie',
+    aka: ['docking', 'berthing'],
+    krotki: 'Dwa sposoby przyłączenia statku do stacji: jeden robi statek sam, przy drugim sięga po niego ramię.',
+    tresc: [
+      'Dokowanie to samodzielne wejście statku w złącze stacji — pojazd zbliża się, wyrównuje i łączy własnym napędem. Cumowanie wygląda inaczej: statek zawisa nieruchomo w pobliżu, a ramię stacji sięga po niego, chwyta i dostawia do portu.',
+      '[[dragon-1|Dragon 1]] był cumowany. Podczas [[cots-demo-2|lotu demonstracyjnego]] w maju 2012 roku chwyciło go ramię Canadarm2 i przyłączyło do portu — dlatego określenie „zadokował" jest przy tym locie nieścisłe, choć powszechne.',
+      '[[crew-dragon|Dragon 2]] dokuje samodzielnie, ze złączem zgodnym ze standardem IDSS i z możliwością przejęcia sterowania przez załogę. To samo dotyczy jego wersji towarowej, [[cargo-dragon-2|Cargo Dragona]].',
+      'Różnica nie jest kosmetyczna. Cumowanie wymaga obecności załogi na stacji i operatora ramienia, dokowanie nie. Przy statku, który ma dowozić ludzi, samodzielne dokowanie jest warunkiem, a nie udogodnieniem — także dlatego, że kapsuła musi umieć odlecieć sama w razie ewakuacji.',
+    ],
+    fakty: [
+      { etykieta: 'Dokowanie', wartosc: 'statek łączy się ze stacją własnym napędem', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cumowanie', wartosc: 'ramię stacji chwyta statek i dostawia go do portu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dragon 1', wartosc: 'cumowany ramieniem Canadarm2', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dragon 2', wartosc: 'dokuje samodzielnie, złącze zgodne z IDSS', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Zdanie „Dragon zadokował do stacji" jest przy locie z 2012 roku nieścisłe, choć powtarza je większość relacji. Statek zawisł nieruchomo, a ramię stacji po niego sięgnęło — samodzielne dokowanie przyszło dopiero z następną generacją, osiem lat później.',
+        zrodlo: Z.wikiDragon1,
+      },
+    ],
+    os: [
+      { data: '2012-05-25', tytul: 'Pierwsze cumowanie', opis: 'Ramię stacji przyłącza Dragona 1 do portu cumowniczego.', waga: 3 },
+      { data: '2020-05-30', tytul: 'Pierwsze dokowanie z załogą', opis: 'Crew Dragon łączy się ze stacją samodzielnie.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'dragon-1', powod: 'był cumowany, nie dokował' },
+      { id: 'crew-dragon', powod: 'dokuje samodzielnie, z możliwością przejęcia sterowania' },
+      { id: 'cots-demo-2', powod: 'lot, przy którym odbyło się pierwsze cumowanie' },
+      { id: 'cargo-dragon-2', powod: 'wersja towarowa, która również dokuje samodzielnie' },
+    ],
+    zrodla: [Z.wikiDragon1, Z.wikiDragon2],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'okno-startowe',
+    typ: 'pojecie',
+    nazwa: 'Okno startowe',
+    aka: ['launch window', 'hold'],
+    krotki: 'Przedział czasu, w którym start ma sens — poza nim rakieta nie doleci tam, gdzie miała.',
+    tresc: [
+      'Rakieta nie startuje wtedy, kiedy jest gotowa, tylko wtedy, kiedy pozwala na to geometria. Żeby dogonić stację kosmiczną, trzeba wystartować w momencie, gdy jej płaszczyzna orbity przechodzi nad stanowiskiem — inaczej zmiana płaszczyzny pochłonęłaby [[delta-v|delta-v]], której rakieta nie ma.',
+      'Okno bywa krótkie. Przy lotach na stację mierzy się je czasem w sekundach — to tak zwane okno chwilowe, w którym opóźnienie o minutę oznacza przełożenie startu o dobę.',
+      'W trakcie odliczania zespół może je wstrzymać, żeby rozwiązać problem — to wstrzymanie mieści się jeszcze w oknie. Jeśli czas się skończy, start zostaje [[scrub-i-nominal|odwołany]] i próbuje się następnego dnia.',
+      'Przy [[polaris-dawn|lotach na nietypowe orbity]] i przy [[fram2|orbitach biegunowych]] warunki są jeszcze ciaśniejsze, bo dochodzą ograniczenia pogodowe w strefie wodowania — [[ax-1|misja Ax-1]] spędziła przez nie na stacji sześć dni więcej, niż planowano.',
+    ],
+    fakty: [
+      { etykieta: 'Czym jest', wartosc: 'przedział czasu, w którym start osiąga cel', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przyczyna', wartosc: 'geometria orbity celu względem stanowiska', pewnosc: 'potwierdzone' },
+      { etykieta: 'Okno chwilowe', wartosc: 'liczone w sekundach — spóźnienie oznacza dobę zwłoki', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wstrzymanie odliczania', wartosc: 'mieści się w oknie; odwołanie kończy próbę na dany dzień', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Przy locie na stację kosmiczną okno startowe bywa liczone w sekundach. Rakieta warta dziesiątki milionów dolarów, gotowa do lotu i zatankowana, zostaje na ziemi przez kolejną dobę, jeśli spóźni się o minutę.',
+        zrodlo: Z.nasaScrub,
+      },
+    ],
+    os: [
+      { data: '2022-04-25', tytul: 'Wydłużony pobyt Ax-1', opis: 'Pogoda w strefie wodowania przedłuża misję o sześć dni.', waga: 1 },
+    ],
+    powiazane: [
+      { id: 'scrub-i-nominal', powod: 'wyczerpanie okna kończy się odwołaniem startu' },
+      { id: 'delta-v', powod: 'okno wynika wprost z kosztu zmiany płaszczyzny orbity' },
+      { id: 'ax-1', powod: 'pogoda w strefie wodowania przedłużyła jej pobyt o sześć dni' },
+      { id: 'kadencja-startow', powod: 'wąskie okna ograniczają tempo, jakie da się utrzymać' },
+    ],
+    zrodla: [Z.nasaScrub, Z.wikiAx1],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'nogi-ladownicze',
+    typ: 'technologia',
+    nazwa: 'Nogi lądownicze',
+    aka: ['landing legs', 'podwozie rakiety'],
+    krotki: 'Cztery nogi rozkładane przed przyziemieniem — i masa, którą Starship postanowił zostawić na ziemi.',
+    tresc: [
+      'Człon [[falcon-9|Falcona 9]] rozkłada przed przyziemieniem cztery nogi, które amortyzują uderzenie i utrzymują rakietę w pionie po wyłączeniu silnika. Bez nich [[hamowania|hamowanie lądowania]] sprowadziłoby człon do zera, a potem przewróciłoby go na bok.',
+      'Nogi jadą jednak w kosmos i wracają, nie robiąc po drodze nic. Ich masa odejmuje się wprost od ładunku: przy locie z odzyskiem [[falcon-9|Falcon 9]] wynosi 17 500 kg zamiast 22 800, a nogi są jedną ze składowych tej różnicy.',
+      'Dlatego [[super-heavy|Super Heavy]] nóg nie ma wcale. Zamiast wozić podwozie tam i z powrotem, zostawia się je na ziemi w postaci [[stage-zero|dwóch ramion wieży]], które chwytają wracający człon za czopy pod [[siatki-aerodynamiczne|siatkami aerodynamicznymi]].',
+      'To jest ta sama zasada, która przewija się przez cały ten program: usuwać część, a nie ją ulepszać. Tak samo zniknęły [[autogeniczne-cisnienie|butle z helem]] i tak samo [[tesla-vision|Tesla usunęła radar]] z samochodów.',
+    ],
+    fakty: [
+      { etykieta: 'Falcon 9', wartosc: 'cztery nogi rozkładane przed przyziemieniem', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt masowy', wartosc: '17 500 kg ładunku z odzyskiem wobec 22 800 kg bez', pewnosc: 'potwierdzone' },
+      { etykieta: 'Super Heavy', wartosc: 'brak nóg — chwytają go ramiona wieży', pewnosc: 'potwierdzone' },
+      { etykieta: 'Punkt chwytu', wartosc: 'czopy umieszczone pod siatkami aerodynamicznymi', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Podwozie rakiety leci w kosmos i wraca, nie robiąc po drodze nic poza zabieraniem miejsca na ładunek. Super Heavy rozwiązuje to najprościej, jak się da: nóg nie ma, a ich pracę wykonują dwa ramiona, które przez cały lot stoją na ziemi.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2015-12-21', tytul: 'Pierwsze lądowanie na nogach', opis: 'Człon Falcona 9 staje pionowo na własnym podwoziu.', waga: 3 },
+      { data: '2024-10-13', tytul: 'Pierwsze lądowanie bez nóg', opis: 'Ramiona wieży chwytają Super Heavy, który podwozia nie ma.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'falcon-9', powod: 'jego człon ląduje na czterech nogach' },
+      { id: 'super-heavy', powod: 'zrezygnował z nich na rzecz chwytu przez wieżę' },
+      { id: 'stage-zero', powod: 'ramiona wieży przejmują pracę podwozia' },
+      { id: 'koszt-kilograma', powod: 'masa podwozia odejmuje się wprost od ładunku' },
+      { id: 'reuzywalnosc', powod: 'element, bez którego odzysk na lądzie nie byłby możliwy' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiLadowania, Z.wikiStartyStarship],
+    zaktualizowano: '2026-09-13',
+  },
 ];

@@ -434,4 +434,121 @@ export const rakiety: Encja[] = [
     zrodla: [Z.wikiStarlink, Z.wikiSpaceX],
     zaktualizowano: '2026-09-13',
   },
+
+  {
+    id: 'cargo-dragon-2',
+    typ: 'statek',
+    nazwa: 'Cargo Dragon',
+    aka: ['Cargo Dragon 2', 'Dragon towarowy drugiej generacji'],
+    krotki: 'Crew Dragon bez foteli, bez podtrzymywania życia i bez systemu ratunkowego — za to z samodzielnym dokowaniem.',
+    tresc: [
+      'Cargo Dragon jest wersją [[crew-dragon|Crew Dragona]] pozbawioną wszystkiego, co służy ludziom: foteli, pulpitu, układu podtrzymywania życia i ośmiu silników [[draco-superdraco|SuperDraco]] systemu ratunkowego. Usunięcie tych elementów zwalnia miejsce na ładunek i upraszcza obsługę.',
+      'Pierwszy lot odbył się 6 grudnia 2020 roku w ramach misji CRS-21. Najważniejsza różnica wobec [[dragon-1|Dragona 1]] nie leży jednak w środku, tylko w sposobie przyłączania: ta wersja [[dokowanie-i-cumowanie|dokuje samodzielnie]], ze złączem zgodnym ze standardem IDSS, zamiast czekać, aż chwyci ją ramię stacji.',
+      'Ładowność wynosi 3 307 kg w stronę stacji, 2 507 kg z powrotem na Ziemię i 800 kg ładunku przeznaczonego do zniszczenia przy powrocie.',
+      'Statek lata w ramach kontraktu CRS-2, przyznanego [[spacex|SpaceX]] w styczniu 2016 roku na sześć lotów. Według stanu na sierpień 2025 wykonał dziesięć misji, a jedenasta była w toku.',
+    ],
+    fakty: [
+      { etykieta: 'Pierwszy lot', wartosc: '6 grudnia 2020, misja CRS-21', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czego nie ma', wartosc: 'foteli, pulpitu, podtrzymywania życia, silników SuperDraco', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładowność w stronę stacji', wartosc: '3 307 kg', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładowność powrotna', wartosc: '2 507 kg plus 800 kg do zniszczenia', pewnosc: 'potwierdzone' },
+      { etykieta: 'Sposób przyłączenia', wartosc: 'samodzielne dokowanie, złącze IDSS', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wykonane misje', wartosc: '10, jedenasta w toku', stanNa: '2025-08', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Osiem silników systemu ratunkowego, które w wersji załogowej mają odrzucić kapsułę od rakiety, w wersji towarowej po prostu usunięto. Ładunek nie potrzebuje ewakuacji — i to jest jedyna konstrukcyjna różnica, która naprawdę zmienia rachunek masy.',
+        zrodlo: Z.wikiDragon2,
+      },
+    ],
+    os: [
+      { data: '2016-01', tytul: 'Kontrakt CRS-2', opis: 'SpaceX wygrywa sześć lotów zaopatrzeniowych nowej generacji.', waga: 2 },
+      { data: '2020-12-06', tytul: 'Pierwszy lot', opis: 'Misja CRS-21 otwiera służbę drugiej generacji Dragona towarowego.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'crew-dragon', powod: 'ta sama konstrukcja, pozbawiona wyposażenia dla ludzi' },
+      { id: 'dragon-1', powod: 'jego poprzednik, który był cumowany, nie dokował' },
+      { id: 'dokowanie-i-cumowanie', powod: 'wprowadził samodzielne dokowanie do lotów towarowych' },
+      { id: 'cots', powod: 'lata w ramach kontraktu zaopatrzeniowego z tego programu' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiDragon2, Z.wikiDragon1],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'direct-to-cell',
+    typ: 'technologia',
+    nazwa: 'Direct to Cell',
+    aka: ['satelita zamiast masztu', 'łączność ze zwykłym telefonem'],
+    krotki: 'Zwykły telefon łączy się z satelitą bez żadnej dodatkowej anteny — satelita udaje maszt telefonii komórkowej.',
+    tresc: [
+      'Klasyczna łączność satelitarna wymaga terminala z anteną kierunkową. Direct to Cell odwraca ten układ: satelita [[starlink|Starlinka]] zachowuje się jak maszt sieci komórkowej na orbicie, a telefon nie wie, że rozmawia z czymś, co przelatuje nad nim z prędkością ośmiu kilometrów na sekundę.',
+      'Usługa ruszyła od SMS-ów we współpracy z operatorem T-Mobile w styczniu 2024 roku, z zapowiedzią rozszerzenia na głos i transmisję danych.',
+      'Znaczenie tego rozwiązania jest największe tam, gdzie nie ma i nie będzie infrastruktury naziemnej: na morzu, na pustyniach, w górach i po katastrofach, które niszczą maszty. Nie zastępuje sieci komórkowej, tylko domyka jej dziury.',
+      'Technicznie wymaga to znacznie większych anten na satelicie, bo telefon nadaje słabym sygnałem w każdą stronę. To jeden z powodów, dla których generacja [[starlink|V3]] jest cięższa i potrzebuje [[starship|Starshipa]] zamiast [[falcon-9|Falcona 9]].',
+    ],
+    fakty: [
+      { etykieta: 'Zasada', wartosc: 'satelita pełni rolę masztu sieci komórkowej', pewnosc: 'potwierdzone' },
+      { etykieta: 'Start usługi', wartosc: 'styczeń 2024, SMS-y z operatorem T-Mobile', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wymagania po stronie telefonu', wartosc: 'żadne — zwykły aparat bez dodatkowej anteny', pewnosc: 'potwierdzone' },
+      { etykieta: 'Planowane rozszerzenie', wartosc: 'głos i transmisja danych', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Telefon łączący się przez Direct to Cell nie wie, że rozmawia z satelitą. Z jego punktu widzenia to zwykły maszt — tyle że przelatujący nad głową z prędkością blisko ośmiu kilometrów na sekundę.',
+        zrodlo: Z.wikiStarlink,
+      },
+    ],
+    os: [
+      { data: '2024-01', tytul: 'Pierwsze SMS-y', opis: 'Usługa rusza we współpracy z operatorem T-Mobile.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starlink', powod: 'usługa działa na jego satelitach' },
+      { id: 'konstelacja', powod: 'ciągłość łączności wymaga satelity nad każdym punktem' },
+      { id: 'starship', powod: 'cięższe satelity nowej generacji wymagają jego ładowności' },
+      { id: 'leo', powod: 'tylko z niskiej orbity sygnał zwykłego telefonu w ogóle dociera' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiStarlink, Z.cnbcLot13],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'lacza-laserowe',
+    typ: 'technologia',
+    nazwa: 'Łącza laserowe',
+    aka: ['optyczne łącza międzysatelitarne', 'laser links'],
+    krotki: 'Satelity przekazują dane między sobą wiązką lasera, dzięki czemu sieć działa tam, gdzie nie ma żadnej stacji naziemnej.',
+    tresc: [
+      'Pierwsze satelity [[starlink|Starlinka]] potrafiły tylko jedno: odebrać sygnał od użytkownika i przekazać go do stacji naziemnej w zasięgu. Nad oceanem, Antarktydą albo środkiem Azji takiej stacji nie ma, więc sieć tam nie działała.',
+      'Łącza optyczne rozwiązują to bez budowania czegokolwiek na ziemi. Satelity przekazują dane między sobą wiązką lasera, tworząc siatkę w przestrzeni — sygnał wędruje z satelity na satelitę, aż dotrze nad miejsce, gdzie jest stacja.',
+      'Rozwiązanie weszło wraz z generacją v1.5 i jest też wyposażeniem rządowego wariantu [[starshield|Starshield]]. W próżni wiązka lasera nie napotyka atmosfery, więc niesie więcej danych i z mniejszym opóźnieniem niż połączenie przez ziemię.',
+      'To ono sprawia, że [[konstelacja|konstelacja]] przestaje być zbiorem przekaźników, a staje się siecią. [[fram2|Lot Fram2]] po orbicie biegunowej i praca Starlinka na Antarktydzie są możliwe właśnie dzięki temu.',
+    ],
+    fakty: [
+      { etykieta: 'Zasada', wartosc: 'przekazywanie danych między satelitami wiązką lasera', pewnosc: 'potwierdzone' },
+      { etykieta: 'Od generacji', wartosc: 'v1.5', pewnosc: 'potwierdzone' },
+      { etykieta: 'Co umożliwia', wartosc: 'łączność bez stacji naziemnej w zasięgu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wariant rządowy', wartosc: 'Starshield również korzysta z łączy optycznych', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Bez łączy laserowych satelita musi widzieć jednocześnie użytkownika i stację naziemną. Nad środkiem Pacyfiku żadnej stacji nie ma i nie będzie — dopiero przekazywanie danych z satelity na satelitę sprawiło, że sieć zaczęła działać nad oceanami i nad biegunami.',
+        zrodlo: Z.wikiStarlink,
+      },
+    ],
+    os: [
+      { data: '2021', tytul: 'Generacja v1.5', opis: 'Satelity dostają optyczne łącza międzysatelitarne.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starlink', powod: 'element jego satelitów od generacji v1.5' },
+      { id: 'konstelacja', powod: 'zamieniają zbiór przekaźników w sieć' },
+      { id: 'starshield', powod: 'wariant rządowy korzysta z tego samego rozwiązania' },
+      { id: 'fram2', powod: 'lot po orbicie biegunowej korzystał z łączności poza zasięgiem stacji' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiStarlink, Z.wikiSpaceX],
+    zaktualizowano: '2026-09-13',
+  },
 ];

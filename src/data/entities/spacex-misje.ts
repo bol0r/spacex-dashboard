@@ -1071,6 +1071,197 @@ const lotyStarshipa: Encja[] = [
   },
 ];
 
+/** Pozostałe loty testowe Starshipa — cała seria od 2023 do 2025 roku. */
+const wczesneLotyStarshipa: Encja[] = [
+  {
+    id: 'starship-lot-2',
+    typ: 'misja',
+    nazwa: 'Starship, lot 2',
+    aka: ['Flight 2'],
+    krotki: 'Rozdzielenie stopni po raz pierwszy zadziałało, ale człon eksplodował przy hamowaniu wstecznym, a statek przy powrocie.',
+    tresc: [
+      'Osiemnastego listopada 2023 roku [[starship|Starship]] poleciał po raz drugi, siedem miesięcy po [[starship-lot-1|locie 1]]. Stanowisko, przebudowane po kraterze wyrwanym przy pierwszym starcie, tym razem wytrzymało.',
+      'Rozdzielenie stopni zadziałało — po raz pierwszy w tym programie. [[super-heavy|Super Heavy]] uległ jednak zniszczeniu podczas [[hamowania|hamowania wstecznego]], a górny stopień przepadł przy powrocie w atmosferę.',
+      'Z punktu widzenia programu był to postęp mierzony tym, jak daleko udało się zajść: pierwszy lot skończył się po czterech minutach, drugi doszedł do rozdzielenia stopni i dalej. Kolejne loty przesuwały tę granicę po kolei.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '18 listopada 2023', pewnosc: 'potwierdzone' },
+      { etykieta: 'Postęp wobec lotu 1', wartosc: 'udane rozdzielenie stopni', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik członu', wartosc: 'eksplozja przy hamowaniu wstecznym', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik statku', wartosc: 'utracony przy wejściu w atmosferę', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Między pierwszym a drugim lotem minęło siedem miesięcy, z czego większość poszła na odbudowę stanowiska startowego. Rakieta była gotowa wcześniej niż ziemia, z której miała wystartować.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2023-11-18', tytul: 'Lot 2', opis: 'Pierwsze udane rozdzielenie stopni; oba elementy utracone.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'starship-lot-1', powod: 'poprzedni lot, po którym trzeba było odbudować stanowisko' },
+      { id: 'starship-lot-3', powod: 'następna próba, trzy miesiące później' },
+      { id: 'hamowania', powod: 'człon uległ zniszczeniu podczas hamowania wstecznego' },
+      { id: 'starship', powod: 'jego drugi lot testowy' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-3',
+    typ: 'misja',
+    nazwa: 'Starship, lot 3',
+    aka: ['Flight 3'],
+    krotki: 'Statek doleciał do fazy powrotu i dopiero tam się rozpadł — pierwszy raz program zobaczył wejście w atmosferę z pokładu.',
+    tresc: [
+      'Czternastego marca 2024 roku [[starship|Starship]] poleciał po raz trzeci. [[super-heavy|Człon nośny]] eksplodował nad oceanem, a górny stopień przepadł przy [[wejscie-atmosferyczne|wejściu w atmosferę]].',
+      'To ostatnie było jednak czymś nowym: statek doszedł aż do tej fazy i nadawał obraz, gdy plazma otulała kadłub. Program po raz pierwszy zobaczył, co się dzieje z pojazdem na tym odcinku drogi.',
+      'Trzy loty, trzy utraty obu elementów — a mimo to granica przesuwała się z każdym razem dalej. Odwrócenie przyszło przy [[starship-lot-4|locie 4]], niecałe trzy miesiące później.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '14 marca 2024', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik członu', wartosc: 'eksplozja nad oceanem', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik statku', wartosc: 'utracony przy wejściu w atmosferę', pewnosc: 'potwierdzone' },
+      { etykieta: 'Postęp', wartosc: 'pierwsze dotarcie statku do fazy powrotu', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Statek nadawał obraz aż do rozpadu, także wtedy, gdy plazma otaczała kadłub przy wejściu w atmosferę. Utracony pojazd zdążył przekazać dane z odcinka drogi, którego program wcześniej w ogóle nie widział.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2024-03-14', tytul: 'Lot 3', opis: 'Statek dociera do fazy powrotu i tam ulega zniszczeniu.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'starship-lot-2', powod: 'poprzedni lot, zakończony wcześniej' },
+      { id: 'starship-lot-4', powod: 'następny lot, pierwszy z przetrwanym powrotem' },
+      { id: 'wejscie-atmosferyczne', powod: 'faza, do której dotarł po raz pierwszy' },
+      { id: 'starship', powod: 'jego trzeci lot testowy' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-4',
+    typ: 'misja',
+    nazwa: 'Starship, lot 4',
+    aka: ['Flight 4'],
+    krotki: 'Pierwszy lot, po którym oba elementy dotrwały do wodowania — przełom po trzech kolejnych utratach.',
+    tresc: [
+      'Szóstego czerwca 2024 roku [[starship|Starship]] poleciał po raz czwarty i po raz pierwszy obie części dotrwały do końca lotu. [[super-heavy|Człon nośny]] wykonał kontrolowane wodowanie, a statek przetrwał [[wejscie-atmosferyczne|wejście w atmosferę]].',
+      'Przetrwał w sensie ścisłym, nie estetycznym: osłona termiczna była miejscami uszkodzona, a jedna z klap sterowych nadpalona na tyle, że obraz z kamery pokazywał świecącą krawędź. Statek doleciał mimo to.',
+      'Po trzech lotach zakończonych utratą obu elementów ten był momentem, w którym program przestał sprawdzać, czy pojazd w ogóle doleci, a zaczął sprawdzać, w jakim stanie. Cztery miesiące później przyszło [[starship-lot-5|pierwsze złapanie członu]].',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '6 czerwca 2024', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik członu', wartosc: 'kontrolowane wodowanie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik statku', wartosc: 'przetrwał wejście w atmosferę', pewnosc: 'potwierdzone' },
+      { etykieta: 'Znaczenie', wartosc: 'pierwszy lot, w którym obie części dotrwały do końca', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Statek dotarł do wodowania z nadpaloną klapą sterową — kamera pokazywała świecącą krawędź przez znaczną część powrotu. Pojazd wylądował uszkodzony, ale wylądował, i właśnie to czyniło ten lot przełomem.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2024-06-06', tytul: 'Lot 4', opis: 'Pierwszy lot, po którym obie części dotrwały do wodowania.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship-lot-3', powod: 'poprzedni lot, zakończony utratą obu elementów' },
+      { id: 'starship-lot-5', powod: 'następny lot, z pierwszym złapaniem członu' },
+      { id: 'oslona-termiczna', powod: 'jej uszkodzenia były głównym wnioskiem z tego lotu' },
+      { id: 'starship', powod: 'jego czwarty lot testowy' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-6',
+    typ: 'misja',
+    nazwa: 'Starship, lot 6',
+    aka: ['Flight 6', 'banan w kosmosie'],
+    krotki: 'Chwyt przerwano automatycznie, bo wieża odniosła uszkodzenia przy starcie — a ładunkiem był pluszowy banan.',
+    tresc: [
+      'Dziewiętnastego listopada 2024 roku [[starship|Starship]] poleciał na członie B13 ze statkiem S31. Manewr chwytu przerwano automatycznie, bo [[stage-zero|wieża]] odniosła uszkodzenia w chwili startu; [[super-heavy|człon]] skierowano na wodowanie.',
+      'Decyzję podjął układ automatyczny, bez udziału człowieka, i to jest tu najważniejsze: zabezpieczenie zadziałało w sytuacji, której nikt nie wywoływał celowo.',
+      'Statek przerwał podejście do wieży i wykonał kontrolowane wodowanie. Osłona termiczna przetrwała mimo celowo zmniejszonej ochrony na części powierzchni — program sprawdzał, gdzie leży granica.',
+      'Lot niósł też pierwszy ładunek w historii tego pojazdu. Był nim pluszowy banan, pełniący funkcję wskaźnika nieważkości.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '19 listopada 2024', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B13, statek S31', pewnosc: 'potwierdzone' },
+      { etykieta: 'Chwyt', wartosc: 'przerwany automatycznie po uszkodzeniu wieży przy starcie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek', wartosc: 'pluszowy banan jako wskaźnik nieważkości', pewnosc: 'potwierdzone' },
+      { etykieta: 'Osłona termiczna', wartosc: 'przetrwała mimo celowo zmniejszonej ochrony', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Pierwszym ładunkiem, jaki Starship wyniósł w kosmos, był pluszowy banan. Pełnił funkcję wskaźnika nieważkości — przedmiotu na sznurku, który unosi się w chwili wyłączenia silników i pokazuje na obrazie, że statek jest już w stanie swobodnego spadku.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2024-11-19', tytul: 'Lot 6', opis: 'Automatyka przerywa chwyt po uszkodzeniu wieży; statek wodował kontrolowanie.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'starship-lot-5', powod: 'poprzedni lot, z pierwszym udanym chwytem' },
+      { id: 'starship-lot-7', powod: 'następny lot, z drugim udanym chwytem' },
+      { id: 'stage-zero', powod: 'to jej uszkodzenie przesądziło o przerwaniu manewru' },
+      { id: 'oslona-termiczna', powod: 'lot sprawdzał granicę jej wytrzymałości' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-8',
+    typ: 'misja',
+    nazwa: 'Starship, lot 8',
+    aka: ['Flight 8'],
+    krotki: 'Trzeci udany chwyt członu i druga z rzędu utrata statku — moment, w którym problem programu był już jednoznaczny.',
+    tresc: [
+      'Szóstego marca 2025 roku [[starship|Starship]] poleciał na członie B15 ze statkiem S34. [[super-heavy|Człon]] został złapany przez wieżę — trzeci udany chwyt w programie.',
+      'Statek przepadł po wyłączeniach silników podczas pracy silnikowej, powtarzając scenariusz z [[starship-lot-7|lotu 7]] sprzed niespełna dwóch miesięcy.',
+      'Dwa loty pod rząd z tym samym rezultatem — złapany człon i utracony statek — postawiły sprawę jasno. Dolny stopień był już opanowany, górny nie. Serię zamknął dopiero [[starship-lot-10|lot 10]] w sierpniu, po jeszcze jednej utracie przy [[starship-lot-9|locie 9]].',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '6 marca 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B15, statek S34', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik członu', wartosc: 'złapany przez wieżę — trzeci udany chwyt', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik statku', wartosc: 'utracony po wyłączeniach silników', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Ten sam człon B15, złapany tutaj, wrócił do lotu pół roku później jako B15-2 przy locie 11 — i tym razem to statek doleciał, a człon wodował zgodnie z planem. Ten sam egzemplarz zaliczył więc obie połowy sukcesu, tylko w różnych lotach.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2025-03-06', tytul: 'Lot 8', opis: 'Trzeci udany chwyt członu i druga z rzędu utrata statku.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'starship-lot-7', powod: 'poprzedni lot, z tym samym rezultatem' },
+      { id: 'starship-lot-9', powod: 'następny lot, z pierwszym powtórnym użyciem członu' },
+      { id: 'starship-lot-11', powod: 'ten sam człon B15 poleciał tam po raz drugi' },
+      { id: 'super-heavy', powod: 'jego trzeci udany chwyt przez wieżę' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+];
+
 export const misje: Encja[] = [
   ...falcon1, ...wczesne, ...przelomy, ...starshipMisje, ...lotyStarshipa,
+  ...wczesneLotyStarshipa,
 ];

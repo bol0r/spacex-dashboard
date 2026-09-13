@@ -877,6 +877,47 @@ const reszta: Encja[] = [
   },
 ];
 
+const teksas: Encja[] = [
+  {
+    id: 'gigafactory-teksas',
+    typ: 'miejsce',
+    nazwa: 'Gigafactory Teksas',
+    aka: ['Giga Texas', 'Cyber Rodeo'],
+    krotki: 'Zakład pod Austin, z którego wyjeżdża Cybertruck i w którym mają stanąć linie produkcyjne Optimusa.',
+    tresc: [
+      'Produkcja [[model-y|Modelu Y]] ruszyła tu w kwietniu 2022 roku. Od tego czasu zakład urósł do roli najważniejszego przedsięwzięcia przemysłowego [[tesla|Tesli]] w Stanach i przejął rolę, jaką wcześniej pełnił Fremont.',
+      'To stąd od 30 listopada 2023 roku wyjeżdża [[cybertruck|Cybertruck]] — samochód, którego nadwozie ze stali nierdzewnej wymagało zupełnie innej linii niż tłoczone blachy pozostałych modeli.',
+      'Zakład był też sceną dla dwóch pokazów: Cyber Rodeo w kwietniu 2022, gdzie stanęła makieta [[optimus|Optimusa]], i późniejszych zapowiedzi produkcji robota. Według stanu na kwiecień 2026 instalowane są tu linie z docelową zdolnością dziesięciu milionów sztuk rocznie od 2027 roku — liczba, którą trzeba czytać razem z historią wcześniejszych terminów tego projektu.',
+      'Teksas jest też siedzibą [[starbase|SpaceX]] od 2024 roku. Obie firmy [[elon-musk|Muska]] przeniosły swoje centra ciężkości do tego samego stanu w odstępie dwóch lat.',
+    ],
+    fakty: [
+      { etykieta: 'Start produkcji', wartosc: 'kwiecień 2022, Model Y', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cybertruck', wartosc: 'dostawy od 30 listopada 2023', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cyber Rodeo', wartosc: '7 kwietnia 2022, pierwsza publiczna makieta Optimusa', pewnosc: 'potwierdzone' },
+      { etykieta: 'Linie Optimusa', wartosc: 'instalowane, cel 10 mln sztuk rocznie od 2027', stanNa: '2026-04', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Zapowiadana zdolność produkcyjna linii Optimusa w tym zakładzie to dziesięć milionów sztuk rocznie od 2027 roku. Dla porównania: cała Tesla dostarczyła w 2025 roku 1,66 miliona samochodów.',
+        zrodlo: Z.wikiOptimus,
+      },
+    ],
+    os: [
+      { data: '2022-04', tytul: 'Start produkcji', opis: 'Model Y wyjeżdża z nowego zakładu pod Austin.', waga: 2 },
+      { data: '2023-11-30', tytul: 'Pierwsze Cybertrucki', opis: 'Dostawy ruszają właśnie stąd.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'cybertruck', powod: 'wyjeżdża z tego zakładu' },
+      { id: 'optimus', powod: 'tu mają stanąć jego linie produkcyjne' },
+      { id: 'gigafactory', powod: 'jedna z czterech gigafabryk firmy' },
+      { id: 'model-y', powod: 'pierwszy model produkowany w tym zakładzie' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiTesla, Z.wikiCybertruck, Z.wikiOptimus],
+    zaktualizowano: '2026-09-13',
+  },
+];
+
 export const teslaEncje: Encja[] = [
-  ...firma, ...samochody, ...produkcja, ...oprogramowanie, ...reszta,
+  ...firma, ...samochody, ...produkcja, ...oprogramowanie, ...reszta, ...teksas,
 ];
