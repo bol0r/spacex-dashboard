@@ -918,6 +918,374 @@ const teksas: Encja[] = [
   },
 ];
 
+const partia7: Encja[] = [
+  {
+    id: 'master-plan',
+    typ: 'wydarzenie',
+    nazwa: 'Master Plan',
+    aka: ['Secret Master Plan', 'Part Deux', 'Master Plan 3'],
+    krotki: 'Trzy dokumenty programowe Tesli z 2006, 2016 i 2023 roku — pierwszy wykonany co do punktu, kolejne znacznie mniej.',
+    tresc: [
+      'Plan z 2006 roku był krótki i konkretny: zbudować drogi samochód sportowy, z zysku zrobić tańszy samochód rodzinny, z tego jeszcze tańszy, a po drodze oferować bezemisyjne wytwarzanie energii. [[tesla-roadster|Roadster]], [[model-s|Model S]] i [[model-3|Model 3]] to dokładnie te trzy szczeble. Ostatni punkt — naprawdę tani samochód dla wszystkich — nie doczekał się realizacji do dziś.',
+      'Part Deux z 2016 roku rozszerzył zakres: elektryki we wszystkich segmentach rynku, dach solarny zintegrowany z magazynem energii, jazda autonomiczna dziesięciokrotnie bezpieczniejsza od człowieka i flota [[robotaxi|robotaksówek]], w której właściciel zarabia na stojącym samochodzie. Z tego dowieziono [[tesla-semi|Semi]] i [[powerwall|magazyny energii]]. Pełnej autonomii nie ma, [[solarcity|SolarCity]] wypadło co najwyżej połowicznie, a zapowiadanego autobusu nie zbudowano wcale.',
+      'Master Plan 3 z 2023 roku nie jest już w zasadzie planem dla [[tesla|Tesli]], tylko dokumentem o tym, jak cała światowa gospodarka mogłaby przejść na energię odnawialną: przepływy energii, terawaty mocy, setki terawatogodzin magazynów.',
+      'Porównanie trzech dokumentów mówi więcej niż każdy z osobna. Pierwszy dało się sprawdzić punkt po punkcie i w większości został wykonany. Trzeci opisuje świat, a nie firmę — i sprawdzić go w ten sposób już się nie da.',
+    ],
+    fakty: [
+      { etykieta: 'Plan pierwszy', wartosc: '2006, cztery kroki od Roadstera do taniego auta', pewnosc: 'potwierdzone' },
+      { etykieta: 'Part Deux', wartosc: '2016, pełna gama, dach solarny, autonomia, robotaksówki', pewnosc: 'potwierdzone' },
+      { etykieta: 'Master Plan 3', wartosc: '2023, dokument o gospodarce światowej, nie o firmie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Niedowiezione z planu 1', wartosc: 'naprawdę tani samochód', pewnosc: 'potwierdzone' },
+      { etykieta: 'Niedowiezione z Part Deux', wartosc: 'pełna autonomia, autobus, dach solarny w skali', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Ostatni punkt planu z 2006 roku — samochód naprawdę tani, tańszy od Modelu 3 — nie został zrealizowany przez dwadzieścia lat. Trzy pierwsze szczeble drabiny powstały dokładnie tak, jak zapisano; czwarty pozostaje zapowiedzią.',
+        zrodlo: Z.cleantechPlany,
+      },
+    ],
+    os: [
+      { data: '2006', tytul: 'Pierwszy Master Plan', opis: 'Cztery kroki od drogiego auta sportowego do taniego samochodu.', waga: 3 },
+      { data: '2016', tytul: 'Part Deux', opis: 'Autonomia, robotaksówki, dach solarny i pełna gama modeli.', waga: 3 },
+      { data: '2023', tytul: 'Master Plan 3', opis: 'Dokument o światowej gospodarce energetycznej.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'jej dokumenty programowe' },
+      { id: 'tesla-roadster', powod: 'pierwszy szczebel planu z 2006 roku' },
+      { id: 'model-3', powod: 'trzeci szczebel tej samej drabiny' },
+      { id: 'robotaxi', powod: 'obietnica z Part Deux, wciąż niedowieziona' },
+      { id: 'solarcity', powod: 'miała domknąć energetyczną część planu' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.cleantechPlany, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'tesla-semi',
+    typ: 'produkt',
+    nazwa: 'Tesla Semi',
+    aka: ['ciągnik siodłowy Tesli'],
+    krotki: 'Elektryczny ciągnik siodłowy zapowiedziany na 2019 rok, który wszedł do produkcji seryjnej w 2026 — siedem lat później.',
+    tresc: [
+      'Semi pokazano 16 listopada 2017 roku. [[elon-musk|Musk]] zapowiedział produkcję na 2019 rok i ceny 150 tysięcy dolarów za wersję o zasięgu 300 mil oraz 180 tysięcy za wersję 500-milową, plus 200 tysięcy za serię założycielską.',
+      'Pierwsze egzemplarze trafiły do PepsiCo 1 grudnia 2022 roku. Produkcja ruszyła w październiku tego roku i zaraz potem utknęła. Seryjna wystartowała dopiero 29 kwietnia 2026, z docelową zdolnością pięćdziesięciu tysięcy sztuk rocznie w zakładzie obok [[gigafactory-nevada|Gigafactory Nevada]].',
+      'Akumulator wersji dalekozasięgowej ma 822 kWh — ponad sześćdziesiąt razy więcej niż domowy [[powerwall|Powerwall]] i osiem razy więcej niż największy akumulator w [[model-s|Modelu S]]. Sam zasięg zapowiadany w 2017 roku, czyli 500 mil, wersja produkcyjna faktycznie osiąga.',
+      'Siedem lat obsuwy to najdłuższe opóźnienie w historii produktów [[tesla|Tesli]] — dłuższe nawet niż przy [[cybertruck|Cybertrucku]], który czekał cztery lata. Zasięg dotrzymano, termin nie.',
+    ],
+    fakty: [
+      { etykieta: 'Premiera', wartosc: '16 listopada 2017', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zapowiadana produkcja', wartosc: '2019', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwsze dostawy', wartosc: '1 grudnia 2022, do PepsiCo', pewnosc: 'potwierdzone' },
+      { etykieta: 'Produkcja seryjna', wartosc: '29 kwietnia 2026', pewnosc: 'potwierdzone' },
+      { etykieta: 'Akumulator', wartosc: '822 kWh (wersja dalekozasięgowa), 548 kWh (standardowa)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Docelowa zdolność', wartosc: '50 000 sztuk rocznie', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Akumulator jednego Semi ma 822 kilowatogodziny — ponad sześćdziesiąt razy więcej niż domowy Powerwall. Jeden ciągnik wozi ze sobą tyle ogniw, ile wystarczyłoby na zasilanie awaryjne sześćdziesięciu domów.',
+        zrodlo: Z.wikiSemi,
+      },
+    ],
+    os: [
+      { data: '2017-11-16', tytul: 'Premiera', opis: 'Musk zapowiada produkcję na 2019 rok.', waga: 2 },
+      { data: '2022-12-01', tytul: 'Pierwsze dostawy', opis: 'Pierwsze egzemplarze trafiają do PepsiCo.', waga: 2 },
+      { data: '2026-04-29', tytul: 'Produkcja seryjna', opis: 'Siedem lat po zapowiadanym terminie.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'jej najdłużej opóźniony produkt' },
+      { id: 'master-plan', powod: 'pojazd użytkowy zapowiadany w Part Deux' },
+      { id: 'gigafactory-nevada', powod: 'obok niej stanie linia produkcyjna' },
+      { id: 'cybertruck', powod: 'drugi produkt firmy z wieloletnią obsuwą' },
+      { id: 'ogniwa-4680', powod: 'rozbudowa produkcji ogniw jest warunkiem tej skali' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiSemi, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'solarcity',
+    typ: 'firma',
+    nazwa: 'SolarCity',
+    aka: ['przejęcie SolarCity', 'bracia Rive'],
+    krotki: 'Firma solarna kuzynów Muska, przejęta przez Teslę za 2,6 miliarda dolarów — i pozwana przez akcjonariuszy o konflikt interesów.',
+    tresc: [
+      'SolarCity powstała 4 lipca 2006 roku, założona przez braci Petera i Lyndona Rive’ów. [[elon-musk|Musk]], ich kuzyn, podsunął pomysł na firmę solarną i został przewodniczącym rady. Model biznesowy wprowadzony w 2008 roku był nowatorski: instalacja bez wkładu własnego, a klient zobowiązywał się kupować od firmy prąd z własnego dachu przez dwadzieścia lat.',
+      'Model chwycił i stał się najpopularniejszą formułą na amerykańskim rynku domowej fotowoltaiki, ale też wygenerował ponad półtora miliarda dolarów zadłużenia do 2016 roku. Pierwszego sierpnia 2016 [[tesla|Tesla]] ogłosiła przejęcie firmy za 2,6 miliarda dolarów w akcjach; transakcję domknięto 21 listopada.',
+      'Krytycy nazwali to próbą ratowania dwóch spółek zależnych od inwestorów i pieniędzy publicznych naraz, a akcjonariusze zaskarżyli transakcję jako konflikt interesów — Musk zasiadał po obu stronach stołu. W kwietniu 2022 roku sąd w Delaware orzekł na jego korzyść, uznając, że rada Tesli rzetelnie zbadała sprawę, a SolarCity była warta co najmniej tyle, ile za nią zapłacono.',
+      'Dalszy los tej gałęzi jest mniej okazały. Zapowiedziany w 2017 roku [[solar-roof|dach solarny]] nie stał się produktem masowym, do 2019 udział Tesli w rynku solarnym malał, a firma zredukowała dział sprzedaży. Energetyczny filar firmy stoi dziś na [[megapack|Megapackach]], nie na dachach.',
+    ],
+    fakty: [
+      { etykieta: 'Założenie', wartosc: '4 lipca 2006, Peter i Lyndon Rive', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rola Muska', wartosc: 'pomysłodawca i przewodniczący rady', pewnosc: 'potwierdzone' },
+      { etykieta: 'Model biznesowy', wartosc: 'instalacja bez wkładu własnego, zakup prądu przez 20 lat', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zadłużenie przed przejęciem', wartosc: 'ponad 1,5 mld USD', stanNa: '2016', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cena przejęcia', wartosc: '2,6 mld USD w akcjach, listopad 2016', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wyrok w sprawie akcjonariuszy', wartosc: 'kwiecień 2022, na korzyść Muska', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Musk siedział przy tej transakcji po obu stronach stołu: był przewodniczącym rady kupowanej firmy i największym udziałowcem kupującej. Akcjonariusze zaskarżyli to jako konflikt interesów, a sąd rozstrzygnął sprawę na jego korzyść dopiero po sześciu latach.',
+        zrodlo: Z.wikiSolarcity,
+      },
+    ],
+    os: [
+      { data: '2006-07-04', tytul: 'Założenie firmy', opis: 'Bracia Rive zakładają SolarCity z pomysłu Muska.', waga: 2 },
+      { data: '2016-11-21', tytul: 'Przejęcie przez Teslę', opis: 'Transakcja za 2,6 mld USD w akcjach zostaje domknięta.', waga: 3 },
+      { data: '2022-04', tytul: 'Wyrok w Delaware', opis: 'Sąd oddala zarzut konfliktu interesów.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'przejęła ją w 2016 roku' },
+      { id: 'elon-musk', powod: 'był po obu stronach tej transakcji' },
+      { id: 'solar-roof', powod: 'produkt, który miał domknąć tę gałąź i tego nie zrobił' },
+      { id: 'master-plan', powod: 'energetyczna część planu z 2006 roku' },
+      { id: 'powerwall', powod: 'przejęła po niej rolę filaru energetycznej gałęzi firmy' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiSolarcity, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'solar-roof',
+    typ: 'produkt',
+    nazwa: 'Solar Roof',
+    aka: ['dach solarny', 'dachówki fotowoltaiczne'],
+    krotki: 'Dachówki wytwarzające prąd, zapowiedziane w 2017 roku jako następca paneli — i do dziś produkt niszowy.',
+    tresc: [
+      'Pomysł jest prosty do opisania: zamiast montować panele na dachu, zrobić dach z elementów, które same wytwarzają prąd. [[elon-musk|Musk]] zapowiedział w 2017 roku, że [[tesla|Tesla]] będzie produkować dachówki fotowoltaiczne w zakładzie w Buffalo.',
+      'Produkt miał domknąć energetyczną część [[master-plan|Part Deux]] — dach solarny zintegrowany z magazynem energii, czyli z [[powerwall|Powerwallem]]. W praktyce nie stał się produktem masowym.',
+      'Do 2019 roku udział [[tesla|Tesli]] w rynku fotowoltaiki malał, firma zredukowała dział sprzedaży, a przychody z energetyki spadły o siedem procent rok do roku. Energetyczna gałąź firmy urosła później, ale na [[megapack|magazynach sieciowych]], nie na dachach.',
+      'To jeden z wyraźniejszych przypadków rozjazdu między zapowiedzią a wynikiem w historii tej firmy — i warto go zestawiać z [[megapack|Megapackiem]], gdzie ta sama dywizja urosła o sto trzynaście procent rok do roku.',
+    ],
+    fakty: [
+      { etykieta: 'Zapowiedź', wartosc: '2017, produkcja w Buffalo', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zamysł', wartosc: 'dachówki wytwarzające prąd zamiast paneli na dachu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stan rynku', wartosc: 'malejący udział Tesli w fotowoltaice', stanNa: '2019', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przychody energetyczne', wartosc: 'spadek o 7% rok do roku', stanNa: '2019', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Dach solarny miał być produktem masowym, a magazyn energii dodatkiem do niego. Wyszło odwrotnie: dachówki pozostały niszą, a magazyny urosły w 2024 roku o sto trzynaście procent rok do roku i są dziś najszybciej rosnącą częścią firmy.',
+        zrodlo: Z.wikiSolarcity,
+      },
+    ],
+    os: [
+      { data: '2017', tytul: 'Zapowiedź produkcji', opis: 'Musk ogłasza wytwarzanie dachówek w zakładzie w Buffalo.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'solarcity', powod: 'produkt, który miał uzasadnić jej przejęcie' },
+      { id: 'powerwall', powod: 'miał z nim tworzyć zintegrowany układ dla domu' },
+      { id: 'megapack', powod: 'to on, a nie dach, wyniósł energetyczną gałąź firmy' },
+      { id: 'master-plan', powod: 'obietnica z Part Deux' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiSolarcity, Z.wikiTeslaEnergy],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'supercharger',
+    typ: 'technologia',
+    nazwa: 'Supercharger',
+    aka: ['sieć ładowarek Tesli'],
+    krotki: 'Blisko osiem tysięcy stacji i ponad siedemdziesiąt pięć tysięcy punktów ładowania — infrastruktura, bez której elektryk zostaje w mieście.',
+    tresc: [
+      'Sieć ruszyła 24 września 2012 roku, od sześciu stacji w Kalifornii. Według stanu na listopad 2025 [[tesla|Tesla]] prowadzi około 7 900 stacji z ponad 75 tysiącami punktów ładowania na świecie.',
+      'Moc rosła wraz z generacjami: wersja druga dawała 120–150 kW, trzecia 250 kW z chłodzonymi cieczą przewodami, a czwarta do 500 kW i obsługę instalacji ośmiusetwoltowych.',
+      'Przez lata sieć była zamknięta dla innych marek i to właśnie ona, a nie sam samochód, była głównym powodem, dla którego ludzie kupowali [[model-3|Teslę]] zamiast konkurencji. Otwieranie zaczęło się od Holandii w 2021 i Norwegii w 2022, a potem objęło kolejne kraje Europy. Amerykańska droga prowadziła przez [[nacs|złącze NACS]].',
+      'W maju 2024 roku [[elon-musk|Musk]] rozwiązał cały zespół Superchargera po tym, jak jego szef zaproponował dużą rozbudowę sieci. Mimo obietnicy pół miliarda dolarów na inwestycje tempo montażu nowych stacji spadło o około siedemdziesiąt siedem procent.',
+    ],
+    fakty: [
+      { etykieta: 'Start sieci', wartosc: '24 września 2012, sześć stacji w Kalifornii', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stacje', wartosc: 'ok. 7 900', stanNa: '2025-11', pewnosc: 'potwierdzone' },
+      { etykieta: 'Punkty ładowania', wartosc: 'ponad 75 000', stanNa: '2025-11', pewnosc: 'potwierdzone' },
+      { etykieta: 'Moc', wartosc: 'V2 120–150 kW, V3 250 kW, V4 do 500 kW', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rozwiązanie zespołu', wartosc: 'maj 2024; tempo montażu spadło o ok. 77%', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'W maju 2024 roku szef zespołu Superchargera zaproponował dużą rozbudowę sieci. Musk rozwiązał w odpowiedzi cały zespół. Tempo montażu nowych stacji spadło potem o około siedemdziesiąt siedem procent — decyzja odbiła się na tej części firmy mocniej niż jakakolwiek zmiana techniczna.',
+        zrodlo: Z.wikiSupercharger,
+      },
+    ],
+    os: [
+      { data: '2012-09-24', tytul: 'Start sieci', opis: 'Sześć pierwszych stacji rusza w Kalifornii.', waga: 3 },
+      { data: '2021', tytul: 'Otwarcie dla innych marek', opis: 'Pierwsze próby w Holandii, rok później w Norwegii.', waga: 2 },
+      { data: '2024-05', tytul: 'Rozwiązanie zespołu', opis: 'Musk zwalnia cały zespół odpowiedzialny za sieć.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'jej największa przewaga infrastrukturalna' },
+      { id: 'nacs', powod: 'złącze, przez które sieć otwarła się w Stanach' },
+      { id: 'model-3', powod: 'sieć była głównym powodem wyboru tego auta nad konkurencją' },
+      { id: 'styl-zarzadzania', powod: 'rozwiązanie zespołu jest podręcznikowym przykładem tego wzorca' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiSupercharger, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'nacs',
+    typ: 'technologia',
+    nazwa: 'Złącze NACS',
+    aka: ['North American Charging Standard', 'wtyczka Tesli'],
+    krotki: 'Firmowa wtyczka Tesli, którą między majem 2023 a lutym 2024 przyjęła cała amerykańska branża motoryzacyjna.',
+    tresc: [
+      'Przez lata [[tesla|Tesla]] używała w Ameryce Północnej własnego złącza, niezgodnego ze standardem CCS stosowanym przez resztę branży. Był to typowy przypadek ogrodzonego ogrodu: własna wtyczka, własna [[supercharger|sieć]], własne auta.',
+      'Firma spróbowała najpierw obejścia technicznego. Na początku 2023 roku wprowadziła na stacjach trzeciej generacji tak zwany Magic Dock — przejściówkę wbudowaną w ładowarkę, pozwalającą podłączyć samochód ze złączem CCS1.',
+      'Rozwiązanie okazało się niepotrzebne, bo między majem 2023 a lutym 2024 kolejni wielcy producenci ogłosili przejście na złącze Tesli, przemianowane wtedy na NACS. Do września 2025 przejściówkę zamontowano na mniej niż stu stacjach trzeciej generacji — dalsza rozbudowa straciła sens.',
+      'To rzadki przypadek, w którym firmowe rozwiązanie jednego producenta stało się standardem całego rynku, bo konkurencja uznała je za lepsze od własnego.',
+    ],
+    fakty: [
+      { etykieta: 'Czym jest', wartosc: 'firmowe złącze Tesli, od 2022 roku jako standard otwarty', pewnosc: 'potwierdzone' },
+      { etykieta: 'Magic Dock', wartosc: 'przejściówka CCS1 wbudowana w stacje V3, od początku 2023', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przyjęcie przez branżę', wartosc: 'między majem 2023 a lutym 2024', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stacje z przejściówką', wartosc: 'mniej niż 100 stacji V3', stanNa: '2025-09', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Tesla zbudowała przejściówkę pozwalającą ładować samochody konkurencji, a potem przestała ją montować — bo konkurencja przeszła na jej wtyczkę. Rozwiązanie problemu zdezaktualizowało się, zanim zdążyło trafić na setną stację.',
+        zrodlo: Z.wikiSupercharger,
+      },
+    ],
+    os: [
+      { data: '2023-01', tytul: 'Magic Dock', opis: 'Tesla wprowadza wbudowaną przejściówkę dla aut ze złączem CCS1.', waga: 2 },
+      { data: '2024-02', tytul: 'Branża przechodzi na NACS', opis: 'Kolejni wielcy producenci kończą ogłoszenia o przyjęciu złącza.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'supercharger', powod: 'złącze, którym jego stacje ładują samochody' },
+      { id: 'tesla', powod: 'jej firmowe rozwiązanie przyjęte przez całą branżę' },
+      { id: 'model-y', powod: 'najliczniejszy samochód korzystający z tego złącza' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiSupercharger, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'gigafactory-shanghai',
+    typ: 'miejsce',
+    nazwa: 'Gigafactory Szanghaj',
+    aka: ['Giga Shanghai'],
+    krotki: 'Zbudowana w dziesięć miesięcy, pierwsza w Chinach fabryka samochodów w całości należąca do zagranicznej firmy.',
+    tresc: [
+      'Budowę rozpoczęto w styczniu 2019 roku i skończono w około dziesięć miesięcy. Produkcja ruszyła w październiku 2019, a pierwsze samochody trafiły do klientów w grudniu tego samego roku.',
+      'Znaczenie polityczne było równie duże jak przemysłowe: rząd chiński po raz pierwszy pozwolił zagranicznemu producentowi samochodów prowadzić zakład w całości na własność, bez spółki z lokalnym partnerem. Wcześniej takiej możliwości nie miał nikt.',
+      'Zakład wytwarza wyłącznie [[model-3|Model 3]] i [[model-y|Model Y]], ma zdolność ponad 750 tysięcy pojazdów rocznie i zatrudniał około dwudziestu tysięcy osób w połowie 2023 roku. Od 2023 jest głównym miejscem produkcji aut [[tesla|Tesli]] eksportowanych do regionów bez własnej gigafabryki.',
+      'W 2021 roku wyjechała stąd mniej więcej połowa wszystkich pojazdów nowej energii wyeksportowanych z Chin. Dla porównania: [[gigafactory-berlin|zakład w Berlinie]], budowany w podobnym czasie, do 2025 roku nie osiągnął nawet celu 250 tysięcy sztuk.',
+    ],
+    fakty: [
+      { etykieta: 'Budowa', wartosc: 'od stycznia 2019, ok. 10 miesięcy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Start produkcji', wartosc: 'październik 2019; pierwsze dostawy w grudniu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Status prawny', wartosc: 'pierwszy w Chinach zakład motoryzacyjny w całości zagraniczny', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zdolność produkcyjna', wartosc: 'ponad 750 000 pojazdów rocznie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zatrudnienie', wartosc: 'ok. 20 000 osób', stanNa: '2023-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Modele', wartosc: 'wyłącznie Model 3 i Model Y', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Fabrykę na ponad siedemset pięćdziesiąt tysięcy samochodów rocznie zbudowano w dziesięć miesięcy. Zakład w Berlinie, rozpoczęty niewiele później, po pięciu latach nadal nie osiągnął jednej trzeciej tej zdolności.',
+        zrodlo: Z.wikiGigaShanghai,
+      },
+    ],
+    os: [
+      { data: '2019-01', tytul: 'Początek budowy', opis: 'Pierwsza zagraniczna fabryka samochodów w pełni własna w Chinach.', waga: 2 },
+      { data: '2019-12', tytul: 'Pierwsze dostawy', opis: 'Samochody trafiają do klientów jedenaście miesięcy po wbiciu łopaty.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'gigafactory', powod: 'jedna z czterech gigafabryk firmy' },
+      { id: 'gigafactory-berlin', powod: 'zakład budowany w podobnym czasie, z zupełnie innym wynikiem' },
+      { id: 'model-y', powod: 'jeden z dwóch modeli produkowanych w tym zakładzie' },
+      { id: 'tesla', powod: 'jej główne miejsce produkcji na eksport' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiGigaShanghai, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'gigafactory-berlin',
+    typ: 'miejsce',
+    nazwa: 'Gigafactory Berlin',
+    aka: ['Giga Berlin', 'Grünheide'],
+    krotki: 'Europejski zakład Tesli pod Berlinem — spór o wodę, podpalenie podstacji i produkcja poniżej połowy celu.',
+    tresc: [
+      '[[elon-musk|Musk]] ogłosił lokalizację w Brandenburgii 12 listopada 2019 roku, podczas gali motoryzacyjnej w Berlinie. Budowa ruszyła na początku 2020, a zakład otwarto oficjalnie 22 marca 2022. Produkcja [[model-y|Modelu Y]] zaczęła się pod koniec kwietnia.',
+      'Od początku towarzyszył temu opór. Sąsiedzi podnosili obawy o zaopatrzenie w wodę, o lokalną przyrodę i o gospodarkę ściekami; w grudniu 2019 powstało porozumienie gmin zajmujące się ruchem, infrastrukturą i zabudową, a miejscowy związek wodociągowy sprzeciwiał się uruchomieniu zakładu.',
+      'W marcu 2024 roku produkcja stanęła po podpaleniu pobliskiej podstacji elektrycznej — do zamachu przyznała się skrajnie lewicowa grupa Vulkangruppe.',
+      'Zakład wytwarza akumulatory, zespoły napędowe i fotele oraz prowadzi odlewanie, tłoczenie, lakierowanie i montaż końcowy. Zatrudniał 11 500 osób w październiku 2023. Docelowa zdolność to pół miliona pojazdów rocznie, ale według stanu na sierpień 2025 nie osiągnięto nawet bieżącego celu 250 tysięcy.',
+    ],
+    fakty: [
+      { etykieta: 'Ogłoszenie lokalizacji', wartosc: '12 listopada 2019', pewnosc: 'potwierdzone' },
+      { etykieta: 'Otwarcie', wartosc: '22 marca 2022', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zatrudnienie', wartosc: '11 500 osób', stanNa: '2023-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zdolność docelowa', wartosc: '500 000 pojazdów rocznie', pewnosc: 'szacunkowe' },
+      { etykieta: 'Realizacja celu', wartosc: 'nieosiągnięty cel 250 000 sztuk rocznie', stanNa: '2025-08', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przerwa w produkcji', wartosc: 'marzec 2024, podpalenie podstacji', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'W marcu 2024 roku produkcję zatrzymało nie wąskie gardło ani awaria, tylko podpalenie podstacji elektrycznej obok zakładu. Do zamachu przyznała się skrajnie lewicowa grupa Vulkangruppe — fabryka samochodów elektrycznych stanęła z powodów politycznych.',
+        zrodlo: Z.wikiGigaBerlin,
+      },
+    ],
+    os: [
+      { data: '2022-03-22', tytul: 'Otwarcie zakładu', opis: 'Pierwsza europejska fabryka Tesli rusza pod Berlinem.', waga: 3 },
+      { data: '2024-03', tytul: 'Podpalenie podstacji', opis: 'Produkcja staje po zamachu na zasilanie zakładu.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'gigafactory', powod: 'jedna z czterech gigafabryk firmy' },
+      { id: 'gigafactory-shanghai', powod: 'zakład budowany w podobnym czasie, znacznie szybciej uruchomiony' },
+      { id: 'model-y', powod: 'jedyny model produkowany w tym zakładzie' },
+      { id: 'tesla', powod: 'jej jedyny zakład produkcyjny w Europie' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiGigaBerlin, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'robotaxi',
+    typ: 'produkt',
+    nazwa: 'Robotaksówka',
+    aka: ['robotaxi', 'We, Robot', 'Cybercab'],
+    krotki: 'Obietnica z 2016 roku: flota samochodów bez kierowcy, w której właściciel zarabia na stojącym aucie. Wciąż niezrealizowana.',
+    tresc: [
+      'Pomysł pojawił się w [[master-plan|Master Planie Part Deux]] z 2016 roku i brzmiał konkretnie: właściciel dodaje swój samochód do wspólnej floty jednym dotknięciem w aplikacji, auto wozi ludzi, gdy on go nie potrzebuje, a on zarabia. Warunkiem była jazda autonomiczna dziesięciokrotnie bezpieczniejsza od człowieka.',
+      'Dziesięć lat później warunek nie jest spełniony. [[fsd|Full Self-Driving]] pozostaje układem poziomu 2 w klasyfikacji SAE, czyli wymagającym stałego nadzoru kierowcy, a [[nadzor-nhtsa|dochodzenia urzędu]] przypisały [[autopilot|Autopilotowi]] udział w co najmniej 467 wypadkach.',
+      'W październiku 2024 roku [[tesla|Tesla]] pokazała koncepcję na imprezie „We, Robot". Ten sam pokaz przyniósł jednak zarzut, który dobrze streszcza problem całego projektu: obecne tam roboty [[optimus|Optimus]] pracowały głównie pod zdalnym sterowaniem, o czym firma nie poinformowała.',
+      'Ta encja jest tu po to, żeby zapisać różnicę między zapowiedzią a stanem faktycznym — nie żeby ją oceniać. Zapowiedź jest udokumentowana, stan faktyczny również.',
+    ],
+    fakty: [
+      { etykieta: 'Pierwsza zapowiedź', wartosc: 'Master Plan Part Deux, 2016', pewnosc: 'potwierdzone' },
+      { etykieta: 'Warunek techniczny', wartosc: 'jazda dziesięciokrotnie bezpieczniejsza od człowieka', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stan FSD', wartosc: 'poziom 2 SAE, wymaga stałego nadzoru', stanNa: '2026', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pokaz koncepcji', wartosc: '„We, Robot", październik 2024', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Obietnica, że samochód będzie zarabiał na właściciela, gdy ten śpi, ma dziesięć lat. Przez ten czas cena pakietu, który miał ją spełnić, wzrosła z trzech do piętnastu tysięcy dolarów, a potem spadła do ośmiu — sama funkcja pozostała na poziomie wymagającym trzymania rąk na kierownicy.',
+        zrodlo: Z.wikiAutopilot,
+      },
+    ],
+    os: [
+      { data: '2016', tytul: 'Zapowiedź w Part Deux', opis: 'Flota robotaksówek trafia do dokumentu programowego firmy.', waga: 3 },
+      { data: '2024-10', tytul: 'Pokaz „We, Robot"', opis: 'Prezentacja koncepcji i zarzut o przemilczaną telemanipulację robotów.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'master-plan', powod: 'obietnica zapisana w Part Deux' },
+      { id: 'fsd', powod: 'układ, który musiałby ją spełnić' },
+      { id: 'nadzor-nhtsa', powod: 'dochodzenia dotyczące bezpieczeństwa tego układu' },
+      { id: 'optimus', powod: 'pokazany na tej samej imprezie, z tym samym zarzutem o przemilczenie' },
+    ],
+    status: 'w rozwoju',
+    zrodla: [Z.wikiAutopilot, Z.cleantechPlany],
+    zaktualizowano: '2026-09-13',
+  },
+];
+
 export const teslaEncje: Encja[] = [
-  ...firma, ...samochody, ...produkcja, ...oprogramowanie, ...reszta, ...teksas,
+  ...firma, ...samochody, ...produkcja, ...oprogramowanie, ...reszta, ...teksas, ...partia7,
 ];

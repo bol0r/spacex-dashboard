@@ -328,4 +328,42 @@ export const miejsca: Encja[] = [
     zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
     zaktualizowano: '2026-09-13',
   },
+
+  {
+    id: 'vandenberg',
+    typ: 'miejsce',
+    nazwa: 'Vandenberg',
+    aka: ['SLC-4E', 'baza na zachodnim wybrzeżu'],
+    krotki: 'Baza w Kalifornii, z której startuje się na orbity biegunowe — bo rakieta leci stamtąd nad ocean, a nie nad ludzi.',
+    tresc: [
+      'Ze wschodniego wybrzeża wygodnie startuje się na wschód, wzdłuż równika. Na [[sso|orbity heliosynchroniczne]] i [[orbita-biegunowa|biegunowe]] trzeba lecieć niemal na północ albo na południe, a z Florydy taka trasa przechodziłaby nad zamieszkanym lądem. Z kalifornijskiego wybrzeża prowadzi nad otwarty Pacyfik.',
+      'Dlatego [[spacex|SpaceX]] prowadzi z Vandenberg te loty, których nie da się wykonać z Przylądka: misje [[transporter|Transporter]] z kilkudziesięcioma [[smallsat|małymi satelitami]] naraz i część startów [[starlink|Starlinka]] na orbity o dużym nachyleniu.',
+      'Człony wracające z takich lotów lądują na miejscu albo na [[barki-dronowe|barce]] ustawionej na Pacyfiku — ta sama zasada co na wschodnim wybrzeżu, tylko po drugiej stronie kontynentu.',
+      'Baza jest przy tym obiektem wojskowym, a nie cywilnym kosmodromem. To odróżnia ją od [[lc-39a|LC-39A]], które jest częścią cywilnego ośrodka NASA, i wiąże z ograniczeniami, o których mówi [[itar|ITAR]].',
+    ],
+    fakty: [
+      { etykieta: 'Lokalizacja', wartosc: 'wybrzeże Kalifornii', pewnosc: 'potwierdzone' },
+      { etykieta: 'Do czego służy', wartosc: 'starty na orbity biegunowe i heliosynchroniczne', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powód', wartosc: 'trasa lotu przechodzi nad oceanem, nie nad lądem', pewnosc: 'potwierdzone' },
+      { etykieta: 'Charakter obiektu', wartosc: 'baza wojskowa, nie cywilny kosmodrom', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Wybór wybrzeża nie ma nic wspólnego z pogodą ani z logistyką, tylko z tym, nad czym rakieta przelatuje po starcie. Na orbitę biegunową trzeba lecieć na północ lub południe — z Florydy taka trasa biegłaby nad miastami, z Kalifornii nad pustym Pacyfikiem.',
+        zrodlo: Z.wikiTransporter,
+      },
+    ],
+    os: [
+      { data: '2025-01', tytul: 'Transporter-12', opis: 'Stąd startuje lot wynoszący 131 ładunków na orbitę heliosynchroniczną.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'transporter', powod: 'wszystkie loty tego programu startują stąd' },
+      { id: 'sso', powod: 'orbita, na którą stąd się lata' },
+      { id: 'orbita-biegunowa', powod: 'ten sam powód geograficzny stoi za oboma rodzajami lotów' },
+      { id: 'lc-39a', powod: 'stanowisko na wschodnim wybrzeżu, o zupełnie innym przeznaczeniu' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-13',
+  },
 ];

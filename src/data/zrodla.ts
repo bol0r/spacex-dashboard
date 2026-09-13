@@ -437,4 +437,54 @@ export const Z = {
     url: 'https://www.detroitnews.com/story/business/2017/03/20/boeing-plane/99421748/',
     wydawca: 'The Detroit News', dostep: D2,
   },
+  wikiSemi: {
+    tytul: 'Tesla Semi',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Semi',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiSolarcity: {
+    tytul: 'SolarCity',
+    url: 'https://en.wikipedia.org/wiki/SolarCity',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiSupercharger: {
+    tytul: 'Tesla Supercharger',
+    url: 'https://en.wikipedia.org/wiki/Tesla_Supercharger',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiGigaShanghai: {
+    tytul: 'Gigafactory Shanghai',
+    url: 'https://en.wikipedia.org/wiki/Gigafactory_Shanghai',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiGigaBerlin: {
+    tytul: 'Gigafactory Berlin-Brandenburg',
+    url: 'https://en.wikipedia.org/wiki/Gigafactory_Berlin-Brandenburg',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiCrew1: {
+    tytul: 'SpaceX Crew-1',
+    url: 'https://en.wikipedia.org/wiki/SpaceX_Crew-1',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiTransporter: {
+    tytul: 'SpaceX Transporter',
+    url: 'https://en.wikipedia.org/wiki/SpaceX_Transporter',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  cleantechPlany: {
+    tytul: "Tesla's 3 Master Plans — What It Has Achieved & What It Hasn't",
+    url: 'https://cleantechnica.com/2023/05/27/teslas-3-master-plans-what-it-has-achieved-what-it-hasnt/',
+    wydawca: 'CleanTechnica', dostep: D2,
+  },
+  wikiKimbal: {
+    tytul: 'Kimbal Musk',
+    url: 'https://en.wikipedia.org/wiki/Kimbal_Musk',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  teslaKimbal: {
+    tytul: 'Kimbal Musk — sylwetka członka rady dyrektorów',
+    url: 'https://www.votetesla.com/meet-your-board/kimbal-musk/',
+    wydawca: 'Tesla (materiały dla akcjonariuszy)', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;

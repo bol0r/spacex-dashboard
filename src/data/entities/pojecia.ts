@@ -1278,4 +1278,193 @@ export const pojecia: Encja[] = [
     zrodla: [Z.wikiLadowania, Z.wikiStartyStarship],
     zaktualizowano: '2026-09-13',
   },
+
+  {
+    id: 'orbita-biegunowa',
+    typ: 'pojecie',
+    nazwa: 'Orbita biegunowa',
+    aka: ['polar orbit', 'orbita polarna'],
+    krotki: 'Orbita przechodząca nad biegunami — satelita widzi z niej całą planetę, bo Ziemia obraca się pod nim.',
+    tresc: [
+      'Satelita na orbicie równikowej krąży wciąż nad tym samym pasem Ziemi. Na orbicie biegunowej przechodzi nad biegunami, a planeta obraca się pod nim — więc z każdym okrążeniem przelatuje nad innym południkiem i z czasem widzi całą powierzchnię.',
+      'To dlatego korzystają z niej satelity obserwacyjne, meteorologiczne i rozpoznawcze. Szczególnym przypadkiem jest [[sso|orbita heliosynchroniczna]], na której do przechodzenia nad biegunami dochodzi jeszcze stała pora lokalna przelotu.',
+      'Cena jest energetyczna. Startując na wschód, rakieta dostaje za darmo prędkość obrotu Ziemi — około 460 metrów na sekundę na równiku. Lecąc na północ albo południe, nie dostaje z tego nic i musi wypracować całą prędkość sama. Dlatego takie loty odbywają się z [[vandenberg|Vandenberg]], nie z Florydy.',
+      'Lotów załogowych po takiej orbicie przez sześćdziesiąt lat praktycznie nie było. Rekord nachylenia ustanowiła Wostok 6 w 1963 roku i przetrwał do 2025, kiedy [[fram2|misja Fram2]] weszła na orbitę o nachyleniu 90,01 stopnia.',
+    ],
+    fakty: [
+      { etykieta: 'Czym jest', wartosc: 'orbita przechodząca nad biegunami', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zaleta', wartosc: 'satelita z czasem przelatuje nad całą powierzchnią Ziemi', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt', wartosc: 'brak darmowej prędkości z obrotu Ziemi', pewnosc: 'potwierdzone' },
+      { etykieta: 'Miejsce startu w USA', wartosc: 'Vandenberg, nie Floryda', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord załogowy', wartosc: 'Fram2, nachylenie 90,01°', stanNa: '2025-04', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Rakieta startująca na wschód dostaje w prezencie prędkość obrotu Ziemi — na równiku około 460 metrów na sekundę. Lecąc nad biegun, nie dostaje z tego nic i musi wypracować całą prędkość silnikami. Ten sam ładunek kosztuje więc więcej paliwa wyłącznie z powodu kierunku.',
+        zrodlo: Z.wikiSso,
+      },
+    ],
+    os: [
+      { data: '2025-04-01', tytul: 'Pierwszy załogowy lot biegunowy', opis: 'Fram2 wchodzi na orbitę o nachyleniu 90,01 stopnia.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'sso', powod: 'jej szczególny przypadek, ze stałą porą przelotu' },
+      { id: 'fram2', powod: 'pierwszy załogowy lot po takiej orbicie' },
+      { id: 'vandenberg', powod: 'baza, z której się na nią startuje' },
+      { id: 'delta-v', powod: 'brak darmowej prędkości obrotu Ziemi podnosi koszt wejścia' },
+    ],
+    zrodla: [Z.wikiSso, Z.wikiFram2],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'smallsat',
+    typ: 'pojecie',
+    nazwa: 'Małe satelity',
+    aka: ['smallsat', 'cubesat', 'nanosatelity'],
+    krotki: 'Satelity liczone w kilogramach zamiast w tonach — klasa, którą tanie wynoszenie wpuściło na orbitę.',
+    tresc: [
+      'Przez większość ery kosmicznej satelita był urządzeniem wielkości samochodu, budowanym latami przez państwo albo wielki koncern. Małe satelity odwracają ten model: ważą od kilku do kilkuset kilogramów, powstają z gotowych podzespołów i kosztują ułamek tamtej kwoty.',
+      'Warunkiem ich istnienia jest sposób dostania się na orbitę. Osobna rakieta dla ładunku ważącego dziesięć kilogramów nie ma sensu ekonomicznego — dlatego lecą razem, [[transporter|lotami współdzielonymi]], po kilkadziesiąt albo ponad sto naraz.',
+      'Typowym celem jest [[sso|orbita heliosynchroniczna]], bo większość tych satelitów obserwuje Ziemię i potrzebuje stałych warunków oświetlenia.',
+      'Ta klasa urządzeń jest bezpośrednią konsekwencją spadku [[koszt-kilograma|kosztu kilograma na orbicie]]. Jest też jednym z powodów, dla których [[zespol-kesslera|zagęszczenie niskiej orbity]] rośnie szybciej, niż zakładano dekadę temu.',
+    ],
+    fakty: [
+      { etykieta: 'Masa', wartosc: 'od kilku do kilkuset kilogramów', pewnosc: 'szacunkowe' },
+      { etykieta: 'Sposób wyniesienia', wartosc: 'loty współdzielone, po kilkadziesiąt sztuk naraz', pewnosc: 'potwierdzone' },
+      { etykieta: 'Typowa orbita', wartosc: 'heliosynchroniczna', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord w jednym locie', wartosc: '131 ładunków (Transporter-12)', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Satelita ważący dziesięć kilogramów nie ma szans na własną rakietę — koszt startu byłby wielokrotnie wyższy niż koszt samego urządzenia. Cała ta klasa sprzętu istnieje wyłącznie dlatego, że ktoś sprzedaje miejsce w cudzym locie.',
+        zrodlo: Z.wikiTransporter,
+      },
+    ],
+    os: [
+      { data: '2025-01', tytul: 'Transporter-12', opis: 'Jeden lot wynosi 131 ładunków należących do różnych właścicieli.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'transporter', powod: 'program, który wyniósł tę klasę satelitów na orbitę' },
+      { id: 'koszt-kilograma', powod: 'ich istnienie jest konsekwencją spadku tej wartości' },
+      { id: 'sso', powod: 'typowa orbita docelowa' },
+      { id: 'zespol-kesslera', powod: 'ich liczba podnosi zagęszczenie niskiej orbity' },
+    ],
+    zrodla: [Z.wikiTransporter, Z.wikiKessler],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'wodowanie',
+    typ: 'pojecie',
+    nazwa: 'Wodowanie',
+    aka: ['splashdown', 'powrót na spadochronach'],
+    krotki: 'Powrót kapsuły na spadochronach do oceanu — rozwiązanie z epoki Apollo, wciąż najprostsze z możliwych.',
+    tresc: [
+      'Kapsuła wracająca z orbity nie ma skrzydeł ani silników do lądowania. Po [[wejscie-atmosferyczne|wejściu w atmosferę]] wyhamowuje ją opór powietrza, a ostatnią fazę przejmują spadochrony. Woda jest przy tym miękka i, co ważniejsze, pusta — nie ma nad czym ryzykować.',
+      '[[crew-dragon|Crew Dragon]] wraca właśnie tak. [[demo-2|Demo-2]] wodowało na Atlantyku 2 sierpnia 2020 roku — pierwszy raz od misji Apollo 9 w 1969 roku, gdy amerykańska załoga osiadła w tym oceanie. [[crew-1|Crew-1]] wrócił w maju 2021, a [[fram2|Fram2]] na Pacyfiku u wybrzeży Kalifornii.',
+      'Alternatywą jest lądowanie na lądzie — tak wracają kapsuły Sojuz, na spadochronach i silniczkach hamujących tuż nad ziemią. Jest celniejsze, ale twardsze i wymaga pustego obszaru, którego Stany na swoim terytorium nie mają.',
+      'Trzecią drogą jest [[hamowania|lądowanie na silnikach]], którym wraca człon [[falcon-9|Falcona 9]]. Dla kapsuły z ludźmi na pokładzie ta droga pozostaje niewykorzystana — wymagałaby działającego napędu w ostatniej sekundzie lotu, bez możliwości poprawki.',
+    ],
+    fakty: [
+      { etykieta: 'Zasada', wartosc: 'hamowanie atmosferą, potem spadochrony i wodowanie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Demo-2', wartosc: 'Atlantyk, 2 sierpnia 2020', pewnosc: 'potwierdzone' },
+      { etykieta: 'Crew-1', wartosc: 'powrót 2 maja 2021', pewnosc: 'potwierdzone' },
+      { etykieta: 'Fram2', wartosc: 'Pacyfik u wybrzeży Kalifornii, kwiecień 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Alternatywa', wartosc: 'lądowanie na lądzie — tak wracają kapsuły Sojuz', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Między wodowaniem Apollo 9 w 1969 roku a powrotem Demo-2 w 2020 minęło pięćdziesiąt jeden lat, w których żadna amerykańska załoga nie osiadła na Atlantyku. Wahadłowce lądowały na pasie startowym jak samolot, a po nich przyszła dekada przerwy.',
+        zrodlo: Z.nasaDemo2,
+      },
+    ],
+    os: [
+      { data: '2020-08-02', tytul: 'Powrót Demo-2', opis: 'Pierwsze amerykańskie wodowanie na Atlantyku od 1969 roku.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'crew-dragon', powod: 'wraca na spadochronach do oceanu' },
+      { id: 'wejscie-atmosferyczne', powod: 'faza poprzedzająca otwarcie spadochronów' },
+      { id: 'demo-2', powod: 'jej wodowanie zamknęło pięćdziesięcioletnią przerwę' },
+      { id: 'hamowania', powod: 'zupełnie inna droga powrotu, stosowana dla członów rakiety' },
+    ],
+    zrodla: [Z.nasaDemo2, Z.wikiDragon2],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'interstage',
+    typ: 'technologia',
+    nazwa: 'Przedział międzystopniowy',
+    aka: ['interstage', 'łącznik stopni'],
+    krotki: 'Element łączący stopnie rakiety, który musi wytrzymać cały lot, a potem zniknąć w ułamku sekundy.',
+    tresc: [
+      'Dwa stopnie rakiety łączy przedział międzystopniowy — konstrukcja, która przez całą fazę wznoszenia przenosi obciążenia między nimi, a w chwili rozdzielenia musi puścić natychmiast i bez zacięcia.',
+      'W [[falcon-9|Falconie 9]] pierwszy stopień ma 41,2 metra, a z przedziałem 47,7 — czyli sam łącznik zajmuje przeszło sześć metrów. Na jego zewnętrznej powierzchni siedzą [[siatki-aerodynamiczne|siatki aerodynamiczne]], rozkładane po rozdzieleniu.',
+      'To element, w którym najłatwiej o awarię, bo działa dokładnie raz i w najbardziej dynamicznym momencie lotu. Przy [[falcon-1-lot-2|drugim locie Falcona 1]] osłona międzystopniowa otarła się o dyszę drugiego stopnia, a przy [[falcon-1-lot-3|trzecim]] stopnie zderzyły się po rozdzieleniu.',
+      'W [[starship|Starshipie]] rozwiązanie poszło w inną stronę: rozdzielenie odbywa się w ruchu, przy pracujących silnikach górnego stopnia, przez pierścień z otworami odprowadzającymi spaliny. Nazywa się to rozdzieleniem gorącym i pozwala nie tracić prędkości między odpaleniami.',
+    ],
+    fakty: [
+      { etykieta: 'Zadanie', wartosc: 'przenoszenie obciążeń między stopniami i natychmiastowe puszczenie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Falcon 9', wartosc: 'I stopień 41,2 m; z przedziałem 47,7 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Co jest na zewnątrz', wartosc: 'siatki aerodynamiczne', pewnosc: 'potwierdzone' },
+      { etykieta: 'Awarie w historii firmy', wartosc: 'loty 2 i 3 Falcona 1', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Przedział międzystopniowy Falcona 9 ma przeszło sześć metrów — tyle co miejski autobus. Jego jedynym zadaniem jest wytrzymać kilka minut lotu i puścić w odpowiedniej sekundzie; potem spada razem z pierwszym stopniem i wraca na Ziemię, nie robiąc już nic.',
+        zrodlo: Z.wikiFalcon9,
+      },
+    ],
+    os: [
+      { data: '2007-03-21', tytul: 'Awaria przy locie 2 Falcona 1', opis: 'Osłona międzystopniowa otarła się o dyszę drugiego stopnia.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'falcon-9', powod: 'jego przedział ma ponad sześć metrów długości' },
+      { id: 'siatki-aerodynamiczne', powod: 'siedzą na jego zewnętrznej powierzchni' },
+      { id: 'falcon-1-lot-2', powod: 'awaria wywołana kontaktem osłony z dyszą' },
+      { id: 'starship', powod: 'rozwiązuje ten problem inaczej, rozdzieleniem w ruchu' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiFalcon9, Z.wikiFalcon1],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'booster-b1067',
+    typ: 'technologia',
+    nazwa: 'Booster B1067',
+    aka: ['rekordowy człon', 'B1067'],
+    krotki: 'Jeden egzemplarz członu nośnego, który poleciał trzydzieści siedem razy — rekord świata w liczbie lotów jednej rakiety.',
+    tresc: [
+      'B1067 to oznaczenie konkretnego egzemplarza pierwszego stopnia [[falcon-9|Falcona 9]]. Nie jest to typ ani wersja, tylko jedna sztuka sprzętu, która wystartowała, wróciła i poleciała ponownie trzydzieści siedem razy.',
+      'Dla porównania: prom kosmiczny Discovery, najbardziej wysłużony pojazd poprzedniej epoki, wykonał trzydzieści dziewięć lotów — przez dwadzieścia siedem lat służby i przy przygotowaniu do każdego lotu liczonym w miesiącach.',
+      'Rekord jest tu jednak podwójny i ten drugi jest mniej znany: najbardziej wysłużonym elementem systemu nie jest ten człon, a [[oslona-ladunku|połówka osłony ładunku]] o numerze SN155 z czterdziestoma lotami. Człon nośny ustępuje kawałkowi opakowania.',
+      'Znaczenie tego egzemplarza polega na tym, że przesuwa dyskusję o [[reuzywalnosc|reużywalności]] z pytania „czy rakieta wróci" na pytanie „ile razy da się ją wysłać". Pierwsze rozstrzygnięto w 2015 roku, drugie rozstrzyga się do dziś.',
+    ],
+    fakty: [
+      { etykieta: 'Liczba lotów', wartosc: '37', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czym jest', wartosc: 'jeden egzemplarz pierwszego stopnia Falcona 9', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord osłony', wartosc: '40 lotów połówki SN155 — więcej niż ten człon', pewnosc: 'potwierdzone' },
+      { etykieta: 'Boostery użyte wielokrotnie', wartosc: '55', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Rekord tego członu — trzydzieści siedem lotów — jest bliski dorobkowi promu Discovery, który wykonał ich trzydzieści dziewięć. Z tą różnicą, że prom potrzebował na to dwudziestu siedmiu lat i miesięcy przygotowań między lotami.',
+        zrodlo: Z.sfnRekord,
+      },
+    ],
+    os: [
+      { data: '2026-07-09', tytul: 'Trzydziesty szósty lot', opis: 'Egzemplarz ustanawia kolejny rekord liczby lotów jednego członu.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'reuzywalnosc', powod: 'najmocniejszy pojedynczy dowód jej działania' },
+      { id: 'falcon-9', powod: 'jeden z jego pierwszych stopni' },
+      { id: 'oslona-ladunku', powod: 'element o jeszcze dłuższym przebiegu' },
+      { id: 'kadencja-startow', powod: 'takie przebiegi umożliwiają dzisiejsze tempo startów' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.sfnRekord, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-13',
+  },
 ];

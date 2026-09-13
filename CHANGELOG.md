@@ -5,6 +5,33 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.5 — 13 września 2026
+
+**Partia siódma — dziewiętnaście encji. Tesla i loty operacyjne.**
+
+- Tesla, dziewięć haseł: trzy plany generalne, Semi, SolarCity, dach solarny,
+  Supercharger, NACS, gigafabryki w Szanghaju i Berlinie oraz robotaxi.
+- SpaceX, osiem haseł: Commercial Crew, Crew-1, program Transporter, baza
+  Vandenberg, rekordowy człon B1067, przedział międzystopniowy, małe satelity
+  i wodowanie.
+- Słownik: orbita biegunowa.
+- Ludzie: Kimbal Musk — pierwsza encja o nim, choć pojawiał się już w trzech
+  innych jako wspólnik i współzałożyciel fundacji.
+
+Ta partia domyka dwa wątki, które wcześniej wisiały w powietrzu. Pierwszy to
+Tesla jako firma energetyczna, nie tylko samochodowa: SolarCity, dach solarny
+i Supercharger dopiero razem tłumaczą, po co był drugi plan generalny. Drugi to
+strona operacyjna SpaceX — do tej pory baza opisywała rekordy i przełomy,
+a niewiele mówiła o tym, co firma robi w zwykły wtorek: wynosi cudze małe
+satelity z Kalifornii na orbitę biegunową i wozi ludzi na stację.
+
+Kilka encji powstało z myślą o linkowaniu wstecz. Przedział międzystopniowy
+tłumaczy dwie awarie Falcona 1 opisane dawno temu, wodowanie domyka powroty
+Demo-2, Crew-1 i Fram2, a małe satelity wyjaśniają, dlaczego program Transporter
+w ogóle ma sens ekonomiczny.
+
+Encji: 163 z docelowych 180+. Walidator i przegląd bez błędów i ostrzeżeń.
+
 ## 0.4.4 — 13 września 2026
 
 **Partia szósta — dwadzieścia encji. Lista pojęć z briefu domknięta.**

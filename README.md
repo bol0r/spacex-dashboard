@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.4.4** · **by Dead Net & Claude**
+**Wersja 0.4.5** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -45,7 +45,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 0 | Design plan, kontrakt danych, fazowanie | gotowe |
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
-| 3 | Treść — 144 z 180+ encji | w toku |
+| 3 | Treść — 163 z 180+ encji | w toku |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA, wydajność, pomiar dostępności, dopieszczenie | nierozpoczęte |
 
@@ -54,10 +54,10 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 144 · Wydarzenia: 253 · Źródła w katalogu: 85 · Diagramy: 4
+Encje: 163 · Wydarzenia: 285 · Źródła w katalogu: 95 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 4,40 (cel ≥ 6)
-Tłumaczenia EN: interfejs w całości, treść 6 / 144 encji
+Średnio linków [[id]] w treści: 4,47 (cel ≥ 6)
+Tłumaczenia EN: interfejs w całości, treść 6 / 163 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 ```
 
@@ -411,21 +411,21 @@ z manifestem paczki. `1.0.0` będzie zarezerwowane dla odbioru całości:
 
 Lista uszeregowana po wadze, nie po kolejności faz.
 
-1. **Treść — około 36 encji.** Cała lista pojęć z briefu jest domknięta, tak
-   samo loty testowe Starshipa i Falcona 1. Brakuje: SLC-4E w Vandenberg, ludzi
-   słabo udokumentowanych w źródłach publicznych (Juncosa, Jensen, Riley,
-   Dontchev), pozostałych gigafabryk Tesli, dalszych misji załogowych
-   Crew Dragona i rozbudowy sekcji reszty imperium.
-2. **Niezależność źródeł.** 116 ze 144 encji ma wszystkie źródła od jednego
-   wydawcy, najczęściej Wikipedii. Jedenaście encji ma źródło pierwotne
-   (NASA, SEC). To najpoważniejsza słabość jakościowa bazy.
-3. **Gęstość linkowania.** Średnia 4,40 wobec celu 6; 122 encje są poniżej celu.
+1. **Treść — około 17 encji.** Cała lista pojęć z briefu jest domknięta, tak
+   samo loty testowe Starshipa i Falcona 1, gigafabryki i najważniejsze
+   programy Tesli. Brakuje: SLC-4E w Vandenberg, ludzi słabo udokumentowanych
+   w źródłach publicznych (Juncosa, Jensen, Riley, Dontchev), dalszych misji
+   załogowych Crew Dragona i rozbudowy sekcji reszty imperium.
+2. **Niezależność źródeł.** 129 ze 163 encji ma wszystkie źródła od jednego
+   wydawcy, najczęściej Wikipedii. Trzynaście encji ma źródło pierwotne
+   (NASA, SEC, Tesla). To najpoważniejsza słabość jakościowa bazy.
+3. **Gęstość linkowania.** Średnia 4,47 wobec celu 6; 135 encji jest poniżej celu.
    Domknięcie wymaga przepisania akapitów, nie doklejania linków.
 4. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
    wszystkich kategorii na ekranie głównym, wirtualizacja list powyżej 60
    elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
    i haptyki na prawdziwym telefonie.
-5. **Tłumaczenie treści** — 138 encji bez wersji angielskiej.
+5. **Tłumaczenie treści** — 157 encji bez wersji angielskiej.
 6. **Widok grafu powiązań** (propozycja, nie zaczęte) — mapa połączeń między
    encjami we własnym SVG, z prostym układem siłowym. Pokazywałaby to, co jest
    sednem produktu i czego dziś nie widać nigdzie: gęstość i kształt sieci

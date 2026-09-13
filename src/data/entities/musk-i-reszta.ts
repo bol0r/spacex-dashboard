@@ -897,4 +897,51 @@ export const muskIReszta: Encja[] = [
     zrodla: [Z.wikiPrzejecie, Z.wikiMusk, Z.wikiZip2],
     zaktualizowano: '2026-09-13',
   },
+
+  {
+    id: 'kimbal-musk',
+    typ: 'osoba',
+    nazwa: 'Kimbal Musk',
+    aka: ['brat Elona'],
+    krotki: 'Współzałożyciel Zip2, członek rad SpaceX i Tesli, a na co dzień restaurator i szef organizacji zakładającej ogrody przy szkołach.',
+    tresc: [
+      'Urodził się 20 września 1972 roku w Pretorii, trzy lata po [[elon-musk|starszym bracie]]. Pierwszą firmę, [[zip2|Zip2]], zakładali razem — Kimbal wniósł do niej 5 tysięcy dolarów, więcej niż Elon, i wyszedł ze sprzedaży Compaqowi z 15 milionami.',
+      'Te pieniądze poszły w tę samą stronę co pieniądze brata: zasiada w radzie [[spacex|SpaceX]] i w radzie [[tesla|Tesli]], a w latach 2013–2019 także w radzie Chipotle Mexican Grill. Współtworzył też [[fundacja-muska|Fundację Muska]], zarejestrowaną przez obu braci w grudniu 2001 roku.',
+      'Własną drogę zbudował jednak wokół jedzenia. W 2004 roku otworzył w Boulder w Kolorado bistro The Kitchen, z którego wyrosła grupa restauracji w Kolorado, Chicago i Austin. W 2010 stanął na czele organizacji dziś znanej jako Big Green, zakładającej ogrody dydaktyczne przy amerykańskich szkołach, a w 2016 współtworzył Square Roots — firmę uprawiającą warzywa w kontenerach.',
+      'W lutym 2022 roku amerykańska Komisja Papierów Wartościowych przyjrzała się sprzedaży przez niego 88 500 akcji Tesli o wartości około 108 milionów dolarów, dzień przed ankietą, w której jego brat pytał obserwujących, czy ma sprzedać część swoich udziałów. Postępowanie dotyczyło możliwego wykorzystania informacji poufnej.',
+    ],
+    fakty: [
+      { etykieta: 'Urodzony', wartosc: '20 września 1972, Pretoria', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zip2', wartosc: 'współzałożyciel; ze sprzedaży 15 mln USD', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rady nadzorcze', wartosc: 'SpaceX, Tesla; Chipotle 2013–2019', pewnosc: 'potwierdzone' },
+      { etykieta: 'The Kitchen', wartosc: 'bistro w Boulder, 2004', pewnosc: 'potwierdzone' },
+      { etykieta: 'Big Green', wartosc: 'ogrody przy szkołach; szef od 2010', pewnosc: 'potwierdzone' },
+      { etykieta: 'Square Roots', wartosc: 'uprawa w kontenerach, 2016', pewnosc: 'potwierdzone' },
+      { etykieta: 'Postępowanie SEC', wartosc: 'luty 2022, sprzedaż 88 500 akcji Tesli', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Przy zakładaniu Zip2 wyłożył więcej pieniędzy niż brat: 5 tysięcy dolarów wobec 2 tysięcy Elona. Kapitał założycielski całej firmy wynosił 15 tysięcy, licząc wkład trzeciego wspólnika, Grega Kouriego.',
+        zrodlo: Z.wikiKimbal,
+      },
+      {
+        tekst: 'Człowiek z rad nadzorczych producenta rakiet i producenta samochodów od dwudziestu lat zajmuje się zawodowo jedzeniem — restauracjami, ogrodami przy szkołach i uprawą warzyw w kontenerach po ładunkach.',
+        zrodlo: Z.teslaKimbal,
+      },
+    ],
+    os: [
+      { data: '1972-09-20', tytul: 'Urodziny', opis: 'Przychodzi na świat w Pretorii.', waga: 1 },
+      { data: '2004-04', tytul: 'The Kitchen', opis: 'Otwiera bistro w Boulder, początek grupy restauracji.', waga: 2 },
+      { data: '2022-02', tytul: 'Postępowanie SEC', opis: 'Komisja bada sprzedaż 88 500 akcji Tesli dzień przed ankietą brata.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'elon-musk', powod: 'jego młodszy brat i wspólnik przy pierwszej firmie' },
+      { id: 'zip2', powod: 'zakładali ją razem; wyłożył większy wkład początkowy' },
+      { id: 'tesla', powod: 'zasiada w radzie dyrektorów' },
+      { id: 'spacex', powod: 'zasiada w radzie firmy' },
+      { id: 'fundacja-muska', powod: 'zarejestrowana przez obu braci w 2001 roku' },
+    ],
+    zrodla: [Z.wikiKimbal, Z.teslaKimbal],
+    zaktualizowano: '2026-09-13',
+  },
 ];

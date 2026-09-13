@@ -1261,7 +1261,133 @@ const wczesneLotyStarshipa: Encja[] = [
   },
 ];
 
+/** Loty operacyjne i program, w ramach którego powstały. */
+const operacyjne: Encja[] = [
+  {
+    id: 'commercial-crew',
+    typ: 'wydarzenie',
+    nazwa: 'Commercial Crew',
+    aka: ['program załogowy NASA', 'CCP'],
+    krotki: 'Program NASA, który zlecił firmom prywatnym wożenie astronautów — i przeżył tylko dlatego, że finansowano dwie naraz.',
+    tresc: [
+      'Po zakończeniu programu wahadłowców w 2011 roku Stany straciły zdolność wysyłania ludzi w kosmos z własnego terytorium. Odpowiedzią był program załogowy, zbudowany na tej samej zasadzie co towarzyszący mu [[cots|COTS]]: NASA kupuje przewóz, a nie statek, i płaci za osiągnięte kamienie milowe.',
+      'Kluczowa decyzja zapadła na etapie wyboru wykonawców. [[bill-gerstenmaier|Bill Gerstenmaier]] przekonał agencję, żeby opóźnić ogłoszenie wyników i znaleźć dodatkowe pieniądze, byle utrzymać dwie konkurujące firmy zamiast jednej. Bez tego program miałby jednego dostawcę i jeden punkt awarii.',
+      'Ścieżka [[spacex|SpaceX]] prowadziła przez [[demo-2|Demo-2]] w maju 2020 — lot testowy z ludźmi na pokładzie, kończący certyfikację — a potem przez [[crew-1|Crew-1]] w listopadzie, czyli pierwszą regularną wymianę załogi stacji.',
+      'Program rozstrzygnął też o czymś, czego wtedy nie planowano. [[crew-dragon|Kapsuła]] zbudowana dla agencji rządowej stała się później pojazdem [[inspiration4|misji prywatnych]], w tym [[polaris-dawn|Polaris Dawn]] z pierwszym komercyjnym spacerem kosmicznym.',
+    ],
+    fakty: [
+      { etykieta: 'Po co powstał', wartosc: 'odzyskanie zdolności lotów załogowych z terytorium USA', pewnosc: 'potwierdzone' },
+      { etykieta: 'Formuła', wartosc: 'zakup przewozu, nie statku; płatność za kamienie milowe', pewnosc: 'potwierdzone' },
+      { etykieta: 'Kluczowa decyzja', wartosc: 'finansowanie dwóch konkurujących firm zamiast jednej', pewnosc: 'potwierdzone' },
+      { etykieta: 'Lot certyfikujący SpaceX', wartosc: 'Demo-2, maj 2020', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwszy lot operacyjny', wartosc: 'Crew-1, listopad 2020', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Program o mało nie miał jednego dostawcy. Decyzja o finansowaniu dwóch konkurujących firm zapadła dopiero po tym, jak Gerstenmaier przekonał agencję, żeby opóźniła ogłoszenie wyników i poszukała dodatkowych pieniędzy. Bez tego opóźnienia amerykańskie loty załogowe stałyby dziś na jednym pojeździe.',
+        zrodlo: Z.wikiGerstenmaier,
+      },
+    ],
+    os: [
+      { data: '2011-07', tytul: 'Koniec programu wahadłowców', opis: 'Stany tracą zdolność wysyłania ludzi z własnego terytorium.', waga: 3 },
+      { data: '2020-11-16', tytul: 'Pierwsza regularna wymiana załogi', opis: 'Crew-1 zamienia program testowy w usługę transportową.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'crew-1', powod: 'pierwszy lot operacyjny w jego ramach' },
+      { id: 'demo-2', powod: 'lot, który zamknął certyfikację' },
+      { id: 'bill-gerstenmaier', powod: 'przeforsował finansowanie dwóch firm zamiast jednej' },
+      { id: 'cots', powod: 'towarowy poprzednik zbudowany na tej samej zasadzie' },
+      { id: 'crew-dragon', powod: 'pojazd, który powstał w tym programie' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'crew-1',
+    typ: 'misja',
+    nazwa: 'Crew-1',
+    aka: ['Resilience', 'pierwszy lot operacyjny'],
+    krotki: 'Pierwszy regularny lot załogowy, nie testowy — 167 dni na orbicie i koniec epoki, w której Amerykanie latali cudzym statkiem.',
+    tresc: [
+      'Crew-1 wystartował 16 listopada 2020 roku, pół roku po testowym [[demo-2|Demo-2]]. Na pokładzie byli Mike Hopkins, Victor Glover i Shannon Walker z NASA oraz Sōichi Noguchi z japońskiej agencji JAXA. Kapsułę załoga nazwała Resilience.',
+      'Różnica wobec [[demo-2|Demo-2]] nie leży w technice, tylko w statusie. Tamten lot NASA nazywała testem; ten był pierwszą regularną wymianą załogi stacji w ramach [[commercial-crew|programu Commercial Crew]]. [[crew-dragon|Crew Dragon]] przestał być pojazdem sprawdzanym, a stał się pojazdem używanym.',
+      'Misja trwała 167 dni, 6 godzin i 29 minut — ponad dwa i pół raza dłużej niż Demo-2 — i zakończyła się wodowaniem 2 maja 2021 roku. Pełna, czteroosobowa załoga po raz pierwszy poleciała amerykańskim statkiem od dziesięciu lat.',
+      'Po Crew-1 poszły kolejne loty tej serii, numerowane po dziś dzień. To one, a nie [[inspiration4|misje prywatne]], stanowią większość lotów tej kapsuły.',
+    ],
+    fakty: [
+      { etykieta: 'Start', wartosc: '16 listopada 2020, 00:27 UTC', pewnosc: 'potwierdzone' },
+      { etykieta: 'Załoga', wartosc: 'Hopkins, Glover, Walker (NASA), Noguchi (JAXA)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Nazwa kapsuły', wartosc: 'Resilience', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas trwania', wartosc: '167 dni 6 godzin 29 minut', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powrót', wartosc: '2 maja 2021', pewnosc: 'potwierdzone' },
+      { etykieta: 'Status', wartosc: 'pierwszy lot operacyjny, nie testowy', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Załoga nazwała kapsułę Resilience — po angielsku „odporność" — nadając jej imię we wrześniu 2020 roku, w trakcie pandemii. Ta sama kapsuła poleciała rok później w misji Inspiration4, pierwszym locie orbitalnym bez zawodowego astronauty na pokładzie.',
+        zrodlo: Z.wikiCrew1,
+      },
+    ],
+    os: [
+      { data: '2020-11-16', tytul: 'Start Crew-1', opis: 'Pierwsza regularna wymiana załogi stacji amerykańskim statkiem.', waga: 3 },
+      { data: '2021-05-02', tytul: 'Wodowanie', opis: 'Powrót po 167 dniach na orbicie.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'commercial-crew', powod: 'pierwszy lot operacyjny tego programu' },
+      { id: 'demo-2', powod: 'poprzedni lot, formalnie testowy' },
+      { id: 'crew-dragon', powod: 'kapsuła, która przeszła tu z prób do służby' },
+      { id: 'inspiration4', powod: 'ta sama kapsuła Resilience poleciała w niej rok później' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiCrew1, Z.wikiDragon2],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'transporter',
+    typ: 'misja',
+    nazwa: 'Transporter',
+    aka: ['rideshare', 'loty współdzielone', 'Bandwagon'],
+    krotki: 'Loty współdzielone, na których ponad sto małych satelitów różnych właścicieli leci jedną rakietą na wspólną orbitę.',
+    tresc: [
+      'Klasyczny start wynosi jeden duży ładunek jednego klienta. Program Transporter odwraca ten układ: [[falcon-9|Falcon 9]] zabiera kilkadziesiąt albo ponad sto [[smallsat|małych satelitów]] różnych właścicieli i odstawia je wszystkie na tę samą [[sso|orbitę heliosynchroniczną]].',
+      'Skala bywa znaczna — misja Transporter-12 niosła 131 ładunków, a Transporter-13 siedemdziesiąt cztery. Starty odbywają się z bazy [[vandenberg|Vandenberg]] na zachodnim wybrzeżu, bo stamtąd najłatwiej wejść na orbitę o dużym nachyleniu.',
+      'Odmianą programu jest Bandwagon, kierujący ładunki na orbity o mniejszym nachyleniu — dla tych klientów, którym orbita heliosynchroniczna nie odpowiada.',
+      'Znaczenie tych lotów jest ekonomiczne, nie techniczne. Mały satelita, którego nie stać na własną rakietę, dostaje miejsce w wspólnym locie po ułamku ceny — i to jest realizacja tego, co opisuje [[koszt-kilograma|koszt kilograma na orbicie]], od strony klienta.',
+    ],
+    fakty: [
+      { etykieta: 'Zasada', wartosc: 'wspólny lot wielu małych satelitów różnych właścicieli', pewnosc: 'potwierdzone' },
+      { etykieta: 'Transporter-12', wartosc: '131 ładunków', pewnosc: 'potwierdzone' },
+      { etykieta: 'Transporter-13', wartosc: '74 ładunki', pewnosc: 'potwierdzone' },
+      { etykieta: 'Orbita docelowa', wartosc: 'heliosynchroniczna', pewnosc: 'potwierdzone' },
+      { etykieta: 'Miejsce startu', wartosc: 'Vandenberg', pewnosc: 'potwierdzone' },
+      { etykieta: 'Odmiana', wartosc: 'Bandwagon — orbity o mniejszym nachyleniu', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Jedna misja Transporter-12 wyniosła sto trzydzieści jeden ładunków naraz. Dla porównania: przez cały 2009 rok cały świat wykonał mniej niż osiemdziesiąt startów orbitalnych łącznie — jeden lot niesie dziś więcej osobnych satelitów, niż wtedy startowało rakiet.',
+        zrodlo: Z.wikiTransporter,
+      },
+    ],
+    os: [
+      { data: '2025-01', tytul: 'Transporter-12', opis: 'Jeden lot wynosi 131 ładunków na orbitę heliosynchroniczną.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'smallsat', powod: 'to dla nich powstał ten program' },
+      { id: 'sso', powod: 'orbita docelowa większości tych lotów' },
+      { id: 'vandenberg', powod: 'baza, z której startują' },
+      { id: 'koszt-kilograma', powod: 'realizacja taniego dostępu do orbity od strony klienta' },
+      { id: 'falcon-9', powod: 'rakieta obsługująca cały program' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-13',
+  },
+];
+
 export const misje: Encja[] = [
   ...falcon1, ...wczesne, ...przelomy, ...starshipMisje, ...lotyStarshipa,
-  ...wczesneLotyStarshipa,
+  ...wczesneLotyStarshipa, ...operacyjne,
 ];
