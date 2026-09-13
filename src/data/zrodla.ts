@@ -387,4 +387,54 @@ export const Z = {
     url: 'https://en.wikipedia.org/wiki/Musk_Foundation',
     wydawca: 'Wikipedia', dostep: D2,
   },
+  wikiLc39a: {
+    tytul: 'Kennedy Space Center Launch Complex 39A',
+    url: 'https://en.wikipedia.org/wiki/Kennedy_Space_Center_Launch_Complex_39A',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiMcGregor: {
+    tytul: 'SpaceX Rocket Development and Test Facility',
+    url: 'https://en.wikipedia.org/wiki/SpaceX_Rocket_Development_and_Test_Facility',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiSlc40: {
+    tytul: 'Cape Canaveral Space Launch Complex 40',
+    url: 'https://en.wikipedia.org/wiki/Cape_Canaveral_Space_Launch_Complex_40',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiStrefy: {
+    tytul: 'Landing Zones 1 and 2',
+    url: 'https://en.wikipedia.org/wiki/Landing_Zones_1_and_2',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiHistoria: {
+    tytul: 'History of SpaceX',
+    url: 'https://en.wikipedia.org/wiki/History_of_SpaceX',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiMueller: {
+    tytul: 'Tom Mueller',
+    url: 'https://en.wikipedia.org/wiki/Tom_Mueller',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiKoenigsmann: {
+    tytul: 'Hans Koenigsmann',
+    url: 'https://en.wikipedia.org/wiki/Hans_Koenigsmann',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiGerstenmaier: {
+    tytul: 'William H. Gerstenmaier',
+    url: 'https://en.wikipedia.org/wiki/William_H._Gerstenmaier',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiDragon1: {
+    tytul: 'SpaceX Dragon 1',
+    url: 'https://en.wikipedia.org/wiki/SpaceX_Dragon_1',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  detroitNews747: {
+    tytul: "747's reign as queen of the skies coming to close",
+    url: 'https://www.detroitnews.com/story/business/2017/03/20/boeing-plane/99421748/',
+    wydawca: 'The Detroit News', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;

@@ -5,6 +5,33 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.2 — 13 września 2026
+
+**Miejsca i ludzie SpaceX — dwadzieścia encji.**
+
+- Miejsca: Hawthorne, McGregor, LC-39A, SLC-40, strefy lądowania LZ-1 i LZ-2.
+- Ludzie: Tom Mueller, Hans Koenigsmann, Bill Gerstenmaier, Behnken i Hurley
+  oraz zbiorcza encja o wczesnej ekipie Falcona 1.
+- Pojazdy i silniki: Dragon 1, warianty Falcona 9, Starshield, Draco i SuperDraco.
+- Loty Starshipa: 1, 7, 9, 10, 11 i 12.
+
+Ta partia poprawiła też bilans źródeł pierwotnych — z siedmiu do dziewięciu
+encji — bo materiał o stanowiskach startowych i o programie komercyjnym
+NASA dokumentuje sama agencja.
+
+**Czego nie dowiozłem i dlaczego**
+
+Brief wymienia wśród ludzi Marka Juncosę, Jessicę Jensen, Billa Rileya
+i Kiko Dontcheva. Nie znalazłem dla nich źródeł, które spełniałyby wymóg
+dwóch niezależnych pozycji, więc ich nie napisałem. Zasada z sekcji 3 briefu
+jest tu jednoznaczna: lepiej mniej encji pewnych niż więcej zmyślonych.
+Podobnie ze stanowiskiem SLC-4E w Vandenberg.
+
+Przy encji o Hawthorne najczęściej powtarzany szczegół — że halę zbudował
+Northrop pod sekcje kadłuba Boeinga 747 — udało się potwierdzić tylko
+częściowo, więc fakt jest oznaczony jako sporny, a ciekawostkę oparłem na
+pierwszej siedzibie firmy w El Segundo, która ma twarde źródło.
+
 ## 0.4.1 — 13 września 2026
 
 **Reszta imperium — dwadzieścia encji.**

@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.4.1** · **by Dead Net & Claude**
+**Wersja 0.4.2** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -45,7 +45,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 0 | Design plan, kontrakt danych, fazowanie | gotowe |
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
-| 3 | Treść — 104 z 180+ encji | w toku |
+| 3 | Treść — 124 z 180+ encji | w toku |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA, wydajność, pomiar dostępności, dopieszczenie | nierozpoczęte |
 
@@ -54,10 +54,10 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 104 · Wydarzenia: 209 · Źródła w katalogu: 75 · Diagramy: 4
+Encje: 124 · Wydarzenia: 248 · Źródła w katalogu: 85 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 4,35 (cel ≥ 6)
-Tłumaczenia EN: interfejs w całości, treść 6 / 104 encji
+Średnio linków [[id]] w treści: 4,36 (cel ≥ 6)
+Tłumaczenia EN: interfejs w całości, treść 6 / 124 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 ```
 
@@ -386,22 +386,20 @@ z manifestem paczki. `1.0.0` będzie zarezerwowane dla odbioru całości:
 
 Lista uszeregowana po wadze, nie po kolejności faz.
 
-1. **Treść — około 76 encji.** Brakuje: miejsc SpaceX (Hawthorne, McGregor,
-   LC-39A, SLC-40, SLC-4E, strefy lądowania), ludzi z listy w briefie
-   (Mueller, Koenigsmann, Juncosa, Jensen, Gerstenmaier, Riley, Dontchev,
-   Behnken, Hurley), pozostałych lotów Starshipa, pozostałych rakiet i statków
-   (warianty Falcona 9, Dragon 1, Cargo Dragon, Starshield) oraz reszty
-   słownika.
-2. **Niezależność źródeł.** 85 z 104 encji ma wszystkie źródła od jednego
-   wydawcy, najczęściej Wikipedii. Siedem encji ma źródło pierwotne (NASA, SEC).
+1. **Treść — około 56 encji.** Brakuje: SLC-4E w Vandenberg, ludzi słabo
+   udokumentowanych w źródłach publicznych (Juncosa, Jensen, Riley, Dontchev),
+   pozostałych lotów Starshipa i Falcona 1, Cargo Dragona 2, dalszych haseł
+   słownika oraz rozbudowy sekcji Tesli i reszty imperium.
+2. **Niezależność źródeł.** 100 ze 124 encji ma wszystkie źródła od jednego
+   wydawcy, najczęściej Wikipedii. Dziewięć encji ma źródło pierwotne (NASA, SEC).
    To najpoważniejsza słabość jakościowa bazy.
-3. **Gęstość linkowania.** Średnia 4,35 wobec celu 6; 90 encji jest poniżej celu.
+3. **Gęstość linkowania.** Średnia 4,36 wobec celu 6; 108 encji jest poniżej celu.
    Domknięcie wymaga przepisania akapitów, nie doklejania linków.
 4. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
    wszystkich kategorii na ekranie głównym, wirtualizacja list powyżej 60
    elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
    i haptyki na prawdziwym telefonie.
-5. **Tłumaczenie treści** — 98 encji bez wersji angielskiej.
+5. **Tłumaczenie treści** — 118 encji bez wersji angielskiej.
 
 ## Android
 

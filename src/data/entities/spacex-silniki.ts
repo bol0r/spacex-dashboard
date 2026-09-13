@@ -130,4 +130,44 @@ export const silniki: Encja[] = [
     zrodla: [Z.wikiFalcon1, Z.wikiMerlin],
     zaktualizowano: '2026-09-12',
   },
+
+  {
+    id: 'draco-superdraco',
+    typ: 'silnik',
+    nazwa: 'Draco i SuperDraco',
+    aka: ['Draco', 'SuperDraco', 'system ratunkowy Dragona'],
+    krotki: 'Dwa silniki kapsuły Dragon: szesnaście małych do manewrów i osiem potężnych, które w razie awarii odrzucają ją od rakiety.',
+    tresc: [
+      'Draco to silniczki manewrowe [[crew-dragon|Crew Dragona]] — szesnaście sztuk po 400 niutonów ciągu, używanych do korekt orbity i utrzymywania orientacji. SuperDraco to ich znacznie większy krewny: osiem sztuk po 71 kiloniutonów, czyli blisko dwustu razy więcej.',
+      'Rola SuperDraco jest jedna i wykonuje się ją raz: w razie awarii rakiety odrzucić kapsułę z załogą na bok, w ułamku sekundy. To jedyny układ w całym systemie, który istnieje wyłącznie po to, żeby nigdy nie zadziałać.',
+      'Oba silniki, podobnie jak [[merlin|Merlin]] i [[kestrel|Kestrel]], powstały pod kierunkiem [[tom-mueller|Toma Muellera]]. Wcześniejsza wersja Draco pracowała już w [[dragon-1|Dragonie 1]].',
+      'SuperDraco jest przy tym pierwszym silnikiem rakietowym z komorą spalania wykonaną metodą druku przestrzennego, jaki poleciał z ludźmi na pokładzie — choć tę akurat cechę firma podaje sama i warto ją traktować ostrożnie.',
+    ],
+    fakty: [
+      { etykieta: 'Draco — liczba i ciąg', wartosc: '16 sztuk po 400 N', pewnosc: 'potwierdzone' },
+      { etykieta: 'SuperDraco — liczba i ciąg', wartosc: '8 sztuk po 71 kN', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zadanie Draco', wartosc: 'manewry orbitalne i orientacja', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zadanie SuperDraco', wartosc: 'awaryjne odrzucenie kapsuły od rakiety', pewnosc: 'potwierdzone' },
+      { etykieta: 'Konstruktor', wartosc: 'zespół pod kierunkiem Toma Muellera', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Osiem silników SuperDraco daje razem ponad pięćset sześćdziesiąt kiloniutonów ciągu i istnieje po to, żeby nigdy nie zostać użyte. Przy każdym udanym starcie są martwym balastem — i to jest dokładnie ich zadanie.',
+        zrodlo: Z.wikiDragon2,
+      },
+    ],
+    os: [
+      { data: '2010-12-08', tytul: 'Pierwszy lot Draco', opis: 'Silniczki manewrowe pracują w pierwszym locie Dragona.', waga: 2 },
+      { data: '2020-05-30', tytul: 'Pierwszy lot załogowy', opis: 'System ratunkowy leci z ludźmi na pokładzie przy misji Demo-2.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'crew-dragon', powod: 'napędzają go i chronią jego załogę' },
+      { id: 'dragon-1', powod: 'wcześniejsza wersja Draco pracowała już w nim' },
+      { id: 'tom-mueller', powod: 'prowadził rozwój obu silników' },
+      { id: 'merlin', powod: 'ten sam zespół konstrukcyjny, zupełnie inna skala' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiDragon2, Z.wikiMueller],
+    zaktualizowano: '2026-09-13',
+  },
 ];

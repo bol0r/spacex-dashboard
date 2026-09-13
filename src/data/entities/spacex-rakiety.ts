@@ -313,4 +313,125 @@ export const rakiety: Encja[] = [
     zrodla: [Z.wikiFalcon1, Z.snewsFalcon1],
     zaktualizowano: '2026-09-12',
   },
+
+  {
+    id: 'dragon-1',
+    typ: 'statek',
+    nazwa: 'Dragon 1',
+    aka: ['Dragon towarowy', 'CRS Dragon'],
+    krotki: 'Pierwszy prywatny statek odzyskany z orbity i przez lata jedyny na świecie, który potrafił przywieźć ładunek z powrotem.',
+    tresc: [
+      'Dragon 1 był częściowo wielorazowym statkiem towarowym do zaopatrywania Międzynarodowej Stacji Kosmicznej. Poleciał po raz pierwszy 8 grudnia 2010 roku i stał się wtedy pierwszym statkiem zbudowanym i prowadzonym przez firmę prywatną, który udało się odzyskać z orbity.',
+      'Do stacji nie dokował samodzielnie: dwudziestego piątego maja 2012 roku, podczas [[cots-demo-2|lotu demonstracyjnego]], chwyciło go ramię Canadarm2 i przyłączyło do portu cumowniczego. Samodzielne dokowanie przyszło dopiero z [[crew-dragon|Dragonem 2]].',
+      'Ładowność wynosiła 3 310 kilogramów w obie strony i to właśnie „w obie strony" było kluczowe. Po wycofaniu wahadłowców Dragon przez lata pozostawał jedynym statkiem zdolnym sprowadzić z orbity znaczącą ilość ładunku — próbki badawcze wracały na Ziemię w ciągu doby lub dwóch.',
+      'Wykonał dwadzieścia trzy misje w latach 2010–2020; ostatni start odbył się 7 marca 2020. Od misji CRS-11 w 2017 roku używano kapsuł odzyskanych, a niektóre poleciały trzy razy — [[reuzywalnosc|reużywalność]] objęła statki wcześniej niż górne stopnie rakiet.',
+    ],
+    fakty: [
+      { etykieta: 'Pierwszy lot', wartosc: '8 grudnia 2010', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładowność', wartosc: '3 310 kg w obie strony', pewnosc: 'potwierdzone' },
+      { etykieta: 'Sposób przyłączania', wartosc: 'chwyt ramieniem stacji, bez samodzielnego dokowania', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba lotów', wartosc: '23, w latach 2010–2020', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ostatni start', wartosc: '7 marca 2020', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ponowne loty kapsuł', wartosc: 'od CRS-11 w 2017; niektóre po trzy misje', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Przez niemal dekadę po wycofaniu wahadłowców Dragon był jedynym statkiem na świecie zdolnym przywieźć z orbity coś więcej niż drobiazgi. Wszystkie pozostałe pojazdy zaopatrzeniowe spalały się przy powrocie — próbki z eksperymentów wracały na Ziemię wyłącznie tą jedną drogą.',
+        zrodlo: Z.wikiDragon1,
+      },
+    ],
+    os: [
+      { data: '2010-12-08', tytul: 'Pierwszy lot', opis: 'Pierwszy prywatny statek odzyskany z orbity.', waga: 3 },
+      { data: '2012-05-25', tytul: 'Przyłączenie do stacji', opis: 'Ramię Canadarm2 dostawia go do portu cumowniczego ISS.', waga: 3 },
+      { data: '2020-03-07', tytul: 'Ostatni start', opis: 'Po dwudziestu trzech misjach program się kończy.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'cots-demo-2', powod: 'lot, w którym po raz pierwszy dotarł do stacji' },
+      { id: 'crew-dragon', powod: 'jego następca, już z samodzielnym dokowaniem' },
+      { id: 'cots', powod: 'program, w ramach którego powstał' },
+      { id: 'draco-superdraco', powod: 'jego silniczki manewrowe' },
+      { id: 'reuzywalnosc', powod: 'kapsuły wracały do lotu wcześniej niż stopnie rakiet' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiDragon1, Z.wikiCots],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'warianty-falcona-9',
+    typ: 'rakieta',
+    nazwa: 'Warianty Falcona 9',
+    aka: ['v1.0', 'v1.1', 'Full Thrust', 'Block 5'],
+    krotki: 'Cztery kolejne wersje tej samej rakiety, w których z lotu na lot przesuwała się granica tego, co da się odzyskać.',
+    tresc: [
+      '[[falcon-9|Falcon 9]] nie jest jedną konstrukcją, tylko czterema. Wersja v1.0 poleciała w czerwcu 2010 roku. W wrześniu 2013 zastąpiła ją v1.1 z mocniejszym [[merlin|Merlinem 1D]] i wydłużonymi zbiornikami.',
+      'Wersja Full Thrust z grudnia 2015 podniosła ciąg na tyle, że zostawało paliwo na powrót członu — i to właśnie na jej pierwszym locie odbyło się [[pierwsze-ladowanie|pierwsze udane lądowanie]]. Nie był to zbieg okoliczności: odzysk był celem tej modernizacji.',
+      'Block 5 z maja 2018 jest wersją ostateczną i to nią firma lata do dziś. Zaprojektowano ją pod szybkie ponowne loty, a skuteczność lądowań wynosi w niej 99,06 procent wobec 98,06 dla całej rodziny.',
+      'Kierunek zmian jest w tej rodzinie jednoznaczny: każda kolejna wersja przybliżała [[reuzywalnosc|reużywalność]], aż rekordowy egzemplarz doszedł do trzydziestu siedmiu lotów.',
+    ],
+    fakty: [
+      { etykieta: 'v1.0', wartosc: 'czerwiec 2010', pewnosc: 'potwierdzone' },
+      { etykieta: 'v1.1', wartosc: 'wrzesień 2013', pewnosc: 'potwierdzone' },
+      { etykieta: 'Full Thrust', wartosc: 'grudzień 2015', pewnosc: 'potwierdzone' },
+      { etykieta: 'Block 5', wartosc: 'maj 2018, wersja ostateczna', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skuteczność lądowań Block 5', wartosc: '99,06% wobec 98,06% dla całej rodziny', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Pierwsze udane lądowanie odbyło się na pierwszym locie wersji Full Thrust — nie przypadkiem, bo właśnie ta modernizacja dołożyła ciąg potrzebny na powrót członu. Rakietę przebudowano po to, żeby mogła wracać, i wróciła za pierwszym razem.',
+        zrodlo: Z.wikiStartyFalcon,
+      },
+    ],
+    os: [
+      { data: '2013-09', tytul: 'v1.1', opis: 'Mocniejszy Merlin 1D i dłuższe zbiorniki.', waga: 2 },
+      { data: '2015-12', tytul: 'Full Thrust', opis: 'Wersja, na której udało się pierwsze lądowanie.', waga: 3 },
+      { data: '2018-05', tytul: 'Block 5', opis: 'Ostateczna konstrukcja, pomyślana pod szybkie ponowne loty.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'falcon-9', powod: 'to jego kolejne wersje' },
+      { id: 'merlin', powod: 'jego rozwój wyznaczał granice kolejnych wariantów' },
+      { id: 'pierwsze-ladowanie', powod: 'udało się na pierwszym locie wersji Full Thrust' },
+      { id: 'reuzywalnosc', powod: 'kierunek, w którym szła każda kolejna wersja' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiStartyFalcon, Z.wikiFalcon9],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starshield',
+    typ: 'produkt',
+    nazwa: 'Starshield',
+    aka: ['wariant rządowy Starlinka'],
+    krotki: 'Rządowa odmiana Starlinka z szyfrowaną łącznością — ta sama technologia, inny klient i znacznie mniej informacji.',
+    tresc: [
+      'Starshield jest odmianą [[starlink|Starlinka]] przeznaczoną dla klientów rządowych, z szyfrowaną łącznością i optycznymi łączami międzysatelitarnymi. Technicznie opiera się na tej samej konstrukcji satelity i tej samej [[konstelacja|architekturze konstelacji]].',
+      'Różnicą jest przeznaczenie i jawność. O Starlinku wiadomo, ile satelitów krąży, ilu jest abonentów i jaki jest przychód. O Starshieldzie wiadomo znacznie mniej, bo umowy z klientami rządowymi nie są publikowane w tym samym trybie.',
+      'Dla [[spacex|SpaceX]] to naturalne rozszerzenie: te same satelity, ta sama [[falcon-9|rakieta]], ten sam [[kadencja-startow|rytm startów]], inny odbiorca. Dla obrazu firmy ma to znaczenie, którego nie widać w liczbach — pokazuje, jak blisko cywilnej infrastruktury kosmicznej stoją dziś zastosowania wojskowe.',
+    ],
+    fakty: [
+      { etykieta: 'Czym jest', wartosc: 'rządowa odmiana Starlinka', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wyróżnik', wartosc: 'szyfrowana łączność', pewnosc: 'potwierdzone' },
+      { etykieta: 'Łącza międzysatelitarne', wartosc: 'optyczne', pewnosc: 'potwierdzone' },
+      { etykieta: 'Jawność danych', wartosc: 'znacznie mniejsza niż przy Starlinku', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'O konstelacji cywilnej wiadomo wszystko: liczba satelitów, liczba abonentów, przychód, zysk. O jej rządowej bliźniaczce wiadomo, że istnieje i że ma szyfrowaną łączność. Ta sama firma, ta sama rakieta i dwa zupełnie różne poziomy jawności.',
+        zrodlo: Z.wikiStarlink,
+      },
+    ],
+    os: [
+      { data: '2022-12', tytul: 'Ogłoszenie programu', opis: 'SpaceX przedstawia rządową odmianę konstelacji.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'starlink', powod: 'ta sama konstrukcja satelity i ta sama architektura' },
+      { id: 'konstelacja', powod: 'działa na tej samej zasadzie' },
+      { id: 'itar', powod: 'przepisy, pod które podpadają zastosowania rządowe' },
+      { id: 'spacex', powod: 'jej linia produktów dla klientów rządowych' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiStarlink, Z.wikiSpaceX],
+    zaktualizowano: '2026-09-13',
+  },
 ];

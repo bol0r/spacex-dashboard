@@ -845,4 +845,232 @@ const starshipMisje: Encja[] = [
   },
 ];
 
-export const misje: Encja[] = [...falcon1, ...wczesne, ...przelomy, ...starshipMisje];
+/** Loty testowe Starshipa poza tymi, które mają już własne encje. */
+const lotyStarshipa: Encja[] = [
+  {
+    id: 'starship-lot-1',
+    typ: 'misja',
+    nazwa: 'Starship, lot 1',
+    aka: ['Flight 1', 'pierwszy lot Starshipa'],
+    krotki: 'Rakieta rozpadła się po czterech minutach, a stanowisko startowe rozbiła tak, że trzeba je było przebudować.',
+    tresc: [
+      'Dwudziestego kwietnia 2023 roku [[starship|Starship]] poleciał po raz pierwszy. Trzydzieści trzy silniki [[raptor|Raptor 2]] uniosły najcięższą rakietę w historii, ale kilka z nich nie pracowało już od startu. Po czterech minutach pojazd zaczął koziołkować i uległ zniszczeniu.',
+      'Największe szkody nie były w powietrzu, a na ziemi. Strumień spalin wyrwał krater pod [[stage-zero|mocowaniem startowym]] i rozrzucił beton na znaczną odległość. Stanowisko wymagało przebudowy, w tym instalacji wodnej tłumiącej falę akustyczną.',
+      'Program przyjął to jako wynik, nie jako porażkę — [[rud|rozpad rakiety]] był tu jednym z możliwych rezultatów lotu testowego. Wnioski z tego startu i trzech kolejnych doprowadziły do [[starship-lot-5|pierwszego złapania członu]] półtora roku później.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '20 kwietnia 2023', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas lotu', wartosc: 'ok. 4 minuty', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki', wartosc: '33 × Raptor 2; część nie pracowała od startu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Szkody naziemne', wartosc: 'krater pod mocowaniem startowym, przebudowa stanowiska', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Strumień spalin trzydziestu trzech silników wyrwał w betonie pod stanowiskiem krater i rozrzucił gruz na setki metrów. Po tym locie dobudowano instalację wodną tłumiącą falę akustyczną — rozwiązanie, które przy mniejszych rakietach stosuje się od dekad.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2023-04-20', tytul: 'Lot 1', opis: 'Rakieta rozpada się po czterech minutach; stanowisko wymaga przebudowy.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship', powod: 'jego pierwszy lot testowy' },
+      { id: 'stage-zero', powod: 'stanowisko zostało wtedy poważnie uszkodzone' },
+      { id: 'rud', powod: 'najbardziej znany przykład tego określenia' },
+      { id: 'starship-lot-5', powod: 'sukces, do którego doprowadziły wnioski z tego lotu' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-9',
+    typ: 'misja',
+    nazwa: 'Starship, lot 9',
+    aka: ['Flight 9', 'pierwszy powtórny lot Super Heavy'],
+    krotki: 'Pierwszy lot członu nośnego użytego po raz drugi — złapany przy locie 7, wysłany ponownie cztery miesiące później.',
+    tresc: [
+      'Dwudziestego siódmego maja 2025 roku [[starship|Starship]] wystartował na członie B14, [[super-heavy|Super Heavy]] złapanym przez wieżę przy locie 7 w styczniu tego samego roku. Był to pierwszy przypadek, w którym ten sam dolny stopień poleciał dwukrotnie.',
+      'Znaczenie tego faktu jest takie samo jak przy [[ses-10|SES-10]] dla [[falcon-9|Falcona 9]]: złapanie członu dowodzi, że wraca, ale dopiero powtórny lot dowodzi, że wraca w stanie zdatnym do użycia. Bez tego [[reuzywalnosc|cała idea]] pozostaje deklaracją.',
+      'Sam lot skończył się utratą obu elementów — booster przepadł nad Zatoką Meksykańską, a statek nad Oceanem Indyjskim, po wycieku paliwa. Rezultat techniczny był więc mieszany, ale jedno pytanie doczekało się odpowiedzi.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '27 maja 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Booster', wartosc: 'B14, wcześniej złapany przy locie 7', pewnosc: 'potwierdzone' },
+      { etykieta: 'Znaczenie', wartosc: 'pierwszy powtórny lot członu Super Heavy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik', wartosc: 'utrata boostera nad zatoką i statku nad Oceanem Indyjskim', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Między złapaniem członu a jego ponownym startem minęły cztery miesiące. Dla porównania: przygotowanie promu kosmicznego do kolejnego lotu trwało zwykle kilka miesięcy i wymagało rozebrania pojazdu na części.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2025-05-27', tytul: 'Lot 9', opis: 'Pierwszy powtórny lot członu Super Heavy.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'super-heavy', powod: 'to jego człon poleciał tu po raz drugi' },
+      { id: 'starship-lot-5', powod: 'lot, na którym pierwszy raz złapano człon' },
+      { id: 'ses-10', powod: 'ten sam przełom w programie Falcona 9, osiem lat wcześniej' },
+      { id: 'reuzywalnosc', powod: 'dowód, że złapany człon nadaje się do ponownego lotu' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-10',
+    typ: 'misja',
+    nazwa: 'Starship, lot 10',
+    aka: ['Flight 10'],
+    krotki: 'Kontrolowane wodowanie statku z celnością liczoną w metrach — po serii trzech lotów zakończonych utratą górnego stopnia.',
+    tresc: [
+      'Dwudziestego szóstego sierpnia 2025 roku [[starship|Starship]] poleciał na członie B16 ze statkiem S37. Po trzech kolejnych lotach, na których górny stopień przepadał, ten wykonał kontrolowane wodowanie na Oceanie Indyjskim — w odległości trzech metrów od punktu celowania.',
+      'Booster również zszedł w sposób kontrolowany, wodując nad Zatoką Meksykańską. Obie części zachowały się zgodnie z planem, choć żadnej nie próbowano odzyskać.',
+      'Celność trzech metrów przy pojeździe wracającym z prędkości bliskiej orbitalnej jest liczbą, którą warto zapamiętać: pokazuje, że sterowanie w fazie [[wejscie-atmosferyczne|wejścia w atmosferę]] było już wtedy opanowane. Brakowało tylko pewności, że osłona termiczna wytrzyma — a to potwierdził dopiero [[starship-lot-13|lot 13]].',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '26 sierpnia 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B16, statek S37', pewnosc: 'potwierdzone' },
+      { etykieta: 'Celność wodowania statku', wartosc: 'ok. 3 metry od punktu celowania', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik', wartosc: 'sukces; kontrolowane wodowanie obu elementów', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Statek wracający z prędkości bliskiej orbitalnej osiadł trzy metry od punktu celowania. Dla porównania: kapsuły Apollo wodowały z dokładnością liczoną w kilometrach, a i tak uznawano to za bardzo dobry wynik.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2025-08-26', tytul: 'Lot 10', opis: 'Kontrolowane wodowanie z celnością trzech metrów.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship', powod: 'jego dziesiąty lot testowy' },
+      { id: 'wejscie-atmosferyczne', powod: 'lot dowiódł opanowania sterowania w tej fazie' },
+      { id: 'starship-lot-11', powod: 'następny lot, ostatni na konstrukcji Block 2' },
+      { id: 'starship-lot-13', powod: 'to on potwierdził wytrzymałość osłony termicznej' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-11',
+    typ: 'misja',
+    nazwa: 'Starship, lot 11',
+    aka: ['Flight 11', 'ostatni lot Block 2'],
+    krotki: 'Ostatni lot konstrukcji Block 2, zakończony kontrolowanym wodowaniem obu elementów dokładnie w punkcie celowania.',
+    tresc: [
+      'Trzynastego października 2025 roku [[starship|Starship]] poleciał na członie B15 ze statkiem S38. Był to ostatni lot pojazdów konstrukcji Block 2 — kolejny, [[starship-lot-12|lot 12]], odbył się już na Block 3.',
+      'Rezultat powtórzył [[starship-lot-10|lot 10]]: kontrolowane wodowanie boostera nad Zatoką Meksykańską i statku nad Oceanem Indyjskim, tym razem dokładnie w punkcie celowania.',
+      'Dwa udane loty pod rząd na tej samej konstrukcji są w programie, który wcześniej stracił trzy statki z rzędu, ważnym sygnałem: konstrukcja przestała być zmienną. Kolejnym krokiem mogła już być zmiana pojazdu, nie poprawianie starego.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '13 października 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B15, statek S38', pewnosc: 'potwierdzone' },
+      { etykieta: 'Znaczenie', wartosc: 'ostatni lot konstrukcji Block 2', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik', wartosc: 'sukces; oba elementy wodowały zgodnie z planem', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Konstrukcję Block 2 wycofano po dwóch udanych lotach pod rząd — czyli dokładnie wtedy, gdy zaczęła działać. Program nie optymalizuje tego, co już umie; przechodzi do następnej wersji, gdy tylko poprzednia przestanie zaskakiwać.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2025-10-13', tytul: 'Lot 11', opis: 'Ostatni lot Block 2 kończy się wodowaniem obu elementów w punkcie celowania.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship', powod: 'jego jedenasty lot testowy' },
+      { id: 'starship-lot-10', powod: 'poprzedni lot, z tym samym rezultatem' },
+      { id: 'starship-lot-12', powod: 'następny lot, już na konstrukcji Block 3' },
+      { id: 'super-heavy', powod: 'jego człon wodował kontrolowanie nad zatoką' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starship-lot-12',
+    typ: 'misja',
+    nazwa: 'Starship, lot 12',
+    aka: ['Flight 12', 'debiut Block 3'],
+    krotki: 'Debiut konstrukcji Block 3 z dwudziestoma makietami satelitów wypuszczonymi w połowie godzinnego lotu.',
+    tresc: [
+      'Dwudziestego drugiego maja 2026 roku [[starship|Starship]] poleciał po raz pierwszy w konstrukcji Block 3, na członie B19 ze statkiem S39. Pojazd niósł dwadzieścia makiet satelitów [[starlink|Starlink]], wypuszczonych mniej więcej w połowie trwającego godzinę lotu.',
+      'Górny stopień wykonał kontrolowane wodowanie na Oceanie Indyjskim. Człon nośny przepadł nad zatoką — przy hamowaniu odpaliło dwadzieścia z trzydziestu trzech silników [[raptor|Raptor]].',
+      'Znaczenie tego lotu polega na tym, że próba wypuszczania ładunku przestała być teorią. Dwa miesiące później [[starship-lot-13|lot 13]] powtórzył ten manewr, tym razem z prawdziwymi satelitami generacji V3.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '22 maja 2026', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B19, statek S39', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek', wartosc: '20 makiet satelitów Starlink', pewnosc: 'potwierdzone' },
+      { etykieta: 'Znaczenie', wartosc: 'pierwszy lot konstrukcji Block 3', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik boostera', wartosc: 'utracony — odpaliło 20 z 33 silników', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Pierwsze dwadzieścia „satelitów" wypuszczonych przez Starshipa było makietami o masie zbliżonej do prawdziwych. Program sprawdzał wtedy sam mechanizm wypuszczania ładunku, nie satelity — te przyszły dwa miesiące później.',
+        zrodlo: Z.nprLot12,
+      },
+    ],
+    os: [
+      { data: '2026-05-22', tytul: 'Lot 12', opis: 'Debiut Block 3 i pierwsze wypuszczenie ładunku, na razie w postaci makiet.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship', powod: 'jego dwunasty lot testowy i debiut nowej konstrukcji' },
+      { id: 'starship-lot-13', powod: 'następny lot, z prawdziwymi satelitami' },
+      { id: 'starlink', powod: 'makiety jego satelitów były tu ładunkiem' },
+      { id: 'starship-lot-11', powod: 'poprzedni lot, ostatni na Block 2' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.nprLot12, Z.wikiStartyStarship],
+    zaktualizowano: '2026-09-13',
+  },
+  {
+    id: 'starship-lot-7',
+    typ: 'misja',
+    nazwa: 'Starship, lot 7',
+    aka: ['Flight 7', 'drugie złapanie'],
+    krotki: 'Wieża złapała człon po raz drugi, a górny stopień przepadł — pierwszy z trzech kolejnych lotów z utratą statku.',
+    tresc: [
+      'Szesnastego stycznia 2025 roku [[starship|Starship]] poleciał na członie B14 ze statkiem S33. [[super-heavy|Super Heavy]] wrócił i został przechwycony przez ramiona wieży — drugi udany chwyt po [[starship-lot-5|locie 5]].',
+      'Górny stopień nie doleciał. Wyciek paliwa doprowadził do wyłączania silników i utraty łączności telemetrycznej; statek przepadł. Ten sam scenariusz powtórzył się przy locie 8 w marcu i, w innej postaci, przy [[starship-lot-9|locie 9]] w maju.',
+      'Trzy loty z rzędu z utratą statku po dwóch udanych chwytach członu pokazały, gdzie leży wtedy prawdziwy problem programu. Dolny stopień był już opanowany; górny — jeszcze nie. Rozstrzygnęły to dopiero [[starship-lot-10|lot 10]] i kolejne.',
+      'Złapany przy tym locie egzemplarz B14 poleciał ponownie cztery miesiące później, jako [[starship-lot-9|pierwszy powtórnie użyty Super Heavy]].',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '16 stycznia 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B14, statek S33', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik członu', wartosc: 'złapany przez wieżę — drugi udany chwyt', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik statku', wartosc: 'utracony po wycieku paliwa', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Ten sam egzemplarz członu, złapany w styczniu, poleciał ponownie w maju. Booster z lotu, który w zestawieniach figuruje jako porażka, dostarczył programowi jego najważniejszy dowód: że złapany człon nadaje się do ponownego lotu.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2025-01-16', tytul: 'Lot 7', opis: 'Drugie udane złapanie członu i utrata górnego stopnia.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship-lot-5', powod: 'pierwsze złapanie członu, trzy miesiące wcześniej' },
+      { id: 'starship-lot-9', powod: 'ten sam człon poleciał tam po raz drugi' },
+      { id: 'super-heavy', powod: 'jego człon został tu złapany po raz drugi' },
+      { id: 'starship', powod: 'jego siódmy lot testowy' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zaktualizowano: '2026-09-13',
+  },
+];
+
+export const misje: Encja[] = [
+  ...falcon1, ...wczesne, ...przelomy, ...starshipMisje, ...lotyStarshipa,
+];
