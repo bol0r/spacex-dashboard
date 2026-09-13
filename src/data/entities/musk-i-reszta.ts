@@ -301,7 +301,7 @@ export const muskIReszta: Encja[] = [
       'Neuralink powstał 21 czerwca 2016 roku. Założycieli było dziewięciu: [[elon-musk|Musk]] i ośmioro naukowców, w tym Max Hodak, Benjamin Rapoport, Dongjin Seo i Vanessa Tolosa. Cel jest jeden — bezpośrednie połączenie mózgu z komputerem.',
       'Urządzenie, czyli [[implant-n1|implant N1]], ma średnicę mniej więcej monety. Wszczepia go robot chirurgiczny igłą o średnicy 25 mikrometrów, wprowadzając do sześciu nitek, czyli 192 elektrod, na minutę — ręka ludzka takiej precyzji nie ma.',
       'Zgodę na badania na ludziach firma dostała w maju 2023 roku. Pierwszy pacjent, 29-letni Noland Arbaugh, sparaliżowany po wypadku podczas skoku do wody, otrzymał implant 28 stycznia 2024. Według wypowiedzi Muska z września 2025 w badaniu było dwunastu uczestników, z ponad dwoma tysiącami dni i piętnastoma tysiącami godzin łącznego użytkowania.',
-      'Neuralink jest przy tym jedyną firmą [[elon-musk|Muska]], której produkt wchodzi do ludzkiego ciała — i jedyną, w której ryzyko ponosi nie inwestor, a pacjent. Firma ma za sobą także poważny spór o badania na zwierzętach. W latach 2018–2022 wykorzystano w nich co najmniej 1 500 zwierząt. Organizacja Physicians Committee for Responsible Medicine podała, że z dwudziestu trzech małp piętnaście zginęło albo zostało uśpionych w wyniku eksperymentów, a śledztwo „Wired" z września 2023 opisało powikłania obejmujące częściowy paraliż i obrzęk mózgu.',
+      'Neuralink jest przy tym jedyną firmą [[elon-musk|Muska]], której produkt wchodzi do ludzkiego ciała — i jedyną, w której ryzyko ponosi nie inwestor, a pacjent. W [[tesla|Tesli]] i [[spacex|SpaceX]] najgorszy możliwy wynik testu kończy się na sprzęcie. Firma ma za sobą także poważny spór o badania na zwierzętach. W latach 2018–2022 wykorzystano w nich co najmniej 1 500 zwierząt. Organizacja Physicians Committee for Responsible Medicine podała, że z dwudziestu trzech małp piętnaście zginęło albo zostało uśpionych w wyniku eksperymentów, a śledztwo „Wired" z września 2023 opisało powikłania obejmujące częściowy paraliż i obrzęk mózgu.',
     ],
     fakty: [
       { etykieta: 'Założenie', wartosc: '21 czerwca 2016', pewnosc: 'potwierdzone' },
@@ -341,7 +341,7 @@ export const muskIReszta: Encja[] = [
     tresc: [
       'N1 ma około 23 milimetrów średnicy — mniej więcej tyle co moneta. Zawiera 48 albo 96 nitek, z których każda mieści 32 niezależne elektrody, co daje układ liczący do 3 072 punktów odczytu aktywności mózgu.',
       'Pierwszy pacjent [[neuralink|Neuralinku]], Noland Arbaugh, po wszczepieniu w styczniu 2024 roku sterował kursorem komputera i grał w szachy samą myślą. To nie jest metafora: układ odczytuje aktywność kory ruchowej i zamienia ją na ruch wskaźnika.',
-      'Kilka tygodni po zabiegu okazało się, że 85 procent nitek całkowicie się odłączyło, bo mózg przesunął się w czaszce około trzykrotnie bardziej, niż zakładano. Sprawność odzyskano poprawkami w oprogramowaniu, nie kolejną operacją.',
+      'Kilka tygodni po zabiegu okazało się, że 85 procent nitek całkowicie się odłączyło, bo mózg przesunął się w czaszce około trzykrotnie bardziej, niż zakładano. Sprawność odzyskano poprawkami w oprogramowaniu, nie kolejną operacją — podobnie jak w [[fsd|oprogramowaniu Tesli]], gdzie poprawka trafia do urządzenia już sprzedanego.',
       'Ten epizod jest w tej encji najważniejszy, bo pokazuje realny stan technologii: urządzenie działa, ale zachowanie żywej tkanki wokół niego wciąż zaskakuje jego twórców. To ta sama różnica między prototypem a produktem, którą widać w [[optimus|Optimusie]] i w [[starship|programie Starshipa]] — z tą różnicą, że tutaj prototyp siedzi w czyjejś głowie, a nie na hamowni.',
     ],
     fakty: [
@@ -378,8 +378,8 @@ export const muskIReszta: Encja[] = [
     aka: ['Boring Co'],
     krotki: 'Firma drążąca tunele, założona z frustracji korkami w Los Angeles — z jednym działającym systemem i długą listą projektów porzuconych.',
     tresc: [
-      'Firmę zarejestrowano 11 stycznia 2017 roku. Pomysł [[elon-musk|Musk]] ogłosił w grudniu 2016, wprost wskazując na korki w Los Angeles i na to, że sieć transportowa miasta jest dwuwymiarowa. Odpowiedzią miało być zejście pod ziemię.',
-      'Pierwszym przedsięwzięciem był tunel doświadczalny w Hawthorne o długości 1,14 mili, drążony w latach 2016–2018. Jedynym systemem, który naprawdę wozi ludzi, jest [[las-vegas-loop|Las Vegas Convention Center Loop]].',
+      'Firmę zarejestrowano 11 stycznia 2017 roku. Pomysł [[elon-musk|Musk]] ogłosił w grudniu 2016, wprost wskazując na korki w Los Angeles i na to, że sieć transportowa miasta jest dwuwymiarowa. Odpowiedzią miało być zejście pod ziemię — pomysł z tej samej rodziny co [[hyperloop|Hyperloop]], ogłoszony cztery lata wcześniej i nigdy przez Muska niezrealizowany.',
+      'Pierwszym przedsięwzięciem był tunel doświadczalny w [[hawthorne|Hawthorne]], tuż przy siedzibie [[spacex|SpaceX]], o długości 1,14 mili, drążony w latach 2016–2018. Jedynym systemem, który naprawdę wozi ludzi, jest [[las-vegas-loop|Las Vegas Convention Center Loop]].',
       'Lista projektów ogłoszonych i porzuconych jest długa: Chicago, Los Angeles, korytarz Baltimore–Waszyngton, San Antonio, Miami, Fort Lauderdale, San Jose. Żaden nie powstał.',
       'Osobnym epizodem jest [[not-a-flamethrower|Not-a-Flamethrower]] — gadżet, który przyniósł firmie wczesne przychody i zapewne więcej rozgłosu niż wszystkie tunele razem wzięte.',
     ],
@@ -420,7 +420,7 @@ export const muskIReszta: Encja[] = [
     tresc: [
       'System oddano w 2021 roku. Ma 1,7 mili tuneli, początkowo z trzema stacjami, pod terenem centrum kongresowego w Las Vegas. W kwietniu 2024 doszedł odcinek do kompleksu Resorts World, a kolejne połączenia są w budowie.',
       'Rozwiązanie techniczne rozczarowało tych, którzy spodziewali się kolei podziemnej: tunelami jeżdżą samochody [[model-y|Tesla Model Y]] prowadzone przez ludzi. W październiku 2025 na jednym odcinku ruszyły ograniczone próby z pojazdami jadącymi bez kierowcy.',
-      'Docelowo sieć ma liczyć 68 mil tuneli i 123 stacje. To liczba, którą trzeba czytać razem z [[boring-company|listą projektów porzuconych]] w innych miastach — zapowiedzi tej firmy i jej realizacje rozchodzą się szeroko.',
+      'Docelowo sieć ma liczyć 68 mil tuneli i 123 stacje — więcej, niż ma niejedno metro. Pojazdy jeżdżą tam na [[autopilot|Autopilocie]] wyłącznie w ograniczonych próbach. To liczba, którą trzeba czytać razem z [[boring-company|listą projektów porzuconych]] w innych miastach — zapowiedzi tej firmy i jej realizacje rozchodzą się szeroko.',
       'Mimo to jest to jedyne miejsce na świecie, w którym pomysł [[elon-musk|Muska]] na transport w tunelu wozi codziennie prawdziwych pasażerów.',
     ],
     fakty: [
@@ -664,7 +664,7 @@ export const muskIReszta: Encja[] = [
     krotki: 'Superkomputer w Memphis zbudowany w 122 dni, z planem miliona kart graficznych i poborem mocy liczonym w gigawatach.',
     tresc: [
       'Colossus to zaplecze obliczeniowe [[xai|xAI]], zbudowane w Memphis w stanie Tennessee. Pełną zdolność osiągnął w grudniu 2024 roku, po stu dwudziestu dwóch dniach budowy — tempie, które w tej klasie przedsięwzięć jest nietypowe.',
-      'Skala docelowa to milion kart graficznych i blisko dwa gigawaty mocy obliczeniowej. Szczytowe zapotrzebowanie na energię elektryczną sięgnęło 150 megawatów.',
+      'Skala docelowa to milion kart graficznych i blisko dwa gigawaty mocy obliczeniowej. Szczytowe zapotrzebowanie na energię elektryczną sięgnęło 150 megawatów — skala, przy której rozmawia się z operatorem sieci, nie z dostawcą prądu. Zasilanie awaryjne oparto między innymi na magazynach z rodziny [[megapack|Megapacka]].',
       'To liczby, które warto zestawić z [[dojo|Dojo]] Tesli: dwa projekty z tego samego otoczenia, oba budowane pod trenowanie modeli, oba z własnym zapleczem sprzętowym. Dojo zamknięto w 2025 i wznowiono w 2026; Colossus ruszył i pracuje.',
       'Na tej infrastrukturze trenowany jest [[grok|Grok]].',
     ],
@@ -826,7 +826,7 @@ export const muskIReszta: Encja[] = [
     tresc: [
       'Fundację założyli 24 grudnia 2001 roku [[elon-musk|Elon]] i Kimbal Muskowie. Deklarowane obszary to energia odnawialna, załogowe loty kosmiczne, pediatria, edukacja w naukach ścisłych i inżynierii oraz bezpieczna sztuczna inteligencja.',
       'Na koniec 2024 roku majątek fundacji wynosił 14,7 miliarda dolarów przy rocznych dotacjach 474 milionów. Zatrudnienie: zero osób.',
-      'Wśród większych darowizn są sto milionów dolarów z 2021 roku na technologie usuwania dwutlenku węgla, w tym konkurs XPRIZE, oraz 55 milionów dla szpitala St. Jude — tego samego, na który zbierała [[inspiration4|misja Inspiration4]]. W 2024 roku 370 milionów trafiło do podmiotu prowadzącego szkołę Ad Astra w Teksasie.',
+      'Wśród większych darowizn są sto milionów dolarów z 2021 roku na technologie usuwania dwutlenku węgla, w tym konkurs XPRIZE, oraz 55 milionów dla szpitala St. Jude — tego samego, na który zbierała [[inspiration4|misja Inspiration4]]. W 2024 roku 370 milionów trafiło do podmiotu prowadzącego szkołę Ad Astra w Teksasie. Współzałożycielem fundacji jest [[kimbal-musk|Kimbal Musk]], który równolegle prowadzi własną organizację zakładającą ogrody przy szkołach.',
       'Dla porównania skali: roczne dotacje fundacji to mniej więcej jedna ósma tego, co [[tesla|Tesla]] zarobiła na czysto w 2025 roku. Zarzuty są dwa i oba poważne. W latach 2021–2024 fundacja nie rozdawała wymaganego przez amerykański urząd skarbowy minimum pięciu procent majątku rocznie. Analizy Bloomberga i „The New York Timesa" wykazały, że dotacje trafiają głównie do organizacji powiązanych z Muskiem — według tych ustaleń około połowy grantów do 2022 roku poszło do podmiotów związanych z nim, jego pracownikami albo jego firmami.',
     ],
     fakty: [
@@ -942,6 +942,91 @@ export const muskIReszta: Encja[] = [
       { id: 'fundacja-muska', powod: 'zarejestrowana przez obu braci w 2001 roku' },
     ],
     zrodla: [Z.wikiKimbal, Z.teslaKimbal],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'doge',
+    typ: 'wydarzenie',
+    nazwa: 'DOGE',
+    aka: ['Department of Government Efficiency', 'Departament Efektywności Rządu'],
+    krotki: 'Rządowa inicjatywa cięcia wydatków, którą Musk kierował przez cztery miesiące; jej rachunki zakwestionowała później izba kontroli.',
+    tresc: [
+      'Dwudziestego stycznia 2025 roku prezydent Donald Trump powołał rozporządzeniem wykonawczym 14158 strukturę o nazwie Department of Government Efficiency. Nie był to nowy departament — przekształcono istniejącą jednostkę cyfrową Białego Domu i dołożono do niej organizację tymczasową, przewidzianą do rozwiązania 4 lipca 2026, oraz zespoły działające przy poszczególnych agencjach.',
+      'Rola [[elon-musk|Muska]] była przedmiotem sporu od początku, a [[styl-zarzadzania|metody znane z jego firm]] — szybkie cięcia i komunikacja przez [[x-platforma|własną platformę]] — przeniosły się do administracji niemal bez zmian. Biały Dom nadał mu tytuł starszego doradcy prezydenta do spraw efektywności rządu. Trump mówił, że Musk kieruje DOGE; Biały Dom zaprzeczał, by podejmował on decyzje; sąd federalny uznał go za faktycznego szefa struktury, co według tego orzeczenia wymagałoby zatwierdzenia przez Senat. Musk wyjechał z Waszyngtonu 30 maja 2025 roku.',
+      'DOGE prowadziło publiczną stronę z zestawieniem oszczędności, nazywaną ścianą paragonów. Szóstego sierpnia 2026 roku amerykańska izba kontroli GAO opublikowała raport z badania okresu od 20 stycznia 2025 do 7 lipca 2026. Stwierdziła, że 110 miliardów dolarów zadeklarowanych oszczędności opierało się na wyliczeniach błędnych albo niepopartych dowodami.',
+      'Konkrety z raportu: ze 264 umów najmu wskazanych jako rozwiązane 108 było wypowiadanych jeszcze przed powstaniem DOGE, przy kontraktach nie stosowano własnej metodyki liczenia, a przy dotacjach nie dało się zweryfikować wyliczeń w 96 procentach przypadków. Jednym z przykładów jest 1,7 miliarda dolarów zapisanych na kontraktach informatycznych wojskowej służby zdrowia, których ostatecznie nie rozwiązano ani nie okrojono. Wzór przypomina [[przejecie-twittera|przejęcie Twittera]]: szybka redukcja ogłoszona publicznie, a rachunek podsumowany dopiero po czasie i przez kogoś innego.',
+    ],
+    fakty: [
+      { etykieta: 'Powołanie', wartosc: '20 stycznia 2025, rozporządzenie wykonawcze 14158', pewnosc: 'potwierdzone' },
+      { etykieta: 'Forma prawna', wartosc: 'przekształcenie istniejącej jednostki, nie nowy departament', pewnosc: 'potwierdzone' },
+      { etykieta: 'Tytuł Muska', wartosc: 'starszy doradca prezydenta do spraw efektywności rządu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Kto kierował', wartosc: 'Trump wskazywał Muska, Biały Dom zaprzeczał, sąd uznał go za faktycznego szefa', pewnosc: 'sporne' },
+      { etykieta: 'Koniec udziału Muska', wartosc: '30 maja 2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ustalenia GAO', wartosc: '110 mld USD oszczędności błędnych lub niepopartych dowodami', stanNa: '2026-08-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dotacje', wartosc: 'brak możliwości weryfikacji w 96 procentach przypadków', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Ze 264 umów najmu, które DOGE wpisało sobie w oszczędności, 108 było już wypowiadanych, zanim struktura w ogóle powstała. Izba kontroli policzyła to jako zapisanie po swojej stronie efektów cudzych decyzji sprzed własnego istnienia.',
+        zrodlo: Z.cbsDoge,
+      },
+    ],
+    os: [
+      { data: '2025-01-20', tytul: 'Powołanie DOGE', opis: 'Rozporządzenie wykonawcze przekształca jednostkę cyfrową Białego Domu.', waga: 3 },
+      { data: '2025-05-30', tytul: 'Musk opuszcza Waszyngton', opis: 'Kończy się jego czteromiesięczny udział w pracach struktury.', waga: 2 },
+      { data: '2026-08-06', tytul: 'Raport GAO', opis: 'Izba kontroli kwestionuje 110 miliardów dolarów zadeklarowanych oszczędności.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'elon-musk', powod: 'kierował tą strukturą przez cztery miesiące 2025 roku' },
+      { id: 'x-platforma', powod: 'kanał, przez który komunikował działania DOGE' },
+      { id: 'przejecie-twittera', powod: 'wcześniejszy przykład tego samego wzoru: przejęcie i szybkie cięcia' },
+      { id: 'styl-zarzadzania', powod: 'te same metody przeniesione z firm do administracji' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.wikiDoge, Z.cbsDoge],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'starlink-w-ukrainie',
+    typ: 'wydarzenie',
+    nazwa: 'Starlink na Ukrainie',
+    aka: ['Starlink w wojnie', 'sprawa Sewastopola'],
+    krotki: 'Prywatna sieć satelitarna stała się infrastrukturą wojenną — i postawiła pytanie, kto decyduje o jej zasięgu.',
+    tresc: [
+      'Dwudziestego szóstego lutego 2022 roku ukraiński minister Mychajło Fedorow poprosił [[elon-musk|Muska]] na [[przejecie-twittera|Twitterze]] o terminale [[starlink|Starlinka]]. Dwa dni później pierwsze dotarły do kraju, a SpaceX uruchomiło usługę na całym jego obszarze. Do kwietnia wysłano 5 tysięcy sztuk, z czego 3667 podarowała firma; resztę kupiła amerykańska agencja USAID. Do grudnia 2022 było ich 22 tysiące, a największym płatnikiem okazała się Polska, finansując blisko 9 tysięcy.',
+      'We wrześniu 2022 roku SpaceX napisało do Pentagonu, że nie jest w stanie dalej przekazywać terminali ani finansować istniejących bez końca, i poprosiło resort o przejęcie kosztów — szacowanych na 124 miliony dolarów do końca roku i blisko 380 milionów rocznie. W październiku Musk publicznie mówił o 20 milionach miesięcznie, a po nagłośnieniu sprawy zapowiedział, że firma będzie finansować usługę dalej. W czerwcu 2023 Pentagon podpisał wreszcie kontrakt.',
+      'Sprawę komplikowało to, że [[konstelacja|zasięg takiej sieci]] da się włączać i wyłączać nad wybranym obszarem, a decyzja o tym należy do jej właściciela. Najostrzejszy spór dotyczy nocy ataku ukraińskich dronów morskich na rosyjską flotę w Sewastopolu we wrześniu 2022 roku. Biografia Waltera Isaacsona podała najpierw, że Musk potajemnie kazał inżynierom wyłączyć zasięg w promieniu stu kilometrów od wybrzeża Krymu. Musk odpowiedział, że te obszary nigdy nie były aktywowane i SpaceX niczego nie wyłączyło.',
+      'Isaacson następnie sprostował: zasięg nad Krymem był wyłączony wcześniej, Ukraińcy o tym nie wiedzieli, poprosili o włączenie go na czas ataku, a Musk odmówił, uważając, że byłoby to aktem wojny i eskalacją. Generał Kyryło Budanow powiedział, że nikt nie naciskał żadnego mitycznego przycisku — po prostu zorientowali się, że zasięgu tam nie ma. Odpowiedzią SpaceX na ten problem stała się [[starshield|osobna usługa rządowa]], w której o zasięgu decyduje klient. Pentagon wyciągnął z tego własny wniosek: sekretarz sił powietrznych Frank Kendall mówił publicznie, że system komercyjny bez gwarancji dostępności jest w czasie pokoju wygodą, a nie czymś, na czym można polegać na wojnie.',
+    ],
+    fakty: [
+      { etykieta: 'Prośba i dostawa', wartosc: 'prośba 26 lutego 2022, pierwsze terminale 28 lutego', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skala do grudnia 2022', wartosc: '22 tysiące terminali', pewnosc: 'potwierdzone' },
+      { etykieta: 'Największy płatnik', wartosc: 'Polska, blisko 9 tysięcy terminali', pewnosc: 'potwierdzone' },
+      { etykieta: 'List do Pentagonu', wartosc: 'wrzesień 2022; 124 mln USD do końca roku, blisko 380 mln rocznie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Kontrakt z Pentagonem', wartosc: 'czerwiec 2023', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wersja pierwotna biografii', wartosc: 'Musk kazał wyłączyć zasięg w noc ataku', pewnosc: 'sporne' },
+      { etykieta: 'Wersja po sprostowaniu', wartosc: 'zasięg był wyłączony wcześniej; Musk odmówił włączenia', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Wniosek, który Pentagon wyciągnął z tej historii, dotyczył nie Ukrainy, tylko samego siebie. Sekretarz sił powietrznych powiedział publicznie, że system komercyjny bez gwarancji dostępności jest w czasie pokoju wygodą i oszczędnością, ale nie czymś, na czym wolno polegać w czasie wojny.',
+        zrodlo: Z.pbsStarlink,
+      },
+    ],
+    os: [
+      { data: '2022-02-28', tytul: 'Pierwsze terminale na Ukrainie', opis: 'SpaceX uruchamia usługę dwa dni po prośbie ukraińskiego ministra.', waga: 3 },
+      { data: '2022-09', tytul: 'Odmowa nad Sewastopolem', opis: 'Ukraina prosi o zasięg nad Krymem na czas ataku dronów; Musk odmawia.', waga: 3 },
+      { data: '2023-06', tytul: 'Kontrakt z Pentagonem', opis: 'Resort obrony przejmuje finansowanie części usługi.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'starlink', powod: 'to jego terminale trafiły na front' },
+      { id: 'starshield', powod: 'osobna, rządowa wersja usługi powstała w odpowiedzi na ten problem' },
+      { id: 'elon-musk', powod: 'decyzja o zasięgu nad Krymem należała do niego osobiście' },
+      { id: 'konstelacja', powod: 'zasięg tej sieci da się włączać i wyłączać nad wybranym obszarem' },
+    ],
+    zrodla: [Z.wikiStarlinkUkraina, Z.pbsStarlink],
     zaktualizowano: '2026-09-13',
   },
 ];

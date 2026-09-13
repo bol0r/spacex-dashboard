@@ -289,7 +289,7 @@ const samochody: Encja[] = [
     aka: ['pickup ze stali nierdzewnej'],
     krotki: 'Pickup o nadwoziu ze stali nierdzewnej, którego szyba pękła na własnej prezentacji.',
     tresc: [
-      'Cybertruck pokazano 21 listopada 2019 roku w Los Angeles. Nadwozie robi się z blach stali nierdzewnej serii 300, ciętych laserem i giętych po prostych — [[tesla|Tesla]] opracowała do tego metodę gięcia sprężonym powietrzem, bez kontaktu narzędzia z powierzchnią. Wybór materiału jest tym samym rozumowaniem, które stoi za stalowym [[starship|Starshipem]].', 'Dostawy zaczęły się 30 listopada 2023 roku w fabryce w Teksasie, cztery lata po premierze. Obietnice z 2019 roku nie wytrzymały zderzenia z produkcją: cena startowa miała wynosić 39 900 dolarów, a wyniosła 60 990, czyli o ponad połowę więcej. Zasięg zapowiadano na 500 mil, a wersje produkcyjne dają najwyżej 340.',
+      'Cybertruck pokazano 21 listopada 2019 roku w Los Angeles. Nadwozie robi się z blach stali nierdzewnej serii 300, ciętych laserem i giętych po prostych — [[tesla|Tesla]] opracowała do tego metodę gięcia sprężonym powietrzem, bez kontaktu narzędzia z powierzchnią. Wybór materiału jest tym samym rozumowaniem, które stoi za stalowym [[starship|Starshipem]], a za jego wygląd odpowiada to samo studio co za [[model-s|Modelem S]] — [[franz-von-holzhausen|Franz von Holzhausen]].', 'Dostawy zaczęły się 30 listopada 2023 roku w [[gigafactory-teksas|fabryce w Teksasie]], cztery lata po premierze. Obietnice z 2019 roku nie wytrzymały zderzenia z produkcją: cena startowa miała wynosić 39 900 dolarów, a wyniosła 60 990, czyli o ponad połowę więcej. Zasięg zapowiadano na 500 mil, a wersje produkcyjne dają najwyżej 340.',
       'Metoda gięcia sprężonym powietrzem należy do tej samej rodziny pomysłów co [[gigacasting|odlewanie wielkogabarytowe]] — upraszczać fabrykę, nie samochód. Do 27 lutego 2025 roku zbudowano 46 096 egzemplarzy. W 2024 sprzedano około 38 965 sztuk, a w pierwszych trzech kwartałach 2025 nieco ponad 16 tysięcy — wyraźny spadek. Między styczniem 2024 a październikiem 2025 model objęło dziesięć akcji serwisowych, dotyczących instalacji elektrycznej, konstrukcji, widoczności i oprogramowania.',
     ],
     fakty: [
@@ -412,7 +412,7 @@ const produkcja: Encja[] = [
     krotki: 'Pierwsza gigafabryka Tesli, zbudowana z Panasonikiem — 500 tysięcy metrów kwadratowych powierzchni podłogi.',
     tresc: [
       'Budowę rozpoczęto w lecie 2014 roku, konstrukcję nadziemną zgłoszono w styczniu 2015, a zakład ruszył w styczniu 2016. Powierzchnia podłogi wynosi 5,4 miliona stóp kwadratowych, czyli około pół miliona metrów, na działce o wielkości 4,5 mili kwadratowej — największej spośród [[gigafactory|gigafabryk]] Tesli pod względem terenu.', 'Fabryka od początku była przedsięwzięciem wspólnym z Panasonikiem. W lipcu 2014 roku japońska firma zgodziła się w nią zainwestować; początkowo około 1,6 miliarda dolarów, potem ogłosiła emisję obligacji na 3,86 miliarda, w większości przeznaczoną właśnie na ten zakład. Do 2019 roku łączne nakłady sięgnęły 4,9 miliarda: 3 miliardy od [[tesla|Tesli]], 1,7 od Panasonika i 100 milionów od firmy H&T.',
-      'W połowie 2019 roku zakład miał teoretyczną zdolność 35 GWh rocznie, a produkował około 24 GWh. Zatrudniał wtedy 7 557 osób, w większości mieszkańców Nevady. Rozbudowa ogłoszona pod produkcję Tesli Semi obejmuje [[ogniwa-4680|ogniwa 4680]] i cel stu gigawatogodzin rocznie.',
+      'W połowie 2019 roku zakład miał teoretyczną zdolność 35 GWh rocznie, a produkował około 24 GWh. Zatrudniał wtedy 7 557 osób, w większości mieszkańców Nevady. Rozbudowa ogłoszona pod produkcję [[tesla-semi|Tesli Semi]] obejmuje [[ogniwa-4680|ogniwa 4680]] i cel stu gigawatogodzin rocznie. Za stronę techniczną tego przedsięwzięcia odpowiadał wtedy [[jb-straubel|JB Straubel]].',
     ],
     fakty: [
       { etykieta: 'Start budowy', wartosc: 'lato 2014', pewnosc: 'potwierdzone' },
@@ -568,7 +568,7 @@ const oprogramowanie: Encja[] = [
     aka: ['FSD', 'FSD Beta', 'Autosteer on City Streets'],
     krotki: 'Płatny pakiet o nazwie obiecującej pełną autonomię, działający na poziomie 2 i wymagający stałego nadzoru.',
     tresc: [
-      'FSD jest rozszerzeniem [[autopilot|Autopilota]] o rozpoznawanie sygnalizacji i znaków stopu oraz prowadzenie po drogach lokalnych. Formalnie pozostaje układem poziomu 2 — kierowca musi nadzorować jazdę bez przerwy. Nazwa była wielokrotnie krytykowana za wprowadzanie klientów w błąd, a prawnicy argumentowali, że reklamowanie systemu poziomu 2 jako „pełnego samoprowadzenia" pozwalało ominąć wymogi dopuszczeniowe stawiane pojazdom rzeczywiście autonomicznym.', 'Historia cen jest sama w sobie opowieścią: 3 tysiące dolarów jako dodatek w 2016 roku, 5 tysięcy w 2019, 10 tysięcy w październiku 2020, 15 tysięcy we wrześniu 2022, obniżka do 12 tysięcy rok później i do 8 tysięcy w kwietniu 2024, z abonamentem 99 dolarów miesięcznie. W lutym 2026 [[tesla|Tesla]] zakończyła sprzedaż pakietu i zostawiła wyłącznie abonament.',
+      'FSD jest rozszerzeniem [[autopilot|Autopilota]] o rozpoznawanie sygnalizacji i znaków stopu oraz prowadzenie po drogach lokalnych. Formalnie pozostaje układem poziomu 2 — kierowca musi nadzorować jazdę bez przerwy. Widzi przy tym wyłącznie obraz z kamer, bo [[tesla-vision|Tesla Vision]] usunęła z układu radar i ultradźwięki. Nazwa była wielokrotnie krytykowana za wprowadzanie klientów w błąd, a prawnicy argumentowali, że reklamowanie systemu poziomu 2 jako „pełnego samoprowadzenia" pozwalało ominąć wymogi dopuszczeniowe stawiane pojazdom rzeczywiście autonomicznym.', 'Historia cen jest sama w sobie opowieścią: 3 tysiące dolarów jako dodatek w 2016 roku, 5 tysięcy w 2019, 10 tysięcy w październiku 2020, 15 tysięcy we wrześniu 2022, obniżka do 12 tysięcy rok później i do 8 tysięcy w kwietniu 2024, z abonamentem 99 dolarów miesięcznie. W lutym 2026 [[tesla|Tesla]] zakończyła sprzedaż pakietu i zostawiła wyłącznie abonament — model przychodu bliższy [[robotaxi|usłudze przewozowej]] niż sprzedaży wyposażenia.',
       'Wraz ze wzrostem ceny spadał odsetek klientów, którzy go kupowali — z szacowanych 37 procent w 2019 roku do 12 procent w 2021.', 'W lutym 2023 roku [[nadzor-nhtsa|NHTSA]] objęła akcją serwisową 362 758 samochodów z FSD Beta i wstrzymała przyjmowanie nowych uczestników programu. Poprawkę wydano w marcu 2023 jako wersję 11.3.1.',
     ],
     fakty: [
@@ -767,8 +767,8 @@ const reszta: Encja[] = [
     aka: ['magazyn sieciowy', 'Megafactory'],
     krotki: 'Kontener magazynujący do 3 MWh — jednostka, z której buduje się największe baterie sieciowe na świecie.',
     tresc: [
-      'Megapack jest magazynem energii w skali sieci energetycznej: jedna jednostka przechowuje do trzech megawatogodzin. Zestawia się je w farmy liczone w setkach jednostek, stabilizujące pracę sieci przy zmiennej produkcji ze słońca i wiatru.', 'W 2024 roku [[tesla|Tesla]] wprowadziła do eksploatacji 31,4 gigawatogodziny magazynów energii — o 113 procent więcej niż rok wcześniej. To skala, przy której magazynowanie przestaje być dodatkiem do sprzedaży samochodów.',
-      'Produkcja odbywa się w zakładzie zwanym Megafactory w Lathrop w Kalifornii, a ogniwa pochodzą między innymi z [[gigafactory-nevada|Nevady]]. W domach ten sam pomysł realizuje [[powerwall|Powerwall]].', 'Technologia nie jest bezawaryjna: w lipcu 2021 roku podczas testów w australijskiej instalacji Big Battery doszło do pożaru Megapacka.',
+      'Megapack jest magazynem energii w skali sieci energetycznej: jedna jednostka przechowuje do trzech megawatogodzin. Zestawia się je w farmy liczone w setkach jednostek, stabilizujące pracę sieci przy zmiennej produkcji ze słońca i wiatru.', 'W 2024 roku [[tesla|Tesla]] wprowadziła do eksploatacji 31,4 gigawatogodziny magazynów energii — o 113 procent więcej niż rok wcześniej. To skala, przy której magazynowanie przestaje być dodatkiem do sprzedaży samochodów — i przy której [[master-plan|drugi plan generalny]] przestaje być hasłem marketingowym.',
+      'Produkcja odbywa się w zakładzie zwanym Megafactory w Lathrop w Kalifornii, a ogniwa pochodzą między innymi z [[gigafactory-nevada|Nevady]]. W domach ten sam pomysł realizuje [[powerwall|Powerwall]].', 'Technologia nie jest bezawaryjna: w lipcu 2021 roku podczas testów w australijskiej instalacji Big Battery doszło do pożaru Megapacka. Ogniwa do takich jednostek są tym samym produktem, na którym stoi cała [[gigafactory|sieć gigafabryk]].',
     ],
     fakty: [
       { etykieta: 'Pojemność jednostki', wartosc: 'do 3 MWh', pewnosc: 'potwierdzone' },
@@ -805,7 +805,7 @@ const reszta: Encja[] = [
     krotki: 'Humanoidalny robot Tesli: 173 cm wzrostu, 57 kg masy i pięć lat zapowiedzi produkcji, która wciąż nie ruszyła.',
     tresc: [
       'Optimusa ogłoszono na AI Day 19 sierpnia 2021 roku. Makieta stanęła na imprezie Cyber Rodeo w teksańskiej fabryce 7 kwietnia 2022, a [[elon-musk|Musk]] mówił wtedy o gotowości produkcyjnej w 2023. We wrześniu 2022 pokazano prototypy półfunkcjonalne: jeden chodził, drugi potrafił poruszać rękami.', 'Druga generacja z grudnia 2023 roku była szczuplejsza, miała lepsze dłonie o jedenastu stopniach swobody i demonstrowała taniec oraz gotowanie jajka w koszulce. W 2024 dłonie podniesiono do dwudziestu dwóch stopni swobody. Trzecia generacja ma korzystać z firmowych układów AI5 i AI6 — te same, na których oparto wznowione [[dojo|Dojo]].',
-      'Robot ma 173 centymetry wzrostu, waży 57 kilogramów i podnosi 20. Szacowana cena docelowa to około 30 tysięcy dolarów. W czerwcu 2024 Musk zapowiadał ograniczoną produkcję w 2025 i ponad tysiąc egzemplarzy dla zakładów [[tesla|Tesli]]; według stanu na kwiecień 2026 instalowane są linie we Fremont i w Teksasie, ze skalowaniem od 2027 roku.', 'Na pokazie „We, Robot" w październiku 2024 roku roboty wchodziły w interakcje z publicznością. Krytycy wskazali, że działały głównie pod zdalnym sterowaniem, a firma nie powiedziała tego wprost.',
+      'Robot ma 173 centymetry wzrostu, waży 57 kilogramów i podnosi 20. Szacowana cena docelowa to około 30 tysięcy dolarów. Milion dostarczonych sztuk jest jednym z progów [[pakiet-wynagrodzenia|pakietu wynagrodzenia]] przyjętego przez akcjonariuszy w 2025 roku. W czerwcu 2024 Musk zapowiadał ograniczoną produkcję w 2025 i ponad tysiąc egzemplarzy dla zakładów [[tesla|Tesli]]; według stanu na kwiecień 2026 instalowane są linie we Fremont i w [[gigafactory-teksas|Teksasie]], ze skalowaniem od 2027 roku.', 'Na pokazie „We, Robot" w październiku 2024 roku roboty wchodziły w interakcje z publicznością. Krytycy wskazali, że działały głównie pod zdalnym sterowaniem, a firma nie powiedziała tego wprost.',
     ],
     fakty: [
       { etykieta: 'Ogłoszenie', wartosc: '19 sierpnia 2021, AI Day', pewnosc: 'potwierdzone' },
@@ -845,7 +845,7 @@ const reszta: Encja[] = [
     krotki: 'Wpis o zabezpieczonym finansowaniu wykupu Tesli z giełdy skończył się karą 20 milionów dolarów i utratą fotela przewodniczącego.',
     tresc: [
       'Siódmego sierpnia 2018 roku [[elon-musk|Musk]] napisał, że może wycofać [[tesla|Teslę]] z giełdy przy cenie 420 dolarów za akcję i że finansowanie tej transakcji jest zabezpieczone. Kurs wzrósł tego dnia o ponad sześć procent.', 'Amerykańska Komisja Papierów Wartościowych ustaliła, że Musk wiedział, iż transakcja jest niepewna i obwarowana licznymi warunkami, a konkretnych ustaleń — w tym ceny — nie omawiał z żadnym potencjalnym partnerem finansowym.',
-      'Ugoda objęła karę cywilną 20 milionów dolarów, zapłaconą osobno przez Muska i przez spółkę, oraz jego ustąpienie z funkcji przewodniczącego rady Tesli na trzy lata. Do tego doszedł pakiet zmian w ładzie korporacyjnym firmy.', 'Wydarzenie przypada na ten sam rok co [[pieklo-produkcyjne|kryzys produkcyjny Modelu 3]] i tę samą presję gotówkową. Warto to trzymać razem: sierpień 2018 to nie odosobniony wpis, a moment największego napięcia w historii spółki.',
+      'Ugoda objęła karę cywilną 20 milionów dolarów, zapłaconą osobno przez Muska i przez spółkę, oraz jego ustąpienie z funkcji przewodniczącego rady Tesli na trzy lata. Do tego doszedł pakiet zmian w ładzie korporacyjnym firmy.', 'Wydarzenie przypada na ten sam rok co [[pieklo-produkcyjne|kryzys produkcyjny Modelu 3]] i tę samą presję gotówkową. Warto to trzymać razem: sierpień 2018 to nie odosobniony wpis, a moment największego napięcia w historii spółki — i ten sam rok, w którym rada przyznała Muskowi [[pakiet-wynagrodzenia|pakiet wynagrodzenia]] rozstrzygany potem przez sądy przez siedem lat.',
     ],
     fakty: [
       { etykieta: 'Data wpisu', wartosc: '7 sierpnia 2018', pewnosc: 'potwierdzone' },
@@ -1133,10 +1133,10 @@ const partia7: Encja[] = [
     aka: ['North American Charging Standard', 'wtyczka Tesli'],
     krotki: 'Firmowa wtyczka Tesli, którą między majem 2023 a lutym 2024 przyjęła cała amerykańska branża motoryzacyjna.',
     tresc: [
-      'Przez lata [[tesla|Tesla]] używała w Ameryce Północnej własnego złącza, niezgodnego ze standardem CCS stosowanym przez resztę branży. Był to typowy przypadek ogrodzonego ogrodu: własna wtyczka, własna [[supercharger|sieć]], własne auta.',
+      'Przez lata [[tesla|Tesla]] używała w Ameryce Północnej własnego złącza, niezgodnego ze standardem CCS stosowanym przez resztę branży. Był to typowy przypadek ogrodzonego ogrodu: własna wtyczka, własna [[supercharger|sieć]], własne auta — od [[model-s|Modelu S]] po [[model-y|Model Y]].',
       'Firma spróbowała najpierw obejścia technicznego. Na początku 2023 roku wprowadziła na stacjach trzeciej generacji tak zwany Magic Dock — przejściówkę wbudowaną w ładowarkę, pozwalającą podłączyć samochód ze złączem CCS1.',
       'Rozwiązanie okazało się niepotrzebne, bo między majem 2023 a lutym 2024 kolejni wielcy producenci ogłosili przejście na złącze Tesli, przemianowane wtedy na NACS. Do września 2025 przejściówkę zamontowano na mniej niż stu stacjach trzeciej generacji — dalsza rozbudowa straciła sens.',
-      'To rzadki przypadek, w którym firmowe rozwiązanie jednego producenta stało się standardem całego rynku, bo konkurencja uznała je za lepsze od własnego.',
+      'To rzadki przypadek, w którym firmowe rozwiązanie jednego producenta stało się standardem całego rynku, bo konkurencja uznała je za lepsze od własnego. W kategoriach [[master-plan|planu generalnego]] jest to zresztą punkt dojścia: sieć ładowania przestała być przewagą jednej marki, a stała się infrastrukturą.',
     ],
     fakty: [
       { etykieta: 'Czym jest', wartosc: 'firmowe złącze Tesli, od 2022 roku jako standard otwarty', pewnosc: 'potwierdzone' },
@@ -1212,10 +1212,10 @@ const partia7: Encja[] = [
     aka: ['Giga Berlin', 'Grünheide'],
     krotki: 'Europejski zakład Tesli pod Berlinem — spór o wodę, podpalenie podstacji i produkcja poniżej połowy celu.',
     tresc: [
-      '[[elon-musk|Musk]] ogłosił lokalizację w Brandenburgii 12 listopada 2019 roku, podczas gali motoryzacyjnej w Berlinie. Budowa ruszyła na początku 2020, a zakład otwarto oficjalnie 22 marca 2022. Produkcja [[model-y|Modelu Y]] zaczęła się pod koniec kwietnia.',
+      '[[elon-musk|Musk]] ogłosił lokalizację w Brandenburgii 12 listopada 2019 roku, podczas gali motoryzacyjnej w Berlinie. Budowa ruszyła na początku 2020, a zakład otwarto oficjalnie 22 marca 2022. Produkcja [[model-y|Modelu Y]] zaczęła się pod koniec kwietnia. Był to trzeci zakład [[gigafactory|z sieci gigafabryk]] i pierwszy poza Ameryką i Chinami.',
       'Od początku towarzyszył temu opór. Sąsiedzi podnosili obawy o zaopatrzenie w wodę, o lokalną przyrodę i o gospodarkę ściekami; w grudniu 2019 powstało porozumienie gmin zajmujące się ruchem, infrastrukturą i zabudową, a miejscowy związek wodociągowy sprzeciwiał się uruchomieniu zakładu.',
       'W marcu 2024 roku produkcja stanęła po podpaleniu pobliskiej podstacji elektrycznej — do zamachu przyznała się skrajnie lewicowa grupa Vulkangruppe.',
-      'Zakład wytwarza akumulatory, zespoły napędowe i fotele oraz prowadzi odlewanie, tłoczenie, lakierowanie i montaż końcowy. Zatrudniał 11 500 osób w październiku 2023. Docelowa zdolność to pół miliona pojazdów rocznie, ale według stanu na sierpień 2025 nie osiągnięto nawet bieżącego celu 250 tysięcy.',
+      'Zakład wytwarza akumulatory, zespoły napędowe i fotele oraz prowadzi [[gigacasting|odlewanie wielkogabarytowe]], tłoczenie, lakierowanie i montaż końcowy. Zatrudniał 11 500 osób w październiku 2023. Docelowa zdolność to pół miliona pojazdów rocznie, ale według stanu na sierpień 2025 nie osiągnięto nawet bieżącego celu 250 tysięcy.',
     ],
     fakty: [
       { etykieta: 'Ogłoszenie lokalizacji', wartosc: '12 listopada 2019', pewnosc: 'potwierdzone' },
@@ -1282,6 +1282,88 @@ const partia7: Encja[] = [
     ],
     status: 'w rozwoju',
     zrodla: [Z.wikiAutopilot, Z.cleantechPlany],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'pakiet-wynagrodzenia',
+    typ: 'wydarzenie',
+    nazwa: 'Pakiet wynagrodzenia Muska',
+    aka: ['Tornetta kontra Musk', 'bilion dolarów'],
+    krotki: 'Największe wynagrodzenie w historii biznesu: unieważnione przez sąd w Delaware, przywrócone trzy lata później za dolara kary.',
+    tresc: [
+      'W 2018 roku akcjonariusze [[tesla|Tesli]] zatwierdzili dla [[elon-musk|Muska]] pakiet opcji wart w chwili nabycia praw około 56 miliardów dolarów. Poparło go wtedy około 73 procent głosów. Musk nie dostawał pensji — wyłącznie akcje, i tylko po osiągnięciu kolejnych progów, liczone już po [[splity-akcji|pierwszym podziale akcji]].',
+      'W styczniu 2024 roku sędzia Kathaleen McCormick z sądu kanclerskiego w Delaware unieważniła pakiet. Uznała, że materiały przedstawione akcjonariuszom przed głosowaniem wprowadzały w błąd, więc samo głosowanie nie chroni umowy, a jej rozmiar jest nadzwyczajny i nieuczciwy.',
+      'Tesla zorganizowała powtórne głosowanie w czerwcu 2024 — poparcie wyniosło około 77 procent. W grudniu tego samego roku sędzia podtrzymała swoje rozstrzygnięcie, wskazując brak podstawy prawnej do cofnięcia wyroku na podstawie zatwierdzenia dokonanego po procesie. W listopadzie 2025 akcjonariusze przyjęli ponadto nowy pakiet, rozłożony na dziesięć lat i wart do biliona dolarów — za głosowało ponad 75 procent. Jego progi opisują firmę, której jeszcze nie ma: dwadzieścia milionów aut, milion [[optimus|robotów]], milion [[robotaxi|pojazdów bez kierowcy]] w komercyjnej służbie.',
+      'Dwudziestego grudnia 2025 roku Sąd Najwyższy stanu Delaware uchylił tamten wyrok. Uznał, że całkowite unieważnienie pakietu było środkiem zbyt daleko idącym, przywrócił umowę z 2018 roku i zasądził od Muska symbolicznego jednego dolara odszkodowania. Los wcześniejszych rozstrzygnięć wokół pakietu zastępczego z listopada 2025 pozostaje przedmiotem sprzecznych relacji.',
+    ],
+    fakty: [
+      { etykieta: 'Pakiet z 2018', wartosc: 'około 56 mld USD w opcjach, bez pensji', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wyrok unieważniający', wartosc: 'styczeń 2024, sędzia Kathaleen McCormick', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powtórne głosowanie', wartosc: 'czerwiec 2024, około 77 procent za', pewnosc: 'potwierdzone' },
+      { etykieta: 'Nowy pakiet', wartosc: 'listopad 2025, do 1 bln USD na dziesięć lat, ponad 75 procent za', pewnosc: 'potwierdzone' },
+      { etykieta: 'Progi nowego pakietu', wartosc: '20 mln aut, 1 mln robotów, 1 mln robotaxi, kapitalizacja 8,5 bln USD', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wyrok apelacyjny', wartosc: '20 grudnia 2025, pakiet przywrócony, 1 USD odszkodowania', pewnosc: 'potwierdzone' },
+      { etykieta: 'Status pakietu zastępczego', wartosc: 'relacje źródeł rozbieżne', stanNa: '2026-09', pewnosc: 'sporne' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Sąd Najwyższy Delaware przywrócił umowę wartą kilkadziesiąt miliardów dolarów i zasądził przy tym od Muska odszkodowanie w wysokości jednego dolara. Koszty zastępstwa procesowego strony przeciwnej idą natomiast w setki milionów.',
+        zrodlo: Z.electrekPakiet,
+      },
+    ],
+    os: [
+      { data: '2024-01', tytul: 'Sąd unieważnia pakiet', opis: 'Sędzia McCormick uznaje umowę z 2018 roku za nieuczciwą.', waga: 3 },
+      { data: '2025-11-06', tytul: 'Akcjonariusze zatwierdzają bilion', opis: 'Ponad 75 procent głosów za nowym, dziesięcioletnim pakietem.', waga: 3 },
+      { data: '2025-12-20', tytul: 'Apelacja przywraca pakiet', opis: 'Sąd Najwyższy Delaware uchyla wyrok i zasądza jednego dolara.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'elon-musk', powod: 'to jego umowa była przedmiotem obu wyroków' },
+      { id: 'tesla', powod: 'spór toczył się o pieniądze jej akcjonariuszy' },
+      { id: 'robotaxi', powod: 'jeden z progów nowego pakietu to milion takich pojazdów' },
+      { id: 'optimus', powod: 'inny próg to milion dostarczonych robotów' },
+      { id: 'funding-secured', powod: 'drugi raz, gdy o wypowiedziach wokół Tesli rozstrzygał sąd' },
+    ],
+    zrodla: [Z.wikiTornetta, Z.electrekPakiet, Z.nbcPakiet],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'splity-akcji',
+    typ: 'wydarzenie',
+    nazwa: 'Splity akcji Tesli',
+    aka: ['podział akcji', 'stock split'],
+    krotki: 'Dwa podziały akcji, po których jeden papier sprzed 2020 roku odpowiada piętnastu dzisiejszym — bez zmiany wartości firmy.',
+    tresc: [
+      'Podział akcji nie zmienia nic w wartości spółki ani w tym, ile warte są udziały [[elon-musk|Muska]]. Rozbija tylko jeden papier na kilka tańszych, tak jak wymiana banknotu na monety — kapitalizacja [[tesla|spółki]] pozostaje ta sama co minutę wcześniej. [[tesla|Tesla]] zrobiła to dwa razy: 12 sierpnia 2020 roku ogłosiła podział w stosunku pięć do jednego, który wszedł w życie 31 sierpnia, a w 2022 przeprowadziła drugi, trzy do jednego.',
+      'Drugi podział wymagał zgody akcjonariuszy, bo wiązał się ze zwiększeniem liczby akcji dopuszczonych do emisji z dwóch do sześciu miliardów. Głosowano nad tym na walnym zgromadzeniu 4 sierpnia 2022 roku w Austin, w tym samym mieście co [[gigafactory-teksas|siedziba i największa fabryka firmy]].',
+      'W dokumentach złożonych w amerykańskim nadzorze giełdowym rada podała powód, który rzadko pada przy takich operacjach. Napisała wprost, że w odróżnieniu od innych producentów Tesla oferuje udziały każdemu pracownikowi, a wysoka cena jednej akcji utrudnia zarządzanie tym pakietem. Drugim argumentem był dostęp inwestorów detalicznych.',
+      'Łącznie obie operacje oznaczają, że jedna akcja sprzed sierpnia 2020 roku odpowiada dziś piętnastu. Wszystkie wykresy kursu z tamtego okresu są przeliczone — i to jest źródło większości nieporozumień przy porównywaniu dawnych cen z dzisiejszymi — a także przy czytaniu progów [[pakiet-wynagrodzenia|pakietu wynagrodzenia]] uchwalonego w 2018 roku, jeszcze przed obiema operacjami.',
+    ],
+    fakty: [
+      { etykieta: 'Pierwszy podział', wartosc: 'ogłoszony 12 sierpnia 2020, wszedł 31 sierpnia, pięć do jednego', pewnosc: 'potwierdzone' },
+      { etykieta: 'Drugi podział', wartosc: 'trzy do jednego, zatwierdzony 4 sierpnia 2022', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zwiększenie liczby akcji', wartosc: 'z 2 do 6 miliardów', pewnosc: 'potwierdzone' },
+      { etykieta: 'Efekt łączny', wartosc: 'jedna akcja sprzed 2020 to dziś piętnaście', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powód podany radzie', wartosc: 'dostęp pracowników do udziałów i inwestorów detalicznych', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'W dokumencie dla nadzoru giełdowego rada Tesli napisała, że w odróżnieniu od innych producentów oferuje udziały każdemu pracownikowi i chce, by wszyscy mieli te same możliwości bez względu na moment zatrudnienia. Podział akcji uzasadniono więc polityką kadrową, nie kursem.',
+        zrodlo: Z.secSplit,
+      },
+    ],
+    os: [
+      { data: '2020-08-31', tytul: 'Podział pięć do jednego', opis: 'Pierwszy w historii firmy podział akcji wchodzi w życie.', waga: 2 },
+      { data: '2022-08-04', tytul: 'Zgoda na podział trzy do jednego', opis: 'Walne zgromadzenie w Austin zatwierdza drugi podział.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'to jej akcje dzielono dwukrotnie' },
+      { id: 'pakiet-wynagrodzenia', powod: 'wynagrodzenie Muska liczy się w tych samych, podzielonych akcjach' },
+      { id: 'funding-secured', powod: 'inny epizod, w którym cena akcji stała się sprawą urzędową' },
+      { id: 'elon-musk', powod: 'jego pakiet liczy się w akcjach po obu podziałach' },
+    ],
+    zrodla: [Z.secSplit, Z.wikiHistoriaTesli],
     zaktualizowano: '2026-09-13',
   },
 ];

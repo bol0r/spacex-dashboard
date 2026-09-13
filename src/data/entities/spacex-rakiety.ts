@@ -235,8 +235,8 @@ export const rakiety: Encja[] = [
     tresc: [
       'Starlink to sieć satelitów na niskiej orbicie okołoziemskiej — na tyle nisko, że opóźnienie sygnału jest porównywalne z łączem naziemnym, i na tyle licznych, że nad każdym punktem Ziemi zawsze jest któryś. Pierwsza operacyjna partia sześćdziesięciu sztuk poleciała 24 maja 2019 roku na [[falcon-9|Falconie 9]].',
       'W czerwcu 2026 roku na orbicie było około 10 413 satelitów, z czego 10 397 działających, a z usługi korzystało 12 milionów abonentów w mniej więcej 160 krajach i terytoriach. Tempo przyrostu jest wymowne: w marcu 2026 abonentów było 10,3 miliona.',
-      'Konstelacja przeszła przez kolejne generacje sprzętu: v0.9 testowe, potem v1.0, v1.5 z laserowymi łączami międzysatelitarnymi, v2 mini, wreszcie V3 — pierwsze egzemplarze tej ostatniej wypuścił [[starship|Starship]] podczas lotu 13 w lipcu 2026 roku. Osobną gałęzią jest Starshield, wariant rządowy z szyfrowaną łącznością.',
-      'Usługa Direct to Cell pozwala łączyć się ze zwykłym telefonem bez żadnej dodatkowej anteny — SMS-y ruszyły z T-Mobile w styczniu 2024 roku. Dla [[spacex|SpaceX]] Starlink jest dziś głównym źródłem pieniędzy: 11,4 miliarda dolarów przychodu i 4,4 miliarda zysku operacyjnego w 2025 roku, po pierwszym rentownym roku 2024.',
+      'Konstelacja przeszła przez kolejne generacje sprzętu: v0.9 testowe, potem v1.0, v1.5 z laserowymi łączami międzysatelitarnymi, v2 mini, wreszcie V3 — pierwsze egzemplarze tej ostatniej wypuścił [[starship|Starship]] podczas lotu 13 w lipcu 2026 roku. Osobną gałęzią jest [[starshield|Starshield]], wariant rządowy z szyfrowaną łącznością — powstały po tym, jak sieć cywilna okazała się [[starlink-w-ukrainie|infrastrukturą wojenną]].',
+      'Usługa [[direct-to-cell|Direct to Cell]] pozwala łączyć się ze zwykłym telefonem bez żadnej dodatkowej anteny — SMS-y ruszyły z T-Mobile w styczniu 2024 roku. Dla [[spacex|SpaceX]] Starlink jest dziś głównym źródłem pieniędzy: 11,4 miliarda dolarów przychodu i 4,4 miliarda zysku operacyjnego w 2025 roku, po pierwszym rentownym roku 2024.',
     ],
     fakty: [
       { etykieta: 'Satelity na orbicie', wartosc: 'ok. 10 413', stanNa: '2026-06', pewnosc: 'potwierdzone' },
@@ -322,8 +322,8 @@ export const rakiety: Encja[] = [
     krotki: 'Pierwszy prywatny statek odzyskany z orbity i przez lata jedyny na świecie, który potrafił przywieźć ładunek z powrotem.',
     tresc: [
       'Dragon 1 był częściowo wielorazowym statkiem towarowym do zaopatrywania Międzynarodowej Stacji Kosmicznej. Poleciał po raz pierwszy 8 grudnia 2010 roku i stał się wtedy pierwszym statkiem zbudowanym i prowadzonym przez firmę prywatną, który udało się odzyskać z orbity.',
-      'Do stacji nie dokował samodzielnie: dwudziestego piątego maja 2012 roku, podczas [[cots-demo-2|lotu demonstracyjnego]], chwyciło go ramię Canadarm2 i przyłączyło do portu cumowniczego. Samodzielne dokowanie przyszło dopiero z [[crew-dragon|Dragonem 2]].',
-      'Ładowność wynosiła 3 310 kilogramów w obie strony i to właśnie „w obie strony" było kluczowe. Po wycofaniu wahadłowców Dragon przez lata pozostawał jedynym statkiem zdolnym sprowadzić z orbity znaczącą ilość ładunku — próbki badawcze wracały na Ziemię w ciągu doby lub dwóch.',
+      'Do stacji nie dokował samodzielnie: dwudziestego piątego maja 2012 roku, podczas [[cots-demo-2|lotu demonstracyjnego]], chwyciło go ramię Canadarm2 i przyłączyło do portu cumowniczego. Różnica między [[dokowanie-i-cumowanie|dokowaniem a cumowaniem]] nie jest przy tym kosmetyczna; samodzielne dokowanie przyszło dopiero z [[crew-dragon|Dragonem 2]].',
+      'Ładowność wynosiła 3 310 kilogramów w obie strony i to właśnie „w obie strony" było kluczowe. Po wycofaniu wahadłowców Dragon przez lata pozostawał jedynym statkiem zdolnym sprowadzić z orbity znaczącą ilość ładunku — próbki badawcze wracały na Ziemię [[wodowanie|wodowaniem]] w ciągu doby lub dwóch.',
       'Wykonał dwadzieścia trzy misje w latach 2010–2020; ostatni start odbył się 7 marca 2020. Od misji CRS-11 w 2017 roku używano kapsuł odzyskanych, a niektóre poleciały trzy razy — [[reuzywalnosc|reużywalność]] objęła statki wcześniej niż górne stopnie rakiet.',
     ],
     fakty: [
@@ -485,7 +485,7 @@ export const rakiety: Encja[] = [
     tresc: [
       'Klasyczna łączność satelitarna wymaga terminala z anteną kierunkową. Direct to Cell odwraca ten układ: satelita [[starlink|Starlinka]] zachowuje się jak maszt sieci komórkowej na orbicie, a telefon nie wie, że rozmawia z czymś, co przelatuje nad nim z prędkością ośmiu kilometrów na sekundę.',
       'Usługa ruszyła od SMS-ów we współpracy z operatorem T-Mobile w styczniu 2024 roku, z zapowiedzią rozszerzenia na głos i transmisję danych.',
-      'Znaczenie tego rozwiązania jest największe tam, gdzie nie ma i nie będzie infrastruktury naziemnej: na morzu, na pustyniach, w górach i po katastrofach, które niszczą maszty. Nie zastępuje sieci komórkowej, tylko domyka jej dziury.',
+      'Znaczenie tego rozwiązania jest największe tam, gdzie nie ma i nie będzie infrastruktury naziemnej: na morzu, na pustyniach, w górach i po katastrofach, które niszczą maszty. Ta sama właściwość przesądziła o roli [[starlink-w-ukrainie|Starlinka na Ukrainie]]. Nie zastępuje sieci komórkowej, tylko domyka jej dziury.',
       'Technicznie wymaga to znacznie większych anten na satelicie, bo telefon nadaje słabym sygnałem w każdą stronę. To jeden z powodów, dla których generacja [[starlink|V3]] jest cięższa i potrzebuje [[starship|Starshipa]] zamiast [[falcon-9|Falcona 9]].',
     ],
     fakty: [

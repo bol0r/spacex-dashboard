@@ -48,7 +48,7 @@ export const pojecia: Encja[] = [
     krotki: 'Najtrudniejszy schemat silnika rakietowego: całe paliwo i cały utleniacz przechodzą przez turbiny, nic nie ucieka niedopalone.',
     tresc: [
       'Silnik rakietowy musi jakoś napędzić pompy tłoczące paliwo do komory. W najprostszym rozwiązaniu — generatorze gazu, jakim posługuje się [[merlin|Merlin]] — mała porcja paliwa spala się osobno, kręci turbiną i ucieka na zewnątrz. To proste i tanie, ale ta porcja jest bezpowrotnie stracona.', 'Spalanie stopniowe kieruje spaliny z turbiny z powrotem do komory głównej, więc nic się nie marnuje. Klasyczne konstrukcje mają jeden generator wstępny — bogaty w utleniacz jak w RD-180 albo bogaty w paliwo jak w silniku promu kosmicznego. Wersja pełnoprzepływowa ma oba naraz: osobny dla pompy paliwa i osobny dla pompy utleniacza. Przez turbiny przechodzi wtedy cały strumień obu składników.',
-      'Korzyści są policzalne. Turbiny pracują chłodniej i przy niższym ciśnieniu, bo ten sam moment rozkłada się na dużo większy przepływ masy — a chłodniejsza turbina to dłuższe życie silnika. Oba składniki wchodzą do komory już w postaci gazu, więc reagują szybciej, komora może być mniejsza, a ciśnienie wyższe. Znika też uszczelnienie międzyskładnikowe, jeden z klasycznych punktów awarii.', 'Cenę stanowi skomplikowanie. Przez sześćdziesiąt lat tylko dwie takie konstrukcje w ogóle trafiły na hamownię: radziecki RD-270 z lat sześćdziesiątych i amerykański demonstrator IPD z połowy lat dwutysięcznych. Żadna nie poleciała. Pierwszym silnikiem pełnoprzepływowym, który uniósł rakietę, jest [[raptor|Raptor]] w [[starship|Starshipie]].',
+      'Korzyści są policzalne. Turbiny pracują chłodniej i przy niższym ciśnieniu, bo ten sam moment rozkłada się na dużo większy przepływ masy — a chłodniejsza turbina to dłuższe życie silnika. Oba składniki wchodzą do komory już w postaci gazu, więc reagują szybciej, komora może być mniejsza, a ciśnienie wyższe — a wyższe ciśnienie to i lepszy [[impuls-wlasciwy|impuls właściwy]], i korzystniejszy [[ciag-do-masy|stosunek ciągu do masy]] przy tej samej wielkości silnika. Znika też uszczelnienie międzyskładnikowe, jeden z klasycznych punktów awarii.', 'Cenę stanowi skomplikowanie. Przez sześćdziesiąt lat tylko dwie takie konstrukcje w ogóle trafiły na hamownię: radziecki RD-270 z lat sześćdziesiątych i amerykański demonstrator IPD z połowy lat dwutysięcznych. Żadna nie poleciała. Pierwszym silnikiem pełnoprzepływowym, który uniósł rakietę, jest [[raptor|Raptor]] w [[starship|Starshipie]].',
     ],
     fakty: [
       { etykieta: 'Generatory wstępne', wartosc: 'dwa — bogaty w paliwo i bogaty w utleniacz', pewnosc: 'potwierdzone' },
@@ -234,9 +234,9 @@ export const pojecia: Encja[] = [
     aka: ['apsyda', 'periapsis', 'apoapsis', 'linia apsyd'],
     krotki: 'Najbliższy i najdalszy punkt orbity — a zarazem miejsca, w których statek leci najszybciej i najwolniej.',
     tresc: [
-      'Perygeum to punkt orbity najbliższy Ziemi, apogeum najdalszy. Ogólna nazwa takiego punktu to apsyda; linia je łącząca, zwana linią apsyd, jest zarazem wielką osią orbity. Przy innych ciałach używa się nazw periapsis i apoapsis.',
+      'Perygeum to punkt orbity najbliższy Ziemi, apogeum najdalszy. Ogólna nazwa takiego punktu to apsyda; linia je łącząca, zwana linią apsyd, jest zarazem wielką osią orbity. Przy innych ciałach używa się nazw periapsis i apoapsis. Na kołowej [[leo|niskiej orbicie]] oba punkty leżą praktycznie na tej samej wysokości i rozróżnienie przestaje mieć znaczenie.',
       'Z drugiego prawa Keplera wynika, że prędkość na orbicie nie jest stała: największa jest w perygeum, najmniejsza w apogeum. Im bardziej wydłużona orbita, tym większa różnica.',
-      'Ma to bezpośrednią konsekwencję praktyczną, znaną jako efekt Obertha: odpalenie silnika opłaca się najbardziej tam, gdzie statek leci najszybciej, czyli w perygeum. Ten sam impuls daje wtedy większy przyrost energii orbity niż w jakimkolwiek innym miejscu.',
+      'Ma to bezpośrednią konsekwencję praktyczną, znaną jako efekt Obertha: odpalenie silnika opłaca się najbardziej tam, gdzie statek leci najszybciej, czyli w perygeum. Ten sam impuls daje wtedy większy przyrost energii orbity niż w jakimkolwiek innym miejscu. Na tej samej zasadzie opiera się każdy lot, który ma osiągnąć [[predkosc-ucieczki|prędkość ucieczki]] — silnik odpala się w perygeum, nie gdzie indziej.',
       'Dlatego [[gto|orbita transferowa do geostacjonarnej]] wygląda tak, jak wygląda: niskie perygeum, gdzie rakieta nadaje prędkość, i apogeum na docelowej wysokości, gdzie satelita domyka okrąg najmniejszym możliwym kosztem [[delta-v|delta-v]]. Apogeum 1 400 km osiągnięte przez [[polaris-dawn|Polaris Dawn]] jest w tej terminologii po prostu najdalszym punktem ich elipsy.',
     ],
     fakty: [
@@ -608,8 +608,8 @@ export const pojecia: Encja[] = [
     krotki: 'Branżowe słowo na wszystko, co odbiegło od planu — od drobnego odczytu do utraty rakiety.',
     tresc: [
       '„Anomalia" oznacza w tej dziedzinie każde odstępstwo od przewidzianego zachowania. Zakres jest rozciągły: tym samym słowem opisuje się nietypowy odczyt czujnika i całkowitą utratę pojazdu. Komunikat o [[amos-6|AMOS-6]] mówił, że rakieta „doświadczyła anomalii, która zniszczyła pojazd i jego ładunek".',
-      'Powód używania tak neutralnego słowa nie jest wyłącznie public-relations. W trakcie lotu nikt nie wie jeszcze, co się stało; nazwanie zdarzenia „awarią" albo „eksplozją" przesądzałoby przyczynę przed analizą. „Anomalia" jest opisem stanu wiedzy, nie oceną.',
-      'Druga strona tego samego zwyczaju jest już mniej niewinna: to słowo pozwala mówić o katastrofie tonem raportu. [[crs-7|CRS-7]] rozpadł się w 139. sekundzie lotu i w komunikatach był anomalią; [[rud|RUD]] jest tej praktyki najdalszym punktem.',
+      'Powód używania tak neutralnego słowa nie jest wyłącznie public-relations. W trakcie lotu nikt nie wie jeszcze, co się stało; nazwanie zdarzenia „awarią" albo „eksplozją" przesądzałoby przyczynę przed analizą. „Anomalia" jest opisem stanu wiedzy, nie oceną — podobnie jak [[scrub-i-nominal|scrub i nominal]], słowa opisujące stan procedury, a nie samopoczucie zespołu.',
+      'Druga strona tego samego zwyczaju jest już mniej niewinna: to słowo pozwala mówić o katastrofie tonem raportu. [[crs-7|CRS-7]] rozpadł się w 139. sekundzie lotu i w komunikatach był anomalią; [[rud|RUD]] jest tej praktyki najdalszym punktem. Tym samym słowem opisano zresztą rozpad rakiety przy [[starship-lot-1|pierwszym locie Starshipa]], mimo że wszyscy widzieli go na żywo.',
     ],
     fakty: [
       { etykieta: 'Zakres znaczenia', wartosc: 'od nietypowego odczytu do utraty pojazdu', pewnosc: 'potwierdzone' },
@@ -681,8 +681,8 @@ export const pojecia: Encja[] = [
     tresc: [
       'ITAR to zbiór przepisów Departamentu Stanu USA kontrolujących eksport technologii wojskowych. Nadzoruje je Dyrektoriat Kontroli Handlu Obronnego, w ocenie uczestniczy Departament Obrony, a egzekucja należy do służby imigracyjnej i celnej.',
       'Rakiety i statki kosmiczne siedzą w tym systemie wprost: kategoria 15 listy uzbrojenia obejmuje statki kosmiczne i sprzęt towarzyszący, kategoria 4 rakiety nośne, pociski i ładunki bojowe. Do 2014 roku obejmowało to wszystkie satelity bez wyjątku.',
-      'Konsekwencja praktyczna dla firmy takiej jak [[spacex|SpaceX]] jest twarda: dostęp cudzoziemca do danych objętych przepisami liczy się jako eksport i wymaga zezwolenia. Pracownicy bez amerykańskiego obywatelstwa lub statusu stałego rezydenta nie mogą korzystać z tej samej sieci, w której leżą takie dane, ani wchodzić do pomieszczeń, gdzie prowadzi się taką pracę.',
-      'W maju 2014 roku Departament Stanu przeniósł satelity komercyjne z listy uzbrojenia pod nadzór Departamentu Handlu, co poluzowało handel — ale rakiety, w tym [[falcon-9|Falcon 9]] i [[starship|Starship]], pozostały tam, gdzie były. Kary bywają poważne: koncern ITT zapłacił 100 milionów dolarów za nieuprawnione przekazanie technologii noktowizyjnej.',
+      'Konsekwencja praktyczna dla firmy takiej jak [[spacex|SpaceX]] jest twarda: dostęp cudzoziemca do danych objętych przepisami liczy się jako eksport i wymaga zezwolenia. Pracownicy bez amerykańskiego obywatelstwa lub statusu stałego rezydenta nie mogą korzystać z tej samej sieci, w której leżą takie dane, ani wchodzić do pomieszczeń, gdzie prowadzi się taką pracę. Dotyczy to również hali w [[hawthorne|Hawthorne]], gdzie biura i linia produkcyjna dzielą jedną przestrzeń.',
+      'W maju 2014 roku Departament Stanu przeniósł satelity komercyjne z listy uzbrojenia pod nadzór Departamentu Handlu, co poluzowało handel — ale rakiety, w tym [[falcon-9|Falcon 9]] i [[starship|Starship]], pozostały tam, gdzie były. Kary bywają poważne: koncern ITT zapłacił 100 milionów dolarów za nieuprawnione przekazanie technologii noktowizyjnej. Te same przepisy stoją za tym, że wojskowa odmiana [[starshield|konstelacji]] jest osobnym produktem, a nie wariantem cywilnego [[starlink|Starlinka]].',
     ],
     fakty: [
       { etykieta: 'Kto nadzoruje', wartosc: 'Departament Stanu USA, Dyrektoriat Kontroli Handlu Obronnego', pewnosc: 'potwierdzone' },
@@ -1020,8 +1020,8 @@ export const pojecia: Encja[] = [
     aka: ['regenerative cooling'],
     krotki: 'Paliwo płynie kanałami w ściance komory, zanim trafi do spalania — chłodzi silnik i samo się przy tym podgrzewa.',
     tresc: [
-      'Komora spalania silnika rakietowego pracuje w temperaturach, które stopiłyby każdy metal, z jakiego dałoby się ją zbudować. Chłodzenie regeneracyjne rozwiązuje to, przepuszczając paliwo kanałami w ściance, zanim trafi ono do wtrysku. Ścianka oddaje ciepło, paliwo je zabiera i wchodzi do komory już podgrzane — nic nie jest tracone.',
-      'Alternatywą jest chłodzenie ablacyjne: wykładzina, która spala się kontrolowanie i ubywa z każdą sekundą pracy. Tak działał [[merlin|Merlin 1A]] z dyszą z kompozytu węglowego. Silnik jednorazowy może tak pracować; silnik do wielokrotnego użytku nie.',
+      'Komora spalania silnika rakietowego pracuje w temperaturach, które stopiłyby każdy metal, z jakiego dałoby się ją zbudować. Chłodzenie regeneracyjne rozwiązuje to, przepuszczając paliwo kanałami w ściance, zanim trafi ono do wtrysku. Ścianka oddaje ciepło, paliwo je zabiera i wchodzi do komory już podgrzane — nic nie jest tracone. Pomaga w tym fakt, że paliwo jest [[kriogenika|kriogeniczne]], czyli wchodzi do kanałów o temperaturze liczonej w setkach stopni poniżej zera.',
+      'Alternatywą jest chłodzenie ablacyjne: wykładzina, która spala się kontrolowanie i ubywa z każdą sekundą pracy. Tak działał [[merlin|Merlin 1A]] z dyszą z kompozytu węglowego. Silnik jednorazowy może tak pracować; silnik przeznaczony do [[reuzywalnosc|wielokrotnego użytku]] nie.',
       'Przejście na chłodzenie regeneracyjne w wersji 1C miało nieoczekiwany skutek uboczny. Po wyłączeniu silnik jeszcze przez moment dopala paliwo pozostałe w kanałach, a ten resztkowy ciąg przy [[falcon-1-lot-3|trzecim locie Falcona 1]] popchnął pierwszy stopień na drugi po rozdzieleniu. Poprawa konstrukcji stworzyła awarię, której wcześniejsza wersja mieć nie mogła.',
       'W [[raptor|Raptorze 3]] rozwiązanie poszło dalej: kanały chłodzące schowano w samym korpusie, dzięki czemu silnik pozbył się większości zewnętrznego oprzyrządowania.',
     ],
@@ -1134,8 +1134,8 @@ export const pojecia: Encja[] = [
     aka: ['orbital refuelling', 'przekazywanie paliwa na orbicie'],
     krotki: 'Przelewanie paliwa między statkami na orbicie — niezademonstrowane w skali, której wymaga lądowanie na Księżycu.',
     tresc: [
-      'Rakieta, która wynosi sama siebie na orbitę, zużywa na to prawie całe paliwo. Żeby polecieć dalej — na Księżyc albo na Marsa — musi zatankować już po wyjściu na orbitę. To jest cała idea tankowania orbitalnego.',
-      'Problem nie leży w pomyśle, tylko w fizyce cieczy w stanie nieważkości. Paliwo nie opada na dno zbiornika, tylko unosi się w nim swobodnie, więc trzeba je najpierw czymś dociskać do wylotu. Do tego dochodzą straty przez odparowanie i szczelność połączenia przy temperaturach kriogenicznych.',
+      'Z [[rownanie-ciolkowskiego|równania rakietowego]] wynika, że rakieta, która wynosi sama siebie na orbitę, zużywa na to prawie całe paliwo. Żeby polecieć dalej — na Księżyc albo na Marsa — musi zatankować już po wyjściu na orbitę. To jest cała idea tankowania orbitalnego.',
+      'Problem nie leży w pomyśle, tylko w fizyce cieczy w stanie nieważkości. Paliwo nie opada na dno zbiornika, tylko unosi się w nim swobodnie, więc trzeba je najpierw czymś dociskać do wylotu. Do tego dochodzą straty przez odparowanie i szczelność połączenia przy temperaturach [[kriogenika|kriogenicznych]] — a [[metaloks-i-keroloks|metan i tlen]] są cieczą tylko głęboko poniżej zera.',
       'Dla [[hls-artemis|lądownika Artemis]] NASA szacuje, że jedna misja lądowania wymaga około ośmiu do dziesięciu startów [[starship|Starshipa]] — tankowców napełniających zbiornikowiec, z którego dopiero zatankuje lądownik. Biuro Inspektora Generalnego NASA wskazuje to jako główne ryzyko całego programu.',
       'Przekazywanie paliwa w tej skali nie zostało jeszcze zademonstrowane. To jedna z niewielu rzeczy w tym programie, których nie da się obejść pracowitością — albo zadziała, albo harmonogram [[hls-artemis|powrotu na Księżyc]] przesunie się kolejny raz.',
     ],
@@ -1465,6 +1465,197 @@ export const pojecia: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.sfnRekord, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'rownanie-ciolkowskiego',
+    typ: 'pojecie',
+    nazwa: 'Równanie Ciołkowskiego',
+    aka: ['rocket equation', 'równanie rakietowe', 'tyrania równania rakietowego'],
+    krotki: 'Jedno równanie, z którego wynika, dlaczego rakiety są w dziewięćdziesięciu procentach zbiornikiem paliwa.',
+    tresc: [
+      'Równanie wiąże trzy wielkości: przyrost prędkości, prędkość wylotową spalin i stosunek masy pełnej do pustej. W zapisie NASA brzmi ono: przyrost prędkości równa się prędkość wylotowa razy logarytm naturalny ze stosunku mas. Ta pierwsza wielkość zależy od konstrukcji silnika i [[metaloks-i-keroloks|rodzaju paliwa]], druga wyłącznie od tego, ile z rakiety stanowi zbiornik.',
+      'Kluczem jest ten logarytm. Zysk w prędkości rośnie logarytmicznie, a masa paliwa potrzebna do jego osiągnięcia — wykładniczo. Każdy kolejny kilometr na sekundę kosztuje wielokrotnie więcej niż poprzedni.',
+      'Liczby są bezlitosne. Dla [[leo|niskiej orbity]] przy [[delta-v|delta-v]] rzędu 9700 metrów na sekundę i prędkości wylotowej 4500 metrów na sekundę paliwo musi stanowić 88,4 procent masy startowej. NASA podaje własny przykład dla silnika wodorowo-tlenowego o [[impuls-wlasciwy|impulsie właściwym]] 350 sekund: stosunek mas wynosi dziesięć, paliwo to około dziewięćdziesięciu procent masy, a na ładunek zostaje około jednego procenta — i podsumowuje to zdaniem, że rakiety są strasznie nieefektywne i drogie.',
+      'Stąd biorą się wszystkie pozostałe decyzje konstrukcyjne: [[stopniowanie|wielostopniowość]], walka o każdy kilogram konstrukcji i to, że [[reuzywalnosc|odzyskiwanie członów]] wymaga zostawienia paliwa na powrót — czyli oddania części tego jednego procenta.',
+    ],
+    fakty: [
+      { etykieta: 'Postać', wartosc: 'przyrost prędkości = prędkość wylotowa × ln(stosunek mas)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Publikacja', wartosc: 'Konstantin Ciołkowski, 1903', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wcześniejsze wyprowadzenia', wartosc: 'William Moore 1810, Robert Goddard 1912, Hermann Oberth ok. 1920', pewnosc: 'potwierdzone' },
+      { etykieta: 'Konsekwencja', wartosc: 'prędkość rośnie logarytmicznie, masa paliwa wykładniczo', pewnosc: 'potwierdzone' },
+      { etykieta: 'Na niską orbitę', wartosc: 'paliwo to 88,4 procent masy startowej', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'To samo równanie wyprowadzili niezależnie czterej ludzie: Brytyjczyk William Moore w 1810 roku, Rosjanin Ciołkowski w 1903, Amerykanin Goddard w 1912 i Niemiec Oberth około 1920. Nazwisko przylgnęło do tego, który jako pierwszy użył go do policzenia, czy lot w kosmos jest w ogóle możliwy.',
+        zrodlo: Z.wikiCiolkowski,
+      },
+    ],
+    os: [
+      { data: '1903', tytul: 'Publikacja Ciołkowskiego', opis: 'Rosyjski nauczyciel matematyki ogłasza równanie i liczy z niego możliwość lotu w kosmos.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'delta-v', powod: 'wielkość, którą to równanie pozwala policzyć' },
+      { id: 'impuls-wlasciwy', powod: 'drugi człon równania, mierzony w sekundach' },
+      { id: 'stopniowanie', powod: 'jedyny znany sposób obejścia jego konsekwencji' },
+      { id: 'koszt-kilograma', powod: 'to z niego bierze się cena wynoszenia ładunku' },
+    ],
+    zrodla: [Z.wikiCiolkowski, Z.nasaRownanie],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'stopniowanie',
+    typ: 'pojecie',
+    nazwa: 'Stopniowanie',
+    aka: ['wielostopniowość', 'staging', 'rakieta wielostopniowa'],
+    krotki: 'Wyrzucanie pustych zbiorników w locie — jedyna metoda, jaką ludzkość zna na obejście równania rakietowego.',
+    tresc: [
+      'Z [[rownanie-ciolkowskiego|równania Ciołkowskiego]] wynika, że stosunek masy pełnej do pustej potrzebny do wejścia na [[leo|niską orbitę]] jest większy niż ten, jaki kiedykolwiek osiągnięto w pojedynczym stopniu. Rozwiązaniem jest pozbywanie się tego, co przestało być potrzebne.',
+      'Pusty zbiornik i wygaszony silnik to już tylko masa, którą trzeba rozpędzać dalej. Wyrzucenie ich sprawia, że kolejny stopień startuje z lepszym stosunkiem mas — jakby był mniejszą rakietą wystrzeloną z dużej prędkości.',
+      'Stopniowanie bywa szeregowe, gdy stopnie stoją jeden na drugim i odpalają po kolei, albo równoległe, gdy pracują jednocześnie i odpadają w locie — tak działał prom kosmiczny i tak działa [[falcon-heavy|Falcon Heavy]] z bocznymi członami. Rakiety orbitalne mają zwykle dwa albo trzy stopnie; startowały i pięciostopniowe, ale powyżej trzech masa i złożoność zjadają zysk.',
+      'Rakiet jednostopniowych, zdolnych wejść na orbitę bez odrzucania niczego, nie zbudowano dotąd nigdy. [[starship|Starship]] też jest dwustopniowy — jego nowością nie jest brak stopni, tylko zamiar odzyskania obu.',
+    ],
+    fakty: [
+      { etykieta: 'Powód', wartosc: 'wymagany stosunek mas przekracza możliwy w jednym stopniu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rodzaje', wartosc: 'szeregowe i równoległe', pewnosc: 'potwierdzone' },
+      { etykieta: 'Typowa liczba stopni', wartosc: 'dwa albo trzy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord', wartosc: 'udane starty rakiet pięciostopniowych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Jednostopniowe na orbitę', wartosc: 'nigdy nie zademonstrowane', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Najstarszy znany opis rakiety wielostopniowej pochodzi z czternastowiecznego chińskiego traktatu Huolongjing. Konstrukcja nazywała się smokiem ognistym wychodzącym z wody: rakiety nośne odpalały mniejsze strzały rakietowe tuż przed własnym wypaleniem.',
+        zrodlo: Z.wikiStopnie,
+      },
+    ],
+    os: [
+      { data: '1350', tytul: 'Pierwszy opis w Huolongjing', opis: 'Chiński traktat przedstawia dwustopniową rakietę odpalającą mniejsze pociski.', waga: 1 },
+    ],
+    powiazane: [
+      { id: 'rownanie-ciolkowskiego', powod: 'to jego konsekwencje wymusiły takie rozwiązanie' },
+      { id: 'interstage', powod: 'element łączący stopnie i rozdzielający je w locie' },
+      { id: 'falcon-9', powod: 'klasyczny układ dwustopniowy z odzyskiwanym dolnym stopniem' },
+      { id: 'falcon-heavy', powod: 'przykład stopniowania równoległego' },
+    ],
+    zrodla: [Z.wikiStopnie, Z.nasaRownanie],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'predkosc-ucieczki',
+    typ: 'pojecie',
+    nazwa: 'Prędkość ucieczki',
+    aka: ['escape velocity', 'druga prędkość kosmiczna'],
+    krotki: 'Prędkość, przy której ciało oddala się od planety na zawsze — dla Ziemi 11,186 kilometra na sekundę.',
+    tresc: [
+      'Prędkość ucieczki zależy tylko od masy ciała niebieskiego i odległości od jego środka. Dla powierzchni Ziemi NASA podaje 11,186 kilometra na sekundę, czyli ponad czterdzieści tysięcy kilometrów na godzinę. Dla Księżyca jest to 2,38, dla Marsa 5,03, a dla Słońca 617,7 kilometra na sekundę.',
+      'Nie należy jej mylić z prędkością orbitalną. Na tej samej wysokości prędkość ucieczki jest większa dokładnie pierwiastek z dwóch razy — około 1,414 raza. Dlatego wejście na [[leo|orbitę]] i opuszczenie Ziemi to dwa zupełnie różne zadania, mimo że różnica wydaje się niewielka.',
+      'W dawnej terminologii prędkość orbitalną nazywano pierwszą prędkością kosmiczną, a ucieczki — drugą. Trzecia, potrzebna do opuszczenia Układu Słonecznego z orbity Ziemi, wynosi 42,1 kilometra na sekundę liczone względem Słońca.',
+      'Ta różnica jest powodem, dla którego [[tesla-roadster|Roadster]] wystrzelony przez [[falcon-heavy|Falcona Heavy]] krąży wokół Słońca, a nie leci w przestrzeń międzygwiezdną — miał dość prędkości, by uciec Ziemi, ale nie Słońcu.',
+    ],
+    fakty: [
+      { etykieta: 'Ziemia', wartosc: '11,186 km/s (40 270 km/h)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Księżyc', wartosc: '2,38 km/s', pewnosc: 'potwierdzone' },
+      { etykieta: 'Mars', wartosc: '5,03 km/s', pewnosc: 'potwierdzone' },
+      { etykieta: 'Słońce', wartosc: '617,7 km/s', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wobec prędkości orbitalnej', wartosc: 'większa pierwiastek z dwóch razy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ucieczka z Układu Słonecznego', wartosc: '42,1 km/s z orbity Ziemi', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Różnica między krążeniem wokół Ziemi a opuszczeniem jej na zawsze to mnożnik 1,414 — pierwiastek z dwóch. Brzmi skromnie, ale w równaniu rakietowym przekłada się na kilkakrotnie większą masę paliwa. Stąd bierze się przepaść między lotem na orbitę a lotem na Marsa.',
+        zrodlo: Z.wikiPredkoscUcieczki,
+      },
+    ],
+    os: [
+      { data: '2018-02-06', tytul: 'Roadster ucieka Ziemi', opis: 'Falcon Heavy nadaje ładunkowi prędkość ucieczki z Ziemi, lecz nie ze Słońca.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'delta-v', powod: 'osiągnięcie tej prędkości jest wydatkiem liczonym w jej jednostkach' },
+      { id: 'leo', powod: 'orbita wymaga prędkości mniejszej pierwiastek z dwóch razy' },
+      { id: 'rownanie-ciolkowskiego', powod: 'przekłada tę różnicę prędkości na masę paliwa' },
+      { id: 'tesla-roadster', powod: 'uciekł Ziemi, ale nie Słońcu, i dlatego krąży' },
+    ],
+    zrodla: [Z.wikiPredkoscUcieczki, Z.nasaZiemia],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'ciag-do-masy',
+    typ: 'pojecie',
+    nazwa: 'Stosunek ciągu do masy',
+    aka: ['thrust-to-weight ratio', 'TWR'],
+    krotki: 'Liczba bez jednostki, która rozstrzyga najprostsze pytanie w astronautyce: czy rakieta w ogóle oderwie się od ziemi.',
+    tresc: [
+      'Stosunek ciągu do masy to ciąg podzielony przez ciężar. Jeśli wynosi mniej niż jeden, rakieta stoi na stanowisku i pali paliwo. Jeśli więcej — rusza, a nadwyżka ponad jedynkę odpowiada przyspieszeniu, jakie faktycznie zyskuje.',
+      'Wartość rośnie w trakcie lotu, bo ciąg pozostaje z grubsza stały, a masa maleje z każdą sekundą pracy silników. Prom kosmiczny startował ze stosunkiem 1,3 i dochodził w locie do 3.',
+      'Osobno liczy się ten sam stosunek dla samego silnika, bez rakiety. Tu wartości są zupełnie innego rzędu: silnik F-1 z Saturna V miał 94,1, a [[merlin|Merlin 1D]] — 199,5, co czyni go jednym z najlepszych pod tym względem silników, jakie zbudowano.',
+      'Ta druga liczba tłumaczy, dlaczego [[falcon-9|Falcon 9]] ma dziewięć małych silników zamiast jednego dużego. Lekki silnik można powielić, a powielenie daje [[hamowania|możliwość hamowania]] i odporność na awarię pojedynczej jednostki.',
+    ],
+    fakty: [
+      { etykieta: 'Definicja', wartosc: 'ciąg podzielony przez ciężar; wielkość bezwymiarowa', pewnosc: 'potwierdzone' },
+      { etykieta: 'Warunek startu', wartosc: 'wartość większa od jedności', pewnosc: 'potwierdzone' },
+      { etykieta: 'Prom kosmiczny', wartosc: '1,3 przy starcie, do 3 w locie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silnik F-1', wartosc: '94,1', pewnosc: 'potwierdzone' },
+      { etykieta: 'Merlin 1D', wartosc: '199,5', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Merlin 1D ma stosunek ciągu do masy blisko 200 — dwukrotnie lepszy niż F-1, który wynosił Saturna V na Księżyc. Rekord nie wziął się z nowej fizyki, tylko z tego, że silnik jest mały i produkowany seryjnie, a nie budowany pojedynczo jak dzieło sztuki.',
+        zrodlo: Z.wikiCiag,
+      },
+    ],
+    os: [
+      { data: '2013-09-29', tytul: 'Debiut Merlina 1D', opis: 'Wersja silnika o rekordowym stosunku ciągu do masy wchodzi do służby.', waga: 1 },
+    ],
+    powiazane: [
+      { id: 'merlin', powod: 'jego wartość tego stosunku jest jedną z najwyższych w historii' },
+      { id: 'impuls-wlasciwy', powod: 'druga liczba opisująca silnik, mierząca oszczędność zamiast siły' },
+      { id: 'super-heavy', powod: 'trzydzieści trzy silniki to konsekwencja stawiania na lekkie jednostki' },
+      { id: 'rownanie-ciolkowskiego', powod: 'mówi ile prędkości; ten stosunek mówi czy w ogóle wystartuje' },
+    ],
+    zrodla: [Z.wikiCiag, Z.wikiMerlin],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'kriogenika',
+    typ: 'pojecie',
+    nazwa: 'Kriogenika',
+    aka: ['paliwa kriogeniczne', 'cryogenic propellant'],
+    krotki: 'Paliwa, które są cieczą tylko poniżej dwustu stopni mrozu — i odparowują, gdy tylko rakieta postoi dłużej na stanowisku.',
+    tresc: [
+      'Tlen, wodór i metan są w normalnych warunkach gazami. Żeby zmieściły się w zbiorniku rakiety, trzeba je skroplić, a to znaczy schłodzić głęboko poniżej zera. NASA podaje dla ciekłego wodoru około minus 424 stopni Fahrenheita, a dla ciekłego tlenu około minus 298 — w skali Celsjusza jest to mniej więcej minus 253 i minus 183 stopnie.',
+      'Stąd bierze się cecha, która rządzi całym harmonogramem lotu: odparowywanie. Ciepło od instalacji pokładowych, od promieniowania słonecznego i z otoczenia nieustannie podgrzewa zbiorniki, a powstałe opary trzeba upuszczać. Zatankowana rakieta traci paliwo z każdą godziną postoju — dlatego [[okno-startowe|okno startowe]] bywa liczone w minutach, a [[scrub-i-nominal|przerwanie odliczania]] oznacza spuszczenie wszystkiego.',
+      'Dla lotów dłuższych niż kilka dni problem staje się zaporowy. NASA podaje wprost, że paliwa kriogeniczne wykorzystywano dotąd wyłącznie w misjach krótszych niż tydzień, i testuje w Marshall Space Flight Center chłodzenie zbiorników dwustopniowym układem kriochłodziarek, żeby odparowywanie sprowadzić do zera.',
+      'Dla SpaceX ma to bezpośrednie znaczenie: [[tankowanie-orbitalne|tankowanie Starshipa na orbicie]] wymaga, żeby [[metaloks-i-keroloks|metan i tlen]] przetrwały w zbiornikach dłużej niż dotąd potrafiono. Kerozyna tego problemu nie ma — to płyn w temperaturze pokojowej i można ją trzymać w rakiecie miesiącami.',
+    ],
+    fakty: [
+      { etykieta: 'Ciekły wodór', wartosc: 'około minus 424 °F, czyli około minus 253 °C', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ciekły tlen', wartosc: 'około minus 298 °F, czyli około minus 183 °C', pewnosc: 'potwierdzone' },
+      { etykieta: 'Odparowywanie', wartosc: 'opary trzeba upuszczać, paliwo ubywa z godziny na godzinę', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dotychczasowe zastosowanie', wartosc: 'misje krótsze niż tydzień', pewnosc: 'potwierdzone' },
+      { etykieta: 'Kierunek prac', wartosc: 'kriochłodziarki sprowadzające odparowywanie do zera', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'W kosmosie jest zimno, a mimo to paliwo kriogeniczne się tam grzeje. Ciepło idzie od własnych instalacji statku, od Słońca i od spalin silników — i to wystarcza, żeby zbiorniki trzeba było odpowietrzać, tracąc bezpowrotnie część ładunku.',
+        zrodlo: Z.nasaKriogenika,
+      },
+    ],
+    os: [
+      { data: '2025-06', tytul: 'Testy zerowego odparowywania', opis: 'NASA rozpoczyna w Marshall dziewięćdziesięciodniową kampanię chłodzenia zbiorników wodoru.', waga: 1 },
+    ],
+    powiazane: [
+      { id: 'metaloks-i-keroloks', powod: 'metan i tlen są kriogeniczne, kerozyna nie' },
+      { id: 'tankowanie-orbitalne', powod: 'wymaga utrzymania paliwa w stanie ciekłym znacznie dłużej niż dotąd' },
+      { id: 'okno-startowe', powod: 'odparowywanie jest jednym z powodów, dla których bywa tak wąskie' },
+      { id: 'scrub-i-nominal', powod: 'przerwane odliczanie oznacza spuszczenie zatankowanego paliwa' },
+    ],
+    zrodla: [Z.wikiKriogenika, Z.nasaKriogenika],
     zaktualizowano: '2026-09-13',
   },
 ];

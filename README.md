@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.4.5** · **by Dead Net & Claude**
+**Wersja 0.4.6** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -45,7 +45,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 0 | Design plan, kontrakt danych, fazowanie | gotowe |
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
-| 3 | Treść — 163 z 180+ encji | w toku |
+| 3 | Treść — 180 z 180+ encji | gotowe |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA, wydajność, pomiar dostępności, dopieszczenie | nierozpoczęte |
 
@@ -54,10 +54,10 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 163 · Wydarzenia: 285 · Źródła w katalogu: 95 · Diagramy: 4
+Encje: 180 · Wydarzenia: 317 · Źródła w katalogu: 122 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 4,47 (cel ≥ 6)
-Tłumaczenia EN: interfejs w całości, treść 6 / 163 encji
+Średnio linków [[id]] w treści: 4,88 (cel ≥ 6)
+Tłumaczenia EN: interfejs w całości, treść 6 / 180 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 ```
 
@@ -411,21 +411,24 @@ z manifestem paczki. `1.0.0` będzie zarezerwowane dla odbioru całości:
 
 Lista uszeregowana po wadze, nie po kolejności faz.
 
-1. **Treść — około 17 encji.** Cała lista pojęć z briefu jest domknięta, tak
-   samo loty testowe Starshipa i Falcona 1, gigafabryki i najważniejsze
-   programy Tesli. Brakuje: SLC-4E w Vandenberg, ludzi słabo udokumentowanych
-   w źródłach publicznych (Juncosa, Jensen, Riley, Dontchev), dalszych misji
-   załogowych Crew Dragona i rozbudowy sekcji reszty imperium.
-2. **Niezależność źródeł.** 129 ze 163 encji ma wszystkie źródła od jednego
-   wydawcy, najczęściej Wikipedii. Trzynaście encji ma źródło pierwotne
-   (NASA, SEC, Tesla). To najpoważniejsza słabość jakościowa bazy.
-3. **Gęstość linkowania.** Średnia 4,47 wobec celu 6; 135 encji jest poniżej celu.
-   Domknięcie wymaga przepisania akapitów, nie doklejania linków.
+1. **Treść — minimum osiągnięte, 180 encji.** Cała lista z sekcji 4 briefu jest
+   przerobiona pozycja po pozycji. Poza bazą świadomie zostali czterej ludzie
+   wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
+   dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
+   kwestią wyboru, nie długu.
+2. **Niezależność źródeł.** 137 ze 180 encji ma wszystkie źródła od jednego
+   wydawcy, najczęściej Wikipedii. Osiemnaście encji ma źródło pierwotne
+   (NASA, SEC, Tesla). To najpoważniejsza słabość jakościowa bazy i jedyna
+   pozycja na tej liście, która realnie dotyczy wiarygodności, a nie wygody.
+3. **Gęstość linkowania.** Średnia 4,88 wobec celu 6; 144 encje są poniżej celu.
+   W tej partii przeszedłem przez trzydzieści kilka najsłabszych encji i wplotłem
+   linki w zdania zamiast doklejać je na końcu — stąd wzrost z 4,40. Domknięcie
+   do szóstki wymaga tej samej roboty na pozostałych stu czterdziestu.
 4. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
    wszystkich kategorii na ekranie głównym, wirtualizacja list powyżej 60
    elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
    i haptyki na prawdziwym telefonie.
-5. **Tłumaczenie treści** — 157 encji bez wersji angielskiej.
+5. **Tłumaczenie treści** — 174 encje bez wersji angielskiej.
 6. **Widok grafu powiązań** (propozycja, nie zaczęte) — mapa połączeń między
    encjami we własnym SVG, z prostym układem siłowym. Pokazywałaby to, co jest
    sednem produktu i czego dziś nie widać nigdzie: gęstość i kształt sieci

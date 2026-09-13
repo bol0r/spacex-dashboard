@@ -5,6 +5,37 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.6 — 13 września 2026
+
+**Partia ósma — siedemnaście encji. Minimum z briefu osiągnięte: 180.**
+
+- SpaceX: Mechazilla, SLC-4E, Crew-9, Europa Clipper.
+- Ludzie: JB Straubel, Martin Eberhard, Franz von Holzhausen, rodzina Muska.
+- Tesla: pakiet wynagrodzenia Muska, splity akcji.
+- Reszta imperium: DOGE, Starlink na Ukrainie.
+- Słownik: równanie Ciołkowskiego, stopniowanie, prędkość ucieczki, stosunek
+  ciągu do masy, kriogenika.
+
+Tą partią domyka się faza trzecia. Lista z sekcji 4 briefu jest przerobiona
+pozycja po pozycji; poza bazą zostali czterej ludzie, dla których nie znalazłem
+dwóch niezależnych źródeł publicznych.
+
+Cztery encje tej partii dotyczą spraw spornych i są napisane według tej samej
+reguły: co się wydarzyło, kto co twierdzi, czego nie da się rozstrzygnąć.
+Przy Starlinku na Ukrainie osobno stoi pierwotna wersja biografii Isaacsona,
+osobno odpowiedź Muska i osobno sprostowanie autora. Przy DOGE osobno liczby
+deklarowane i osobno ustalenia izby kontroli GAO z sierpnia 2026. Przy pakiecie
+wynagrodzenia status pakietu zastępczego jest oznaczony jako sporny, bo źródła
+podają rozbieżne wersje. Przy rodzinie Muska motyw przeprowadzki dziadka do RPA
+jest podany tak, jak podają go źródła, razem z tym, że jest sporny.
+
+Poza nowymi encjami: przejście przez trzydzieści kilka najsłabiej powiązanych
+encji i wplecenie w nie linków. Średnia gęstość linkowania wzrosła z 4,40 do
+4,88 przy celu 6.
+
+Nowych źródeł: 27, w tym pierwsze pierwotne dokumenty giełdowe (proxy Tesli
+z 2022 roku) i trzy strony NASA. Encji ze źródłem pierwotnym: 18 ze 180.
+
 ## 0.4.5 — 13 września 2026
 
 **Partia siódma — dziewiętnaście encji. Tesla i loty operacyjne.**

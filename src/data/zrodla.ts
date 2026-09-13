@@ -487,4 +487,139 @@ export const Z = {
     url: 'https://www.votetesla.com/meet-your-board/kimbal-musk/',
     wydawca: 'Tesla (materiały dla akcjonariuszy)', dostep: D2,
   },
+  wikiMechazilla: {
+    tytul: 'Mechazilla',
+    url: 'https://en.wikipedia.org/wiki/Mechazilla',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  cbsChwyt: {
+    tytul: 'SpaceX pulls off unprecedented feat, grabbing descending rocket with mechanical arms',
+    url: 'https://www.cbsnews.com/news/spacex-pulls-off-unprecedented-feat-grabbing-descending-rocket-with-mechanical-arms/',
+    wydawca: 'CBS News', dostep: D2,
+  },
+  wikiSlc4: {
+    tytul: 'Vandenberg Space Launch Complex 4',
+    url: 'https://en.wikipedia.org/wiki/Vandenberg_Space_Launch_Complex_4',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiCrew9: {
+    tytul: 'SpaceX Crew-9',
+    url: 'https://en.wikipedia.org/wiki/SpaceX_Crew-9',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiClipper: {
+    tytul: 'Europa Clipper',
+    url: 'https://en.wikipedia.org/wiki/Europa_Clipper',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiStraubel: {
+    tytul: 'JB Straubel',
+    url: 'https://en.wikipedia.org/wiki/JB_Straubel',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiEberhard: {
+    tytul: 'Martin Eberhard',
+    url: 'https://en.wikipedia.org/wiki/Martin_Eberhard',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiHolzhausen: {
+    tytul: 'Franz von Holzhausen',
+    url: 'https://en.wikipedia.org/wiki/Franz_von_Holzhausen',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiRodzina: {
+    tytul: 'Musk family',
+    url: 'https://en.wikipedia.org/wiki/Musk_family',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiHaldeman: {
+    tytul: 'Joshua N. Haldeman',
+    url: 'https://en.wikipedia.org/wiki/Joshua_N._Haldeman',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiDoge: {
+    tytul: 'Department of Government Efficiency',
+    url: 'https://en.wikipedia.org/wiki/Department_of_Government_Efficiency',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  cbsDoge: {
+    tytul: 'DOGE wall of receipts riddled with inaccuracies, congressional watchdog says',
+    url: 'https://www.cbsnews.com/news/doge-wall-of-receipts-elon-musk-government-accountability-office/',
+    wydawca: 'CBS News', dostep: D2,
+  },
+  wikiTornetta: {
+    tytul: 'Tornetta v. Musk',
+    url: 'https://en.wikipedia.org/wiki/Tornetta_v._Musk',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  electrekPakiet: {
+    tytul: 'Delaware Court reinstates Musk 55B pay package, penalizes him 1 dollar instead',
+    url: 'https://electrek.co/2025/12/20/delaware-court-reinstates-musks-55b-pay-package-penalizes-him-1-instead/',
+    wydawca: 'Electrek', dostep: D2,
+  },
+  nbcPakiet: {
+    tytul: 'Tesla shareholders approve 1 trillion dollar pay package for Elon Musk',
+    url: 'https://www.nbcnews.com/tech/elon-musk/tesla-elon-musk-shareholder-meeting-1-trillion-dollar-pay-package-rcna242223',
+    wydawca: 'NBC News', dostep: D2,
+  },
+  secSplit: {
+    tytul: 'Tesla, Inc. — Form DEF 14A, walne zgromadzenie 4 sierpnia 2022',
+    url: 'https://www.sec.gov/Archives/edgar/data/1318605/000156459022024064/tsla-def14a_20220804.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D2,
+  },
+  wikiHistoriaTesli: {
+    tytul: 'History of Tesla, Inc.',
+    url: 'https://en.wikipedia.org/wiki/History_of_Tesla,_Inc.',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiStarlinkUkraina: {
+    tytul: 'Starlink in the Russo-Ukrainian War',
+    url: 'https://en.wikipedia.org/wiki/Starlink_in_the_Russo-Ukrainian_War',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  pbsStarlink: {
+    tytul: 'Musk refusal to provide Starlink support for Ukraine attack in Crimea raises questions for Pentagon',
+    url: 'https://www.pbs.org/newshour/economy/elon-musks-refusal-to-provide-starlink-support-for-ukraine-attack-in-crimea-raises-questions-for-pentagon',
+    wydawca: 'PBS NewsHour', dostep: D2,
+  },
+  wikiCiolkowski: {
+    tytul: 'Tsiolkovsky rocket equation',
+    url: 'https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  nasaRownanie: {
+    tytul: 'Ideal Rocket Equation — Beginners Guide to Aeronautics',
+    url: 'https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/',
+    wydawca: 'NASA Glenn Research Center', dostep: D2,
+  },
+  wikiStopnie: {
+    tytul: 'Multistage rocket',
+    url: 'https://en.wikipedia.org/wiki/Multistage_rocket',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiPredkoscUcieczki: {
+    tytul: 'Escape velocity',
+    url: 'https://en.wikipedia.org/wiki/Escape_velocity',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  nasaZiemia: {
+    tytul: 'Earth Fact Sheet',
+    url: 'https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html',
+    wydawca: 'NASA Goddard Space Flight Center', dostep: D2,
+  },
+  wikiCiag: {
+    tytul: 'Thrust-to-weight ratio',
+    url: 'https://en.wikipedia.org/wiki/Thrust-to-weight_ratio',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiKriogenika: {
+    tytul: 'Cryogenic fuel',
+    url: 'https://en.wikipedia.org/wiki/Cryogenic_fuel',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  nasaKriogenika: {
+    tytul: 'Stay Cool: NASA Tests Innovative Technique for Super Cold Fuel Storage',
+    url: 'https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/stay-cool-nasa-tests-innovative-technique-for-super-cold-fuel-storage/',
+    wydawca: 'NASA', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;

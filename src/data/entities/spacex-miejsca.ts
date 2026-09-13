@@ -12,7 +12,7 @@ export const miejsca: Encja[] = [
       'Miejsce, w którym powstaje i z którego startuje [[starship|Starship]], leży na płaskim skrawku wybrzeża przy granicy z Meksykiem. [[spacex|SpaceX]] zaczęło skupować tam ziemię w 2012 roku, a w sierpniu 2014 oficjalnie ogłosiło wybór lokalizacji pod kosmodrom — centrum kontroli w osadzie, stanowiska startowe dwie mile na wschód.',
       'Teren wybrano dlatego, że nie było tam praktycznie nikogo. [[elon-musk|Musk]] uzasadnił to bez owijania: mają mnóstwo ziemi i nikogo dookoła, więc jeśli coś wybuchnie, nie ma problemu. Przy programie, w którym kilka pierwszych rakiet faktycznie się rozpadło, było to założenie projektowe, nie żart.',
       'Historia tego miejsca jest krótka i pechowa. Osadę Kennedy Shores założono w 1967 roku i w tym samym roku zniszczył ją huragan Beulah. Do 2008 zostało w niej sześciu stałych mieszkańców. We wrześniu 2019 SpaceX zaproponowało pozostałym trzykrotność wartości rynkowej ich domów.',
-      'Dwudziestego maja 2025 roku Starbase stało się formalnie miastem, po głosowaniu mieszkańców 3 maja. Liczy około pięciuset osób. Burmistrzem jest Bobby Peden, wiceprezes SpaceX — startował bez kontrkandydata, podobnie jak dwoje komisarzy, również związanych z firmą. Na 2026 rok zaplanowano przyłączenie kolejnych 7 133 akrów. Od 2024 roku to także oficjalna siedziba spółki.',
+      'Na miejscu stoi dziś [[mechazilla|wieża łapiąca]], a cała naziemna część systemu bywa nazywana [[stage-zero|zerowym stopniem]]. Dwudziestego maja 2025 roku Starbase stało się formalnie miastem, po głosowaniu mieszkańców 3 maja. Liczy około pięciuset osób. Burmistrzem jest Bobby Peden, wiceprezes SpaceX — startował bez kontrkandydata, podobnie jak dwoje komisarzy, również związanych z firmą. Na 2026 rok zaplanowano przyłączenie kolejnych 7 133 akrów. Od 2024 roku to także oficjalna siedziba spółki.',
     ],
     fakty: [
       { etykieta: 'Status', wartosc: 'miasto od 20 maja 2025, po głosowaniu 3 maja', pewnosc: 'potwierdzone' },
@@ -128,9 +128,9 @@ export const miejsca: Encja[] = [
     aka: ['hamownia w Teksasie', 'test facility'],
     krotki: 'Cztery tysiące akrów w Teksasie, przez które musi przejść każdy silnik zbudowany przez SpaceX — około siedmiu odpaleń dziennie.',
     tresc: [
-      'McGregor w Teksasie jest hamownią firmy. Zasada jest bezwyjątkowa: każdy silnik i każdy silniczek manewrowy wyprodukowany przez [[spacex|SpaceX]] musi tam przejść końcowe próby. Testuje się tu również całe pierwsze i drugie stopnie [[falcon-9|Falcona 9]] w ramach odbioru.',
+      'McGregor w Teksasie jest hamownią firmy. Zasada jest bezwyjątkowa: każdy silnik i każdy silniczek manewrowy wyprodukowany przez [[spacex|SpaceX]] musi tam przejść końcowe próby. Testuje się tu również całe pierwsze i drugie stopnie [[falcon-9|Falcona 9]] w ramach odbioru — to właśnie tu odbywa się [[statyczny-test-ogniowy|statyczny test ogniowy]] poprzedzający wysyłkę na stanowisko.',
       'Teren ma przeszłość zbrojeniową i rakietową: w czasie drugiej wojny światowej działała tu wytwórnia amunicji Bluebonnet, a później stanowiska badawcze firmy Beal Aerospace. SpaceX wydzierżawiło obiekt w 2003 roku i dokupiło sąsiednie grunty, rozrastając się z 256 do czterech tysięcy akrów do marca 2015.',
-      'Liczba stanowisk badawczych rosła razem z produkcją — z siedmiu w październiku 2012 do dwunastu w marcu 2015. Firma określa McGregor jako najbardziej zaawansowaną i najbardziej obciążoną hamownię silników rakietowych na świecie; od uruchomienia wykonano tam ponad siedem tysięcy prób, a w typowy dzień roku 2024 odpalano około siedmiu silników.',
+      'Liczba stanowisk badawczych rosła razem z produkcją — z siedmiu w październiku 2012 do dwunastu w marcu 2015. Firma określa McGregor jako najbardziej zaawansowaną i najbardziej obciążoną hamownię silników rakietowych na świecie; od uruchomienia wykonano tam ponad siedem tysięcy prób, a w typowy dzień roku 2024 odpalano około siedmiu silników. Same silniki — [[merlin|Merliny]] i Raptory — powstają gdzie indziej; McGregor jest miejscem, w którym się je sprawdza, a nie buduje.',
       'To tu we wrześniu 2016 roku odbyło się pierwsze odpalenie [[raptor|Raptora]] — siedem lat przed jego pierwszym lotem. W lipcu 2021 ogłoszono budowę drugiej linii produkcyjnej tego silnika, o docelowej zdolności ośmiuset do tysiąca sztuk rocznie.',
     ],
     fakty: [
@@ -216,7 +216,7 @@ export const miejsca: Encja[] = [
       'Stanowisko zbudowały siły powietrzne pod rakiety Titan III z dopalaczami na paliwo stałe. Przez lata obsłużyło pięćdziesiąt pięć startów Titanów różnych odmian; ostatni odbył się 30 kwietnia 2005 roku.',
       '[[spacex|SpaceX]] wydzierżawiło je w kwietniu 2007. Pierwszy [[falcon-9|Falcon 9]] poleciał stąd w czerwcu 2010, z makietą ładunku.',
       'Pierwszego września 2016 roku stanowisko zostało poważnie uszkodzone przez [[amos-6|eksplozję podczas tankowania]] przed statycznym testem ogniowym. Naprawy i modernizacja ruszyły na początku 2017, a stanowisko wróciło do służby w grudniu tego samego roku — rok i kwartał od zdarzenia.',
-      'Na początku 2023 roku dobudowano wieżę dostępu dla załogi, użytą po raz pierwszy na początku 2024. Według stanu na sierpień 2026 stanowisko obsłużyło ponad trzysta czterdzieści startów Falcona 9.',
+      'Na początku 2023 roku dobudowano wieżę dostępu dla załogi, użytą po raz pierwszy na początku 2024 — do tej pory loty z ludźmi startowały wyłącznie z [[lc-39a|LC-39A]]. Według stanu na sierpień 2026 stanowisko obsłużyło ponad trzysta czterdzieści startów Falcona 9 — stąd ruszył między innymi [[crew-9|Crew-9]]. Jego odpowiednikiem na zachodnim wybrzeżu jest [[slc-4e|SLC-4E]].',
     ],
     fakty: [
       { etykieta: 'Pierwotne przeznaczenie', wartosc: 'rakiety Titan III', pewnosc: 'potwierdzone' },
@@ -364,6 +364,87 @@ export const miejsca: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'mechazilla',
+    typ: 'technologia',
+    nazwa: 'Mechazilla',
+    aka: ['wieża łapiąca', 'chopsticks', 'pałeczki'],
+    krotki: 'Wieża startowa z parą ramion, która chwyta wracający człon nośny w powietrzu, zamiast pozwolić mu usiąść na nogach.',
+    tresc: [
+      'Przy [[falcon-9|Falconie 9]] wracający człon ląduje na własnych [[nogi-ladownicze|nogach]]. Przy [[super-heavy|Super Heavy]] nóg nie ma w ogóle — zamiast nich jest wieża o wysokości 146 metrów z parą ruchomych ramion, nazwanych przez inżynierów pałeczkami. To one łapią człon w powietrzu.',
+      'Ramiona wiszą na wózku prowadzonym linami z góry wieży; pionowo porusza je wciągarka u podstawy, poziomo siłowniki hydrauliczne. Człon nie wpada między nie swobodnie — zawisa na dwóch czopach tuż pod [[siatki-aerodynamiczne|siatkami aerodynamicznymi]], czyli w miejscu, które i tak przenosi obciążenia.',
+      'Pierwszy chwyt odbył się 13 października 2024 roku przy [[starship-lot-5|locie 5]]. Booster B12 wystartował o 8:25 czasu wschodniego, oddzielił się po trzech minutach i czterdziestu sekundach, wrócił nad stanowisko i został przejęty przez ramiona. Udało się za pierwszym podejściem.',
+      'Potem było różnie. Przy locie 6 chwytu nie próbowano z powodu uszkodzeń wieży, loty 7 i 8 zakończyły się przejęciem członu, a od lotu 9 program przeszedł na kontrolowane wodowania nad zatoką — nowe wersje konstrukcji sprawdzano najpierw nad wodą. Chwytów jest więc na razie trzy.',
+    ],
+    fakty: [
+      { etykieta: 'Wysokość wieży', wartosc: '146 metrów', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zasada', wartosc: 'człon zawisa na czopach pod siatkami aerodynamicznymi', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwszy chwyt', wartosc: '13 października 2024, lot 5, booster B12', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas od startu do chwytu', wartosc: 'około siedmiu minut', pewnosc: 'potwierdzone' },
+      { etykieta: 'Udane chwyty', wartosc: 'loty 5, 7 i 8', stanNa: '2026-09', pewnosc: 'potwierdzone' },
+      { etykieta: 'Górny stopień', wartosc: 'dotąd nie był łapany', stanNa: '2026-09', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Nogi lądownicze Falcona 9 ważą tyle, że mieszczą się w rachunku tylko dlatego, że reszta rakiety jest mała. Przy Super Heavy zdecydowano się przenieść cały ten ciężar z rakiety na wieżę — konstrukcja, która musi udźwignąć wracający człon, stoi na ziemi i nie płaci za to paliwem.',
+        zrodlo: Z.cbsChwyt,
+      },
+    ],
+    os: [
+      { data: '2024-10-13', tytul: 'Pierwszy chwyt członu', opis: 'Ramiona wieży przejmują Super Heavy za pierwszym podejściem.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'super-heavy', powod: 'człon, który nie ma nóg, bo ma tę wieżę' },
+      { id: 'starship-lot-5', powod: 'lot, na którym chwyt udał się za pierwszym razem' },
+      { id: 'stage-zero', powod: 'naziemna część systemu, której wieża jest sercem' },
+      { id: 'nogi-ladownicze', powod: 'rozwiązanie, które ta wieża zastępuje' },
+      { id: 'siatki-aerodynamiczne', powod: 'czopy do chwytu siedzą tuż pod nimi' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiMechazilla, Z.cbsChwyt],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'slc-4e',
+    typ: 'miejsce',
+    nazwa: 'SLC-4E',
+    aka: ['Space Launch Complex 4 East', 'stanowisko zachodniego wybrzeża'],
+    krotki: 'Stanowisko startowe w Vandenberg, z którego SpaceX lata na orbity biegunowe — dawniej dom rakiet Titan.',
+    tresc: [
+      'Kompleks SLC-4 składa się z dwóch stanowisk. Wschodnie, oznaczone literą E, obsługiwało rakiety Atlas-Agena w latach 1964–1967, a potem rodzinę Titan aż do 2005 roku. Ostatni Titan wystartował stąd 19 października 2005.',
+      'SpaceX zaczęło przebudowę na początku 2011 roku; trwała dwadzieścia cztery miesiące. Pierwszy [[falcon-9|Falcon 9]] poleciał stąd 29 września 2013 z kanadyjskim satelitą CASSIOPE — był to jednocześnie debiut wersji v1.1.',
+      'Drugie stanowisko kompleksu, SLC-4W, wydzierżawiono w lutym 2015 roku i przerobiono na [[strefy-ladowania|strefę lądowania]] LZ-4. Pierwszy człon usiadł tam 8 października 2018 roku po misji SAOCOM 1A. Start i lądowanie dzieli więc kilkaset metrów.',
+      'Cała aktywność SpaceX na zachodnim wybrzeżu przechodzi przez to stanowisko: loty [[transporter|Transportera]], satelity obserwacyjne i część [[starlink|Starlinka]] na [[orbita-biegunowa|orbitach biegunowych]].',
+    ],
+    fakty: [
+      { etykieta: 'Era Atlas-Agena', wartosc: '1964–1967, ostatni start 4 czerwca 1967', pewnosc: 'potwierdzone' },
+      { etykieta: 'Era Titana', wartosc: '1971–2005, ostatni start 19 października 2005', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przebudowa przez SpaceX', wartosc: 'start na początku 2011, dwadzieścia cztery miesiące', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwszy Falcon 9', wartosc: '29 września 2013, satelita CASSIOPE', pewnosc: 'potwierdzone' },
+      { etykieta: 'LZ-4 na SLC-4W', wartosc: 'dzierżawa od lutego 2015; pierwsze lądowanie 8 października 2018', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Pierwszy lot Falcona 9 z tego stanowiska był jednocześnie debiutem zupełnie nowej wersji rakiety. SpaceX połączyło dwa ryzyka w jednym locie: nieprzetestowaną konstrukcję i nieprzetestowane stanowisko — po dwudziestu czterech miesiącach przebudowy stanowiska po rakiecie Titan.',
+        zrodlo: Z.wikiSlc4,
+      },
+    ],
+    os: [
+      { data: '2013-09-29', tytul: 'Pierwszy start z Vandenberg', opis: 'Debiut Falcona 9 v1.1 z satelitą CASSIOPE.', waga: 2 },
+      { data: '2018-10-08', tytul: 'Pierwsze lądowanie na LZ-4', opis: 'Człon wraca na sąsiednie stanowisko po misji SAOCOM 1A.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'vandenberg', powod: 'baza, w której to stanowisko stoi' },
+      { id: 'strefy-ladowania', powod: 'sąsiednie stanowisko kompleksu pełni tę rolę' },
+      { id: 'slc-40', powod: 'jego odpowiednik na wschodnim wybrzeżu' },
+      { id: 'orbita-biegunowa', powod: 'jedyny powód, dla którego lata się stąd, a nie z Florydy' },
+    ],
+    status: 'aktywne',
+    zrodla: [Z.wikiSlc4, Z.wikiStartyFalcon],
     zaktualizowano: '2026-09-13',
   },
 ];

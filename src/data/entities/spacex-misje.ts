@@ -11,8 +11,8 @@ const falcon1: Encja[] = [
     krotki: 'Pierwszy start SpaceX zakończył się awarią po 33 sekundach, a przyczyną była skorodowana nakrętka.',
     tresc: [
       'Dwudziestego czwartego marca 2006 roku [[falcon-1|Falcon 1]] wystartował po raz pierwszy, z satelitą FalconSAT-2 dla agencji DARPA. Trzydzieści trzy sekundy później silnik [[merlin|Merlin]] przestał pracować i rakieta spadła.',
-      'Przyczyna okazała się boleśnie prozaiczna: pękła nakrętka na przewodzie paliwowym. Nie z powodu złego dokręcenia, ale z powodu korozji wywołanej solną mgłą — stanowisko startowe leżało na atolu Kwajalein w środku Pacyfiku.',
-      'Dla [[spacex|SpaceX]] była to lekcja o materiałach i o środowisku, w którym trzyma się rakietę przed startem. Firma miała jeszcze trzy szanse, choć wtedy jeszcze o tym nie wiedziała.',
+      'Przyczyna okazała się boleśnie prozaiczna: pękła nakrętka na przewodzie paliwowym. Nie z powodu złego dokręcenia, ale z powodu korozji wywołanej solną mgłą — stanowisko startowe leżało na atolu [[kwajalein|Kwajalein]] w środku Pacyfiku.',
+      'Dla [[spacex|SpaceX]] była to lekcja o materiałach i o środowisku, w którym trzyma się rakietę przed startem. Firma miała jeszcze trzy szanse, choć wtedy jeszcze o tym nie wiedziała. W komunikatach zdarzenie nazwano [[anomalia|anomalią]] — słowem, które w tej branży obejmuje i przekłamany odczyt, i utratę rakiety.',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '24 marca 2006', pewnosc: 'potwierdzone' },
@@ -48,8 +48,8 @@ const falcon1: Encja[] = [
     krotki: 'Pierwszy stopień zadziałał, ale kołyszące się paliwo w drugim wygasiło silnik na 289 kilometrach.',
     tresc: [
       'Dwudziestego pierwszego marca 2007 roku [[falcon-1|Falcon 1]] poleciał z makietą ładunku o nazwie DemoSat. Pierwszy stopień przepracował całą fazę bez zarzutu — i to był realny postęp wobec [[falcon-1-lot-1|pierwszego lotu]].',
-      'Problemy zaczęły się przy rozdzieleniu stopni. Osłona międzystopniowa otarła się o dyszę drugiego stopnia, a potem paliwo zaczęło się w zbiorniku przelewać w rezonansie z konstrukcją. Silnik [[kestrel|Kestrel]] zgasł przedwcześnie, w siódmej minucie lotu.',
-      'Rakieta osiągnęła 289 kilometrów — wysokość kosmiczną, ale nie orbitalną. Brakowało prędkości, nie wysokości, a to różnica, którą ten lot pokazał w najbardziej dosłowny sposób.',
+      'Problemy zaczęły się przy rozdzieleniu stopni. Osłona [[interstage|międzystopniowa]] otarła się o dyszę drugiego stopnia, a potem paliwo zaczęło się w zbiorniku przelewać w rezonansie z konstrukcją. Silnik [[kestrel|Kestrel]] zgasł przedwcześnie, w siódmej minucie lotu.',
+      'Rakieta osiągnęła 289 kilometrów — wysokość kosmiczną, ale nie orbitalną. Brakowało prędkości, nie wysokości, a to różnica, którą ten lot pokazał w najbardziej dosłowny sposób. Wysokość kupuje się metrami, orbitę [[delta-v|prędkością]] — i to drugie jest znacznie droższe.',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '21 marca 2007', pewnosc: 'potwierdzone' },
@@ -405,8 +405,8 @@ const wczesne: Encja[] = [
     krotki: 'Ósmego kwietnia 2016 roku booster osiadł na pływającej platformie trzysta kilometrów od brzegu Florydy.',
     tresc: [
       'Ósmego kwietnia 2016 roku [[falcon-9|Falcon 9]] wystartował w misji zaopatrzeniowej CRS-8, a dziewięć minut później jego pierwszy stopień usiadł na [[barki-dronowe|barce dronowej]] „Of Course I Still Love You", trzysta kilometrów od wybrzeża Florydy. Było to drugie udane lądowanie w historii firmy i pierwsze, jakie ktokolwiek wykonał na pływającej platformie.',
-      'Powód, dla którego to było potrzebne, jest czysto energetyczny. Przy lotach na wyższe orbity albo z cięższym ładunkiem boosterowi nie zostaje paliwa na zawrócenie nad brzeg. Barka ustawiona na trasie lotu skraca drogę powrotną na tyle, że manewr zaczyna się domykać.',
-      'Od tego momentu [[reuzywalnosc|odzysk]] przestał być zarezerwowany dla najlżejszych misji. Dziś większość lądowań odbywa się właśnie na wodzie, a betonowe stanowiska obsługują wyjątki.',
+      'Powód, dla którego to było potrzebne, jest czysto energetyczny. Przy lotach na wyższe orbity albo z cięższym ładunkiem boosterowi nie zostaje paliwa na zawrócenie nad brzeg. Barka ustawiona na trasie lotu skraca drogę powrotną na tyle, że manewr [[hamowania|hamowania]] zaczyna się domykać — bez pełnego zawrotu nad brzeg.',
+      'Od tego momentu [[reuzywalnosc|odzysk]] przestał być zarezerwowany dla najlżejszych misji. Dziś większość lądowań odbywa się właśnie na wodzie, a betonowe [[strefy-ladowania|strefy lądowania]] obsługują wyjątki. Rekordowe przebiegi pojedynczych członów, jak [[booster-b1067|B1067]], są sumą głównie takich powrotów.',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '8 kwietnia 2016, 20:43 UTC', pewnosc: 'potwierdzone' },
@@ -564,9 +564,9 @@ const przelomy: Encja[] = [
     krotki: 'Pierwszy lot orbitalny, na którym nie było ani jednego zawodowego astronauty — i zbiórka na 243 miliony dolarów.',
     tresc: [
       'Szesnastego września 2021 roku [[crew-dragon|Crew Dragon]] wyniósł czterech ludzi, z których żaden nie był zawodowym astronautą. Dowodził [[jared-isaacman|Jared Isaacman]], który misję kupił. Pilotką była Sian Proctor, wybrana w konkursie. Hayley Arceneaux, po przebytym nowotworze kości, dostała miejsce od szpitala St. Jude. Christopher Sembroski trafił na pokład, bo zwycięzca loterii, Kyle Hippchen, oddał mu swoje miejsce.',
-      'Kapsuła nie leciała do stacji, więc w miejscu złącza dokującego zamontowano kopułę z jednolitego wielowarstwowego pleksi — wzorowaną na modułze widokowym stacji i dającą widok w pełnym okręgu. Lot osiągnął około 585 kilometrów, najwyżej od misji STS-103 z 1999 roku.',
+      'Kapsuła nie leciała do stacji, więc w miejscu złącza dokującego zamontowano kopułę z jednolitego wielowarstwowego pleksi — wzorowaną na modułze widokowym stacji i dającą widok w pełnym okręgu. Lot osiągnął około 585 kilometrów — wciąż w granicach [[leo|niskiej orbity]], ale najwyżej od misji STS-103 z 1999 roku.',
       'Misja miała cel zbiórkowy: sto milionów dolarów dla szpitala St. Jude. Ostatecznie zebrano ponad 243 miliony, w tym 125 milionów od Isaacmana z żoną i 55 milionów od [[elon-musk|Muska]].',
-      'Załoga wróciła po niespełna trzech dniach, wodując na Atlantyku — pierwszy raz od misji Apollo 9 w 1969 roku, gdy załoga osiadła w tym oceanie.',
+      'Załoga wróciła po niespełna trzech dniach [[wodowanie|wodowaniem]] na Atlantyku — pierwszy raz od misji Apollo 9 w 1969 roku, gdy załoga osiadła w tym oceanie.',
     ],
     fakty: [
       { etykieta: 'Start', wartosc: '16 września 2021, 00:02 UTC', pewnosc: 'potwierdzone' },
@@ -688,10 +688,10 @@ const przelomy: Encja[] = [
     aka: ['pierwsza załogowa orbita biegunowa'],
     krotki: 'Pierwszy lot załogowy po orbicie biegunowej, nazwany po statku, który dopłynął do obu biegunów Ziemi.',
     tresc: [
-      'Pierwszego kwietnia 2025 roku [[crew-dragon|Crew Dragon]] wszedł na orbitę o nachyleniu 90,01 stopnia — praktycznie dokładnie przez oba bieguny. Poprzedni rekord nachylenia dla lotu załogowego ustanowiła Wostok 6 w 1963 roku.',
+      'Pierwszego kwietnia 2025 roku [[crew-dragon|Crew Dragon]] wszedł na orbitę o nachyleniu 90,01 stopnia — praktycznie dokładnie przez oba bieguny. Była to pierwsza w historii załogowa [[orbita-biegunowa|orbita biegunowa]]; poprzedni rekord nachylenia ustanowiła Wostok 6 w 1963 roku.',
       'Załogę stanowili Chun Wang, który misję sfinansował, Jannicke Mikkelsen z Norwegii, Rabea Rogge z Niemiec i Eric Philips z Australii. Wszyscy lecieli pierwszy raz. Wyniósł ich [[falcon-9|Falcon 9]], a sama misja wpisuje się w tę samą serię prywatnych lotów co [[polaris-dawn|Polaris Dawn]] — z tą różnicą, że rekord dotyczył nachylenia orbity, nie wysokości.',
       'Nazwa odsyła do norweskiego statku polarnego Fram, który między 1893 a 1912 rokiem odbył wyprawy do obu biegunów. Załoga zabrała ze sobą fragment jego tekowego pokładu.',
-      'Program badawczy pasował do trasy: obserwacje zjawisk zorzowych, w tym STEVE, pierwsze w historii zdjęcie rentgenowskie człowieka w kosmosie, hodowla boczniaków i eksperyment genomiczny. Rogge nadawała też obrazy w wolnoskanowej telewizji przez radio amatorskie. Misja zakończyła się 4 kwietnia wodowaniem na Pacyfiku u wybrzeży Kalifornii.',
+      'Program badawczy pasował do trasy: obserwacje zjawisk zorzowych, w tym STEVE, pierwsze w historii zdjęcie rentgenowskie człowieka w kosmosie, hodowla boczniaków i eksperyment genomiczny. Rogge nadawała też obrazy w wolnoskanowej telewizji przez radio amatorskie. Misja zakończyła się 4 kwietnia [[wodowanie|wodowaniem]] na Pacyfiku u wybrzeży Kalifornii.',
     ],
     fakty: [
       { etykieta: 'Start', wartosc: '1 kwietnia 2025, 01:46 UTC', pewnosc: 'potwierdzone' },
@@ -929,7 +929,7 @@ const lotyStarshipa: Encja[] = [
     krotki: 'Kontrolowane wodowanie statku z celnością liczoną w metrach — po serii trzech lotów zakończonych utratą górnego stopnia.',
     tresc: [
       'Dwudziestego szóstego sierpnia 2025 roku [[starship|Starship]] poleciał na członie B16 ze statkiem S37. Po trzech kolejnych lotach, na których górny stopień przepadał, ten wykonał kontrolowane wodowanie na Oceanie Indyjskim — w odległości trzech metrów od punktu celowania.',
-      'Booster również zszedł w sposób kontrolowany, wodując nad Zatoką Meksykańską. Obie części zachowały się zgodnie z planem, choć żadnej nie próbowano odzyskać.',
+      'Booster również zszedł w sposób kontrolowany, wodując nad Zatoką Meksykańską. Obie części zachowały się zgodnie z planem, choć żadnej nie próbowano odzyskać — [[mechazilla|wieży łapiącej]] nie używano w tej serii lotów ani razu.',
       'Celność trzech metrów przy pojeździe wracającym z prędkości bliskiej orbitalnej jest liczbą, którą warto zapamiętać: pokazuje, że sterowanie w fazie [[wejscie-atmosferyczne|wejścia w atmosferę]] było już wtedy opanowane. Brakowało tylko pewności, że osłona termiczna wytrzyma — a to potwierdził dopiero [[starship-lot-13|lot 13]].',
     ],
     fakty: [
@@ -967,7 +967,7 @@ const lotyStarshipa: Encja[] = [
     tresc: [
       'Trzynastego października 2025 roku [[starship|Starship]] poleciał na członie B15 ze statkiem S38. Był to ostatni lot pojazdów konstrukcji Block 2 — kolejny, [[starship-lot-12|lot 12]], odbył się już na Block 3.',
       'Rezultat powtórzył [[starship-lot-10|lot 10]]: kontrolowane wodowanie boostera nad Zatoką Meksykańską i statku nad Oceanem Indyjskim, tym razem dokładnie w punkcie celowania.',
-      'Dwa udane loty pod rząd na tej samej konstrukcji są w programie, który wcześniej stracił trzy statki z rzędu, ważnym sygnałem: konstrukcja przestała być zmienną. Kolejnym krokiem mogła już być zmiana pojazdu, nie poprawianie starego.',
+      'Dwa udane loty pod rząd na tej samej konstrukcji są w programie, który wcześniej stracił trzy statki z rzędu, ważnym sygnałem: konstrukcja przestała być zmienną. Kolejnym krokiem mogła już być zmiana pojazdu, nie poprawianie starego. Powrotu na [[mechazilla|wieżę]] wciąż jednak nie próbowano; oba elementy [[wodowanie|wodowały]].',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '13 października 2025', pewnosc: 'potwierdzone' },
@@ -1193,7 +1193,7 @@ const wczesneLotyStarshipa: Encja[] = [
     tresc: [
       'Dziewiętnastego listopada 2024 roku [[starship|Starship]] poleciał na członie B13 ze statkiem S31. Manewr chwytu przerwano automatycznie, bo [[stage-zero|wieża]] odniosła uszkodzenia w chwili startu; [[super-heavy|człon]] skierowano na wodowanie.',
       'Decyzję podjął układ automatyczny, bez udziału człowieka, i to jest tu najważniejsze: zabezpieczenie zadziałało w sytuacji, której nikt nie wywoływał celowo.',
-      'Statek przerwał podejście do wieży i wykonał kontrolowane wodowanie. Osłona termiczna przetrwała mimo celowo zmniejszonej ochrony na części powierzchni — program sprawdzał, gdzie leży granica.',
+      'Statek przerwał podejście do [[mechazilla|wieży]] i wykonał kontrolowane wodowanie. [[oslona-termiczna|Osłona termiczna]] przetrwała mimo celowo zmniejszonej ochrony na części powierzchni — program sprawdzał, gdzie leży granica.',
       'Lot niósł też pierwszy ładunek w historii tego pojazdu. Był nim pluszowy banan, pełniący funkcję wskaźnika nieważkości.',
     ],
     fakty: [
@@ -1383,6 +1383,88 @@ const operacyjne: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'crew-9',
+    typ: 'misja',
+    nazwa: 'Crew-9',
+    aka: ['powrót załogi Starlinera'],
+    krotki: 'Lot z dwoma wolnymi fotelami, wysłany po astronautów, których ośmiodniowa misja rozciągnęła się na dziewięć miesięcy.',
+    tresc: [
+      'W czerwcu 2024 roku Barry Wilmore i Sunita Williams polecieli na stację testowym lotem kapsuły Boeing Starliner. Mieli zostać osiem dni; polecieli z [[slc-40|sąsiedniego stanowiska]] na Przylądku, tyle że rakietą i kapsułą konkurencji. Po wykryciu problemów z napędem NASA zdecydowała sprowadzić Starlinera na Ziemię bez załogi — a astronautów zostawić na orbicie do czasu, aż będzie czym ich zabrać.',
+      'Tym czymś okazał się [[crew-dragon|Crew Dragon]]. Misja Crew-9 wystartowała 28 września 2024 roku ze [[slc-40|SLC-40]] na [[falcon-9|Falconie 9]], z dwoma ludźmi zamiast czterech: dowódcą Nickiem Hague i Aleksandrem Gorbunowem. Dwa fotele zostały puste celowo — czekały na powrót.',
+      'Wodowanie nastąpiło 18 marca 2025 roku w Zatoce Meksykańskiej niedaleko Tallahassee. Czwórka wróciła w kapsule, która przyleciała po nich pół roku wcześniej. Sama misja Crew-9 trwała 171 dni, 4 godziny i 39 minut.',
+      'To najczystszy dotąd przykład tego, po co NASA chciała [[commercial-crew|dwóch niezależnych dostawców]]. Program przewidywał, że jeden z nich może zawieść — i przewidział poprawnie, tyle że w drugą stronę, niż spodziewała się większość obserwatorów w 2014 roku.',
+    ],
+    fakty: [
+      { etykieta: 'Start', wartosc: '28 września 2024, SLC-40', pewnosc: 'potwierdzone' },
+      { etykieta: 'Załoga w górę', wartosc: 'Nick Hague i Aleksandr Gorbunow', pewnosc: 'potwierdzone' },
+      { etykieta: 'Załoga w dół', wartosc: 'czworo, z Wilmore i Williams', pewnosc: 'potwierdzone' },
+      { etykieta: 'Planowany pobyt Starlinera', wartosc: 'osiem dni', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rzeczywisty pobyt', wartosc: 'około dziewięciu miesięcy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powrót', wartosc: '18 marca 2025, Zatoka Meksykańska', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas trwania Crew-9', wartosc: '171 dni, 4 godziny i 39 minut', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Kapsuła poleciała na orbitę z dwoma pustymi fotelami i wróciła pełna. Nie zdarzyło się to nigdy wcześniej w historii lotów załogowych — wolne miejsca zarezerwowano dla ludzi, którzy już byli w kosmosie i nie mieli czym wrócić.',
+        zrodlo: Z.wikiCrew9,
+      },
+    ],
+    os: [
+      { data: '2024-09-28', tytul: 'Start Crew-9', opis: 'Crew Dragon leci na stację z dwoma wolnymi fotelami.', waga: 2 },
+      { data: '2025-03-18', tytul: 'Powrót czwórki', opis: 'Wilmore i Williams wracają po dziewięciu miesiącach zamiast ośmiu dni.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'commercial-crew', powod: 'sens programu z dwoma dostawcami sprawdził się właśnie tutaj' },
+      { id: 'crew-dragon', powod: 'kapsuła, która wykonała ten lot' },
+      { id: 'crew-1', powod: 'pierwszy operacyjny lot tej serii, cztery lata wcześniej' },
+      { id: 'wodowanie', powod: 'sposób powrotu czwórki na Ziemię' },
+    ],
+    zrodla: [Z.wikiCrew9, Z.wikiDragon2],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'europa-clipper',
+    typ: 'misja',
+    nazwa: 'Europa Clipper',
+    aka: ['sonda do Europy'],
+    krotki: 'Sonda do księżyca Jowisza, którą Kongres kazał wysłać rakietą NASA, a ostatecznie poleciała Falconem Heavy.',
+    tresc: [
+      'Europa Clipper ma zbadać ocean ukryty pod lodową skorupą księżyca Jowisza — sprawdzić, czy jest tam woda w stanie ciekłym, odpowiednia chemia i źródło energii. Wystartowała 14 października 2024 roku o 12:06 czasu wschodniego z [[lc-39a|LC-39A]] na [[falcon-heavy|Falconie Heavy]] — tej samej rakiecie, która sześć lat wcześniej wysłała w przestrzeń [[tesla-roadster|Roadstera]]. Masa startowa: 6065 kilogramów.',
+      'Nie tak to było zaplanowane. Przez lata prawo wymagało, żeby sonda poleciała rakietą SLS. Zmiana decyzji miała trzy powody: koszt startu na poziomie około 178 milionów dolarów, wątpliwa dostępność SLS oraz drgania od dopalaczy na paliwo stałe, które mogły uszkodzić ładunek.',
+      'Sama zmiana rakiety oszczędziła szacunkowo dwa miliardy dolarów. To liczba, która mówi o [[koszt-kilograma|koszcie dostępu do kosmosu]] więcej niż jakakolwiek tabela: różnica między dwiema rakietami była większa niż budżet wielu całych misji naukowych.',
+      'Pierwszego marca 2025 roku sonda przeszła 884 kilometry nad Marsem, wykorzystując jego grawitację do zmiany trajektorii. Do Jowisza dotrze w 2030 roku; pierwsze bliskie przejście nad Europą przewidziano na 11 kwietnia 2030. Sam manewr jest tanim sposobem na to, czego nie daje [[rownanie-ciolkowskiego|równanie rakietowe]]: prędkość bez paliwa.',
+    ],
+    fakty: [
+      { etykieta: 'Start', wartosc: '14 października 2024, LC-39A', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rakieta', wartosc: 'Falcon Heavy Block 5', pewnosc: 'potwierdzone' },
+      { etykieta: 'Masa startowa', wartosc: '6065 kg', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt startu', wartosc: 'około 178 mln USD', pewnosc: 'potwierdzone' },
+      { etykieta: 'Oszczędność wobec SLS', wartosc: 'szacunkowo 2 mld USD', pewnosc: 'szacunkowe' },
+      { etykieta: 'Asysta grawitacyjna Marsa', wartosc: '1 marca 2025, 884 km nad powierzchnią', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dotarcie do Europy', wartosc: '11 kwietnia 2030', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Sonda leci do Jowisza przez Marsa. Zamiast celować prosto, przeszła 884 kilometry nad powierzchnią czerwonej planety i pożyczyła od niej trochę prędkości — manewr, który nic nie kosztuje w paliwie, a oszczędza go tyle, że bez niego lot byłby niemożliwy tą rakietą.',
+        zrodlo: Z.wikiClipper,
+      },
+    ],
+    os: [
+      { data: '2024-10-14', tytul: 'Start Europa Clipper', opis: 'Falcon Heavy wynosi sondę, którą prawo pierwotnie przypisało rakiecie SLS.', waga: 3 },
+      { data: '2025-03-01', tytul: 'Asysta grawitacyjna Marsa', opis: 'Przejście 884 km nad powierzchnią zmienia trajektorię lotu.', waga: 1 },
+    ],
+    powiazane: [
+      { id: 'falcon-heavy', powod: 'rakieta, która ją wyniosła' },
+      { id: 'lc-39a', powod: 'stanowisko, z którego wystartowała' },
+      { id: 'koszt-kilograma', powod: 'różnica cen rakiet zmieniła tu kształt misji naukowej' },
+      { id: 'delta-v', powod: 'asysta grawitacyjna to sposób na zdobycie jej za darmo' },
+    ],
+    zrodla: [Z.wikiClipper, Z.wikiFalconHeavy],
     zaktualizowano: '2026-09-13',
   },
 ];

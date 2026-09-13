@@ -53,7 +53,7 @@ export const ludzie: Encja[] = [
     tresc: [
       'Isaacman zbudował firmę płatniczą Shift4 Payments, a potem zrobił rzecz, której wcześniej nikt nie robił: kupił cały lot orbitalny i sam go poprowadził jako dowódca. Pierwszym była [[inspiration4|Inspiration4]] w 2021 roku, z załogą bez żadnego zawodowego astronauty na pokładzie.',
       'Trzy lata później poleciał ponownie, tym razem w ramach [[polaris-dawn|Polaris Dawn]]. Ta misja sięgnęła 1 400 kilometrów — najdalej od Ziemi, jak człowiek znalazł się od czasu Apollo — i zakończyła się pierwszym komercyjnym spacerem kosmicznym. Isaacman wyszedł ze [[crew-dragon|Crew Dragona]] na siedem minut i pięćdziesiąt sześć sekund.',
-      'Obie misje miały wymiar zbiórkowy. Przy Inspiration4 on i jego żona przekazali 125 milionów dolarów na szpital St. Jude; łącznie misja zebrała ponad 243 miliony. To odwrócenie klasycznego schematu turystyki kosmicznej, w którym pieniądze płyną wyłącznie w jedną stronę.',
+      'Obie misje miały wymiar zbiórkowy. Przy Inspiration4 on i jego żona przekazali 125 milionów dolarów na szpital St. Jude; łącznie misja zebrała ponad 243 miliony. To odwrócenie klasycznego schematu turystyki kosmicznej, w którym pieniądze płyną wyłącznie w jedną stronę. Obie misje wykonano [[falcon-9|Falconem 9]], a obie zakończyły się [[wodowanie|wodowaniem]].',
     ],
     fakty: [
       { etykieta: 'Loty orbitalne', wartosc: '2 — Inspiration4 i Polaris Dawn', stanNa: '2026-09-12', pewnosc: 'potwierdzone' },
@@ -248,7 +248,7 @@ export const ludzie: Encja[] = [
     tresc: [
       'Robert Behnken i Douglas Hurley polecieli [[demo-2|misją Demo-2]] 30 maja 2020 roku o 15:22 czasu wschodniego, ze stanowiska [[lc-39a|LC-39A]] w Kennedy Space Center. Byli pierwszymi astronautami wysłanymi z terytorium Stanów od zakończenia programu wahadłowców w 2011 roku.',
       'Formalnie był to lot testowy — ostatni etap certyfikacji [[crew-dragon|Crew Dragona]] przed lotami rutynowymi. Praktycznie oznaczał, że NASA przestaje być zdana wyłącznie na rosyjski Sojuz przy wysyłaniu ludzi na stację.',
-      'Misja trwała niespełna sześćdziesiąt cztery dni i zakończyła się wodowaniem na Atlantyku 2 sierpnia 2020 roku.',
+      'Misja trwała niespełna sześćdziesiąt cztery dni i zakończyła się [[wodowanie|wodowaniem]] na Atlantyku 2 sierpnia 2020 roku. Pierwszy lot operacyjny tej serii, [[crew-1|Crew-1]], ruszył trzy miesiące później.',
       'Warto zauważyć symetrię: Hurley był pilotem ostatniej misji wahadłowca w lipcu 2011 i dowódcą pierwszego lotu, który tę przerwę zamknął. Ta sama osoba zgasiła światło i ją zapaliła z powrotem.',
     ],
     fakty: [
@@ -317,6 +317,167 @@ export const ludzie: Encja[] = [
     ],
     status: 'historyczne',
     zrodla: [Z.wikiMueller, Z.wikiKoenigsmann, Z.wikiHistoria],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'jb-straubel',
+    typ: 'osoba',
+    nazwa: 'JB Straubel',
+    aka: ['Jeffrey Brian Straubel', 'pierwszy dyrektor techniczny Tesli'],
+    krotki: 'Piąty pracownik Tesli i jej dyrektor techniczny przez piętnaście lat — człowiek od baterii, nie od samochodów.',
+    tresc: [
+      'Urodził się 20 grudnia 1975 roku w Des Moines w stanie Iowa. Skończył Stanford: licencjat z inżynierii systemów energetycznych, magisterium z energetyki. Do [[tesla|Tesli]] dołączył w maju 2004 roku jako piąty pracownik — dziesięć miesięcy po zarejestrowaniu spółki.',
+      'Objął stanowisko dyrektora technicznego i był pierwszą osobą, która je zajmowała. Odpowiadał za konstrukcję ogniw i łańcuch dostaw, a potem przeprowadził firmę od pomysłu na [[gigafactory|gigafabrykę]] do rozkręcenia produkcji [[model-3|Modelu 3]].',
+      'W lipcu 2019 roku oddał stanowisko i przeszedł do roli doradczej. W maju 2023 wrócił do firmy jako niezależny członek rady dyrektorów. Na mocy [[spor-o-zalozycieli|ugody z 2009 roku]] jest formalnie jednym z pięciu współzałożycieli Tesli, choć w chwili rejestracji spółki go tam nie było.',
+      'Równolegle prowadzi Redwood Materials, założone w 2017 roku przedsiębiorstwo odzyskujące lit, kobalt i nikiel ze zużytych akumulatorów litowo-jonowych i elektroniki. To domknięcie tego samego łańcucha, który budował w Tesli, tyle że od drugiej strony.',
+    ],
+    fakty: [
+      { etykieta: 'Urodzony', wartosc: '20 grudnia 1975, Des Moines', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dołączył do Tesli', wartosc: 'maj 2004, jako piąty pracownik', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stanowisko', wartosc: 'pierwszy dyrektor techniczny, do lipca 2019', pewnosc: 'potwierdzone' },
+      { etykieta: 'Powrót', wartosc: 'maj 2023, rada dyrektorów', pewnosc: 'potwierdzone' },
+      { etykieta: 'Redwood Materials', wartosc: 'odzysk surowców z akumulatorów, od 2017', pewnosc: 'potwierdzone' },
+      { etykieta: 'Status założyciela', wartosc: 'przyznany ugodą sądową, nie datą rejestracji', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Był w Tesli piętnaście lat — dłużej niż Eberhard, dłużej niż niemal ktokolwiek z pierwszej dziesiątki. Jego firma zajmuje się dziś rozbieraniem akumulatorów, których konstrukcję sam projektował dwie dekady wcześniej.',
+        zrodlo: Z.wikiStraubel,
+      },
+    ],
+    os: [
+      { data: '2004-05', tytul: 'Piąty pracownik Tesli', opis: 'Straubel obejmuje stanowisko dyrektora technicznego.', waga: 2 },
+      { data: '2019-07', tytul: 'Odejście ze stanowiska', opis: 'Po piętnastu latach przechodzi do roli doradczej.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'budował jej stronę techniczną od piątego etatu' },
+      { id: 'spor-o-zalozycieli', powod: 'ugoda przyznała mu tytuł współzałożyciela' },
+      { id: 'gigafactory', powod: 'prowadził ten pomysł od koncepcji do produkcji' },
+      { id: 'martin-eberhard', powod: 'obaj są współzałożycielami z mocy tej samej ugody' },
+    ],
+    zrodla: [Z.wikiStraubel, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'martin-eberhard',
+    typ: 'osoba',
+    nazwa: 'Martin Eberhard',
+    aka: ['pierwszy dyrektor generalny Tesli'],
+    krotki: 'Człowiek, który założył Teslę, nadał jej nazwę, zbudował Roadstera i po czterech latach został z niej usunięty.',
+    tresc: [
+      'Urodzony w 1960 roku w Kalifornii, inżynier komputerowy po Uniwersytecie Illinois. Zanim wszedł w samochody, zbudował z Markiem Tarpenningiem firmę NuvoMedia i czytnik Rocket eBook — pierwsze urządzenie do bezpiecznego pobierania książek przez internet. Gemstar kupił NuvoMedię w 2000 roku.',
+      'W lipcu 2003 roku ta sama dwójka zarejestrowała [[tesla|Tesla Motors]] w Menlo Park. Eberhard był pierwszym dyrektorem generalnym i doprowadził firmę do [[tesla-roadster|Roadstera]] — samochodu, który miał udowodnić, że elektryk nie musi być powolny.',
+      'W listopadzie 2007 roku Tesla ogłosiła jego przejście do rady doradczej. Według relacji prasowych to [[elon-musk|Musk]], wtedy przewodniczący rady, poprosił go o odejście, tłumacząc, że nie widzi dla niego roli w firmie.',
+      'W czerwcu 2009 roku Eberhard pozwał Muska o zniesławienie, pomówienie i naruszenie umowy. Pozew wycofał w sierpniu, a we wrześniu Tesla potwierdziła ugodę bez podania warunków. To ta ugoda ustaliła, że [[spor-o-zalozycieli|współzałożycieli jest pięcioro]].',
+    ],
+    fakty: [
+      { etykieta: 'Urodzony', wartosc: '1960, Kalifornia', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przed Teslą', wartosc: 'NuvoMedia i czytnik Rocket eBook, sprzedany w 2000', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rejestracja Tesli', wartosc: 'lipiec 2003, z Markiem Tarpenningiem', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dyrektor generalny', wartosc: 'do listopada 2007', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pozew', wartosc: 'czerwiec 2009, wycofany w sierpniu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ugoda', wartosc: 'wrzesień 2009, warunki nieujawnione', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Zanim zbudował samochód elektryczny, zbudował czytnik książek. Rocket eBook wyszedł w 1998 roku — dekadę przed pierwszym Kindlem — i został sprzedany, zanim rynek na takie urządzenia w ogóle powstał. Ten sam wzór powtórzył się potem z Roadsterem.',
+        zrodlo: Z.wikiEberhard,
+      },
+    ],
+    os: [
+      { data: '2003-07-01', tytul: 'Rejestracja Tesli', opis: 'Eberhard i Tarpenning zakładają spółkę w Menlo Park.', waga: 2 },
+      { data: '2007-11', tytul: 'Odejście ze stanowiska', opis: 'Tesla ogłasza jego przejście do rady doradczej.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'spor-o-zalozycieli', powod: 'jego pozew doprowadził do ugody definiującej założycieli' },
+      { id: 'tesla', powod: 'zarejestrował ją i prowadził przez pierwsze cztery lata' },
+      { id: 'tesla-roadster', powod: 'pierwszy samochód firmy powstał pod jego kierownictwem' },
+      { id: 'jb-straubel', powod: 'drugi współzałożyciel uznany tą samą ugodą' },
+    ],
+    zrodla: [Z.wikiEberhard, Z.wikiTesla],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'franz-von-holzhausen',
+    typ: 'osoba',
+    nazwa: 'Franz von Holzhausen',
+    aka: ['główny projektant Tesli'],
+    krotki: 'Autor wyglądu każdego Tesli od 2008 roku — i człowiek, który na scenie rzucił kulą w szybę Cybertrucka.',
+    tresc: [
+      'Urodzony 10 maja 1968 roku. Studia zaczął na Uniwersytecie Syracuse w 1986, po dwóch latach przeniósł się do ArtCenter College of Design w Pasadenie i w 1992 roku odebrał dyplom z projektowania środków transportu.',
+      'Zaczynał w Volkswagenie, gdzie pracował przy projekcie Concept One, z którego wyrósł nowy Beetle. W 2000 roku przeszedł do General Motors i prowadził wzornictwo modeli Saturn Sky i Pontiac Solstice, a w 2005 został dyrektorem wzornictwa Mazdy — stamtąd pochodzą koncepcyjne Kabura i Furai.',
+      'Do [[tesla|Tesli]] trafił w 2008 roku i od tego czasu jest jej głównym projektantem. Odpowiada za wygląd [[model-s|Modelu S]], [[model-x|Modelu X]], [[model-3|Modelu 3]], [[model-y|Modelu Y]], [[tesla-semi|Semi]], [[cybertruck|Cybertrucka]] i drugiej generacji [[tesla-roadster|Roadstera]] — praktycznie wszystkiego, co firma pokazała.',
+      'Najbardziej znany moment jego kariery nie był zaplanowany. Przy premierze Cybertrucka w listopadzie 2019 roku to on rzucił metalową kulą w rzekomo nietłukącą się szybę. Szyba pękła. Dwa razy.',
+    ],
+    fakty: [
+      { etykieta: 'Urodzony', wartosc: '10 maja 1968', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wykształcenie', wartosc: 'ArtCenter College of Design, dyplom 1992', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wcześniej', wartosc: 'Volkswagen, General Motors (2000), Mazda (2005)', pewnosc: 'potwierdzone' },
+      { etykieta: 'W Tesli', wartosc: 'główny projektant od 2008', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zaprojektował', wartosc: 'Model S, X, 3, Y, Semi, Cybertruck, Roadster drugiej generacji', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Zanim narysował pierwszą Teslę, narysował nowego Beetle dla Volkswagena i dwa roadstery dla General Motors. Trzy najbardziej rozpoznawalne sylwetki jego kariery dzieli dwadzieścia lat i kompletnie odwrotne podejście do zaokrągleń.',
+        zrodlo: Z.wikiHolzhausen,
+      },
+    ],
+    os: [
+      { data: '2008', tytul: 'Przyjście do Tesli', opis: 'Obejmuje stanowisko głównego projektanta, które zajmuje do dziś.', waga: 2 },
+      { data: '2019-11-21', tytul: 'Stłuczona szyba Cybertrucka', opis: 'Rzuca kulą w szybę podczas premiery; szyba pęka przy obu próbach.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'tesla', powod: 'odpowiada za wygląd wszystkich jej samochodów od 2008 roku' },
+      { id: 'cybertruck', powod: 'to on rzucił kulą w szybę podczas premiery' },
+      { id: 'model-s', powod: 'pierwszy samochód, który zaprojektował dla firmy' },
+      { id: 'tesla-semi', powod: 'ciężarówka powstała w tym samym studiu wzorniczym' },
+    ],
+    zrodla: [Z.wikiHolzhausen, Z.wikiCybertruck],
+    zaktualizowano: '2026-09-13',
+  },
+
+  {
+    id: 'rodzina-muska',
+    typ: 'osoba',
+    nazwa: 'Rodzina Muska',
+    aka: ['Errol Musk', 'Maye Musk', 'Tosca Musk', 'Haldeman'],
+    krotki: 'Kanadyjska babka, południowoafrykański ojciec, matka modelka i dziadek, który przeleciał pół świata jednosilnikowym samolotem.',
+    tresc: [
+      '[[elon-musk|Elon]] urodził się w Pretorii jako najstarsze z trojga dzieci Errola i Maye Musków. Ojciec, urodzony 25 maja 1946 roku, był inżynierem, przedsiębiorcą i lokalnym politykiem; matka, urodzona 19 kwietnia 1948, jest dietetyczką i modelką z pięćdziesięcioletnią karierą zawodową. Małżeństwo trwało od 1970 do 1979 roku.',
+      'Rodzeństwo poszło w swoje strony, choć pierwsze pieniądze zrobili razem na [[zip2|Zip2]]. [[kimbal-musk|Kimbal]], urodzony 20 września 1972, zajął się jedzeniem i ogrodami przy szkołach. Tosca, urodzona 20 lipca 1974, jest producentką filmową i współzałożycielką serwisu Passionflix.',
+      'Kanadyjskie obywatelstwo matki otworzyło Elonowi drogę do wyjazdu z RPA w 1989 roku — ten jeden dokument przesądził o tym, że jego firmy powstały w Ameryce, a nie gdzie indziej. Zanim to nastąpiło, całe dzieciństwo spędził w [[pretoria|Pretorii]]. Korzenie po stronie matki sięgają dziadka, Joshuy Haldemana, chiropraktyka, lotnika i działacza politycznego z Saskatchewan.',
+      'Haldeman przeprowadził rodzinę z Kanady do RPA w 1950 roku. Wikipedia podaje, że motywem było poparcie dla polityki apartheidu; Errol Musk mówił, że Haldemanowie przyjechali, bo sympatyzowali z rządem afrykanerskim. Dziadek zginął w 1974 roku w katastrofie lotniczej podczas ćwiczebnego lądowania.',
+    ],
+    fakty: [
+      { etykieta: 'Ojciec', wartosc: 'Errol Musk, ur. 25 maja 1946', pewnosc: 'potwierdzone' },
+      { etykieta: 'Matka', wartosc: 'Maye Musk, ur. 19 kwietnia 1948, dietetyczka i modelka', pewnosc: 'potwierdzone' },
+      { etykieta: 'Małżeństwo rodziców', wartosc: '1970–1979', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rodzeństwo', wartosc: 'Kimbal (1972) i Tosca (1974)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dziadek', wartosc: 'Joshua Haldeman (1902–1974), chiropraktyk i lotnik', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przeprowadzka do RPA', wartosc: '1950; motyw podawany jako poparcie dla apartheidu', pewnosc: 'sporne' },
+      { etykieta: 'Dzieci Elona', wartosc: 'co najmniej czternaścioro, w tym jedno zmarłe', stanNa: '2026-09', pewnosc: 'szacunkowe' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'W 1954 roku dziadek Elona przeleciał jednosilnikowym samolotem z Afryki przez Azję do Australii i z powrotem — około trzydziestu tysięcy mil. Uchodzi to za możliwie najdłuższą podróż odbytą maszyną z jednym silnikiem. Zginął dwadzieścia lat później, ćwicząc lądowanie.',
+        zrodlo: Z.wikiHaldeman,
+      },
+    ],
+    os: [
+      { data: '1950', tytul: 'Haldemanowie przenoszą się do RPA', opis: 'Rodzina matki opuszcza Kanadę i osiada w Pretorii.', waga: 1 },
+      { data: '1954', tytul: 'Przelot do Australii', opis: 'Joshua Haldeman pokonuje jednosilnikowym samolotem około trzydziestu tysięcy mil.', waga: 1 },
+      { data: '1989', tytul: 'Wyjazd z RPA', opis: 'Elon korzysta z kanadyjskiego obywatelstwa matki i opuszcza kraj.', waga: 2 },
+    ],
+    powiazane: [
+      { id: 'elon-musk', powod: 'jego dom rodzinny i droga wyjazdu z RPA' },
+      { id: 'kimbal-musk', powod: 'brat, wspólnik przy pierwszej firmie' },
+      { id: 'pretoria', powod: 'miasto, w którym ta rodzina mieszkała' },
+      { id: 'zip2', powod: 'pierwsza firma braci, założona po wyjeździe z RPA' },
+    ],
+    zrodla: [Z.wikiRodzina, Z.wikiHaldeman],
     zaktualizowano: '2026-09-13',
   },
 ];
