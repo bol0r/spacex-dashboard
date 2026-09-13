@@ -70,6 +70,17 @@ interface Slownik {
   wlaczone: string;
   wylaczone: string;
   kamienMilowy: string;
+
+  trybFilmowy: string;
+  trybFilmowyOpis: string;
+  odtwarzaj: string;
+  wstrzymaj: string;
+  odNowa: string;
+  szybkosc: string;
+  postep: (a: number, b: number) => string;
+  wstrzymaneDotkniecie: string;
+  ladowanie: string;
+  ladowanieOpis: string;
 }
 
 /** Polska odmiana: 1 / 2–4 / 5+. */
@@ -163,6 +174,17 @@ const PL: Slownik = {
   wlaczone: 'włączone',
   wylaczone: 'wyłączone',
   kamienMilowy: 'kamień milowy',
+
+  trybFilmowy: 'Tryb filmowy',
+  trybFilmowyOpis: 'Cała historia po kolei, sama się przewija. Dotknij, żeby wstrzymać.',
+  odtwarzaj: 'Odtwarzaj',
+  wstrzymaj: 'Wstrzymaj',
+  odNowa: 'Od początku',
+  szybkosc: 'Tempo',
+  postep: (a, b) => `${a} z ${b}`,
+  wstrzymaneDotkniecie: 'wstrzymane',
+  ladowanie: 'Strefa Wiedzy',
+  ladowanieOpis: 'Wczytywanie bazy',
 };
 
 const EN: Slownik = {
@@ -247,6 +269,17 @@ const EN: Slownik = {
   wlaczone: 'on',
   wylaczone: 'off',
   kamienMilowy: 'milestone',
+
+  trybFilmowy: 'Cinema mode',
+  trybFilmowyOpis: 'The whole story in order, scrolling by itself. Touch to pause.',
+  odtwarzaj: 'Play',
+  wstrzymaj: 'Pause',
+  odNowa: 'From the start',
+  szybkosc: 'Speed',
+  postep: (a, b) => `${a} of ${b}`,
+  wstrzymaneDotkniecie: 'paused',
+  ladowanie: 'Knowledge Zone',
+  ladowanieOpis: 'Loading',
 };
 
 export const SLOWNIKI: Record<Jezyk, Slownik> = { pl: PL, en: EN };

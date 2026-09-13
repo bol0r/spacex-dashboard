@@ -5,6 +5,40 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.3 — 13 września 2026
+
+**Tryb filmowy i ekran startowy.**
+
+- **Tryb filmowy**: cała historia po kolei, przewijana sama, z tempem ½×, 1× i 2×,
+  filtrem po firmie, licznikiem postępu i rokiem wypisanym wielkim stopniem pisma
+  w rogu jako znacznik rozdziału. Dotknięcie wstrzymuje, spacja też. Wejście
+  w encję nie zamyka filmu — arkusz otwiera się nad nim, film czeka w tym samym
+  miejscu i wraca po zamknięciu arkusza.
+- Przewijanie realizuje natywny `scrollTop` inkrementowany co klatkę, dzięki
+  czemu przeciąganie palcem i przewinięcie filmu ręką działają same z siebie.
+- Przycisk trybu filmowego stoi zaraz pod kaflem Starshipa, z obrysem
+  w błękicie zamiast materiału — odróżnia akcję od tematu.
+- **Ekran startowy** zamiast gołego napisu „Wczytywanie bazy". Pojawia się
+  dopiero po 250 ms i przy szybkim starcie nie mignie ani razu.
+
+**Co ujawnił tryb filmowy**
+
+Przy przewijaniu wydarzeń jedno po drugim widać było, że ten sam kamień milowy
+pojawia się dwa, a nawet trzy razy pod rząd. Kontrakt CRS należy i do historii
+Falcona 1, i do programu COTS, i do historii firmy — na osi każdej z tych encji
+ma prawo być, ale na osi globalnej, która je scala, czyta się jak błąd.
+Znalazło się piętnaście takich powtórzeń.
+
+Globalna oś odsiewa je teraz przy budowie bazy, zostawiając wystąpienie z encji
+najbardziej szczegółowej. Osie poszczególnych encji zostają nietknięte. Liczba
+wydarzeń na osi globalnej spadła z 248 do 231. Przegląd pilnuje, żeby
+powtórzenia nie wróciły niezauważone.
+
+**Odrzucone świadomie**
+
+Sfera haseł w 3D — czytelna na pokazie, uciążliwa w użyciu i dublująca
+wyszukiwarkę. Zamiast niej do listy zadań trafił widok grafu powiązań.
+
 ## 0.4.2 — 13 września 2026
 
 **Miejsca i ludzie SpaceX — dwadzieścia encji.**

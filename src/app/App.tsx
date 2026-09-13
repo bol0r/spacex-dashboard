@@ -3,19 +3,19 @@ import type { BazaWiedzy } from '../data/types';
 import { zaladujBaze } from '../data/index';
 import { DostawcaBazy } from './kontekst';
 import { useStan } from './stan';
-import { useT } from '../i18n';
 import { useSzerokiEkran } from '../lib/fokus';
 import { EkranGlowny } from '../components/EkranGlowny';
+import { EkranLadowania } from '../components/EkranLadowania';
 import { StosArkuszy } from '../components/StosArkuszy';
 import { Wyszukiwarka } from '../components/Wyszukiwarka';
 import { TrybOsiCzasu } from '../components/TrybOsiCzasu';
 import { LosoweOdkrycie } from '../components/LosoweOdkrycie';
+import { TrybFilmowy } from '../components/TrybFilmowy';
 
 export function App() {
   const [baza, ustawBaze] = useState<BazaWiedzy | null>(null);
   const otworz = useStan((s) => s.otworz);
   const jezyk = useStan((s) => s.jezyk);
-  const t = useT();
   const glebokosc = useStan((s) => s.stos.length);
   const szeroki = useSzerokiEkran();
   const panelOtwarty = szeroki && glebokosc > 0;
@@ -40,9 +40,7 @@ export function App() {
     return () => { aktywny = false; };
   }, [jezyk]);
 
-  if (baza === null) {
-    return <div className="p-6 text-podtytul text-tekst-2" role="status">{t.wczytywanie}</div>;
-  }
+  if (baza === null) return <EkranLadowania />;
 
   return (
     <DostawcaBazy value={baza}>
@@ -57,6 +55,7 @@ export function App() {
       <Wyszukiwarka />
       <TrybOsiCzasu />
       <LosoweOdkrycie />
+      <TrybFilmowy />
     </DostawcaBazy>
   );
 }

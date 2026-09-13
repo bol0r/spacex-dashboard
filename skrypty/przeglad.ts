@@ -96,6 +96,17 @@ slepe.length === 0 ? ok('brak ślepych zaułków') : zglos(`ślepe zaułki: ${sl
 const ponizejCelu = baza.kolejnosc.filter((id) => (baza.indeks.linkiWTresci[id]?.length ?? 0) < 6);
 console.log(`  · encje poniżej celu 6 linków w treści: ${ponizejCelu.length} / ${WSZYSTKIE.length}`);
 
+/* 5b. Powtórzenia na osi globalnej ---------------------------------------- */
+const klucze = new Map<string, number>();
+for (const w of baza.osGlobalna) {
+  const k = `${w.data}|${w.tytul.trim().toLowerCase()}`;
+  klucze.set(k, (klucze.get(k) ?? 0) + 1);
+}
+const powtorzone = [...klucze].filter(([, n]) => n > 1);
+powtorzone.length === 0
+  ? ok('brak powtórzeń na globalnej osi czasu')
+  : zglos(`powtórzenia na osi: ${powtorzone.map(([k]) => k).join(', ')}`);
+
 /* 6. Widoczność w interfejsie --------------------------------------------- */
 sekcja('Widoczność w interfejsie');
 const sekcje = ulozSekcje(baza);

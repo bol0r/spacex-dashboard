@@ -17,7 +17,7 @@ const KLUCZ_JEZYKA = 'strefa-wiedzy:jezyk';
 const KLUCZ_ULUBIONYCH = 'strefa-wiedzy:ulubione';
 
 /** Nakładki pełnoekranowe wykluczają się wzajemnie, więc trzymamy jedno pole. */
-export type Widok = null | 'szukanie' | 'os-czasu' | 'losowanie';
+export type Widok = null | 'szukanie' | 'os-czasu' | 'losowanie' | 'film';
 
 function wczytajUlubione(): string[] {
   try {
@@ -130,7 +130,15 @@ export const useStan = create<Stan>((set, get) => ({
     drgnij();
     const nowaHistoria = [id, ...historia.filter((h) => h !== id)].slice(0, MAKS_HISTORII);
     zapiszHistorie(nowaHistoria);
-    set({ stos: [...stos, id], historia: nowaHistoria, widok: null });
+    // Tryb filmowy zostaje pod arkuszem i czeka w tym samym miejscu — wyjście
+    // z encji wraca do filmu zamiast zaczynać go od nowa. Pozostałe nakładki
+    // zamykamy, bo są punktami wejścia, nie stanem, do którego się wraca.
+    const zostawWidok = get().widok === 'film';
+    set({
+      stos: [...stos, id],
+      historia: nowaHistoria,
+      ...(zostawWidok ? {} : { widok: null }),
+    });
   },
 
   zamknij: () => {

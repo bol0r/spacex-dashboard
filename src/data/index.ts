@@ -25,6 +25,41 @@ const LADOWACZE: Record<Kategoria, () => Promise<Encja[]>> = {
 
 export const KATEGORIE = Object.keys(LADOWACZE) as Kategoria[];
 
+/**
+ * Usuwa powtórzenia z globalnej osi czasu.
+ *
+ * Ten sam kamień milowy słusznie należy do kilku encji — kontrakt CRS jest
+ * wydarzeniem i w historii Falcona 1, i w programie COTS, i w historii firmy.
+ * Na osi każdej z nich ma być. Na osi globalnej, która je scala, powtarza się
+ * trzy razy pod rząd i czyta się jak błąd. Problem ujawnił dopiero tryb filmowy,
+ * gdzie wydarzenia przewijają się jedno po drugim.
+ *
+ * Zostawiamy wystąpienie z encji najbardziej szczegółowej, przybliżając
+ * szczegółowość liczbą wydarzeń: encja poświęcona jednemu lotowi ma ich jedno,
+ * encja zbiorcza kilka. Przy remisie decyduje identyfikator, żeby wynik był
+ * powtarzalny między uruchomieniami.
+ */
+function odsiejPowtorzenia(
+  os: ReadonlyArray<Wydarzenie & { encjaId: string }>,
+  encje: Record<string, EncjaZIndeksem>,
+): Array<Wydarzenie & { encjaId: string }> {
+  const grupy = new Map<string, Array<Wydarzenie & { encjaId: string }>>();
+  for (const w of os) {
+    const klucz = `${w.data}|${w.tytul.trim().toLowerCase()}`;
+    grupy.set(klucz, [...(grupy.get(klucz) ?? []), w]);
+  }
+
+  const wybrane = [...grupy.values()].map((lista) => {
+    if (lista.length === 1) return lista[0];
+    return [...lista].sort((a, b) => {
+      const ile = (id: string) => encje[id]?.os.length ?? 0;
+      return ile(a.encjaId) - ile(b.encjaId) || a.encjaId.localeCompare(b.encjaId);
+    })[0];
+  }).filter((w): w is Wydarzenie & { encjaId: string } => w !== undefined);
+
+  return wybrane.sort((a, b) => a.data.localeCompare(b.data));
+}
+
 /** Buduje indeks z gotowej listy encji. Wydzielone, żeby testy nie musiały być asynchroniczne. */
 export function zbudujBaze(
   wpisy: ReadonlyArray<readonly [Kategoria, Encja[]]>,
@@ -72,7 +107,10 @@ export function zbudujBaze(
 
   osGlobalna.sort((a, b) => a.data.localeCompare(b.data));
 
-  return { encje, kolejnosc, indeks: { przychodzace, linkiWTresci }, osGlobalna };
+  return {
+    encje, kolejnosc, indeks: { przychodzace, linkiWTresci },
+    osGlobalna: odsiejPowtorzenia(osGlobalna, encje),
+  };
 }
 
 /** Nakładki tłumaczeniowe. Polski nie ma żadnej — jest wersją kanoniczną. */

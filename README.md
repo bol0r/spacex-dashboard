@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.4.2** · **by Dead Net & Claude**
+**Wersja 0.4.3** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -54,7 +54,7 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 124 · Wydarzenia: 248 · Źródła w katalogu: 85 · Diagramy: 4
+Encje: 124 · Wydarzenia: 231 · Źródła w katalogu: 85 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 4,36 (cel ≥ 6)
 Tłumaczenia EN: interfejs w całości, treść 6 / 124 encji
@@ -122,6 +122,8 @@ src/
     Wyszukiwarka.tsx  Fuse.js, grupowanie po typie, strzałki i Enter
     TrybOsiCzasu.tsx  pionowa oś z filtrem po firmie
     LosoweOdkrycie.tsx losowa ciekawostka na pełnym ekranie
+    TrybFilmowy.tsx   cała historia po kolei, przewijana sama
+    EkranLadowania.tsx ekran startowy pokazywany dopiero po 250 ms
     ListaPozioma.tsx  ulubione i historia jako pigułki
     grafiki/          cztery diagramy SVG i rejestr przypisań
   data/
@@ -300,6 +302,17 @@ Kompaktowa oś na ekranie głównym pokazuje kształt, ta pokazuje treść.
 tuż pod tekstem, a przejście do encji wymaga osobnego gestu: łatwiej jest losować
 dalej niż wyjść, i taki jest zamysł. Losowanie nie powtarza poprzedniego wyniku.
 
+**Tryb filmowy** — cała historia po kolei, przewijana sama, z tempem do wyboru,
+filtrem po firmie i rokiem wypisanym wielkim stopniem pisma w rogu jako znacznik
+rozdziału. Dotknięcie wstrzymuje. Wejście w encję **nie zamyka filmu** — arkusz
+otwiera się nad nim, a po zamknięciu film czeka w tym samym miejscu.
+
+Świadomie nie jest to naśladownictwo napisów ze „Star Wars". Aplikacja ma
+zastrzeżenie o braku powiązania z kimkolwiek, więc kopiowanie rozpoznawalnej
+estetyki cudzej marki działałoby przeciwko niemu, a brief zakazuje wprost
+gwiazdek w tle i dekoracji bez funkcji. Z tamtego pomysłu zostało to, co działa:
+chronologia, rytm i jedna rzecz naraz.
+
 **Ulubione i historia** — serduszko w arkuszu odkłada encję na ekran główny,
 historia trzyma dwadzieścia ostatnich odwiedzin. Oba w `localStorage`, oba jako
 poziome listy pigułek: kolejność ma tu znaczenie, rozmiar nie.
@@ -307,6 +320,18 @@ poziome listy pigułek: kolejność ma tu znaczenie, rozmiar nie.
 Trzy nakładki dzielą jedną powłokę (`Nakladka.tsx`) — ten sam sposób wejścia,
 wyjścia, obsługi Escape i pułapki fokusu. Różnicowanie ich tylko po to, żeby były
 różne, byłoby kosztem dla użytkownika.
+
+## Ekran startowy
+
+Nie jest to intro. Ekran pojawia się **dopiero po 250 ms** ładowania i przy
+szybkim starcie nie mignie ani razu. Powód jest podwójny: brief zakazuje
+animacji, których nie wywołał użytkownik, a każda sekunda dołożona przed treścią
+psuje wynik wydajnościowy. To rozwiązanie problemu gołego napisu „Wczytywanie",
+nie dodatek wizualny.
+
+Pasek postępu jest nieokreślony, bo ładowanie chunków nie raportuje procentów —
+zamiast kłamać liczbą pokazuje sam fakt pracy. To jedyna cykliczna animacja
+w całej aplikacji.
 
 ## System wizualny
 
@@ -400,6 +425,23 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
    i haptyki na prawdziwym telefonie.
 5. **Tłumaczenie treści** — 118 encji bez wersji angielskiej.
+6. **Widok grafu powiązań** (propozycja, nie zaczęte) — mapa połączeń między
+   encjami we własnym SVG, z prostym układem siłowym. Pokazywałaby to, co jest
+   sednem produktu i czego dziś nie widać nigdzie: gęstość i kształt sieci
+   linków. To jest sensowna wersja pomysłu na „przestrzenną sferę haseł",
+   który odrzuciliśmy — patrz niżej.
+
+### Odrzucone świadomie
+
+**Sfera haseł w 3D.** Efekt czytelny na pokazie i uciążliwy w użyciu: słabo się
+czyta, źle trafia palcem, nie da się obsłużyć klawiaturą, wymaga biblioteki 3D
+i dubluje wyszukiwarkę oraz sekcję słownika. Brief nazywa to wprost dekoracją
+bez funkcji. Zamiast tego proponujemy widok grafu powiązań, który zaspokaja tę
+samą potrzebę i niesie informację.
+
+**Intro opóźniające wejście do treści.** Sprzeczne z briefem i z celem
+wydajnościowym. Zamiast tego ekran startowy pojawiający się dopiero wtedy, gdy
+ładowanie naprawdę trwa.
 
 ## Android
 

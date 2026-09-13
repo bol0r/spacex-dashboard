@@ -1,5 +1,5 @@
 import { useMemo, useRef } from 'react';
-import { Search, Shuffle } from 'lucide-react';
+import { Clapperboard, Search, Shuffle } from 'lucide-react';
 import type { BazaWiedzy } from '../data/types';
 import { BOHATER, rozmiarKafla, ulozSekcje } from '../app/uklad';
 import { useStan } from '../app/stan';
@@ -78,6 +78,23 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {bohater !== undefined && <KafelBohater encja={bohater} onOtworz={onOtworz} />}
+
+        {/* Tryb filmowy jest zaproszeniem, nie treścią, więc nie wygląda jak kafel:
+            obrys w błękicie zamiast materiału odróżnia akcję od tematu. */}
+        <button
+          type="button"
+          onClick={() => ustawWidok('film')}
+          className="dotyk col-span-2 flex items-center gap-3 rounded-kafel border border-blekit
+                     px-5 py-4 text-left lg:col-span-4"
+          style={{ background: 'var(--mat-chip)' }}
+        >
+          <Clapperboard size={22} strokeWidth={1.8} className="shrink-0 text-blekit" aria-hidden="true" />
+          <span className="flex min-w-0 flex-col">
+            <span className="text-naglowek text-blekit">{t.trybFilmowy}</span>
+            <span className="text-przypis text-tekst-2">{t.trybFilmowyOpis}</span>
+          </span>
+        </button>
+
         <KartaDnia baza={baza} />
         <OsCzasu baza={baza} />
 
