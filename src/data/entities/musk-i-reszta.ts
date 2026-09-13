@@ -10,13 +10,15 @@ export const muskIReszta: Encja[] = [
     krotki: 'Firma założona w 2002 roku, żeby obniżyć koszt lotu w kosmos; w 2026 weszła na giełdę przy największej wycenie w historii ofert publicznych.',
     tresc: [
       'SpaceX powstało 14 marca 2002 roku. Bezpośrednim impulsem była podróż [[elon-musk|Muska]] do Rosji po używane rakiety Dniepr na potrzeby projektu Mars Oasis — pomysłu wysłania na Marsa miniaturowej szklarni. Rozmowy nie wyszły; w drodze powrotnej Musk stwierdził, że taniej będzie zbudować rakietę samemu.', 'Pierwsze trzy starty Falcona 1 w latach 2006–2008 zakończyły się porażką i niemal wykończyły firmę. Ratunek przyszedł z NASA: w 2006 roku kontrakty demonstracyjne COTS na 396 milionów dolarów, a w grudniu 2008, po pierwszym udanym starcie, kontrakt zaopatrzeniowy CRS wart 1,6 miliarda. Przez pierwszą dekadę Musk włożył w firmę około stu milionów własnych pieniędzy.',
-      'Dziś firma stoi na dwóch filarach. [[falcon-9|Falcon 9]] jest produktem, który zarabia i lata prawie co drugi dzień. [[starlink|Starlink]] jest usługą, która przynosi większość przychodów. [[starship|Starship]] jest zakładem o przyszłość, finansowanym z obu poprzednich. Operacjami kieruje [[gwynne-shotwell|Gwynne Shotwell]], a siedziba spółki od 2024 roku mieści się w [[starbase|Starbase]] w Teksasie.', 'Dwunastego czerwca 2026 roku spółka zadebiutowała na giełdzie pod symbolem SPCX. Zgłoszenie złożono 20 maja, cenę ustalono 11 czerwca na 135 dolarów za akcję. Oferta dała wycenę 1,77 biliona dolarów i przyniosła 75 miliardów — to najwyżej wyceniony i największy pod względem pozyskanej kwoty debiut giełdowy w historii. Zatrudnienie sięga 22 tysięcy osób.',
+      'Dziś firma stoi na dwóch filarach. [[falcon-9|Falcon 9]] jest produktem, który zarabia i lata prawie co drugi dzień. [[starlink|Starlink]] jest usługą, która przynosi większość przychodów. [[starship|Starship]] jest zakładem o przyszłość, finansowanym z obu poprzednich. Operacjami kieruje [[gwynne-shotwell|Gwynne Shotwell]], a siedziba spółki od 2024 roku mieści się w [[starbase|Starbase]] w Teksasie.',
+      'W lutym 2026 roku doszedł czwarty filar: SpaceX przejęło [[xai|xAI]] w transakcji wyłącznie akcyjnej. Musk uzasadnił to tym, że dalsze skalowanie sztucznej inteligencji wymaga centrów danych w kosmosie, bo naziemne zużywają zbyt dużo prądu i chłodzenia. Firma rakietowa stała się w ten sposób także firmą od modeli językowych.', 'Dwunastego czerwca 2026 roku spółka zadebiutowała na giełdzie pod symbolem SPCX. Zgłoszenie złożono 20 maja, cenę ustalono 11 czerwca na 135 dolarów za akcję. Oferta dała wycenę 1,77 biliona dolarów i przyniosła 75 miliardów — to najwyżej wyceniony i największy pod względem pozyskanej kwoty debiut giełdowy w historii. Zatrudnienie sięga 22 tysięcy osób.',
     ],
     fakty: [
       { etykieta: 'Data założenia', wartosc: '14 marca 2002', pewnosc: 'potwierdzone' },
       { etykieta: 'Siedziba', wartosc: 'Starbase, Teksas (od 2024, wcześniej Hawthorne w Kalifornii)', pewnosc: 'potwierdzone' },
       { etykieta: 'Zatrudnienie', wartosc: '22 000', stanNa: '2026', pewnosc: 'potwierdzone' },
       { etykieta: 'Debiut giełdowy', wartosc: '12 czerwca 2026, symbol SPCX', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przejęcie xAI', wartosc: 'luty 2026, transakcja wyłącznie akcyjna', pewnosc: 'potwierdzone' },
       { etykieta: 'Wycena w ofercie', wartosc: '1,77 bln USD', stanNa: '2026-06', pewnosc: 'potwierdzone' },
       { etykieta: 'Kwota pozyskana', wartosc: '75 mld USD', stanNa: '2026-06', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwsze kontrakty NASA', wartosc: 'COTS 396 mln USD (2006), CRS 1,6 mld USD (2008)', pewnosc: 'potwierdzone' },
@@ -30,6 +32,7 @@ export const muskIReszta: Encja[] = [
     os: [
       { data: '2002-03-14', tytul: 'Założenie firmy', opis: 'Musk zakłada SpaceX po nieudanej próbie kupienia rakiet w Rosji.', waga: 3 },
       { data: '2008-12', tytul: 'Kontrakt CRS', opis: 'NASA przyznaje 1,6 mld USD na zaopatrywanie stacji — firma wychodzi z zapaści.', waga: 3 },
+      { data: '2026-02', tytul: 'Przejęcie xAI', opis: 'SpaceX kupuje xAI w transakcji akcyjnej i wchodzi w sztuczną inteligencję.', waga: 3 },
       { data: '2026-06-12', tytul: 'Debiut giełdowy', opis: 'SPCX wchodzi na giełdę przy wycenie 1,77 bln USD.', waga: 3 },
     ],
     powiazane: [
@@ -42,7 +45,7 @@ export const muskIReszta: Encja[] = [
       { id: 'itar', powod: 'przepisy, które rozstrzygają, kto może pracować przy jej rakietach' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSpaceX, Z.wikiIpo, Z.wikiBarki],
+    zrodla: [Z.wikiSpaceX, Z.wikiIpo, Z.wikiBarki, Z.yahooFuzja],
     zaktualizowano: '2026-09-12',
   },
 
@@ -308,6 +311,8 @@ export const muskIReszta: Encja[] = [
       { etykieta: 'Zgoda na badania na ludziach', wartosc: 'maj 2023', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwszy pacjent', wartosc: 'Noland Arbaugh, 28 stycznia 2024', pewnosc: 'potwierdzone' },
       { etykieta: 'Liczba uczestników badania', wartosc: '12', stanNa: '2025-09', pewnosc: 'szacunkowe' },
+      { etykieta: 'Uczestnicy pokazani publicznie', wartosc: 'pięcioro — po urazie rdzenia kręgowego i ze stwardnieniem zanikowym bocznym', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czym sterują', wartosc: 'komputerem i ramieniem robota', pewnosc: 'potwierdzone' },
       { etykieta: 'Zwierzęta w badaniach', wartosc: 'co najmniej 1 500', stanNa: '2022', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -328,7 +333,7 @@ export const muskIReszta: Encja[] = [
       { id: 'xai', powod: 'ta sama teza o sztucznej inteligencji, tylko od strony sprzętu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiNeuralink, Z.wikiMusk],
+    zrodla: [Z.wikiNeuralink, Z.wikiMusk, Z.neuralinkStrona],
     zaktualizowano: '2026-09-13',
   },
 
@@ -367,7 +372,7 @@ export const muskIReszta: Encja[] = [
       { id: 'optimus', powod: 'oba projekty stawiają na bezpośrednie sterowanie ruchem' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiNeuralink, Z.wikiMusk],
+    zrodla: [Z.wikiNeuralink, Z.wikiMusk, Z.neuralinkStrona],
     zaktualizowano: '2026-09-13',
   },
 
@@ -425,7 +430,9 @@ export const muskIReszta: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Uruchomienie', wartosc: '2021', pewnosc: 'potwierdzone' },
-      { etykieta: 'Długość', wartosc: '1,7 mili (ok. 2,7 km)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Długość', wartosc: '1,7 mili (ok. 2,7 km); po rozbudowie w 2024 roku 2,1 mili i pięć stacji', pewnosc: 'potwierdzone' },
+      { etykieta: 'Koszt i czas budowy', wartosc: 'ok. 47 mln USD w cenie ryczałtowej, ok. roku', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przepustowość', wartosc: 'ponad 4 500 pasażerów na godzinę, ponad 32 tys. dziennie', pewnosc: 'potwierdzone' },
       { etykieta: 'Pojazdy', wartosc: 'Tesla Model Y z kierowcami', pewnosc: 'potwierdzone' },
       { etykieta: 'Rozbudowa', wartosc: 'odcinek do Resorts World, kwiecień 2024', pewnosc: 'potwierdzone' },
       { etykieta: 'Plan docelowy', wartosc: '68 mil tuneli i 123 stacje', pewnosc: 'szacunkowe' },
@@ -449,7 +456,7 @@ export const muskIReszta: Encja[] = [
       { id: 'hyperloop', powod: 'znacznie skromniejsza realizacja tej samej idei transportu w tunelu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiBoring, Z.wikiTesla],
+    zrodla: [Z.wikiBoring, Z.wikiTesla, Z.boringLvcc],
     zaktualizowano: '2026-09-13',
   },
 
@@ -611,7 +618,7 @@ export const muskIReszta: Encja[] = [
       { id: 'spacex', powod: 'przejęła xAI w lutym 2026 roku' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiXai, Z.wikiMusk],
+    zrodla: [Z.wikiXai, Z.wikiMusk, Z.yahooFuzja],
     zaktualizowano: '2026-09-13',
   },
 
@@ -652,7 +659,7 @@ export const muskIReszta: Encja[] = [
       { id: 'openai', powod: 'produkty tej firmy są punktem odniesienia dla całego projektu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiXai, Z.wikiMusk],
+    zrodla: [Z.wikiXai, Z.wikiMusk, Z.xaiColossus],
     zaktualizowano: '2026-09-13',
   },
 
@@ -670,7 +677,8 @@ export const muskIReszta: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Lokalizacja', wartosc: 'Memphis, Tennessee', pewnosc: 'potwierdzone' },
-      { etykieta: 'Pełna zdolność', wartosc: 'grudzień 2024, po 122 dniach budowy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pełna zdolność', wartosc: 'grudzień 2024, po 122 dniach budowy wobec szacowanych 24 miesięcy', pewnosc: 'potwierdzone' },
+      { etykieta: 'Podwojenie', wartosc: 'kolejne 92 dni do 200 tys. kart H100, luty 2025', pewnosc: 'potwierdzone' },
       { etykieta: 'Plan docelowy', wartosc: '1 mln kart graficznych, blisko 2 GW mocy obliczeniowej', pewnosc: 'szacunkowe' },
       { etykieta: 'Szczytowy pobór energii', wartosc: '150 MW', pewnosc: 'potwierdzone' },
     ],
@@ -689,7 +697,7 @@ export const muskIReszta: Encja[] = [
       { id: 'dojo', powod: 'analogiczny projekt Tesli, z innym losem' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiXai, Z.wikiDojo],
+    zrodla: [Z.wikiXai, Z.wikiDojo, Z.xaiColossus],
     zaktualizowano: '2026-09-13',
   },
 

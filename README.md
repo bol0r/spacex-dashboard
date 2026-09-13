@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.5.1** · **by Dead Net & Claude**
+**Wersja 0.5.2** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -56,7 +56,7 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 180 · Wydarzenia: 318 · Źródła w katalogu: 131 · Diagramy: 4
+Encje: 180 · Wydarzenia: 319 · Źródła w katalogu: 144 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 4,88 (cel ≥ 6)
 Tłumaczenia EN: interfejs w całości, treść 6 / 180 encji
@@ -452,6 +452,8 @@ których nie widać przy jednym. Przy tym przejściu wyszły między innymi:
   sygnału, ale SpaceX podaje ponad 600 ms w praktyce.
 - **Własna strona Starlinka** mówi o ponad 6 750 satelitach, podczas gdy
   katalogi śledzenia liczą ich ponad 10 tysięcy.
+- **Przejęcie xAI przez SpaceX** z lutego 2026 było w bazie odnotowane przy xAI,
+  ale nie przy SpaceX — a to zmienia opis tego, czym ta firma dziś jest.
 
 ## Numeracja wersji
 
@@ -546,11 +548,12 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
    dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
    kwestią wyboru, nie długu.
-2. **Niezależność źródeł.** 88 ze 180 encji ma wszystkie źródła od jednego
-   wydawcy, najczęściej Wikipedii — po przejściu opisanym w
-   [Skąd biorą się źródła](#skąd-biorą-się-źródła) było ich 137. Siedemdziesiąt
-   cztery encje mają źródło pierwotne. Zostaje głównie wczesna historia firmy,
-   loty Falcona 1, pojedyncze loty Starshipa i biografie.
+2. **Niezależność źródeł.** 73 ze 180 encji ma wszystkie źródła od jednego
+   wydawcy — na starcie było ich 137. Metoda jest w rozdziale
+   [Skąd biorą się źródła](#skąd-biorą-się-źródła). Zostaje głównie: pojedyncze
+   loty Falcona 1 i Starshipa, wczesne misje przełomowe, biografie i część
+   słownika. Każda z tych grup wymaga osobnego źródła na encję — nie ma już
+   dokumentu, który pokrywa kilkanaście naraz.
 3. **Gęstość linkowania.** Średnia 4,88 wobec celu 6; 144 encje są poniżej celu.
    W tej partii przeszedłem przez trzydzieści kilka najsłabszych encji i wplotłem
    linki w zdania zamiast doklejać je na końcu — stąd wzrost z 4,40. Domknięcie

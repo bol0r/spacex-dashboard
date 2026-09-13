@@ -557,7 +557,7 @@ const oprogramowanie: Encja[] = [
       { id: 'dojo', powod: 'superkomputer budowany do trenowania jego modeli' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.secTesla10k],
+    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.secTesla10k, Z.cbsAkcja],
     zaktualizowano: '2026-09-12',
   },
 
@@ -598,7 +598,7 @@ const oprogramowanie: Encja[] = [
       { id: 'dojo', powod: 'superkomputer budowany do trenowania jego modeli' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.secTesla10k],
+    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.secTesla10k, Z.cbsAkcja],
     zaktualizowano: '2026-09-12',
   },
 
@@ -652,6 +652,8 @@ const oprogramowanie: Encja[] = [
     fakty: [
       { etykieta: 'Zakres dochodzenia', wartosc: '956 kolizji, trzy lata', stanNa: '2024-04', pewnosc: 'potwierdzone' },
       { etykieta: 'Wypadki z udziałem Autopilota', wartosc: 'co najmniej 467, w tym 13 śmiertelnych', stanNa: '2024-04', pewnosc: 'potwierdzone' },
+      { etykieta: 'Akcja serwisowa Autopilota', wartosc: 'ponad 2 mln aut, 13 grudnia 2023, roczniki od 5 października 2012', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ustalenie urzędu', wartosc: 'zabezpieczenia bywały niewystarczające i sprzyjały przewidywalnemu nadużyciu', pewnosc: 'potwierdzone' },
       { etykieta: 'Akcja serwisowa FSD Beta', wartosc: '362 758 samochodów', stanNa: '2023-02', pewnosc: 'potwierdzone' },
       { etykieta: 'Kolizje z FSD Beta', wartosc: '60 i jedna ofiara śmiertelna', stanNa: '2023-08', pewnosc: 'potwierdzone' },
       { etykieta: 'Zgłoszone ofiary śmiertelne', wartosc: '51, z czego 44 potwierdzone', stanNa: '2024-10', pewnosc: 'potwierdzone' },
@@ -674,7 +676,7 @@ const oprogramowanie: Encja[] = [
       { id: 'tesla', powod: 'przedmiot nadzoru' },
       { id: 'model-y', powod: 'pierwszy samochód, który spełnił nowe kryterium urzędu' },
     ],
-    zrodla: [Z.wikiAutopilot, Z.wikiModelS],
+    zrodla: [Z.wikiAutopilot, Z.wikiModelS, Z.cbsAkcja],
     zaktualizowano: '2026-09-12',
   },
 

@@ -5,6 +5,32 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.5.2 — 13 września 2026
+
+**Niezależność źródeł, przejście drugie: 88 → 73 encje oparte na jednym wydawcy.**
+
+Trzynaście nowych źródeł. Pierwotne: archiwum startów SpaceX z opisami stanowisk,
+strona Colossusa od xAI, opis systemu w Las Vegas od The Boring Company, strona
+badań klinicznych Neuralinku. Niezależne wtórne: Spaceflight Now dla lotów 1, 7,
+8 i 9 Starshipa, SpaceNews dla lotu 11, CBS News dla akcji serwisowej Autopilota,
+Yahoo Finance dla przejęcia xAI.
+
+Znalezione przy weryfikacji:
+
+- **Przejęcie xAI przez SpaceX** z lutego 2026 było zapisane przy xAI, ale encja
+  o SpaceX nadal opisywała firmę jako stojącą na trzech filarach i nie wspominała
+  o sztucznej inteligencji. Doszedł akapit, fakt i wydarzenie na osi.
+- **Rozbudowa systemu w Las Vegas**: encja podawała tylko odcinek do Resorts
+  World z 2024 roku, a wykonawca opisuje rozbudowę samego systemu do 2,1 mili
+  i pięciu stacji. Doszły też koszt ryczałtowy i przepustowość.
+- **Colossus** podwojono do dwustu tysięcy kart w kolejne 92 dni po pierwszych
+  122 — encja kończyła opowieść na pierwszym etapie.
+
+Nowe fakty ze źródeł: dokładny czas lotu 1 Starshipa (237,474 sekundy) i 63
+działania naprawcze wymagane przez urząd, ustalona przyczyna utraty statku przy
+locie 8, podniesienie limitu startów z Boca Chica z pięciu do dwudziestu pięciu
+rocznie, zakres akcji serwisowej Autopilota z grudnia 2023.
+
 ## 0.5.1 — 13 września 2026
 
 **Niezależność źródeł: 137 → 88 encji opartych na jednym wydawcy.**

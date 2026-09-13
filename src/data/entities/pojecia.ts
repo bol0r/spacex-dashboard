@@ -1317,7 +1317,7 @@ export const pojecia: Encja[] = [
       { id: 'vandenberg', powod: 'baza, z której się na nią startuje' },
       { id: 'delta-v', powod: 'brak darmowej prędkości obrotu Ziemi podnosi koszt wejścia' },
     ],
-    zrodla: [Z.wikiSso, Z.wikiFram2, Z.nasaOrbity],
+    zrodla: [Z.wikiSso, Z.wikiFram2, Z.nasaOrbity, Z.spacexStarty],
     zaktualizowano: '2026-09-13',
   },
 

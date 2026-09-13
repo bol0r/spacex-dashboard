@@ -202,7 +202,7 @@ export const miejsca: Encja[] = [
       { id: 'spacex', powod: 'dzierżawi je od 2014 roku' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiLc39a, Z.nasaDemo2],
+    zrodla: [Z.wikiLc39a, Z.nasaDemo2, Z.spacexStarty],
     zaktualizowano: '2026-09-13',
   },
 
@@ -244,7 +244,7 @@ export const miejsca: Encja[] = [
       { id: 'kadencja-startow', powod: 'większość startów tej rakiety odbywa się właśnie stąd' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSlc40, Z.wikiAmos6],
+    zrodla: [Z.wikiSlc40, Z.wikiAmos6, Z.spacexStarty],
     zaktualizowano: '2026-09-13',
   },
 
@@ -363,7 +363,7 @@ export const miejsca: Encja[] = [
       { id: 'lc-39a', powod: 'stanowisko na wschodnim wybrzeżu, o zupełnie innym przeznaczeniu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon, Z.spacexStarty],
     zaktualizowano: '2026-09-13',
   },
 
@@ -444,7 +444,7 @@ export const miejsca: Encja[] = [
       { id: 'orbita-biegunowa', powod: 'jedyny powód, dla którego lata się stąd, a nie z Florydy' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSlc4, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiSlc4, Z.wikiStartyFalcon, Z.spacexStarty],
     zaktualizowano: '2026-09-13',
   },
 ];

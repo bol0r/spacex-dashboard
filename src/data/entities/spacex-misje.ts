@@ -864,6 +864,8 @@ const lotyStarshipa: Encja[] = [
       { etykieta: 'Czas lotu', wartosc: 'ok. 4 minuty', pewnosc: 'potwierdzone' },
       { etykieta: 'Silniki', wartosc: '33 × Raptor 2; część nie pracowała od startu', pewnosc: 'potwierdzone' },
       { etykieta: 'Szkody naziemne', wartosc: 'krater pod mocowaniem startowym, przebudowa stanowiska', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dokładny czas lotu', wartosc: '237,474 sekundy od zapłonu do zniszczenia', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wymagania urzędu', wartosc: '63 działania naprawcze; dochodzenie zamknięte 8 września 2023', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -881,7 +883,7 @@ const lotyStarshipa: Encja[] = [
       { id: 'starship-lot-5', powod: 'sukces, do którego doprowadziły wnioski z tego lotu' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.sfnLot1],
     zaktualizowano: '2026-09-13',
   },
 
@@ -901,6 +903,7 @@ const lotyStarshipa: Encja[] = [
       { etykieta: 'Booster', wartosc: 'B14, wcześniej złapany przy locie 7', pewnosc: 'potwierdzone' },
       { etykieta: 'Znaczenie', wartosc: 'pierwszy powtórny lot członu Super Heavy', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik', wartosc: 'utrata boostera nad zatoką i statku nad Oceanem Indyjskim', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zgoda urzędu', wartosc: '22 maja 2025; limit startów z Boca Chica podniesiony z 5 do 25 rocznie', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -918,7 +921,7 @@ const lotyStarshipa: Encja[] = [
       { id: 'reuzywalnosc', powod: 'dowód, że złapany człon nadaje się do ponownego lotu' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.sfnLot9],
     zaktualizowano: '2026-09-13',
   },
 
@@ -992,7 +995,7 @@ const lotyStarshipa: Encja[] = [
       { id: 'super-heavy', powod: 'jego człon wodował kontrolowanie nad zatoką' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.spacenewsLot11],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1050,6 +1053,7 @@ const lotyStarshipa: Encja[] = [
       { etykieta: 'Egzemplarze', wartosc: 'booster B14, statek S33', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik członu', wartosc: 'złapany przez wieżę — drugi udany chwyt', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik statku', wartosc: 'utracony po wycieku paliwa', pewnosc: 'potwierdzone' },
+      { etykieta: 'Miejsce rozpadu', wartosc: 'nad wyspami Turks i Caicos', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1067,7 +1071,7 @@ const lotyStarshipa: Encja[] = [
       { id: 'starship', powod: 'jego siódmy lot testowy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.sfnLot9],
     zaktualizowano: '2026-09-13',
   },
 ];
@@ -1240,6 +1244,8 @@ const wczesneLotyStarshipa: Encja[] = [
       { etykieta: 'Egzemplarze', wartosc: 'booster B15, statek S34', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik członu', wartosc: 'złapany przez wieżę — trzeci udany chwyt', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik statku', wartosc: 'utracony po wyłączeniach silników', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ustalona przyczyna', wartosc: 'awaria sprzętowa środkowego Raptora; mieszanie i zapłon składników', pewnosc: 'potwierdzone' },
+      { etykieta: 'Miejsce rozpadu', wartosc: 'nad wyspami Turks i Caicos', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1257,7 +1263,7 @@ const wczesneLotyStarshipa: Encja[] = [
       { id: 'super-heavy', powod: 'jego trzeci udany chwyt przez wieżę' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.sfnLot9],
     zaktualizowano: '2026-09-13',
   },
 ];

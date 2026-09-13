@@ -667,4 +667,49 @@ export const Z = {
     url: 'https://www.spacex.com/vehicles/dragon/',
     wydawca: 'SpaceX', dostep: D2,
   },
+  spacexStarty: {
+    tytul: 'Launches — archiwum startów i opis stanowisk',
+    url: 'https://www.spacex.com/launches/',
+    wydawca: 'SpaceX', dostep: D2,
+  },
+  sfnLot1: {
+    tytul: 'FAA concludes Starship mishap investigation, 63 corrective actions needed before second flight',
+    url: 'https://spaceflightnow.com/2023/09/08/faa-concludes-starship-mishap-investigation-63-corrective-actions-needed-before-second-flight/',
+    wydawca: 'Spaceflight Now', dostep: D2,
+  },
+  sfnLot9: {
+    tytul: 'FAA clears SpaceX to launch its 9th Starship, while Flight 8 mishap investigation continues',
+    url: 'https://spaceflightnow.com/2025/05/23/faa-clears-spacex-to-launch-its-9th-starship-super-heavy-rocket-while-flight-8-mishap-investigation-continues/',
+    wydawca: 'Spaceflight Now', dostep: D2,
+  },
+  boringLvcc: {
+    tytul: 'Las Vegas Convention Center Loop — opis systemu',
+    url: 'https://www.boringcompany.com/lvcc',
+    wydawca: 'The Boring Company', dostep: D2,
+  },
+  xaiColossus: {
+    tytul: 'Colossus — opis zaplecza obliczeniowego',
+    url: 'https://x.ai/colossus',
+    wydawca: 'xAI', dostep: D2,
+  },
+  yahooFuzja: {
+    tytul: 'Elon Musk confirms SpaceX merger with xAI ahead of IPO',
+    url: 'https://finance.yahoo.com/news/elon-musk-confirms-spacex-merger-with-xai-ahead-of-ipo-220616795.html',
+    wydawca: 'Yahoo Finance', dostep: D2,
+  },
+  spacenewsLot11: {
+    tytul: 'Starship successfully completes 11th flight test',
+    url: 'https://spacenews.com/starship-successfully-completes-11th-flight-test/',
+    wydawca: 'SpaceNews', dostep: D2,
+  },
+  neuralinkStrona: {
+    tytul: 'Neuralink — badania kliniczne i uczestnicy',
+    url: 'https://neuralink.com/',
+    wydawca: 'Neuralink', dostep: D2,
+  },
+  cbsAkcja: {
+    tytul: 'Drive a Tesla? Here is what to know about the latest Autopilot recall',
+    url: 'https://www.cbsnews.com/news/tesla-autopilot-recall/',
+    wydawca: 'CBS News', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;
