@@ -52,14 +52,11 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
                  pl-[max(1rem,env(safe-area-inset-left,0px))] pr-[max(1rem,env(safe-area-inset-right,0px))]
                  lg:max-w-[1000px]"
     >
-      <header className="flex items-start justify-between gap-3 pb-5 pt-[calc(env(safe-area-inset-top,0px)+16px)]">
-        <div className="min-w-0">
-          <h1 className="text-duzy-tytul text-tekst">{t.tytul}</h1>
-          <p className="max-w-[46ch] text-podtytul text-tekst-2">{t.podtytul}</p>
-          <p className="mt-2 text-podpis text-tekst-2">{t.zastrzezenieKrotko}</p>
-        </div>
-
-        <div className="flex shrink-0 items-center gap-2">
+      {/* Układ jak w iOS: najpierw wąski pasek kontrolek, pod nim duży tytuł
+          na pełnej szerokości. Trzymanie ich w jednym rzędzie łamało „Strefa
+          Wiedzy" na dwie linie już przy 375 px. */}
+      <header className="pb-5 pt-[calc(env(safe-area-inset-top,0px)+12px)]">
+        <div className="flex items-center justify-end gap-2">
           <button
             type="button"
             onClick={() => ustawWidok('szukanie')}
@@ -71,6 +68,10 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
           </button>
           <PrzelacznikJezyka />
         </div>
+
+        <h1 className="mt-2 text-duzy-tytul text-tekst">{t.tytul}</h1>
+        <p className="max-w-[46ch] text-podtytul text-tekst-2">{t.podtytul}</p>
+        <p className="mt-2 text-podpis text-tekst-2">{t.zastrzezenieKrotko}</p>
       </header>
 
       <PasekSekcji sekcje={doPaska} />

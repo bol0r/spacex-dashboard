@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.4.0** · **by Dead Net & Claude**
+**Wersja 0.4.1** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -45,7 +45,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 0 | Design plan, kontrakt danych, fazowanie | gotowe |
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
-| 3 | Treść — 84 z 180+ encji | w toku |
+| 3 | Treść — 104 z 180+ encji | w toku |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA, wydajność, pomiar dostępności, dopieszczenie | nierozpoczęte |
 
@@ -54,10 +54,10 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 84 · Wydarzenia: 160 · Źródła w katalogu: 66 · Diagramy: 4
+Encje: 104 · Wydarzenia: 209 · Źródła w katalogu: 75 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 4,38 (cel ≥ 6)
-Tłumaczenia EN: interfejs w całości, treść 6 / 84 encji
+Średnio linków [[id]] w treści: 4,35 (cel ≥ 6)
+Tłumaczenia EN: interfejs w całości, treść 6 / 104 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 ```
 
@@ -374,31 +374,34 @@ Wzięte z briefu i obowiązujące dalej:
 
 ## Numeracja wersji
 
-Schemat `0.<faza>.<partia>`. Wersja `0.3.3` znaczy: faza 3, trzecia partia
-treści. Numer stoi w `package.json` i jest wstrzykiwany do kodu przez Vite jako
-`__WERSJA__` — kopiowanie go do stałej w źródłach kończy się rozjazdem
+Schemat `0.<najwyższa zamknięta faza>.<kolejny przyrost>`. Wersja `0.4.1`
+znaczy: fazy do czwartej włącznie zamknięte, pierwszy przyrost po nich —
+w tym wypadku kolejna partia treści z fazy 3, która biegnie równolegle.
+Numer stoi w `package.json` i jest wstrzykiwany do kodu przez Vite jako
+`__WERSJA__`; kopiowanie go do stałej w źródłach kończy się rozjazdem
 z manifestem paczki. `1.0.0` będzie zarezerwowane dla odbioru całości:
-180+ encji, zamknięte fazy 4 i 5.
+180+ encji i zamknięta faza 5.
 
 ## Co zostało do zrobienia
 
 Lista uszeregowana po wadze, nie po kolejności faz.
 
-1. **Treść — około 100 encji.** Brakuje: reszty imperium (Zip2, PayPal,
-   Neuralink, The Boring Company, OpenAI, xAI, X, Hyperloop), biografii Muska,
-   miejsc SpaceX (Hawthorne, McGregor, LC-39A, SLC-40, SLC-4E, strefy lądowania),
-   ludzi z listy w briefie, pozostałych lotów Starshipa i pozostałych haseł
+1. **Treść — około 76 encji.** Brakuje: miejsc SpaceX (Hawthorne, McGregor,
+   LC-39A, SLC-40, SLC-4E, strefy lądowania), ludzi z listy w briefie
+   (Mueller, Koenigsmann, Juncosa, Jensen, Gerstenmaier, Riley, Dontchev,
+   Behnken, Hurley), pozostałych lotów Starshipa, pozostałych rakiet i statków
+   (warianty Falcona 9, Dragon 1, Cargo Dragon, Starshield) oraz reszty
    słownika.
-2. **Niezależność źródeł.** 65 z 84 encji ma wszystkie źródła od jednego
+2. **Niezależność źródeł.** 85 z 104 encji ma wszystkie źródła od jednego
    wydawcy, najczęściej Wikipedii. Siedem encji ma źródło pierwotne (NASA, SEC).
    To najpoważniejsza słabość jakościowa bazy.
-3. **Gęstość linkowania.** Średnia 4,38 wobec celu 6; 72 encje są poniżej celu.
+3. **Gęstość linkowania.** Średnia 4,35 wobec celu 6; 90 encji jest poniżej celu.
    Domknięcie wymaga przepisania akapitów, nie doklejania linków.
 4. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
    wszystkich kategorii na ekranie głównym, wirtualizacja list powyżej 60
    elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
    i haptyki na prawdziwym telefonie.
-5. **Tłumaczenie treści** — 78 encji bez wersji angielskiej.
+5. **Tłumaczenie treści** — 98 encji bez wersji angielskiej.
 
 ## Android
 

@@ -126,17 +126,43 @@ console.log(`  · przetłumaczone: ${przetlumaczone} / ${WSZYSTKIE.length}`);
 
 /* 8. Daty ----------------------------------------------------------------- */
 sekcja('Daty');
-const DZIS = '2026-09-12';
+const DZIS = new Date().toISOString().slice(0, 10);
+
 const zPrzyszlosci = WSZYSTKIE.flatMap((e) =>
   e.os.filter((w) => w.data > DZIS).map((w) => `${e.id}: ${w.data} ${w.tytul}`),
 );
-console.log(`  · wydarzenia po dacie aktualizacji (świadome, status „w rozwoju"): ${zPrzyszlosci.length}`);
+console.log(`  · wydarzenia zapowiedziane, jeszcze nieodbyte: ${zPrzyszlosci.length}`);
 for (const w of zPrzyszlosci) console.log(`    · ${w}`);
 
-const stareAktualizacje = WSZYSTKIE.filter((e) => e.zaktualizowano !== DZIS);
-stareAktualizacje.length === 0
-  ? ok(`wszystkie encje zaktualizowane ${DZIS}`)
-  : zglos(`inna data aktualizacji: ${stareAktualizacje.map((e) => e.id).join(', ')}`);
+// Data aktualizacji encji to data weryfikacji faktów, więc starsza data nie jest
+// błędem — jest informacją. Pokazujemy rozkład i pilnujemy tylko dat z przyszłości
+// oraz treści starszej, niż zakłada polityka odświeżania.
+const MAKS_WIEK_DNI = 180;
+const wiek = (iso: string) =>
+  Math.round((Date.parse(`${DZIS}T00:00:00Z`) - Date.parse(`${iso}T00:00:00Z`)) / 86_400_000);
+
+const rozklad = new Map<string, number>();
+for (const e of WSZYSTKIE) rozklad.set(e.zaktualizowano, (rozklad.get(e.zaktualizowano) ?? 0) + 1);
+console.log(`  · rozkład dat aktualizacji: ${[...rozklad]
+  .sort((a, b) => b[0].localeCompare(a[0]))
+  .map(([d, n]) => `${d}=${n}`)
+  .join(', ')}`);
+
+const zPrzyszlosciAkt = WSZYSTKIE.filter((e) => e.zaktualizowano > DZIS);
+zPrzyszlosciAkt.length === 0
+  ? ok('żadna encja nie ma daty aktualizacji z przyszłości')
+  : zglos(`data z przyszłości: ${zPrzyszlosciAkt.map((e) => e.id).join(', ')}`);
+
+const przeterminowane = WSZYSTKIE.filter((e) => wiek(e.zaktualizowano) > MAKS_WIEK_DNI);
+przeterminowane.length === 0
+  ? ok(`żadna encja nie jest starsza niż ${MAKS_WIEK_DNI} dni`)
+  : zglos(`do odświeżenia (>${MAKS_WIEK_DNI} dni): ${przeterminowane.map((e) => e.id).join(', ')}`);
+
+// To samo dla dat dostępu do źródeł — one starzeją się szybciej niż treść.
+const stareZrodla = Object.entries(Z).filter(([, z]) => wiek(z.dostep) > MAKS_WIEK_DNI);
+stareZrodla.length === 0
+  ? ok('wszystkie daty dostępu do źródeł w granicy')
+  : zglos(`źródła do sprawdzenia: ${stareZrodla.map(([k]) => k).join(', ')}`);
 
 /* Podsumowanie ------------------------------------------------------------ */
 console.log(`\n${uwagi === 0 ? 'PRZEGLĄD: bez uwag' : `PRZEGLĄD: ${uwagi} uwag do rozważenia`}`);

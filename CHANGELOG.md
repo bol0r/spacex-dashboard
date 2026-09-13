@@ -5,6 +5,34 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.4.1 — 13 września 2026
+
+**Reszta imperium — dwadzieścia encji.**
+
+- Wczesne firmy: Zip2, X.com, PayPal, a do tego biografia — Pretoria i droga
+  na zachód oraz Mars Oasis, czyli pomysł, który po nieudanym zakupie rosyjskich
+  rakiet zamienił się w SpaceX.
+- Neuralink i implant N1, z opisem odłączenia osiemdziesięciu pięciu procent
+  nitek u pierwszego pacjenta i sporu o badania na zwierzętach.
+- The Boring Company, Las Vegas Loop i Not-a-Flamethrower.
+- OpenAI, spór sądowy Muska z tą organizacją, xAI, Grok i Colossus.
+- Przejęcie Twittera, platforma X, Hyperloop, Fundacja Muska i styl zarządzania.
+- Tematy trudne opisane rzeczowo: dwa incydenty Groka, zarzuty wobec fundacji
+  o niewypłacanie wymaganego minimum i o dotacje dla podmiotów powiązanych,
+  badania na zwierzętach w Neuralinku, przegrana Muska z OpenAI na przedawnieniu.
+
+**Poprawki**
+
+- Nagłówek ekranu głównego łamał „Strefa Wiedzy" na dwie linie po dodaniu
+  przycisku szukania. Układ przestawiony na iOS-owy: pasek kontrolek, pod nim
+  tytuł na pełnej szerokości.
+- Przegląd zakładał na sztywno jedną datę aktualizacji i po zmianie dnia
+  zgłaszałby fałszywy alarm. Teraz liczy wiek treści i źródeł względem dzisiaj,
+  z progiem 180 dni, i pokazuje rozkład dat zamiast wymagać jednej.
+- Heurystyka `stanNa` łapała „Liczba elektrod" i „Liczba sztuk", czyli parametr
+  konstrukcyjny i zamkniętą serię. Wzorzec wymaga teraz, żeby etykieta liczyła
+  coś, czego w czasie faktycznie przybywa.
+
 ## 0.4.0 — 12 września 2026
 
 **Faza 4: wyszukiwarka, tryb osi czasu, losowanie, ulubione i historia.**

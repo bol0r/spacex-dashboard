@@ -20,7 +20,11 @@ const DATA_ISO = /^\d{4}(-\d{2}(-\d{2})?)?$/;
  * znaczyć, więc wzorce zawężono do etykiet naprawdę zliczających.
  */
 const WZORCE_ZMIENNE = [
-  /liczba/i, /łącznie/i, /lacznie/i, /wycen/i, /subskry/i, /abonen/i,
+  // Samo słowo „liczba" nie wystarcza: „Liczba elektrod" i „Liczba sztuk"
+  // opisują parametr konstrukcyjny albo zamkniętą serię, a nie licznik rosnący.
+  // Wymagamy, żeby liczyło coś, co w czasie faktycznie przybywa.
+  /liczba (start|lot|l[aą]dowa|satelit|abonent|u[żz]ytkownik|uczestnik|pracownik|mieszka[nń]c|egzemplarz)/i,
+  /łącznie/i, /lacznie/i, /wycen/i, /subskry/i, /abonen/i,
   /satelit/i, /zatrudni/i, /przychod/i, /kapitaliz/i, /dostarcz/i,
   /skuteczno/i, /rekord lot/i, /kwota/i, /\bzysk/i,
 ];

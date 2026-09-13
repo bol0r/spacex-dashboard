@@ -8,7 +8,8 @@
 
 import type { Zrodlo } from './types';
 
-const D = '2026-09-12'; // data dostępu dla całej partii z fazy 1
+const D = '2026-09-12';  // partie 1–3 fazy 3
+const D2 = '2026-09-13'; // partia „reszta imperium"
 
 export const Z = {
   wikiStarship: {
@@ -340,5 +341,50 @@ export const Z = {
     tytul: 'Apollo Saturn V launch hold / recycle and scrub turnaround constraints',
     url: 'https://www.nasa.gov/history/afj/launchwindow/scrub.html',
     wydawca: 'NASA', dostep: D,
+  },
+  wikiZip2: {
+    tytul: 'Zip2',
+    url: 'https://en.wikipedia.org/wiki/Zip2',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiPaypal: {
+    tytul: 'PayPal',
+    url: 'https://en.wikipedia.org/wiki/PayPal',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiNeuralink: {
+    tytul: 'Neuralink',
+    url: 'https://en.wikipedia.org/wiki/Neuralink',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiBoring: {
+    tytul: 'The Boring Company',
+    url: 'https://en.wikipedia.org/wiki/The_Boring_Company',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiOpenai: {
+    tytul: 'OpenAI',
+    url: 'https://en.wikipedia.org/wiki/OpenAI',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiXai: {
+    tytul: 'xAI',
+    url: 'https://en.wikipedia.org/wiki/XAI_(company)',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiPrzejecie: {
+    tytul: 'Acquisition of Twitter by Elon Musk',
+    url: 'https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiHyperloop: {
+    tytul: 'Hyperloop',
+    url: 'https://en.wikipedia.org/wiki/Hyperloop',
+    wydawca: 'Wikipedia', dostep: D2,
+  },
+  wikiFundacja: {
+    tytul: 'Musk Foundation',
+    url: 'https://en.wikipedia.org/wiki/Musk_Foundation',
+    wydawca: 'Wikipedia', dostep: D2,
   },
 } as const satisfies Record<string, Zrodlo>;
