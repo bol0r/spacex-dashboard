@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.4.6** · **by Dead Net & Claude**
+**Wersja 0.5.0** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -33,6 +33,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 - [Mechanika interfejsu](#mechanika-interfejsu)
 - [Zasady pracy z treścią](#zasady-pracy-z-treścią)
 - [Numeracja wersji](#numeracja-wersji)
+- [Offline i wydajność](#offline-i-wydajność)
 - [Co zostało do zrobienia](#co-zostało-do-zrobienia)
 - [Android](#android)
 
@@ -47,7 +48,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
 | 3 | Treść — 180 z 180+ encji | gotowe |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
-| 5 | PWA, wydajność, pomiar dostępności, dopieszczenie | nierozpoczęte |
+| 5 | PWA i offline, skorowidz, wirtualizacja osi, pomiar Lighthouse | gotowe |
 
 Poza planem, na życzenie: przeprojektowany ekran główny z paskiem sekcji,
 przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór języka,
@@ -59,6 +60,10 @@ Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 4,88 (cel ≥ 6)
 Tłumaczenia EN: interfejs w całości, treść 6 / 180 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
+
+Lighthouse (mobile, build produkcyjny, 13.09.2026):
+Wydajność 99 · Dostępność 100 · Dobre praktyki 100 · SEO 100
+FCP 1,6 s · LCP 1,7 s · TBT 0 ms · CLS 0
 ```
 
 ## Uruchomienie
@@ -79,11 +84,12 @@ otwarty wprost z dysku, bez serwera.
 | Polecenie | Co robi |
 |---|---|
 | `npm run dev` | serwer deweloperski |
-| `npm run build` | `tsc -b` i build produkcyjny do `dist/` |
+| `npm run build` | skorowidz, `tsc -b`, build produkcyjny i service worker |
 | `npm run preview` | podgląd builda |
 | `npm test` | testy walidatora, parsera `[[id]]` i indeksu relacji |
 | `npm run waliduj` | walidator bazy z raportem |
 | `npm run przeglad` | pełny przegląd jakości (osiem grup sprawdzeń) |
+| `npm run skorowidz` | generuje lekką wersję bazy pod pierwszy render |
 | `npm run sprawdz` | wszystko powyżej po kolei — używaj przed commitem |
 
 ## Stack
@@ -407,6 +413,80 @@ Numer stoi w `package.json` i jest wstrzykiwany do kodu przez Vite jako
 z manifestem paczki. `1.0.0` będzie zarezerwowane dla odbioru całości:
 180+ encji i zamknięta faza 5.
 
+## Offline i wydajność
+
+### Tryb offline
+
+Cała aplikacja razem z bazą wiedzy jest zapisywana w pamięci przeglądarki przy
+pierwszej wizycie — 36 plików, około 1,1 MB. Potem działa bez sieci: ekran
+główny, arkusze, wyszukiwarka, oś czasu, tryb filmowy i diagramy. Sprawdzone
+przez wyłączenie serwera i przeładowanie strony.
+
+Service worker powstaje przy budowaniu (`vite-plugin-pwa`, generator Workbox),
+ale rejestrujemy go ręcznie w `src/lib/offline.ts` i dopiero po pierwszym
+renderze — instalacja nie ma konkurować o sieć z ładowaniem danych. Nad `file://`
+rejestracja jest pomijana, bo tam service worker nie działa z założenia.
+
+**Nowa wersja instaluje się w tle i przejmuje dopiero przy kolejnym uruchomieniu**
+(`skipWaiting: false`). Podmiana strony w trakcie czytania arkusza byłaby
+wyrwaniem jej użytkownikowi spod palca. Praktyczny skutek przy pracy nad
+projektem: po `npm run build` podgląd pokazuje starą wersję, dopóki nie zamknie
+się wszystkich kart albo nie wyczyści rejestracji.
+
+### Skorowidz
+
+Ekran główny nie pokazuje ani jednego akapitu treści, a mimo to czekał na
+wszystkie osiem porcji danych — pół megabajta. `skrypty/skorowidz.ts` generuje
+`src/data/gen/skorowidz.ts`: tę samą bazę bez treści, faktów, powiązań i źródeł,
+czyli bez wszystkiego, co widać dopiero po otwarciu arkusza. Struktura jest
+identyczna, więc ekran główny nie odróżnia jednej od drugiej — arkusz owszem
+(pole `pelna`) i dlatego czeka na pełną.
+
+Jeden wyjątek: encja bohatera zachowuje fakty, bo jej kafel czyta z nich licznik
+lotów. Bez tego blok pojawiał się dopiero po dojechaniu pełnej bazy i spychał
+w dół resztę ekranu — mierzalne przesunięcie układu.
+
+Plik jest generowany przed każdym budowaniem, a `npm run sprawdz` dodatkowo
+sprawdza, czy jest aktualny. Nie da się go zostawić w tyle za danymi.
+
+### Co jeszcze skróciło pierwsze wejście
+
+Pomiary poniżej to Lighthouse w trybie mobilnym, na buildzie produkcyjnym.
+
+| Zmiana | Wydajność | FCP | LCP |
+|---|---|---|---|
+| stan wyjściowy | 91 | 2,3 s | 3,1 s |
+| skorowidz + warstwy ładowane leniwie | 92 | 2,2 s | 3,1 s |
+| React w osobnej porcji | 92 | 2,2 s | 3,1 s |
+| pełna baza dopiero po pierwszym malowaniu | 93 | 2,0 s | 3,0 s |
+| zapowiedź skorowidza w HTML-u | **99** | **1,6 s** | **1,7 s** |
+
+Największy pojedynczy zysk dała ostatnia pozycja, i nie chodziło o bajty, tylko
+o kolejność. Skorowidz jest ładowany dynamicznie, więc przeglądarka dowiadywała
+się o nim dopiero po wykonaniu głównego pliku — o jedną podróż do serwera za
+późno. Wtyczka `zapowiedzSkorowidza` w `vite.config.ts` dokłada do HTML-a
+`modulepreload`, żeby pobieranie ruszyło równolegle z resztą.
+
+Reszta zmian: warstwy wyjeżdżające na wierzch (arkusze, wyszukiwarka, oś czasu,
+losowanie, tryb filmowy) są doczytywane przy pierwszym otwarciu, co zdejmuje
+ze ścieżki startowej framer-motion i wyszukiwarkę pełnotekstową. React dostał
+własną porcję, bo Rollup doklejał go do porcji z animacjami i przez to ciągnął
+ją przy starcie mimo tego, że ekran główny nie animuje niczego.
+
+### Wirtualizacja osi czasu
+
+Przesuwalna oś na ekranie głównym ma 317 znaczników i sześćdziesiąt lat skali
+rozłożonych na 7 720 px, a w kadrze telefonu mieści się kilkanaście. Rysowanie
+całości kosztowało 996 węzłów DOM, z czego prawie wszystkie poza ekranem.
+
+`OsCzasu` trzyma teraz tylko to, co widać, plus ekran zapasu z każdej strony.
+Okno przestawia się dopiero po przejechaniu połowy zapasu — bez tej histerezy
+każda klatka przewijania kończyłaby się przerysowaniem całej osi. Efekt:
+996 → od 102 do 272 węzłów zależnie od miejsca, a cały dokument z 3 347 do 1 937.
+
+Pozostałe listy zostają bez wirtualizacji świadomie. Najdłuższa sekcja to słownik
+z 44 pigułkami, a kafle są tanie — koszt maszynerii przewyższyłby zysk.
+
 ## Co zostało do zrobienia
 
 Lista uszeregowana po wadze, nie po kolejności faz.
@@ -424,10 +504,11 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    W tej partii przeszedłem przez trzydzieści kilka najsłabszych encji i wplotłem
    linki w zdania zamiast doklejać je na końcu — stąd wzrost z 4,40. Domknięcie
    do szóstki wymaga tej samej roboty na pozostałych stu czterdziestu.
-4. **Faza 5** — PWA i tryb offline, generowany lekki skorowidz zamiast ładowania
-   wszystkich kategorii na ekranie głównym, wirtualizacja list powyżej 60
-   elementów, pomiar Lighthouse, weryfikacja `prefers-reduced-motion`
-   i haptyki na prawdziwym telefonie.
+4. **Weryfikacja na prawdziwym telefonie.** `prefers-reduced-motion` jest
+   obsłużone i w CSS, i w każdym komponencie z animacją, a haptyka siedzi za
+   `navigator.userActivation`. Jedno i drugie sprawdziłem w kodzie i w
+   przeglądarce na komputerze — na sprzęcie z włączonym systemowym ograniczeniem
+   ruchu i z działającym silnikiem drgań nikt tego jeszcze nie widział.
 5. **Tłumaczenie treści** — 174 encje bez wersji angielskiej.
 6. **Widok grafu powiązań** (propozycja, nie zaczęte) — mapa połączeń między
    encjami we własnym SVG, z prostym układem siłowym. Pokazywałaby to, co jest
@@ -449,9 +530,9 @@ wydajnościowym. Zamiast tego ekran startowy pojawiający się dopiero wtedy, gd
 
 ## Android
 
-Aplikacja jest przygotowana pod PWA i po fazie 5 będzie instalowalna wprost
-z Chrome na Androidzie: pełny ekran, własna ikona, tryb offline, bez sklepu
-i bez opłat.
+Aplikacja jest instalowalna wprost z Chrome na Androidzie: pełny ekran, własna
+ikona, tryb offline, bez sklepu i bez opłat. Manifest, ikony i service worker
+powstają przy budowaniu — szczegóły w [Offline i wydajność](#offline-i-wydajność).
 
 Dla Google Play właściwą drogą jest **Capacitor** — opakowuje istniejący kod
 bez przepisywania czegokolwiek, daje plik `.aab`, ikonę, splash i dostęp do

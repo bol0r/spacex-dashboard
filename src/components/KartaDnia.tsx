@@ -49,7 +49,6 @@ export function KartaDnia({ baza }: { baza: BazaWiedzy }) {
     <button
       type="button"
       onClick={() => otworz(pozycja.encjaId)}
-      aria-label={`Karta dnia: ${encja.nazwa}. ${pozycja.tekst}`}
       className="material dotyk col-span-2 flex flex-col items-start rounded-kafel p-5 text-left lg:col-span-4"
     >
       <span className="flex w-full items-baseline justify-between gap-3">

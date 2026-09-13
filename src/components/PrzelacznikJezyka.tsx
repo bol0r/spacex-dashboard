@@ -25,7 +25,7 @@ export function PrzelacznikJezyka() {
             type="button"
             onClick={() => ustawJezyk(j)}
             aria-pressed={czynny}
-            aria-label={NAZWY_JEZYKOW[j]}
+            aria-label={`${j.toUpperCase()} — ${NAZWY_JEZYKOW[j]}`}
             className={`dotyk min-h-[36px] min-w-[44px] rounded-pigulka px-3 text-przypis
                         ${czynny ? 'text-tlo' : 'text-tekst-2'}`}
             style={{ background: czynny ? 'var(--blekit)' : 'transparent' }}

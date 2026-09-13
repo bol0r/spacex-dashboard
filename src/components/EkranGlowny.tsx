@@ -27,6 +27,7 @@ export function EkranGlowny({ baza, onOtworz }: { baza: BazaWiedzy; onOtworz: (i
   const sekcje = useMemo(() => ulozSekcje(baza), [baza]);
   const doPaska = useMemo(() => sekcje.map((s) => ({ id: s.id, liczba: s.encje.length })), [sekcje]);
 
+
   // Pociągnięcie w dół na górze strony, jak w iOS. Uzbraja się tylko przy
   // scrollY równym zeru, żeby nie kolidowało ze zwykłym przewijaniem.
   const start = useRef<number | null>(null);

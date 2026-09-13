@@ -66,6 +66,7 @@ export function zbudujBaze(
   nakladka: Nakladka = {},
   /** Czy budujemy wersję kanoniczną (polską) — wtedy nakładki nie ma i nie brakuje. */
   kanoniczny = true,
+  pelna = true,
 ): BazaWiedzy {
   const przychodzace: IndeksRelacji['przychodzace'] = {};
   const linkiWTresci: IndeksRelacji['linkiWTresci'] = {};
@@ -108,7 +109,7 @@ export function zbudujBaze(
   osGlobalna.sort((a, b) => a.data.localeCompare(b.data));
 
   return {
-    encje, kolejnosc, indeks: { przychodzace, linkiWTresci },
+    pelna, encje, kolejnosc, indeks: { przychodzace, linkiWTresci },
     osGlobalna: odsiejPowtorzenia(osGlobalna, encje),
   };
 }
@@ -118,6 +119,32 @@ const NAKLADKI: Record<Jezyk, () => Promise<Nakladka>> = {
   pl: () => Promise.resolve({}),
   en: () => import('./tlumaczenia/en').then((m) => m.en),
 };
+
+const pamiecSkorowidza = new Map<Jezyk, Promise<BazaWiedzy>>();
+
+/**
+ * Skorowidz: ta sama struktura co pełna baza, ale bez treści, faktów, powiązań
+ * i źródeł. Ekran główny czyta z niego dokładnie to samo co wcześniej, tyle że
+ * zamiast pół megabajta danych ściąga ich ułamek — i maluje się od razu, zamiast
+ * czekać na osiem porcji, z których żadna nie jest mu na tym etapie potrzebna.
+ */
+export function zaladujSkorowidz(jezyk: Jezyk = 'pl'): Promise<BazaWiedzy> {
+  const gotowe = pamiecSkorowidza.get(jezyk);
+  if (gotowe !== undefined) return gotowe;
+
+  const nowe = Promise.all([
+    import('./gen/skorowidz').then((m) => m.SKOROWIDZ),
+    NAKLADKI[jezyk](),
+  ]).then(([wg, nakladka]) => zbudujBaze(
+    KATEGORIE.map((k) => [k, wg[k]] as const),
+    nakladka,
+    jezyk === 'pl',
+    false,
+  ));
+
+  pamiecSkorowidza.set(jezyk, nowe);
+  return nowe;
+}
 
 const pamiec = new Map<Jezyk, Promise<BazaWiedzy>>();
 

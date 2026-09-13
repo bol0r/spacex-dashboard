@@ -1,0 +1,3 @@
+# Strefa Wiedzy — projekt edukacyjny, niepowiązany ze SpaceX.
+User-agent: *
+Allow: /

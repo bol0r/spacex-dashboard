@@ -26,10 +26,11 @@ export function Kafel({ encja, rozmiar, onOtworz }: Props) {
       <button
         type="button"
         onClick={() => onOtworz(encja.id)}
-        aria-label={`${encja.nazwa} — ${encja.krotki}`}
         className={`${KLASY_ROZMIARU.pigulka} material dotyk flex items-center justify-between gap-3 rounded-kafel px-4 py-3 text-left`}
       >
         <span className="text-naglowek text-tekst">{encja.nazwa}</span>
+        {/* Opis nie mieści się na pigułce, ale czytnik ekranu ma go usłyszeć. */}
+        <span className="sr-only">{encja.krotki}</span>
         <span className="shrink-0 text-podpis text-tekst-2">{t.typy[encja.typ]}</span>
       </button>
     );
@@ -43,13 +44,14 @@ export function Kafel({ encja, rozmiar, onOtworz }: Props) {
     <button
       type="button"
       onClick={() => onOtworz(encja.id)}
-      aria-label={`${encja.nazwa} — ${encja.krotki}`}
       className={`${KLASY_ROZMIARU[rozmiar]} material dotyk flex flex-col justify-between rounded-kafel p-4 text-left`}
     >
       <span className="text-naglowek text-tekst">{encja.nazwa}</span>
 
       <span className="mt-2 flex flex-col gap-1">
-        {zOpisem && <span className="line-clamp-3 text-podtytul text-tekst-2">{encja.krotki}</span>}
+        {zOpisem
+          ? <span className="line-clamp-3 text-podtytul text-tekst-2">{encja.krotki}</span>
+          : <span className="sr-only">{encja.krotki}</span>}
         {/* Typ i status idą razem na dole — dzięki temu nazwa ma całą szerokość i nie łamie się na dwie linie. */}
         <span className="flex items-baseline justify-between gap-2 text-podpis text-tekst-2">
           <span>{t.typy[encja.typ]}</span>

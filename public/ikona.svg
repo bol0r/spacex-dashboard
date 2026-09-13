@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Strefa Wiedzy">
+  <rect width="512" height="512" fill="#000000"/>
+
+  <!-- Krzywizna Ziemi: jedyny błękit, ten sam, którym aplikacja oznacza to, co klikalne.
+       Łuk jest wycinkiem wielkiego okręgu, więc na ikonie wygląda prawie płasko. -->
+  <path d="M -40 470 A 520 520 0 0 1 552 470" fill="none" stroke="#4DA6FF" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Ślad wznoszenia, przerywany tak jak na diagramie profilu lotu. Kończy się
+       nad łukiem, bo poniżej byłby już pod powierzchnią. -->
+  <path d="M 256 372 L 256 338" fill="none" stroke="#9BA1A6" stroke-width="9"
+        stroke-linecap="round" stroke-dasharray="2 24" opacity="0.8"/>
+
+  <!-- Sylwetka członu nośnego. Dziób, korpus, przewężenie dyszy — same proste i jeden łuk. -->
+  <g fill="#F5F7FA">
+    <path d="M256 78c17 26 26 55 26 86v6h-52v-6c0-31 9-60 26-86z"/>
+    <rect x="230" y="170" width="52" height="152" rx="4"/>
+    <path d="M230 322h52l10 26h-72z"/>
+  </g>
+
+  <!-- Siatki aerodynamiczne: dwa znaczniki przy dziobie. To one rozpoznają
+       rakietę wracającą, a nie lecącą w górę. -->
+  <g fill="#F5F7FA" opacity="0.9">
+    <rect x="206" y="180" width="20" height="32" rx="3"/>
+    <rect x="286" y="180" width="20" height="32" rx="3"/>
+  </g>
+</svg>

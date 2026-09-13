@@ -106,6 +106,12 @@ export interface IndeksRelacji {
 }
 
 export interface BazaWiedzy {
+  /**
+   * `false` oznacza skorowidz: encje mają nazwę, opis, ciekawostki i wydarzenia,
+   * ale pustą treść, fakty, powiązania i źródła. Ekran główny nie odróżnia jednej
+   * od drugiej — arkusz owszem, więc czeka na pełną.
+   */
+  pelna: boolean;
   encje: Record<string, EncjaZIndeksem>;
   kolejnosc: string[];
   indeks: IndeksRelacji;

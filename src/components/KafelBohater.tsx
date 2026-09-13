@@ -20,7 +20,6 @@ export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id:
     <button
       type="button"
       onClick={() => onOtworz(encja.id)}
-      aria-label={`${encja.nazwa} — ${encja.krotki}`}
       className="material dotyk col-span-2 flex gap-5 rounded-kafel p-5 text-left lg:col-span-2"
     >
       <SylwetkaStarship klasa="h-[212px] w-auto shrink-0 self-start text-tekst opacity-90" />
@@ -28,6 +27,8 @@ export function KafelBohater({ encja, onOtworz }: { encja: Encja; onOtworz: (id:
       <span className="flex flex-1 min-w-0 flex-col">
         <span className="flex items-baseline justify-between gap-2">
           <span className="text-tytul-2 text-tekst">{encja.nazwa}</span>
+          {/* Opis nie mieści się na kaflu bohatera, ale ma trafić do nazwy dostępnej. */}
+          <span className="sr-only">{encja.krotki}</span>
           {encja.status !== undefined && (
             <span className="shrink-0 text-podpis text-tekst-2">{t.statusy[encja.status]}</span>
           )}

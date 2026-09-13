@@ -35,6 +35,9 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
   const ulubione = useStan((s) => s.ulubione);
   const przelaczUlubione = useStan((s) => s.przelaczUlubione);
   const encja = baza.encje[id];
+  // Skorowidz wystarcza na nagłówek arkusza, ale nie ma w nim treści ani źródeł.
+  // Zdarza się to tylko przy bardzo wolnej sieci — pełna baza jedzie w tle od startu.
+  const pelna = baza.pelna;
   const karta = useRef<HTMLDivElement>(null);
   const przewijak = useRef<HTMLDivElement>(null);
   const [naGorze, ustawNaGorze] = useState(true);
@@ -175,21 +178,27 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
 
           <p className="mt-3 max-w-[58ch] text-tresc text-tekst">{encja.krotki}</p>
 
-          <div className="mt-5">
-            <PasekFaktow fakty={encja.fakty} />
-          </div>
+          {pelna ? (
+            <>
+              <div className="mt-5">
+                <PasekFaktow fakty={encja.fakty} />
+              </div>
 
-          {/* Diagram idzie między liczbami a tekstem: jest podsumowaniem faktów
-              i wprowadzeniem do opisu, nie ilustracją doklejoną na końcu. */}
-          {maGrafike(encja.id) && (
-            <div className="mt-6">
-              <GrafikaEncji id={encja.id} />
-            </div>
+              {/* Diagram idzie między liczbami a tekstem: jest podsumowaniem faktów
+                  i wprowadzeniem do opisu, nie ilustracją doklejoną na końcu. */}
+              {maGrafike(encja.id) && (
+                <div className="mt-6">
+                  <GrafikaEncji id={encja.id} />
+                </div>
+              )}
+
+              <div className="mt-6">
+                <Tresc akapity={encja.tresc} />
+              </div>
+            </>
+          ) : (
+            <p className="mt-6 text-podtytul text-tekst-2" role="status">{t.wczytywanie}</p>
           )}
-
-          <div className="mt-6">
-            <Tresc akapity={encja.tresc} />
-          </div>
 
           <div className="mt-6">
             <Ciekawostka ciekawostki={encja.ciekawostki} />
@@ -200,14 +209,18 @@ export function Arkusz({ id, odleglosc, tryb, onZamknij, okruszki }: Props) {
             <MiniOs os={encja.os} />
           </section>
 
-          <section className="mt-7">
-            <h3 className="mb-1 text-naglowek text-tekst">{t.prowadziDalej}</h3>
-            <ProwadziDalej encja={encja} />
-          </section>
+          {pelna && (
+            <>
+              <section className="mt-7">
+                <h3 className="mb-1 text-naglowek text-tekst">{t.prowadziDalej}</h3>
+                <ProwadziDalej encja={encja} />
+              </section>
 
-          <div className="mt-7">
-            <SkadToWiem encja={encja} />
-          </div>
+              <div className="mt-7">
+                <SkadToWiem encja={encja} />
+              </div>
+            </>
+          )}
         </div>
       </motion.div>
     </motion.div>

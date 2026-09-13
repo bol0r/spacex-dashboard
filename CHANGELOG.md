@@ -5,6 +5,54 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.5.0 — 13 września 2026
+
+**Faza piąta: tryb offline, skorowidz, wirtualizacja osi i pomiar.**
+
+Aplikacja działa bez sieci. Cała baza — 36 plików, około 1,1 MB — zapisuje się
+przy pierwszej wizycie i potem otwiera się bez serwera: ekran główny, arkusze,
+wyszukiwarka, oś czasu, tryb filmowy i diagramy. Sprawdzone przez wyłączenie
+serwera i przeładowanie strony, nie przez przeczytanie konfiguracji.
+
+Nowa wersja instaluje się w tle i przejmuje przy kolejnym uruchomieniu. Podmiana
+strony w trakcie czytania byłaby wyrwaniem jej użytkownikowi spod palca.
+
+Manifest, ikony (własne SVG, cztery rozmiary) i robots.txt — aplikacja jest
+instalowalna wprost z Chrome na Androidzie.
+
+**Pierwsze wejście: 91 → 99 punktów Lighthouse, FCP 2,3 → 1,6 s, LCP 3,1 → 1,7 s.**
+
+Złożyły się na to cztery rzeczy. Skorowidz — generowana lekka wersja bazy bez
+treści, faktów, powiązań i źródeł, czyli bez wszystkiego, co widać dopiero po
+otwarciu arkusza. Warstwy wyjeżdżające na wierzch doczytywane przy pierwszym
+otwarciu, co zdejmuje ze ścieżki startowej framer-motion i wyszukiwarkę. React
+w osobnej porcji, bo Rollup doklejał go do porcji z animacjami. I pełna baza
+budowana dopiero po pierwszym malowaniu.
+
+Największy pojedynczy zysk — siedem punktów — dała jednak zapowiedź skorowidza
+w HTML-u, i nie chodziło o bajty, tylko o kolejność: ładowany dynamicznie, był
+odkrywany o jedną podróż do serwera za późno.
+
+**Dostępność 100, dobre praktyki 100, SEO 100.**
+
+Trzy realne błędy, nie kosmetyka. Liczniki w pasku sekcji miały kontrast 4,37:1
+wobec wymaganych 4,5 — przezroczystość zbijała kolor poniżej progu. Kafle,
+przełącznik języka i karta dnia miały `aria-label` niezawierający widocznego
+tekstu, przez co sterowanie głosem prosiło o „PL", a przeglądarka szukała
+przycisku „Polski"; opisy przeniesione do tekstu dla czytnika. Brakowało
+robots.txt.
+
+**Wirtualizacja osi czasu.** Przesuwalna oś rysowała wszystkie 317 znaczników
+i sześćdziesiąt lat skali — 996 węzłów DOM, z czego prawie wszystkie poza
+ekranem. Teraz trzyma to, co widać, plus ekran zapasu: 102–272 węzły zależnie
+od miejsca, cały dokument z 3 347 do 1 937. Pozostałe listy zostają bez
+wirtualizacji świadomie — najdłuższa ma 44 pozycje.
+
+Po drodze jedno mierzalne przesunięcie układu: kafel bohatera czyta licznik
+lotów z faktów, których w skorowidzu nie było, więc blok pojawiał się dopiero
+po dojechaniu pełnej bazy i spychał w dół resztę ekranu. Encja bohatera
+zachowuje teraz fakty; CLS wrócił do zera.
+
 ## 0.4.6 — 13 września 2026
 
 **Partia ósma — siedemnaście encji. Minimum z briefu osiągnięte: 180.**

@@ -101,7 +101,8 @@ export function PasekSekcji({ sekcje }: { sekcje: ReadonlyArray<{ id: Sekcja; li
               style={{ background: czynna ? 'var(--blekit)' : 'var(--mat-kafel-mocny)' }}
             >
               {t.sekcjeKrotko[s.id]}
-              <span className="liczby text-podpis opacity-70">{s.liczba}</span>
+              {/* Bez przezroczystości: krycie 0,7 zbijało --tekst-2 do 4,37:1, poniżej progu WCAG AA. */}
+              <span className={`liczby text-podpis ${czynna ? 'opacity-70' : ''}`}>{s.liczba}</span>
             </button>
           );
         })}

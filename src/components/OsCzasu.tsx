@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { BazaWiedzy, Wydarzenie } from '../data/types';
 import { useStan } from '../app/stan';
 import { dataKrotko } from '../lib/format';
@@ -111,11 +111,51 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
     return { znaczniki: wynik, lata, szerokosc: kursor };
   }, [baza]);
 
-  // Wchodzimy na prawym końcu — tam, gdzie dzieje się teraz.
+  // Okno widoczności. Oś ma ponad trzysta znaczników i sześćdziesiąt lat skali,
+  // a w kadrze mieści się kilkanaście — rysowanie całości kosztowało tysiąc
+  // węzłów DOM, z czego 97 procent poza ekranem. Trzymamy więc tylko to, co
+  // widać, plus ekran zapasu z każdej strony, żeby przewijanie nie doganiało
+  // dorysowywania.
+  const [okno, ustawOkno] = useState<{ od: number; do: number }>({ od: -Infinity, do: Infinity });
+
   useEffect(() => {
     const el = przewijak.current;
-    if (el !== null) el.scrollLeft = el.scrollWidth;
+    if (el === null) return;
+
+    // Wchodzimy na prawym końcu — tam, gdzie dzieje się teraz.
+    el.scrollLeft = el.scrollWidth;
+
+    let klatka = 0;
+    const przelicz = () => {
+      const zapas = Math.max(el.clientWidth, 320);
+      const od = el.scrollLeft - zapas;
+      const doX = el.scrollLeft + el.clientWidth + zapas;
+      // Przestawiamy okno dopiero po przejechaniu połowy zapasu. Bez tej histerezy
+      // każda klatka przewijania kończyłaby się przerysowaniem całej osi.
+      ustawOkno((p) => (Math.abs(od - p.od) < zapas / 2 ? p : { od, do: doX }));
+    };
+
+    const naPrzewijanie = () => {
+      if (klatka !== 0) return;
+      klatka = requestAnimationFrame(() => { klatka = 0; przelicz(); });
+    };
+
+    przelicz();
+    el.addEventListener('scroll', naPrzewijanie, { passive: true });
+    return () => {
+      el.removeEventListener('scroll', naPrzewijanie);
+      if (klatka !== 0) cancelAnimationFrame(klatka);
+    };
   }, [szerokosc]);
+
+  const widoczneLata = useMemo(
+    () => lata.filter((l) => l.x + l.szerokosc >= okno.od && l.x <= okno.do),
+    [lata, okno],
+  );
+  const widoczneZnaczniki = useMemo(
+    () => znaczniki.filter((z) => z.x >= okno.od && z.x <= okno.do),
+    [znaczniki, okno],
+  );
 
   return (
     <section
@@ -144,7 +184,7 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
         <div className="relative h-[124px]" style={{ width: szerokosc + 64, marginInline: 32 }}>
           {/* Skala lat. Pełna kreska w latach z wydarzeniami, przerywana tam, gdzie czas zwinięto. */}
           <div className="absolute inset-x-0 bottom-[26px] h-px bg-[color:var(--wlos)]" />
-          {lata.map((l) => {
+          {widoczneLata.map((l) => {
             const zEtykieta = l.zEtykieta;
             return (
               <div key={l.rok} className="absolute bottom-0" style={{ left: l.x }}>
@@ -171,7 +211,7 @@ export function OsCzasu({ baza }: { baza: BazaWiedzy }) {
             );
           })}
 
-          {znaczniki.map((z) => {
+          {widoczneZnaczniki.map((z) => {
             const encja = baza.encje[z.encjaId];
             if (encja === undefined) return null;
             const kamien = z.waga === 3;
