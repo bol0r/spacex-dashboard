@@ -78,8 +78,25 @@ npm run dev
 ```
 
 Serwer deweloperski wstaje na porcie z `.claude/launch.json` (domyślnie 5199).
-Build produkcyjny używa ścieżek względnych, więc `dist/index.html` działa także
-otwarty wprost z dysku, bez serwera.
+
+Żeby obejrzeć wersję produkcyjną:
+
+```bash
+npm run build
+npm run preview
+```
+
+Podgląd wstaje pod `http://localhost:4173`. Dodaj `-- --host`, żeby wpuścić
+telefon z tej samej sieci — adres pojawi się w konsoli przy `Network:`.
+
+**`dist/index.html` otwarty podwójnym kliknięciem pokaże czarną stronę.** Wejście
+aplikacji jest modułem, a modułu wczytanego z `file://` przeglądarka nie wykona:
+traktuje go jako obce źródło i nie zgłasza przy tym żadnego błędu. Nie da się
+tego obejść konfiguracją — potrzebny jest serwer, i `npm run preview` nim jest.
+
+Tryb offline i instalacja jako aplikacja wymagają dodatkowo HTTPS. Na
+`localhost` działają, po zwykłym HTTP w sieci lokalnej już nie — dopiero po
+wdrożeniu na hosting.
 
 ## Polecenia
 

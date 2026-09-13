@@ -37,7 +37,14 @@ function zapowiedzSkorowidza(): Plugin {
   };
 }
 
-// Ścieżki względne, żeby build działał także z file:// (wymóg z briefu).
+// Ścieżki względne, żeby build dało się położyć w dowolnym podkatalogu hostingu,
+// a nie tylko w korzeniu domeny.
+//
+// Uwaga, bo to myliło: NIE oznacza to, że dist/index.html zadziała po podwójnym
+// kliknięciu. Wejście jest modułem (<script type="module">), a modułu wczytanego
+// z file:// przeglądarka nie wykona — traktuje go jako obce źródło i milczy.
+// Widać wtedy czarną stronę bez żadnego błędu w konsoli. Potrzebny jest serwer:
+// `npm run preview`.
 export default defineConfig({
   base: './',
   plugins: [
