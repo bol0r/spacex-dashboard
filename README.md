@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.5.3** · **by Dead Net & Claude**
+**Wersja 0.6.0** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -29,6 +29,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 - [Przegląd jakości](#przegląd-jakości)
 - [Dwa języki](#dwa-języki)
 - [Grafiki](#grafiki)
+- [Graf powiązań](#graf-powiązań)
 - [System wizualny](#system-wizualny)
 - [Mechanika interfejsu](#mechanika-interfejsu)
 - [Zasady pracy z treścią](#zasady-pracy-z-treścią)
@@ -328,6 +329,60 @@ Trzy nakładki dzielą jedną powłokę (`Nakladka.tsx`) — ten sam sposób wej
 wyjścia, obsługi Escape i pułapki fokusu. Różnicowanie ich tylko po to, żeby były
 różne, byłoby kosztem dla użytkownika.
 
+## Graf powiązań
+
+Cała reszta aplikacji pokazuje sieć po jednym węźle naraz: otwierasz encję,
+widzisz jej sąsiadów, wchodzisz głębiej. Graf pokazuje kształt całości — 180
+haseł i 884 połączenia na jednym obrazku. Widać z niego rzeczy, których nie widać
+z żadnego arkusza: że Falcon 9 ma 63 połączenia i jest najgęstszym punktem bazy,
+że Elon Musk łączy skupisko Tesli ze skupiskiem SpaceX, że słownik leży w środku,
+bo linkują do niego wszyscy.
+
+### Dlaczego nie animowana symulacja
+
+Standardowy graf siłowy rozjeżdża się na oczach patrzącego przez kilka sekund po
+otwarciu. Brief zabrania animacji, której użytkownik nie wywołał, i ma rację:
+obraz, który sam się układa, każe czekać, zanim da się cokolwiek przeczytać.
+
+Układ liczy się więc do końca przed pierwszym narysowaniem — 300 iteracji metodą
+Fruchtermana-Reingolda, około 60 ms — i potem nie rusza się, dopóki ktoś go nie
+przesunie, nie przybliży albo nie dotknie. Losowość jest zasiana na stałe, więc
+ten sam graf wygląda tak samo przy każdym otwarciu i da się zapamiętać, gdzie co
+leży.
+
+### Skupiska
+
+Do klasycznej metody dołożone jest jedno: węzły z tej samej sekcji ciągnie słabo
+do wspólnego punktu. Bez tego układ jest poprawny i nieczytelny — z tym widać
+podział na Teslę, SpaceX i resztę imperium, a mosty między nimi rzucają się
+w oczy.
+
+### Czytelność
+
+Podpisów nie da się pokazać wszystkich: przy oddalonym widoku zlewają się
+w plamę. Rysujemy je w kolejności od najgęściej powiązanych i pomijamy każdy,
+który wchodziłby na już postawiony albo uciekał poza kadr. Wybrany węzeł i jego
+sąsiedzi mają pierwszeństwo, bo to ich użytkownik właśnie szuka. Każdy podpis ma
+obrys w kolorze tła — nie cień, tylko `paint-order: stroke` — bo stoi na
+plątaninie krawędzi.
+
+Kolor jest jeden: błękit oznacza wybrany węzeł i jego połączenia, dokładnie tak
+jak w całej aplikacji oznacza to, co klikalne. Reszta grafu przygasa.
+
+### Obsługa
+
+Przesuwanie palcem albo myszą, skalowanie kółkiem, szczypaniem dwoma palcami
+i przyciskami. Dotknięcie węzła go wybiera — trafienie liczone jest w promieniu
+26 px od środka, więc kropka o średnicy kilku pikseli ma normalne pole dotyku.
+
+Z klawiatury: strzałki przenoszą wybór do sąsiedniego węzła w danym kierunku
+(z karą za odchylenie, żeby strzałka w prawo nie skakała w dół), Enter otwiera
+hasło. Pasek na dole ma `aria-live`, więc czytnik ekranu mówi, co zostało wybrane.
+
+Otwarcie encji z grafu nie zamyka grafu — tak samo jak w trybie filmowym.
+Zamknięcie arkusza wraca do tego samego miejsca i tego samego wyboru, bo graf
+jest miejscem, z którego się eksploruje, a nie jednorazowym wejściem.
+
 ## Ekran startowy
 
 Nie jest to intro. Ekran pojawia się **dopiero po 250 ms** ładowania i przy
@@ -566,11 +621,9 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    przeglądarce na komputerze — na sprzęcie z włączonym systemowym ograniczeniem
    ruchu i z działającym silnikiem drgań nikt tego jeszcze nie widział.
 5. **Tłumaczenie treści** — 174 encje bez wersji angielskiej.
-6. **Widok grafu powiązań** (propozycja, nie zaczęte) — mapa połączeń między
-   encjami we własnym SVG, z prostym układem siłowym. Pokazywałaby to, co jest
-   sednem produktu i czego dziś nie widać nigdzie: gęstość i kształt sieci
-   linków. To jest sensowna wersja pomysłu na „przestrzenną sferę haseł",
-   który odrzuciliśmy — patrz niżej.
+6. ~~Widok grafu powiązań~~ — **zrobione w 0.6.0**, opis w rozdziale
+   [Graf powiązań](#graf-powiązań). To była sensowna wersja pomysłu na
+   „przestrzenną sferę haseł", który odrzuciliśmy — patrz niżej.
 
 ### Odrzucone świadomie
 

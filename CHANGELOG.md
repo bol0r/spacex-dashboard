@@ -5,6 +5,39 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.6.0 — 13 września 2026
+
+**Graf powiązań.**
+
+Ostatnia z propozycji z fazy zero doczekała się realizacji. 180 haseł i 884
+połączenia na jednym obrazku, we własnym SVG, bez żadnej biblioteki.
+
+Układ liczy się do końca przed pierwszym narysowaniem — 300 iteracji metodą
+Fruchtermana-Reingolda, około 60 ms — i potem się nie rusza. Animowana symulacja
+rozjeżdżająca się po otwarciu byłaby ruchem, którego nikt nie wywołał, a przy
+okazji kazałaby czekać, zanim da się cokolwiek przeczytać. Ziarno losowości jest
+stałe, więc graf wygląda tak samo przy każdym otwarciu.
+
+Do klasycznej metody dołożone jest słabe ciążenie węzłów do kotwicy własnej
+sekcji. To ono zamienia kłębek w czytelny obraz: widać skupisko Tesli, skupisko
+SpaceX i Muska jako most między nimi.
+
+Podpisy są odsiewane z kolizji — rysowane od najgęściej powiązanych, pomijane
+gdy wchodzą na już postawiony albo uciekają poza kadr. Każdy ma obrys w kolorze
+tła, bo stoi na plątaninie krawędzi.
+
+Obsługa: przesuwanie, kółko, szczypanie, przyciski skali. Dotknięcie węzła
+liczone w promieniu 26 px od środka, więc kilkupikselowa kropka ma normalne pole
+dotyku. Z klawiatury strzałki przenoszą wybór do sąsiada w danym kierunku,
+Enter otwiera hasło, a pasek wyboru ma `aria-live`.
+
+Otwarcie encji nie zamyka grafu — zamknięcie arkusza wraca do tego samego
+miejsca i tego samego wyboru. Tak samo działa tryb filmowy; oba są miejscami,
+z których się eksploruje.
+
+Widok jest doczytywany leniwie, więc pierwsze wejście do aplikacji nie zmieniło
+się ani o milisekundę: Lighthouse 99 / 100, FCP 1,5 s, LCP 1,7 s, CLS 0.
+
 ## 0.5.3 — 13 września 2026
 
 **Gęstość linkowania: 4,88 → 6,01. Cel z briefu osiągnięty.**
