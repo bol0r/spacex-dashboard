@@ -36,7 +36,7 @@ export const pojecia: Encja[] = [
       { id: 'merlin', powod: 'zdolność do ponownego odpalenia w locie jest jej warunkiem technicznym' },
       { id: 'starlink', powod: 'konstelacja tej wielkości była nieopłacalna bez tańszego kilograma na orbicie' },
     ],
-    zrodla: [Z.wikiStartyFalcon, Z.spaceSetny, Z.sfnRekord],
+    zrodla: [Z.wikiStartyFalcon, Z.spaceSetny, Z.sfnRekord, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -72,7 +72,7 @@ export const pojecia: Encja[] = [
       { id: 'merlin', powod: 'przeciwieństwo — prosty generator gazu wyrzucający spaliny za burtę' },
       { id: 'starship', powod: 'rakieta, w której cykl ten wszedł do użytku' },
     ],
-    zrodla: [Z.wikiFfsc, Z.wikiRaptor],
+    zrodla: [Z.wikiFfsc, Z.wikiRaptor, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -108,7 +108,7 @@ export const pojecia: Encja[] = [
       { id: 'crew-dragon', powod: 'wozi ludzi wyłącznie w tym obszarze' },
       { id: 'falcon-9', powod: 'większość jego startów kończy się właśnie tutaj' },
     ],
-    zrodla: [Z.wikiLeo, Z.wikiStarlink],
+    zrodla: [Z.wikiLeo, Z.wikiStarlink, Z.nasaOdpady],
     zaktualizowano: '2026-09-12',
   },
 
@@ -184,7 +184,7 @@ export const pojecia: Encja[] = [
       { id: 'falcon-9', powod: 'loty na tę orbitę są dla niego najbardziej wymagające energetycznie' },
       { id: 'barki-dronowe', powod: 'przy takim ładunku booster musi lądować na wodzie' },
     ],
-    zrodla: [Z.wikiGto, Z.wikiGeo],
+    zrodla: [Z.wikiGto, Z.wikiGeo, Z.nasaOrbity],
     zaktualizowano: '2026-09-12',
   },
 
@@ -223,7 +223,7 @@ export const pojecia: Encja[] = [
       { id: 'perygeum-apogeum', powod: 'orbita niemal okrągła, więc oba punkty leżą blisko siebie' },
       { id: 'deorbitacja', powod: 'na tych wysokościach atmosfera sprowadza satelitę dopiero po dekadach' },
     ],
-    zrodla: [Z.wikiSso, Z.wikiLeo],
+    zrodla: [Z.wikiSso, Z.wikiLeo, Z.nasaOrbity],
     zaktualizowano: '2026-09-12',
   },
 
@@ -373,7 +373,7 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'element, który zamienił hamowanie w lądowanie punktowe' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiLadowania, Z.wikiStartyStarship],
+    zrodla: [Z.wikiLadowania, Z.wikiStartyStarship, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -411,7 +411,7 @@ export const pojecia: Encja[] = [
       { id: 'starship', powod: 'nie ma jej wcale — ładunek wychodzi przez drzwi w kadłubie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiFalcon9, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiFalcon9, Z.wikiStartyFalcon, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -432,6 +432,7 @@ export const pojecia: Encja[] = [
       { etykieta: 'Co zastępuje', wartosc: 'hel w osobnych butlach kompozytowych', pewnosc: 'potwierdzone' },
       { etykieta: 'Zysk', wartosc: 'mniej masy, mniej instalacji, mniej punktów awarii', pewnosc: 'potwierdzone' },
       { etykieta: 'Zastosowanie', wartosc: 'Starship', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dla porównania', wartosc: 'Falcon 9 używa podgrzewanego helu w obu stopniach', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -449,7 +450,7 @@ export const pojecia: Encja[] = [
       { id: 'raptor', powod: 'metan i tlen służą tu także jako własny gaz nośny' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiAutogeniczne, Z.wikiCrs7],
+    zrodla: [Z.wikiAutogeniczne, Z.wikiCrs7, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -487,7 +488,7 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'ma skrócić czas między lotami z tygodni do dni' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.spaceStageZero, Z.wikiStartyStarship],
+    zrodla: [Z.spaceStageZero, Z.wikiStartyStarship, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -523,7 +524,7 @@ export const pojecia: Encja[] = [
       { id: 'wet-dress-rehearsal', powod: 'kolejny etap przygotowań, tym razem bez odpalania silników' },
       { id: 'falcon-9', powod: 'rutynowy element jego przygotowania do startu' },
     ],
-    zrodla: [Z.wikiAmos6, Z.wikiRaptor],
+    zrodla: [Z.wikiAmos6, Z.wikiRaptor, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -799,8 +800,9 @@ export const pojecia: Encja[] = [
     fakty: [
       { etykieta: 'Definicja', wartosc: 'zbiór satelitów pracujących jako jeden system', pewnosc: 'potwierdzone' },
       { etykieta: 'Starlink', wartosc: 'ok. 10 413 satelitów, 10 397 czynnych', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba według samego SpaceX', wartosc: 'ponad 6 750 — własna strona firmy podaje wartość niższą niż katalogi śledzenia', pewnosc: 'sporne' },
       { etykieta: 'Powód liczebności', wartosc: 'niska orbita to mały obszar widzenia jednego satelity', pewnosc: 'potwierdzone' },
-      { etykieta: 'Alternatywa', wartosc: 'jeden satelita geostacjonarny, opóźnienie ok. 240 ms', pewnosc: 'potwierdzone' },
+      { etykieta: 'Alternatywa', wartosc: 'jeden satelita geostacjonarny; ok. 240 ms z samej drogi sygnału, ponad 600 ms w praktyce według SpaceX', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -818,7 +820,7 @@ export const pojecia: Encja[] = [
       { id: 'deorbitacja', powod: 'planowe usuwanie satelitów jest warunkiem utrzymania takiej sieci' },
       { id: 'koszt-kilograma', powod: 'konstelacja tej wielkości wymaga taniego wynoszenia' },
     ],
-    zrodla: [Z.wikiStarlink, Z.wikiGeo],
+    zrodla: [Z.wikiStarlink, Z.wikiGeo, Z.starlinkTech],
     zaktualizowano: '2026-09-12',
   },
 
@@ -856,7 +858,7 @@ export const pojecia: Encja[] = [
       { id: 'konstelacja', powod: 'przy tysiącach satelitów staje się wymogiem systemowym' },
       { id: 'starlink', powod: 'wymienia satelity w cyklu kilkuletnim, sprowadzając zużyte' },
     ],
-    zrodla: [Z.wikiLeo, Z.wikiKessler],
+    zrodla: [Z.wikiLeo, Z.wikiKessler, Z.starlinkTech],
     zaktualizowano: '2026-09-12',
   },
 
@@ -874,9 +876,10 @@ export const pojecia: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Autorzy i rok', wartosc: 'Donald Kessler i Burton Cour-Palais, czerwiec 1978', pewnosc: 'potwierdzone' },
-      { etykieta: 'Najbardziej zagrożona wysokość', wartosc: 'ok. 785 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Najbardziej zagrożona wysokość', wartosc: 'ok. 785 km; NASA podaje pas 750–1000 km', pewnosc: 'potwierdzone' },
+      { etykieta: 'Średnia prędkość zderzenia', wartosc: 'ok. 10 km/s, ponad dziesięć razy szybciej niż pocisk', pewnosc: 'potwierdzone' },
       { etykieta: 'Satelity na orbicie', wartosc: 'ponad 11 800', stanNa: '2025', pewnosc: 'potwierdzone' },
-      { etykieta: 'Odłamki powyżej 10 cm', wartosc: 'ok. 23 000', stanNa: '2025', pewnosc: 'potwierdzone' },
+      { etykieta: 'Odłamki powyżej 10 cm', wartosc: 'ok. 23 000 w katalogu; NASA szacuje ponad 25 000', stanNa: '2025', pewnosc: 'sporne' },
       { etykieta: 'Odłamki 1–10 cm', wartosc: 'ok. 600 000', stanNa: '2025', pewnosc: 'potwierdzone' },
       { etykieta: 'Test antysatelitarny', wartosc: 'Chiny, 2007, satelita FY-1C na 865 km', pewnosc: 'potwierdzone' },
     ],
@@ -897,7 +900,7 @@ export const pojecia: Encja[] = [
       { id: 'konstelacja', powod: 'tysiące satelitów podnoszą stawkę tego ryzyka' },
       { id: 'starlink', powod: 'największa konstelacja na najbardziej zagrożonych wysokościach' },
     ],
-    zrodla: [Z.wikiKessler, Z.wikiLeo],
+    zrodla: [Z.wikiKessler, Z.wikiLeo, Z.nasaOdpady],
     zaktualizowano: '2026-09-12',
   },
 
@@ -935,7 +938,7 @@ export const pojecia: Encja[] = [
       { id: 'raptor', powod: 'osiąga podobny impuls przy zupełnie innym paliwie' },
       { id: 'metaloks-i-keroloks', powod: 'wybór paliwa wpływa na tę wartość bezpośrednio' },
     ],
-    zrodla: [Z.wikiMerlin, Z.wikiRaptor],
+    zrodla: [Z.wikiMerlin, Z.wikiRaptor, Z.nasaImpuls],
     zaktualizowano: '2026-09-13',
   },
 
@@ -972,7 +975,7 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'czystsze spalanie skraca przygotowanie do kolejnego lotu' },
       { id: 'impuls-wlasciwy', powod: 'wybór paliwa wpływa na tę wartość bezpośrednio' },
     ],
-    zrodla: [Z.wikiRaptor, Z.wikiMerlin],
+    zrodla: [Z.wikiRaptor, Z.wikiMerlin, Z.spacexPrzewodnik, Z.spacexStarship],
     zaktualizowano: '2026-09-13',
   },
 
@@ -993,6 +996,7 @@ export const pojecia: Encja[] = [
       { etykieta: 'Po co', wartosc: 'lądowanie członu i przejście przez maksymalne obciążenia aerodynamiczne', pewnosc: 'potwierdzone' },
       { etykieta: 'Ciąg jednego Merlina', wartosc: '845 kN przy ziemi', pewnosc: 'potwierdzone' },
       { etykieta: 'Hamowanie lądowania', wartosc: '1 silnik, mocno zdławiony', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zakres dławienia Merlina', wartosc: 'od 190 000 do 108 300 funtów siły, czyli do 57 procent', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1009,7 +1013,7 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'warunek techniczny całej idei' },
       { id: 'super-heavy', powod: 'steruje powrotem, odpalając część silników zamiast wszystkich' },
     ],
-    zrodla: [Z.wikiLadowania, Z.wikiMerlin],
+    zrodla: [Z.wikiLadowania, Z.wikiMerlin, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1046,7 +1050,7 @@ export const pojecia: Encja[] = [
       { id: 'raptor', powod: 'w wersji 3 kanały schowano w samym korpusie silnika' },
       { id: 'reuzywalnosc', powod: 'warunek, bez którego silnik nie przetrwa wielu odpaleń' },
     ],
-    zrodla: [Z.wikiFalcon1, Z.wikiMerlin],
+    zrodla: [Z.wikiFalcon1, Z.wikiMerlin, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1083,7 +1087,7 @@ export const pojecia: Encja[] = [
       { id: 'hamowania', powod: 'utrzymanie pionu przy lądowaniu zależy wprost od tego układu' },
       { id: 'raptor', powod: 'to jego dysze są przechylane' },
     ],
-    zrodla: [Z.wikiStarship, Z.wikiLadowania],
+    zrodla: [Z.wikiStarship, Z.wikiLadowania, Z.spacexPrzewodnik, Z.spacexStarship],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1160,7 +1164,7 @@ export const pojecia: Encja[] = [
       { id: 'delta-v', powod: 'tankowanie na orbicie omija ograniczenie równania rakietowego' },
       { id: 'autogeniczne-cisnienie', powod: 'ten sam problem utrzymania ciśnienia w zbiorniku, w trudniejszych warunkach' },
     ],
-    zrodla: [Z.oigHls, Z.wikiStarship],
+    zrodla: [Z.oigHls, Z.wikiStarship, Z.spacexStarship],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1275,7 +1279,7 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'element, bez którego odzysk na lądzie nie byłby możliwy' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiLadowania, Z.wikiStartyStarship],
+    zrodla: [Z.wikiLadowania, Z.wikiStartyStarship, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1313,7 +1317,7 @@ export const pojecia: Encja[] = [
       { id: 'vandenberg', powod: 'baza, z której się na nią startuje' },
       { id: 'delta-v', powod: 'brak darmowej prędkości obrotu Ziemi podnosi koszt wejścia' },
     ],
-    zrodla: [Z.wikiSso, Z.wikiFram2],
+    zrodla: [Z.wikiSso, Z.wikiFram2, Z.nasaOrbity],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1368,6 +1372,7 @@ export const pojecia: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Zasada', wartosc: 'hamowanie atmosferą, potem spadochrony i wodowanie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Spadochrony Dragona', wartosc: 'dwa hamujące i cztery główne', pewnosc: 'potwierdzone' },
       { etykieta: 'Demo-2', wartosc: 'Atlantyk, 2 sierpnia 2020', pewnosc: 'potwierdzone' },
       { etykieta: 'Crew-1', wartosc: 'powrót 2 maja 2021', pewnosc: 'potwierdzone' },
       { etykieta: 'Fram2', wartosc: 'Pacyfik u wybrzeży Kalifornii, kwiecień 2025', pewnosc: 'potwierdzone' },
@@ -1388,7 +1393,7 @@ export const pojecia: Encja[] = [
       { id: 'demo-2', powod: 'jej wodowanie zamknęło pięćdziesięcioletnią przerwę' },
       { id: 'hamowania', powod: 'zupełnie inna droga powrotu, stosowana dla członów rakiety' },
     ],
-    zrodla: [Z.nasaDemo2, Z.wikiDragon2],
+    zrodla: [Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1409,6 +1414,7 @@ export const pojecia: Encja[] = [
       { etykieta: 'Falcon 9', wartosc: 'I stopień 41,2 m; z przedziałem 47,7 m', pewnosc: 'potwierdzone' },
       { etykieta: 'Co jest na zewnątrz', wartosc: 'siatki aerodynamiczne', pewnosc: 'potwierdzone' },
       { etykieta: 'Awarie w historii firmy', wartosc: 'loty 2 i 3 Falcona 1', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rozdzielenie w Falconie 9', wartosc: 'trzy zatrzaski mechaniczne zwalniane pneumatycznie, bez pirotechniki', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1426,7 +1432,7 @@ export const pojecia: Encja[] = [
       { id: 'starship', powod: 'rozwiązuje ten problem inaczej, rozdzieleniem w ruchu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiFalcon9, Z.wikiFalcon1],
+    zrodla: [Z.wikiFalcon9, Z.wikiFalcon1, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1592,7 +1598,7 @@ export const pojecia: Encja[] = [
     tresc: [
       'Stosunek ciągu do masy to ciąg podzielony przez ciężar. Jeśli wynosi mniej niż jeden, rakieta stoi na stanowisku i pali paliwo. Jeśli więcej — rusza, a nadwyżka ponad jedynkę odpowiada przyspieszeniu, jakie faktycznie zyskuje.',
       'Wartość rośnie w trakcie lotu, bo ciąg pozostaje z grubsza stały, a masa maleje z każdą sekundą pracy silników. Prom kosmiczny startował ze stosunkiem 1,3 i dochodził w locie do 3.',
-      'Osobno liczy się ten sam stosunek dla samego silnika, bez rakiety. Tu wartości są zupełnie innego rzędu: silnik F-1 z Saturna V miał 94,1, a [[merlin|Merlin 1D]] — 199,5, co czyni go jednym z najlepszych pod tym względem silników, jakie zbudowano.',
+      'Osobno liczy się ten sam stosunek dla samego silnika, bez rakiety. Tu wartości są zupełnie innego rzędu: silnik F-1 z Saturna V miał 94,1, a [[merlin|Merlin 1D]] — od 184 do 199,5, zależnie od źródła. SpaceX w przewodniku dla klientów nie podaje liczby, ale pisze wprost, że jest to najwyższy stosunek ciągu do masy, jaki kiedykolwiek osiągnięto w silniku startowym.',
       'Ta druga liczba tłumaczy, dlaczego [[falcon-9|Falcon 9]] ma dziewięć małych silników zamiast jednego dużego. Lekki silnik można powielić, a powielenie daje [[hamowania|możliwość hamowania]] i odporność na awarię pojedynczej jednostki.',
     ],
     fakty: [
@@ -1600,7 +1606,7 @@ export const pojecia: Encja[] = [
       { etykieta: 'Warunek startu', wartosc: 'wartość większa od jedności', pewnosc: 'potwierdzone' },
       { etykieta: 'Prom kosmiczny', wartosc: '1,3 przy starcie, do 3 w locie', pewnosc: 'potwierdzone' },
       { etykieta: 'Silnik F-1', wartosc: '94,1', pewnosc: 'potwierdzone' },
-      { etykieta: 'Merlin 1D', wartosc: '199,5', pewnosc: 'potwierdzone' },
+      { etykieta: 'Merlin 1D', wartosc: '199,5 według jednego źródła, 184 według innego', pewnosc: 'sporne' },
     ],
     ciekawostki: [
       {
@@ -1617,7 +1623,7 @@ export const pojecia: Encja[] = [
       { id: 'super-heavy', powod: 'trzydzieści trzy silniki to konsekwencja stawiania na lekkie jednostki' },
       { id: 'rownanie-ciolkowskiego', powod: 'mówi ile prędkości; ten stosunek mówi czy w ogóle wystartuje' },
     ],
-    zrodla: [Z.wikiCiag, Z.wikiMerlin],
+    zrodla: [Z.wikiCiag, Z.wikiMerlin, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-13',
   },
 

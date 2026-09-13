@@ -44,7 +44,7 @@ const firma: Encja[] = [
       { id: 'gigafactory', powod: 'sieć fabryk, na której stoi cała jej produkcja' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiMusk],
+    zrodla: [Z.wikiTesla, Z.wikiMusk, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -162,7 +162,7 @@ const samochody: Encja[] = [
       { id: 'nadzor-nhtsa', powod: 'urząd publicznie skorygował jej przekaz o ocenie bezpieczeństwa' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiModelS, Z.wikiTesla],
+    zrodla: [Z.wikiModelS, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -203,7 +203,7 @@ const samochody: Encja[] = [
       { id: 'gigafactory', powod: 'fabryki rozbudowane pod jego wolumen' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiModel3, Z.wikiTesla],
+    zrodla: [Z.wikiModel3, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -238,7 +238,7 @@ const samochody: Encja[] = [
       { id: 'tesla', powod: 'jej trzeci samochód i najtrudniejszy w produkcji' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiModelS],
+    zrodla: [Z.wikiTesla, Z.wikiModelS, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -278,7 +278,7 @@ const samochody: Encja[] = [
       { id: 'tesla', powod: 'jej najlepiej sprzedający się produkt' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiModelY, Z.wikiTesla],
+    zrodla: [Z.wikiModelY, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -318,7 +318,7 @@ const samochody: Encja[] = [
       { id: 'model-y', powod: 'model, który finansuje takie eksperymenty' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiCybertruck, Z.wikiTesla],
+    zrodla: [Z.wikiCybertruck, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 ];
@@ -400,7 +400,7 @@ const produkcja: Encja[] = [
       { id: 'cybertruck', powod: 'wyjeżdża z zakładu w Teksasie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGigaNevada, Z.wikiTesla],
+    zrodla: [Z.wikiGigaNevada, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -440,7 +440,7 @@ const produkcja: Encja[] = [
       { id: 'powerwall', powod: 'ogniwa z tego zakładu trafiają także do magazynów energii' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGigaNevada, Z.wikiTesla],
+    zrodla: [Z.wikiGigaNevada, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -557,7 +557,7 @@ const oprogramowanie: Encja[] = [
       { id: 'dojo', powod: 'superkomputer budowany do trenowania jego modeli' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiAutopilot, Z.wikiTesla],
+    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -568,7 +568,7 @@ const oprogramowanie: Encja[] = [
     aka: ['FSD', 'FSD Beta', 'Autosteer on City Streets'],
     krotki: 'Płatny pakiet o nazwie obiecującej pełną autonomię, działający na poziomie 2 i wymagający stałego nadzoru.',
     tresc: [
-      'FSD jest rozszerzeniem [[autopilot|Autopilota]] o rozpoznawanie sygnalizacji i znaków stopu oraz prowadzenie po drogach lokalnych. Formalnie pozostaje układem poziomu 2 — kierowca musi nadzorować jazdę bez przerwy. Widzi przy tym wyłącznie obraz z kamer, bo [[tesla-vision|Tesla Vision]] usunęła z układu radar i ultradźwięki. Nazwa była wielokrotnie krytykowana za wprowadzanie klientów w błąd, a prawnicy argumentowali, że reklamowanie systemu poziomu 2 jako „pełnego samoprowadzenia" pozwalało ominąć wymogi dopuszczeniowe stawiane pojazdom rzeczywiście autonomicznym.', 'Historia cen jest sama w sobie opowieścią: 3 tysiące dolarów jako dodatek w 2016 roku, 5 tysięcy w 2019, 10 tysięcy w październiku 2020, 15 tysięcy we wrześniu 2022, obniżka do 12 tysięcy rok później i do 8 tysięcy w kwietniu 2024, z abonamentem 99 dolarów miesięcznie. W lutym 2026 [[tesla|Tesla]] zakończyła sprzedaż pakietu i zostawiła wyłącznie abonament — model przychodu bliższy [[robotaxi|usłudze przewozowej]] niż sprzedaży wyposażenia.',
+      'FSD jest rozszerzeniem [[autopilot|Autopilota]] o rozpoznawanie sygnalizacji i znaków stopu oraz prowadzenie po drogach lokalnych. Formalnie pozostaje układem poziomu 2 — kierowca musi nadzorować jazdę bez przerwy. Tesla nazywa go dziś w dokumentach giełdowych „FSD (Supervised)” i pisze wprost, że odpowiedzialność za prowadzenie pojazdu spoczywa na kierowcy. Widzi przy tym wyłącznie obraz z kamer, bo [[tesla-vision|Tesla Vision]] usunęła z układu radar i ultradźwięki. Nazwa była wielokrotnie krytykowana za wprowadzanie klientów w błąd, a prawnicy argumentowali, że reklamowanie systemu poziomu 2 jako „pełnego samoprowadzenia" pozwalało ominąć wymogi dopuszczeniowe stawiane pojazdom rzeczywiście autonomicznym.', 'Historia cen jest sama w sobie opowieścią: 3 tysiące dolarów jako dodatek w 2016 roku, 5 tysięcy w 2019, 10 tysięcy w październiku 2020, 15 tysięcy we wrześniu 2022, obniżka do 12 tysięcy rok później i do 8 tysięcy w kwietniu 2024, z abonamentem 99 dolarów miesięcznie. W lutym 2026 [[tesla|Tesla]] zakończyła sprzedaż pakietu i zostawiła wyłącznie abonament — model przychodu bliższy [[robotaxi|usłudze przewozowej]] niż sprzedaży wyposażenia.',
       'Wraz ze wzrostem ceny spadał odsetek klientów, którzy go kupowali — z szacowanych 37 procent w 2019 roku do 12 procent w 2021.', 'W lutym 2023 roku [[nadzor-nhtsa|NHTSA]] objęła akcją serwisową 362 758 samochodów z FSD Beta i wstrzymała przyjmowanie nowych uczestników programu. Poprawkę wydano w marcu 2023 jako wersję 11.3.1.',
     ],
     fakty: [
@@ -598,7 +598,7 @@ const oprogramowanie: Encja[] = [
       { id: 'dojo', powod: 'superkomputer budowany do trenowania jego modeli' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiAutopilot, Z.wikiTesla],
+    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -756,7 +756,7 @@ const reszta: Encja[] = [
       { id: 'ogniwa-4680', powod: 'ta sama technologia ogniw w innym zastosowaniu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTeslaEnergy, Z.wikiTesla],
+    zrodla: [Z.wikiTeslaEnergy, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -793,7 +793,7 @@ const reszta: Encja[] = [
       { id: 'ogniwa-4680', powod: 'ogniwa, na których stoi cała ta produkcja' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTeslaEnergy, Z.wikiTesla],
+    zrodla: [Z.wikiTeslaEnergy, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -833,7 +833,7 @@ const reszta: Encja[] = [
       { id: 'fsd', powod: 'korzysta z tej samej linii prac nad percepcją i sterowaniem' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiOptimus, Z.wikiTesla],
+    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-12',
   },
 
@@ -913,7 +913,7 @@ const teksas: Encja[] = [
       { id: 'model-y', powod: 'pierwszy model produkowany w tym zakładzie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiCybertruck, Z.wikiOptimus],
+    zrodla: [Z.wikiTesla, Z.wikiCybertruck, Z.wikiOptimus, Z.secTesla10k],
     zaktualizowano: '2026-09-13',
   },
 ];
@@ -1000,7 +1000,7 @@ const partia7: Encja[] = [
       { id: 'ogniwa-4680', powod: 'rozbudowa produkcji ogniw jest warunkiem tej skali' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSemi, Z.wikiTesla],
+    zrodla: [Z.wikiSemi, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1201,7 +1201,7 @@ const partia7: Encja[] = [
       { id: 'tesla', powod: 'jej główne miejsce produkcji na eksport' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGigaShanghai, Z.wikiTesla],
+    zrodla: [Z.wikiGigaShanghai, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1242,7 +1242,7 @@ const partia7: Encja[] = [
       { id: 'tesla', powod: 'jej jedyny zakład produkcyjny w Europie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGigaBerlin, Z.wikiTesla],
+    zrodla: [Z.wikiGigaBerlin, Z.wikiTesla, Z.secTesla10k],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1254,14 +1254,16 @@ const partia7: Encja[] = [
     krotki: 'Obietnica z 2016 roku: flota samochodów bez kierowcy, w której właściciel zarabia na stojącym aucie. Wciąż niezrealizowana.',
     tresc: [
       'Pomysł pojawił się w [[master-plan|Master Planie Part Deux]] z 2016 roku i brzmiał konkretnie: właściciel dodaje swój samochód do wspólnej floty jednym dotknięciem w aplikacji, auto wozi ludzi, gdy on go nie potrzebuje, a on zarabia. Warunkiem była jazda autonomiczna dziesięciokrotnie bezpieczniejsza od człowieka.',
-      'Dziesięć lat później warunek nie jest spełniony. [[fsd|Full Self-Driving]] pozostaje układem poziomu 2 w klasyfikacji SAE, czyli wymagającym stałego nadzoru kierowcy, a [[nadzor-nhtsa|dochodzenia urzędu]] przypisały [[autopilot|Autopilotowi]] udział w co najmniej 467 wypadkach.',
+      'Dziesięć lat później warunek nie jest spełniony w tej formie, w jakiej go zapowiedziano. [[fsd|Full Self-Driving]] w samochodach klientów pozostaje układem poziomu 2 w klasyfikacji SAE, czyli wymagającym stałego nadzoru kierowcy, a [[nadzor-nhtsa|dochodzenia urzędu]] przypisały [[autopilot|Autopilotowi]] udział w co najmniej 467 wypadkach.',
+      'Usługa jednak ruszyła — w innym kształcie niż w planie z 2016 roku. W raporcie rocznym za 2025 rok [[tesla|Tesla]] pisze wprost, że w czerwcu 2025 uruchomiła Robotaxi, platformę autonomicznych przejazdów na zamówienie. Nie jest to flota prywatnych aut dorabiających w czasie wolnym, tylko usługa prowadzona przez firmę.',
       'W październiku 2024 roku [[tesla|Tesla]] pokazała koncepcję na imprezie „We, Robot". Ten sam pokaz przyniósł jednak zarzut, który dobrze streszcza problem całego projektu: obecne tam roboty [[optimus|Optimus]] pracowały głównie pod zdalnym sterowaniem, o czym firma nie poinformowała.',
       'Ta encja jest tu po to, żeby zapisać różnicę między zapowiedzią a stanem faktycznym — nie żeby ją oceniać. Zapowiedź jest udokumentowana, stan faktyczny również.',
     ],
     fakty: [
       { etykieta: 'Pierwsza zapowiedź', wartosc: 'Master Plan Part Deux, 2016', pewnosc: 'potwierdzone' },
       { etykieta: 'Warunek techniczny', wartosc: 'jazda dziesięciokrotnie bezpieczniejsza od człowieka', pewnosc: 'potwierdzone' },
-      { etykieta: 'Stan FSD', wartosc: 'poziom 2 SAE, wymaga stałego nadzoru', stanNa: '2026', pewnosc: 'potwierdzone' },
+      { etykieta: 'Uruchomienie usługi', wartosc: 'czerwiec 2025, według raportu rocznego Tesli', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stan FSD w autach klientów', wartosc: 'poziom 2 SAE, wymaga stałego nadzoru', stanNa: '2026', pewnosc: 'potwierdzone' },
       { etykieta: 'Pokaz koncepcji', wartosc: '„We, Robot", październik 2024', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -1273,6 +1275,7 @@ const partia7: Encja[] = [
     os: [
       { data: '2016', tytul: 'Zapowiedź w Part Deux', opis: 'Flota robotaksówek trafia do dokumentu programowego firmy.', waga: 3 },
       { data: '2024-10', tytul: 'Pokaz „We, Robot"', opis: 'Prezentacja koncepcji i zarzut o przemilczaną telemanipulację robotów.', waga: 2 },
+      { data: '2025-06', tytul: 'Uruchomienie usługi Robotaxi', opis: 'Tesla startuje z autonomicznymi przejazdami na zamówienie.', waga: 3 },
     ],
     powiazane: [
       { id: 'master-plan', powod: 'obietnica zapisana w Part Deux' },
@@ -1281,7 +1284,7 @@ const partia7: Encja[] = [
       { id: 'optimus', powod: 'pokazany na tej samej imprezie, z tym samym zarzutem o przemilczenie' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiAutopilot, Z.cleantechPlany],
+    zrodla: [Z.wikiAutopilot, Z.cleantechPlany, Z.secTesla10k],
     zaktualizowano: '2026-09-13',
   },
 

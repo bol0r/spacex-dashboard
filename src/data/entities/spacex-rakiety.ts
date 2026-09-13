@@ -16,11 +16,11 @@ export const rakiety: Encja[] = [
       'Wariant załogowy [[hls-artemis|Starship HLS]] ma posadzić astronautów na Księżycu w ramach programu Artemis. Test dokowania planowany jest na 2027 rok, lądowanie z ludźmi na pokładzie na 2028 — obie daty przesuwały się już wielokrotnie i należy je czytać jako intencję, nie jako termin.',
     ],
     fakty: [
-      { etykieta: 'Wysokość', wartosc: '121,3 m', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wysokość', wartosc: '121,3 m w konstrukcji, która latała; SpaceX podaje 124 m (72 m człon, 52 m statek)', pewnosc: 'potwierdzone' },
       { etykieta: 'Średnica', wartosc: '9 m', pewnosc: 'potwierdzone' },
-      { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN', pewnosc: 'potwierdzone' },
-      { etykieta: 'Silniki', wartosc: '33 Raptory w dolnym stopniu, 6 w górnym', pewnosc: 'potwierdzone' },
-      { etykieta: 'Masa paliwa', wartosc: 'ok. 4 600 t', pewnosc: 'szacunkowe' },
+      { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN w konstrukcji, która latała; SpaceX podaje 8 240 tf, czyli ok. 80,8 MN', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki', wartosc: '33 Raptory w dolnym stopniu, 6 w górnym (3 zwykłe, 3 próżniowe)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Masa paliwa', wartosc: 'ok. 4 600 t; SpaceX podaje 3 650 t w członie i 1 600 t w statku', pewnosc: 'sporne' },
       { etykieta: 'Liczba lotów testowych', wartosc: '13', stanNa: '2026-09-12', pewnosc: 'potwierdzone' },
       { etykieta: 'Materiał kadłuba', wartosc: 'stal nierdzewna — 301, potem 304L, obecnie stop 30X', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek na LEO (Block 1)', wartosc: '15 t', pewnosc: 'szacunkowe' },
@@ -47,7 +47,7 @@ export const rakiety: Encja[] = [
       { id: 'spacex', powod: 'główny program firmy po Falconie 9' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiStarship, Z.wikiStartyStarship, Z.cnbcLot13, Z.slsLot14],
+    zrodla: [Z.wikiStarship, Z.wikiStartyStarship, Z.cnbcLot13, Z.slsLot14, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -65,8 +65,9 @@ export const rakiety: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Silniki', wartosc: '33 × Raptor', pewnosc: 'potwierdzone' },
-      { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN', pewnosc: 'potwierdzone' },
-      { etykieta: 'Masa paliwa', wartosc: 'ok. 3 400 t', pewnosc: 'szacunkowe' },
+      { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN; SpaceX podaje 8 240 tf, czyli ok. 80,8 MN', pewnosc: 'sporne' },
+      { etykieta: 'Masa paliwa', wartosc: 'ok. 3 400 t; SpaceX podaje 3 650 t', pewnosc: 'sporne' },
+      { etykieta: 'Układ silników', wartosc: '13 sterowalnych w środku, 20 po obwodzie', pewnosc: 'potwierdzone' },
       { etykieta: 'Średnica', wartosc: '9 m', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwsze złapanie przez wieżę', wartosc: '13 października 2024, lot 5', pewnosc: 'potwierdzone' },
       { etykieta: 'Sposób odzysku', wartosc: 'chwyt przez ramiona wieży, bez nóg lądowniczych', pewnosc: 'potwierdzone' },
@@ -88,7 +89,7 @@ export const rakiety: Encja[] = [
       { id: 'reuzywalnosc', powod: 'chwyt przez wieżę to najdalej posunięta wersja tej idei' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiStarship, Z.wikiStartyStarship],
+    zrodla: [Z.wikiStarship, Z.wikiStartyStarship, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -137,7 +138,7 @@ export const rakiety: Encja[] = [
       { id: 'falcon-heavy', powod: 'jego wersja potrójna, zbudowana z trzech takich członów' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStartyFalcon, Z.snewsOrbcomm, Z.spaceBarkaCrs8, Z.spaceSetny],
+    zrodla: [Z.wikiStartyFalcon, Z.snewsOrbcomm, Z.spaceBarkaCrs8, Z.spaceSetny, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -178,7 +179,7 @@ export const rakiety: Encja[] = [
       { id: 'elon-musk', powod: 'na pierwszy lot oddał własny samochód zamiast balastu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -222,7 +223,7 @@ export const rakiety: Encja[] = [
       { id: 'reuzywalnosc', powod: 'kapsuła wraca i leci ponownie, w odróżnieniu od kapsuł z epoki Apollo' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiDragon2, Z.nasaDemo2],
+    zrodla: [Z.wikiDragon2, Z.nasaDemo2, Z.spacexDragon],
     zaktualizowano: '2026-09-12',
   },
 
@@ -266,7 +267,7 @@ export const rakiety: Encja[] = [
       { id: 'leo', powod: 'cała konstelacja pracuje na niskiej orbicie okołoziemskiej' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStarlink, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiStarlink, Z.wikiStartyFalcon, Z.starlinkTech],
     zaktualizowano: '2026-09-12',
   },
 
@@ -353,7 +354,7 @@ export const rakiety: Encja[] = [
       { id: 'reuzywalnosc', powod: 'kapsuły wracały do lotu wcześniej niż stopnie rakiet' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiDragon1, Z.wikiCots],
+    zrodla: [Z.wikiDragon1, Z.wikiCots, Z.spacexDragon],
     zaktualizowano: '2026-09-13',
   },
 
@@ -472,7 +473,7 @@ export const rakiety: Encja[] = [
       { id: 'cots', powod: 'lata w ramach kontraktu zaopatrzeniowego z tego programu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiDragon2, Z.wikiDragon1],
+    zrodla: [Z.wikiDragon2, Z.wikiDragon1, Z.spacexDragon],
     zaktualizowano: '2026-09-13',
   },
 
@@ -510,7 +511,7 @@ export const rakiety: Encja[] = [
       { id: 'leo', powod: 'tylko z niskiej orbity sygnał zwykłego telefonu w ogóle dociera' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStarlink, Z.cnbcLot13],
+    zrodla: [Z.wikiStarlink, Z.cnbcLot13, Z.starlinkTech],
     zaktualizowano: '2026-09-13',
   },
 
@@ -548,7 +549,7 @@ export const rakiety: Encja[] = [
       { id: 'fram2', powod: 'lot po orbicie biegunowej korzystał z łączności poza zasięgiem stacji' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStarlink, Z.wikiSpaceX],
+    zrodla: [Z.wikiStarlink, Z.wikiSpaceX, Z.starlinkTech],
     zaktualizowano: '2026-09-13',
   },
 ];

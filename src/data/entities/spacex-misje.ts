@@ -239,7 +239,7 @@ const wczesne: Encja[] = [
       { id: 'falcon-9', powod: 'rakieta zbudowana pod wymagania tego programu' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiCots, Z.wikiSpaceX],
+    zrodla: [Z.wikiCots, Z.wikiSpaceX, Z.nasaCots],
     zaktualizowano: '2026-09-12',
   },
 
@@ -277,7 +277,7 @@ const wczesne: Encja[] = [
       { id: 'leo', powod: 'cała misja odbyła się na niskiej orbicie okołoziemskiej' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiCots, Z.wikiDragon2],
+    zrodla: [Z.wikiCots, Z.wikiDragon2, Z.nasaCots],
     zaktualizowano: '2026-09-12',
   },
 
@@ -552,7 +552,7 @@ const przelomy: Encja[] = [
       { id: 'inspiration4', powod: 'ta sama kapsuła poleciała potem w misji w pełni prywatnej' },
     ],
     status: 'historyczne',
-    zrodla: [Z.nasaDemo2, Z.wikiDragon2],
+    zrodla: [Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon],
     zaktualizowano: '2026-09-12',
   },
 
@@ -739,6 +739,7 @@ const starshipMisje: Encja[] = [
       { etykieta: 'Data', wartosc: '13 października 2024', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik', wartosc: 'sukces — pierwsze złapanie członu nośnego', pewnosc: 'potwierdzone' },
       { etykieta: 'Sposób odzysku', wartosc: 'chwyt przez ramiona wieży, bez nóg lądowniczych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Paliwo', wartosc: 'przechłodzony ciekły metan i ciekły tlen', pewnosc: 'potwierdzone' },
       { etykieta: 'Liczba prób', wartosc: 'udane za pierwszym podejściem', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -1300,7 +1301,7 @@ const operacyjne: Encja[] = [
       { id: 'crew-dragon', powod: 'pojazd, który powstał w tym programie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2],
+    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon],
     zaktualizowano: '2026-09-13',
   },
 

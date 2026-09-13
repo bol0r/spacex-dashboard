@@ -622,4 +622,49 @@ export const Z = {
     url: 'https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/stay-cool-nasa-tests-innovative-technique-for-super-cold-fuel-storage/',
     wydawca: 'NASA', dostep: D2,
   },
+  spacexPrzewodnik: {
+    tytul: 'Falcon Users Guide, wydanie z 9 maja 2025',
+    url: 'https://www.spacex.com/assets/media/falcon-users-guide-2025-05-09.pdf',
+    wydawca: 'SpaceX', dostep: D2,
+  },
+  nasaOrbity: {
+    tytul: 'Catalog of Earth Satellite Orbits',
+    url: 'https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits',
+    wydawca: 'NASA Earth Observatory', dostep: D2,
+  },
+  nasaImpuls: {
+    tytul: 'Specific Impulse — Beginners Guide to Aeronautics',
+    url: 'https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/specific-impulse/',
+    wydawca: 'NASA Glenn Research Center', dostep: D2,
+  },
+  nasaOdpady: {
+    tytul: 'Orbital Debris Frequently Asked Questions',
+    url: 'https://orbitaldebris.jsc.nasa.gov/faq/',
+    wydawca: 'NASA Orbital Debris Program Office', dostep: D2,
+  },
+  secTesla10k: {
+    tytul: 'Tesla, Inc. — Form 10-K za rok 2025',
+    url: 'https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D2,
+  },
+  starlinkTech: {
+    tytul: 'Starlink — Technologia satelitarna',
+    url: 'https://www.starlink.com/technology',
+    wydawca: 'SpaceX', dostep: D2,
+  },
+  nasaCots: {
+    tytul: 'Commercial Orbital Transportation Services (COTS) Demonstrations, AIAA Space 2006',
+    url: 'https://ntrs.nasa.gov/api/citations/20060050052/downloads/20060050052.pdf',
+    wydawca: 'NASA', dostep: D2,
+  },
+  spacexStarship: {
+    tytul: 'Starship — dane techniczne producenta',
+    url: 'https://www.spacex.com/vehicles/starship/',
+    wydawca: 'SpaceX', dostep: D2,
+  },
+  spacexDragon: {
+    tytul: 'Dragon — dane techniczne producenta',
+    url: 'https://www.spacex.com/vehicles/dragon/',
+    wydawca: 'SpaceX', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;

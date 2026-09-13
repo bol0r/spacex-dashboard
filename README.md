@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.5.0** · **by Dead Net & Claude**
+**Wersja 0.5.1** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -32,6 +32,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 - [System wizualny](#system-wizualny)
 - [Mechanika interfejsu](#mechanika-interfejsu)
 - [Zasady pracy z treścią](#zasady-pracy-z-treścią)
+- [Skąd biorą się źródła](#skąd-biorą-się-źródła)
 - [Numeracja wersji](#numeracja-wersji)
 - [Offline i wydajność](#offline-i-wydajność)
 - [Co zostało do zrobienia](#co-zostało-do-zrobienia)
@@ -55,7 +56,7 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 180 · Wydarzenia: 317 · Źródła w katalogu: 122 · Diagramy: 4
+Encje: 180 · Wydarzenia: 318 · Źródła w katalogu: 131 · Diagramy: 4
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 4,88 (cel ≥ 6)
 Tłumaczenia EN: interfejs w całości, treść 6 / 180 encji
@@ -403,6 +404,55 @@ Wzięte z briefu i obowiązujące dalej:
 - **Ciekawostka jest obowiązkowa** i ma być czymś, czego nie ma w pierwszym
   akapicie Wikipedii.
 
+## Skąd biorą się źródła
+
+Brief stawia jedną regułę ponad wszystkimi: nie zgaduje się faktów, a czego nie
+potwierdzają dwa niezależne źródła, to albo jest oznaczone jako sporne, albo nie
+wchodzi do bazy. Przez pierwsze pięć faz baza spełniała ją formalnie — każda
+encja ma po dwa źródła — ale 137 encji ze 180 miało oba od tego samego wydawcy,
+najczęściej Wikipedii. Dwa artykuły tej samej encyklopedii nie są dwoma
+niezależnymi źródłami.
+
+### Przyjęta reguła
+
+Drugie źródło musi pochodzić od innego wydawcy, samodzielnie opisywać temat
+encji i nie przeczyć jej faktom. Nie musi powielać każdej liczby — od tego są
+przypisy przy ciekawostkach, gdzie źródło stoi przy konkretnym zdaniu. Każde
+źródło jest otwierane i czytane przed dopięciem; katalog w `zrodla.ts` nie
+zawiera ani jednego adresu, którego nie sprawdziliśmy.
+
+### Czego szukamy najpierw
+
+Dokumentów pierwotnych, bo przy okazji rozwiązują drugi problem: dane od samego
+podmiotu są mocniejsze niż cudze streszczenie. W praktyce oznacza to przewodnik
+dla klientów SpaceX, strony techniczne producenta, raporty roczne składane
+w amerykańskim nadzorze giełdowym, materiały NASA i raporty izby kontroli.
+Jedno takie źródło pokrywa zwykle kilkanaście encji naraz.
+
+### Co się przy tym znajduje
+
+Porównanie dwóch niezależnych opisów tego samego tematu wychwytuje rzeczy,
+których nie widać przy jednym. Przy tym przejściu wyszły między innymi:
+
+- **Ciąg 981 kN** był podpisany jako Merlin 1D w próżni, a jest to wartość
+  silnika drugiego stopnia, Merlina 1D Vacuum.
+- **Stosunek ciągu do masy Merlina** rozjeżdżał się między dwiema encjami —
+  184 w jednej, 199,5 w drugiej. Obie podają teraz zakres i są oznaczone jako
+  sporne. SpaceX w swoim przewodniku nie podaje liczby, tylko stwierdza, że
+  jest to najwyższa wartość osiągnięta w silniku startowym.
+- **Dane Starshipa** różnią się między producentem a katalogami lotów: 124 m
+  i 8 240 tf u SpaceX wobec 121,3 m i 73,5 MN dla konstrukcji, która latała.
+  To różnica wersji, nie błąd — encje podają obie.
+- **Usługa Robotaxi** ruszyła w czerwcu 2025, co Tesla zapisuje w raporcie
+  rocznym. Encja twierdziła, że zapowiedź się nie ziściła, i nie odnotowywała
+  uruchomienia. To była realna luka merytoryczna.
+- **Liczba odłamków** na orbicie: katalog podaje około 23 tysięcy obiektów
+  powyżej 10 cm, NASA szacuje ponad 25 tysięcy. Encja podaje obie wartości.
+- **Opóźnienie łącza geostacjonarnego**: około 240 ms wynika z samej drogi
+  sygnału, ale SpaceX podaje ponad 600 ms w praktyce.
+- **Własna strona Starlinka** mówi o ponad 6 750 satelitach, podczas gdy
+  katalogi śledzenia liczą ich ponad 10 tysięcy.
+
 ## Numeracja wersji
 
 Schemat `0.<najwyższa zamknięta faza>.<kolejny przyrost>`. Wersja `0.4.1`
@@ -496,10 +546,11 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
    dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
    kwestią wyboru, nie długu.
-2. **Niezależność źródeł.** 137 ze 180 encji ma wszystkie źródła od jednego
-   wydawcy, najczęściej Wikipedii. Osiemnaście encji ma źródło pierwotne
-   (NASA, SEC, Tesla). To najpoważniejsza słabość jakościowa bazy i jedyna
-   pozycja na tej liście, która realnie dotyczy wiarygodności, a nie wygody.
+2. **Niezależność źródeł.** 88 ze 180 encji ma wszystkie źródła od jednego
+   wydawcy, najczęściej Wikipedii — po przejściu opisanym w
+   [Skąd biorą się źródła](#skąd-biorą-się-źródła) było ich 137. Siedemdziesiąt
+   cztery encje mają źródło pierwotne. Zostaje głównie wczesna historia firmy,
+   loty Falcona 1, pojedyncze loty Starshipa i biografie.
 3. **Gęstość linkowania.** Średnia 4,88 wobec celu 6; 144 encje są poniżej celu.
    W tej partii przeszedłem przez trzydzieści kilka najsłabszych encji i wplotłem
    linki w zdania zamiast doklejać je na końcu — stąd wzrost z 4,40. Domknięcie

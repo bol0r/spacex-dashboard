@@ -5,6 +5,40 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.5.1 — 13 września 2026
+
+**Niezależność źródeł: 137 → 88 encji opartych na jednym wydawcy.**
+
+Baza spełniała regułę briefu formalnie — każda encja miała po dwa źródła — ale
+137 ze 180 miało oba od tego samego wydawcy, najczęściej Wikipedii. Dwa artykuły
+tej samej encyklopedii nie są dwoma niezależnymi źródłami.
+
+Dziewięć nowych źródeł, w większości pierwotnych: przewodnik dla klientów SpaceX,
+strony techniczne Starshipa, Dragona i Starlinka, raport roczny Tesli złożony
+w nadzorze giełdowym, katalog orbit NASA, strona NASA o impulsie właściwym,
+odpowiedzi biura NASA do spraw śmieci orbitalnych i prezentacja NASA o programie
+COTS. Encji z co najmniej jednym źródłem pierwotnym: 18 → 74.
+
+Przy weryfikacji wyszło siedem rozbieżności, wszystkie zapisane zamiast
+wygładzone. Najpoważniejsza dotyczyła Robotaxi: encja twierdziła, że zapowiedź
+z 2016 roku się nie ziściła, podczas gdy Tesla zapisuje w raporcie rocznym
+uruchomienie usługi w czerwcu 2025. To była luka merytoryczna, nie kwestia
+przypisu — encja dostała nowy akapit, fakt i wydarzenie na osi.
+
+Poza tym: ciąg 981 kN był podpisany jako Merlin 1D w próżni zamiast Merlin 1D
+Vacuum; stosunek ciągu do masy Merlina rozjeżdżał się między dwiema encjami
+i jest teraz oznaczony jako sporny; dane Starshipa różnią się między producentem
+a katalogami lotów i encje podają obie wersje; liczba odłamków orbitalnych,
+opóźnienie łącza geostacjonarnego i liczba satelitów Starlinka na stronie SpaceX
+także rozchodzą się między źródłami i wszystkie trzy pokazują teraz obie wartości.
+
+Nowe fakty ze źródeł pierwotnych: zakres dławienia Merlina, bezpirotechniczne
+rozdzielanie stopni Falcona 9, hel jako czynnik nośny w Falconie wobec własnego
+paliwa w Starshipie, układ 13 sterowanych silników Super Heavy, spadochrony
+Dragona.
+
+Metoda jest opisana w README, w rozdziale „Skąd biorą się źródła".
+
 ## 0.5.0 — 13 września 2026
 
 **Faza piąta: tryb offline, skorowidz, wirtualizacja osi i pomiar.**

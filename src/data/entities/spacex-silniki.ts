@@ -43,7 +43,7 @@ export const silniki: Encja[] = [
       { id: 'reuzywalnosc', powod: 'czyste spalanie metanu jest warunkiem szybkiego relotu' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiRaptor, Z.wikiStarship],
+    zrodla: [Z.wikiRaptor, Z.wikiStarship, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -61,11 +61,11 @@ export const silniki: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Ciąg przy ziemi (1D)', wartosc: '845 kN', pewnosc: 'potwierdzone' },
-      { etykieta: 'Ciąg w próżni (1D)', wartosc: '981 kN', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ciąg w próżni (1D Vacuum)', wartosc: '981 kN — silnik drugiego stopnia', pewnosc: 'potwierdzone' },
       { etykieta: 'Impuls właściwy w próżni (1D)', wartosc: '311 s', pewnosc: 'potwierdzone' },
       { etykieta: 'Impuls właściwy (1D Vacuum)', wartosc: '348 s', pewnosc: 'potwierdzone' },
       { etykieta: 'Ciśnienie w komorze (1D)', wartosc: '9,7 MPa', pewnosc: 'potwierdzone' },
-      { etykieta: 'Stosunek ciągu do masy (1D)', wartosc: '184', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stosunek ciągu do masy (1D)', wartosc: 'od 184 do 199,5 zależnie od źródła', pewnosc: 'sporne' },
       { etykieta: 'Masa sucha (1D)', wartosc: '470 kg', pewnosc: 'potwierdzone' },
       { etykieta: 'Cykl', wartosc: 'generator gazu, paliwo RP-1 i ciekły tlen', pewnosc: 'potwierdzone' },
     ],
@@ -90,7 +90,7 @@ export const silniki: Encja[] = [
       { id: 'reuzywalnosc', powod: 'zdolność do ponownego odpalenia w locie umożliwia lądowanie boostera' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiMerlin, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiMerlin, Z.wikiStartyFalcon, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -167,7 +167,7 @@ export const silniki: Encja[] = [
       { id: 'merlin', powod: 'ten sam zespół konstrukcyjny, zupełnie inna skala' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiDragon2, Z.wikiMueller],
+    zrodla: [Z.wikiDragon2, Z.wikiMueller, Z.spacexDragon],
     zaktualizowano: '2026-09-13',
   },
 ];

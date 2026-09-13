@@ -39,7 +39,7 @@ export const miejsca: Encja[] = [
       { id: 'elon-musk', powod: 'osobiście wybrał tę lokalizację ze względu na pustkę wokół' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStarbase, Z.wikiSpaceX],
+    zrodla: [Z.wikiStarbase, Z.wikiSpaceX, Z.spacexStarship],
     zaktualizowano: '2026-09-12',
   },
 
@@ -404,7 +404,7 @@ export const miejsca: Encja[] = [
       { id: 'siatki-aerodynamiczne', powod: 'czopy do chwytu siedzą tuż pod nimi' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiMechazilla, Z.cbsChwyt],
+    zrodla: [Z.wikiMechazilla, Z.cbsChwyt, Z.spacexStarship],
     zaktualizowano: '2026-09-13',
   },
 
