@@ -812,20 +812,23 @@ const starshipMisje: Encja[] = [
     typ: 'technologia',
     nazwa: 'Starship HLS',
     aka: ['Human Landing System', 'lądownik Artemis'],
-    krotki: 'Załogowa wersja Starshipa, która ma posadzić astronautów na Księżycu — i wymaga tankowania na orbicie.',
+    krotki: 'Załogowa wersja Starshipa, która ma posadzić astronautów na Księżycu — dopiero w 2028 roku i po zatankowaniu na orbicie.',
     tresc: [
       'W kwietniu 2021 roku NASA wybrała [[spacex|SpaceX]] jako jedynego wykonawcę lądownika księżycowego dla misji Artemis III, na kontrakt wart 2,9 miliarda dolarów. Blue Origin dostało później osobną umowę wartą 3,4 miliarda na własny lądownik dla kolejnej misji.',
       'Wersja HLS różni się od [[starship|Starshipa]] w podstawowych rzeczach: nie wchodzi w atmosferę Ziemi, więc nie ma osłony termicznej ani klap sterowych, a do przyziemienia na Księżycu służą silniczki umieszczone wyżej na kadłubie, żeby nie wzbijać pyłu spod dna. Napęd główny to te same silniki [[raptor|Raptor]], a na orbitę wynosi ją [[super-heavy|Super Heavy]].',
       'Najtrudniejszy element nie leży jednak w samym lądowniku, a w tankowaniu. Żeby dolecieć na Księżyc, HLS musi zostać zatankowany na orbicie okołoziemskiej. NASA szacuje, że na jedną misję lądowania potrzeba około ośmiu do dziesięciu startów [[starship|Starshipa]] — tankowców napełniających zbiornikowiec, z którego dopiero zatankuje lądownik. Przekazywanie paliwa w tej skali nie zostało jeszcze zademonstrowane.',
-      'Biuro Inspektora Generalnego NASA wskazuje trzy ryzyka: nieprzetestowane tankowanie orbitalne, przesunięcia harmonogramu [[starship|Starshipa]] rozchodzące się na cały program Artemis oraz konieczność jednoczesnego osiągnięcia gotowości przez wiele systemów. Terminy przesuwały się już wielokrotnie i należy je czytać jako intencję. Najbliżej praktycznego sprawdzenia założeń programu był [[starship-lot-13|lot 13]], na którym statek pierwszy raz wrócił nienaruszony.',
+      'Biuro Inspektora Generalnego NASA wskazuje trzy ryzyka: nieprzetestowane tankowanie orbitalne, przesunięcia harmonogramu [[starship|Starshipa]] rozchodzące się na cały program Artemis oraz konieczność jednoczesnego osiągnięcia gotowości przez wiele systemów. Najbliżej praktycznego sprawdzenia założeń programu był [[starship-lot-13|lot 13]], na którym statek pierwszy raz wrócił nienaruszony.',
+      'Poprzednia misja programu już się odbyła i nie miała ze SpaceX nic wspólnego: Artemis II wystartowała 1 kwietnia 2026 roku na rakiecie SLS, obleciała Księżyc z czteroosobową załogą i wodowała 10 kwietnia po dziewięciu dniach — pierwszy załogowy lot w okolice Księżyca od czasów Apollo. Dalej harmonogram nie tyle się przesunął, co zmienił kształt: Artemis III nie jest już misją lądowania. Według NASA ma się odbyć w 2027 roku na niskiej orbicie okołoziemskiej i sprowadzać do trzech startów pod rząd: kapsuła Orion oraz egzemplarze próbne obu lądowników — Blue Moon Mark 2 od Blue Origin i Starship w wersji trzeciej. Orion ma wykonać dwa spotkania i dwa dokowania, a potem wodować z załogą.',
+      'Podział ról jest przy tym nierówny. Do lądownika Blue Origin, który poczeka na orbicie do trzydziestu dni, wejdzie dwoje astronautów. Do Starshipa nie wejdzie nikt — Orion zadokuje do niego dziobem w dziób i na tym poprzestanie. Pierwsze lądowanie ludzi na Księżycu przesunięto na 2028 rok i na kolejną misję, Artemis IV.',
     ],
     fakty: [
-      { etykieta: 'Kontrakt dla SpaceX', wartosc: '2,9 mld USD, kwiecień 2021', pewnosc: 'potwierdzone' },
-      { etykieta: 'Kontrakt dla Blue Origin', wartosc: '3,4 mld USD', pewnosc: 'potwierdzone' },
+      { etykieta: 'Kontrakty', wartosc: 'SpaceX 2,9 mld USD (kwiecień 2021), Blue Origin 3,4 mld USD', pewnosc: 'potwierdzone' },
       { etykieta: 'Starty na jedno lądowanie', wartosc: 'ok. 8–10 lotów Starshipa', stanNa: '2026-03', pewnosc: 'szacunkowe' },
       { etykieta: 'Różnice wobec Starshipa', wartosc: 'brak osłony termicznej i klap, silniczki lądownicze wyżej na kadłubie', pewnosc: 'potwierdzone' },
       { etykieta: 'Kluczowe ryzyko', wartosc: 'niezademonstrowane tankowanie na orbicie', pewnosc: 'potwierdzone' },
-      { etykieta: 'Harmonogram', wartosc: 'wielokrotnie przesuwany; wersje NASA i wykonawcy się różnią', pewnosc: 'sporne' },
+      { etykieta: 'Artemis III', wartosc: '2027, demonstracja na niskiej orbicie — bez lądowania', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pierwsze lądowanie ludzi', wartosc: '2028, misja Artemis IV', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rola Starshipa w Artemis III', wartosc: 'egzemplarz próbny, dokowanie dziobem w dziób, bez wejścia załogi', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -836,6 +839,7 @@ const starshipMisje: Encja[] = [
     os: [
       { data: '2021-04', tytul: 'Kontrakt HLS', opis: 'NASA wybiera SpaceX jako wykonawcę lądownika dla Artemis III.', waga: 3 },
       { data: '2026-03', tytul: 'Raport Inspektora Generalnego', opis: 'NASA OIG wskazuje tankowanie orbitalne jako główne ryzyko programu.', waga: 2 },
+      { data: '2027', tytul: 'Artemis III — planowana', opis: 'Demonstracja spotkania i dokowania na niskiej orbicie, bez lądowania.', waga: 3 },
     ],
     powiazane: [
       { id: 'starship', powod: 'wersja rozwojowa tego pojazdu, bez osłony termicznej' },
@@ -844,7 +848,7 @@ const starshipMisje: Encja[] = [
       { id: 'starship-lot-13', powod: 'postęp programu lotów testowych rozstrzyga o terminach lądowania' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.oigHls, Z.nprHls, Z.nasaNextstep],
+    zrodla: [Z.oigHls, Z.nprHls, Z.nasaNextstep, Z.nasaArtemis3, Z.nasaProbaLadownika, Z.nasaArtemis2],
     zaktualizowano: '2026-09-12',
   },
 ];
@@ -1283,6 +1287,7 @@ const operacyjne: Encja[] = [
       'Po zakończeniu programu wahadłowców w 2011 roku Stany straciły zdolność wysyłania ludzi w kosmos z własnego terytorium. Odpowiedzią był program załogowy, zbudowany na tej samej zasadzie co towarzyszący mu [[cots|COTS]]: NASA kupuje przewóz, a nie statek, i płaci za osiągnięte kamienie milowe.',
       'Kluczowa decyzja zapadła na etapie wyboru wykonawców. [[bill-gerstenmaier|Bill Gerstenmaier]] przekonał agencję, żeby opóźnić ogłoszenie wyników i znaleźć dodatkowe pieniądze, byle utrzymać dwie konkurujące firmy zamiast jednej. Bez tego program miałby jednego dostawcę i jeden punkt awarii.',
       'Ścieżka [[spacex|SpaceX]] prowadziła przez [[demo-2|Demo-2]] w maju 2020 — lot testowy z ludźmi na pokładzie, kończący certyfikację — a potem przez [[crew-1|Crew-1]] w listopadzie, czyli pierwszą regularną wymianę załogi stacji.',
+      'Drugi dostawca wciąż nie doleciał. Dwudziestego czwartego listopada 2025 roku NASA i Boeing zmieniły umowę: najbliższy lot Starlinera ma być bezzałogowy i towarowy, a liczbę pewnych misji zmniejszono z sześciu do czterech, z dwiema opcjonalnymi. Certyfikacja przesunęła się na 2026 rok. Sześć lat po [[demo-2|Demo-2]] jeden wykonawca wozi ludzi rutynowo, a drugi nie przewiózł jeszcze ani jednej zmiany załogi.',
       'Program rozstrzygnął też o czymś, czego wtedy nie planowano. [[crew-dragon|Kapsuła]] zbudowana dla agencji rządowej stała się później pojazdem [[inspiration4|misji prywatnych]], w tym [[polaris-dawn|Polaris Dawn]] z pierwszym komercyjnym spacerem kosmicznym.',
     ],
     fakty: [
@@ -1291,6 +1296,7 @@ const operacyjne: Encja[] = [
       { etykieta: 'Kluczowa decyzja', wartosc: 'finansowanie dwóch konkurujących firm zamiast jednej', pewnosc: 'potwierdzone' },
       { etykieta: 'Lot certyfikujący SpaceX', wartosc: 'Demo-2, maj 2020', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwszy lot operacyjny', wartosc: 'Crew-1, listopad 2020', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stan drugiego dostawcy', wartosc: 'Starliner niecertyfikowany; najbliższy lot bezzałogowy i towarowy', stanNa: '2026-09', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1310,7 +1316,7 @@ const operacyjne: Encja[] = [
       { id: 'crew-dragon', powod: 'pojazd, który powstał w tym programie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon],
+    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon, Z.nasaStarliner],
     zaktualizowano: '2026-09-13',
   },
 

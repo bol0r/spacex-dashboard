@@ -742,4 +742,24 @@ export const Z = {
     url: 'https://www.spaceflightnow.com/falcon/f1/060325leak.html',
     wydawca: 'Spaceflight Now', dostep: D2,
   },
+  nasaArtemis3: {
+    tytul: 'Artemis III — misja NASA',
+    url: 'https://www.nasa.gov/mission/artemis-iii/',
+    wydawca: 'NASA', dostep: D2,
+  },
+  nasaProbaLadownika: {
+    tytul: 'How NASA Artemis III Lander Test Will Pave Way for Moon Landings',
+    url: 'https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/how-nasas-artemis-iii-lander-test-will-pave-way-for-moon-landings/',
+    wydawca: 'NASA', dostep: D2,
+  },
+  nasaArtemis2: {
+    tytul: 'Artemis II — misja NASA',
+    url: 'https://www.nasa.gov/mission/artemis-ii/',
+    wydawca: 'NASA', dostep: D2,
+  },
+  nasaStarliner: {
+    tytul: 'NASA, Boeing Modify Commercial Crew Contract',
+    url: 'https://www.nasa.gov/blogs/commercialcrew/2025/11/24/nasa-boeing-modify-commercial-crew-contract/',
+    wydawca: 'NASA', dostep: D2,
+  },
 } as const satisfies Record<string, Zrodlo>;
