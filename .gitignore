@@ -3,3 +3,5 @@ dist
 .DS_Store
 *.local
 *.tsbuildinfo
+# Paczki do wgrania na hosting — powstają z builda, nie trzymamy ich w repo.
+wydanie/

@@ -1,0 +1,30 @@
+# Nagłówki dla Cloudflare Pages (tę samą składnię czyta Netlify).
+#
+# Dwie grupy plików i nic pomiędzy:
+#
+# 1. assets/* mają odcisk treści w nazwie (index-UooAexdv.js). Nowa wersja
+#    to nowa nazwa, więc stary plik może leżeć w pamięci przeglądarki rok.
+#
+# 2. Wejście, service worker i manifest nie mają odcisku. Jeśli przeglądarka
+#    zapamięta je na dłużej, po wgraniu poprawki ekipa dalej będzie oglądać
+#    starą wersję — i nie da się tego naprawić z serwera.
+#
+# Reguły celowo się nie nakładają. Cloudflare przy kilku pasujących regułach
+# skleja wartości tego samego nagłówka przecinkiem, więc wspólna reguła /*
+# z Cache-Control dałaby plikom z assets/ jednocześnie „no-cache" i rok.
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/
+  Cache-Control: no-cache
+
+/index.html
+  Cache-Control: no-cache
+
+/sw.js
+  Cache-Control: no-cache
+
+/manifest.webmanifest
+  Cache-Control: no-cache
+  Content-Type: application/manifest+json

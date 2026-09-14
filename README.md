@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.6.2** · **by Dead Net & Claude**
+**Wersja 0.6.3** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -20,6 +20,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 
 - [Stan projektu](#stan-projektu)
 - [Uruchomienie](#uruchomienie)
+- [Wdrożenie na hosting](WDROZENIE.md) — osobny plik
 - [Polecenia](#polecenia)
 - [Stack](#stack)
 - [Struktura katalogów](#struktura-katalogów)
@@ -98,6 +99,10 @@ Tryb offline i instalacja jako aplikacja wymagają dodatkowo HTTPS. Na
 `localhost` działają, po zwykłym HTTP w sieci lokalnej już nie — dopiero po
 wdrożeniu na hosting.
 
+**Wgranie na Cloudflare Pages albo własny serwer** opisuje osobny plik
+[WDROZENIE.md](WDROZENIE.md). W skrócie: `npm run wydanie` tworzy paczkę zip,
+którą przeciąga się do panelu albo rozpakowuje na serwerze.
+
 ## Polecenia
 
 | Polecenie | Co robi |
@@ -109,6 +114,7 @@ wdrożeniu na hosting.
 | `npm run waliduj` | walidator bazy z raportem |
 | `npm run przeglad` | pełny przegląd jakości (osiem grup sprawdzeń) |
 | `npm run skorowidz` | generuje lekką wersję bazy pod pierwszy render |
+| `npm run wydanie` | pełne sprawdzenie i paczka zip do wgrania na hosting |
 | `npm run sprawdz` | wszystko powyżej po kolei — używaj przed commitem |
 
 ## Stack

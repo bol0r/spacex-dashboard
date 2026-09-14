@@ -1,7 +1,7 @@
 {
   "name": "strefa-wiedzy-spacex",
   "private": true,
-  "version": "0.6.2",
+  "version": "0.6.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,8 @@
     "test": "vitest run",
     "przeglad": "tsx skrypty/przeglad.ts",
     "sprawdz": "npm run build && npm test && npm run waliduj && npm run przeglad && tsx skrypty/skorowidz.ts --sprawdz",
-    "skorowidz": "tsx skrypty/skorowidz.ts"
+    "skorowidz": "tsx skrypty/skorowidz.ts",
+    "wydanie": "npm run sprawdz && tsx skrypty/paczka.ts"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",

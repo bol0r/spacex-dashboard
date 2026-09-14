@@ -5,6 +5,33 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.6.3 — 14 września 2026
+
+**Paczka do wgrania na hosting.**
+
+`npm run wydanie` przepuszcza projekt przez pełne sprawdzenie i tworzy
+`wydanie/strefa-wiedzy-<wersja>.zip` — około 0,4 MB, `index.html` w korzeniu
+archiwum, gotowe do przeciągnięcia na Cloudflare Pages albo rozpakowania na
+własnym serwerze. Skrypt odmawia utworzenia paczki, jeśli w buildzie brakuje
+któregoś z plików konfiguracyjnych albo liczba plików przekracza limit
+Cloudflare dla wgrywania ręcznego.
+
+Doszły dwa pliki konfiguracyjne: `_headers` dla Cloudflare Pages i `.htaccess`
+dla Apache. Oba pilnują jednej rzeczy, która bez nich psuła się po cichu: pliki
+bez odcisku treści w nazwie — `index.html`, service worker i manifest — muszą być
+sprawdzane przy każdej wizycie. Zapamiętane na dłużej trzymałyby użytkowników
+przy starej wersji po każdej poprawce. Reguły w `_headers` celowo się nie
+nakładają, bo Cloudflare przy kilku pasujących regułach skleja wartości nagłówka
+przecinkiem.
+
+Paczkę sprawdzono rozpakowaną na zwykłym serwerze statycznym, w korzeniu
+i w podkatalogu `/strefa/`: aplikacja się ładuje, service worker rejestruje się
+z zakresem właściwego katalogu, a po wyłączeniu serwera strona otwiera się dalej
+z pamięci.
+
+Instrukcja krok po kroku — Cloudflare Pages, Apache, nginx, przygotowanie do
+prezentacji — w nowym pliku `WDROZENIE.md`.
+
 ## 0.6.2 — 13 września 2026
 
 **Cztery kolejne luki. Wszystkie w encjach opisujących stan bieżący.**
