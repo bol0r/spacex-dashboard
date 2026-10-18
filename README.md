@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.7.0** · **by Dead Net & Claude**
+**Wersja 0.7.1** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -58,7 +58,7 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 183 · Wydarzenia: 333 · Źródła w katalogu: 167 · Diagramy: 4
+Encje: 183 · Wydarzenia: 335 · Źródła w katalogu: 223 · Diagramy: 4
 Stan bieżący sprawdzony: 18.10.2026
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 6,11 (cel ≥ 6) ✓
@@ -649,12 +649,12 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
    dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
    kwestią wyboru, nie długu.
-2. **Niezależność źródeł.** 60 ze 183 encji ma wszystkie źródła od jednego
-   wydawcy — na starcie było ich 137. Metoda jest w rozdziale
-   [Skąd biorą się źródła](#skąd-biorą-się-źródła). Zostaje głównie: pojedyncze
-   loty Falcona 1 i Starshipa, wczesne misje przełomowe, biografie i część
-   słownika. Każda z tych grup wymaga osobnego źródła na encję — nie ma już
-   dokumentu, który pokrywa kilkanaście naraz.
+2. ~~Niezależność źródeł~~ — **zrobione w 0.7.1.** Każda ze 183 encji ma
+   źródła od co najmniej dwóch wydawców — na starcie jednego wydawcę miało 137.
+   Metoda jest w rozdziale [Skąd biorą się źródła](#skąd-biorą-się-źródła).
+   Druga połowa tej pracy okazała się ważniejsza od pierwszej: porównanie
+   z drugim źródłem wyłapało kilkanaście błędów w treści, opisanych
+   w `CHANGELOG.md`.
 3. **Gęstość linkowania — cel osiągnięty, średnia 6,01.** Najpierw zamieniono
    na chipy 37 nazw encji występujących w treści jako zwykły tekst, potem
    dopisano 116 zdań niosących powiązania, które encje deklarowały w polu

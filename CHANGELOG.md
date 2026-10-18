@@ -5,6 +5,104 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.7.1 — 18 października 2026
+
+**Dokończony punkt 5: każda encja ma źródła od dwóch niezależnych wydawców.**
+Encji opartych na jednym wydawcy: 60 → 0 ze 183. Katalog źródeł: 167 → 223.
+Praca wykonana bez konsultacji; decyzje są zapisane niżej.
+
+### Zasady doboru drugiego źródła
+
+*Decyzja:* drugie źródło musi pochodzić od innego wydawcy, opisywać temat
+encji samodzielnie i zostać otwarte przed wpisaniem. Pierwszeństwo miały
+dokumenty pierwotne — NASA, JPL, komunikaty i prospekty złożone w SEC — potem
+redakcje branżowe (Spaceflight Now, collectSPACE, AmericaSpace, Gunter's Space
+Page) i duże media. Gdzie drugie źródło przeczyło pierwszemu, wygrywał dokument
+pierwotny, a różnica trafiała do treści albo do faktu oznaczonego `sporne`.
+
+*Decyzja:* tytuły źródeł są przepisane z otwartych stron, nie z wyników
+wyszukiwania. Trzy tytuły, które wyszukiwarka podała inaczej niż strona,
+poprawiłem przed commitem.
+
+### Błędy w treści znalezione przy porównaniu
+
+To jest właściwy zysk z tego punktu — drugie źródło okazało się sprawdzianem
+pierwszego.
+
+- **Smallsat:** było „od kilku do kilkuset kilogramów”; NASA przyjmuje
+  granicę 180 kg, a najmniejsze klasy zaczynają się od kilkunastu gramów.
+- **NACS:** nazwę nadała Tesla 11 listopada 2022; SAE przyjęło złącze jako
+  J3400 we wrześniu 2024.
+- **Hyperloop:** data publikacji dokumentu jest sporna (12 sierpnia według
+  nazwy pliku, 22 według części źródeł) — oznaczona `sporne`, na osi czasu
+  sam miesiąc. Dopisane 17 mln USD za milę i porównanie z koleją dużych
+  prędkości z raportu Departamentu Transportu USA.
+- **CRS-7:** liczby nośności śruby (10 000 i 2 000 funtów) pochodzą od SpaceX,
+  nie z niezależnego śledztwa. Zespół NASA uznał przyczynę za błąd projektowy
+  — ciekawostka twierdziła coś odwrotnego. Masa ładunku: 1952 kg.
+- **Europa Clipper:** 11 kwietnia 2030 to wejście na orbitę Jowisza, nie
+  pierwszy przelot nad Europą — przeloty naukowe zaczynają się w 2031. Masa
+  startowa: NASA podaje ok. 5900 kg, Wikipedia 6065 kg; wpisane „ok. 6 t”.
+- **Ax-1:** cena miejsca (55 mln USD) to szacunek, nie ogłoszona cena;
+  misja trwała 17 dni zamiast planowanych 10.
+- **Starship, lot 2:** statek przepadł tuż przed końcem pracy silników,
+  nie przy powrocie w atmosferę.
+- **Starship, lot 6:** statek nie podchodził do wieży — wodował zgodnie
+  z planem; chwyt członu przerwano, bo wieża nie przeszła testu sprawności.
+- **Gerstenmaier:** Koenigsmann ogłosił odejście pod koniec stycznia 2021
+  (nie w lutym); powód odsunięcia z NASA Bridenstine podał później.
+- **Odlewanie wielkogabarytowe:** Tesla nie porzuciła metody — według
+  Reutersa odłożyła tylko kolejny krok, podwozie z jednego odlewu. Status
+  zmieniony na `aktywne`.
+- **Dojo:** w styczniu 2026 Musk zapowiedział wznowienie prac nad Dojo3,
+  uzasadniając to postępami nad układem AI5 — to nie był restart „na AI5”.
+- **Model 3 / piekło produkcyjne:** dostawy w IV kw. 2017 według komunikatu
+  Tesli to 1 550 (było 1 542); cel 5 tys. sztuk tygodniowo przesunięto
+  w styczniu 2018 drugi raz, na czerwiec.
+- **Zip2:** cena według prospektu AltaVisty w SEC — 307,2 mln USD gotówką,
+  340,9 mln łącznie, zamknięcie 1 kwietnia 1999. Fakt przestał być sporny.
+- **X.com / PayPal:** według prospektu PayPala zmiana nazwy nastąpiła
+  w lutym 2001 (nie w czerwcu), a Thiel zastąpił Muska we wrześniu 2000
+  (nie w październiku).
+- **Dokowanie:** pierwsze samodzielne dokowanie Crew Dragona to bezzałogowy
+  lot Demo-1 w marcu 2019, a nie „osiem lat” po 2012; dokowanie z załogą
+  31 maja 2020, nie 30.
+
+*Decyzja:* w X.com i PayPalu przyjąłem daty z prospektu złożonego w SEC
+zamiast z encyklopedii, bo to dokument, za którego treść spółka odpowiadała
+prawnie. Przy dacie odsunięcia Muska zostawiłem w treści zdanie, że część
+relacji mówi o październiku.
+
+### Dopisane fakty
+
+- SolarCity: Sąd Najwyższy Delaware utrzymał wyrok 6 czerwca 2023.
+- Koszt kilograma: liczby NASA dla promu (ok. 54 500 USD/kg) i Falcona 9
+  (ok. 2 720 USD/kg), oznaczone jako szacunkowe.
+- Dokowanie: na osi czasu pierwsze samodzielne dokowanie (3 marca 2019).
+
+### Czego nie wpisałem
+
+- **Starshield:** strona SpaceX nie daje się odczytać bez przeglądarki;
+  użyłem przedruku artykułu CNBC.
+- **Rodzina Muska:** jedyne dostępne drugie źródło o Joshui Haldemanie to
+  wspomnienia w serwisie Pilot's Post. Potwierdza przeprowadzkę do RPA
+  w październiku 1950 i lot do Australii w 1954, ale nie dystans
+  „30 tysięcy mil” — ta liczba nadal opiera się na Wikipedii.
+- **Fundacja Muska:** Fortune potwierdza „około połowy” dotacji dla podmiotów
+  powiązanych i niedobór w 2022; liczby za 2024 (14,7 mld, 474 mln) opierają
+  się nadal na Wikipedii i raporcie „New York Timesa”, którego nie dało się
+  otworzyć.
+- **Wejście atmosferyczne:** fakt o źródle ciepła złagodzony do „głównie
+  sprężanie; tarcie ma mniejszy udział” — drugie źródło wymienia oba
+  zjawiska.
+
+### Wersja
+
+0.7.1 w `package.json` i README. README: 335 wydarzeń, 223 źródła, punkt
+o niezależności źródeł oznaczony jako zrobiony.
+
+---
+
 ## 0.7.0 — 18 października 2026
 
 **Aktualizacja stanu bieżącego po pięciu tygodniach.** Praca wykonana bez
