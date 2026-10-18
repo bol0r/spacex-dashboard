@@ -791,13 +791,13 @@ export const muskIReszta: Encja[] = [
     aka: ['alpha white paper', 'kapsuła w rurze'],
     krotki: 'Pomysł na transport w rurze podciśnieniowej, oddany światu za darmo w 2013 roku — i do dziś niezrealizowany.',
     tresc: [
-      'Dwudziestego drugiego sierpnia 2013 roku [[spacex|SpaceX]] opublikowało dokument opisujący hyperloop: kapsuły pędzące w rurze o obniżonym ciśnieniu, na trasie z Los Angeles do San Francisco, za deklarowane 6 miliardów dolarów.',
+      'W sierpniu 2013 roku [[spacex|SpaceX]] opublikowało dokument opisujący hyperloop: kapsuły pędzące w rurze o obniżonym ciśnieniu, na trasie z Los Angeles do San Francisco, za deklarowane 6 miliardów dolarów, czyli około 17 milionów za milę. Podróż miała trwać około 35 minut. Analiza amerykańskiego Departamentu Transportu z 2016 roku zestawiła tę stawkę z 63–65 milionami za milę kolei dużych prędkości w Kalifornii i zwróciła uwagę, że trasa kończy się przed centrami obu miast.',
       'Nietypowe było to, co [[elon-musk|Musk]] zrobił dalej: nie zbudował tego. Projekt udostępnił jako otwarty i zaprosił innych do ulepszania go. Sam ograniczył się do zbudowania w 2015 roku milowego toru doświadczalnego przy fabryce w [[hawthorne|Hawthorne]] i organizowania od 2016 zawodów dla studenckich i komercyjnych zespołów.',
       'Najwyższą prędkość osiągnął zespół Politechniki Monachijskiej — 463 km/h w lipcu 2019. Virgin Hyperloop przeprowadził pierwszą próbę z ludźmi na pokładzie w listopadzie 2020, osiągając 172 km/h.',
       'Komercjalizacja się nie udała. Hyperloop One ogłosił upadłość 31 grudnia 2023 roku i zakończył działalność; prace prowadzą jeszcze Swisspod, TransPod i Nevomo. Żaden system komercyjny nie działa. Tunelową część tej idei [[boring-company|The Boring Company]] zrealizowała w znacznie skromniejszej postaci — samochodami w [[las-vegas-loop|tunelu pod Las Vegas]].',
     ],
     fakty: [
-      { etykieta: 'Publikacja dokumentu', wartosc: '22 sierpnia 2013, przez SpaceX', pewnosc: 'potwierdzone' },
+      { etykieta: 'Publikacja dokumentu', wartosc: 'sierpień 2013, przez SpaceX — 12 sierpnia według nazwy pliku, 22 według części źródeł', pewnosc: 'sporne' },
       { etykieta: 'Deklarowany koszt trasy', wartosc: '6 mld USD, Los Angeles – San Francisco', pewnosc: 'szacunkowe' },
       { etykieta: 'Tor doświadczalny', wartosc: 'jedna mila przy fabryce w Hawthorne, od 2015', pewnosc: 'potwierdzone' },
       { etykieta: 'Rekord prędkości', wartosc: '463 km/h, Politechnika Monachijska', stanNa: '2019-07', pewnosc: 'potwierdzone' },
@@ -811,7 +811,7 @@ export const muskIReszta: Encja[] = [
       },
     ],
     os: [
-      { data: '2013-08-22', tytul: 'Publikacja projektu', opis: 'SpaceX udostępnia dokument opisujący hyperloop jako projekt otwarty.', waga: 3 },
+      { data: '2013-08', tytul: 'Publikacja projektu', opis: 'SpaceX udostępnia dokument opisujący hyperloop jako projekt otwarty.', waga: 3 },
       { data: '2019-07', tytul: 'Rekord prędkości', opis: 'Zespół z Politechniki Monachijskiej osiąga 463 km/h.', waga: 2 },
       { data: '2023-12-31', tytul: 'Upadłość Hyperloop One', opis: 'Firma, która zaszła najdalej w komercjalizacji, kończy działalność.', waga: 3 },
     ],
@@ -822,8 +822,8 @@ export const muskIReszta: Encja[] = [
       { id: 'las-vegas-loop', powod: 'najbliższa praktyczna realizacja transportu w tunelu' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiHyperloop, Z.wikiBoring],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiHyperloop, Z.wikiBoring, Z.dotHyperloop],
+    zaktualizowano: '2026-10-18',
   },
 
   {

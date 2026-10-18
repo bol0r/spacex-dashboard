@@ -848,4 +848,24 @@ export const Z = {
     url: 'https://www.pbs.org/newshour/show/jury-throws-out-musks-lawsuit-against-openai-and-sam-altman',
     wydawca: 'PBS NewsHour', dostep: D3,
   },
+  nasaSmallsat: {
+    tytul: 'State-of-the-Art of Small Spacecraft Technology — Introduction',
+    url: 'https://www.nasa.gov/smallsat-institute/sst-soa/introduction/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  cfrUsml: {
+    tytul: '22 CFR § 121.1 — The United States Munitions List',
+    url: 'https://www.law.cornell.edu/cfr/text/22/121.1',
+    wydawca: 'Legal Information Institute, Cornell Law School (tekst przepisu)', dostep: D3,
+  },
+  teslaNacs: {
+    tytul: 'Opening the North American Charging System',
+    url: 'https://www.tesla.com/blog/opening-north-american-charging-system',
+    wydawca: 'Tesla', dostep: D3,
+  },
+  dotHyperloop: {
+    tytul: 'Hyperloop Commercial Feasibility Analysis: High Level Overview (DOT-VNTSC-NASA-16-01)',
+    url: 'https://rosap.ntl.bts.gov/view/dot/12308/dot_12308_DS1.pdf',
+    wydawca: 'U.S. Department of Transportation, Volpe Center', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

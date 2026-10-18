@@ -706,8 +706,8 @@ export const pojecia: Encja[] = [
       { id: 'falcon-9', powod: 'pozostaje na liście uzbrojenia także po reformie z 2014 roku' },
       { id: 'starlink', powod: 'satelity komercyjne wyszły spod tych przepisów w 2014 roku' },
     ],
-    zrodla: [Z.wikiItar, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiItar, Z.wikiSpaceX, Z.cfrUsml],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1328,13 +1328,13 @@ export const pojecia: Encja[] = [
     aka: ['smallsat', 'cubesat', 'nanosatelity'],
     krotki: 'Satelity liczone w kilogramach zamiast w tonach — klasa, którą tanie wynoszenie wpuściło na orbitę.',
     tresc: [
-      'Przez większość ery kosmicznej satelita był urządzeniem wielkości samochodu, budowanym latami przez państwo albo wielki koncern. Małe satelity odwracają ten model: ważą od kilku do kilkuset kilogramów, powstają z gotowych podzespołów i kosztują ułamek tamtej kwoty.',
+      'Przez większość ery kosmicznej satelita był urządzeniem wielkości samochodu, budowanym latami przez państwo albo wielki koncern. Małe satelity odwracają ten model: ważą od kilkunastu gramów do stu osiemdziesięciu kilogramów — tę granicę przyjmuje NASA, powstają z gotowych podzespołów i kosztują ułamek tamtej kwoty.',
       'Warunkiem ich istnienia jest sposób dostania się na orbitę. Osobna rakieta dla ładunku ważącego dziesięć kilogramów nie ma sensu ekonomicznego — dlatego lecą razem, [[transporter|lotami współdzielonymi]], po kilkadziesiąt albo ponad sto naraz.',
       'Typowym celem jest [[sso|orbita heliosynchroniczna]], bo większość tych satelitów obserwuje Ziemię i potrzebuje stałych warunków oświetlenia.',
       'Ta klasa urządzeń jest bezpośrednią konsekwencją spadku [[koszt-kilograma|kosztu kilograma na orbicie]]. Jest też jednym z powodów, dla których [[zespol-kesslera|zagęszczenie niskiej orbity]] rośnie szybciej, niż zakładano dekadę temu. Największą pojedynczą konstrukcją tej klasy jest [[starlink|Starlink]], choć akurat jego satelity są wynoszone własną rakietą, a nie w [[konstelacja|cudzych lotach]].',
     ],
     fakty: [
-      { etykieta: 'Masa', wartosc: 'od kilku do kilkuset kilogramów', pewnosc: 'szacunkowe' },
+      { etykieta: 'Masa', wartosc: 'do 180 kg według NASA; klasy od femto (0,01 kg) do mini (100–180 kg)', pewnosc: 'potwierdzone' },
       { etykieta: 'Sposób wyniesienia', wartosc: 'loty współdzielone, po kilkadziesiąt sztuk naraz', pewnosc: 'potwierdzone' },
       { etykieta: 'Typowa orbita', wartosc: 'heliosynchroniczna', pewnosc: 'potwierdzone' },
       { etykieta: 'Rekord w jednym locie', wartosc: '131 ładunków (Transporter-12)', pewnosc: 'potwierdzone' },
@@ -1354,8 +1354,8 @@ export const pojecia: Encja[] = [
       { id: 'sso', powod: 'typowa orbita docelowa' },
       { id: 'zespol-kesslera', powod: 'ich liczba podnosi zagęszczenie niskiej orbity' },
     ],
-    zrodla: [Z.wikiTransporter, Z.wikiKessler],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiTransporter, Z.wikiKessler, Z.nasaSmallsat],
+    zaktualizowano: '2026-10-18',
   },
 
   {

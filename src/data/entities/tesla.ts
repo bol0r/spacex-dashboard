@@ -1185,7 +1185,7 @@ const partia7: Encja[] = [
       { id: 'styl-zarzadzania', powod: 'rozwiązanie zespołu jest podręcznikowym przykładem tego wzorca' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSupercharger, Z.wikiTesla],
+    zrodla: [Z.wikiSupercharger, Z.wikiTesla, Z.teslaNacs],
     zaktualizowano: '2026-09-13',
   },
 
@@ -1198,13 +1198,15 @@ const partia7: Encja[] = [
     tresc: [
       'Przez lata [[tesla|Tesla]] używała w Ameryce Północnej własnego złącza, niezgodnego ze standardem CCS stosowanym przez resztę branży. Był to typowy przypadek ogrodzonego ogrodu: własna wtyczka, własna [[supercharger|sieć]], własne auta — od [[model-s|Modelu S]] po [[model-y|Model Y]].',
       'Firma spróbowała najpierw obejścia technicznego. Na początku 2023 roku wprowadziła na stacjach trzeciej generacji tak zwany Magic Dock — przejściówkę wbudowaną w ładowarkę, pozwalającą podłączyć samochód ze złączem CCS1.',
-      'Rozwiązanie okazało się niepotrzebne, bo między majem 2023 a lutym 2024 kolejni wielcy producenci ogłosili przejście na złącze Tesli, przemianowane wtedy na NACS. Do września 2025 przejściówkę zamontowano na mniej niż stu stacjach trzeciej generacji — dalsza rozbudowa straciła sens.',
+      'Rozwiązanie okazało się niepotrzebne, bo między majem 2023 a lutym 2024 kolejni wielcy producenci ogłosili przejście na złącze Tesli. Nazwę NACS nadała mu sama Tesla już 11 listopada 2022 roku, kiedy udostępniła jego projekt każdemu chętnemu, a we wrześniu 2024 złącze trafiło do zaleceń stowarzyszenia inżynierów SAE jako J3400. Do września 2025 przejściówkę zamontowano na mniej niż stu stacjach trzeciej generacji — dalsza rozbudowa straciła sens.',
       'To rzadki przypadek, w którym firmowe rozwiązanie jednego producenta stało się standardem całego rynku, bo konkurencja uznała je za lepsze od własnego. W kategoriach [[master-plan|planu generalnego]] jest to zresztą punkt dojścia: sieć ładowania przestała być przewagą jednej marki, a stała się infrastrukturą.',
     ],
     fakty: [
       { etykieta: 'Czym jest', wartosc: 'firmowe złącze Tesli, od 2022 roku jako standard otwarty', pewnosc: 'potwierdzone' },
       { etykieta: 'Magic Dock', wartosc: 'przejściówka CCS1 wbudowana w stacje V3, od początku 2023', pewnosc: 'potwierdzone' },
       { etykieta: 'Przyjęcie przez branżę', wartosc: 'między majem 2023 a lutym 2024', pewnosc: 'potwierdzone' },
+      { etykieta: 'Otwarcie i nazwa NACS', wartosc: '11 listopada 2022, ogłoszenie Tesli', pewnosc: 'potwierdzone' },
+      { etykieta: 'Uznanie przez SAE', wartosc: 'zalecana praktyka J3400, wrzesień 2024', pewnosc: 'potwierdzone' },
       { etykieta: 'Stacje z przejściówką', wartosc: 'mniej niż 100 stacji V3', stanNa: '2025-09', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -1214,6 +1216,7 @@ const partia7: Encja[] = [
       },
     ],
     os: [
+      { data: '2022-11-11', tytul: 'Złącze otwarte jako NACS', opis: 'Tesla udostępnia projekt wtyczki innym producentom i nadaje jej nazwę.', waga: 2 },
       { data: '2023-01', tytul: 'Magic Dock', opis: 'Tesla wprowadza wbudowaną przejściówkę dla aut ze złączem CCS1.', waga: 2 },
       { data: '2024-02', tytul: 'Branża przechodzi na NACS', opis: 'Kolejni wielcy producenci kończą ogłoszenia o przyjęciu złącza.', waga: 3 },
     ],
@@ -1223,8 +1226,8 @@ const partia7: Encja[] = [
       { id: 'model-y', powod: 'najliczniejszy samochód korzystający z tego złącza' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSupercharger, Z.wikiTesla],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiSupercharger, Z.wikiTesla, Z.teslaNacs],
+    zaktualizowano: '2026-10-18',
   },
 
   {
