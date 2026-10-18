@@ -5,7 +5,7 @@ Jednoekranowa aplikacja webowa, w której **każde pojęcie w tekście jest klik
 dotknięcie nazwy wysuwa arkusz z definicją, liczbami, ciekawostką i osią czasu,
 a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie przez menu.
 
-**Wersja 0.6.3** · **by Dead Net & Claude**
+**Wersja 0.7.0** · **by Dead Net & Claude**
 
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
@@ -49,7 +49,7 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 | 0 | Design plan, kontrakt danych, fazowanie | gotowe |
 | 1 | Szkielet, tokeny, ekran główny, walidator | gotowe |
 | 2 | Stos arkuszy, gesty, chipy `[[id]]`, relacje dwukierunkowe | gotowe |
-| 3 | Treść — 181 z 180+ encji | gotowe |
+| 3 | Treść — 183 z 180+ encji | gotowe |
 | 4 | Wyszukiwarka, tryb osi czasu, losowanie, ulubione | gotowe |
 | 5 | PWA i offline, skorowidz, wirtualizacja osi, pomiar Lighthouse | gotowe |
 
@@ -58,10 +58,11 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 181 · Wydarzenia: 323 · Źródła w katalogu: 160 · Diagramy: 4
+Encje: 183 · Wydarzenia: 333 · Źródła w katalogu: 167 · Diagramy: 4
+Stan bieżący sprawdzony: 18.10.2026
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
-Średnio linków [[id]] w treści: 6,08 (cel ≥ 6) ✓
-Tłumaczenia EN: interfejs w całości, treść 6 / 181 encji
+Średnio linków [[id]] w treści: 6,11 (cel ≥ 6) ✓
+Tłumaczenia EN: interfejs w całości, treść 6 / 183 encji
 Pola dotyku poniżej 44 px: 0 · Błędy w konsoli: 0
 
 Lighthouse (mobile, build produkcyjny, 13.09.2026):
@@ -648,7 +649,7 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    wymienieni w briefie — Juncosa, Jensen, Riley i Dontchev — bo nie znalazłem
    dla nich dwóch niezależnych źródeł publicznych. Dalsza rozbudowa jest już
    kwestią wyboru, nie długu.
-2. **Niezależność źródeł.** 67 ze 181 encji ma wszystkie źródła od jednego
+2. **Niezależność źródeł.** 60 ze 183 encji ma wszystkie źródła od jednego
    wydawcy — na starcie było ich 137. Metoda jest w rozdziale
    [Skąd biorą się źródła](#skąd-biorą-się-źródła). Zostaje głównie: pojedyncze
    loty Falcona 1 i Starshipa, wczesne misje przełomowe, biografie i część
@@ -665,7 +666,7 @@ Lista uszeregowana po wadze, nie po kolejności faz.
    `navigator.userActivation`. Jedno i drugie sprawdziłem w kodzie i w
    przeglądarce na komputerze — na sprzęcie z włączonym systemowym ograniczeniem
    ruchu i z działającym silnikiem drgań nikt tego jeszcze nie widział.
-5. **Tłumaczenie treści** — 174 encje bez wersji angielskiej.
+5. **Tłumaczenie treści** — 177 encji bez wersji angielskiej.
 6. ~~Widok grafu powiązań~~ — **zrobione w 0.6.0**, opis w rozdziale
    [Graf powiązań](#graf-powiązań). To była sensowna wersja pomysłu na
    „przestrzenną sferę haseł", który odrzuciliśmy — patrz niżej.

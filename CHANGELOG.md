@@ -149,6 +149,16 @@ o zapowiedzianej apelacji Muska.
 punktom obowiązkowym (wersja, paczka, test). Pozostałe 60 encji wymaga po
 jednym nowym źródle na encję.
 
+### 6. Numer wersji
+
+0.7.0 w `package.json` i README, razem z liczbami w README: 183 encje,
+333 wydarzenia, 167 źródeł, średnio 6,11 linku w treści.
+
+*Decyzja:* schemat `0.<faza>.<partia>` zakłada fazy 0–5, a szóstej ani
+siódmej fazy nie ma. 0.7.0 przyjmuję zgodnie z poleceniem jako numer pierwszej
+aktualizacji stanu bieżącego po zamknięciu faz. Kolejne takie aktualizacje mogą
+podbijać drugą cyfrę.
+
 ## 0.6.3 — 14 września 2026
 
 **Paczka do wgrania na hosting.**
