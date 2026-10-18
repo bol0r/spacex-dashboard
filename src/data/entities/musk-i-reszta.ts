@@ -128,8 +128,8 @@ export const muskIReszta: Encja[] = [
       { id: 'mars-oasis', powod: 'pomysł, który kilka lat później wyprowadził go w kosmos' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiMusk, Z.wikiZip2],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiMusk, Z.wikiZip2, Z.whartonMusk],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -142,21 +142,21 @@ export const muskIReszta: Encja[] = [
       'Spółkę zarejestrowano 6 listopada 1995 roku w Palo Alto jako Global Link Information Network, przez braci Elona i Kimbala Musków oraz Grega Kouriego. Kapitał założycielski był symboliczny: 2 tysiące dolarów od Elona, 5 tysięcy od Kimbala i 8 tysięcy od Kouriego. W 1996 roku fundusz Mohr Davidow Ventures dołożył 3 miliony.',
       'Produkt był prosty i trafiony w czas: oprogramowanie miejskiego przewodnika, które gazety mogły licencjonować i budować na nim własne katalogi internetowe. Hasło firmy brzmiało „zasilamy prasę". Do 1998 roku pracowało z nią około stu sześćdziesięciu tytułów, w tym „The New York Times", Knight Ridder i Hearst.',
       'Warunki startowe weszły do legendy: [[elon-musk|Musk]] spał na kanapie w biurze i chodził się myć do YMCA. W 1996 roku stanowisko dyrektora generalnego objął Rich Sorkin — pierwszy z kilku przypadków, w których inwestorzy odsunęli Muska od steru własnej firmy.',
-      'W lutym 1999 roku Compaq kupił Zip2, żeby wzmocnić swoją wyszukiwarkę AltaVista. Elon dostał 22 miliony dolarów, Kimbal 15. Te pieniądze poszły w [[x-com|X.com]], a potem w [[spacex|SpaceX]] i [[tesla|Teslę]]. Firma powstała zamiast doktoratu na Stanfordzie, na który [[pretoria|Musk dostał się kilka miesięcy wcześniej]], a spanie w biurze — motyw, który wróci przy [[styl-zarzadzania|każdej kolejnej firmie]] — zaczęło się właśnie tutaj.',
+      'W lutym 1999 roku Compaq ogłosił zakup Zip2, żeby wzmocnić swoją wyszukiwarkę AltaVista; transakcję zamknięto w kwietniu. Elon dostał 22 miliony dolarów, Kimbal 15. Te pieniądze poszły w [[x-com|X.com]], a potem w [[spacex|SpaceX]] i [[tesla|Teslę]]. Firma powstała zamiast doktoratu na Stanfordzie, na który [[pretoria|Musk dostał się kilka miesięcy wcześniej]], a spanie w biurze — motyw, który wróci przy [[styl-zarzadzania|każdej kolejnej firmie]] — zaczęło się właśnie tutaj.',
     ],
     fakty: [
       { etykieta: 'Rejestracja', wartosc: '6 listopada 1995, Palo Alto', pewnosc: 'potwierdzone' },
       { etykieta: 'Założyciele', wartosc: 'Elon Musk, Kimbal Musk, Greg Kouri', pewnosc: 'potwierdzone' },
       { etykieta: 'Kapitał początkowy', wartosc: '2 tys. USD, 5 tys. USD i 8 tys. USD od założycieli', pewnosc: 'potwierdzone' },
       { etykieta: 'Klienci', wartosc: 'ok. 160 gazet', stanNa: '1998', pewnosc: 'potwierdzone' },
-      { etykieta: 'Sprzedaż', wartosc: 'Compaq, luty 1999', pewnosc: 'potwierdzone' },
-      { etykieta: 'Cena', wartosc: '305 albo 307 mln USD — źródła się różnią', pewnosc: 'sporne' },
+      { etykieta: 'Sprzedaż', wartosc: 'Compaq: ogłoszona w lutym, zamknięta 1 kwietnia 1999', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cena', wartosc: '307,2 mln USD gotówką, łącznie 340,9 mln z opcjami i kosztami', pewnosc: 'potwierdzone' },
       { etykieta: 'Udział Muska', wartosc: '22 mln USD; Kimbal 15 mln', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Cena sprzedaży Zip2 podawana jest w dwóch wersjach: 305 milionów dolarów w jednym miejscu i 307 w drugim. Dwa miliony różnicy w transakcji sprzed ćwierć wieku to drobiazg, ale pokazuje, jak niepewne bywają liczby z początków tej historii — nawet te, które wszyscy cytują.',
-        zrodlo: Z.wikiZip2,
+        tekst: 'Cena sprzedaży Zip2 krąży w dwóch wersjach: 305 i 307 milionów dolarów. Rozstrzyga ją prospekt AltaVisty złożony w amerykańskiej komisji papierów wartościowych: 307,2 miliona gotówką, a razem z opcjami dla pracowników i kosztami transakcji — 340,9 miliona. Transakcję zamknięto 1 kwietnia 1999 roku.',
+        zrodlo: Z.secZip2,
       },
     ],
     os: [
@@ -171,8 +171,8 @@ export const muskIReszta: Encja[] = [
       { id: 'styl-zarzadzania', powod: 'spanie w biurze zaczęło się już tutaj' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiZip2, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiZip2, Z.wikiMusk, Z.secZip2],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -184,26 +184,26 @@ export const muskIReszta: Encja[] = [
     tresc: [
       '[[elon-musk|Musk]] założył X.com w marcu 1999 roku, razem z Harrisem Frickerem, Christopherem Payne’em i Edem Ho, za pieniądze ze sprzedaży [[zip2|Zip2]]. Firma miała być internetowym przedsiębiorstwem usług finansowych — bankiem bez oddziałów.',
       'Kilka ulic dalej Confinity, założona w grudniu 1998 przez Maxa Levchina, Petera Thiela i Luke’a Noska, budowała system płatności. W marcu 2000 obie firmy się połączyły.',
-      'Fuzja nie uspokoiła sporów, tylko je skoncentrowała. Musk i Bill Harris, dyrektor połączonej spółki, różnili się co do kierunku; Harris odszedł w maju. W październiku 2000 Musk postanowił zamknąć pozostałe linie bankowe i skupić się wyłącznie na płatnościach — i w tym samym miesiącu został zastąpiony na stanowisku dyrektora generalnego przez Petera Thiela.',
-      'W czerwcu 2001 spółkę przemianowano na [[paypal|PayPal]]. Sama nazwa X.com wróciła do Muska dwie dekady później i została ostatecznie nazwą [[x-platforma|platformy społecznościowej]]. Po [[przejecie-twittera|przejęciu Twittera]] w 2022 roku Musk wrócił do tej nazwy, co jest jednym z czystszych przykładów [[styl-zarzadzania|jego przywiązania do własnych pomysłów sprzed lat]].',
+      'Fuzja nie uspokoiła sporów, tylko je skoncentrowała. Musk i Bill Harris, dyrektor połączonej spółki, różnili się co do kierunku; Harris odszedł w maju. Musk forsował zamknięcie pozostałych linii bankowych i skupienie się wyłącznie na płatnościach, ale we wrześniu 2000 zastąpił go na stanowisku dyrektora generalnego Peter Thiel — tak podaje prospekt giełdowy PayPala; część relacji mówi o październiku.',
+      'W lutym 2001 spółkę formalnie przemianowano na [[paypal|PayPal]]. Sama nazwa X.com wróciła do Muska dwie dekady później i została ostatecznie nazwą [[x-platforma|platformy społecznościowej]]. Po [[przejecie-twittera|przejęciu Twittera]] w 2022 roku Musk wrócił do tej nazwy, co jest jednym z czystszych przykładów [[styl-zarzadzania|jego przywiązania do własnych pomysłów sprzed lat]].',
     ],
     fakty: [
       { etykieta: 'Założenie', wartosc: 'marzec 1999', pewnosc: 'potwierdzone' },
       { etykieta: 'Założyciele', wartosc: 'Musk, Fricker, Payne, Ho', pewnosc: 'potwierdzone' },
       { etykieta: 'Fuzja z Confinity', wartosc: 'marzec 2000', pewnosc: 'potwierdzone' },
-      { etykieta: 'Odsunięcie Muska', wartosc: 'październik 2000, zastąpiony przez Petera Thiela', pewnosc: 'potwierdzone' },
-      { etykieta: 'Zmiana nazwy', wartosc: 'czerwiec 2001, na PayPal', pewnosc: 'potwierdzone' },
+      { etykieta: 'Odsunięcie Muska', wartosc: 'wrzesień 2000, zastąpiony przez Petera Thiela', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zmiana nazwy', wartosc: 'luty 2001, na PayPal', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Musk został odsunięty od kierowania własną firmą w tym samym miesiącu, w którym przeforsował decyzję o porzuceniu bankowości na rzecz płatności. Decyzja okazała się słuszna i to ona zbudowała PayPala — tyle że wdrażał ją już jego następca.',
+        tekst: 'Musk przeforsował porzucenie bankowości na rzecz płatności, ale wdrażał je już jego następca: we wrześniu 2000 stanowisko dyrektora generalnego objął Peter Thiel. Decyzja okazała się słuszna i to ona zbudowała PayPala.',
         zrodlo: Z.wikiPaypal,
       },
     ],
     os: [
       { data: '1999-03', tytul: 'Założenie X.com', opis: 'Musk uruchamia bank internetowy za pieniądze ze sprzedaży Zip2.', waga: 2 },
       { data: '2000-03', tytul: 'Fuzja z Confinity', opis: 'Dwie firmy z tej samej ulicy łączą się w jedną.', waga: 2 },
-      { data: '2000-10', tytul: 'Zmiana dyrektora', opis: 'Peter Thiel zastępuje Muska na stanowisku dyrektora generalnego.', waga: 3 },
+      { data: '2000-09', tytul: 'Zmiana dyrektora', opis: 'Peter Thiel zastępuje Muska na stanowisku dyrektora generalnego.', waga: 3 },
     ],
     powiazane: [
       { id: 'paypal', powod: 'to w nią przekształciła się ta firma' },
@@ -212,8 +212,8 @@ export const muskIReszta: Encja[] = [
       { id: 'x-platforma', powod: 'ta sama nazwa wróciła po dwudziestu latach' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiPaypal, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiPaypal, Z.wikiMusk, Z.secPaypal],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -224,13 +224,13 @@ export const muskIReszta: Encja[] = [
     krotki: 'Sprzedany eBayowi za 1,5 miliarda dolarów w 2002 — transakcja, która dała Muskowi kapitał na SpaceX i Teslę.',
     tresc: [
       'PayPal wyrósł z połączenia [[x-com|X.com]] i Confinity. Ta druga powstała w grudniu 1998 roku jako Fieldlink, potem zmieniła nazwę i profil na oprogramowanie zabezpieczające dla urządzeń kieszonkowych; gdy ten pomysł nie chwycił, założyciele przestawili się na portfel cyfrowy i w 1999 uruchomili system płatności.',
-      'Połączona spółka przyjęła nazwę PayPal w czerwcu 2001 roku i weszła na giełdę w 2002, zbierając ponad 61 milionów dolarów przy cenie 13 dolarów za akcję. Trzeciego października 2002 roku eBay kupił ją za 1,5 miliarda dolarów w akcjach.',
+      'Połączona spółka przyjęła nazwę PayPal w lutym 2001 roku i weszła na giełdę w 2002, zbierając ponad 61 milionów dolarów przy cenie 13 dolarów za akcję. Trzeciego października 2002 roku eBay kupił ją za 1,5 miliarda dolarów w akcjach.',
       'Dla [[elon-musk|Muska]], największego udziałowca z pakietem 11,72 procent, oznaczało to 175,8 miliona dolarów. Te pieniądze w całości poszły w dwie firmy naraz: [[spacex|SpaceX]] w 2002 i [[tesla|Teslę]] w 2004.',
       'Warto zauważyć, co się tu wydarzyło z perspektywy historii: człowiek odsunięty od kierowania firmą w 2000 roku zarobił na niej najwięcej ze wszystkich dwa lata później. Nazwa, którą Musk chciał zachować, wróciła po dwudziestu latach: po [[przejecie-twittera|przejęciu Twittera]] serwis przemianowano na [[x-platforma|X]].',
     ],
     fakty: [
       { etykieta: 'Confinity', wartosc: 'grudzień 1998, Levchin, Thiel, Nosek', pewnosc: 'potwierdzone' },
-      { etykieta: 'Zmiana nazwy na PayPal', wartosc: 'czerwiec 2001', pewnosc: 'potwierdzone' },
+      { etykieta: 'Zmiana nazwy na PayPal', wartosc: 'luty 2001', pewnosc: 'potwierdzone' },
       { etykieta: 'Debiut giełdowy', wartosc: '2002, ponad 61 mln USD przy 13 USD za akcję', pewnosc: 'potwierdzone' },
       { etykieta: 'Sprzedaż', wartosc: '1,5 mld USD w akcjach, 3 października 2002', pewnosc: 'potwierdzone' },
       { etykieta: 'Udział Muska', wartosc: '11,72%, czyli 175,8 mln USD', pewnosc: 'potwierdzone' },
@@ -242,7 +242,7 @@ export const muskIReszta: Encja[] = [
       },
     ],
     os: [
-      { data: '2001-06', tytul: 'Nazwa PayPal', opis: 'Połączona spółka przyjmuje nazwę swojego najlepszego produktu.', waga: 2 },
+      { data: '2001-02', tytul: 'Nazwa PayPal', opis: 'Połączona spółka przyjmuje nazwę swojego najlepszego produktu.', waga: 2 },
       { data: '2002-10-03', tytul: 'Sprzedaż eBayowi', opis: 'Transakcja za 1,5 mld USD daje Muskowi 175,8 mln.', waga: 3 },
     ],
     powiazane: [
@@ -252,8 +252,8 @@ export const muskIReszta: Encja[] = [
       { id: 'tesla', powod: 'również sfinansowana z tych pieniędzy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiPaypal, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiPaypal, Z.wikiMusk, Z.secPaypal, Z.secEbayPaypal],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -290,8 +290,8 @@ export const muskIReszta: Encja[] = [
       { id: 'pretoria', powod: 'wcześniejszy etap tej samej biografii' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiSpaceX, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiSpaceX, Z.wikiMusk, Z.inverseRosja],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -493,8 +493,8 @@ export const muskIReszta: Encja[] = [
       { id: 'las-vegas-loop', powod: 'podstawowa działalność firmy, znacznie trudniejsza w realizacji' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiBoring, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiBoring, Z.wikiMusk, Z.inverseMiotacz],
+    zaktualizowano: '2026-10-18',
   },
 
   {

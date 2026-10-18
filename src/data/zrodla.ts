@@ -1043,4 +1043,34 @@ export const Z = {
     url: 'https://www.foxbusiness.com/markets/tesla-starts-production-of-solar-cells-in-buffalo',
     wydawca: 'Fox Business', dostep: D3,
   },
+  secPaypal: {
+    tytul: 'PayPal, Inc. — Form S-1/A, prospekt emisyjny (luty 2002)',
+    url: 'https://www.sec.gov/Archives/edgar/data/1103415/000091205702005893/a2060419zs-1a.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  secEbayPaypal: {
+    tytul: 'PayPal, Inc. — Form 8-K, eBay kończy przejęcie PayPala (3 października 2002)',
+    url: 'https://www.sec.gov/Archives/edgar/data/0001103415/000091205702037693/a2090698zex-99_1.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  secZip2: {
+    tytul: 'AltaVista Company — Form S-1 (grudzień 1999), przejęcie Zip2 przez Compaq',
+    url: 'https://www.sec.gov/Archives/edgar/data/1100862/000101287099004680/0001012870-99-004680.txt',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  whartonMusk: {
+    tytul: 'He Won’t Back Down',
+    url: 'https://magazine.wharton.upenn.edu/issues/fall-2010/he-wont-back-down/',
+    wydawca: 'Wharton Magazine (University of Pennsylvania)', dostep: D3,
+  },
+  inverseRosja: {
+    tytul: 'When SpaceX Tried to Buy ICBMs from Russia: Vodka and a Run-Around',
+    url: 'https://www.inverse.com/article/34976-spacex-ceo-elon-musk-tried-to-',
+    wydawca: 'Inverse', dostep: D3,
+  },
+  inverseMiotacz: {
+    tytul: 'Boring Company flamethrower: How to buy it and more about Elon Musk’s “not a flamethrower”',
+    url: 'https://www.inverse.com/article/45802-elon-musk-s-boring-company-not-a-flamethrower-how-exactly-do-you-get-one',
+    wydawca: 'Inverse', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;
