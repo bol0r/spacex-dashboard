@@ -1118,12 +1118,7 @@ export const Z = {
     url: 'https://pilotspost.com/PsPpyarn2498',
     wydawca: "Pilot's Post", dostep: D3,
   },
-  nasaRownanie: {
-    tytul: 'Ideal Rocket Equation',
-    url: 'https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/',
-    wydawca: 'NASA Glenn Research Center', dostep: D3,
-  },
-  nasaOrbity: {
+  nasaPodstawyLotow: {
     tytul: 'Basics of Space Flight — Chapter 3: Gravity & Mechanics',
     url: 'https://science.nasa.gov/learn/basics-of-space-flight/chapter3-4',
     wydawca: 'NASA', dostep: D3,

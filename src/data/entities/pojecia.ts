@@ -261,7 +261,7 @@ export const pojecia: Encja[] = [
       { id: 'polaris-dawn', powod: 'jej apogeum 1 400 km to rekord wysokości lotu załogowego po Apollo' },
       { id: 'leo', powod: 'niska orbita jest niemal okrągła, więc oba punkty niemal się pokrywają' },
     ],
-    zrodla: [Z.wikiApsis, Z.wikiGto, Z.nasaOrbity],
+    zrodla: [Z.wikiApsis, Z.wikiGto, Z.nasaPodstawyLotow],
     zaktualizowano: '2026-10-18',
   },
 

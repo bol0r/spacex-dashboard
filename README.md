@@ -58,7 +58,7 @@ przesuwalna oś czasu, karta dnia, zastrzeżenie o braku powiązania, wybór ję
 cztery diagramy SVG, credits i numer wersji.
 
 ```
-Encje: 183 · Wydarzenia: 335 · Źródła w katalogu: 223 · Diagramy: 4
+Encje: 183 · Wydarzenia: 335 · Źródła w katalogu: 224 · Diagramy: 4
 Stan bieżący sprawdzony: 18.10.2026
 Błędy walidatora: 0 · Ostrzeżenia: 0 · Ślepe zaułki: 0
 Średnio linków [[id]] w treści: 6,11 (cel ≥ 6) ✓

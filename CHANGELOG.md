@@ -8,7 +8,7 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 ## 0.7.1 — 18 października 2026
 
 **Dokończony punkt 5: każda encja ma źródła od dwóch niezależnych wydawców.**
-Encji opartych na jednym wydawcy: 60 → 0 ze 183. Katalog źródeł: 167 → 223.
+Encji opartych na jednym wydawcy: 60 → 0 ze 183. Katalog źródeł: 167 → 224.
 Praca wykonana bez konsultacji; decyzje są zapisane niżej.
 
 ### Zasady doboru drugiego źródła
@@ -23,6 +23,14 @@ pierwotny, a różnica trafiała do treści albo do faktu oznaczonego `sporne`.
 *Decyzja:* tytuły źródeł są przepisane z otwartych stron, nie z wyników
 wyszukiwania. Trzy tytuły, które wyszukiwarka podała inaczej niż strona,
 poprawiłem przed commitem.
+
+*Poprawka po drodze:* dwa nowe wpisy dostały klucze, które w katalogu już
+istniały (`nasaRownanie`, `nasaOrbity`). Walidator tego nie widzi, bo
+w działającym kodzie późniejszy wpis po prostu nadpisuje wcześniejszy —
+wykrył to dopiero kompilator przy budowaniu paczki. Duplikat `nasaRownanie`
+(ten sam adres) usunąłem, a nowe źródło o orbitach dostało własny klucz
+`nasaPodstawyLotow`, więc encje GTO, SSO i orbita biegunowa wróciły do
+swojego pierwotnego źródła.
 
 ### Błędy w treści znalezione przy porównaniu
 
@@ -98,7 +106,7 @@ relacji mówi o październiku.
 
 ### Wersja
 
-0.7.1 w `package.json` i README. README: 335 wydarzeń, 223 źródła, punkt
+0.7.1 w `package.json` i README. README: 335 wydarzeń, 224 źródła, punkt
 o niezależności źródeł oznaczony jako zrobiony.
 
 ---
