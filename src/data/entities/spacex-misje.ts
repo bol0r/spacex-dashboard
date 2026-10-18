@@ -810,6 +810,49 @@ const starshipMisje: Encja[] = [
   },
 
   {
+    id: 'starship-lot-14',
+    typ: 'misja',
+    nazwa: 'Starship, lot 14',
+    aka: ['Flight 14', 'pierwsza orbita Starshipa'],
+    krotki: 'Pierwszy lot, na którym Starship wszedł na orbitę i wypuścił pracujące satelity — przerwany po trzech godzinach zamiast dziesięciu.',
+    tresc: [
+      'Dwudziestego ósmego września 2026 roku [[starship|Starship]] wystartował po raz czternasty, z [[starbase|Starbase]], w trzeciej wersji konstrukcji. Po raz pierwszy w historii programu statek wykonał manewr wejścia na orbitę okołoziemską — trzynaście wcześniejszych lotów było suborbitalnych.',
+      'Pół godziny po starcie górny stopień wypuścił dwadzieścia sześć satelitów [[starlink|Starlink]] generacji V3. W przeciwieństwie do [[starship-lot-13|lotu 13]] nie były to egzemplarze przeznaczone do spłonięcia, tylko satelity zostające na orbicie do zwykłej pracy w konstelacji.',
+      'Silniki nie pracowały bez zarzutu. Statek stracił jeden [[raptor|Raptor]] podczas wznoszenia — do wejścia na orbitę nie był potrzebny — a w członie nośnym problemy miały dwa. Plan zakładał około sześciu okrążeń i niemal dziesięć godzin lotu. SpaceX zakończyło misję przy pierwszym przewidzianym punkcie kontrolnym, zaraz po wypuszczeniu satelitów, i według ABC News nie podało publicznie, co zdecydowało.',
+      'Statek zszedł z orbity na jednym silniku i wodował na Pacyfiku na północ od Hawajów, około trzech godzin po starcie. [[super-heavy|Super Heavy]] wykonał hamowanie powrotne i lądowanie, po czym kontrolowanie wodował w Zatoce Meksykańskiej. Łapania żadnego z elementów nie próbowano.',
+    ],
+    fakty: [
+      { etykieta: 'Data', wartosc: '28 września 2026', pewnosc: 'potwierdzone' },
+      { etykieta: 'Egzemplarze', wartosc: 'booster B21, statek S41 (Block 3)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Znaczenie', wartosc: 'pierwsze wejście statku na orbitę okołoziemską', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ładunek', wartosc: '26 pracujących satelitów Starlink V3', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas misji', wartosc: 'ok. 3 godziny zamiast planowanych niemal 10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Silniki', wartosc: 'jeden Raptor statku wyłączony przy wznoszeniu; dwa z problemami w członie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wodowania', wartosc: 'statek na Pacyfiku, człon w Zatoce Meksykańskiej', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Po czternastu lotach licznik programu stanął na dziewięciu sukcesach i pięciu porażkach. Rakieta, o której od lat mówi się, że poleci na Marsa, pierwszy raz weszła na orbitę dopiero w czternastej próbie — i już po około trzech godzinach zawrócono ją do oceanu.',
+        zrodlo: Z.wikiStartyStarship,
+      },
+    ],
+    os: [
+      { data: '2026-09-28', tytul: 'Lot 14', opis: 'Pierwsza orbita i pierwsze pracujące satelity Starlink V3 wyniesione Starshipem.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'starship', powod: 'jego czternasty lot i pierwszy orbitalny' },
+      { id: 'starlink', powod: 'wyniósł pierwsze pracujące satelity generacji V3' },
+      { id: 'starship-lot-13', powod: 'poprzedni lot, z satelitami przeznaczonymi do spłonięcia' },
+      { id: 'raptor', powod: 'jeden silnik statku wyłączył się przy wznoszeniu' },
+      { id: 'super-heavy', powod: 'człon wodował kontrolowanie w Zatoce Meksykańskiej' },
+      { id: 'leo', powod: 'pierwszy raz statek wszedł na niską orbitę zamiast lotu suborbitalnego' },
+    ],
+    status: 'historyczne',
+    zrodla: [Z.abcLot14, Z.wikiStartyStarship],
+    zaktualizowano: '2026-10-18',
+  },
+
+  {
     id: 'hls-artemis',
     typ: 'technologia',
     nazwa: 'Starship HLS',

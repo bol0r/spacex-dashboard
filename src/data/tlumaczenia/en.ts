@@ -13,7 +13,7 @@ export const en: Nakladka = {
       'Starship is two things at once: the [[super-heavy|Super Heavy]] booster and an upper stage that carries the same name as the whole system — hence the permanent terminological mess. Together they stand 121.3 metres tall, 9 metres wide, and leave the ground with 73.5 MN of thrust. For comparison: more than twice a Saturn V. The only engine involved is [[raptor|Raptor]].',
       'The hull is stainless steel. Early prototypes used grade 301, which gave way to 304L, and current vehicles use an in-house alloy designated 30X. In 2018 this looked like a step backwards — the whole industry was moving towards carbon composites — and it turned out to be one of the most consequential decisions in the programme.',
       'The programme advances through flight tests, not simulations. The first flight in April 2023 ended with the rocket breaking up after four minutes. Flight 5 in October 2024 produced the first catch of a booster by the launch tower’s arms. Flights 7, 8 and 9 were a run of upper-stage losses. Flights 10 and 11 brought controlled splashdowns accurate to within metres. Flight 12 in May 2026 was the debut of the Block 3 design.',
-      'Flight 13 on 24 July 2026 was the first after [[spacex|SpaceX]] went public, and the first on which Starship released real [[starlink|Starlink]] V3 satellites. The ship survived re-entry and came to rest intact in the Indian Ocean, giving the first post-flight images of a complete heat shield. Flight 14, planned for 18 September 2026, is meant to be the first attempt at a full orbit around Earth.',
+      'Flight 13 on 24 July 2026 was the first after [[spacex|SpaceX]] went public, and the first on which Starship released real [[starlink|Starlink]] V3 satellites. The ship survived re-entry and came to rest intact in the Indian Ocean, giving the first post-flight images of a complete heat shield. [[starship-lot-14|Flight 14]] on 28 September 2026 was the first on which the ship reached Earth orbit and released working satellites — twenty-six V3 units. The mission was cut short at the first checkpoint, after about three hours instead of nearly ten. The fifteenth flight has a provisional date no earlier than 8 November 2026; SpaceX has not announced it.',
       'The crewed [[hls-artemis|Starship HLS]] variant is meant to put astronauts on the Moon under the Artemis programme. A docking test is planned for 2027 and a landing with people aboard for 2028 — both dates have already moved several times and should be read as intent, not as a schedule.',
     ],
     etykietyFaktow: [
@@ -32,7 +32,8 @@ export const en: Nakladka = {
       { tytul: 'Flight 5 — first catch', opis: 'Super Heavy returns straight into the launch tower’s arms.' },
       { tytul: 'Flight 12 — Block 3 debut', opis: 'First flight of the new design, carrying Starlink mass simulators.' },
       { tytul: 'Flight 13', opis: 'First real Starlink V3 satellites and an intact ship after splashdown.' },
-      { tytul: 'Flight 14 — planned', opis: 'The announced first attempt to reach Earth orbit.' },
+      { tytul: 'Flight 14 — first orbit', opis: 'The ship reaches orbit and releases 26 working Starlink V3 satellites.' },
+      { tytul: 'Flight 15 — provisional date', opis: 'A date from air-traffic planning, not a SpaceX announcement; it may slip.' },
     ],
     powody: [
       'its lower stage — without it Starship never leaves the atmosphere',

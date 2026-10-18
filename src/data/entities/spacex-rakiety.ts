@@ -12,7 +12,7 @@ export const rakiety: Encja[] = [
       'Starship to dwa elementy: dolny stopień [[super-heavy|Super Heavy]] i górny, który nazywa się tak samo jak cały system — stąd stały bałagan terminologiczny. Razem mierzą 121,3 metra wysokości przy 9 metrach średnicy i ruszają z ziemi z ciągiem 73,5 MN. Dla porównania: to ponad dwukrotność Saturna V. Napęd stanowi wyłącznie [[raptor|Raptor]].',
       'Kadłub jest ze stali nierdzewnej. Pierwsze prototypy budowano z gatunku 301, potem przeszedł on w 304L, a obecne egzemplarze korzystają z firmowego stopu oznaczanego 30X. To decyzja, która w 2018 roku wyglądała na krok wstecz — cała branża szła w kompozyty węglowe — i która okazała się jedną z najważniejszych w całym programie.',
       'Program idzie przez loty testowe, nie przez symulacje. Pierwszy lot w kwietniu 2023 roku skończył się rozpadem rakiety po czterech minutach. Lot 5 w październiku 2024 przyniósł pierwsze w historii złapanie członu nośnego przez ramiona wieży startowej. Loty 7, 8 i 9 to seria utrat górnego stopnia. Lot 10 i 11 przyniosły kontrolowane wodowania z celnością liczoną w metrach. Lot 12 w maju 2026 był debiutem konstrukcji Block 3.',
-      'Lot 13 z 24 lipca 2026 roku był pierwszym po wejściu [[spacex|SpaceX]] na giełdę i pierwszym, w którym Starship wypuścił prawdziwe satelity [[starlink|Starlink]] generacji V3. Statek przetrwał [[wejscie-atmosferyczne|wejście w atmosferę]] i spoczął nienaruszony w Oceanie Indyjskim, co dało pierwsze zdjęcia całej osłony termicznej po locie. Lot 14, planowany na 18 września 2026, ma być pierwszą próbą wejścia na pełną orbitę wokół Ziemi.',
+      'Lot 13 z 24 lipca 2026 roku był pierwszym po wejściu [[spacex|SpaceX]] na giełdę i pierwszym, w którym Starship wypuścił prawdziwe satelity [[starlink|Starlink]] generacji V3. Statek przetrwał [[wejscie-atmosferyczne|wejście w atmosferę]] i spoczął nienaruszony w Oceanie Indyjskim, co dało pierwsze zdjęcia całej osłony termicznej po locie. [[starship-lot-14|Lot 14]], 28 września 2026 roku, był pierwszym, na którym statek wszedł na orbitę okołoziemską i wypuścił pracujące satelity — dwadzieścia sześć sztuk V3. Misję przerwano przy pierwszym punkcie kontrolnym, po około trzech godzinach zamiast niemal dziesięciu. Kolejny, piętnasty lot ma wstępny termin nie wcześniej niż 8 listopada 2026; SpaceX go nie ogłosiło.',
       'Wariant załogowy [[hls-artemis|Starship HLS]] ma posadzić astronautów na Księżycu w ramach programu Artemis. Test dokowania planowany jest na 2027 rok, lądowanie z ludźmi na pokładzie na 2028 — obie daty przesuwały się już wielokrotnie i należy je czytać jako intencję, nie jako termin.',
     ],
     fakty: [
@@ -21,7 +21,7 @@ export const rakiety: Encja[] = [
       { etykieta: 'Ciąg przy starcie', wartosc: '73,5 MN w konstrukcji, która latała; SpaceX podaje 8 240 tf, czyli ok. 80,8 MN', pewnosc: 'potwierdzone' },
       { etykieta: 'Silniki', wartosc: '33 Raptory w dolnym stopniu, 6 w górnym (3 zwykłe, 3 próżniowe)', pewnosc: 'potwierdzone' },
       { etykieta: 'Masa paliwa', wartosc: 'ok. 4 600 t; SpaceX podaje 3 650 t w członie i 1 600 t w statku', pewnosc: 'sporne' },
-      { etykieta: 'Liczba lotów testowych', wartosc: '13', stanNa: '2026-09-12', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba lotów testowych', wartosc: '14', stanNa: '2026-10-18', pewnosc: 'potwierdzone' },
       { etykieta: 'Materiał kadłuba', wartosc: 'stal nierdzewna — 301, potem 304L, obecnie stop 30X', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek na LEO (Block 1)', wartosc: '15 t', pewnosc: 'szacunkowe' },
     ],
@@ -36,7 +36,8 @@ export const rakiety: Encja[] = [
       { data: '2024-10-13', tytul: 'Lot 5 — pierwsze złapanie', opis: 'Super Heavy wraca prosto w ramiona wieży startowej.', waga: 3 },
       { data: '2026-05-22', tytul: 'Lot 12 — debiut Block 3', opis: 'Pierwszy lot nowej konstrukcji, z ładunkiem makiet Starlinków.', waga: 2 },
       { data: '2026-07-24', tytul: 'Lot 13', opis: 'Pierwsze prawdziwe satelity Starlink V3 i nienaruszony statek po wodowaniu.', waga: 3 },
-      { data: '2026-09-18', tytul: 'Lot 14 — planowany', opis: 'Zapowiadana pierwsza próba wejścia na orbitę okołoziemską.', waga: 3 },
+      { data: '2026-09-28', tytul: 'Lot 14 — pierwsza orbita', opis: 'Statek wchodzi na orbitę i wypuszcza 26 pracujących satelitów Starlink V3.', waga: 3 },
+      { data: '2026-11-08', tytul: 'Lot 15 — termin wstępny', opis: 'Data z planów kontroli ruchu lotniczego, nie z ogłoszenia SpaceX; może się przesunąć.', waga: 2 },
     ],
     powiazane: [
       { id: 'super-heavy', powod: 'jego dolny stopień — bez niego Starship nie opuszcza atmosfery' },
@@ -47,8 +48,8 @@ export const rakiety: Encja[] = [
       { id: 'spacex', powod: 'główny program firmy po Falconie 9' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiStarship, Z.wikiStartyStarship, Z.cnbcLot13, Z.slsLot14, Z.spacexStarship],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiStarship, Z.wikiStartyStarship, Z.cnbcLot13, Z.slsLot14, Z.spacexStarship, Z.abcLot14],
+    zaktualizowano: '2026-10-18',
   },
 
   {

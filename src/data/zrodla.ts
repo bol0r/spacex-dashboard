@@ -10,6 +10,7 @@ import type { Zrodlo } from './types';
 
 const D = '2026-09-12';  // partie 1–3 fazy 3
 const D2 = '2026-09-13'; // partia „reszta imperium"
+const D3 = '2026-10-18'; // aktualizacja stanu bieżącego przed wersją 0.7.0
 
 export const Z = {
   wikiStarship: {
@@ -20,7 +21,7 @@ export const Z = {
   wikiStartyStarship: {
     tytul: 'List of Starship launches',
     url: 'https://en.wikipedia.org/wiki/List_of_Starship_launches',
-    wydawca: 'Wikipedia', dostep: D,
+    wydawca: 'Wikipedia', dostep: D3,
   },
   wikiRaptor: {
     tytul: 'SpaceX Raptor',
@@ -771,5 +772,10 @@ export const Z = {
     tytul: 'Tesla confirms Model S and Model X production is over — only ~600 left',
     url: 'https://electrek.co/2026/04/01/tesla-model-s-x-production-over-only-inventory-left/',
     wydawca: 'Electrek', dostep: D2,
+  },
+  abcLot14: {
+    tytul: 'SpaceX Starship splashes down after successful 1st orbital flight test',
+    url: 'https://abcnews.com/US/spacex-attempt-starships-1st-orbital-flight-test/story?id=136805227',
+    wydawca: 'ABC News', dostep: D3,
   },
 } as const satisfies Record<string, Zrodlo>;
