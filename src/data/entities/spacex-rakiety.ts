@@ -172,6 +172,8 @@ export const rakiety: Encja[] = [
     ],
     os: [
       { data: '2018-02-06', tytul: 'Lot demonstracyjny', opis: 'Pierwszy start; ładunkiem jest Roadster Muska ze Starmanem za kierownicą.', waga: 3 },
+      { data: '2026-08-30', tytul: 'Teleskop Nancy Grace Roman', opis: 'Trzynasty start wynosi teleskop NASA w okolice punktu L2.', waga: 2 },
+      { data: '2026-10-01', tytul: 'NROL-97', opis: 'Czternasty start i pierwsza misja dla amerykańskiego wywiadu satelitarnego.', waga: 2 },
     ],
     powiazane: [
       { id: 'falcon-9', powod: 'zbudowany z trzech jego pierwszych stopni' },

@@ -11,7 +11,7 @@ const firma: Encja[] = [
     krotki: 'Producent samochodów elektrycznych, którego Musk nie założył, ale sfinansował — i o którego założycielstwo poszła sprawa do sądu.',
     tresc: [
       'Tesla Motors została zarejestrowana 1 lipca 2003 roku przez Martina Eberharda i Marca Tarpenninga. [[elon-musk|Musk]] pojawił się dziewięć miesięcy później: w lutym 2004 poprowadził rundę A o wartości 7,5 miliona dolarów i objął stanowisko przewodniczącego rady. Dyrektorem generalnym został w październiku 2008 — a [[spor-o-zalozycieli|kto tę firmę założył]], rozstrzygnęła ostatecznie ugoda sądowa.', 'Linia modelowa rozwijała się od góry cennika w dół, zgodnie z planem przyjętym na starcie: najpierw drogi [[tesla-roadster|Roadster]] w 2008 roku, potem [[model-s|Model S]] w 2012, [[model-x|Model X]] w 2015, masowy [[model-3|Model 3]] w 2017, [[model-y|Model Y]] w 2020 i [[cybertruck|Cybertruck]] w 2023.',
-      'Produkcja rozłożyła się na fabryki nazywane [[gigafactory|gigafabrykami]] — w Nevadzie, Szanghaju od grudnia 2019, Berlinie od marca 2022 i Teksasie od kwietnia 2022. Osobną gałęzią jest magazynowanie energii: [[powerwall|Powerwall]] dla domów i [[megapack|Megapack]] dla sieci.', 'W 2025 roku Tesla dostarczyła 1,66 miliona pojazdów przy przychodzie 94,83 miliarda dolarów i zysku netto 3,79 miliarda. Firma wielokrotnie przekraczała [[pakiet-wynagrodzenia|bilion dolarów]] kapitalizacji.',
+      'Produkcja rozłożyła się na fabryki nazywane [[gigafactory|gigafabrykami]] — w Nevadzie, Szanghaju od grudnia 2019, Berlinie od marca 2022 i Teksasie od kwietnia 2022. Osobną gałęzią jest magazynowanie energii: [[powerwall|Powerwall]] dla domów i [[megapack|Megapack]] dla sieci.', 'W 2025 roku Tesla dostarczyła 1,66 miliona pojazdów przy przychodzie 94,83 miliarda dolarów i zysku netto 3,79 miliarda. Firma wielokrotnie przekraczała [[pakiet-wynagrodzenia|bilion dolarów]] kapitalizacji. W trzecim kwartale 2026 roku wyprodukowała 464 391 pojazdów i dostarczyła 486 532 — w tym 478 237 Modeli 3 i Y — oraz zainstalowała magazyny energii o łącznej pojemności 13,7 GWh.',
       'Związek ze [[spacex|SpaceX]] przez dwie dekady był wyłącznie osobowy — łączyła je ta sama osoba na szczycie, nie struktura właścicielska, a publicznie zetknęły się raz, gdy Roadster poleciał [[falcon-heavy-demo|na Falconie Heavy]]. To się zmieniło w 2026 roku: obie firmy weszły razem w [[terafab|Terafab]], wspólną fabrykę układów scalonych w Teksasie, z nakładem pierwszej fazy 16,8 miliarda dolarów.',
       'Zmieniła się też sama linia modelowa. Produkcję [[model-s|Modelu S]] i [[model-x|Modelu X]] zakończono 1 kwietnia 2026 roku, a linie we Fremont przechodzą na [[optimus|Optimusa]]. Z samochodów zostały [[model-3|Model 3]], [[model-y|Model Y]], [[cybertruck|Cybertruck]] i [[tesla-semi|Semi]].',
     ],
@@ -46,8 +46,8 @@ const firma: Encja[] = [
       { id: 'gigafactory', powod: 'sieć fabryk, na której stoi cała jej produkcja' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiMusk, Z.secTesla10k, Z.electrekKoniecSX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiTesla, Z.wikiMusk, Z.secTesla10k, Z.electrekKoniecSX, Z.secTeslaQ3],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -782,6 +782,7 @@ const reszta: Encja[] = [
     fakty: [
       { etykieta: 'Pojemność jednostki', wartosc: 'do 3 MWh', pewnosc: 'potwierdzone' },
       { etykieta: 'Wdrożone magazyny energii', wartosc: '31,4 GWh, wzrost o 113% rok do roku', stanNa: '2024', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wdrożenia w III kwartale 2026', wartosc: '13,7 GWh (Megapack i Powerwall łącznie)', stanNa: '2026-09-30', pewnosc: 'potwierdzone' },
       { etykieta: 'Miejsce produkcji', wartosc: 'Megafactory, Lathrop w Kalifornii', pewnosc: 'potwierdzone' },
       { etykieta: 'Incydent', wartosc: 'pożar podczas testów w Australii, lipiec 2021', pewnosc: 'potwierdzone' },
     ],
@@ -802,8 +803,8 @@ const reszta: Encja[] = [
       { id: 'ogniwa-4680', powod: 'ogniwa, na których stoi cała ta produkcja' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTeslaEnergy, Z.wikiTesla, Z.secTesla10k],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiTeslaEnergy, Z.wikiTesla, Z.secTesla10k, Z.secTeslaQ3],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -814,7 +815,7 @@ const reszta: Encja[] = [
     krotki: 'Humanoidalny robot Tesli: 173 cm wzrostu, 57 kg masy i pięć lat zapowiedzi produkcji, która wciąż nie ruszyła.',
     tresc: [
       'Optimusa ogłoszono na AI Day 19 sierpnia 2021 roku. Makieta stanęła na imprezie Cyber Rodeo w teksańskiej fabryce 7 kwietnia 2022, a [[elon-musk|Musk]] mówił wtedy o gotowości produkcyjnej w 2023. We wrześniu 2022 pokazano prototypy półfunkcjonalne: jeden chodził, drugi potrafił poruszać rękami.', 'Druga generacja z grudnia 2023 roku była szczuplejsza, miała lepsze dłonie o jedenastu stopniach swobody i demonstrowała taniec oraz gotowanie jajka w koszulce. W 2024 dłonie podniesiono do dwudziestu dwóch stopni swobody. Trzecia generacja ma korzystać z firmowych układów AI5 i AI6 — te same, na których oparto wznowione [[dojo|Dojo]].',
-      '[[robotaxi|Robot]] ma 173 centymetry wzrostu, waży 57 kilogramów i podnosi 20. Szacowana cena docelowa to około 30 tysięcy dolarów. Milion dostarczonych sztuk jest jednym z progów [[pakiet-wynagrodzenia|pakietu wynagrodzenia]] przyjętego przez akcjonariuszy w 2025 roku. W czerwcu 2024 Musk zapowiadał ograniczoną produkcję w 2025 i ponad tysiąc egzemplarzy dla zakładów [[tesla|Tesli]]; według stanu na kwiecień 2026 instalowane są linie we Fremont i w [[gigafactory-teksas|Teksasie]], ze skalowaniem od 2027 roku. We Fremont są to dokładnie te linie, na których do 1 kwietnia 2026 powstawały [[model-s|Model S]] i [[model-x|Model X]].', 'Na pokazie „We, Robot" w październiku 2024 roku roboty wchodziły w interakcje z publicznością. Krytycy wskazali, że działały głównie pod zdalnym sterowaniem, a firma nie powiedziała tego wprost.',
+      '[[robotaxi|Robot]] ma 173 centymetry wzrostu, waży 57 kilogramów i podnosi 20. Szacowana cena docelowa to około 30 tysięcy dolarów. Milion dostarczonych sztuk jest jednym z progów [[pakiet-wynagrodzenia|pakietu wynagrodzenia]] przyjętego przez akcjonariuszy w 2025 roku. W czerwcu 2024 Musk zapowiadał ograniczoną produkcję w 2025 i ponad tysiąc egzemplarzy dla zakładów [[tesla|Tesli]]; według stanu na kwiecień 2026 instalowane są linie we Fremont i w [[gigafactory-teksas|Teksasie]], ze skalowaniem od 2027 roku. We Fremont są to dokładnie te linie, na których do 1 kwietnia 2026 powstawały [[model-s|Model S]] i [[model-x|Model X]]. W liście do akcjonariuszy z 22 lipca 2026 Tesla usunęła zapowiedź, że Optimus osiągnie w tym roku „produkcję wielkoseryjną” — zostało tylko to, że budowa linii trwa.', 'Na pokazie „We, Robot" w październiku 2024 roku roboty wchodziły w interakcje z publicznością. Krytycy wskazali, że działały głównie pod zdalnym sterowaniem, a firma nie powiedziała tego wprost.',
     ],
     fakty: [
       { etykieta: 'Ogłoszenie', wartosc: '19 sierpnia 2021, AI Day', pewnosc: 'potwierdzone' },
@@ -822,7 +823,7 @@ const reszta: Encja[] = [
       { etykieta: 'Nośność', wartosc: '20 kg', pewnosc: 'potwierdzone' },
       { etykieta: 'Stopnie swobody dłoni', wartosc: '11 w drugiej generacji, 22 od 2024', pewnosc: 'potwierdzone' },
       { etykieta: 'Szacowana cena', wartosc: 'ok. 30 tys. USD', pewnosc: 'szacunkowe' },
-      { etykieta: 'Stan produkcji', wartosc: 'linie instalowane, skalowanie zapowiadane na 2027', stanNa: '2026-04', pewnosc: 'szacunkowe' },
+      { etykieta: 'Stan produkcji', wartosc: 'linie w budowie; zapowiedź produkcji wielkoseryjnej w 2026 wycofana', stanNa: '2026-07-22', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -842,8 +843,8 @@ const reszta: Encja[] = [
       { id: 'fsd', powod: 'korzysta z tej samej linii prac nad percepcją i sterowaniem' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k, Z.teslaPlan4, Z.electrekKoniecSX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiOptimus, Z.wikiTesla, Z.secTesla10k, Z.teslaPlan4, Z.electrekKoniecSX, Z.tcTeslaQ2],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -896,7 +897,7 @@ const teksas: Encja[] = [
     tresc: [
       'Produkcja [[model-y|Modelu Y]] ruszyła tu w kwietniu 2022 roku. Od tego czasu zakład urósł do roli najważniejszego przedsięwzięcia przemysłowego [[tesla|Tesli]] w Stanach i przejął rolę, jaką wcześniej pełnił Fremont.',
       'To stąd od 30 listopada 2023 roku wyjeżdża [[cybertruck|Cybertruck]] — samochód, którego nadwozie ze stali nierdzewnej wymagało zupełnie innej linii niż tłoczone blachy pozostałych modeli.',
-      'Zakład był też sceną dla dwóch pokazów: Cyber Rodeo w kwietniu 2022, gdzie stanęła makieta [[optimus|Optimusa]], i późniejszych zapowiedzi produkcji robota. Według stanu na kwiecień 2026 instalowane są tu linie z docelową zdolnością dziesięciu milionów sztuk rocznie od 2027 roku — liczba, którą trzeba czytać razem z historią wcześniejszych terminów tego projektu.',
+      'Zakład był też sceną dla dwóch pokazów: Cyber Rodeo w kwietniu 2022, gdzie stanęła makieta [[optimus|Optimusa]], i późniejszych zapowiedzi produkcji robota. Według stanu na kwiecień 2026 instalowane są tu linie z docelową zdolnością dziesięciu milionów sztuk rocznie od 2027 roku — liczba, którą trzeba czytać razem z historią wcześniejszych terminów tego projektu. W 2026 ruszyła tu też produkcja Cybercaba, samochodu bez kierownicy dla usługi [[robotaxi|Robotaxi]], choć w lipcu Tesla wycofała zapowiedź jego produkcji wielkoseryjnej w tym roku.',
       'Teksas jest też siedzibą [[starbase|SpaceX]] od 2024 roku. Obie firmy [[elon-musk|Muska]] przeniosły swoje centra ciężkości do tego samego stanu w odstępie dwóch lat.',
     ],
     fakty: [
@@ -922,8 +923,8 @@ const teksas: Encja[] = [
       { id: 'model-y', powod: 'pierwszy model produkowany w tym zakładzie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTesla, Z.wikiCybertruck, Z.wikiOptimus, Z.secTesla10k],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiTesla, Z.wikiCybertruck, Z.wikiOptimus, Z.secTesla10k, Z.tcTeslaQ2],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
@@ -981,7 +982,7 @@ const partia7: Encja[] = [
     krotki: 'Elektryczny ciągnik siodłowy zapowiedziany na 2019 rok, który wszedł do produkcji seryjnej w 2026 — siedem lat później.',
     tresc: [
       'Semi pokazano 16 listopada 2017 roku. [[elon-musk|Musk]] zapowiedział produkcję na 2019 rok i ceny 150 tysięcy dolarów za wersję o zasięgu 300 mil oraz 180 tysięcy za wersję 500-milową, plus 200 tysięcy za serię założycielską.',
-      'Pierwsze egzemplarze trafiły do PepsiCo 1 grudnia 2022 roku. Produkcja ruszyła w październiku tego roku i zaraz potem utknęła. Seryjna wystartowała dopiero 29 kwietnia 2026, z docelową zdolnością pięćdziesięciu tysięcy sztuk rocznie w zakładzie obok [[gigafactory-nevada|Gigafactory Nevada]].',
+      'Pierwsze egzemplarze trafiły do PepsiCo 1 grudnia 2022 roku. Produkcja ruszyła w październiku tego roku i zaraz potem utknęła. Seryjna wystartowała dopiero 29 kwietnia 2026, z docelową zdolnością pięćdziesięciu tysięcy sztuk rocznie w zakładzie obok [[gigafactory-nevada|Gigafactory Nevada]]. Trzy miesiące później, w lipcu, Tesla napisała akcjonariuszom, że nie planuje już osiągnąć w 2026 roku produkcji wielkoseryjnej — a w styczniu zapowiadała, że osiągnie.',
       'Akumulator wersji dalekozasięgowej ma 822 kWh — ponad sześćdziesiąt razy więcej niż domowy [[powerwall|Powerwall]] i osiem razy więcej niż największy akumulator w [[model-s|Modelu S]]. Sam zasięg zapowiadany w 2017 roku, czyli 500 mil, wersja produkcyjna faktycznie osiąga.',
       'Siedem lat obsuwy to najdłuższe opóźnienie w historii produktów [[tesla|Tesli]] — dłuższe nawet niż przy [[cybertruck|Cybertrucku]], który czekał cztery lata. Zasięg dotrzymano, termin nie.',
     ],
@@ -1012,8 +1013,8 @@ const partia7: Encja[] = [
       { id: 'ogniwa-4680', powod: 'rozbudowa produkcji ogniw jest warunkiem tej skali' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSemi, Z.wikiTesla, Z.secTesla10k],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiSemi, Z.wikiTesla, Z.secTesla10k, Z.tcTeslaQ2],
+    zaktualizowano: '2026-10-18',
   },
 
   {

@@ -68,6 +68,37 @@ nie podało ani SpaceX, ani żadne źródło, które dało się otworzyć — s�
 szacunki blogów), liczba boosterów użytych wielokrotnie (żadne otwarte źródło
 jej nie podaje), liczba startów z SLC-40 („ponad 340” pozostaje prawdą).
 
+### 3. Encje stanu bieżącego — zmiany od połowy września
+
+- **Commercial Crew**: 18 września 2026 NASA dokupiła u SpaceX trzy loty
+  (Crew-15, 16 i 17) za 946 mln USD, z gotowością w latach 2027–2028; umowa
+  z SpaceX łącznie 5,92 mld USD. Termin bezzałogowego lotu Starlinera NASA
+  oznacza jako „w trakcie przeglądu”. Oba fakty z oficjalnych stron NASA.
+- **Tesla**: w III kwartale 2026 wyprodukowała 464 391 pojazdów, dostarczyła
+  486 532, zainstalowała magazyny o pojemności 13,7 GWh (raport 8-K w SEC).
+  To samo w encji Megapacka.
+- **Optimus, Semi, Gigafactory Texas**: w liście do akcjonariuszy z 22 lipca
+  Tesla wycofała zapowiedź produkcji wielkoseryjnej w 2026 roku dla Cybercaba,
+  Semi i Megapacka 3, a przy Optimusie usunęła słowa o „produkcji wielkoseryjnej”.
+  To starsze niż połowa września, ale baza tego nie miała. W Gigafactory Texas
+  ruszyła produkcja Cybercaba.
+- **Falcon Heavy**: dwa nowe wydarzenia na osi — teleskop Nancy Grace Roman
+  (30 sierpnia) i NROL-97, pierwsza misja dla NRO (1 października).
+
+*Decyzje — czego nie wpisałem:*
+
+- Artykuł Tech Times z 28 września twierdzi, że SpaceX wycofa Crew Dragona przed
+  2030 rokiem i Starliner zostanie jedynym amerykańskim statkiem załogowym.
+  Tekst jest wewnętrznie niespójny, a twierdzenie opiera na relacjach innych
+  serwisów — ani NASA, ani SpaceX tego nie ogłosiły. Pominięte.
+- Zmiana nazwy działu AI w SpaceX na „SpaceXSI” — na razie tylko wypowiedź
+  Muska, strony firmy tego nie odzwierciedlają. Pominięte.
+- Rozwój usługi Robotaxi (miasta, liczba pojazdów bez nadzoru) — jedyne źródła
+  to blogi i trackery, które przeczą sobie nawzajem. Encja zostaje bez zmian.
+- Liczba pacjentów Neuralinku powyżej 21 — podawana tylko przez nieoficjalny
+  tracker.
+- Kursy akcji SpaceX i Tesli — zmieniają się codziennie, baza ich nie podaje.
+
 ## 0.6.3 — 14 września 2026
 
 **Paczka do wgrania na hosting.**

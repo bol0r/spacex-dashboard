@@ -798,4 +798,24 @@ export const Z = {
     url: 'https://thedebrief.org/neuralink-reaches-21-patients-as-elon-musk-continues-push-for-high-volume-brain-chip-production/',
     wydawca: 'The Debrief', dostep: D3,
   },
+  nasaTrzyLoty: {
+    tytul: 'NASA Awards SpaceX Three Crew Flights to Space Station',
+    url: 'https://www.nasa.gov/missions/station/commercial-crew/nasa-awards-spacex-three-crew-flights-to-space-station/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  nasaStarliner1: {
+    tytul: 'NASA’s Boeing Starliner-1',
+    url: 'https://www.nasa.gov/event/nasas-boeing-starliner-1/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  secTeslaQ3: {
+    tytul: 'Tesla, Inc. — Form 8-K, produkcja i dostawy w III kwartale 2026',
+    url: 'https://www.sec.gov/Archives/edgar/data/0001318605/000162828026064366/exhibit991111111.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  tcTeslaQ2: {
+    tytul: 'Tesla spending skyrockets as Cybercab, Semi, Megapack production timeline slips',
+    url: 'https://techcrunch.com/2026/07/22/tesla-spending-skyrockets-as-cybercab-semi-megapack-production-timeline-slips/',
+    wydawca: 'TechCrunch', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

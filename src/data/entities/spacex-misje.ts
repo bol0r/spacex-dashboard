@@ -1332,7 +1332,7 @@ const operacyjne: Encja[] = [
       'Po zakończeniu programu wahadłowców w 2011 roku Stany straciły zdolność wysyłania ludzi w kosmos z własnego terytorium. Odpowiedzią był program załogowy, zbudowany na tej samej zasadzie co towarzyszący mu [[cots|COTS]]: NASA kupuje przewóz, a nie statek, i płaci za osiągnięte kamienie milowe.',
       'Kluczowa decyzja zapadła na etapie wyboru wykonawców. [[bill-gerstenmaier|Bill Gerstenmaier]] przekonał agencję, żeby opóźnić ogłoszenie wyników i znaleźć dodatkowe pieniądze, byle utrzymać dwie konkurujące firmy zamiast jednej. Bez tego program miałby jednego dostawcę i jeden punkt awarii.',
       'Ścieżka [[spacex|SpaceX]] prowadziła przez [[demo-2|Demo-2]] w maju 2020 — lot testowy z ludźmi na pokładzie, kończący certyfikację — a potem przez [[crew-1|Crew-1]] w listopadzie, czyli pierwszą regularną wymianę załogi stacji.',
-      'Drugi dostawca wciąż nie doleciał. Dwudziestego czwartego listopada 2025 roku NASA i Boeing zmieniły umowę: najbliższy lot Starlinera ma być bezzałogowy i towarowy, a liczbę pewnych misji zmniejszono z sześciu do czterech, z dwiema opcjonalnymi. Certyfikacja przesunęła się na 2026 rok. Sześć lat po [[demo-2|Demo-2]] jeden wykonawca wozi ludzi rutynowo, a drugi nie przewiózł jeszcze ani jednej zmiany załogi.',
+      'Drugi dostawca wciąż nie doleciał. Dwudziestego czwartego listopada 2025 roku NASA i Boeing zmieniły umowę: najbliższy lot Starlinera ma być bezzałogowy i towarowy, a liczbę pewnych misji zmniejszono z sześciu do czterech, z dwiema opcjonalnymi. Certyfikacja przesunęła się na 2026 rok. Sześć lat po [[demo-2|Demo-2]] jeden wykonawca wozi ludzi rutynowo, a drugi nie przewiózł jeszcze ani jednej zmiany załogi. Termin lotu towarowego NASA oznacza dziś jako „w trakcie przeglądu”, a 18 września 2026 roku dokupiła u [[spacex|SpaceX]] trzy kolejne loty — od Crew-15 do Crew-17 — za 946 milionów dolarów, z gotowością w latach 2027 i 2028.',
       'Program rozstrzygnął też o czymś, czego wtedy nie planowano. [[crew-dragon|Kapsuła]] zbudowana dla agencji rządowej stała się później pojazdem [[inspiration4|misji prywatnych]], w tym [[polaris-dawn|Polaris Dawn]] z pierwszym komercyjnym spacerem kosmicznym.',
     ],
     fakty: [
@@ -1341,7 +1341,8 @@ const operacyjne: Encja[] = [
       { etykieta: 'Kluczowa decyzja', wartosc: 'finansowanie dwóch konkurujących firm zamiast jednej', pewnosc: 'potwierdzone' },
       { etykieta: 'Lot certyfikujący SpaceX', wartosc: 'Demo-2, maj 2020', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwszy lot operacyjny', wartosc: 'Crew-1, listopad 2020', pewnosc: 'potwierdzone' },
-      { etykieta: 'Stan drugiego dostawcy', wartosc: 'Starliner niecertyfikowany; najbliższy lot bezzałogowy i towarowy', stanNa: '2026-09', pewnosc: 'potwierdzone' },
+      { etykieta: 'Stan drugiego dostawcy', wartosc: 'Starliner niecertyfikowany; termin lotu towarowego „w trakcie przeglądu”', stanNa: '2026-10-18', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dokupione loty SpaceX', wartosc: 'Crew-15, 16 i 17 za 946 mln USD (18.09.2026); umowa łącznie 5,92 mld USD', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1361,8 +1362,8 @@ const operacyjne: Encja[] = [
       { id: 'crew-dragon', powod: 'pojazd, który powstał w tym programie' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon, Z.nasaStarliner],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiGerstenmaier, Z.nasaDemo2, Z.wikiDragon2, Z.spacexDragon, Z.nasaStarliner, Z.nasaTrzyLoty, Z.nasaStarliner1],
+    zaktualizowano: '2026-10-18',
   },
 
   {
