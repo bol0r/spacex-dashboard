@@ -998,4 +998,49 @@ export const Z = {
     url: 'https://www.engadget.com/2008-03-04-tesla-motors-says-its-roadster-is-not-a-converted-lotus-elise.html',
     wydawca: 'Engadget', dostep: D3,
   },
+  carexpertOdlewy: {
+    tytul: 'Tesla scraps innovative new manufacturing strategy - report',
+    url: 'https://www.carexpert.com.au/car-news/tesla-scraps-innovative-new-manufacturing-strategy-report',
+    wydawca: 'CarExpert', dostep: D3,
+  },
+  secTesla2017Q3: {
+    tytul: 'Tesla, Inc. — Form 8-K, dostawy i produkcja w III kwartale 2017',
+    url: 'https://www.sec.gov/Archives/edgar/data/0001318605/000156459017019158/tsla-ex991_6.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  secTesla2017Q4: {
+    tytul: 'Tesla, Inc. — Form 8-K, dostawy i produkcja w IV kwartale 2017',
+    url: 'https://www.sec.gov/Archives/edgar/data/1318605/000156459018000054/tsla-ex991_6.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  electrive4680: {
+    tytul: 'Tesla Battery Day: ‘tabless’ 4680 cell and a $25k car',
+    url: 'https://www.electrive.com/2020/09/23/tesla-battery-day-tabless-4680-cell-and-in-house-production',
+    wydawca: 'electrive', dostep: D3,
+  },
+  engadgetNevada: {
+    tytul: 'Tesla will spend $3.6 billion to build a Semi and a battery factory in its Nevada complex',
+    url: 'https://www.engadget.com/tesla-3-6-billion-expansion-nevada-gigafactory-055246273.html',
+    wydawca: 'Engadget', dostep: D3,
+  },
+  natVision: {
+    tytul: 'Tesla is removing ultrasonic sensors from all of its vehicles, fully transitioning to Tesla Vision',
+    url: 'https://www.notateslaapp.com/news/1003/b0b45864-4d89-476a-8c80-d66f28525a92',
+    wydawca: 'Not a Tesla App', dostep: D3,
+  },
+  tcDojo: {
+    tytul: 'Elon Musk confirms shutdown of Tesla Dojo, ‘an evolutionary dead end’',
+    url: 'https://techcrunch.com/2025/08/11/elon-musk-confirms-shutdown-of-tesla-dojo-an-evolutionary-dead-end',
+    wydawca: 'TechCrunch', dostep: D3,
+  },
+  mcguireSolarcity: {
+    tytul: 'Delaware Supreme Court Upholds Tesla’s 2016 Acquisition of SolarCity Under Entire Fairness Test',
+    url: 'https://www.mcguirewoods.com/client-resources/Alerts/2023/7/delaware-supreme-court-upholds-tesla-2016-acquisition-solarcity-under-entire-fairness-test',
+    wydawca: 'McGuireWoods', dostep: D3,
+  },
+  foxSolarRoof: {
+    tytul: 'Tesla starts production of solar cells in Buffalo',
+    url: 'https://www.foxbusiness.com/markets/tesla-starts-production-of-solar-cells-in-buffalo',
+    wydawca: 'Fox Business', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

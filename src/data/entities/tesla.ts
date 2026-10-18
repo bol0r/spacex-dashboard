@@ -227,7 +227,7 @@ const samochody: Encja[] = [
     aka: ['Model ☰'],
     krotki: 'Pierwszy samochód Tesli dla rynku masowego — i model, który przy rozruchu produkcji niemal wykończył firmę.',
     tresc: [
-      'Model 3 pokazano 31 marca 2016 roku. W ciągu tygodnia zebrano 325 tysięcy rezerwacji, czyli ponad 14 miliardów dolarów potencjalnej sprzedaży. Wersja podstawowa miała kosztować 35 tysięcy dolarów przy zasięgu 215 mil według EPA.', 'Dostawy zaczęły się w lipcu 2017 i wtedy zaczęło się też [[pieklo-produkcyjne|piekło produkcyjne]]. W trzecim kwartale 2017 z fabryki wyjechało 260 samochodów przy celu 1 500. W czwartym kwartale dostarczono 1 542 sztuki — około 2 900 mniej, niż spodziewał się rynek. Cel pięciu tysięcy sztuk tygodniowo [[elon-musk|Musk]] przesunął z grudnia 2017 na marzec 2018.',
+      'Model 3 pokazano 31 marca 2016 roku. W ciągu tygodnia zebrano 325 tysięcy rezerwacji, czyli ponad 14 miliardów dolarów potencjalnej sprzedaży. Wersja podstawowa miała kosztować 35 tysięcy dolarów przy zasięgu 215 mil według EPA.', 'Dostawy zaczęły się w lipcu 2017 i wtedy zaczęło się też [[pieklo-produkcyjne|piekło produkcyjne]]. W trzecim kwartale 2017 z fabryki wyjechało 260 samochodów przy celu 1 500. W czwartym kwartale dostarczono około 1 550 sztuk — około 2 900 mniej, niż spodziewał się rynek. Cel pięciu tysięcy sztuk tygodniowo [[elon-musk|Musk]] przesunął z grudnia 2017 na marzec 2018.',
       'Potem krzywa się odwróciła: 1 764 dostawy w 2017 roku, 145 846 w 2018, 300 885 w 2019. W czerwcu 2021 Model 3 przekroczył milion sprzedanych egzemplarzy i był pierwszym samochodem elektrycznym w historii, któremu się to udało.', 'Rola tego modelu w historii [[tesla|Tesli]] jest podwójna: to on miał domknąć plan zaczęty [[tesla-roadster|Roadsterem]], i to on niemal doprowadził firmę do upadku po drodze. Jego następcą w segmencie SUV-ów został [[model-y|Model Y]], zbudowany na tej samej płycie. Wobec [[model-s|Modelu S]] była to zmiana skali, nie klasy: ten sam pomysł wykonany w liczbie, która wymusiła zbudowanie całej [[gigafactory|sieci gigafabryk]].',
     ],
     fakty: [
@@ -257,8 +257,8 @@ const samochody: Encja[] = [
       { id: 'gigafactory', powod: 'fabryki rozbudowane pod jego wolumen' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiModel3, Z.wikiTesla, Z.secTesla10k],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiModel3, Z.wikiTesla, Z.secTesla10k, Z.secTesla2017Q4],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -389,13 +389,13 @@ const produkcja: Encja[] = [
     aka: ['production hell', 'rozruch Modelu 3'],
     krotki: 'Lata 2017–2018, w których Tesla nie potrafiła wyprodukować samochodu, na który miała 325 tysięcy zamówień.',
     tresc: [
-      'Po premierze [[model-3|Modelu 3]] w marcu 2016 roku [[tesla|Tesla]] zebrała w tygodniu 325 tysięcy rezerwacji. Problem polegał na tym, że nie umiała tych samochodów zbudować. W trzecim kwartale 2017 z linii zjechało 260 egzemplarzy przy celu 1 500. W czwartym dostarczono 1 542 sztuki — około 2 900 mniej, niż zakładał rynek.', 'Firma tłumaczyła to wąskimi gardłami i utrzymywała, że nie ma fundamentalnych problemów z produkcją ani z łańcuchem dostaw. W listopadzie 2017 [[elon-musk|Musk]] przesunął cel pięciu tysięcy sztuk tygodniowo z grudnia 2017 na marzec 2018. Relacje z tego okresu mówią, że sypiał w fabryce.',
+      'Po premierze [[model-3|Modelu 3]] w marcu 2016 roku [[tesla|Tesla]] zebrała w tygodniu 325 tysięcy rezerwacji. Problem polegał na tym, że nie umiała tych samochodów zbudować. W trzecim kwartale 2017 z linii zjechało 260 egzemplarzy przy celu 1 500. W czwartym dostarczono około 1 550 sztuk — około 2 900 mniej, niż zakładał rynek.', 'Firma tłumaczyła to wąskimi gardłami i utrzymywała, że nie ma fundamentalnych problemów z produkcją ani z łańcuchem dostaw. W listopadzie 2017 [[elon-musk|Musk]] przesunął cel pięciu tysięcy sztuk tygodniowo z grudnia 2017 na marzec 2018, a w styczniu 2018 firma przesunęła go ponownie, na koniec czerwca. Relacje z tego okresu mówią, że sypiał w fabryce.',
       'Wyjście z kryzysu było równie nietypowe jak sam kryzys: część montażu przeniesiono do namiotu rozstawionego obok fabryki, bo hala nie miała już miejsca na kolejną linię. Krzywa się odwróciła — 145 846 dostaw w 2018 roku wobec 1 764 rok wcześniej.', 'Ten okres pokrywa się czasowo z [[funding-secured|sierpniem 2018]], kiedy Musk napisał, że ma zabezpieczone finansowanie wykupu Tesli z giełdy. Oba wydarzenia mają jedno wspólne tło: firma była wtedy pod ogromną presją gotówkową i medialną. Wnioskiem z tamtych miesięcy była cała późniejsza [[gigafactory|sieć gigafabryk]], a sposób, w jaki firma przez nie przeszła, jest podręcznikowym przykładem [[styl-zarzadzania|jego zarządzania]].',
     ],
     fakty: [
       { etykieta: 'Produkcja III kw. 2017', wartosc: '260 szt. przy celu 1 500', pewnosc: 'potwierdzone' },
-      { etykieta: 'Dostawy IV kw. 2017', wartosc: '1 542 szt., ok. 2 900 poniżej oczekiwań rynku', pewnosc: 'potwierdzone' },
-      { etykieta: 'Przesunięcie celu tygodniowego', wartosc: 'z grudnia 2017 na marzec 2018', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dostawy IV kw. 2017', wartosc: 'ok. 1 550 szt. (Tesla: 1 550), ok. 2 900 poniżej oczekiwań rynku', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przesunięcie celu tygodniowego', wartosc: 'z grudnia 2017 na marzec 2018, potem na czerwiec 2018', pewnosc: 'potwierdzone' },
       { etykieta: 'Dostawy 2017 a 2018', wartosc: '1 764 wobec 145 846', pewnosc: 'potwierdzone' },
       { etykieta: 'Rozwiązanie doraźne', wartosc: 'linia montażowa w namiocie obok fabryki', pewnosc: 'potwierdzone' },
     ],
@@ -417,8 +417,8 @@ const produkcja: Encja[] = [
       { id: 'funding-secured', powod: 'ten sam rok i to samo tło presji gotówkowej' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiModel3, Z.wikiTesla],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiModel3, Z.wikiTesla, Z.secTesla2017Q3, Z.secTesla2017Q4],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -533,8 +533,8 @@ const produkcja: Encja[] = [
       { id: 'gigafactory', powod: 'element projektowany pod te linie produkcyjne' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiGigaNevada, Z.wikiTesla],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiGigaNevada, Z.wikiTesla, Z.electrive4680, Z.engadgetNevada],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -542,26 +542,26 @@ const produkcja: Encja[] = [
     typ: 'technologia',
     nazwa: 'Odlewanie wielkogabarytowe',
     aka: ['gigacasting', 'Giga Press'],
-    krotki: 'Zastąpienie siedemdziesięciu blaszanych części dwoma odlewami — i porzucenie tej metody po czterech latach.',
+    krotki: 'Zastąpienie siedemdziesięciu blaszanych części dwoma odlewami — bez kolejnego kroku, czyli całego podwozia z jednej formy.',
     tresc: [
       'Przy [[model-y|Modelu Y]] [[tesla|Tesla]] wprowadziła odlewanie jednoczęściowych ram przedniej i tylnej na maszynach nazywanych Giga Press. Efekt: siedemdziesiąt osobnych elementów metalowych zastąpiono dwoma dużymi odlewami. Mniej części oznacza mniej spawów, mniej stanowisk i krótszą linię.', 'Rozumowanie jest identyczne jak przy [[ogniwa-4680|ogniwach 4680]]: zmiana nie poprawia parametru samochodu, tylko skraca proces jego składania. To wniosek z [[pieklo-produkcyjne|kryzysu produkcyjnego Modelu 3]], w którym problemem nie był projekt, a tempo montażu.',
-      'W maju 2024 roku firma porzuciła plany dalszego rozwoju tej metody, wskazując na wysokie nakłady początkowe. To rzadki w tej firmie przypadek publicznego wycofania się z rozwiązania, które wcześniej przedstawiano jako przełomowe — i wart zapamiętania właśnie dlatego. Metoda była przy tym pomyślana jako element całej [[gigafactory|sieci gigafabryk]], a nie usprawnienie jednej linii.',
+      'W maju 2024 roku Reuters, powołując się na źródła w firmie, podał, że Tesla zrezygnowała z następnego kroku: odlewania całego podwozia w jednym kawałku. Zostaje przy trzech częściach — odlewanego przodu i tyłu oraz środka z aluminium i stali, w którym mieści się akumulator. Powodem było ograniczanie wydatków po spadku sprzedaży. Metoda była przy tym pomyślana jako element całej [[gigafactory|sieci gigafabryk]], a nie usprawnienie jednej linii.',
     ],
     fakty: [
       { etykieta: 'Pierwsze zastosowanie', wartosc: 'Model Y', pewnosc: 'potwierdzone' },
       { etykieta: 'Redukcja liczby części', wartosc: '70 elementów zastąpione 2 odlewami', pewnosc: 'potwierdzone' },
       { etykieta: 'Maszyna', wartosc: 'prasa odlewnicza nazywana Giga Press', pewnosc: 'potwierdzone' },
-      { etykieta: 'Porzucenie planów rozwoju', wartosc: 'maj 2024, z powodu nakładów początkowych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Podwozie z jednego odlewu', wartosc: 'plan odłożony w 2024 według Reutersa; dwa odlewy zostają', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Metodę przedstawianą jako przełom w produkcji samochodów Tesla porzuciła w maju 2024 roku — z powodu zbyt wysokich nakładów początkowych. Rozwiązanie zadziałało technicznie i nie opłaciło się finansowo, co w tej branży zdarza się częściej, niż wynika z prezentacji.',
-        zrodlo: Z.wikiModelY,
+        tekst: 'Tesla nie porzuciła odlewania, tylko jego następny krok. Według Reutersa z maja 2024 roku plan wyciskania całego podwozia z jednej formy odłożono, bo po spadku sprzedaży firma ograniczyła wydatki. Model Y i Cybertruck nadal mają odlewany przód i tył.',
+        zrodlo: Z.carexpertOdlewy,
       },
     ],
     os: [
       { data: '2020-01', tytul: 'Wdrożenie przy Modelu Y', opis: 'Pierwsze jednoczęściowe odlewy ram wchodzą do produkcji.', waga: 2 },
-      { data: '2024-05', tytul: 'Porzucenie planów', opis: 'Tesla rezygnuje z dalszego rozwoju metody.', waga: 2 },
+      { data: '2024-05', tytul: 'Bez podwozia z jednego odlewu', opis: 'Reuters: Tesla odkłada odlewanie całego podwozia naraz.', waga: 2 },
     ],
     powiazane: [
       { id: 'model-y', powod: 'pierwszy model produkowany tą metodą' },
@@ -569,9 +569,9 @@ const produkcja: Encja[] = [
       { id: 'pieklo-produkcyjne', powod: 'wniosek wyciągnięty z tamtego kryzysu' },
       { id: 'gigafactory', powod: 'metoda opracowana pod linie w tych zakładach' },
     ],
-    status: 'historyczne',
-    zrodla: [Z.wikiModelY, Z.wikiTesla],
-    zaktualizowano: '2026-09-12',
+    status: 'aktywne',
+    zrodla: [Z.wikiModelY, Z.wikiTesla, Z.carexpertOdlewy],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
@@ -692,8 +692,8 @@ const oprogramowanie: Encja[] = [
       { id: 'nadzor-nhtsa', powod: 'skutki tej decyzji są przedmiotem dochodzeń' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiAutopilot, Z.wikiTesla],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiAutopilot, Z.wikiTesla, Z.natVision],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -742,10 +742,10 @@ const oprogramowanie: Encja[] = [
     typ: 'technologia',
     nazwa: 'Dojo',
     aka: ['D1', 'Dojo3'],
-    krotki: 'Superkomputer własnej konstrukcji do trenowania modeli jazdy autonomicznej — rozwiązany w 2025 i wznowiony w 2026.',
+    krotki: 'Superkomputer własnej konstrukcji do trenowania modeli jazdy autonomicznej — rozwiązany w 2025, w 2026 zapowiedziany na nowo.',
     tresc: [
       'Dojo to rodzina superkomputerów budowanych przez [[tesla|Teslę]] do przetwarzania nagrań wideo i trenowania modeli [[fsd|Full Self-Driving]]. [[elon-musk|Musk]] wspomniał o projekcie w kwietniu 2019, oficjalna prezentacja odbyła się na AI Day 19 sierpnia 2021, a produkcja ruszyła w lipcu 2023.', 'Podstawą jest układ D1: 354 rdzenie obliczeniowe, 50 miliardów tranzystorów, wykonanie w TSMC w procesie 7 nm. Każdy rdzeń jest 64-bitowym procesorem obsługującym instrukcje skalarne i wektorowe. Dwadzieścia pięć układów D1 składa się w chłodzoną wodą kafelkę treningową o wydajności 9 petaflopsów w formatach o obniżonej precyzji. Celem całego systemu był ponad jeden eksaflops.',
-      'W sierpniu 2025 roku agencja Bloomberg podała, że projekt rozwiązano, a pracowników przeniesiono do innych zadań. W styczniu 2026 Musk wznowił go z nową odsłoną układu, nazywaną Dojo3, opartą na firmowym projekcie AI5.', 'Warto zestawić to z [[optimus|Optimusem]]: oba projekty mają tę samą cechę — ogłoszenie, harmonogram, przesunięcie, a potem restart pod nowym oznaczeniem. Zadaniem obu pozostaje to samo: wytrenować sieć, która prowadzi samochód, czyli [[autopilot|Autopilota]].',
+      'W sierpniu 2025 roku agencja Bloomberg podała, że projekt rozwiązano, a pracowników przeniesiono do innych zadań. Musk potwierdził decyzję, pisząc, że wszystkie ścieżki prowadziły do układu AI6. W styczniu 2026 zapowiedział jednak wznowienie prac nad Dojo3, uzasadniając to postępami w projekcie firmowego układu AI5.', 'Warto zestawić to z [[optimus|Optimusem]]: oba projekty mają tę samą cechę — ogłoszenie, harmonogram, przesunięcie, a potem restart pod nowym oznaczeniem. Zadaniem obu pozostaje to samo: wytrenować sieć, która prowadzi samochód, czyli [[autopilot|Autopilota]].',
     ],
     fakty: [
       { etykieta: 'Prezentacja', wartosc: '19 sierpnia 2021, AI Day', pewnosc: 'potwierdzone' },
@@ -754,11 +754,11 @@ const oprogramowanie: Encja[] = [
       { etykieta: 'Kafelka treningowa', wartosc: '25 układów D1, 9 petaflopsów', pewnosc: 'potwierdzone' },
       { etykieta: 'Cel wydajności systemu', wartosc: 'ponad 1 eksaflops', pewnosc: 'szacunkowe' },
       { etykieta: 'Rozwiązanie projektu', wartosc: 'sierpień 2025', pewnosc: 'potwierdzone' },
-      { etykieta: 'Wznowienie', wartosc: 'styczeń 2026, jako Dojo3 na układzie AI5', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wznowienie', wartosc: 'styczeń 2026, zapowiedź prac nad Dojo3 po postępach nad układem AI5', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Projekt rozwiązano w sierpniu 2025 roku i rozdzielono zespół do innych zadań, a pięć miesięcy później wznowiono go z nowym układem. Superkomputer, który miał trenować jazdę autonomiczną, sam przeszedł pełny cykl zamknięcia i restartu w ciągu niespełna pół roku.',
+        tekst: 'Projekt rozwiązano w sierpniu 2025 roku i rozdzielono zespół do innych zadań, a pięć miesięcy później Musk zapowiedział wznowienie prac. Superkomputer, który miał trenować jazdę autonomiczną, sam przeszedł od zamknięcia do zapowiedzi restartu w niespełna pół roku.',
         zrodlo: Z.wikiDojo,
       },
     ],
@@ -766,7 +766,7 @@ const oprogramowanie: Encja[] = [
       { data: '2021-08-19', tytul: 'Prezentacja', opis: 'Tesla przedstawia Dojo i układ D1 na AI Day.', waga: 2 },
       { data: '2023-07', tytul: 'Start produkcji', opis: 'System wchodzi do eksploatacji.', waga: 2 },
       { data: '2025-08', tytul: 'Rozwiązanie zespołu', opis: 'Bloomberg podaje, że projekt zamknięto.', waga: 3 },
-      { data: '2026-01', tytul: 'Wznowienie', opis: 'Musk restartuje projekt jako Dojo3 na układzie AI5.', waga: 2 },
+      { data: '2026-01', tytul: 'Wznowienie', opis: 'Musk zapowiada wznowienie prac nad Dojo3 po postępach nad układem AI5.', waga: 2 },
     ],
     powiazane: [
       { id: 'fsd', powod: 'zbudowany do trenowania jego modeli' },
@@ -775,8 +775,8 @@ const oprogramowanie: Encja[] = [
       { id: 'optimus', powod: 'drugi projekt firmy o tym samym rytmie ogłoszeń i przesunięć' },
     ],
     status: 'w rozwoju',
-    zrodla: [Z.wikiDojo, Z.wikiAutopilot],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiDojo, Z.wikiAutopilot, Z.tcDojo],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
@@ -1086,6 +1086,7 @@ const partia7: Encja[] = [
       { etykieta: 'Zadłużenie przed przejęciem', wartosc: 'ponad 1,5 mld USD', stanNa: '2016', pewnosc: 'potwierdzone' },
       { etykieta: 'Cena przejęcia', wartosc: '2,6 mld USD w akcjach, listopad 2016', pewnosc: 'potwierdzone' },
       { etykieta: 'Wyrok w sprawie akcjonariuszy', wartosc: 'kwiecień 2022, na korzyść Muska', pewnosc: 'potwierdzone' },
+      { etykieta: 'Apelacja', wartosc: '6 czerwca 2023, Sąd Najwyższy Delaware utrzymał wyrok', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1106,8 +1107,8 @@ const partia7: Encja[] = [
       { id: 'powerwall', powod: 'przejęła po niej rolę filaru energetycznej gałęzi firmy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiSolarcity, Z.wikiTesla],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiSolarcity, Z.wikiTesla, Z.mcguireSolarcity],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1144,8 +1145,8 @@ const partia7: Encja[] = [
       { id: 'master-plan', powod: 'obietnica z Part Deux' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiSolarcity, Z.wikiTeslaEnergy],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiSolarcity, Z.wikiTeslaEnergy, Z.foxSolarRoof],
+    zaktualizowano: '2026-10-18',
   },
 
   {
