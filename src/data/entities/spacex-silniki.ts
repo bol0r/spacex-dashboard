@@ -127,8 +127,8 @@ export const silniki: Encja[] = [
       { id: 'spacex', powod: 'jeden z dwóch pierwszych silników firmy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.wikiMerlin],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFalcon1, Z.wikiMerlin, Z.gunterFalcon1],
+    zaktualizowano: '2026-10-18',
   },
 
   {

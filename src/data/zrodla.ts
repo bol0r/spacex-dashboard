@@ -868,4 +868,49 @@ export const Z = {
     url: 'https://rosap.ntl.bts.gov/view/dot/12308/dot_12308_DS1.pdf',
     wydawca: 'U.S. Department of Transportation, Volpe Center', dostep: D3,
   },
+  gunterFalcon1: {
+    tytul: 'Falcon-1',
+    url: 'https://space.skyrocket.de/doc_lau/falcon-1.htm',
+    wydawca: "Gunter's Space Page", dostep: D3,
+  },
+  nasaCrs7: {
+    tytul: 'NASA Independent Review Team SpaceX CRS-7 Accident Investigation Report — Public Summary',
+    url: 'https://www.nasa.gov/wp-content/uploads/2018/03/public_summary_nasa_irt_spacex_crs-7_final.pdf',
+    wydawca: 'NASA', dostep: D3,
+  },
+  nasaClipperStart: {
+    tytul: 'Liftoff! NASA’s Europa Clipper Sails Toward Ocean Moon of Jupiter',
+    url: 'https://www.nasa.gov/news-release/liftoff-nasas-europa-clipper-sails-toward-ocean-moon-of-jupiter/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  jplClipperMars: {
+    tytul: 'NASA’s Europa Clipper Uses Mars to Go the Distance',
+    url: 'https://www.jpl.nasa.gov/news/nasas-europa-clipper-uses-mars-to-go-the-distance/',
+    wydawca: 'NASA Jet Propulsion Laboratory', dostep: D3,
+  },
+  nasaCrew1: {
+    tytul: 'Crew-1 Astronauts Safely Splash Down After Space Station Mission',
+    url: 'https://www.nasa.gov/news-release/crew-1-astronauts-safely-splash-down-after-space-station-mission/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  nasaCrew9Start: {
+    tytul: 'Liftoff! NASA’s SpaceX Crew-9 Launches to International Space Station',
+    url: 'https://www.nasa.gov/news-release/liftoff-nasas-spacex-crew-9-launches-to-international-space-station/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  nasaCrew9: {
+    tytul: 'NASA’s SpaceX Crew-9',
+    url: 'https://www.nasa.gov/mission/nasas-spacex-crew-9/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  cbsAx1: {
+    tytul: 'SpaceX commercial crew returns to Earth with Atlantic Ocean splashdown',
+    url: 'https://www.cbsnews.com/news/spacex-commercial-crew-returns-to-earth-atlantic-ocean-splashdown/',
+    wydawca: 'CBS News', dostep: D3,
+  },
+  astronomyFram2: {
+    tytul: 'Fram2 astronauts splash down after historic polar spaceflight',
+    url: 'https://www.astronomy.com/space-exploration/fram2-astronauts-splash-down-after-historic-polar-spaceflight/',
+    wydawca: 'Astronomy', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

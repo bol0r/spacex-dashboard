@@ -325,8 +325,8 @@ export const miejsca: Encja[] = [
       { id: 'slc-40', powod: 'kontynentalne stanowisko, które przejęło tę rolę' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX, Z.gunterFalcon1],
+    zaktualizowano: '2026-10-18',
   },
 
   {

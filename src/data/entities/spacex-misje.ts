@@ -76,8 +76,8 @@ const falcon1: Encja[] = [
       { id: 'leo', powod: 'lot pokazał różnicę między wysokością kosmiczną a orbitą' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX, Z.gunterFalcon1],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -113,8 +113,8 @@ const falcon1: Encja[] = [
       { id: 'merlin', powod: 'debiut wersji 1C, której chłodzenie regeneracyjne wywołało awarię' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX, Z.gunterFalcon1],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -193,8 +193,8 @@ const falcon1: Encja[] = [
       { id: 'spacex', powod: 'pierwszy start, za który firma dostała pieniądze' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFalcon1, Z.wikiSpaceX, Z.gunterFalcon1],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
@@ -287,10 +287,10 @@ const wczesne: Encja[] = [
     typ: 'misja',
     nazwa: 'CRS-7',
     aka: ['awaria CRS-7'],
-    krotki: 'Rakieta rozpadła się w 139. sekundzie lotu, bo zastrzał wart kilka dolarów pękł przy piątej części swojej nośności.',
+    krotki: 'Rakieta rozpadła się w 139. sekundzie lotu. Według SpaceX pękł zastrzał przy piątej części swojej nośności.',
     tresc: [
       'Dwudziestego ósmego czerwca 2015 roku [[falcon-9|Falcon 9]] wystartował z kapsułą Dragon wypełnioną zaopatrzeniem dla stacji. Sto trzydzieści dziewięć sekund po starcie rakieta rozpadła się w powietrzu.',
-      'Przyczyną był zastrzał mocujący butlę helową wewnątrz zbiornika ciekłego tlenu drugiego stopnia. Element puścił, butla uderzyła w górną pokrywę zbiornika i to wystarczyło. Śledztwo wykazało, że śruba oczkowa o [[scrub-i-nominal|nominal]]nej nośności 10 000 funtów pękła przy 2 000. Niezależne dochodzenie NASA nazwało rzecz po imieniu: użyto materiału klasy przemysłowej zamiast lotniczej, bez odpowiedniego badania wejściowego i z pominięciem zalecanych zapasów bezpieczeństwa.',
+      'Przyczyną był zastrzał mocujący butlę helową wewnątrz zbiornika ciekłego tlenu drugiego stopnia. Element puścił, butla uderzyła w górną pokrywę zbiornika i to wystarczyło. Według śledztwa SpaceX śruba oczkowa o [[scrub-i-nominal|nominal]]nej nośności 10 000 funtów pękła przy 2 000. Niezależny zespół NASA uznał pęknięcie zastrzału za przyczynę wiarygodną, choć nie jedyną możliwą, i nazwał rzecz po imieniu: był to błąd projektowy — odlew ze stali klasy przemysłowej zamiast lotniczej, bez dodatkowych badań i bez zapasu wytrzymałości 4:1, który zalecał producent.',
       'Przepadł między innymi adapter dokujący IDA-1 — element potrzebny do tego, żeby [[crew-dragon|statki załogowe]] mogły w ogóle przycumować do stacji. Dostarczono go dopiero misją CRS-9, w ramach tego samego kontraktu [[cots|CRS]].',
       'To pierwsza z dwóch dużych strat w historii [[falcon-9|Falcona 9]]. Druga, [[amos-6|AMOS-6]], przyszła nieco ponad rok później i również dotyczyła zbiornika z helem.',
     ],
@@ -298,14 +298,14 @@ const wczesne: Encja[] = [
       { etykieta: 'Data', wartosc: '28 czerwca 2015, 14:21 UTC', pewnosc: 'potwierdzone' },
       { etykieta: 'Moment rozpadu', wartosc: 'T+139 s', pewnosc: 'potwierdzone' },
       { etykieta: 'Przyczyna', wartosc: 'pęknięcie zastrzału butli helowej w zbiorniku tlenu II stopnia', pewnosc: 'potwierdzone' },
-      { etykieta: 'Nośność a rzeczywistość', wartosc: 'śruba na 10 000 funtów pękła przy 2 000', pewnosc: 'potwierdzone' },
-      { etykieta: 'Utracony ładunek', wartosc: 'ponad 1 800 kg zaopatrzenia, w tym adapter dokujący IDA-1', pewnosc: 'potwierdzone' },
-      { etykieta: 'Ocena NASA', wartosc: 'użycie materiału przemysłowego zamiast lotniczego bez badań', pewnosc: 'potwierdzone' },
+      { etykieta: 'Nośność a rzeczywistość', wartosc: 'według SpaceX: śruba na 10 000 funtów pękła przy 2 000', pewnosc: 'potwierdzone' },
+      { etykieta: 'Utracony ładunek', wartosc: '1952 kg zaopatrzenia, w tym adapter dokujący IDA-1', pewnosc: 'potwierdzone' },
+      { etykieta: 'Ocena NASA', wartosc: 'błąd projektowy: materiał przemysłowy zamiast lotniczego, bez badań i zapasu 4:1', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Rakietę wartą dziesiątki milionów dolarów zniszczył element konstrukcyjny za kilka dolarów, który pękł przy jednej piątej deklarowanej nośności. NASA orzekła, że przyczyną był zakup materiału klasy przemysłowej bez badania wejściowego — nie błąd projektowy w samej rakiecie, ale w tym, co do niej wpuszczono.',
-        zrodlo: Z.wikiCrs7,
+        tekst: 'SpaceX i NASA różniły się co do przyczyny. Firma wskazała pękniętą końcówkę zastrzału; niezależny zespół NASA uznał to za wiarygodne, ale za równie wiarygodny uznał błędny montaż albo pęknięcie innej części zastrzału. Co do jednego nie miał wątpliwości: odlew klasy przemysłowej w krytycznym miejscu rakiety był błędem projektowym. Streszczenie raportu NASA opublikowała w marcu 2018 roku.',
+        zrodlo: Z.nasaCrs7,
       },
     ],
     os: [
@@ -318,8 +318,8 @@ const wczesne: Encja[] = [
       { id: 'crew-dragon', powod: 'utracony adapter IDA-1 był potrzebny do jego dokowania' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiCrs7, Z.wikiStartyFalcon],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiCrs7, Z.wikiStartyFalcon, Z.nasaCrs7],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -608,22 +608,22 @@ const przelomy: Encja[] = [
     aka: ['Axiom Mission 1'],
     krotki: 'Pierwsza w pełni komercyjna misja załogowa do stacji kosmicznej, prowadzona z prywatnego centrum kontroli.',
     tresc: [
-      'Ósmego kwietnia 2022 roku [[crew-dragon|Crew Dragon]] zabrał czterech ludzi do Międzynarodowej Stacji Kosmicznej w misji zorganizowanej przez firmę Axiom Space. Dowodził Michael López-Alegría, zawodowy astronauta; trzy pozostałe miejsca zajęli Larry Connor, Eytan Stibbe i Mark Pathy, każde za 55 milionów dolarów.',
+      'Ósmego kwietnia 2022 roku [[crew-dragon|Crew Dragon]] zabrał czterech ludzi do Międzynarodowej Stacji Kosmicznej w misji zorganizowanej przez firmę Axiom Space. Dowodził Michael López-Alegría, zawodowy astronauta; trzy pozostałe miejsca zajęli Larry Connor, Eytan Stibbe i Mark Pathy. Cen nie ogłoszono; szacunki mówiły o około 55 milionach dolarów za miejsce.',
       'Nowość nie polegała na tym, że do stacji polecieli prywatni pasażerowie — to zdarzało się już wcześniej, przy okazji lotów agencyjnych. Nowe było to, kto misję prowadził: Axiom operowało nią z własnego centrum kontroli w Houston, a nie przez agencję rządową.',
-      'Misję wyniósł [[falcon-9|Falcon 9]] na [[leo|niską orbitę]], tak jak wszystkie loty tej kapsuły. Pobyt zaplanowany na dziesięć dni wydłużył się do około szesnastu, bo pogoda w strefie wodowania nie pozwalała wrócić. Łącznie misja trwała siedemnaście dni i zakończyła się 25 kwietnia na Atlantyku.',
+      'Misję wyniósł [[falcon-9|Falcon 9]] na [[leo|niską orbitę]], tak jak wszystkie loty tej kapsuły. Lot zaplanowany na dziesięć dni wydłużył się o tydzień, bo wiatr i fale w strefie wodowania nie pozwalały wrócić. Łącznie misja trwała siedemnaście dni i zakończyła się 25 kwietnia na Atlantyku.',
       'Po [[inspiration4|Inspiration4]] był to następny krok w tę samą stronę: nie tylko prywatni ludzie na orbicie, ale prywatna firma w roli operatora lotu. Kolejnym krokiem w tej samej serii było [[polaris-dawn|Polaris Dawn]], tyle że bez stacji i z wyjściem w przestrzeń.',
     ],
     fakty: [
       { etykieta: 'Start', wartosc: '8 kwietnia 2022', pewnosc: 'potwierdzone' },
       { etykieta: 'Załoga', wartosc: 'López-Alegría, Connor, Stibbe, Pathy', pewnosc: 'potwierdzone' },
-      { etykieta: 'Cena miejsca', wartosc: '55 mln USD', pewnosc: 'potwierdzone' },
-      { etykieta: 'Czas na stacji', wartosc: 'ok. 16 dni zamiast planowanych 10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Cena miejsca', wartosc: 'ok. 55 mln USD — szacunek, ceny nie ogłoszono', pewnosc: 'szacunkowe' },
+      { etykieta: 'Czas trwania', wartosc: '17 dni zamiast planowanych 10', pewnosc: 'potwierdzone' },
       { etykieta: 'Operator misji', wartosc: 'Axiom Space, z własnego centrum kontroli w Houston', pewnosc: 'potwierdzone' },
       { etykieta: 'Powrót', wartosc: 'Atlantyk, 25 kwietnia 2022', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Załoga siedziała na stacji o sześć dni dłużej, niż planowano, bo w strefie wodowania nie było odpowiedniej pogody. Trzej pasażerowie zapłacili po 55 milionów dolarów za dziesięć dni i dostali szesnaście — bez dopłaty i bez możliwości wyboru.',
+        tekst: 'Misja miała trwać dziesięć dni, a trwała siedemnaście. Powrót przesunął się o tydzień, bo w strefie wodowania wiało i były wysokie fale — pasażerowie, których miejsca szacowano na około 55 milionów dolarów każde, dostali dodatkowy tydzień w kosmosie.',
         zrodlo: Z.wikiAx1,
       },
     ],
@@ -638,8 +638,8 @@ const przelomy: Encja[] = [
       { id: 'leo', powod: 'cała misja odbyła się na niskiej orbicie okołoziemskiej' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiAx1, Z.wikiDragon2],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiAx1, Z.wikiDragon2, Z.cbsAx1],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -722,8 +722,8 @@ const przelomy: Encja[] = [
       { id: 'falcon-9', powod: 'rakieta, która wyniosła misję' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFram2, Z.wikiDragon2],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFram2, Z.wikiDragon2, Z.astronomyFram2],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
@@ -1382,7 +1382,7 @@ const operacyjne: Encja[] = [
       { etykieta: 'Start', wartosc: '16 listopada 2020, 00:27 UTC', pewnosc: 'potwierdzone' },
       { etykieta: 'Załoga', wartosc: 'Hopkins, Glover, Walker (NASA), Noguchi (JAXA)', pewnosc: 'potwierdzone' },
       { etykieta: 'Nazwa kapsuły', wartosc: 'Resilience', pewnosc: 'potwierdzone' },
-      { etykieta: 'Czas trwania', wartosc: '167 dni 6 godzin 29 minut', pewnosc: 'potwierdzone' },
+      { etykieta: 'Czas trwania', wartosc: '167 dni 6 godzin 29 minut (NASA zaokrągla do 168 dni na orbicie)', pewnosc: 'potwierdzone' },
       { etykieta: 'Powrót', wartosc: '2 maja 2021', pewnosc: 'potwierdzone' },
       { etykieta: 'Status', wartosc: 'pierwszy lot operacyjny, nie testowy', pewnosc: 'potwierdzone' },
     ],
@@ -1403,8 +1403,8 @@ const operacyjne: Encja[] = [
       { id: 'inspiration4', powod: 'ta sama kapsuła Resilience poleciała w niej rok później' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiCrew1, Z.wikiDragon2],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiCrew1, Z.wikiDragon2, Z.nasaCrew1],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1485,8 +1485,8 @@ const operacyjne: Encja[] = [
       { id: 'crew-1', powod: 'pierwszy operacyjny lot tej serii, cztery lata wcześniej' },
       { id: 'wodowanie', powod: 'sposób powrotu czwórki na Ziemię' },
     ],
-    zrodla: [Z.wikiCrew9, Z.wikiDragon2],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiCrew9, Z.wikiDragon2, Z.nasaCrew9Start, Z.nasaCrew9],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1496,19 +1496,19 @@ const operacyjne: Encja[] = [
     aka: ['sonda do Europy'],
     krotki: 'Sonda do księżyca Jowisza, którą Kongres kazał wysłać rakietą NASA, a ostatecznie poleciała Falconem Heavy.',
     tresc: [
-      'Europa Clipper ma zbadać ocean ukryty pod lodową skorupą księżyca Jowisza — sprawdzić, czy jest tam woda w stanie ciekłym, odpowiednia chemia i źródło energii. Wystartowała 14 października 2024 roku o 12:06 czasu wschodniego z [[lc-39a|LC-39A]] na [[falcon-heavy|Falconie Heavy]] — tej samej rakiecie, która sześć lat wcześniej wysłała w przestrzeń [[tesla-roadster|Roadstera]]. Masa startowa: 6065 kilogramów.',
+      'Europa Clipper ma zbadać ocean ukryty pod lodową skorupą księżyca Jowisza — sprawdzić, czy jest tam woda w stanie ciekłym, odpowiednia chemia i źródło energii. Wystartowała 14 października 2024 roku o 12:06 czasu wschodniego z [[lc-39a|LC-39A]] na [[falcon-heavy|Falconie Heavy]] — tej samej rakiecie, która sześć lat wcześniej wysłała w przestrzeń [[tesla-roadster|Roadstera]]. Masa startowa z paliwem: około sześciu ton.',
       'Nie tak to było zaplanowane. Przez lata prawo wymagało, żeby sonda poleciała rakietą SLS. Zmiana decyzji miała trzy powody: koszt startu na poziomie około 178 milionów dolarów, wątpliwa dostępność SLS oraz drgania od dopalaczy na paliwo stałe, które mogły uszkodzić ładunek.',
       'Sama zmiana rakiety oszczędziła szacunkowo dwa miliardy dolarów. To liczba, która mówi o [[koszt-kilograma|koszcie dostępu do kosmosu]] więcej niż jakakolwiek tabela: różnica między dwiema rakietami była większa niż budżet wielu całych misji naukowych.',
-      'Pierwszego marca 2025 roku sonda przeszła 884 kilometry nad Marsem, wykorzystując jego grawitację do zmiany trajektorii. Do Jowisza dotrze w 2030 roku; pierwsze bliskie przejście nad Europą przewidziano na 11 kwietnia 2030. Sam manewr jest tanim sposobem na to, czego nie daje [[rownanie-ciolkowskiego|równanie rakietowe]]: prędkość bez paliwa. W rachunku [[delta-v|delta-v]] asysta grawitacyjna jest jedyną pozycją, która nic nie kosztuje.',
+      'Pierwszego marca 2025 roku sonda przeszła 884 kilometry nad Marsem, wykorzystując jego grawitację do zmiany trajektorii. W grudniu 2026 roku czeka ją jeszcze asysta Ziemi, do Jowisza dotrze w kwietniu 2030, a przeloty naukowe nad Europą zacznie w 2031 roku. Sam manewr jest tanim sposobem na to, czego nie daje [[rownanie-ciolkowskiego|równanie rakietowe]]: prędkość bez paliwa. W rachunku [[delta-v|delta-v]] asysta grawitacyjna jest jedyną pozycją, która nic nie kosztuje.',
     ],
     fakty: [
       { etykieta: 'Start', wartosc: '14 października 2024, LC-39A', pewnosc: 'potwierdzone' },
       { etykieta: 'Rakieta', wartosc: 'Falcon Heavy Block 5', pewnosc: 'potwierdzone' },
-      { etykieta: 'Masa startowa', wartosc: '6065 kg', pewnosc: 'potwierdzone' },
+      { etykieta: 'Masa startowa', wartosc: 'ok. 6 t z paliwem (NASA: ok. 5900 kg, Wikipedia: 6065 kg)', pewnosc: 'szacunkowe' },
       { etykieta: 'Koszt startu', wartosc: 'około 178 mln USD', pewnosc: 'potwierdzone' },
       { etykieta: 'Oszczędność wobec SLS', wartosc: 'szacunkowo 2 mld USD', pewnosc: 'szacunkowe' },
       { etykieta: 'Asysta grawitacyjna Marsa', wartosc: '1 marca 2025, 884 km nad powierzchnią', pewnosc: 'potwierdzone' },
-      { etykieta: 'Dotarcie do Europy', wartosc: '11 kwietnia 2030', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dotarcie do Jowisza', wartosc: 'kwiecień 2030; przeloty nad Europą od 2031', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1526,8 +1526,8 @@ const operacyjne: Encja[] = [
       { id: 'koszt-kilograma', powod: 'różnica cen rakiet zmieniła tu kształt misji naukowej' },
       { id: 'delta-v', powod: 'asysta grawitacyjna to sposób na zdobycie jej za darmo' },
     ],
-    zrodla: [Z.wikiClipper, Z.wikiFalconHeavy],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiClipper, Z.wikiFalconHeavy, Z.nasaClipperStart, Z.jplClipperMars],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
