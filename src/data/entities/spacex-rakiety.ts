@@ -398,7 +398,7 @@ export const rakiety: Encja[] = [
       { id: 'reuzywalnosc', powod: 'kierunek, w którym szła każda kolejna wersja' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStartyFalcon, Z.wikiFalcon9],
+    zrodla: [Z.wikiStartyFalcon, Z.wikiFalcon9, Z.gunterFalcon9],
     zaktualizowano: '2026-10-18',
   },
 
@@ -435,8 +435,8 @@ export const rakiety: Encja[] = [
       { id: 'spacex', powod: 'jej linia produktów dla klientów rządowych' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStarlink, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStarlink, Z.wikiSpaceX, Z.cnbcStarshield],
+    zaktualizowano: '2026-10-18',
   },
 
   {

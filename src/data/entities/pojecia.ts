@@ -633,8 +633,8 @@ export const pojecia: Encja[] = [
       { id: 'rud', powod: 'najdalszy punkt tej samej praktyki językowej' },
       { id: 'scrub-i-nominal', powod: 'ta sama warstwa języka, po stronie procedur' },
     ],
-    zrodla: [Z.wikiAmos6, Z.wikiCrs7],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiAmos6, Z.wikiCrs7, Z.nasaCrs7, Z.americaspaceAmos6],
+    zaktualizowano: '2026-10-18',
   },
 
   {

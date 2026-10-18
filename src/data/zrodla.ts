@@ -913,4 +913,49 @@ export const Z = {
     url: 'https://www.astronomy.com/space-exploration/fram2-astronauts-splash-down-after-historic-polar-spaceflight/',
     wydawca: 'Astronomy', dostep: D3,
   },
+  americaspaceAmos6: {
+    tytul: 'SpaceX Closes AMOS-6 Investigation, Aims to Launch 10 Satellites Next Sunday',
+    url: 'https://www.americaspace.com/2017/01/02/spacex-closes-amos-6-investigation-aims-to-launch-10-satellites-next-sunday/',
+    wydawca: 'AmericaSpace', dostep: D3,
+  },
+  sfnTransporter12: {
+    tytul: 'SpaceX launches 131 spacecraft on Transporter-12 Falcon 9 rideshare mission from California',
+    url: 'https://spaceflightnow.com/2025/01/14/spacex-to-launch-131-spacecraft-on-transporter-12-falcon-9-rideshare-mission-from-california/',
+    wydawca: 'Spaceflight Now', dostep: D3,
+  },
+  gunterFalcon9: {
+    tytul: 'Falcon-9',
+    url: 'https://space.skyrocket.de/doc_lau/falcon-9.htm',
+    wydawca: "Gunter's Space Page", dostep: D3,
+  },
+  cnbcStarshield: {
+    tytul: 'SpaceX unveils ‘Starshield,’ a military variation of Starlink satellites (przedruk NBC 5 Dallas-Fort Worth)',
+    url: 'https://www.nbcdfw.com/news/business/money-report/spacex-unveils-starshield-a-military-variation-of-starlink-satellites/3140930/',
+    wydawca: 'CNBC', dostep: D3,
+  },
+  sfnStarshipLot2: {
+    tytul: 'Super Heavy-Starship climbs high but falls short on second test flight',
+    url: 'https://spaceflightnow.com/2023/11/18/super-heavy-starship-climbs-high-but-falls-short-on-second-test-flight/',
+    wydawca: 'Spaceflight Now', dostep: D3,
+  },
+  collectspaceStarshipLot3: {
+    tytul: 'SpaceX Starship coasts then crashes on mostly-successful third flight test',
+    url: 'https://www.collectspace.com/news/news-031424a-spacex-starship-super-heavy-third-integrated-test-flight.html',
+    wydawca: 'collectSPACE', dostep: D3,
+  },
+  sfnStarshipLot4: {
+    tytul: 'SpaceX accomplishes first soft splashdown of Starship, Super Heavy Booster on Flight 4 mission',
+    url: 'https://spaceflightnow.com/2024/06/06/live-coverage-spacex-to-launch-its-starship-rocket-on-its-fourth-test-flight/',
+    wydawca: 'Spaceflight Now', dostep: D3,
+  },
+  utStarshipLot6: {
+    tytul: 'Starship’s Booster (and Donald Trump) Make a Splash With Sixth Flight Test',
+    url: 'https://www.universetoday.com/articles/starships-booster-and-donald-trump-make-a-splash-at-sixth-flight-test',
+    wydawca: 'Universe Today', dostep: D3,
+  },
+  registerStarshipLot10: {
+    tytul: 'SpaceX’s Starship keeps it together for Flight Test 10',
+    url: 'https://www.theregister.com/2025/08/27/spacex_starship_flight_10/',
+    wydawca: 'The Register', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

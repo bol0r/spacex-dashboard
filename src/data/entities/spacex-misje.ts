@@ -357,8 +357,8 @@ const wczesne: Encja[] = [
       { id: 'spacex', powod: 'najpoważniejszy incydent naziemny w historii firmy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiAmos6, Z.wikiStartyFalcon],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiAmos6, Z.wikiStartyFalcon, Z.americaspaceAmos6],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -991,7 +991,7 @@ const lotyStarshipa: Encja[] = [
     fakty: [
       { etykieta: 'Data', wartosc: '26 sierpnia 2025', pewnosc: 'potwierdzone' },
       { etykieta: 'Egzemplarze', wartosc: 'booster B16, statek S37', pewnosc: 'potwierdzone' },
-      { etykieta: 'Celność wodowania statku', wartosc: 'ok. 3 metry od punktu celowania', pewnosc: 'potwierdzone' },
+      { etykieta: 'Celność wodowania statku', wartosc: 'ok. 3 metry od punktu celowania, według SpaceX', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik', wartosc: 'sukces; kontrolowane wodowanie obu elementów', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -1010,8 +1010,8 @@ const lotyStarshipa: Encja[] = [
       { id: 'starship-lot-13', powod: 'to on potwierdził wytrzymałość osłony termicznej' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.registerStarshipLot10],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1135,17 +1135,17 @@ const wczesneLotyStarshipa: Encja[] = [
     typ: 'misja',
     nazwa: 'Starship, lot 2',
     aka: ['Flight 2'],
-    krotki: 'Rozdzielenie stopni po raz pierwszy zadziałało, ale człon eksplodował przy hamowaniu wstecznym, a statek przy powrocie.',
+    krotki: 'Rozdzielenie stopni po raz pierwszy zadziałało, ale człon rozpadł się zaraz potem, a statek tuż przed końcem pracy silników.',
     tresc: [
       'Osiemnastego listopada 2023 roku [[starship|Starship]] poleciał po raz drugi, siedem miesięcy po [[starship-lot-1|locie 1]]. Stanowisko, przebudowane po kraterze wyrwanym przy pierwszym starcie, tym razem wytrzymało.',
-      'Rozdzielenie stopni zadziałało — po raz pierwszy w tym programie. [[super-heavy|Super Heavy]] uległ jednak zniszczeniu podczas [[hamowania|hamowania wstecznego]], a górny stopień przepadł przy powrocie w atmosferę.',
+      'Rozdzielenie stopni zadziałało — po raz pierwszy w tym programie. [[super-heavy|Super Heavy]] uległ jednak zniszczeniu podczas [[hamowania|hamowania wstecznego]], a górny stopień przepadł około ośmiu i pół minuty po starcie, tuż przed planowanym wyłączeniem silników — bardzo późno w tej fazie zadziałał jego automatyczny system przerwania lotu.',
       'Z punktu widzenia programu był to postęp mierzony tym, jak daleko udało się zajść: pierwszy lot skończył się po czterech minutach, drugi doszedł do rozdzielenia stopni i dalej. Kolejne loty przesuwały tę granicę po kolei. Granicę przesunął dalej [[starship-lot-3|lot 3]], który jako pierwszy doszedł do prędkości orbitalnej.',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '18 listopada 2023', pewnosc: 'potwierdzone' },
       { etykieta: 'Postęp wobec lotu 1', wartosc: 'udane rozdzielenie stopni', pewnosc: 'potwierdzone' },
       { etykieta: 'Wynik członu', wartosc: 'eksplozja przy hamowaniu wstecznym', pewnosc: 'potwierdzone' },
-      { etykieta: 'Wynik statku', wartosc: 'utracony przy wejściu w atmosferę', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wynik statku', wartosc: 'utracony pod koniec pracy silników, przed wejściem w atmosferę', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1163,8 +1163,8 @@ const wczesneLotyStarshipa: Encja[] = [
       { id: 'starship', powod: 'jego drugi lot testowy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.sfnStarshipLot2],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1200,8 +1200,8 @@ const wczesneLotyStarshipa: Encja[] = [
       { id: 'starship', powod: 'jego trzeci lot testowy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.collectspaceStarshipLot3],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1237,8 +1237,8 @@ const wczesneLotyStarshipa: Encja[] = [
       { id: 'starship', powod: 'jego czwarty lot testowy' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.sfnStarshipLot4],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1246,19 +1246,19 @@ const wczesneLotyStarshipa: Encja[] = [
     typ: 'misja',
     nazwa: 'Starship, lot 6',
     aka: ['Flight 6', 'banan w kosmosie'],
-    krotki: 'Chwyt przerwano automatycznie, bo wieża odniosła uszkodzenia przy starcie — a ładunkiem był pluszowy banan.',
+    krotki: 'Chwyt przerwano automatycznie, bo wieża nie przeszła testu sprawności — a ładunkiem był pluszowy banan.',
     tresc: [
-      'Dziewiętnastego listopada 2024 roku [[starship|Starship]] poleciał na członie B13 ze statkiem S31. Manewr chwytu przerwano automatycznie, bo [[stage-zero|wieża]] odniosła uszkodzenia w chwili startu; [[super-heavy|człon]] skierowano na wodowanie.',
+      'Dziewiętnastego listopada 2024 roku [[starship|Starship]] poleciał na członie B13 ze statkiem S31. Manewr chwytu przerwano automatycznie, bo [[stage-zero|wieża]] nie przeszła testu sprawności — utracono z nią łączność, a strumień silników przy starcie wygiął antenę; [[super-heavy|człon]] skierowano na wodowanie.',
       'Decyzję podjął układ automatyczny, bez udziału człowieka, i to jest tu najważniejsze: zabezpieczenie zadziałało w sytuacji, której nikt nie wywoływał celowo.',
-      'Statek przerwał podejście do [[mechazilla|wieży]] i wykonał kontrolowane wodowanie. [[oslona-termiczna|Osłona termiczna]] przetrwała mimo celowo zmniejszonej ochrony na części powierzchni — program sprawdzał, gdzie leży granica.',
+      'Człon wodował miękko w Zatoce Meksykańskiej zamiast w ramionach [[mechazilla|wieży]]. Statek poleciał zgodnie z planem: ponownie uruchomił silnik w przestrzeni i wykonał kontrolowane wodowanie na Oceanie Indyjskim. [[oslona-termiczna|Osłona termiczna]] przetrwała, choć w części miejsc ją usunięto — tam, gdzie przyszłe statki dostaną uchwyty do chwytania.',
       'Lot niósł też pierwszy ładunek w historii tego pojazdu. Był nim pluszowy banan, pełniący funkcję wskaźnika nieważkości. Chwyt udał się poprzednio przy [[starship-lot-5|locie 5]] i udał się ponownie przy [[starship-lot-7|locie 7]] — ten jeden wypadł pomiędzy.',
     ],
     fakty: [
       { etykieta: 'Data', wartosc: '19 listopada 2024', pewnosc: 'potwierdzone' },
       { etykieta: 'Egzemplarze', wartosc: 'booster B13, statek S31', pewnosc: 'potwierdzone' },
-      { etykieta: 'Chwyt', wartosc: 'przerwany automatycznie po uszkodzeniu wieży przy starcie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Chwyt', wartosc: 'przerwany automatycznie: wieża nie przeszła testu sprawności', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek', wartosc: 'pluszowy banan jako wskaźnik nieważkości', pewnosc: 'potwierdzone' },
-      { etykieta: 'Osłona termiczna', wartosc: 'przetrwała mimo celowo zmniejszonej ochrony', pewnosc: 'potwierdzone' },
+      { etykieta: 'Osłona termiczna', wartosc: 'przetrwała mimo usunięcia jej w części miejsc', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -1267,7 +1267,7 @@ const wczesneLotyStarshipa: Encja[] = [
       },
     ],
     os: [
-      { data: '2024-11-19', tytul: 'Lot 6', opis: 'Automatyka przerywa chwyt po uszkodzeniu wieży; statek wodował kontrolowanie.', waga: 2 },
+      { data: '2024-11-19', tytul: 'Lot 6', opis: 'Automatyka przerywa chwyt, bo wieża nie przechodzi testu sprawności; statek wodował kontrolowanie.', waga: 2 },
     ],
     powiazane: [
       { id: 'starship-lot-5', powod: 'poprzedni lot, z pierwszym udanym chwytem' },
@@ -1276,8 +1276,8 @@ const wczesneLotyStarshipa: Encja[] = [
       { id: 'oslona-termiczna', powod: 'lot sprawdzał granicę jej wytrzymałości' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.utStarshipLot6],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1444,8 +1444,8 @@ const operacyjne: Encja[] = [
       { id: 'falcon-9', powod: 'rakieta obsługująca cały program' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiTransporter, Z.wikiStartyFalcon, Z.sfnTransporter12],
+    zaktualizowano: '2026-10-18',
   },
 
   {
