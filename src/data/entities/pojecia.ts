@@ -10,18 +10,18 @@ export const pojecia: Encja[] = [
     krotki: 'Zasada, w której rakieta wraca i leci jeszcze raz — różnica między lotem samolotem a spaleniem samolotu po jednym locie.',
     tresc: [
       'Przez pierwsze pięćdziesiąt lat lotów kosmicznych rakieta była przedmiotem jednorazowym. Każdy start oznaczał zniszczenie sprzętu wartego dziesiątki milionów dolarów. Reużywalność odwraca to założenie: człon nośny wraca na Ziemię w stanie pozwalającym go zatankować i wysłać ponownie.', 'Rozróżnia się dwa poziomy. Odnowa po locie oznacza, że sprzęt wraca, ale przed kolejnym startem przechodzi kosztowny przegląd — tak działał prom kosmiczny, którego przygotowanie do lotu bywało droższe niż budowa nowej rakiety jednorazowej. Szybki relot oznacza tankowanie i start, praktycznie bez rozbierania. [[falcon-9|Falcon 9]] w wariancie [[warianty-falcona-9|Block 5]] zbliżył się do tego drugiego modelu.',
-      'Liczby pokazują, że to przestało być eksperymentem. Pierwsze stopnie wróciły 657 razy na 670 prób, a dla samego wariantu Block 5 skuteczność wynosi 99,06 procent. Rekordowy egzemplarz przeszedł 37 lotów, a jedna połówka osłony ładunku — czterdzieści. Cena kilograma na orbicie spadła na tyle, że konstelacja licząca ponad dziesięć tysięcy satelitów, czyli [[starlink|Starlink]], stała się w ogóle wykonalna.', 'Kolejny krok idzie dalej: [[starship|Starship]] ma wracać w całości, oba stopnie, a [[super-heavy|Super Heavy]] ląduje wprost w ramionach wieży, żeby zaoszczędzić masę nóg lądowniczych. Warunkiem jest silnik, który znosi wielokrotne odpalenia — stąd metanowy [[raptor|Raptor]], który nie zostawia w komorze osadu węglowego.',
+      'Liczby pokazują, że to przestało być eksperymentem. Pierwsze stopnie wróciły 667 razy na 680 prób, a dla samego wariantu Block 5 skuteczność wynosi 99,07 procent. Rekordowy egzemplarz przeszedł 37 lotów, a jedna połówka osłony ładunku — czterdzieści. Cena kilograma na orbicie spadła na tyle, że konstelacja licząca ponad dziesięć tysięcy satelitów, czyli [[starlink|Starlink]], stała się w ogóle wykonalna.', 'Kolejny krok idzie dalej: [[starship|Starship]] ma wracać w całości, oba stopnie, a [[super-heavy|Super Heavy]] ląduje wprost w ramionach wieży, żeby zaoszczędzić masę nóg lądowniczych. Warunkiem jest silnik, który znosi wielokrotne odpalenia — stąd metanowy [[raptor|Raptor]], który nie zostawia w komorze osadu węglowego.',
     ],
     fakty: [
-      { etykieta: 'Lądowania boosterów', wartosc: '657 na 670 prób', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Skuteczność Block 5', wartosc: '99,06%', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Rekord lotów jednego boostera', wartosc: '37', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Lądowania boosterów', wartosc: '667 na 680 prób', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skuteczność Block 5', wartosc: '99,07%', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord lotów jednego boostera', wartosc: '37', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
       { etykieta: 'Liczba boosterów użytych wielokrotnie', wartosc: '55', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwsze udane lądowanie', wartosc: '21 grudnia 2015, Landing Zone 1', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Najbardziej wysłużonym elementem systemu nie jest silnik ani człon nośny, tylko połówka osłony ładunku SN155 z czterdziestoma lotami. Element, który przez pół wieku uchodził za opakowanie do wyrzucenia, okazał się trwalszy niż cokolwiek innego w rakiecie.',
+        tekst: 'Najbardziej wysłużonym elementem systemu nie jest silnik ani człon nośny, tylko połówka osłony ładunku z czterdziestoma lotami. Element, który przez pół wieku uchodził za opakowanie do wyrzucenia, okazał się trwalszy niż cokolwiek innego w rakiecie.',
         zrodlo: Z.wikiStartyFalcon,
       },
     ],
@@ -37,7 +37,7 @@ export const pojecia: Encja[] = [
       { id: 'starlink', powod: 'konstelacja tej wielkości była nieopłacalna bez tańszego kilograma na orbicie' },
     ],
     zrodla: [Z.wikiStartyFalcon, Z.spaceSetny, Z.sfnRekord, Z.spacexStarship],
-    zaktualizowano: '2026-09-12',
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -386,18 +386,18 @@ export const pojecia: Encja[] = [
     tresc: [
       'Osłona ładunku to skorupa z dwóch połówek, która chroni satelitę przed naporem powietrza i nagrzewaniem podczas przelotu przez atmosferę. Po wyjściu w próżnię rozdziela się i odpada. W [[falcon-9|Falconie 9]] ma 13 metrów długości i 5,2 metra średnicy.',
       'Przez pół wieku była elementem jednorazowym — kosztownym opakowaniem wyrzucanym po otwarciu. [[spacex|SpaceX]] zaczęła je odzyskiwać: przy misji [[ses-10|SES-10]] jedną połówkę sprowadzono na silniczkach i sterowanym spadochronie.',
-      'Skutek jest zaskakujący. Rekordzistą w liczbie lotów w całym systemie nie jest żaden człon nośny, a połówka osłony o numerze SN155 z czterdziestoma startami — więcej niż najbardziej wysłużony booster, który ma ich trzydzieści siedem.',
+      'Skutek jest zaskakujący. Rekordzistą w liczbie lotów w całym systemie nie jest żaden człon nośny, a połówka osłony z czterdziestoma startami — więcej niż najbardziej wysłużony booster, który ma ich trzydzieści siedem.',
       '[[starship|Starship]] nie ma osłony w tym sensie w ogóle: ładunek wychodzi przez drzwi w kadłubie, który wraca na Ziemię razem z nim. To różnica między [[reuzywalnosc|reużywalnością]] częściową a pełną.',
     ],
     fakty: [
       { etykieta: 'Wymiary (Falcon 9)', wartosc: '13 m długości, 5,2 m średnicy', pewnosc: 'potwierdzone' },
       { etykieta: 'Budowa', wartosc: 'dwie połówki, rozdzielane po wyjściu z atmosfery', pewnosc: 'potwierdzone' },
-      { etykieta: 'Rekord lotów jednej połówki', wartosc: '40 (egzemplarz SN155)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord lotów jednej połówki', wartosc: '40 — lista startów przypisuje go połówce SN168, a SN155 daje 39; wcześniej rekord przypisywano SN155', stanNa: '2026-10-13', pewnosc: 'sporne' },
       { etykieta: 'Pierwszy odzysk', wartosc: 'misja SES-10, na silniczkach i spadochronie', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Najbardziej wysłużonym elementem systemu Falcona 9 nie jest silnik ani człon nośny, a połówka osłony ładunku SN155 z czterdziestoma lotami — o trzy więcej niż rekordowy booster. Część, którą branża przez dekady traktowała jak opakowanie, okazała się najtrwalsza.',
+        tekst: 'Najbardziej wysłużonym elementem systemu Falcona 9 nie jest silnik ani człon nośny, a połówka osłony ładunku z czterdziestoma lotami — o trzy więcej niż rekordowy booster. Część, którą branża przez dekady traktowała jak opakowanie, okazała się najtrwalsza.',
         zrodlo: Z.wikiStartyFalcon,
       },
     ],
@@ -412,7 +412,7 @@ export const pojecia: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.wikiFalcon9, Z.wikiStartyFalcon, Z.spacexPrzewodnik],
-    zaktualizowano: '2026-09-12',
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -724,7 +724,7 @@ export const pojecia: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Setny start Falcona 9 w 2026', wartosc: '25 sierpnia 2026', pewnosc: 'potwierdzone' },
-      { etykieta: 'Starty rodziny Falcon 9 łącznie', wartosc: '699', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Starty rodziny Falcon 9 łącznie', wartosc: '708', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
       { etykieta: 'Udział misji Starlink', wartosc: 'ok. 75% startów w 2026 roku', stanNa: '2026', pewnosc: 'szacunkowe' },
       { etykieta: 'Warunek techniczny', wartosc: 'odzysk i ponowne loty członów', pewnosc: 'potwierdzone' },
     ],
@@ -744,7 +744,7 @@ export const pojecia: Encja[] = [
       { id: 'koszt-kilograma', powod: 'wysokie tempo rozkłada koszty stałe na więcej lotów' },
     ],
     zrodla: [Z.spaceSetny, Z.wikiStartyFalcon],
-    zaktualizowano: '2026-09-12',
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -799,7 +799,7 @@ export const pojecia: Encja[] = [
     ],
     fakty: [
       { etykieta: 'Definicja', wartosc: 'zbiór satelitów pracujących jako jeden system', pewnosc: 'potwierdzone' },
-      { etykieta: 'Starlink', wartosc: 'ok. 10 413 satelitów, 10 397 czynnych', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Starlink', wartosc: '11 154 satelitów, 11 140 czynnych', stanNa: '2026-10-15', pewnosc: 'potwierdzone' },
       { etykieta: 'Liczba według samego SpaceX', wartosc: 'ponad 6 750 — własna strona firmy podaje wartość niższą niż katalogi śledzenia', pewnosc: 'sporne' },
       { etykieta: 'Powód liczebności', wartosc: 'niska orbita to mały obszar widzenia jednego satelity', pewnosc: 'potwierdzone' },
       { etykieta: 'Alternatywa', wartosc: 'jeden satelita geostacjonarny; ok. 240 ms z samej drogi sygnału, ponad 600 ms w praktyce według SpaceX', pewnosc: 'potwierdzone' },
@@ -820,8 +820,8 @@ export const pojecia: Encja[] = [
       { id: 'deorbitacja', powod: 'planowe usuwanie satelitów jest warunkiem utrzymania takiej sieci' },
       { id: 'koszt-kilograma', powod: 'konstelacja tej wielkości wymaga taniego wynoszenia' },
     ],
-    zrodla: [Z.wikiStarlink, Z.wikiGeo, Z.starlinkTech],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiStarlink, Z.wikiGeo, Z.starlinkTech, Z.mcdowellStarlink],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1445,13 +1445,13 @@ export const pojecia: Encja[] = [
     tresc: [
       'B1067 to oznaczenie konkretnego egzemplarza pierwszego stopnia [[falcon-9|Falcona 9]]. Nie jest to typ ani wersja, tylko jedna sztuka sprzętu, która wystartowała, wróciła i poleciała ponownie trzydzieści siedem razy.',
       'Dla porównania: prom kosmiczny Discovery, najbardziej wysłużony pojazd poprzedniej epoki, wykonał trzydzieści dziewięć lotów — przez dwadzieścia siedem lat służby i przy przygotowaniu do każdego lotu liczonym w miesiącach.',
-      'Rekord jest tu jednak podwójny i ten drugi jest mniej znany: najbardziej wysłużonym elementem systemu nie jest ten człon, a [[oslona-ladunku|połówka osłony ładunku]] o numerze SN155 z czterdziestoma lotami. Człon nośny ustępuje kawałkowi opakowania.',
+      'Rekord jest tu jednak podwójny i ten drugi jest mniej znany: najbardziej wysłużonym elementem systemu nie jest ten człon, a [[oslona-ladunku|połówka osłony ładunku]] z czterdziestoma lotami. Człon nośny ustępuje kawałkowi opakowania.',
       'Znaczenie tego egzemplarza polega na tym, że przesuwa dyskusję o [[reuzywalnosc|reużywalności]] z pytania „czy rakieta wróci" na pytanie „ile razy da się ją wysłać". Pierwsze rozstrzygnięto w 2015 roku, drugie rozstrzyga się do dziś. Bez takich przebiegów [[kadencja-startow|dzisiejsze tempo startów]] byłoby nieosiągalne: flota musiałaby rosnąć tak szybko, jak rośnie liczba lotów. Egzemplarz należy do wersji [[warianty-falcona-9|Block 5]], zaprojektowanej pod wielokrotne użycie, a większość powrotów wykonał na [[barki-dronowe|barkach dronowych]].',
     ],
     fakty: [
-      { etykieta: 'Liczba lotów', wartosc: '37', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba lotów', wartosc: '37', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
       { etykieta: 'Czym jest', wartosc: 'jeden egzemplarz pierwszego stopnia Falcona 9', pewnosc: 'potwierdzone' },
-      { etykieta: 'Rekord osłony', wartosc: '40 lotów połówki SN155 — więcej niż ten człon', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord osłony', wartosc: '40 lotów jednej połówki — więcej niż ten człon', pewnosc: 'potwierdzone' },
       { etykieta: 'Boostery użyte wielokrotnie', wartosc: '55', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -1471,7 +1471,7 @@ export const pojecia: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.sfnRekord, Z.wikiStartyFalcon],
-    zaktualizowano: '2026-09-13',
+    zaktualizowano: '2026-10-18',
   },
 
   {

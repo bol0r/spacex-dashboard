@@ -5,6 +5,69 @@ Schemat numeracji: `0.<faza>.<partia>`. Opis schematu jest w
 
 ---
 
+## 0.7.0 — 18 października 2026
+
+**Aktualizacja stanu bieżącego po pięciu tygodniach.** Praca wykonana bez
+konsultacji — decyzje podjęte po drodze są zapisane niżej, przy punktach,
+których dotyczą.
+
+### 1. Lot 14 Starshipa i daty z pierwszego ekranu
+
+Lot 14 odbył się 28 września 2026, nie 18 — i był pierwszym, na którym statek
+wszedł na orbitę i wypuścił pracujące satelity (26 sztuk Starlink V3). Misję
+przerwano przy pierwszym punkcie kontrolnym, po około trzech godzinach zamiast
+niemal dziesięciu. Źródła: ABC News, lista startów Starshipa. Nowa encja
+`starship-lot-14`, na wzór lotów 1–13.
+
+*Decyzja:* kafel Starshipa odlicza teraz do lotu 15 z datą „nie wcześniej niż
+8 listopada 2026”. Ta data pochodzi z planów kontroli ruchu lotniczego, a nie
+z ogłoszenia SpaceX — dlatego tytuł wydarzenia brzmi „Lot 15 — termin wstępny”,
+a opis mówi wprost, że może się przesunąć. Alternatywą było zostawić kafel bez
+odliczania, ale wtedy pierwszy ekran nie mówiłby nic o tym, co dalej.
+
+*Decyzja:* z ciekawostki do lotu 14 usunąłem zdanie, że statek „okrążył Ziemię
+półtora raza” — to było moje wyliczenie z czasu lotu, nie fakt ze źródła.
+
+### 2. Liczby ze znacznikiem `stanNa`
+
+W bazie są 123 takie liczby. Większość to wartości historyczne, przypięte do
+konkretnej daty: sprzedaż Modelu S w 2015 roku, udział Muska w Twitterze
+w kwietniu 2022, liczba klientów Zip2 w 1998. *Decyzja:* tych nie ruszam —
+przestawienie im `stanNa` na dziś byłoby fałszem, bo wartość dotyczy tamtej
+chwili. Aktualizuję liczniki żywe, czyli te, które rosną z każdym startem albo
+kwartałem.
+
+*Decyzja:* `stanNa` ustawiam na datę, na którą liczy źródło, a nie na datę mojego
+sprawdzenia. Lista startów Falcona liczy do 13 października; gdybym wpisał
+18 października, liczba udawałaby, że obejmuje starty z 14–18 października.
+
+Zaktualizowane:
+
+- **Rodzina Falcon 9** (stan na 13.10.2026): 708 startów, 705 pełnych sukcesów,
+  lądowania 667 z 680 (98,09%), Block 5 642 z 648 (99,07%). Rekord B1067 bez
+  zmian — 37 lotów. Poprawione w encjach Falcona 9, reużywalności, wariantów,
+  kadencji startów i B1067 oraz w nakładce angielskiej.
+- **Falcon Heavy**: 14 startów, ostatni 1 października 2026 (NROL-97, pierwsza
+  misja dla NRO na tej rakiecie).
+- **Starlink** (stan na 15.10.2026): 11 154 satelitów na orbicie, 11 140
+  działających — z niezależnego katalogu Jonathana McDowella. Wikipedia nie
+  zaktualizowała tej liczby od czerwca.
+- **Majątek Muska** według Forbesa na 18.10.2026: około 908,5 miliarda dolarów.
+- **Neuralink**: 21 uczestników badań według Muska (luty 2026) zamiast 12.
+- **Mechazilla**: po locie 14 nadal trzy chwyty, statku nie łapano.
+
+*Decyzja — rekord osłony ładunku:* baza mówiła „40 lotów, połówka SN155”.
+Aktualna lista startów przypisuje 40 lotów połówce SN168, a SN155 daje 39.
+Źródła z września nie da się już otworzyć, więc nie mogę rozstrzygnąć, która
+wersja była błędna. Rekord 40 lotów jest prawdziwy w obu wersjach, więc
+z tekstów usunąłem numer seryjny, a sam fakt opisałem z obiema wersjami
+i oznaczyłem jako sporny.
+
+Nie zaktualizowane, z powodem: liczba abonentów Starlinka (nowszej niż czerwcowa
+nie podało ani SpaceX, ani żadne źródło, które dało się otworzyć — są tylko
+szacunki blogów), liczba boosterów użytych wielokrotnie (żadne otwarte źródło
+jej nie podaje), liczba startów z SLC-40 („ponad 340” pozostaje prawdą).
+
 ## 0.6.3 — 14 września 2026
 
 **Paczka do wgrania na hosting.**

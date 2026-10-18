@@ -50,7 +50,7 @@ export const en: Nakladka = {
     tresc: [
       'Falcon 9 is a two-stage rocket burning kerosene and liquid oxygen. Nine [[merlin|Merlin]] engines in the first stage, one vacuum-optimised engine in the second. It debuted in June 2010 as v1.0 and has since passed through v1.1, Full Thrust and finally Block 5 from May 2018 — the variant it still flies in today.',
       'All of its value comes from one thing: the first stage comes back. After separation it performs a boostback burn, re-enters engines-first and touches down vertically — on a concrete pad or on a drone ship sitting out at sea. The [[pierwsze-ladowanie|first landing on land]] succeeded on 21 December 2015 after delivering Orbcomm satellites; the [[pierwsze-ladowanie-na-barce|first at sea]] on 8 April 2016 during the CRS-8 resupply mission. Recovered stages today come down mostly on [[barki-dronowe|drone ships]].',
-      'The scale is now hard to take in. The Falcon 9 family has flown 699 times with 696 full successes, and first stages have come back 657 times out of 670 attempts — better than 98 per cent. For the Block 5 variant alone the figure is 99.06 per cent. The record-holding booster has flown 37 times.',
+      'The scale is now hard to take in. The Falcon 9 family has flown 708 times with 705 full successes, and first stages have come back 667 times out of 680 attempts — better than 98 per cent. For the Block 5 variant alone the figure is 99.07 per cent. The record-holding booster has flown 37 times.',
       'Falcon 9 is also the rocket that launches [[starlink|Starlink]] and carries people in the [[crew-dragon|Crew Dragon]] capsule. In 2026 roughly three quarters of its launches serve its own constellation — [[spacex|SpaceX]] is now its own biggest customer. It is this rocket, not [[starship|Starship]], that keeps the company running.',
     ],
     etykietyFaktow: [
@@ -58,12 +58,12 @@ export const en: Nakladka = {
       'Most flights by one booster', 'Engines', 'Debut',
     ],
     wartosciFaktow: [
-      null, null, '657 of 670 attempts (98.06%)', null,
+      null, null, '667 of 680 attempts (98.09%)', null,
       '37 (unit B1067)', '9 × Merlin 1D in stage I, 1 × Merlin 1D Vacuum in stage II',
       'June 2010 (v1.0), Block 5 from May 2018',
     ],
     ciekawostki: [
-      'The flight-count record is not held by any booster but by a payload fairing half numbered SN155 — it has flown forty times. The part the industry treated for decades as packaging to be discarded once opened turned out to be the most hard-worked component in the entire system.',
+      'The flight-count record is not held by any booster but by a payload fairing half — it has flown forty times. The part the industry treated for decades as packaging to be discarded once opened turned out to be the most hard-worked component in the entire system.',
       'The hundredth Falcon 9 launch of 2026 alone took place on 25 August. In under eight months the rocket reached a cadence that, for most of the space age, entire nations failed to manage in a year.',
     ],
     os: [
@@ -121,7 +121,7 @@ export const en: Nakladka = {
     tresc: [
       'For the first fifty years of spaceflight a rocket was a single-use object. Every launch meant destroying hardware worth tens of millions of dollars. Reusability inverts that assumption: the booster returns to Earth in a state that allows it to be refuelled and sent up again.',
       'Two levels are usually distinguished. Refurbishment means the hardware comes back but goes through an expensive overhaul before the next launch — this is how the Space Shuttle worked, where preparing a vehicle for flight could cost more than building a new expendable rocket. Rapid reflight means refuel and go, with essentially no teardown. [[falcon-9|Falcon 9]] in its Block 5 form came close to the second model.',
-      'The numbers show this stopped being an experiment. First stages have come back 657 times out of 670 attempts, and for the Block 5 variant alone the success rate is 99.06 per cent. The record-holding unit has flown 37 times, and one payload fairing half has flown forty. The cost per kilogram to orbit fell far enough that a constellation of more than ten thousand satellites — [[starlink|Starlink]] — became feasible at all.',
+      'The numbers show this stopped being an experiment. First stages have come back 667 times out of 680 attempts, and for the Block 5 variant alone the success rate is 99.07 per cent. The record-holding unit has flown 37 times, and one payload fairing half has flown forty. The cost per kilogram to orbit fell far enough that a constellation of more than ten thousand satellites — [[starlink|Starlink]] — became feasible at all.',
       'The next step goes further: [[starship|Starship]] is meant to return whole, both stages, with [[super-heavy|Super Heavy]] landing directly in the tower’s arms to save the mass of landing legs. The precondition is an engine that tolerates repeated firings — hence the methane [[raptor|Raptor]], which leaves no carbon deposit in the chamber.',
     ],
     etykietyFaktow: [
@@ -129,10 +129,10 @@ export const en: Nakladka = {
       'Boosters flown more than once', 'First successful landing',
     ],
     wartosciFaktow: [
-      '657 of 670 attempts', null, null, null, '21 December 2015, Landing Zone 1',
+      '667 of 680 attempts', null, null, null, '21 December 2015, Landing Zone 1',
     ],
     ciekawostki: [
-      'The most hard-worked part of the system is not an engine or a booster but payload fairing half SN155, with forty flights. The component regarded for half a century as packaging to be thrown away turned out to be more durable than anything else on the rocket.',
+      'The most hard-worked part of the system is not an engine or a booster but a payload fairing half with forty flights. The component regarded for half a century as packaging to be thrown away turned out to be more durable than anything else on the rocket.',
     ],
     os: [
       { tytul: 'First return', opis: 'The first stage of an orbital rocket sets down vertically on land for the first time.' },

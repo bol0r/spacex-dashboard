@@ -103,21 +103,21 @@ export const rakiety: Encja[] = [
     tresc: [
       'Falcon 9 jest rakietą dwustopniową na naftę i ciekły tlen. Dziewięć silników [[merlin|Merlin]] w pierwszym stopniu, jeden w wersji próżniowej w drugim. Debiutowała w czerwcu 2010 roku w wersji v1.0 i od tego czasu przeszła przez v1.1, [[warianty-falcona-9|Full Thrust]] i wreszcie Block 5 z maja 2018 — wariant, w którym lata do dziś.',
       'Cała jej wartość bierze się z jednej rzeczy: pierwszy stopień wraca. Po odłączeniu wykonuje hamowanie wsteczne, wchodzi w atmosferę silnikami do przodu i siada pionowo — na betonowym stanowisku albo na barce dronowej stojącej na oceanie. [[pierwsze-ladowanie|Pierwsze lądowanie na lądzie]] udało się 21 grudnia 2015 roku po wyniesieniu satelitów Orbcomm, [[pierwsze-ladowanie-na-barce|pierwsze na barce]] 8 kwietnia 2016 przy misji zaopatrzeniowej CRS-8. Odzyskane człony schodzą dziś głównie na [[barki-dronowe|barki dronowe]].',
-      'Skala jest dziś trudna do objęcia. Rodzina Falcon 9 wykonała 699 startów przy 696 pełnych sukcesach, a pierwsze stopnie wróciły 657 razy na 670 prób — czyli z sprawnością ponad 98 procent. Dla samego wariantu Block 5 współczynnik wynosi 99,06 procent. Rekordowy egzemplarz boostera przeszedł 37 lotów.',
+      'Skala jest dziś trudna do objęcia. Rodzina Falcon 9 wykonała 708 startów przy 705 pełnych sukcesach, a pierwsze stopnie wróciły 667 razy na 680 prób — czyli ze sprawnością ponad 98 procent. Dla samego wariantu Block 5 współczynnik wynosi 99,07 procent. Rekordowy egzemplarz boostera przeszedł 37 lotów.',
       'Falcon 9 jest też rakietą, która wynosi [[starlink|Starlink]] i wozi ludzi w kapsule [[crew-dragon|Crew Dragon]]. W 2026 roku około trzech czwartych jej startów to misje własnej konstelacji — [[spacex|SpaceX]] jest dziś swoim największym klientem. To właśnie ta rakieta, a nie [[starship|Starship]], utrzymuje firmę.',
     ],
     fakty: [
-      { etykieta: 'Liczba startów (rodzina)', wartosc: '699', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Pełne sukcesy', wartosc: '696', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Lądowania boosterów', wartosc: '657 na 670 prób (98,06%)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Skuteczność wariantu Block 5', wartosc: '632 na 638 prób (99,06%)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
-      { etykieta: 'Rekord lotów jednego boostera', wartosc: '37 (egzemplarz B1067)', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba startów (rodzina)', wartosc: '708', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
+      { etykieta: 'Pełne sukcesy', wartosc: '705', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
+      { etykieta: 'Lądowania boosterów', wartosc: '667 na 680 prób (98,09%)', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skuteczność wariantu Block 5', wartosc: '642 na 648 prób (99,07%)', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rekord lotów jednego boostera', wartosc: '37 (egzemplarz B1067)', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
       { etykieta: 'Silniki', wartosc: '9 × Merlin 1D w I stopniu, 1 × Merlin 1D Vacuum w II', pewnosc: 'potwierdzone' },
       { etykieta: 'Debiut', wartosc: 'czerwiec 2010 (v1.0), Block 5 od maja 2018', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
-        tekst: 'Rekordzistą w liczbie lotów nie jest wcale żaden booster, tylko połówka osłony ładunku o numerze SN155 — przeszła czterdzieści startów. Element, który przez dekady traktowano jak opakowanie do wyrzucenia po otwarciu, okazał się najbardziej wysłużoną częścią całego systemu.',
+        tekst: 'Rekordzistą w liczbie lotów nie jest wcale żaden booster, tylko połówka osłony ładunku — przeszła czterdzieści startów. Element, który przez dekady traktowano jak opakowanie do wyrzucenia po otwarciu, okazał się najbardziej wysłużoną częścią całego systemu.',
         zrodlo: Z.wikiStartyFalcon,
       },
       {
@@ -140,7 +140,7 @@ export const rakiety: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.wikiStartyFalcon, Z.snewsOrbcomm, Z.spaceBarkaCrs8, Z.spaceSetny, Z.spacexPrzewodnik],
-    zaktualizowano: '2026-09-12',
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -153,7 +153,7 @@ export const rakiety: Encja[] = [
       'Pomysł jest prosty do opisania i trudny do wykonania: weź trzy pierwsze stopnie [[falcon-9|Falcona 9]], zepnij je obok siebie i odpal jednocześnie. Daje to dwadzieścia siedem silników [[merlin|Merlin]] pracujących naraz i 22,82 MN ciągu przy starcie, przy wysokości 70 metrów.',
       'W wersji w pełni zużywalnej Falcon Heavy wynosi 63 800 kg na niską orbitę, 26 700 kg na orbitę transferową do geostacjonarnej i 16 800 kg na trajektorię ku Marsowi. Boczne człony wracają i lądują, co obniża cenę startu do około 97 milionów dolarów — wobec 150 milionów za wariant, z którego nic nie wraca.',
       '[[falcon-heavy-demo|Pierwszy lot]] odbył się 6 lutego 2018 roku. Zamiast balastu z betonu, jak robi to cała branża, [[elon-musk|Musk]] umieścił na szczycie własny samochód — Teslę [[tesla-roadster|Roadster pierwszej generacji]] — z manekinem w skafandrze za kierownicą. Manekin dostał imię Starman.',
-      'Falcon Heavy lata rzadko: trzynaście startów przez ponad osiem lat. Powód jest nudny i mówi wszystko o tym, jak zmienił się rynek — [[falcon-9|Falcon 9]] w wariancie zużywalnym zabiera wystarczająco dużo, żeby większość klientów nie potrzebowała rakiety cięższej. Najgłośniejszym ładunkiem tej rakiety pozostaje zresztą samochód [[tesla|Tesli]], a nie żaden satelita.',
+      'Falcon Heavy lata rzadko: czternaście startów przez ponad osiem lat. Powód jest nudny i mówi wszystko o tym, jak zmienił się rynek — [[falcon-9|Falcon 9]] w wariancie zużywalnym zabiera wystarczająco dużo, żeby większość klientów nie potrzebowała rakiety cięższej. Najgłośniejszym ładunkiem tej rakiety pozostaje zresztą samochód [[tesla|Tesli]], a nie żaden satelita.',
     ],
     fakty: [
       { etykieta: 'Wysokość', wartosc: '70 m', pewnosc: 'potwierdzone' },
@@ -161,7 +161,7 @@ export const rakiety: Encja[] = [
       { etykieta: 'Ciąg przy starcie', wartosc: '22,82 MN', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek na LEO', wartosc: '63 800 kg w wersji zużywalnej', pewnosc: 'potwierdzone' },
       { etykieta: 'Ładunek na GTO', wartosc: '26 700 kg w wersji zużywalnej', pewnosc: 'potwierdzone' },
-      { etykieta: 'Liczba startów', wartosc: '13', stanNa: '2026-08-30', pewnosc: 'potwierdzone' },
+      { etykieta: 'Liczba startów', wartosc: '14', stanNa: '2026-10-01', pewnosc: 'potwierdzone' },
       { etykieta: 'Cena startu', wartosc: '97 mln USD (z odzyskiem), 150 mln USD (bez)', stanNa: '2022', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -180,8 +180,8 @@ export const rakiety: Encja[] = [
       { id: 'elon-musk', powod: 'na pierwszy lot oddał własny samochód zamiast balastu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon, Z.spacexPrzewodnik],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon, Z.spacexPrzewodnik, Z.wikiFalconHeavyStrona],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -236,13 +236,13 @@ export const rakiety: Encja[] = [
     krotki: 'Konstelacja ponad dziesięciu tysięcy satelitów, która dostarcza internet tam, gdzie nie dochodzi żaden kabel.',
     tresc: [
       'Starlink to sieć satelitów na niskiej orbicie okołoziemskiej — na tyle nisko, że opóźnienie sygnału jest porównywalne z łączem naziemnym, i na tyle licznych, że nad każdym punktem Ziemi zawsze jest któryś. Pierwsza operacyjna partia sześćdziesięciu sztuk poleciała 24 maja 2019 roku na [[falcon-9|Falconie 9]].',
-      'W czerwcu 2026 roku na orbicie było około 10 413 satelitów, z czego 10 397 działających, a z usługi korzystało 12 milionów abonentów w mniej więcej 160 krajach i terytoriach. Tempo przyrostu jest wymowne: w marcu 2026 abonentów było 10,3 miliona.',
-      'Konstelacja przeszła przez kolejne generacje sprzętu: v0.9 testowe, potem v1.0, v1.5 z laserowymi łączami międzysatelitarnymi, v2 mini, wreszcie V3 — pierwsze egzemplarze tej ostatniej wypuścił [[starship|Starship]] podczas lotu 13 w lipcu 2026 roku. Osobną gałęzią jest [[starshield|Starshield]], wariant rządowy z szyfrowaną łącznością — powstały po tym, jak sieć cywilna okazała się [[starlink-w-ukrainie|infrastrukturą wojenną]].',
+      'W połowie października 2026 roku na orbicie było 11 154 satelitów, z czego 11 140 działających, według niezależnego katalogu Jonathana McDowella. Abonentów było w czerwcu 12 milionów w mniej więcej 160 krajach i terytoriach; nowszej liczby SpaceX nie podało. Tempo przyrostu jest wymowne: w marcu 2026 abonentów było 10,3 miliona.',
+      'Konstelacja przeszła przez kolejne generacje sprzętu: v0.9 testowe, potem v1.0, v1.5 z laserowymi łączami międzysatelitarnymi, v2 mini, wreszcie V3 — pierwsze egzemplarze tej ostatniej wypuścił [[starship|Starship]] podczas lotu 13 w lipcu 2026 roku, a pierwsze pracujące wyniósł na orbitę [[starship-lot-14|lot 14]] we wrześniu. Osobną gałęzią jest [[starshield|Starshield]], wariant rządowy z szyfrowaną łącznością — powstały po tym, jak sieć cywilna okazała się [[starlink-w-ukrainie|infrastrukturą wojenną]].',
       'Usługa [[direct-to-cell|Direct to Cell]] pozwala łączyć się ze zwykłym telefonem bez żadnej dodatkowej anteny — SMS-y ruszyły z T-Mobile w styczniu 2024 roku. Dla [[spacex|SpaceX]] Starlink jest dziś głównym źródłem pieniędzy: 11,4 miliarda dolarów przychodu i 4,4 miliarda zysku operacyjnego w 2025 roku, po pierwszym rentownym roku 2024.',
     ],
     fakty: [
-      { etykieta: 'Satelity na orbicie', wartosc: 'ok. 10 413', stanNa: '2026-06', pewnosc: 'potwierdzone' },
-      { etykieta: 'Z tego czynnych', wartosc: '10 397', stanNa: '2026-06', pewnosc: 'potwierdzone' },
+      { etykieta: 'Satelity na orbicie', wartosc: '11 154', stanNa: '2026-10-15', pewnosc: 'potwierdzone' },
+      { etykieta: 'Z tego czynnych', wartosc: '11 140', stanNa: '2026-10-15', pewnosc: 'potwierdzone' },
       { etykieta: 'Liczba abonentów', wartosc: '12 mln', stanNa: '2026-06', pewnosc: 'potwierdzone' },
       { etykieta: 'Zasięg', wartosc: 'ok. 160 krajów i terytoriów', stanNa: '2026-06', pewnosc: 'szacunkowe' },
       { etykieta: 'Pierwszy start operacyjny', wartosc: '24 maja 2019, 60 satelitów', pewnosc: 'potwierdzone' },
@@ -268,8 +268,8 @@ export const rakiety: Encja[] = [
       { id: 'leo', powod: 'cała konstelacja pracuje na niskiej orbicie okołoziemskiej' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiStarlink, Z.wikiStartyFalcon, Z.starlinkTech],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiStarlink, Z.wikiStartyFalcon, Z.starlinkTech, Z.mcdowellStarlink, Z.abcLot14],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -368,7 +368,7 @@ export const rakiety: Encja[] = [
     tresc: [
       '[[falcon-9|Falcon 9]] nie jest jedną konstrukcją, tylko czterema. Wersja v1.0 poleciała w czerwcu 2010 roku. W wrześniu 2013 zastąpiła ją v1.1 z mocniejszym [[merlin|Merlinem 1D]] i wydłużonymi zbiornikami.',
       'Wersja Full Thrust z grudnia 2015 podniosła ciąg na tyle, że zostawało paliwo na powrót członu — i to właśnie na jej pierwszym locie odbyło się [[pierwsze-ladowanie|pierwsze udane lądowanie]]. Nie był to zbieg okoliczności: odzysk był celem tej modernizacji.',
-      'Block 5 z maja 2018 jest wersją ostateczną i to nią firma lata do dziś. Zaprojektowano ją pod szybkie ponowne loty, a skuteczność lądowań wynosi w niej 99,06 procent wobec 98,06 dla całej rodziny.',
+      'Block 5 z maja 2018 jest wersją ostateczną i to nią firma lata do dziś. Zaprojektowano ją pod szybkie ponowne loty, a skuteczność lądowań wynosi w niej 99,07 procent wobec 98,09 dla całej rodziny.',
       'Kierunek zmian jest w tej rodzinie jednoznaczny: każda kolejna wersja przybliżała [[reuzywalnosc|reużywalność]], aż rekordowy egzemplarz doszedł do trzydziestu siedmiu lotów. Wersja Block 5 przyniosła też odzyskiwanie [[oslona-ladunku|osłony ładunku]], bez którego dzisiejsza [[kadencja-startow|kadencja startów]] byłaby nie do utrzymania.',
     ],
     fakty: [
@@ -376,7 +376,7 @@ export const rakiety: Encja[] = [
       { etykieta: 'v1.1', wartosc: 'wrzesień 2013', pewnosc: 'potwierdzone' },
       { etykieta: 'Full Thrust', wartosc: 'grudzień 2015', pewnosc: 'potwierdzone' },
       { etykieta: 'Block 5', wartosc: 'maj 2018, wersja ostateczna', pewnosc: 'potwierdzone' },
-      { etykieta: 'Skuteczność lądowań Block 5', wartosc: '99,06% wobec 98,06% dla całej rodziny', stanNa: '2026-09-10', pewnosc: 'potwierdzone' },
+      { etykieta: 'Skuteczność lądowań Block 5', wartosc: '99,07% wobec 98,09% dla całej rodziny', stanNa: '2026-10-13', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -397,7 +397,7 @@ export const rakiety: Encja[] = [
     ],
     status: 'aktywne',
     zrodla: [Z.wikiStartyFalcon, Z.wikiFalcon9],
-    zaktualizowano: '2026-09-13',
+    zaktualizowano: '2026-10-18',
   },
 
   {

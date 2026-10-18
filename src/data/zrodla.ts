@@ -36,7 +36,7 @@ export const Z = {
   wikiStartyFalcon: {
     tytul: 'List of Falcon 9 and Falcon Heavy launches',
     url: 'https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches',
-    wydawca: 'Wikipedia', dostep: D,
+    wydawca: 'Wikipedia', dostep: D3,
   },
   wikiFalconHeavy: {
     tytul: 'Falcon Heavy',
@@ -777,5 +777,25 @@ export const Z = {
     tytul: 'SpaceX Starship splashes down after successful 1st orbital flight test',
     url: 'https://abcnews.com/US/spacex-attempt-starships-1st-orbital-flight-test/story?id=136805227',
     wydawca: 'ABC News', dostep: D3,
+  },
+  mcdowellStarlink: {
+    tytul: 'Starlink Statistics',
+    url: 'https://planet4589.org/space/con/star/stats.html',
+    wydawca: 'Jonathan McDowell (Jonathan’s Space Report)', dostep: D3,
+  },
+  wikiFalconHeavyStrona: {
+    tytul: 'Falcon Heavy',
+    url: 'https://en.wikipedia.org/wiki/Falcon_Heavy',
+    wydawca: 'Wikipedia', dostep: D3,
+  },
+  forbesMusk: {
+    tytul: 'Elon Musk — profil w rankingu miliarderów (wartość bieżąca)',
+    url: 'https://www.forbes.com/profile/elon-musk/',
+    wydawca: 'Forbes', dostep: D3,
+  },
+  debriefNeuralink: {
+    tytul: 'Neuralink Reaches 21 Patients as Elon Musk Continues Push for High-Volume Brain Chip Production',
+    url: 'https://thedebrief.org/neuralink-reaches-21-patients-as-elon-musk-continues-push-for-high-volume-brain-chip-production/',
+    wydawca: 'The Debrief', dostep: D3,
   },
 } as const satisfies Record<string, Zrodlo>;

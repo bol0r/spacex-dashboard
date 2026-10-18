@@ -58,14 +58,14 @@ export const muskIReszta: Encja[] = [
     tresc: [
       'Urodził się 28 czerwca 1971 roku w Pretorii w RPA. Studiował najpierw na [[pretoria|Queen’s University]] w Kanadzie w latach 1990–1992, potem na Uniwersytecie Pensylwanii w latach 1992–1995; dyplomy z fizyki i ekonomii odebrał w 1997. W 1995 dostał się na studia doktoranckie z inżynierii materiałowej na Stanfordzie.', 'Pierwszą firmę, [[zip2|Zip2]], założył w 1995 roku z bratem Kimbalem i Gregiem Kourim. Compaq kupił ją w lutym 1999 za 307 milionów dolarów; Musk dostał 22 miliony za swoje 7 procent. Kolejną była [[x-com|X.com]] z 1999 roku, która po fuzji z Confinity stała się [[paypal|PayPalem]]. eBay kupił PayPala w 2002 za 1,5 miliarda; Musk, największy udziałowiec z 11,72 procent, dostał 175,8 miliona.',
       'Te pieniądze poszły w dwie firmy naraz. [[spacex|SpaceX]] założył w marcu 2002 jako dyrektor generalny i główny inżynier, wkładając około stu milionów własnych środków. Do [[tesla|Tesli]] wszedł w lutym 2004 jako inwestor prowadzący rundę A, obejmując funkcję przewodniczącego rady; [[spor-o-zalozycieli|tytuł współzałożyciela]] przyznała mu dopiero ugoda z 2009 roku. Dyrektorem generalnym został w październiku 2008. Jesień 2008 była momentem, w którym obie firmy stały jednocześnie na granicy upadłości — [[falcon-1-lot-4|czwarty lot Falcona 1]] uratował jedną, a kontrakt z NASA drugą.',
-      'Później doszły kolejne: [[neuralink|Neuralink]] w 2016, [[boring-company|The Boring Company]] w 2017 i [[xai|xAI]] w 2023, a w 2022 [[przejecie-twittera|kupił Twittera]]. Kierowanie dwiema firmami naraz miało swoją cenę: przez [[pieklo-produkcyjne|rozruch produkcji Modelu 3]] sypiał w fabryce, a [[funding-secured|wpis z sierpnia 2018]] o zabezpieczonym finansowaniu wykupu Tesli z giełdy skończył się karą i utratą fotela przewodniczącego rady. W czerwcu 2026, po debiucie giełdowym SpaceX, na krótko został pierwszym bilionerem w historii. We wrześniu 2026 Forbes szacował jego majątek na około 908 miliardów dolarów. Ma czternaścioro dzieci.',
+      'Później doszły kolejne: [[neuralink|Neuralink]] w 2016, [[boring-company|The Boring Company]] w 2017 i [[xai|xAI]] w 2023, a w 2022 [[przejecie-twittera|kupił Twittera]]. Kierowanie dwiema firmami naraz miało swoją cenę: przez [[pieklo-produkcyjne|rozruch produkcji Modelu 3]] sypiał w fabryce, a [[funding-secured|wpis z sierpnia 2018]] o zabezpieczonym finansowaniu wykupu Tesli z giełdy skończył się karą i utratą fotela przewodniczącego rady. W czerwcu 2026, po debiucie giełdowym SpaceX, na krótko został pierwszym bilionerem w historii. Według Forbesa jego majątek wynosił 18 października 2026 roku około 908,5 miliarda dolarów — liczba zmienia się z dnia na dzień razem z kursem akcji SpaceX i Tesli. Ma czternaścioro dzieci.',
     ],
     fakty: [
       { etykieta: 'Data i miejsce urodzenia', wartosc: '28 czerwca 1971, Pretoria', pewnosc: 'potwierdzone' },
       { etykieta: 'Sprzedaż Zip2', wartosc: '307 mln USD (Compaq, luty 1999); udział Muska 22 mln', pewnosc: 'potwierdzone' },
       { etykieta: 'Sprzedaż PayPala', wartosc: '1,5 mld USD (eBay, 2002); udział Muska 175,8 mln', pewnosc: 'potwierdzone' },
       { etykieta: 'Wejście do Tesli', wartosc: 'luty 2004, runda A', stanNa: '2004', pewnosc: 'sporne' },
-      { etykieta: 'Majątek', wartosc: 'ok. 908 mld USD (szacunek Forbesa)', stanNa: '2026-09', pewnosc: 'szacunkowe' },
+      { etykieta: 'Majątek', wartosc: 'ok. 908,5 mld USD (szacunek Forbesa)', stanNa: '2026-10-18', pewnosc: 'szacunkowe' },
       { etykieta: 'Obecne role', wartosc: 'dyrektor generalny SpaceX i Tesli, założyciel xAI', stanNa: '2026', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -90,8 +90,8 @@ export const muskIReszta: Encja[] = [
       { id: 'xai', powod: 'założył ją w 2023 roku jako odpowiedź na OpenAI' },
       { id: 'styl-zarzadzania', powod: 'wzorzec powtarzalny we wszystkich jego firmach' },
     ],
-    zrodla: [Z.wikiMusk, Z.wikiSpaceX, Z.wikiTesla],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiMusk, Z.wikiSpaceX, Z.wikiTesla, Z.forbesMusk],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -303,14 +303,14 @@ export const muskIReszta: Encja[] = [
     tresc: [
       'Neuralink powstał 21 czerwca 2016 roku. Założycieli było dziewięciu: [[elon-musk|Musk]] i ośmioro naukowców, w tym Max Hodak, Benjamin Rapoport, Dongjin Seo i Vanessa Tolosa. Cel jest jeden — bezpośrednie połączenie mózgu z komputerem.',
       'Urządzenie, czyli [[implant-n1|implant N1]], ma średnicę mniej więcej monety. Wszczepia go robot chirurgiczny igłą o średnicy 25 mikrometrów, wprowadzając do sześciu nitek, czyli 192 elektrod, na minutę — ręka ludzka takiej precyzji nie ma.',
-      'Zgodę na badania na ludziach firma dostała w maju 2023 roku. Pierwszy pacjent, 29-letni Noland Arbaugh, sparaliżowany po wypadku podczas skoku do wody, otrzymał implant 28 stycznia 2024. Według wypowiedzi Muska z września 2025 w badaniu było dwunastu uczestników, z ponad dwoma tysiącami dni i piętnastoma tysiącami godzin łącznego użytkowania.',
+      'Zgodę na badania na ludziach firma dostała w maju 2023 roku. Pierwszy pacjent, 29-letni Noland Arbaugh, sparaliżowany po wypadku podczas skoku do wody, otrzymał implant 28 stycznia 2024. Według wypowiedzi Muska z września 2025 w badaniu było dwunastu uczestników, z ponad dwoma tysiącami dni i piętnastoma tysiącami godzin łącznego użytkowania; w lutym 2026 podał już liczbę dwudziestu jeden osób na całym świecie. Na koniec 2025 roku zapowiedział, że w 2026 ruszy „produkcja wielkoseryjna” implantów, a sam zabieg ma zostać niemal w pełni zautomatyzowany — to deklaracje, nie stan faktyczny.',
       'Neuralink jest przy tym jedyną firmą [[elon-musk|Muska]], której produkt wchodzi do ludzkiego ciała — i jedyną, w której ryzyko ponosi nie inwestor, a pacjent. W [[tesla|Tesli]] i [[spacex|SpaceX]] najgorszy możliwy wynik testu kończy się na sprzęcie. Firma ma za sobą także poważny spór o badania na zwierzętach. W latach 2018–2022 wykorzystano w nich co najmniej 1 500 zwierząt. Organizacja Physicians Committee for Responsible Medicine podała, że z dwudziestu trzech małp piętnaście zginęło albo zostało uśpionych w wyniku eksperymentów, a śledztwo „Wired" z września 2023 opisało powikłania obejmujące częściowy paraliż i obrzęk mózgu. W otoczeniu Muska jest to drugi po [[optimus|Optimusie]] projekt, w którym sprzęt ma zastąpić ludzką sprawność, i trzeci — obok [[xai|xAI]] — oparty na tezie, że najważniejsze jest połączenie człowieka z maszyną.',
     ],
     fakty: [
       { etykieta: 'Założenie', wartosc: '21 czerwca 2016', pewnosc: 'potwierdzone' },
       { etykieta: 'Zgoda na badania na ludziach', wartosc: 'maj 2023', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwszy pacjent', wartosc: 'Noland Arbaugh, 28 stycznia 2024', pewnosc: 'potwierdzone' },
-      { etykieta: 'Liczba uczestników badania', wartosc: '12', stanNa: '2025-09', pewnosc: 'szacunkowe' },
+      { etykieta: 'Liczba uczestników badania', wartosc: '21 według Muska', stanNa: '2026-02', pewnosc: 'szacunkowe' },
       { etykieta: 'Uczestnicy pokazani publicznie', wartosc: 'pięcioro — po urazie rdzenia kręgowego i ze stwardnieniem zanikowym bocznym', pewnosc: 'potwierdzone' },
       { etykieta: 'Czym sterują', wartosc: 'komputerem i ramieniem robota', pewnosc: 'potwierdzone' },
       { etykieta: 'Zwierzęta w badaniach', wartosc: 'co najmniej 1 500', stanNa: '2022', pewnosc: 'potwierdzone' },
@@ -333,8 +333,8 @@ export const muskIReszta: Encja[] = [
       { id: 'xai', powod: 'ta sama teza o sztucznej inteligencji, tylko od strony sprzętu' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiNeuralink, Z.wikiMusk, Z.neuralinkStrona],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiNeuralink, Z.wikiMusk, Z.neuralinkStrona, Z.debriefNeuralink],
+    zaktualizowano: '2026-10-18',
   },
 
   {

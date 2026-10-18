@@ -384,8 +384,8 @@ export const miejsca: Encja[] = [
       { etykieta: 'Zasada', wartosc: 'człon zawisa na czopach pod siatkami aerodynamicznymi', pewnosc: 'potwierdzone' },
       { etykieta: 'Pierwszy chwyt', wartosc: '13 października 2024, lot 5, booster B12', pewnosc: 'potwierdzone' },
       { etykieta: 'Czas od startu do chwytu', wartosc: 'około siedmiu minut', pewnosc: 'potwierdzone' },
-      { etykieta: 'Udane chwyty', wartosc: 'loty 5, 7 i 8', stanNa: '2026-09', pewnosc: 'potwierdzone' },
-      { etykieta: 'Górny stopień', wartosc: 'dotąd nie był łapany', stanNa: '2026-09', pewnosc: 'potwierdzone' },
+      { etykieta: 'Udane chwyty', wartosc: 'loty 5, 7 i 8', stanNa: '2026-10-18', pewnosc: 'potwierdzone' },
+      { etykieta: 'Górny stopień', wartosc: 'dotąd nie był łapany', stanNa: '2026-10-18', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
       {
@@ -404,8 +404,8 @@ export const miejsca: Encja[] = [
       { id: 'siatki-aerodynamiczne', powod: 'czopy do chwytu siedzą tuż pod nimi' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiMechazilla, Z.cbsChwyt, Z.spacexStarship],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiMechazilla, Z.cbsChwyt, Z.spacexStarship, Z.abcLot14],
+    zaktualizowano: '2026-10-18',
   },
 
   {
