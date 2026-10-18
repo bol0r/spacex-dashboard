@@ -412,7 +412,7 @@ export const muskIReszta: Encja[] = [
       { id: 'elon-musk', powod: 'założył ją po jednym wpisie o korkach' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiBoring, Z.wikiMusk],
+    zrodla: [Z.wikiBoring, Z.wikiMusk, Z.boringLvcc],
     zaktualizowano: '2026-09-13',
   },
 
@@ -535,7 +535,7 @@ export const muskIReszta: Encja[] = [
       { id: 'grok', powod: 'model będący odpowiedzią na produkty tej firmy' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiOpenai, Z.wikiMusk],
+    zrodla: [Z.wikiOpenai, Z.wikiMusk, Z.pbsOpenai],
     zaktualizowano: '2026-09-13',
   },
 
@@ -548,7 +548,7 @@ export const muskIReszta: Encja[] = [
     tresc: [
       'W 2024 roku [[elon-musk|Musk]] pozwał [[openai|OpenAI]] i Sama Altmana, zarzucając im odejście od pierwotnych założeń organizacji non-profit, którą współzakładał.',
       'W lutym 2025 konsorcjum pod jego kierunkiem złożyło niezamówioną ofertę kupna części non-profit za 97,4 miliarda dolarów. Czternastego lutego ofertę odrzucono.',
-      'Sprawę sądową Musk przegrał w maju 2026 roku. Ława przysięgłych uznała, że z pozwem zwlekał ponad trzyletni termin przedawnienia — czyli rozstrzygnięcie zapadło na terminie, nie na meritum zarzutów.',
+      'Sprawę sądową Musk przegrał w maju 2026 roku. Ława przysięgłych uznała, że z pozwem zwlekał ponad trzyletni termin przedawnienia — czyli rozstrzygnięcie zapadło na terminie, nie na meritum zarzutów. Musk nazwał werdykt „fatalnym precedensem” i zapowiedział apelację; OpenAI odpowiadało w procesie, że uczestniczył w rozmowach o części komercyjnej i wtedy się na nią zgodził.',
       'Warto zestawić to z tym, co działo się równolegle: [[xai|xAI]] rosło z wyceny 24 miliardów w maju 2024 do ponad 120 miliardów w lipcu 2025. Spór sądowy i budowa konkurenta biegły tym samym torem. Nie był to zresztą pierwszy raz, gdy o wypowiedzi Muska rozstrzygał sąd — wcześniej był [[funding-secured|wpis o zabezpieczonym finansowaniu]]. Produktem, który z tej rywalizacji wyszedł po stronie Muska, jest [[grok|Grok]], trenowany na [[colossus|Colossusie]].',
     ],
     fakty: [
@@ -576,7 +576,7 @@ export const muskIReszta: Encja[] = [
       { id: 'funding-secured', powod: 'wcześniejsza sprawa, w której również stanął przed organem rozstrzygającym' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiOpenai, Z.wikiMusk],
+    zrodla: [Z.wikiOpenai, Z.wikiMusk, Z.pbsOpenai],
     zaktualizowano: '2026-09-13',
   },
 

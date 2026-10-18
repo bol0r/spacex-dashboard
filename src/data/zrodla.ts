@@ -843,4 +843,9 @@ export const Z = {
     url: 'https://electrek.co/2026/10/13/tesla-roadster-event-thursday-nine-years-delays/',
     wydawca: 'Electrek', dostep: D3,
   },
+  pbsOpenai: {
+    tytul: 'Jury throws out Musk’s lawsuit against OpenAI and Sam Altman',
+    url: 'https://www.pbs.org/newshour/show/jury-throws-out-musks-lawsuit-against-openai-and-sam-altman',
+    wydawca: 'PBS NewsHour', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

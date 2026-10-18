@@ -159,7 +159,7 @@ export const miejsca: Encja[] = [
       { id: 'spacex', powod: 'jej jedyna hamownia silników' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiMcGregor, Z.wikiRaptor],
+    zrodla: [Z.wikiMcGregor, Z.wikiRaptor, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-13',
   },
 

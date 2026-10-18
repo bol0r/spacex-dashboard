@@ -136,6 +136,19 @@ historia przesunięć pokazu.
   (np. 6 listopada 2025 dla przesunięcia na 1 kwietnia, 28 września 2026
   dla odwołania pokazu), a nie dniem, na który pokaz miał się odbyć.
 
+### 5. Niezależne źródła — w ograniczonym zakresie
+
+Encji opartych na jednym wydawcy: 66 → 60. Dołożone tylko tam, gdzie źródło
+było już otwarte i faktycznie opisuje temat encji: relacja CBS z pierwszego
+chwytu przy locie 5 Starshipa, przewodnik SpaceX przy McGregor i pierwszym
+locie Falcona Heavy, strona The Boring Company przy samej firmie, oraz nowe
+źródło — PBS NewsHour — przy sporze z OpenAI, który dostał też zdanie
+o zapowiedzianej apelacji Muska.
+
+*Decyzja:* przerwałem ten punkt po sześciu encjach, żeby nie odbierać czasu
+punktom obowiązkowym (wersja, paczka, test). Pozostałe 60 encji wymaga po
+jednym nowym źródle na encję.
+
 ## 0.6.3 — 14 września 2026
 
 **Paczka do wgrania na hosting.**

@@ -514,7 +514,7 @@ const przelomy: Encja[] = [
       { id: 'merlin', powod: 'dwadzieścia siedem sztuk odpalono tu równocześnie' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon],
+    zrodla: [Z.wikiFalconHeavy, Z.wikiStartyFalcon, Z.spacexPrzewodnik],
     zaktualizowano: '2026-09-12',
   },
 
@@ -764,7 +764,7 @@ const starshipMisje: Encja[] = [
       { id: 'starship-lot-13', powod: 'późniejszy lot, już z prawdziwym ładunkiem' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiStartyStarship, Z.wikiStarship],
+    zrodla: [Z.wikiStartyStarship, Z.wikiStarship, Z.cbsChwyt],
     zaktualizowano: '2026-09-12',
   },
 
