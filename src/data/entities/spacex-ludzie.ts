@@ -482,7 +482,7 @@ export const ludzie: Encja[] = [
       { id: 'pretoria', powod: 'miasto, w którym ta rodzina mieszkała' },
       { id: 'zip2', powod: 'pierwsza firma braci, założona po wyjeździe z RPA' },
     ],
-    zrodla: [Z.wikiRodzina, Z.wikiHaldeman],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiRodzina, Z.wikiHaldeman, Z.pilotsHaldeman],
+    zaktualizowano: '2026-10-18',
   },
 ];

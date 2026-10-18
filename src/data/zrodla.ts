@@ -1073,4 +1073,49 @@ export const Z = {
     url: 'https://www.inverse.com/article/45802-elon-musk-s-boring-company-not-a-flamethrower-how-exactly-do-you-get-one',
     wydawca: 'Inverse', dostep: D3,
   },
+  nasaDragon2012: {
+    tytul: 'SpaceX Dragon is grappled by Canadarm2',
+    url: 'https://www.nasa.gov/image-article/spacex-dragon-grappled-by-canadarm2/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  nasaDemo1Dokowanie: {
+    tytul: 'SpaceX Crew Dragon Successfully Docks to Station',
+    url: 'https://www.nasa.gov/blogs/spacestation/2019/03/03/spacex-crew-dragon-successfully-docks-to-station/',
+    wydawca: 'NASA', dostep: D3,
+  },
+  inverseLadowanie: {
+    tytul: 'How SpaceX lands a Falcon 9 rocket in 6 steps',
+    url: 'https://www.inverse.com/article/33904-how-spacex-lands-a-falcon-9-rocket-in-6-steps',
+    wydawca: 'Inverse', dostep: D3,
+  },
+  secTwitterFuzja: {
+    tytul: 'Twitter, Inc. — Form 8-K, zakończenie fuzji (27 października 2022)',
+    url: 'https://www.sec.gov/Archives/edgar/data/1418091/000119312522272772/d411753d8k.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  secMusk13G: {
+    tytul: 'Twitter Inc. — Schedule 13G złożony przez Elona Muska (4 kwietnia 2022)',
+    url: 'https://www.sec.gov/Archives/edgar/data/1418091/000110465922041911/tm2211482d1_sc13g.htm',
+    wydawca: 'U.S. Securities and Exchange Commission', dostep: D3,
+  },
+  foxXai: {
+    tytul: 'Elon Musk’s AI company buys social media platform X in blockbuster $33B stock deal',
+    url: 'https://www.foxbusiness.com/technology/elon-musks-ai-company-buys-x-blockbuster-33b-stock-deal',
+    wydawca: 'Fox Business', dostep: D3,
+  },
+  fox13Hardcore: {
+    tytul: 'Musk tells remaining Twitter staff to go “hardcore” or leave',
+    url: 'https://www.fox13news.com/news/musk-tells-remaining-twitter-staff-go-hardcore-leave',
+    wydawca: 'FOX 13 Tampa Bay', dostep: D3,
+  },
+  fortuneFundacja: {
+    tytul: 'Half of Elon Musk’s charitable spending appears to benefit tycoon’s empire, including a tiny non-profit school full of his own children',
+    url: 'https://fortune.com/2024/03/11/elon-musk-tesla-billionaire-charity-donation-non-profit-foundation/',
+    wydawca: 'Fortune', dostep: D3,
+  },
+  pilotsHaldeman: {
+    tytul: 'Ray Watts — My ATC memories (part 3l)',
+    url: 'https://pilotspost.com/PsPpyarn2498',
+    wydawca: "Pilot's Post", dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

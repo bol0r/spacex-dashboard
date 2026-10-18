@@ -299,8 +299,8 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'ta sekwencja jest jej warunkiem technicznym' },
       { id: 'merlin', powod: 'zdolność do ponownego odpalenia w locie umożliwia cały manewr' },
     ],
-    zrodla: [Z.wikiLadowania, Z.wikiStartyFalcon],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiLadowania, Z.wikiStartyFalcon, Z.inverseLadowanie],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -1188,13 +1188,14 @@ export const pojecia: Encja[] = [
     ],
     ciekawostki: [
       {
-        tekst: 'Zdanie „Dragon zadokował do stacji" jest przy locie z 2012 roku nieścisłe, choć powtarza je większość relacji. Statek zawisł nieruchomo, a ramię stacji po niego sięgnęło — samodzielne dokowanie przyszło dopiero z następną generacją, osiem lat później.',
+        tekst: 'Zdanie „Dragon zadokował do stacji" jest przy locie z 2012 roku nieścisłe, choć powtarza je większość relacji. Statek zawisł nieruchomo, a ramię stacji po niego sięgnęło — samodzielne dokowanie przyszło dopiero z następną generacją, prawie siedem lat później: w marcu 2019 bezzałogowy Crew Dragon połączył się ze stacją sam, w locie Demo-1.',
         zrodlo: Z.wikiDragon1,
       },
     ],
     os: [
       { data: '2012-05-25', tytul: 'Pierwsze cumowanie', opis: 'Ramię stacji przyłącza Dragona 1 do portu cumowniczego.', waga: 3 },
-      { data: '2020-05-30', tytul: 'Pierwsze dokowanie z załogą', opis: 'Crew Dragon łączy się ze stacją samodzielnie.', waga: 3 },
+      { data: '2019-03-03', tytul: 'Pierwsze samodzielne dokowanie', opis: 'Bezzałogowy Crew Dragon w locie Demo-1 łączy się ze stacją bez pomocy ramienia.', waga: 2 },
+      { data: '2020-05-31', tytul: 'Pierwsze dokowanie z załogą', opis: 'Crew Dragon łączy się ze stacją samodzielnie.', waga: 3 },
     ],
     powiazane: [
       { id: 'dragon-1', powod: 'był cumowany, nie dokował' },
@@ -1202,8 +1203,8 @@ export const pojecia: Encja[] = [
       { id: 'cots-demo-2', powod: 'lot, przy którym odbyło się pierwsze cumowanie' },
       { id: 'cargo-dragon-2', powod: 'wersja towarowa, która również dokuje samodzielnie' },
     ],
-    zrodla: [Z.wikiDragon1, Z.wikiDragon2],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiDragon1, Z.wikiDragon2, Z.nasaDragon2012, Z.nasaDemo1Dokowanie],
+    zaktualizowano: '2026-10-18',
   },
 
   {

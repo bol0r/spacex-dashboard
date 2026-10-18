@@ -740,8 +740,8 @@ export const muskIReszta: Encja[] = [
       { id: 'styl-zarzadzania', powod: 'ultimatum o pracy „skrajnie ostrej" jest jego najczystszym przykładem' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiPrzejecie, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiPrzejecie, Z.wikiMusk, Z.secTwitterFuzja, Z.secMusk13G],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -780,8 +780,8 @@ export const muskIReszta: Encja[] = [
       { id: 'grok', powod: 'wbudowany w nią jako asystent' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiPrzejecie, Z.wikiXai],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiPrzejecie, Z.wikiXai, Z.foxXai, Z.secTwitterFuzja],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -863,8 +863,8 @@ export const muskIReszta: Encja[] = [
       { id: 'styl-zarzadzania', powod: 'zerowe zatrudnienie przy majątku 14,7 mld USD to ten sam wzorzec' },
     ],
     status: 'aktywne',
-    zrodla: [Z.wikiFundacja, Z.wikiMusk],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiFundacja, Z.wikiMusk, Z.fortuneFundacja],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -903,8 +903,8 @@ export const muskIReszta: Encja[] = [
       { id: 'zip2', powod: 'wzorzec zaczął się już przy pierwszej firmie' },
       { id: 'falcon-1-lot-4', powod: 'przypadek, w którym to podejście uratowało firmę' },
     ],
-    zrodla: [Z.wikiPrzejecie, Z.wikiMusk, Z.wikiZip2],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiPrzejecie, Z.wikiMusk, Z.wikiZip2, Z.fox13Hardcore],
+    zaktualizowano: '2026-10-18',
   },
 
   {
