@@ -1118,4 +1118,24 @@ export const Z = {
     url: 'https://pilotspost.com/PsPpyarn2498',
     wydawca: "Pilot's Post", dostep: D3,
   },
+  nasaRownanie: {
+    tytul: 'Ideal Rocket Equation',
+    url: 'https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/',
+    wydawca: 'NASA Glenn Research Center', dostep: D3,
+  },
+  nasaOrbity: {
+    tytul: 'Basics of Space Flight — Chapter 3: Gravity & Mechanics',
+    url: 'https://science.nasa.gov/learn/basics-of-space-flight/chapter3-4',
+    wydawca: 'NASA', dostep: D3,
+  },
+  uuWejscie: {
+    tytul: 'What generates all the heat during re-entry when the space shuttle returns to Earth?',
+    url: 'https://www.uu.edu/blog/2003/what-generates-all-the-heat-during-re-entry-when-the-space-shuttle-returns-to-earth/',
+    wydawca: 'Union University (The Science Guys)', dostep: D3,
+  },
+  nasaKosztStartu: {
+    tytul: 'The Recent Large Reduction in Space Launch Cost (ICES-2018-81)',
+    url: 'https://ntrs.nasa.gov/api/citations/20200001093/downloads/20200001093.pdf',
+    wydawca: 'NASA Ames Research Center', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

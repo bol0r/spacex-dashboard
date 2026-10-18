@@ -146,8 +146,8 @@ export const pojecia: Encja[] = [
       { id: 'reuzywalnosc', powod: 'paliwo na powrót członu odejmuje się od budżetu ładunku' },
       { id: 'koszt-kilograma', powod: 'to z tej zależności bierze się cena kilograma na orbicie' },
     ],
-    zrodla: [Z.wikiDeltaV, Z.wikiLeo],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiDeltaV, Z.wikiLeo, Z.nasaRownanie],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -261,8 +261,8 @@ export const pojecia: Encja[] = [
       { id: 'polaris-dawn', powod: 'jej apogeum 1 400 km to rekord wysokości lotu załogowego po Apollo' },
       { id: 'leo', powod: 'niska orbita jest niemal okrągła, więc oba punkty niemal się pokrywają' },
     ],
-    zrodla: [Z.wikiApsis, Z.wikiGto],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiApsis, Z.wikiGto, Z.nasaOrbity],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -318,7 +318,7 @@ export const pojecia: Encja[] = [
     fakty: [
       { etykieta: 'Prędkość na wejściu z LEO', wartosc: 'ok. 7,8 km/s', pewnosc: 'potwierdzone' },
       { etykieta: 'Zakres wysokości hamowania Falcona 9', wartosc: 'ok. 70–40 km', pewnosc: 'potwierdzone' },
-      { etykieta: 'Główne źródło ciepła', wartosc: 'sprężanie powietrza przed czołem, nie tarcie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Główne źródło ciepła', wartosc: 'sprężanie powietrza przed czołem; tarcie ma mniejszy udział', pewnosc: 'potwierdzone' },
       { etykieta: 'Osłona Falcona 9', wartosc: 'brak — zastępuje ją hamowanie silnikami', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -336,8 +336,8 @@ export const pojecia: Encja[] = [
       { id: 'crew-dragon', powod: 'przechodzi tę fazę z ludźmi na pokładzie' },
       { id: 'deorbitacja', powod: 'poniżej 300 km atmosfera sprowadza obiekty sama' },
     ],
-    zrodla: [Z.wikiLadowania, Z.wikiStarship],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiLadowania, Z.wikiStarship, Z.uuWejscie],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -763,6 +763,8 @@ export const pojecia: Encja[] = [
       { etykieta: 'Definicja', wartosc: 'cena startu podzielona przez masę na orbicie', pewnosc: 'potwierdzone' },
       { etykieta: 'Falcon Heavy, wariant zużywalny', wartosc: '150 mln USD za 63 800 kg na LEO', stanNa: '2022', pewnosc: 'potwierdzone' },
       { etykieta: 'Szacunek na kilogram', wartosc: 'ok. 2 350 USD (obliczenie z powyższych liczb)', stanNa: '2022', pewnosc: 'szacunkowe' },
+      { etykieta: 'Prom kosmiczny dla porównania', wartosc: 'ok. 54 500 USD/kg (1,5 mld USD za 27 500 kg)', pewnosc: 'szacunkowe' },
+      { etykieta: 'Falcon 9 według NASA', wartosc: 'ok. 2 720 USD/kg (62 mln USD za 22 800 kg)', stanNa: '2018', pewnosc: 'szacunkowe' },
       { etykieta: 'Cena odzysku u Falcona 9', wartosc: '22 800 kg bez odzysku wobec 17 500 kg z lądowaniem na barce', pewnosc: 'potwierdzone' },
     ],
     ciekawostki: [
@@ -781,8 +783,8 @@ export const pojecia: Encja[] = [
       { id: 'delta-v', powod: 'to z tej zależności wynika cena powrotu członu' },
       { id: 'kadencja-startow', powod: 'wyższe tempo rozkłada koszty stałe na więcej lotów' },
     ],
-    zrodla: [Z.wikiFalcon9, Z.wikiFalconHeavy],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiFalcon9, Z.wikiFalconHeavy, Z.nasaKosztStartu],
+    zaktualizowano: '2026-10-18',
   },
 
   {
