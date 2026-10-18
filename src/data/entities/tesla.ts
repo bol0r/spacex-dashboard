@@ -97,7 +97,7 @@ const samochody: Encja[] = [
     krotki: 'Pierwszy seryjny samochód drogowy na ogniwach litowo-jonowych i pierwszy z zasięgiem powyżej 300 km.',
     tresc: [
       'Roadster produkowano od 2008 do 2012 roku i zbudowano około 2 450 egzemplarzy. Nadwozie i zawieszenie oparto na Lotusie Elise, ale wspólnych części było zaledwie sześć–siedem procent: szyba, poduszki powietrzne i elementy zawieszenia. Resztę [[tesla|Tesla]] zrobiła sama.', 'Znaczenie tego auta nie leży w osiągach, choć 3,9 sekundy do setki w 2008 roku było wynikiem samochodu sportowego. Leży w tym, że był to pierwszy dopuszczony do ruchu, produkowany seryjnie samochód w pełni elektryczny na ogniwach litowo-jonowych i pierwszy elektryk seryjny z zasięgiem przekraczającym 320 kilometrów. Akumulator miał 53 kWh, zasięg 244 mile według EPA.',
-      'Cena wynosiła od około 99 do 128,5 tysiąca dolarów i to też był plan: drogi samochód dla nielicznych miał sfinansować tańszy dla wielu, czyli [[model-s|Model S]], a ten z kolei [[model-3|Model 3]]. Roadster jest pierwszym szczeblem tej drabiny.', 'W lutym 2018 roku prywatny egzemplarz [[elon-musk|Muska]] o numerze seryjnym 686 stał się pierwszym samochodem produkcyjnym wysłanym w kosmos — [[falcon-heavy-demo|na pierwszym locie Falcona Heavy]], na orbitę heliocentryczną wykraczającą za orbitę Marsa.',
+      'Cena wynosiła od około 99 do 128,5 tysiąca dolarów i to też był plan: drogi samochód dla nielicznych miał sfinansować tańszy dla wielu, czyli [[model-s|Model S]], a ten z kolei [[model-3|Model 3]]. Roadster jest pierwszym szczeblem tej drabiny.', 'W lutym 2018 roku prywatny egzemplarz [[elon-musk|Muska]] o numerze seryjnym 686 stał się pierwszym samochodem produkcyjnym wysłanym w kosmos — [[falcon-heavy-demo|na pierwszym locie Falcona Heavy]], na orbitę heliocentryczną wykraczającą za orbitę Marsa. Nazwę przejęła [[tesla-roadster-2|druga generacja]], zapowiedziana w 2017 roku, a pokazana dopiero w październiku 2026.',
     ],
     fakty: [
       { etykieta: 'Produkcja', wartosc: '2008–2012', pewnosc: 'potwierdzone' },
@@ -126,7 +126,57 @@ const samochody: Encja[] = [
     ],
     status: 'historyczne',
     zrodla: [Z.wikiRoadster, Z.wikiTesla],
-    zaktualizowano: '2026-09-12',
+    zaktualizowano: '2026-10-18',
+  },
+
+  {
+    id: 'tesla-roadster-2',
+    typ: 'produkt',
+    nazwa: 'Tesla Roadster drugiej generacji',
+    aka: ['Roadster 2', 'nowy Roadster', 'latająca Tesla'],
+    krotki: 'Sportowy samochód z dyszami na sprężone powietrze od SpaceX, pokazany dziewięć lat po zapowiedzi. Osiągi to na razie deklaracje.',
+    tresc: [
+      'Piętnastego października 2026 roku [[tesla|Tesla]] pokazała drugą generację Roadstera na terenie doświadczalnym [[spacex|SpaceX]] w [[mcgregor|McGregor]] pod Waco. Samochód wjechał na odwróconą rampę, trzymając się jej wentylatorami wytwarzającymi podciśnienie, obrócił się w powietrzu i wylądował na kołach. W drugim przejeździe przeskoczył w ruchu nad Cybercabem, [[cybertruck|Cybertruckiem]], ciężarówką [[tesla-semi|Semi]], [[model-y|Modelem Y]] i [[model-3|Modelem 3]].',
+      'Napęd do skoków to nie silnik rakietowy, tylko dziesięć dysz na zimny gaz, zasilanych sześciuset litrami sprężonego powietrza. Zbiorniki są kompozytowe, owijane włóknem węglowym — ten sam typ, którego SpaceX używa w swoich rakietach. Układ zaprojektowali razem inżynierowie Tesli i SpaceX — kolejny po [[terafab|Terafabie]] znak, że współpraca obu firm przestała być wyłącznie osobowa.',
+      'Wersje są trzy. Performance i Thrust mają po dwa miejsca, przy czym Thrust ma dysze z tyłu, które według Tesli dają przyspieszenie do 60 mil na godzinę w niecałą sekundę. Rocket jest jednoosobowy, ma wszystkie dziesięć dysz, sprzedawany wyłącznie na zaproszenie i — jak pisze sama Tesla — niedopuszczony do ruchu po drogach publicznych. Rezerwacja kosztuje 50 tysięcy dolarów za Performance i 250 tysięcy za Thrust. Ceny samochodu nie podano. Produkcję Musk zapowiedział na 2028 rok.',
+      'Wszystkie osiągi pochodzą od producenta i nikt ich niezależnie nie zmierzył. Czas 0,81 sekundy do 60 mil na godzinę pokazano na pokazie po problemach z zegarem, a nikogo nie dopuszczono do samochodów, żeby obejrzeć je z bliska. Tesla deklaruje ponad 230 mil na godzinę i zasięg ponad 300 mil; część relacji przypisuje tę prędkość tylko najmocniejszej wersji. Ile trwał lot i na jaką wysokość auto się wzbiło, nie podano.',
+      'Historia opóźnień jest dłuższa niż historia samego auta. Prototyp pokazano w listopadzie 2017 roku, na tym samym wydarzeniu co [[tesla-semi|Semi]], z dostawami obiecanymi na 2020 rok. W 2018 roku Musk napisał o „pakiecie SpaceX” z dziesięcioma dyszami. Pokaz miał się odbyć do końca 2025 roku, potem 1 kwietnia 2026 — data, która według Muska dawała mu „możliwość zaprzeczenia” — później w kolejnych miesiącach, wreszcie 1 października. Ten termin odwołano trzy dni wcześniej z powodu pogody.',
+    ],
+    fakty: [
+      { etykieta: 'Pokaz', wartosc: '15 października 2026, McGregor w Teksasie', pewnosc: 'potwierdzone' },
+      { etykieta: 'Dysze', wartosc: '10 dysz na zimny gaz, 600 l sprężonego powietrza w zbiornikach kompozytowych', pewnosc: 'potwierdzone' },
+      { etykieta: 'Wersje', wartosc: 'Performance (2 miejsca), Thrust (2 miejsca, dysze z tyłu), Rocket (1 miejsce, 10 dysz, na zaproszenie)', pewnosc: 'potwierdzone' },
+      { etykieta: 'Rezerwacja', wartosc: '50 tys. USD (Performance), 250 tys. USD (Thrust); ceny auta brak', pewnosc: 'potwierdzone' },
+      { etykieta: 'Osiągi według Tesli', wartosc: 'ponad 230 mph, zasięg ponad 300 mil, 0–60 mph poniżej 1 s — deklaracje, niezmierzone niezależnie', pewnosc: 'sporne' },
+      { etykieta: 'Produkcja', wartosc: '2028 według zapowiedzi Muska', pewnosc: 'sporne' },
+      { etykieta: 'Dopuszczenie do ruchu', wartosc: 'Rocket według Tesli niedopuszczony; o pozostałych brak informacji', pewnosc: 'potwierdzone' },
+      { etykieta: 'Od zapowiedzi do pokazu', wartosc: 'ok. 9 lat (listopad 2017 — październik 2026)', pewnosc: 'potwierdzone' },
+    ],
+    ciekawostki: [
+      {
+        tekst: 'Pomysł, że samochód poleci na dyszach, Musk opisał na Twitterze w 2018 roku jako „pakiet SpaceX” z około dziesięcioma małymi silnikami rakietowymi. Na pokazie w październiku 2026 roku dysz było dokładnie dziesięć — tyle że nie rakietowych, tylko na sprężone powietrze, w których nic się nie spala.',
+        zrodlo: Z.tcRoadster2,
+      },
+    ],
+    os: [
+      { data: '2017-11', tytul: 'Pokaz prototypu', opis: 'Druga generacja Roadstera zapowiedziana z dostawami w 2020 roku.', waga: 2 },
+      { data: '2018', tytul: 'Pakiet SpaceX', opis: 'Musk zapowiada wersję z około dziesięcioma dyszami.', waga: 1 },
+      { data: '2025', tytul: 'Pokaz zapowiedziany na koniec roku', opis: 'Pierwszy z terminów pokazu, które się nie utrzymały.', waga: 1 },
+      { data: '2025-11-06', tytul: 'Pokaz przesunięty na 1 kwietnia 2026', opis: 'Musk ogłasza nowy termin na walnym zgromadzeniu; później przesuwany jeszcze kilka razy.', waga: 1 },
+      { data: '2026-09-28', tytul: 'Pokaz z 1 października odwołany', opis: 'Tesla przenosi wydarzenie przez pogodę; nowy termin to 15 października.', waga: 1 },
+      { data: '2026-10-15', tytul: 'Pokaz w McGregor', opis: 'Skok na dyszach nad pięcioma samochodami Tesli.', waga: 3 },
+    ],
+    powiazane: [
+      { id: 'tesla-roadster', powod: 'następca pierwszego samochodu firmy, pod tą samą nazwą' },
+      { id: 'spacex', powod: 'dysze i zbiorniki zaprojektowali razem inżynierowie obu firm' },
+      { id: 'mcgregor', powod: 'na tym terenie doświadczalnym SpaceX odbył się pokaz' },
+      { id: 'tesla-semi', powod: 'pokazany tego samego wieczoru w listopadzie 2017, też latami opóźniany' },
+      { id: 'franz-von-holzhausen', powod: 'jego studio odpowiada za wygląd samochodu' },
+      { id: 'terafab', powod: 'drugie wspólne przedsięwzięcie Tesli i SpaceX w tym samym roku' },
+    ],
+    status: 'w rozwoju',
+    zrodla: [Z.tcRoadster2, Z.foxRoadster2, Z.tnwRoadster2, Z.electrekRoadster2, Z.electrekOpoznienia],
+    zaktualizowano: '2026-10-18',
   },
 
   {

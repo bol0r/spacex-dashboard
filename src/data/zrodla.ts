@@ -818,4 +818,29 @@ export const Z = {
     url: 'https://techcrunch.com/2026/07/22/tesla-spending-skyrockets-as-cybercab-semi-megapack-production-timeline-slips/',
     wydawca: 'TechCrunch', dostep: D3,
   },
+  tcRoadster2: {
+    tytul: 'Tesla reveals SpaceX-powered Roadster that flies and falls with style',
+    url: 'https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/',
+    wydawca: 'TechCrunch', dostep: D3,
+  },
+  foxRoadster2: {
+    tytul: 'Tesla’s new Roadster takes flight during dramatic unveiling at SpaceX facility',
+    url: 'https://www.foxbusiness.com/technology/teslas-new-roadster-makes-flying-debut-hitting-60-mph-under-second',
+    wydawca: 'Fox Business', dostep: D3,
+  },
+  tnwRoadster2: {
+    tytul: 'Tesla unveils thruster-equipped Roadster, with production set for 2028',
+    url: 'https://thenextweb.com/news/tesla-roadster-reveal-thrusters-2028',
+    wydawca: 'The Next Web', dostep: D3,
+  },
+  electrekRoadster2: {
+    tytul: 'Are Tesla’s claims for its new flying Roadster real, or is it just full of cold gas?',
+    url: 'https://electrek.co/2026/10/15/an-updated-technical-look-at-teslas-kick-flipping-0-60-in-1s-next-gen-roadster/',
+    wydawca: 'Electrek', dostep: D3,
+  },
+  electrekOpoznienia: {
+    tytul: 'Tesla sets Roadster event for Thursday after nearly 9 years of delays',
+    url: 'https://electrek.co/2026/10/13/tesla-roadster-event-thursday-nine-years-delays/',
+    wydawca: 'Electrek', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

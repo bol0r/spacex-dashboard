@@ -99,6 +99,43 @@ jej nie podaje), liczba startów z SLC-40 („ponad 340” pozostaje prawdą).
   tracker.
 - Kursy akcji SpaceX i Tesli — zmieniają się codziennie, baza ich nie podaje.
 
+### 4. Roadster drugiej generacji
+
+Nowa encja `tesla-roadster-2`, powiązana z pierwszym Roadsterem, SpaceX,
+McGregor, Semi, von Holzhausenem i Terafabem, z osią czasu opóźnień od
+listopada 2017 do pokazu 15 października 2026. Źródła: TechCrunch,
+Fox Business, The Next Web, dwa artykuły Electreka.
+
+Osiągi (ponad 230 mph, ponad 300 mil zasięgu, 0–60 mph poniżej sekundy),
+rezerwacje i rok produkcji 2028 opisane są jako deklaracje firmy — fakty
+o osiągach i produkcji mają oznaczenie „sporne”, a tekst mówi wprost, że nikt
+ich niezależnie nie zmierzył.
+
+Zweryfikowane i zgodne z przekazaną notatką: data, miejsce (teren SpaceX
+w McGregor pod Waco), rampa i obrót, skok nad Cybercabem, Cybertruckiem, Semi,
+Modelem Y i Modelem 3, 10 dysz na zimny gaz, 600 litrów sprężonego powietrza
+w zbiornikach COPV, wspólny projekt Tesli i SpaceX, trzy wersje z liczbą miejsc,
+rezerwacje 50 i 250 tys. dolarów, brak ceny, zapowiedź produkcji na 2028,
+historia przesunięć pokazu.
+
+*Decyzje — rozbieżności z notatką:*
+
+- **„Auto bez kierowcy”** — żadne z otwartych źródeł tego nie potwierdza.
+  TechCrunch i The Next Web wprost nie podają, kto prowadził; Electrek pisze
+  tylko, że w sierpniu Musk zapowiadał taki pokaz. Nie wpisałem.
+- **„Tylko jeden krótki skok”** — źródła opisują dwa przejazdy: obrót na
+  rampie i osobny skok nad samochodami. Wpisałem, że czasu ani wysokości lotu
+  nie podano.
+- **„Brak homologacji”** — źródła mówią precyzyjniej: sama Tesla pisze, że
+  wersja Rocket nie jest dopuszczona do ruchu po drogach publicznych; o dwóch
+  pozostałych brak informacji. Wpisałem dokładnie to.
+- **Prędkość ponad 230 mph** — TechCrunch przypisuje ją wszystkim trzem
+  wersjom, Electrek podaje 210 mph dla Performance i 230 dla Thrust. Tekst
+  mówi, że część relacji przypisuje tę prędkość tylko najmocniejszej wersji.
+- **Daty na osi opóźnień** — wydarzenia są datowane dniem ogłoszenia zmiany
+  (np. 6 listopada 2025 dla przesunięcia na 1 kwietnia, 28 września 2026
+  dla odwołania pokazu), a nie dniem, na który pokaz miał się odbyć.
+
 ## 0.6.3 — 14 września 2026
 
 **Paczka do wgrania na hosting.**
