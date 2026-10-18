@@ -958,4 +958,44 @@ export const Z = {
     url: 'https://www.theregister.com/2025/08/27/spacex_starship_flight_10/',
     wydawca: 'The Register', dostep: D3,
   },
+  cnbcKoenigsmann: {
+    tytul: 'SpaceX VP Hans Koenigsmann, Elon Musk’s fourth hire at the space company, plans to retire',
+    url: 'https://www.cnbc.com/2021/02/02/spacex-vp-hans-koenigsmann-to-retire-elon-musks-fourth-hire.html',
+    wydawca: 'CNBC', dostep: D3,
+  },
+  spoGerstenmaier: {
+    tytul: 'Gerstenmaier Joins SpaceX As Consultant',
+    url: 'https://spacepolicyonline.com/news/gerstenmaier-joins-spacex-as-consultant/',
+    wydawca: 'SpacePolicyOnline.com', dostep: D3,
+  },
+  nwhmShotwell: {
+    tytul: 'Gwynne Shotwell',
+    url: 'https://www.womenshistory.org/node/484',
+    wydawca: 'National Women’s History Museum', dostep: D3,
+  },
+  tcMueller: {
+    tytul: 'SpaceX’s CTO of propulsion retired. Now he wants to go to Mars.',
+    url: 'https://techcrunch.com/2022/07/26/spacexs-cto-of-propulsion-retired-now-he-wants-to-go-to-mars',
+    wydawca: 'TechCrunch', dostep: D3,
+  },
+  nbcZalozyciele: {
+    tytul: 'Tesla CEO Settles for “Founder” Title',
+    url: 'https://www.nbcbayarea.com/news/local/tesla-ceo-settles-for-founder-title/2088887/',
+    wydawca: 'NBC Bay Area', dostep: D3,
+  },
+  cnbcStraubel: {
+    tytul: 'Tesla CTO and co-founder JB Straubel is moving to advisory role as brain drain continues',
+    url: 'https://www.cnbc.com/2019/07/24/tesla-says-cto-jb-straubel-is-moving-to-advisory-role.html',
+    wydawca: 'CNBC', dostep: D3,
+  },
+  artcenterHolzhausen: {
+    tytul: 'Franz von Holzhausen',
+    url: 'https://artcenter.edu/about/get-to-know-artcenter/people/franz-von-holzhausen.html',
+    wydawca: 'ArtCenter College of Design', dostep: D3,
+  },
+  engadgetRoadster: {
+    tytul: 'Tesla Motors says its Roadster is not a converted Lotus Elise',
+    url: 'https://www.engadget.com/2008-03-04-tesla-motors-says-its-roadster-is-not-a-converted-lotus-elise.html',
+    wydawca: 'Engadget', dostep: D3,
+  },
 } as const satisfies Record<string, Zrodlo>;

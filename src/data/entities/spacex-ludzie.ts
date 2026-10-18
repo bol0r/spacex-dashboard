@@ -40,8 +40,8 @@ export const ludzie: Encja[] = [
       { id: 'elon-musk', powod: 'dzieli z nim kierowanie firmą — on inżynieria, ona operacje i klienci' },
       { id: 'falcon-9', powod: 'odpowiada za stronę handlową programu, który utrzymuje firmę' },
     ],
-    zrodla: [Z.wikiShotwell, Z.wikiSpaceX],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiShotwell, Z.wikiSpaceX, Z.nwhmShotwell, Z.cnbcKoenigsmann],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -159,8 +159,8 @@ export const ludzie: Encja[] = [
       { id: 'spacex', powod: 'jej pierwszy pracownik' },
       { id: 'wczesna-ekipa', powod: 'jeden z kilku ludzi, którzy zbudowali pierwszą rakietę firmy' },
     ],
-    zrodla: [Z.wikiMueller, Z.wikiMerlin],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiMueller, Z.wikiMerlin, Z.tcMueller],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -200,8 +200,8 @@ export const ludzie: Encja[] = [
       { id: 'spacex', powod: 'czwarty pracownik techniczny w jej historii' },
       { id: 'wczesna-ekipa', powod: 'jeden z pierwszej garstki inżynierów firmy' },
     ],
-    zrodla: [Z.wikiKoenigsmann, Z.wikiShotwell],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiKoenigsmann, Z.wikiShotwell, Z.cnbcKoenigsmann],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -212,15 +212,15 @@ export const ludzie: Encja[] = [
     krotki: 'Czterdzieści lat w NASA, odsunięty ze stanowiska w 2019 roku — pół roku później zatrudniony przez SpaceX.',
     tresc: [
       'Gerstenmaier zaczął pracę w NASA w 1977 roku, w ośrodku Lewisa w Ohio, tuż po studiach na Purdue. Od czerwca 2002 kierował programem Międzynarodowej Stacji Kosmicznej, a od 2005 do 10 lipca 2019 był zastępcą administratora do spraw eksploracji i operacji załogowych — stanowiska opisywanego jako najbardziej wpływowe w amerykańskich lotach załogowych.',
-      'Dziesiątego lipca 2019 roku administrator NASA Jim Bridenstine ogłosił przeniesienie go na stanowisko doradcy specjalnego. W praktyce urzędniczej jest to degradacja stosowana po to, żeby skłonić kogoś do odejścia. Oficjalnego powodu nie podano.',
-      'W lutym 2020 roku [[spacex|SpaceX]] zatrudniło go jako konsultanta [[hans-koenigsmann|Hansa Koenigsmanna]]. Gdy ten ogłosił odejście w lutym 2021, Gerstenmaier objął po nim stanowisko wiceprezesa do spraw budowy i niezawodności lotów.',
+      'Dziesiątego lipca 2019 roku administrator NASA Jim Bridenstine ogłosił przeniesienie go na stanowisko doradcy specjalnego. W praktyce urzędniczej jest to degradacja stosowana po to, żeby skłonić kogoś do odejścia. W ogłoszeniu nie podano powodu; Bridenstine tłumaczył potem decyzję obawami o przekroczenia kosztów i terminów w programach, które Gerstenmaier nadzorował.',
+      'W lutym 2020 roku [[spacex|SpaceX]] zatrudniło go jako konsultanta [[hans-koenigsmann|Hansa Koenigsmanna]]. Gdy ten ogłosił odejście pod koniec stycznia 2021, Gerstenmaier objął po nim stanowisko wiceprezesa do spraw budowy i niezawodności lotów.',
       'Jego rola w [[cots|programie komercyjnym]] była kluczowa i szła wbrew wygodzie urzędu: przekonał NASA, żeby opóźnić ogłoszenie wyników i znaleźć dodatkowe pieniądze, byle utrzymać dwie konkurujące firmy zamiast jednej. Bez tego [[crew-dragon|Crew Dragon]] mógłby nigdy nie powstać. W SpaceX odpowiada za tę samą dziedzinę, którą nadzorował po stronie agencji: loty załogowe w ramach [[commercial-crew|Commercial Crew]], od certyfikacji po misje takie jak [[demo-2|Demo-2]].',
     ],
     fakty: [
       { etykieta: 'W NASA', wartosc: 'cztery dekady, od 1977 roku', pewnosc: 'potwierdzone' },
       { etykieta: 'Kierowanie programem ISS', wartosc: 'od czerwca 2002', pewnosc: 'potwierdzone' },
       { etykieta: 'Zastępca administratora', wartosc: '2005 – 10 lipca 2019', pewnosc: 'potwierdzone' },
-      { etykieta: 'Przeniesienie na doradcę', wartosc: '10 lipca 2019, bez podania powodu', pewnosc: 'potwierdzone' },
+      { etykieta: 'Przeniesienie na doradcę', wartosc: '10 lipca 2019, w ogłoszeniu bez podania powodu', pewnosc: 'potwierdzone' },
       { etykieta: 'W SpaceX od', wartosc: 'lutego 2020, jako konsultant', pewnosc: 'potwierdzone' },
       { etykieta: 'Obecne stanowisko', wartosc: 'wiceprezes do spraw budowy i niezawodności lotów', pewnosc: 'potwierdzone' },
     ],
@@ -240,8 +240,8 @@ export const ludzie: Encja[] = [
       { id: 'crew-dragon', powod: 'bez tamtej decyzji ten program mógłby nie powstać' },
       { id: 'spacex', powod: 'odpowiada w niej za budowę i niezawodność lotów' },
     ],
-    zrodla: [Z.wikiGerstenmaier, Z.wikiCots],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiGerstenmaier, Z.wikiCots, Z.spoGerstenmaier, Z.cnbcKoenigsmann],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -321,8 +321,8 @@ export const ludzie: Encja[] = [
       { id: 'falcon-1-lot-4', powod: 'lot, po którym firma przestała być kandydatem do upadłości' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiMueller, Z.wikiKoenigsmann, Z.wikiHistoria],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiMueller, Z.wikiKoenigsmann, Z.wikiHistoria, Z.cnbcKoenigsmann, Z.gunterFalcon1],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -361,8 +361,8 @@ export const ludzie: Encja[] = [
       { id: 'gigafactory', powod: 'prowadził ten pomysł od koncepcji do produkcji' },
       { id: 'martin-eberhard', powod: 'obaj są współzałożycielami z mocy tej samej ugody' },
     ],
-    zrodla: [Z.wikiStraubel, Z.wikiTesla],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiStraubel, Z.wikiTesla, Z.cnbcStraubel],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -401,8 +401,8 @@ export const ludzie: Encja[] = [
       { id: 'tesla-roadster', powod: 'pierwszy samochód firmy powstał pod jego kierownictwem' },
       { id: 'jb-straubel', powod: 'drugi współzałożyciel uznany tą samą ugodą' },
     ],
-    zrodla: [Z.wikiEberhard, Z.wikiTesla],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiEberhard, Z.wikiTesla, Z.nbcZalozyciele],
+    zaktualizowano: '2026-10-18',
   },
 
   {
@@ -440,8 +440,8 @@ export const ludzie: Encja[] = [
       { id: 'model-s', powod: 'pierwszy samochód, który zaprojektował dla firmy' },
       { id: 'tesla-semi', powod: 'ciężarówka powstała w tym samym studiu wzorniczym' },
     ],
-    zrodla: [Z.wikiHolzhausen, Z.wikiCybertruck],
-    zaktualizowano: '2026-09-13',
+    zrodla: [Z.wikiHolzhausen, Z.wikiCybertruck, Z.artcenterHolzhausen],
+    zaktualizowano: '2026-10-18',
   },
 
   {

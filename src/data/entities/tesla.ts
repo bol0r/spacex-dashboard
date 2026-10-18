@@ -82,8 +82,8 @@ const firma: Encja[] = [
       { id: 'tesla-roadster', powod: 'pierwszy produkt, powstały jeszcze pod pierwszym dyrektorem generalnym' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiTesla, Z.wikiMusk],
-    zaktualizowano: '2026-09-12',
+    zrodla: [Z.wikiTesla, Z.wikiMusk, Z.nbcZalozyciele],
+    zaktualizowano: '2026-10-18',
   },
 ];
 
@@ -125,7 +125,7 @@ const samochody: Encja[] = [
       { id: 'elon-musk', powod: 'oddał własny egzemplarz na lot rakiety' },
     ],
     status: 'historyczne',
-    zrodla: [Z.wikiRoadster, Z.wikiTesla],
+    zrodla: [Z.wikiRoadster, Z.wikiTesla, Z.engadgetRoadster],
     zaktualizowano: '2026-10-18',
   },
 
