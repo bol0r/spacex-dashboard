@@ -1,27 +1,30 @@
-# Gotowe — wersja 0.7.0
+# Gotowe — wersja 0.7.1
 
 ## Paczka
 
 ```
-wydanie/strefa-wiedzy-0.7.0.zip
+wydanie/strefa-wiedzy-0.7.1.zip
 ```
 
 Pełna ścieżka:
-`/Users/aleksanderbielecki/Desktop/Projekty/SpaceX Dashboard/wydanie/strefa-wiedzy-0.7.0.zip`
+`/Users/aleksanderbielecki/Desktop/Projekty/SpaceX Dashboard/wydanie/strefa-wiedzy-0.7.1.zip`
 
-Rozmiar 0,41 MB, 37 plików, `index.html` w korzeniu archiwum.
-SHA-256: `36a226baccbaef8150af5de1e8766fbde3a12a2c91079195febc5077c2aa78a4`
+Rozmiar 0,42 MB, 37 plików, `index.html` w korzeniu archiwum.
+SHA-256: `c581a1e655146e1bdceee832d8b549299964e6c5d4ddfc29324ded617b846ab7`
+
+Paczka 0.7.0 nadal leży obok — wgrywaj 0.7.1, bo ma wszystko, co 0.7.0,
+plus poprawki opisane niżej.
 
 **Sprawdzenie przed paczką:** build, 7 z 7 testów, walidator 0 błędów
-i 0 ostrzeżeń, przegląd jakości bez błędów — za pierwszym podejściem,
-bez poprawek.
+i 0 ostrzeżeń, przegląd jakości bez uwag. Za pierwszym podejściem build
+się nie udał: dwa nowe źródła dostały nazwy, które w katalogu już były.
+Poprawione, drugie podejście przeszło bez błędów.
 
 **Sprawdzenie po paczce:** zip rozpakowany na zwykłym serwerze plików.
-Strona się ładuje, w stopce wersja 0.7.0, kafel Starshipa pokazuje nowe dane,
-encje Roadstera drugiej generacji i lotu 14 otwierają się z pełną treścią
-i wszystkimi źródłami w „Skąd to wiem”. Konsola przy włączonym serwerze —
-pusta. Po wyłączeniu serwera strona i obie encje dalej otwierają się
-z pamięci przeglądarki.
+Strona się ładuje, w stopce wersja 0.7.1. Encje z poprawkami (odlewanie,
+Europa Clipper) pokazują nową treść i nowe źródła w „Skąd to wiem”. Konsola
+pusta. Po wyłączeniu serwera strona i encje dalej otwierają się z pamięci
+przeglądarki.
 
 ---
 
@@ -30,7 +33,7 @@ z pamięci przeglądarki.
 1. **Workers & Pages** → kliknij istniejący projekt (albo **Create application**
    → **Drag and drop your files**, jeśli to pierwsze wgranie).
 2. **Create a new deployment** → wybierz **Production**.
-3. Przeciągnij `strefa-wiedzy-0.7.0.zip` w pole wgrywania i kliknij
+3. Przeciągnij `strefa-wiedzy-0.7.1.zip` w pole wgrywania i kliknij
    **Save and Deploy**.
 
 Kto otwierał wcześniejszą wersję, zobaczy nową dopiero po zamknięciu wszystkich
@@ -39,74 +42,55 @@ i wariant dla własnego serwera: `WDROZENIE.md`.
 
 ---
 
-## Co się zmieniło
+## Co się zmieniło od 0.7.0
 
-Pełny opis z uzasadnieniem każdej decyzji: `CHANGELOG.md`, sekcja 0.7.0.
+Pełny opis z uzasadnieniem każdej decyzji: `CHANGELOG.md`, sekcja 0.7.1.
+Zmiany w 0.7.0 (lot 14, liczniki, Roadster drugiej generacji) są w sekcji 0.7.0.
 
-**1. Lot 14 Starshipa i pierwszy ekran**
-- Lot 14 odbył się 28 września 2026 (nie 18): pierwsza orbita, 26 pracujących
-  satelitów Starlink V3, misja przerwana po ok. 3 h zamiast niemal 10.
-- Nowa encja `starship-lot-14`.
-- Kafel Starshipa: 14 lotów, ostatni kamień milowy „Lot 14 — pierwsza orbita”,
-  odliczanie do „Lot 15 — termin wstępny” (nie wcześniej niż 8.11.2026).
+**Punkt 5 dokończony.** Każda ze 183 encji ma źródła od co najmniej dwóch
+niezależnych wydawców — było 60 encji z jednym wydawcą, jest 0. Katalog
+źródeł: 167 → 224. Pierwszeństwo miały dokumenty pierwotne: NASA, JPL,
+komunikaty i prospekty złożone w SEC.
 
-**2. Żywe liczniki**
-- Rodzina Falcon 9: 708 startów, lądowania 667 z 680, Block 5 99,07%
-  (stan na 13.10.2026).
-- Falcon Heavy: 14 startów.
-- Starlink: 11 154 satelitów na orbicie, 11 140 działających (15.10.2026,
-  katalog Jonathana McDowella).
-- Majątek Muska według Forbesa: ok. 908,5 mld USD (18.10.2026).
-- Neuralink: 21 uczestników badań według Muska.
-- Rekord osłony ładunku oznaczony jako sporny (źródła przypisują go różnym
-  połówkom).
+**Błędy znalezione przy porównaniu ze źródłami — poprawione:**
+- Lot 2 Starshipa: statek przepadł tuż przed końcem pracy silników,
+  nie przy powrocie.
+- Lot 6 Starshipa: statek nie podchodził do wieży, tylko wodował zgodnie
+  z planem.
+- CRS-7: według niezależnego zespołu NASA to był błąd projektowy (ciekawostka
+  twierdziła odwrotnie); liczby nośności śruby pochodzą od SpaceX.
+- Europa Clipper: 11.04.2030 to wejście na orbitę Jowisza, przeloty nad
+  Europą od 2031.
+- Odlewanie wielkogabarytowe: Tesla nie porzuciła metody, odłożyła tylko
+  podwozie z jednego odlewu.
+- Dojo: w 2026 była zapowiedź wznowienia prac, nie restart.
+- Zip2, X.com, PayPal: cena i daty według dokumentów SEC (Zip2: 307,2 mln
+  gotówką; nazwa PayPal od lutego 2001; Thiel szefem od września 2000).
+- Dokowanie: pierwszy samodzielny Crew Dragon to Demo-1 w marcu 2019.
+- Do tego: smallsat (180 kg według NASA), NACS (nazwa od listopada 2022),
+  Hyperloop (data sporna), Ax-1 (cena to szacunek), Model 3 (1 550 dostaw
+  w IV kw. 2017), Gerstenmaier (styczeń 2021).
 
-**3. Stan bieżący od połowy września**
-- NASA dokupiła u SpaceX loty Crew-15, 16, 17 za 946 mln USD (18.09.2026);
-  termin Starlinera „w trakcie przeglądu”.
-- Tesla w III kwartale 2026: 486 532 dostawy, 13,7 GWh magazynów.
-- Wycofane zapowiedzi produkcji wielkoseryjnej Optimusa, Semi i Cybercaba
-  w 2026 roku; Cybercab produkowany w Gigafactory Texas.
-- Falcon Heavy: teleskop Roman i NROL-97 na osi czasu.
-
-**4. Roadster drugiej generacji**
-- Nowa encja `tesla-roadster-2` z osią opóźnień od 2017 do pokazu
-  15.10.2026, powiązana z Roadsterem, SpaceX, McGregor i Terafabem.
-- Osiągi, rezerwacje i rok 2028 opisane jako deklaracje firmy, oznaczone
-  jako sporne. Pięć źródeł: TechCrunch, Fox Business, The Next Web,
-  dwa artykuły Electreka.
-
-**5. Źródła**
-- Encji opartych na jednym wydawcy: 66 → 60.
-
-**6. Wersja** 0.7.0 w `package.json` i README.
-
-**Stan bazy:** 183 encje, 333 wydarzenia, 167 źródeł, średnio 6,11 linku
+**Stan bazy:** 183 encje, 335 wydarzeń, 224 źródła, średnio 6,11 linku
 w treści.
 
 ---
 
 ## Co pominąłem i dlaczego
 
-- **„Roadster jechał bez kierowcy”** — żadne z pięciu otwartych źródeł tego
-  nie potwierdza. Electrek pisze tylko, że Musk w sierpniu zapowiadał taki
-  pokaz.
-- **„Tylko jeden krótki skok”** — źródła opisują dwa przejazdy. Wpisałem,
-  że czasu i wysokości lotu nie podano.
-- **„Brak homologacji”** — wpisałem precyzyjniej: sama Tesla pisze, że wersja
-  Rocket nie jest dopuszczona do ruchu; o dwóch pozostałych brak informacji.
-- **Wycofanie Crew Dragona przed 2030** — jeden wewnętrznie niespójny
-  artykuł, bez potwierdzenia od NASA ani SpaceX.
-- **Zmiana nazwy działu AI SpaceX** — na razie tylko wypowiedź Muska.
-- **Rozwój Robotaxi** — jedyne źródła to blogi, które sobie przeczą.
-- **Liczby historyczne ze znacznikiem `stanNa`** (np. sprzedaż Modelu S
-  w 2015) — nie przestawiałem im daty na dziś, bo dotyczą tamtej chwili.
-- **Abonenci Starlinka** — nowszej liczby niż czerwcowe 12 mln nie podało
-  żadne źródło, które dało się otworzyć.
-- **`stanNa` = data źródła, nie data sprawdzenia** — liczby Falcona mają
-  13.10, Starlinka 15.10, bo do tego dnia liczą źródła. Wpisanie 18.10
-  sugerowałoby, że obejmują dni, których nie obejmują.
-- **Punkt 5 przerwany po sześciu encjach** — żeby nie ryzykować punktów 6–8.
-  Pozostałe 60 encji wymaga po jednym nowym źródle na encję.
+- **Rodzina Muska:** drugie źródło o dziadku Muska (Pilot's Post) potwierdza
+  przeprowadzkę do RPA i lot do Australii w 1954, ale nie dystans
+  „30 tysięcy mil” — ta liczba nadal stoi tylko na Wikipedii.
+- **Fundacja Muska:** liczby za 2024 (14,7 mld, 474 mln) nadal tylko
+  z Wikipedii — raportu „New York Timesa” nie dało się otworzyć. Fortune
+  potwierdza resztę.
+- **Starshield:** strona SpaceX nie daje się odczytać; użyłem przedruku
+  artykułu CNBC.
+- **Wejście atmosferyczne:** złagodziłem „ciepło nie z tarcia” do „głównie
+  ze sprężania; tarcie ma mniejszy udział”, bo drugie źródło wymienia oba
+  zjawiska.
+- **Daty z prospektów SEC zamiast z encyklopedii** (X.com, PayPal) — przy
+  dacie odsunięcia Muska zostawiłem w treści informację, że część relacji
+  mówi o październiku.
 - **Nic nie zostało wypchnięte ani wdrożone.** Zmiany są w lokalnych commitach
   na gałęzi `master`.
