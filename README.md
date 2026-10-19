@@ -7,6 +7,9 @@ a z jego wnętrza można wejść głębiej. Nawigacja przez skojarzenia, nie prz
 
 **Wersja 0.7.1** · **by Dead Net & Claude**
 
+**Zobacz na żywo: [encyklopedia-spacex.pages.dev](https://encyklopedia-spacex.pages.dev/)**
+— działa też offline i instaluje się na telefonie jako aplikacja.
+
 > **Projekt niezależny, edukacyjny i niekomercyjny.** Nie jest powiązany ze SpaceX,
 > Teslą, X Corp., xAI, Neuralinkiem, The Boring Company ani z Elonem Muskiem i nie
 > jest przez nikogo z nich prowadzony, sponsorowany ani zatwierdzony. Nazwy własne,
