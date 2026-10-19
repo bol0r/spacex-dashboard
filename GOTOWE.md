@@ -6,8 +6,8 @@
 wydanie/strefa-wiedzy-0.7.1.zip
 ```
 
-Pełna ścieżka:
-`/Users/aleksanderbielecki/Desktop/Projekty/SpaceX Dashboard/wydanie/strefa-wiedzy-0.7.1.zip`
+Plik leży w folderze `wydanie/` w katalogu projektu (folder jest poza repozytorium —
+paczkę tworzy `npm run wydanie`).
 
 Rozmiar 0,42 MB, 37 plików, `index.html` w korzeniu archiwum.
 SHA-256: `c581a1e655146e1bdceee832d8b549299964e6c5d4ddfc29324ded617b846ab7`
